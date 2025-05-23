@@ -1875,7 +1875,7 @@
     "hero": {
       "image": "/images/penguinLaptop.png",
       "subtitle": "A new life for LinuxJourney, which has helped so many people take their first steps into the world of Linux.",
-      "title": "Unlock the power of Linux "
+      "title": "Unlock the power of Linux"
     },
     "navbar": {
       "home": "Home",
@@ -1932,8 +1932,8 @@
       ],
       "hero": {
         "image": "/images/penguinBook.png",
-        "subtitle": "Master the art of Linux-fu with interactive and free lessons.",
-        "title": "Learn Linux the Fun Way"
+        "subtitle": "Discover curated books, tutorials, and tools to deepen your Linux knowledge.",
+        "title": "Resources"
       },
       "title": "Resources"
     }
