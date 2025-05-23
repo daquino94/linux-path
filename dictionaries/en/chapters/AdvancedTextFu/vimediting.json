@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Vim Editing",
+  "lessonContent": "Now that we have a couple of lines written, let's edit it a bit more and remove some cruft.<br><p></p><ul><br><li>x - used to cut the selected text also used for deleting characters</li><br><li>dd - used to delete the current line</li><br><li>y - yank or copy whatever is selected</li><br><li>yy - yank or copy the current line</li><br><li>p - paste the copied text before the cursor</li><br></ul><p></p>",
+  "exercise": "I know this lesson added some oddballs, open up a text editor and play around with these.",
+  "quizQuestion": "What character is used to delete an entire line?",
+  "quizAnswer": "dd",
+  "slug": "vimediting"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "paste",
+  "lessonContent": "The paste command is similar to the cat command, it merges lines together in a file. Let's create a new file with the following contents: \n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\nLet's combine all these lines into one line: \n\n<pre>$ paste -s sample2.txt</pre>\n\nThe default delimiter for paste is TAB, so now there is one line with TABs separating each word.\n\nLet's change this delimiter (-d) to something a little more readable: \n\n<pre>$ paste -d ' ' -s sample2.txt</pre>\n\nNow everything should be on one line delimited by spaces.",
+  "exercise": "Try to paste multiple files together, what happens?",
+  "quizQuestion": "What flag do you use with paste to make everything go on one line?",
+  "quizAnswer": "-s",
+  "slug": "pastecommand"
+}

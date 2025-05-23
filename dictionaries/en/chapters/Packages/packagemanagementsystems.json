@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "yum and apt",
+  "lessonContent": "Ah, the Batmans of package management, these systems come with all the fixins to make package installation, removal and changes easier, including installing package dependencies. Two of the most popular management systems is <b>yum</b> and <b>apt</b>. Yum is exclusive to the Red Hat family and apt is exclusively to the Debian family.\n\n<b>Install a package from a repository</b>\n\n<pre>\nDebian: $ apt install package_name\nRPM: $ yum install package_name\n</pre>\n\n<b>Remove a package</b>\n\n<pre>\nDebian: $ apt remove package_name\nRPM: $ yum erase package_name\n</pre>\n\n<b>Updating packages for a repository</b>\n\nIt's always best practice to update your package repositories so they are up to date before you install and update a package. \n\n<pre>\nDebian: apt update; apt upgrade\nRPM: yum update\n</pre>\n\n<b>Get information about an installed package</b>\n\n<pre>\nDebian: apt show package_name\nRPM: yum info package_name\n</pre>",
+  "exercise": "Run through each of these package commands and see the output you receive.",
+  "quizQuestion": "What command is used to show package information on a Debian system?",
+  "quizAnswer": "apt show",
+  "slug": "packagemanagementsystems"
+}

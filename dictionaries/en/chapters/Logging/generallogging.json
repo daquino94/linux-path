@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "General Logging",
+  "lessonContent": "There are many log files you can view on your system, many important ones can be found under /var/log. We won't go through them all, but we'll discuss a couple of the major ones. \n\nThere are two general log files you can view to get a glimpse of what your system is doing:\n\n<b>/var/log/messages</b>\n\nThis log contains all non-critical and non-debug messages, includes messages logged during bootup (dmesg), auth, cron, daemon, etc. Very useful to get a glimpse of how your machine is acting. \n\n<b>/var/log/syslog</b>\n\nThis logs everything except auth messages, it's extremely useful for debugging errors on your machine. \n\nThese two logs should be more than enough when troubleshooting issues with your system, However, if you just want to view a specific log component, there are also separate logs for those as well.",
+  "exercise": "Look at your /var/log/messages and /var/log/syslog files and see what the differences are.",
+  "quizQuestion": "What log file logs everything except auth messages?",
+  "quizAnswer": "syslog",
+  "slug": "generallogging"
+}

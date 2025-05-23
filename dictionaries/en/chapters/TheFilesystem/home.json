@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "title": "The Filesystem",
+  "description": "Learn about the Linux filesystem, the different types of filesystems, partitioning and more.",
+  "image": "/images/chapters/filesystem.png",
+  "slug": "thefilesystem"
+}

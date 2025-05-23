@@ -1,0 +1,7 @@
+{
+  "id": 16,
+  "title": "Network Sharing",
+  "description": "Learn about network sharing with rsync, scp, nfs and more.",
+  "image": "/images/chapters/networkSharing.png",
+  "slug": "networksharing"
+}

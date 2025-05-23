@@ -1,0 +1,9 @@
+{
+  "id": 18,
+  "title": "alias",
+  "lessonContent": "Sometimes typing commands can get really repetitive, or if you need to type a long command many times, it’s best to have an alias you can use for that. To create an alias for a command you simply specify an alias name and set it to the command. \n\n<pre>$ alias foobar='ls -la'</pre>\n\nNow instead of typing ls -la, you can type foobar and it will execute that command, pretty neat stuff. Keep in mind that this command won't save your alias after reboot, so you'll need to add a permanent alias in:\n\n<pre>~/.bashrc</pre>\n\nor similar files if you want to have it persist after reboot.\n\nYou can remove aliases with the unalias command: \n\n<pre>$ unalias foobar</pre>",
+  "exercise": "Create a couple of aliases then remove them.",
+  "quizQuestion": "What command is used to make an alias?",
+  "quizAnswer": "alias",
+  "slug": "aliascommand"
+}

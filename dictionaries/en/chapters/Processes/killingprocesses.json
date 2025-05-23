@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "kill (Terminate)",
+  "lessonContent": "You can send signals that terminate processes, such a command is aptly named the kill command. \n\n<pre>$ kill 12445</pre>\n\nThe 12445 is the PID of the process you want to kill. By default it sends a TERM signal. The SIGTERM signal is sent to a process to request its termination by allowing it to cleanly release its resources and saving its state. \n\nYou can also specify a signal with the kill command: \n\n<pre>$ kill -9 12445</pre>\n\nThis will run the SIGKILL signal and kill the process. \n\n<b>Differences between SIGHUP, SIGINT, SIGTERM, SIGKILL, SIGSTOP?</b>\n\nThese signals all sound reasonably similar, but they do have their differences. \n\n<ul>\n<li>SIGHUP - Hangup, sent to a process when the controlling terminal is closed. For example, if you closed a terminal window that had a process running in it, you would get a SIGHUP signal. So basically you've been hung up on</li>\n<li>SIGINT - Is an interrupt signal, so you can use Ctrl-C and the system will try to gracefully kill the process</li>\n<li>SIGTERM - Kill the process, but allow it to do some cleanup first</li>\n<li>SIGKILL - Kill the process, kill it with fire, doesn't do any cleanup</li>\n<li>SIGSTOP - Stop/suspend a process</li>\n</ul>",
+  "exercise": "Kill some processes using different signals.",
+  "quizQuestion": "What is the signal name for the default kill command?",
+  "quizAnswer": "SIGTERM",
+  "slug": "killingprocesses"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "env (Environment)",
+  "lessonContent": "Run the following command: \n\n<pre>$ echo $HOME</pre>\n\nYou should see the path to your home directory, mine looks like /home/pete. \n\nWhat about this command? \n\n<pre>$ echo $USER </pre>\n\nYou should see your username!\n\nWhere is this information coming from? It's coming from your environment variables. You can view these by typing\n\n<pre>$ env </pre>\n\nThis outputs a whole lot of information about the environment variables you currently have set. These variables contain useful information that the shell and other processes can use.\n\nHere is a short example:\n\n<pre>\nPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\nPWD=/home/user\nUSER=pete\n</pre>\n\n\nOne particularly important variable is the PATH Variable. You can access these variables by sticking a $ infront of the variable name like so:\n\n<pre>\n$ echo $PATH\n/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\n</pre>\n\nThis returns a list of paths separated by a colon that your system searches when it runs a command. Let's say you manually download and install a package from the internet and put it in to a non standard directory and want to run that command, you type $ coolcommand and the prompt says command not found. Well that's silly you are looking at the binary in a folder and know it exists. What is happening is that $PATH variable doesn't check that directory for this binary so it's throwing an error. \n\nLet's say you had tons of binaries you wanted to run out of that directory, you can just modify the PATH variable to include that directory in your PATH environment variable.",
+  "exercise": "What does the following output? Why?\n<pre>$ echo $HOME</pre>",
+  "quizQuestion": "How do you see your environment variables?",
+  "quizAnswer": "env",
+  "slug": "envenvironment"
+}

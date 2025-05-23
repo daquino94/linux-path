@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Ownership Permissions",
+  "lessonContent": "In addition to modifying permissions on files, you can also modify the group and user ownership of the file as well. \n\n<b>Modify user ownership</b>\n\n<pre>$ sudo chown patty myfile</pre>\n\nThis command will set the owner of myfile to patty.\n\n<b>Modify group ownership</b>\n\n<pre>$ sudo chgrp whales myfile</pre>\n\nThis command will set the group of myfile to whales.\n\n<b>Modify both user and group ownership at the same time</b>\nIf you add a colon and groupname after the user you can set both the user and group at the same time.\n\n<pre>$ sudo chown patty:whales myfile</pre>",
+  "exercise": "Modify the group and user of some test files. Afterwards take a look at the permissions with ls -l.",
+  "quizQuestion": "What command do you use to change user ownership?",
+  "quizAnswer": "chown",
+  "slug": "ownershippermissions"
+}

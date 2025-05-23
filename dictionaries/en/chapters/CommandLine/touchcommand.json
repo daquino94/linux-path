@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "touch",
+  "lessonContent": "Let’s learn how to make some files. A very simple way is to use the touch command. Touch allows you to the create new empty files.\n\n<pre>$ touch mysuperduperfile</pre>\n\nAnd boom, new file! \n\nTouch is also used to change timestamps on existing files and directories. Give it a try, do an ls -l on a file and note the timestamp, then touch that file and it will update the timestamp. \n\nThere are many other ways to create files that involve other things like redirection and text editors, but we’ll get to that in the Text Manipulation course.",
+  "exercise": "<ol>\n<li>Create a new file</li>\n<li>Note the timestamp</li>\n<li>Touch the file and check the timestamp once again</li>\n</ol>",
+  "quizQuestion": "How do you create a file called myfile?",
+  "quizAnswer": "touch myfile",
+  "slug": "touchcommand"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 11,
+  "title": "Boot the System",
+  "description": "Learn about the stages of the Linux boot process.",
+  "image": "/images/chapters/boot.png",
+  "slug": "bootthesystem"
+}

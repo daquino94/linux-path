@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "head",
+  "lessonContent": "Let's say we have a very long file, in fact we have many to choose from, go ahead and cat /var/log/syslog. You should see pages upon pages of text. What if I just wanted to see the first couple of lines in this text file? Well we can do that with the head command, by default the head command will show you the first 10 lines in a file.\n\n<pre>$ head /var/log/syslog</pre>\n\nYou can also modify the line count to whatever you choose, let's say I wanted to see the first 15 lines instead. \n\n<pre>$ head -n 15 /var/log/syslog</pre>\n\nThe -n flag stands for number of lines.",
+  "exercise": "What does the following command do and why? \n\n<pre>$ head -c 15 /var/log/syslog</pre>",
+  "quizQuestion": "What flag would you use to change the number of lines you want to view for the head command?",
+  "quizAnswer": "-n",
+  "slug": "headcommand"
+}

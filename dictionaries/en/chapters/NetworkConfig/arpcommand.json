@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "arp",
+  "lessonContent": "Remember when we lookup a MAC address with ARP, it first checks the locally stored ARP cache on our system, you can actually view this cache: \n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\nThe ARP cache is actually empty when a machine boots up, it gets populated as packets are being sent to other hosts. If we send a packet to a destination that isn't in the ARP cache, the following happens:\n\n<ol>\n<li>The source host creates the Ethernet frame with an ARP request packet</li>\n<li>The source host broadcasts this frame to the entire network</li>\n<li>If one of the hosts on the network knows the correct MAC address, it will send a reply packet and frame containing the MAC address</li>\n<li>The source host adds the IP to MAC address mapping to the ARP cache and then proceeds with sending the packet</li>\n</ol>\n\nYou can also view your arp cache via the ip command:\n\n<pre>\n$ ip neighbour show\n</pre>",
+  "exercise": "Observe what happens to your ARP cache when you reboot your machine and then do something on the network.",
+  "quizQuestion": "What command can you use to view your ARP cache?",
+  "quizAnswer": "arp",
+  "slug": "arpcommand"
+}

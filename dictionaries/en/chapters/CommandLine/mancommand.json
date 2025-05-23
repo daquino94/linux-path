@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "man",
+  "lessonContent": "Gee I wish some of these programs had a manual so we can see some more information about them. Well luckily they do! Aptly named man pages, you can see the manuals for a command with the man command. \n\n<pre>$ man ls</pre>\n\nMan pages are manuals that are by default built into most Linux operating systems. They provide documentation about commands and other aspects of the system. \n\nTry it out on a few commands to get more information about them.",
+  "exercise": "Run the man command on the ls command.",
+  "quizQuestion": "How do you see the manuals for a command?",
+  "quizAnswer": "man",
+  "slug": "mancommand"
+}

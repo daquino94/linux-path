@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "grep",
+  "lessonContent": "The grep command is quite possibly the most common text processing command you will use. It allows you to search files for characters that match a certain pattern. What if you wanted to know if a file existed in a certain directory or if you wanted to see if a string was found in a file? You certainly wouldn't dig through every line of text, you would use grep!\n\nLet's use our sample.txt file as an example: \n\n<pre>$ grep fox sample.txt</pre>\n\nYou should see that grep found fox in the sample.txt file. \n\nYou can also grep patterns that are case insensitive with the -i flag: \n\n<pre>$ grep -i somepattern somefile</pre>\n\nTo get even more flexible with grep you can combine it with other commands with |.\n\n<pre>$ env | grep -i User</pre>\n\nAs you can see grep is pretty versatile. You can even use regular expressions in your pattern: \n\n<pre>$ ls /somedir | grep '.txt$'</pre>\n\nShould return all files ending with .txt in somedir.",
+  "exercise": "You may have heard of egrep or fgrep, these are deprecated grep calls and have since been replaced by grep -E and grep -F. Read the grep manpage to learn more.",
+  "quizQuestion": "What command do you use to find a certain pattern?",
+  "quizAnswer": "grep",
+  "slug": "grepcommand"
+}

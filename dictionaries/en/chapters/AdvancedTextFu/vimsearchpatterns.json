@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Vim Search Patterns",
+  "lessonContent": "To search for an expression just type the / key and then your search result while you are in a vim session. Once you hit enter, you can press \"n\" to go forward or \"N\" to go backward in your search results.\n\n<pre>\nMy pretty file is very pretty.\n\n/pretty\n\nwill find the pretty words in the text file.\n</pre>\n\n\nThe ? search command will search the text file backwards, so in the previous example, the last pretty would come up first. \n<pre>\nMy pretty file is very pretty.\n\n?pretty\n\nwill find the pretty words in the text file.\n</pre>",
+  "exercise": "Play with the search key, open a text file in vim with: vim [textfile] and start searching!",
+  "quizQuestion": "What key is used to search in vim?",
+  "quizAnswer": "/",
+  "slug": "vimsearchpatterns"
+}

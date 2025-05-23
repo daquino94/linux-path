@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Device Names",
+  "lessonContent": "Here are the most common device names that you will encounter: \n\n<b>SCSI Devices</b>\n\nIf you have any sort of mass storage on your machine, chances are it is using the SCSI (pronounced \"scuzzy\") protocol. SCSI stands for Small Computer System Interface, it is a protocol used for allow communication between disks, printers, scanners and other peripherals to your system. You may have heard of SCSI devices which aren't actually in use in modern systems, however our Linux systems correspond SCSI disks with hard disk drives in /dev. They are represented by a prefix of sd (SCSI disk):\n\nCommon SCSI device files:\n\n<ul>\n<li>/dev/sda - First hard disk</li>\n<li>/dev/sdb - Second hard disk</li>\n<li>/dev/sda3 - Third partition on the first hard disk</li>\n</ul>\n\n<b>Pseudo Devices</b>\n\nAs we discussed earlier, pseudo devices aren't really physically connected to your system, most common pseudo devices are character devices: \n\n<ul>\n<li>/dev/zero - accepts and discards all input, produces a continuous stream of NULL (zero value) bytes</li>\n<li>/dev/null - accepts and discards all input, produces no output</li>\n<li>/dev/random - produces random numbers</li>\n</ul>\n\n<b>PATA Devices</b>\n\nSometimes in older systems you may see hard drives being referred to with an hd prefix: \n\n<ul>\n<li>/dev/hda - First hard disk</li>\n<li>/dev/hdd2 - Second partition on 4th hard disk</li>\n</ul>",
+  "exercise": "Write to the pseudo devices and see what happens, be careful not to write your disks to those devices!",
+  "quizQuestion": "What would commonly be the device name for the first partition on the second SCSI disk?",
+  "quizAnswer": "sdb1",
+  "slug": "devicenames"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "title": "Command Line",
+  "description": "Learn the fundamentals of the command line, navigating files, directories and more.",
+  "image": "/images/chapters/commandLine.png",
+  "slug": "commandline"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "join and split",
+  "lessonContent": "The join command allows you to join multiple files together by a common field: \n\nLet's say I had two files that I wanted to join together:\n<pre>file1.txt\n1 John\n2 Jane\n3 Mary\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n\n$ join file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\nSee how it joined together my files? They are joined together by the first field by default and the fields have to be identical, if they are not you can sort them, so in this case the files are joined via 1, 2, 3. \n\nHow would we join the following files? \n\n<pre>file1.txt\nJohn 1\nJane 2\nMary 3\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n</pre>\n\nTo join this file you need to specify which fields you are joining, in this case we want field 2 on file1.txt and field 1 on file2.txt, so the command would look like this:\n\n<pre>\n$ join -1 2 -2 1 file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\n-1 refers to file1.txt and -2 refers to file2.txt. Pretty neat. You can also split a file up into different files with the split command: \n\n<pre>$ split somefile</pre>\n\nThis will split it into different files, by default it will split them once they reach a 1000 line limit. The files are named x** by default.",
+  "exercise": "Join two files with different number of lines in each file, what happens?",
+  "quizQuestion": "What command would you use to join files named cat dog cow?",
+  "quizAnswer": "join cat dog cow",
+  "slug": "joinsplitcommand"
+}

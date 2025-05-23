@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Disk Usage",
+  "lessonContent": "There are a few tools you can used to see the utilization of your disks: \n\n<pre>\npete@icebox:~$ df -h\nFilesystem     1K-blocks    Used Available Use% Mounted on\n/dev/sda1       6.2G  2.3G  3.6G  40% /\n</pre>\n\nThe df command shows you the utilization of your currently mounted filesystems. The -h flag gives you a human readable format. You can see what the device is, and how much capacity is used and available. \n\nLet's say your disk is getting full and you want to know what files or directories are taking up that space, for that you can use the <b>du</b> command. \n\n<pre>$ du -h</pre>\n\nThis shows you the disk usage of the current directory you are in, you can take a peek at the root directory with <b>du -h /</b> but that can get a little cluttered.\n\nBoth of these commands are so similar in syntax it can be hard to remember which one to use, to check how much of your <b>disk</b> is <b>free</b> use df. To check <b>disk usage</b>, use du.",
+  "exercise": "Look at your disk usage and free space with both du and df.",
+  "quizQuestion": "What command is use to show how much space is free on your disk?",
+  "quizAnswer": "df",
+  "slug": "diskusage"
+}

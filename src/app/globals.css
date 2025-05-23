@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --code-bg: #f3f4f6;
+  --code-border: #e5e7eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fbfbfb;
+    --foreground: #ededed;
+    --code-bg: #efefef;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+pre,
+code {
+  font-family: var(--font-mono, monospace);
+  background-color: var(--code-bg);
+  color: inherit;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+}
+
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+}

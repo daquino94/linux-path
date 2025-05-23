@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "regex (Regular Expressions)",
+  "lessonContent": "Regular expressions are a powerful tool to do pattern based selection. It uses special notations similar to those we've encountered already such as the * wildcard. \n\nWe'll go through a couple of the most common regular expressions, these are almost universal with any programming language.\n\nWell use this phrase as our test string:\n<pre>\nsally sells seashells \nby the seashore\n</pre>\n\n<b>1. Beginning of a line with ^</b>\n\n<pre>\n<b>^</b>by\nwould match the line \"by the seashore\"\n</pre>\n\n<b>2. End of a line with $</b>\n\n<pre>\nseashore<b>$</b>\nwould match the line \"by the seashore\"\n</pre>\n\n<b>3. Matching any single character with .</b>\n\n<pre>\nb<b>.</b>\nwould match by\n</pre>\n\n<b>4. Bracket notation with [] and ()</b>\n\nThis can be a little tricky, brackets allow us to specify characters found within the bracket. \n\n<pre>\nd<b>[iou]</b>g\nwould match: dig, dog, dug\n</pre>\n\nThe previous anchor tag ^ when used in a bracket means anything except the characters within the bracket. \n\n<pre>\nd<b>[^i]</b>g\nwould match: dog and dug but not dig\n</pre>\n\nBrackets can also use ranges to increase the amount of characters you want to use. \n\n<pre>\nd<b>[a-c]</b>g\nwill match patterns like dag, dbg, and dcg\n</pre>\n\nBe careful though as brackets are case sensitive:\n\n<pre>\nd<b>[A-C]</b>g\nwill match dAg, dBg and dCg but not dag, dbg and dcg\n</pre>\n\nAnd those are some basic regular expressions.",
+  "exercise": "Try to combine regular expressions with grep and search through some files.\n\n<pre>\ngrep [regular expression here] [file]",
+  "quizQuestion": "What regular expression would you use to match a single character?",
+  "quizAnswer": ".",
+  "slug": "regularexpressionsregex"
+}

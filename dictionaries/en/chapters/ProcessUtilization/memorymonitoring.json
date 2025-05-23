@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Memory Monitoring",
+  "lessonContent": "In addition to CPU monitoring and I/O monitoring you can monitor your memory usage with <b>vmstat</b>\n\n<pre>\npete@icebox:~$ vmstat\nprocs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st\n 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0\n</pre>\n\nThe fields are as follows:\n\n<b>procs</b>\n<ul>\n<li>r - Number of processes for run time</li>\n<li>b - Number of processes in uninterruptible sleep</li>\n</ul>\n\n<b>memory</b>\n<ul>\n<li>swpd - Amount of virtual memory used</li>\n<li>free - Amount of free memory</li>\n<li>buff - Amount of memory used as buffers</li>\n<li>cache - Amount of memory used as cache</li>\n</ul>\n\n<b>swap</b>\n<ul>\n<li>si - Amount of memory swapped in from disk</li>\n<li>so - Amount of memory swapped out to disk</li>\n</ul>\n\n<b>io</b>\n<ul>\n<li>bi - Amount of blocks received in from a block device</li>\n<li>bo - Amount of blocks sent out to a block device</li>\n</ul>\n\n<b>system</b>\n<ul>\n<li>in - Number of interrupts per second</li>\n<li>cs - Number of context switches per second</li>\n</ul>\n\n<b>cpu</b>\n<ul>\n<li>us - Time spent in user time</li>\n<li>sy - Time spent in kernel time</li>\n<li>id - Time spent idle</li>\n<li>wa - Time spent waiting for IO</li>\n</ul>",
+  "exercise": "Look at your memory usage with vmstat.",
+  "quizQuestion": "What tool is used to view memory utilization?",
+  "quizAnswer": "vmstat",
+  "slug": "memorymonitoring"
+}

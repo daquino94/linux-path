@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Authentication Logging",
+  "lessonContent": "Authentication logging can be very useful to look at if you are having issues logging in. \n\n<b>/var/log/auth.log</b>\n\nThis contains system authorization logs, such as user login and the authentication method used. \n\nSample snippet:\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "Do some failed logins and then a successful one, look at your /var/log/auth.log and see what happened.",
+  "quizQuestion": "What log is used for user authentication?",
+  "quizAnswer": "auth.log",
+  "slug": "authenticationlogging"
+}

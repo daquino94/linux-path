@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "image": "/images/penguinLaptop.png",
+    "title": "Unlock the power of Linux",
+    "subtitle": "A new life for LinuxJourney, which has helped so many people take their first steps into the world of Linux."
+  },
+  "resources": {
+    "title": "Resources",
+    "hero": {
+      "image": "/images/penguinBook.png",
+      "title": "Learn Linux the Fun Way",
+      "subtitle": "Master the art of Linux-fu with interactive and free lessons."
+    },
+    "data": [
+      {
+        "image": "/images/link.png",
+        "title": "Official Ubuntu tutorial",
+        "description": "A step-by-step guide for beginners that explains the history of the terminal and basic commands",
+        "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+      },
+      {
+        "image": "/images/link.png",
+        "title": "DigitalOcean",
+        "description": "A clear overview of how the terminal works, how to run commands and navigate the filesystem.",
+        "href": "https://digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "How Linux Works",
+        "description": "One of most highly recommended books!",
+        "href": "https://www.amazon.com/gp/product/1593275676/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275676&linkCode=as2&tag=linuxjourne0c-20&linkId=a8c48da327d15530a7214f453d5a55da"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "UNIX and Linux System Administration Handbook",
+        "description": "Extremely comprehensive book for every SysAdmin.",
+        "href": "https://www.amazon.com/gp/product/0131480057/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0131480057&linkCode=as2&tag=linuxjourne0c-20&linkId=de7ed3d4e4bf2c29b637855e351cffd2"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Linux Command Bible",
+        "description": "Great comprehensive guide to shell scripting.",
+        "href": "https://www.amazon.com/gp/product/111898384X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=111898384X&linkCode=as2&tag=linuxjourne0c-20&linkId=41767d3a073f8d20ff0db23bb11a2ac7"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "The Linux Programming Interface: A Linux and UNIX System",
+        "description": "For serious Linux-users, great start into kernel programming.",
+        "href": "https://www.amazon.com/gp/product/1593272200/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593272200&linkCode=as2&tag=linuxjourne0c-20&linkId=5d63b12b27c4106a518799e42a9c379d"
+      }
+    ]
+  },
+  "chapterWrapper": {
+    "content": "Content",
+    "exerciseAndQuiz": "Exercise & quiz"
+  },
+  "navbar": {
+    "siteName": "Linux Path",
+    "home": "Home",
+    "lessons": "Lessons",
+    "resources": "Resources",
+    "language": "Language"
+  },
+  "exerciseBox": {
+    "exercise": "Exercise"
+  },
+  "quizBox": {
+    "quiz": "Quiz",
+    "checkAnswer": "Check Answer",
+    "showCorrectAnswer": "Show correct answer",
+    "correctAnswer": "Correct answer: ",
+    "placeholderAnswer": "Type your answer here"
+  }
+}

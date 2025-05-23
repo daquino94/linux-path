@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "Emacs Buffer Navigation",
+  "lessonContent": "To move around buffers (or files you're visiting) use the following commands:\n\n<b>Switch buffers</b>\n\n<pre>\nC-x b - switch buffer\nC-x right arrow - right-cycle through buffer\nC-x left arrow - left-cycle through buffer\n</pre>\n\n<b>Close the buffer</b>\n\n<pre>C-x k</pre>\n\n<b>Split the current buffer</b>\n\n<pre>C-x 2</pre>\n\nThis allows you see multiple buffers on one screen. To move between these buffers use: C-x o\n\n<b>Set a single buffer as the current screen</b>\n\n<pre>C-x 1</pre>\n\nIf you ever used a terminal multiplexer like screen and tmux, the buffer commands will feel very familiar.",
+  "exercise": "Play around with buffers.",
+  "quizQuestion": "How do you kill a buffer?",
+  "quizAnswer": "C-x k",
+  "slug": "emacsbuffernavigation"
+}

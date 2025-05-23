@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "User Management Tools",
+  "lessonContent": "Most enterprise environments are using management systems to manage users, accounts and passwords. However, on a single machine computer there are useful commands to run to manage users.\n\n<b>Adding Users</b>\n\nYou can use the adduser or the useradd command. The adduser command contains more helpful features such as making a home directory and more. There are configuration files for adding new users that can be customized depending on what you want to allocate to a default user. \n\n<pre>$ sudo useradd bob</pre>\n\nYou'll see that the above command creates an entry in /etc/passwd for bob, sets up default groups and adds an entry to the /etc/shadow file.\n\n<b>Removing Users</b>\n\nTo remove a user, you can use the userdel command.\n\n<pre>$ sudo userdel bob</pre>\n\nThis basically does its best to undo the file changes by useradd.\n\n<b>Changing Passwords</b>\n\n<pre>$ passwd bob</pre>\n\nThis will allow you to change the password of yourself or another user (if you are root).",
+  "exercise": "Create a new user then change their password and login as the new user.",
+  "quizQuestion": "What command is used to change a password?",
+  "quizAnswer": "passwd",
+  "slug": "usermanagementtools"
+}

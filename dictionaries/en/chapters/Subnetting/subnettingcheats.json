@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Subnetting Cheats",
+  "lessonContent": "I hate to have to add this section, in the real world you would most likely never have to do subnet math by hand, however if you were getting interviewed on this, you'll have to know how to convert to and from binary form for subnetting. Luckily there are some arithmetic cheats you can memorize. \n\nFirst memorize your base-2 calculations, just do it:\n\n<ul>\n<li>2^1 = 2</li>\n<li>2^2 = 4</li>\n<li>2^3 = 8</li>\n<li>2^4 = 16</li>\n<li>2^5 = 32</li>\n<li>2^6 = 64</li>\n<li>2^7 = 128</li>\n<li>2^8 = 256</li>\n<li>2^9 = 512</li>\n<li>2^10 = 1024</li>\n<li>2^11 = 2048</li>\n<li>2^12 = 4096</li>\n</ul>\n\n<b>Decimal to Binary Chart</b>\n\n<pre>\n1   1  1  1  1 1 1 1\n128 64 32 16 8 4 2 1\n</pre>\n\nThere are lots of reasons why the following chart looks the way it does, if you're curious how it works there are lots of resources online.\n\nOk, got these memorized? Let's do a quick decimal to binary conversion:\n\n<b>Convert 192.168.23.43 to Binary</b>\n\nRemember: 128 / 64 / 32 / 16 / 8 / 4 / 2 / 1\n\nLet's walk through converting the first octet to binary and you'll understand how the rest works.\n\n<ol>\n<li>Can you subtract 192 - 128? Yes, so the first bit is 1</li>\n<li>192 - 128 = 64, the next number in the chart is 64, can you subtract 64 - 64? Yes, so the second bit is 1</li>\n<li>We've run out of numbers to subtract from, so our binary form of 192 is 11000000</li>\n</ol>\n\n<b>Convert Binary 11000000 to Decimal</b>\n\nFor binary to decimal conversion you add up the numbers that have a 1, so:\n\n128 + 64 + 0 + 0 + 0 + 0 + 0 + 0 = 192!",
+  "exercise": "Look at your IP address and subnet mask and see how many hosts you can have on your subnet.",
+  "quizQuestion": "What is the binary conversion of 123?",
+  "quizAnswer": "1111011",
+  "slug": "subnettingcheats"
+}

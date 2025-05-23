@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "/etc/shadow",
+  "lessonContent": "The /etc/shadow file is used to store information about user authentication. It requires superuser read permissions. \n\n<pre>$ sudo cat /etc/shadow\n\nroot:MyEPTEa$6Nonsense:15000:0:99999:7:::\n</pre>\n\nYou'll notice that it looks very similar to the contents of /etc/passwd, however in the password field you'll see an encrypted password. The fields are separated by colons as followed:\n\n<ol>\n<li>Username</li>\n<li>Encrypted password</li>\n<li>Date of last password changed - expressed as the number of days since Jan 1, 1970. If there is a 0 that means the user should change their password the next time they login</li>\n<li>Minimum password age - Days that a user will have to wait before being able to change their password again</li>\n<li>Maximum password age - Maximum number of days before a user has to change their password</li>\n<li>Password warning period - Number of days before a password is going to expire</li>\n<li>Password inactivity period - Number of days after a password has expired to allow login with their password</li>\n<li>Account expiration date - date that user will not be able to login</li>\n<li>Reserved field for future use</li>\n</ol>\n\nIn most distributions today, user authentication doesn't rely on just the /etc/shadow file, there are other mechanisms in place such as PAM (Pluggable Authentication Modules) that replace authentication.",
+  "exercise": "Take a look at the /etc/shadow file",
+  "quizQuestion": "No questions move along!",
+  "quizAnswer": "",
+  "slug": "etcshadowfile"
+}

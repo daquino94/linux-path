@@ -1,0 +1,7 @@
+{
+  "id": 14,
+  "title": "Process Utilization",
+  "description": "Learn resource monitoring with top, load averages, iostat and more!",
+  "image": "/images/chapters/processUtilization.png",
+  "slug": "processutilization"
+}

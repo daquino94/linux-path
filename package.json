@@ -1,0 +1,64 @@
+{
+  "name": "linux-path",
+  "version": "0.1.0",
+  "description": "Unlock the power of Linux",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "createNewDictionaries": "node scripts/createNewDictionaries.js",
+    "releaseDictionaries:lang": "node scripts/mergejson.js --merge dictionaries/$npm_config_lang src/messages/$npm_config_lang.json",
+    "addNewLangToSite": "node scripts/addNewLangToSite.js",
+    "checkDictionaries": "node scripts/checkDictionaries.js"
+  },
+  "keywords": [
+    "linux-path",
+    "linux",
+    "next.js",
+    "tailwindcss",
+    "react"
+  ],
+  "author": "Daniel Aquino",
+  "license": "CC BY-SA 4.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daquino94/linux-path.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daquino94/linux-path/issues"
+  },
+  "homepage": "https://github.com/daquino94/linux-path#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.6.1",
+    "@vercel/analytics": "^1.5.0",
+    "dompurify": "^3.2.5",
+    "next": "15.3.2",
+    "next-intl": "^4.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

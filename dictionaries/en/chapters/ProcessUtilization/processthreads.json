@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Process Threads",
+  "lessonContent": "You may have heard of the terms single-threaded and multi-threaded processes. Threads are very similar to processes, in that they are used to execute the same program, they are often referred to as lightweight processes. If a process has one thread it is single-threaded and if a process has more than one thread it is multi-threaded. However, all processes have at least one thread. \n\nProcesses operate with their own isolated system resources, however threads can share these resources among each other easily, making it easier for them to communicate among each other and at times it is more efficient to have a multi-threaded application than a multi-process application.\n\nBasically, let's say you open up LibreOffice Writer and Chrome, each is it's own separate process. Now you go inside Writer and start editing text, when you edit the text it gets automatically saved. These two parallel \"lightweight processes\" of saving and editing are threads. \n\nTo view process threads, you can use: \n\n<pre>\npete@icebox:~$ ps m\n  PID TTY      STAT   TIME COMMAND\n 2207 pts/2    -      0:01 bash\n    - -        Ss     0:01 -\n 5252 pts/2    -      0:00 ps m\n    - -        R+     0:00 -\n</pre>\n\nThe processes are denoted with each PID and underneath the processes are their threads (denoted by a --). So you can see that the processes above are both single-threaded.",
+  "exercise": "Run the <b>ps m</b> command and see what processes you have running are multi-threaded.",
+  "quizQuestion": "True or false, all processes start out single-threaded.",
+  "quizAnswer": "True",
+  "slug": "processthreads"
+}

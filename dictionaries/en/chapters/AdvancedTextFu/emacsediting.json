@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Emacs Editing",
+  "lessonContent": "<b>Text Navigation</b>\n\n<pre>\nC-up arrow : move up one paragraph\nC-down arrow: move down one paragraph\nC-left arrow: move one word left\nC-right arrow: move one word right\nM-> : move to the end of the buffer\n</pre>\n\nWith text navigation, your regular text buttons work as they should, home, end, page up, page down and the arrow keys, etc.\n\n<b>Cutting and Pasting</b>\n\nTo cut (kill) or paste (yank) in Emacs you'll need to be able to select text first. To select text, move your cursor to where you want to cut or paste and hit <pre>C-space key</pre> then you can use the navigation keys to select the text you want. Now you can do the cut and paste like so:\n\n<pre>\nC-w : cut\nC-y : yank\n</pre>",
+  "exercise": "Play around with text navigation.",
+  "quizQuestion": "How do you move to the end of the buffer?",
+  "quizAnswer": "M->",
+  "slug": "emacsediting"
+}

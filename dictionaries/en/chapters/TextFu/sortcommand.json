@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "sort",
+  "lessonContent": "The sort command is useful for sorting lines.\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ sort file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\nYou can also do a reverse sort: \n\n<pre>$ sort -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\nAnd also sort via numerical value: \n\n<pre>$ sort -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+  "exercise": "The real power of sort comes with its ability to be combined with other commands, try the following command and see what happens?\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "What flag do you use to do a reverse sort?",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

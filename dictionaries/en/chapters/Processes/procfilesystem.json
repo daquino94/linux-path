@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "/proc filesystem",
+  "lessonContent": "Remember everything in Linux is a file, even processes. Process information is stored in a special filesystem known as the /proc filesystem.\n\n<pre>$ ls /proc</pre>\n\nYou should see multiple values in here, there are sub-directories for every PID. If you looked at a PID in the ps output, you would be able to find it in the /proc directory.\n\nGo ahead and enter one of the processes and look at that file:\n\n<pre>$ cat /proc/12345/status</pre>\n\nYou should see process state information and well as more detailed information. The /proc directory is how the kernel is views the system, so there is a lot more information here than what you would see in ps.",
+  "exercise": "No exercises for this lesson.",
+  "quizQuestion": "What filesystem stores process information?",
+  "quizAnswer": "/proc",
+  "slug": "procfilesystem"
+}

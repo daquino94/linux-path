@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Network Manager",
+  "lessonContent": "Of course if you wanted to have your system's networking up and running automatically there is something already in place for that. Most distributions utilize the NetworkManager daemon to configure their networks automatically. \n\nYou'll notice NetworkManager in the form of an applet somewhere on your desktop taskbar if you are using a GUI. As you can see it manages your network's hardware and connection information. For instance on startup, NetworkManager will gather network hardware information, search for connections to wireless, wired, etc. and then activates it.\n\nThere are also command-line tools to interact with NetworkManager:\n\n<b>nm-tool</b>\n\nnm-tools reports NetworkManager's state and it's devices\n\n<pre>\npete@icebox:/$ nm-tool\nNetworkManager Tool\n\nState: connected (global)\n\n- Device: eth0  [Wired connection 1] -------------------------------------------\n  Type:              Wired\n  Driver:            pcnet32\n  State:             connected\n  Default:           yes\n  HW Address:        12:3D:45:56:7D:CC\n\n  Capabilities:\n    Carrier Detect:  yes\n\n  Wired Properties\n    Carrier:         on\n\n  IPv4 Settings:\n    Address:         192.168.22.1\n    Prefix:          24 (255.255.255.0)\n    Gateway:         192.168.22.2\n\n    DNS:             192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nThe nmcli command allows you to control and modify NetworkManager, see the manpage for more details.",
+  "exercise": "No exercises for this lesson.",
+  "quizQuestion": "What is the command to view NetworkManager information?",
+  "quizAnswer": "nm-tool",
+  "slug": "networkmanager"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "lsusb, lspci, lssci",
+  "lessonContent": "Just like we would use the ls command to list files and directories, we can use similar tools that list information about devices.\n\n<b>Listing USB Devices</b>\n\n<pre>$ lsusb </pre>\n\n<b>Listing PCI Devices</b>\n\n<pre>$ lspci </pre>\n\n<b>Listing SCSI Devices</b>\n\n<pre>$ lsscsi </pre>",
+  "exercise": "Try out each of these commands and see the output you receive.",
+  "quizQuestion": "What command can be used to view usb devices?",
+  "quizAnswer": "lsusb",
+  "slug": "listingdevices"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "pipe and tee",
+  "lessonContent": "Let's get into some plumbing now, not really but kinda. Let's try a command: \n\n<pre>$ ls -la /etc</pre>\n\nYou should see a very long list of items, it's a little hard to read actually. Instead of redirecting this output to a file, wouldn't it be nice if we could just see the output in another command like less? Well we can!\n\n<pre>$ ls -la /etc | less </pre>\n\nThe pipe operator |, represented by a vertical bar, allows us to get the stdout of a command and make that the stdin to another process. In this case, we took the stdout of ls -la /etc and then <i>piped</i> it to the less command. The pipe command is extremely useful and we will continue to use it for all eternity. \n\nWell what if I wanted to write the output of my command to two different streams? That's possible with the tee command: \n\n<pre>$ ls | tee peanuts.txt</pre>\n\nYou should see the output of ls on your screen and if you open up the peanuts.txt file you should see the same information!",
+  "exercise": "Try the following commands: \n<pre>$ ls | tee peanuts.txt banan.txt</pre>",
+  "quizQuestion": "What key represents the pipe operator?",
+  "quizAnswer": "|",
+  "slug": "pipeteeredirect"
+}

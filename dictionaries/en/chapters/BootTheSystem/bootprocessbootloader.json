@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Boot Process: Bootloader",
+  "lessonContent": "The bootloader's main responsibilities are:\n\n<ul>\n<li>Booting into an operating system, it can also be used to boot to non-Linux operating systems</li>\n<li>Select a kernel to use</li>\n<li>Specify kernel parameters</li>\n</ul>\n\nThe most common bootloader for Linux is GRUB, you are most likely using it on your system. There are many other bootloaders that you can use such as LILO, efilinux, coreboot, SYSLINUX and more. However, we will just be working with GRUB as our bootloader. \n\nSo we know that the bootloader's main goal is to load up the kernel, but where does it find the kernel? To find it, we will need to look at our kernel parameters. The parameters can be found by going into the GRUB menu on startup using the 'e' key. If you don't have GRUB no worries, we'll go through the boot parameters that you will see:\n\n<ul>\n<li>initrd - Specifies the location of initial RAM disk (we'll talk more about this in the next lesson).\n<li>BOOT_IMAGE  - This is where the kernel image is located</li>\n<li>root - The location of the root filesystem, the kernel searches inside this location to find init. It is often represented by it's UUID or the device name such as /dev/sda1.</li>\n<li>ro - This parameter is pretty standard, it mounts the fileystem as read-only mode.</li>\n<li>quiet - This is added so that you don't see display messages that are going on in the background during boot.</li>\n<li>splash - This lets the splash screen be shown.</li>\n</ul>",
+  "exercise": "If you have GRUB as your bootloader, go into the GRUB menu with 'e' and take a look at the settings.",
+  "quizQuestion": "What kernel parameter makes it so you don't see bootup messages?",
+  "quizAnswer": "quiet",
+  "slug": "bootprocessbootloader"
+}

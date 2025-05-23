@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Vim Appending Text",
+  "lessonContent": "<p>Now you may have noticed if you tried to type something you wouldn't be able to. That's because you are in command mode. This can get pretty confusing especially if you just want to open a file and enter text. The command mode is used for when you enter commands like h,j,k.l etc. To insert text you'll need to enter insert mode first. </p><p></p><ul><br><li>i - insert text before the cursor</li><br><li>O - insert text on the previous line</li><br><li>o - insert text on the next line</li><br><li>a - append text after the cursor</li><br><li>A - append text at the end of the line</li><br></ul><p></p><p>Notice how when you type any of these insertion modes, you'll see that vim has entered insert mode at the bottom of the shell. To exit insert mode and go back to command mode, just hit the Esc key.</p>",
+  "exercise": "Play around with entering and exiting insertion mode.",
+  "quizQuestion": "What key is use to insert text before the cursor?",
+  "quizAnswer": "i",
+  "slug": "viminsertingappendingtext"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "rm (Remove)",
+  "lessonContent": "Now I think we have too many files, let’s remove some files. To remove files you can use the rm command. The rm (remove) command is used to delete files and directories. \n\n<pre>$ rm file1</pre>\n\nTake caution when using rm, there is no magical trash can that you can fish out removed files. Once they are gone, they are gone for good, so be careful. \n\nFortunately there are some safety measures put into place, so the average joe can’t just remove a bunch of important files. Write-protected files will prompt you for confirmation before deleting them. If a directory is write-protected it will also not be easily removed. \n\nNow if you don’t care about any of that, you can absolutely remove a bunch of files. \n\n<pre>$ rm -f file1</pre>\n\n-f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user (as long as you have the appropriate permissions).\n\n<pre>$ rm -i file</pre>\n\nAdding the -i flag like many of the other commands, will give you a prompt on whether you want to actually remove the files or directories. \n\n<pre>$ rm -r directory</pre>\n\nYou can’t just rm a directory by default, you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.\n\nYou can remove a directory with the rmdir command.\n\n<pre>$ rmdir directory</pre>",
+  "exercise": "<ol>\n<li>Create a file called -file (don't forget the dash!).</li>\n<li>Remove that file.</li>\n</ol>",
+  "quizQuestion": "How do you remove a file called myfile?",
+  "quizAnswer": "",
+  "slug": "removermcommand"
+}
