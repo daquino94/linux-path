@@ -66,7 +66,7 @@ const ChapterWrapper = ({ chapter }: { chapter: Chapter }) => {
   }
 
   return (
-    <div className="relative flex h-screen flex-col overflow-hidden bg-gray-100 text-black md:flex-row">
+    <div className="relative flex flex-col overflow-hidden bg-gray-100 text-black md:h-screen md:flex-row">
       {/* Mobile Header with menu button */}
       <div className="flex items-center justify-between bg-white p-4 shadow-sm md:hidden">
         <button
