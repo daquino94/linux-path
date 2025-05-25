@@ -1,7 +1,7 @@
 # Linux Path
 
 <p align="center">
-  <img src="public/images/penguinLaptop.png" width="300" alt="Linux Path Logo">
+  <img src="public/images/penguinCar.png" width="300" alt="Linux Path Logo">
 </p>
 
 <h2 align="center">A New Life for LinuxJourney</h2>
