@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Ubuntu, Ubuntu_Mono } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import '../globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
   description: 'Learn Linux step by step',
 }
 
-const geistSans = Ubuntu({
-  variable: '--font-ubuntu-sans',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
-  weight: '400',
+  display: 'swap',
 })
 
-const geistMono = Ubuntu_Mono({
-  variable: '--font-ubuntu-mono',
+const jetbrainsMono = JetBrains_Mono({
+  variable: '--font-jetbrains-mono',
   subsets: ['latin'],
-  weight: '700',
+  display: 'swap',
 })
 
 export default async function RootLayout({
@@ -42,7 +42,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Analytics />
         <NextIntlClientProvider locale={locale}>
