@@ -24,12 +24,17 @@ const ChapterWrapper = ({ chapter }: { chapter: Chapter }) => {
   const currentLessonData = chapter.lessons.find(
     (e) => e.slug === currentLesson,
   )
+  const currentLessonIndex = chapter.lessons.findIndex(
+    (lesson) => lesson.slug === currentLesson,
+  )
+  const nextLesson =
+    currentLessonIndex >= 0 && currentLessonIndex < chapter.lessons.length - 1
+      ? chapter.lessons[currentLessonIndex + 1]
+      : null
 
-  const lessonTitle = currentLessonData?.title || 'Lezione non trovata'
-  const lessonContent =
-    currentLessonData?.lessonContent || '<p>Contenuto non disponibile</p>'
-  const quizQuestion =
-    currentLessonData?.quizQuestion || 'Nessuna domanda disponibile'
+  const lessonTitle = currentLessonData?.title || ''
+  const lessonContent = currentLessonData?.lessonContent || ''
+  const quizQuestion = currentLessonData?.quizQuestion || ''
   const quizAnswer = currentLessonData?.quizAnswer || ''
   const exercise = currentLessonData?.exercise || ''
 
@@ -147,7 +152,11 @@ const ChapterWrapper = ({ chapter }: { chapter: Chapter }) => {
             <ExerciseBox>
               <div dangerouslySetInnerHTML={{ __html: sanitizedExercise }} />
             </ExerciseBox>
-            <QuizBox question={quizQuestion} correctAnswer={quizAnswer} />
+            <QuizBox
+              question={quizQuestion}
+              correctAnswer={quizAnswer}
+              nextLessonSlug={nextLesson?.slug}
+            />
           </div>
         </div>
       </div>
