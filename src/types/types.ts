@@ -10,6 +10,7 @@ export interface ExerciseBoxProps {
 export interface QuizBoxProps {
   question: string
   correctAnswer: string
+  nextLessonSlug?: string
 }
 
 export interface Dictionary {

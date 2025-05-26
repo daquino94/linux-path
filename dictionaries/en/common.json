@@ -69,6 +69,8 @@
     "checkAnswer": "Check Answer",
     "showCorrectAnswer": "Show correct answer",
     "correctAnswer": "Correct answer: ",
-    "placeholderAnswer": "Type your answer here"
+    "placeholderAnswer": "Type your answer here",
+    "nextLesson": "Next lesson",
+    "backToChapters": "Back to chapters"
   }
 }

@@ -1889,7 +1889,9 @@
       "correctAnswer": "Correct answer: ",
       "placeholderAnswer": "Type your answer here",
       "quiz": "Quiz",
-      "showCorrectAnswer": "Show correct answer"
+      "showCorrectAnswer": "Show correct answer",
+      "nextLesson": "Next lesson",
+      "backToChapters": "Back to chapters"
     },
     "resources": {
       "data": [
