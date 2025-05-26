@@ -11,10 +11,18 @@ const QuizBox: React.FC<QuizBoxProps> = ({ question, correctAnswer }) => {
   const t = useTranslations('common.quizBox')
 
   const handleCheck = (): void => {
+    if (userAnswer.trim() === '') return
+
     setIsAnswered(true)
     setIsCorrect(
       userAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase(),
     )
+  }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (e.key === 'Enter') {
+      handleCheck()
+    }
   }
 
   const handleShowAnswer = (): void => {
@@ -32,6 +40,7 @@ const QuizBox: React.FC<QuizBoxProps> = ({ question, correctAnswer }) => {
             type="text"
             value={userAnswer}
             onChange={(e) => setUserAnswer(e.target.value)}
+            onKeyUp={handleKeyPress}
             className="w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
             placeholder={t('placeholderAnswer')}
           />
