@@ -116,7 +116,7 @@
         {
           "exercise": "No exercises for this lesson.",
           "id": 2,
-          "lessonContent": "Everything in Linux is a file, as you journey deeper into Linux you’ll understand this, but for now just keep that in mind. Every file is organized in a hierarchical directory tree. The first directory in the filesystem is aptly named the root directory. The root directory has many folders and files which you can store more folders and files, etc. Here is an example of what the directory tree looks like: \n\n<pre>/\n|-- bin\n|   |-- file1\n|   |-- file2\n|-- etc\n|   |-- file3\n|   `-- directory1\n|       |-- file4\n|       `-- file5\n|-- home\n|-- var\n</pre>\n\nThe location of these files and directories are referred to as paths. If you had a folder named home with a folder inside of it named pete and another folder in that folder called Movies, that path would look like this: /home/pete/Movies, pretty simple huh?\n\nNavigation of the filesystem, much like real life is helpful if you know where you are and where you are going. To see where you are, you can use the pwd command, this command means “print working directory” and it just shows you which directory you are in, note the path stems from the root directory.\n\n<pre>$ pwd</pre>\n\nWhere are you? Where am I? Give it a try.",
+          "lessonContent": "Everything in Linux is a file. As you journey deeper into Linux you’ll understand this, but for now just keep it in mind. Every file is organized within a hierarchical directory tree. The first directory in the filesystem is aptly named the 'root directory'. The root directory has many folders and files, in which you can store more folders and files, and so on and so on. Here is an example of what the directory tree looks like: \n\n<pre>/\n|-- bin\n|   |-- file1\n|   |-- file2\n|-- etc\n|   |-- file3\n|   `-- directory1\n|       |-- file4\n|       `-- file5\n|-- home\n|-- var\n</pre>\n\nThe locations of these files and directories are referred to as 'paths'. If you had a folder named 'home' that had a folder inside it named 'pete' and another folder in that folder named 'Movies', that path would look like this: '/home/pete/Movies'. Pretty simple huh?\n\nNavigating the filesystem, much like navigating in real life, is easier if you know where you are and where you are going. To see where you are, you can use the 'pwd' command. This command means “print working directory” and it shows you which directory you are in. Note that the path stems from the root directory.\n\n<pre>$ pwd</pre>\n\nWhere are you? Where am I? Give it a try.",
           "quizAnswer": "pwd",
           "quizQuestion": "How do I find what directory you are currently in?",
           "slug": "printworkingdirectorypwdcommand",
@@ -1556,7 +1556,7 @@
         {
           "exercise": "Find your IP address with ifconfig.",
           "id": 1,
-          "lessonContent": "So we know that network hosts have a unique address they can be found at. These addresses are known as IP addresses. An IPv4 address looks something like this:\n\n<pre>204.23.124.23</pre>\n\nThis address actually contains two parts, the network portion that tells us which network it's on and the host portion that tells us which host on that network it is. For this course we will mostly be discussing IPv4 addresses, which are what you commonly will see when referring to IP addresses. \n\nAn IP address is separated into octets by the periods. So there are 4 octets in an IPv4 address. If you know a bit of computer science, an octet is 8 bits and 8 bits actually equal 1 byte, so we also refer to an IPv4 address as having 4 bytes. We use bits frequently when dealing with subnets and IP addresses.\n\nYou can view your IP address with the ifconfig -a command:\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\nAs you can see my IPv4 address is: 192.168.1.129",
+          "lessonContent": "Each network host has a unique address, and each unique address can be used to locate the host within the network. These unique addresses are known as 'IP addresses'. An IPv4 address looks something like this:\n\n<pre>204.23.124.23</pre>\n\nThis address actually contains two parts: the network portion (which identifies which network it's on), and the host portion (which identifies the host). For this course, we will mostly be discussing IPv4 addresses, which are what you commonly will see when referring to 'IP addresses'. \n\nAn IP address is separated into octets by the periods. There are 4 octets in an IPv4 address. If you know a bit of computer science, you'll know that an octet is 8 bits, and you'll know that 8 bits actually equal 1 byte. This means that an IPv4 address has 4 bytes. We use bits frequently when dealing with subnets and IP addresses.\n\nYou can view your IP address with the 'ifconfig -a' command:\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\nAs you can see my IPv4 address is: 192.168.1.129",
           "quizAnswer": "4",
           "quizQuestion": "How many bytes are in an IPv4 address?",
           "slug": "ipv4",
@@ -1885,13 +1885,13 @@
       "siteName": "Linux Path"
     },
     "quizBox": {
+      "backToChapters": "Back to chapters",
       "checkAnswer": "Check Answer",
       "correctAnswer": "Correct answer: ",
+      "nextLesson": "Next lesson",
       "placeholderAnswer": "Type your answer here",
       "quiz": "Quiz",
-      "showCorrectAnswer": "Show correct answer",
-      "nextLesson": "Next lesson",
-      "backToChapters": "Back to chapters"
+      "showCorrectAnswer": "Show correct answer"
     },
     "resources": {
       "data": [
