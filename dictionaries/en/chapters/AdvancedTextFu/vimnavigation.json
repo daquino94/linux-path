@@ -4,6 +4,6 @@
   "lessonContent": "Now you may notice, the mouse is nowhere is use here. To navigate a text document in vim, use the following keys: \n\n<ul>\n<li>h or the left arrow - will move you left one character</li>\n<li>j or the up arrow - will move you up one line</li>\n<li>k or the down arrow - will move you down one line</li>\n<li>l or the right arrow - will move you right one character</li>\n</ul>",
   "exercise": "No exercises for this lesson.",
   "quizQuestion": "What letter is used to move down?",
-  "quizAnswer": "k",
+  "quizAnswer": "j",
   "slug": "vimnavigation"
 }
