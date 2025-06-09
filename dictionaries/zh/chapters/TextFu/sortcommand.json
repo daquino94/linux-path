@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "排序",
+  "lessonContent": "sort 命令对于排序行很有用。\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ sort file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\n您还可以进行逆向排序：\n\n<pre>$ sort -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\n还可以按数值排序：\n\n<pre>$ sort -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+  "exercise": "sort 的真正威力在于其与其他命令结合的能力，尝试以下命令，看看会发生什么？\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "进行逆向排序时使用哪个标志？",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

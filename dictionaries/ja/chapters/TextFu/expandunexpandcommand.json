@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "expand and unexpand",
+  "lessonContent": "cutコマンドのレッスンでは、タブが含まれているsample.txtファイルを使用しました。通常、TABは明らかな違いを示すはずですが、一部のテキストファイルではそれがうまく表示されないことがあります。テキストファイルにTABが含まれていると、望ましいスペーシングにならないことがあります。TABをスペースに変換するには、expandコマンドを使用します。\n\n<pre>$ expand sample.txt</pre>\n\n上記のコマンドは、各TABがスペースのグループに変換された出力を表示します。この出力をファイルに保存するには、以下のように出力リダイレクションを使用します。\n\n<pre>$ expand sample.txt > result.txt</pre>\n\nexpandとは逆に、各スペースのグループをTABに変換するには、unexpandコマンドを使用します。\n\n<pre>$ unexpand -a result.txt</pre>",
+  "exercise": "ファイル入力なしでexpandとだけ入力した場合、何が起こりますか？",
+  "quizQuestion": "TABをスペースに変換するために使用されるコマンドは何ですか？",
+  "quizAnswer": "expand",
+  "slug": "expandunexpandcommand"
+}

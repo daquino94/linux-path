@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "rpm and dpkg",
+  "lessonContent": "尽管本课程的大部分内容都是关于软件包管理系统（软件包管理的“蝙蝠侠”），但我们不应忘记“罗宾”。虽然它们非常有用且可靠，但它们不带有那辆酷炫的蝙蝠车和实用的蝙蝠腰带。\n\n就像 .exe 是一个单独的可执行文件一样，.deb 和 .rpm 也是如此。如果您使用软件包存储库，通常不会看到这些文件，但如果您直接下载软件包，您很可能会得到这些流行格式的文件。显然，它们分别适用于它们的发行版，.deb 适用于基于 Debian 的系统，.rpm 适用于基于 Red Hat 的系统。\n\n要安装这些直接软件包，您可以使用软件包管理命令：rpm 和 dpkg。这些工具用于安装软件包文件，但它们不会安装软件包的依赖项，因此如果您的软件包有 10 个依赖项，您必须单独安装这些软件包，然后安装它们的依赖项，以此类推。正如您所看到的，这正是导致我们后来将要讨论的完整管理系统的原因之一。\n\n请记住，您将无数次需要使用这些工具之一来安装、查询或验证软件包，所以请记住这些命令。\n\n<b>安装软件包</b>\n\n<pre>\nDebian: $ dpkg -i some_deb_package.deb\nRPM: $ rpm -i some_rpm_package.rpm\n</pre>\n\n<b>i</b> 代表安装。您也可以使用更长的格式 --install。\n\n<b>卸载软件包</b>\n\n<pre>\nDebian: $ dpkg -r some_deb_package.deb\nRPM: $ rpm -e some_rpm_package.rpm\n</pre>\n\nDebian: <b>r</b> 代表移除\nRPM: <b>e</b> 代表擦除\n\n<b>列出已安装的软件包</b>\n\n<pre>\nDebian: $ dpkg -l\nRPM: $ rpm -qa\n</pre>\n\nDebian: <b>l</b> 代表列出\nRPM: <b>q</b> 代表查询，<b>a</b> 代表全部",
+  "exercise": "找一个您想要在系统上安装的程序，比如 Google Chrome，并使用其中一条命令来安装它。",
+  "quizQuestion": "什么是 .deb 文件的软件包管理工具？",
+  "quizAnswer": "dpkg",
+  "slug": "packageinstalltools"
+}

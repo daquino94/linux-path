@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "交换",
+  "lessonContent": "在我们之前的示例中，我向您展示了如何查看您的分区表，让我们重新访问该示例，更具体地说是这一行：\n\n<pre>\nNumber  Start   End     Size    Type      File system     Flags\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n</pre>\n\n这个交换分区是什么？嗯，交换是我们用来为系统分配虚拟内存的。如果内存不足，系统会使用该分区将空闲进程的内存部分与磁盘进行“交换”，这样您就不会因为内存不足而陷入困境。\n\n<b>使用分区作为交换空间</b>\n\n假设我们想要将我们的 /dev/sdb2 分区用作交换空间。\n\n<ol>\n<li>首先确保分区上没有任何内容</li>\n<li>运行：mkswap /dev/sdb2 来初始化交换区域</li>\n<li>运行：swapon /dev/sdb2 这将启用交换设备</li>\n<li>如果要使交换分区在启动时保持存在，您需要在 /etc/fstab 文件中添加一个条目。sw 是您将使用的文件系统类型。</li>\n<li>要删除交换：swapoff /dev/sdb2</li>\n</ol>\n\n通常，您应该分配大约两倍于您的内存大小的交换空间。但是，如今的现代系统通常已经非常强大并且具有足够的RAM。",
+  "exercise": "为 USB 驱动器中的空闲空间分区以用作交换空间。",
+  "quizQuestion": "在设备上启用交换空间的命令是什么？",
+  "quizAnswer": "swapon",
+  "slug": "交换空间"
+}

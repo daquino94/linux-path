@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "regex (Reguläre Ausdrücke)",
+  "lessonContent": "Reguläre Ausdrücke sind ein leistungsstarkes Werkzeug zur musterbasierten Auswahl. Es verwendet spezielle Notationen, ähnlich denen, die wir bereits kennengelernt haben, wie das *-Platzhalterzeichen. \n\nWir werden einige der häufigsten regulären Ausdrücke durchgehen, die fast universell in jeder Programmiersprache sind.\n\nWir verwenden diesen Satz als unseren Teststring:\n<pre>\nsally sells seashells \nby the seashore\n</pre>\n\n<b>1. Anfang einer Zeile mit ^</b>\n\n<pre>\n<b>^</b>by\nwürde die Zeile \"by the seashore\" passen\n</pre>\n\n<b>2. Ende einer Zeile mit $</b>\n\n<pre>\nseashore<b>$</b>\nwürde die Zeile \"by the seashore\" passen\n</pre>\n\n<b>3. Übereinstimmung mit einem einzelnen Zeichen mit .</b>\n\n<pre>\nb<b>.</b>\nwürde zu by passen\n</pre>\n\n<b>4. Klammernotation mit [] und ()</b>\n\nDas kann etwas knifflig sein, Klammern ermöglichen es uns, Zeichen innerhalb der Klammer anzugeben. \n\n<pre>\nd<b>[iou]</b>g\nwürde passen: dig, dog, dug\n</pre>\n\nDas vorherige Ankerzeichen ^ in einer Klammer bedeutet, dass alles außer den Zeichen innerhalb der Klammer passt. \n\n<pre>\nd<b>[^i]</b>g\nwürde passen: dog und dug, aber nicht dig\n</pre>\n\nKlammern können auch Bereiche verwenden, um die Anzahl der zu verwendenden Zeichen zu erhöhen. \n\n<pre>\nd<b>[a-c]</b>g\npasst zu Mustern wie dag, dbg und dcg\n</pre>\n\nSeien Sie jedoch vorsichtig, da Klammern Groß- und Kleinschreibung beachten:\n\n<pre>\nd<b>[A-C]</b>g\npasst zu dAg, dBg und dCg, aber nicht zu dag, dbg und dcg\n</pre>\n\nUnd das sind einige grundlegende reguläre Ausdrücke.",
+  "exercise": "Versuchen Sie, reguläre Ausdrücke mit grep zu kombinieren und durch einige Dateien zu suchen.\n\n<pre>\ngrep [regulärer Ausdruck hier] [Datei]",
+  "quizQuestion": "Welchen regulären Ausdruck würden Sie verwenden, um ein einzelnes Zeichen abzugleichen?",
+  "quizAnswer": ".",
+  "slug": "regularexpressionsregex"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Distribution de logiciels",
+  "lessonContent": "Votre système est composé de nombreux paquets tels que des navigateurs Internet, des éditeurs de texte, des lecteurs multimédias, etc. Ces paquets sont gérés via des gestionnaires de paquets, qui installent et maintiennent les logiciels sur votre système. Tous les paquets ne sont pas installés via des gestionnaires de paquets, cependant, vous pouvez souvent installer des paquets directement à partir de leur code source (nous y reviendrons bientôt). Cependant, la plupart du temps, vous utiliserez un gestionnaire de paquets pour installer des logiciels, la variété la plus courante de paquets étant Debian (.deb) et Red Hat (.rpm). Les paquets de style Debian sont utilisés dans des distributions telles que Debian, Ubuntu, LinuxMint, etc. Les paquets de style Red Hat sont présents dans Red Hat Enterprise Linux, Fedora, CentOS, etc.\n\nQuels sont les paquets? Vous pouvez les connaître sous le nom de Chrome, Photoshop, etc., mais ce qu'ils sont vraiment, ce sont simplement beaucoup et beaucoup de fichiers qui ont été compilés en un seul. Les personnes (ou parfois une seule personne) qui écrivent ce logiciel sont appelées <b>fournisseurs amont</b>, ils compilent leur code et rédigent comment l'installer. Ces fournisseurs amont travaillent à la sortie de nouveaux logiciels et à la mise à jour des logiciels existants. Lorsqu'ils sont prêts à le publier dans le monde, ils envoient leur paquet aux <b>mainteneurs de paquets</b>, qui se chargent de mettre ce logiciel entre les mains des utilisateurs. Ces mainteneurs de paquets examinent, gèrent et distribuent ce logiciel sous forme de paquets.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Aucune question, passez à la suite !",
+  "quizAnswer": "",
+  "slug": "softwaredistribution"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Dateisysteme erstellen",
+  "lessonContent": "Jetzt, da Sie tatsächlich eine Festplatte partitioniert haben, erstellen wir ein Dateisystem!\n\n<pre>$ sudo mkfs -t ext4 /dev/sdb2</pre>\n\nSo einfach ist das! Das <b>mkfs</b> (Dateisystem erstellen) Tool ermöglicht es uns, den Dateisystemtyp und den Speicherort anzugeben. Sie sollten nur ein Dateisystem auf einer neu partitionierten Festplatte erstellen oder wenn Sie eine alte neu partitionieren. Wenn Sie versuchen, ein Dateisystem über einem bestehenden zu erstellen, wird Ihr Dateisystem höchstwahrscheinlich in einem beschädigten Zustand bleiben.",
+  "exercise": "Erstellen Sie ein ext4-Dateisystem auf dem USB-Laufwerk.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um ein Dateisystem zu erstellen?",
+  "quizAnswer": "mkfs",
+  "slug": "creatingfilesystems"
+}

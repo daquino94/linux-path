@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Elegir una distribución de Linux",
+  "lessonContent": "En la lección anterior, aprendimos sobre el kernel de Linux que alimenta millones de dispositivos al día. Antes de seguir adelante, hay algo que debemos aclarar, el término Linux es en realidad un error, ya que se refiere al kernel de Linux. Sin embargo, muchas distribuciones utilizan el kernel de Linux y por lo tanto son comúnmente conocidas como sistemas operativos Linux. \n\nUn sistema Linux se divide en tres partes principales:\n\n<ul>\n<li>Hardware - Esto incluye todo el hardware en el que se ejecuta su sistema, así como la memoria, CPU, discos, etc.</li>\n<li>Kernel de Linux - Como discutimos anteriormente, el kernel es el núcleo del sistema operativo. Administra el hardware y le indica cómo interactuar con el sistema.</li>\n<li>Espacio de usuario - Aquí es donde los usuarios como usted interactuarán directamente con el sistema.</li>\n</ul>\n\nPor lo tanto, el primer paso que debemos tomar es instalar Linux en su máquina. Tiene muchas opciones para elegir y este curso le ayudará a informarse y comenzar a elegir una distribución de Linux. \n\nHay muchas distribuciones de Linux para elegir, solo revisaremos las opciones más populares.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¡Sin preguntas, pasa adelante!",
+  "quizAnswer": "",
+  "slug": "elegirunadistribuciondelinux"
+}

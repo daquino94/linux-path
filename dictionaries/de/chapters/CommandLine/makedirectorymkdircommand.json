@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "mkdir (Verzeichnis erstellen)",
+  "lessonContent": "Wir werden einige Verzeichnisse benötigen, um all diese Dateien zu speichern, an denen wir gearbeitet haben. Der mkdir-Befehl (Make Directory) ist dafür nützlich, er erstellt ein Verzeichnis, wenn es noch nicht existiert. Sie können sogar mehrere Verzeichnisse gleichzeitig erstellen.\n\n<pre>$ mkdir Bücher Gemälde</pre>\n\nSie können auch Unterverzeichnisse gleichzeitig mit dem -p (Eltern-Flag) erstellen.\n\n<pre>$ mkdir -p Bücher/hemmingway/favoriten</pre>",
+  "exercise": "Erstellen Sie ein paar Verzeichnisse und verschieben Sie einige Dateien in dieses Verzeichnis.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um ein Verzeichnis zu erstellen?",
+  "quizAnswer": "mkdir",
+  "slug": "verzeichniserstellenmkdirbefehl"
+}

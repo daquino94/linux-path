@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Allgemeines Protokollieren",
+  "lessonContent": "Es gibt viele Protokolldateien, die Sie auf Ihrem System anzeigen können, viele wichtige finden Sie unter /var/log. Wir werden sie nicht alle durchgehen, aber wir werden ein paar der wichtigsten besprechen. \n\nEs gibt zwei allgemeine Protokolldateien, die Sie anzeigen können, um einen Einblick in das zu bekommen, was Ihr System tut:\n\n<b>/var/log/messages</b>\n\nDieses Protokoll enthält alle nicht-kritischen und nicht-Debug-Nachrichten, einschließlich Nachrichten, die während des Bootvorgangs (dmesg), Authentifizierung, Cron, Daemon usw. protokolliert wurden. Sehr nützlich, um einen Einblick in das Verhalten Ihrer Maschine zu bekommen. \n\n<b>/var/log/syslog</b>\n\nDies protokolliert alles außer Authentifizierungsnachrichten, es ist äußerst nützlich zum Debuggen von Fehlern auf Ihrer Maschine. \n\nDiese beiden Protokolle sollten ausreichen, um Probleme mit Ihrem System zu beheben. Wenn Sie jedoch nur einen bestimmten Protokollkomponenten anzeigen möchten, gibt es auch separate Protokolle dafür.",
+  "exercise": "Schauen Sie sich Ihre /var/log/messages- und /var/log/syslog-Dateien an und sehen Sie, worin die Unterschiede bestehen.",
+  "quizQuestion": "Welche Protokolldatei protokolliert alles außer Authentifizierungsnachrichten?",
+  "quizAnswer": "syslog",
+  "slug": "generallogging"
+}

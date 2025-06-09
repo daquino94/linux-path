@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Vim (Vi Mejorado)",
+  "lessonContent": "Vim significa vi (Mejorado) tal como su nombre lo indica, es una versión mejorada del comando del editor de texto vi.\n\nEs muy ligero, abrir y editar un archivo con vim es rápido y fácil. Además, casi siempre está disponible, si inicias una distribución de Linux al azar, es probable que vim esté instalado por defecto. \n\nPara iniciar vim solo escribe: <pre>vim</pre>",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¡No hay preguntas, sigue adelante!",
+  "quizAnswer": "",
+  "slug": "editorvimtexto"
+}

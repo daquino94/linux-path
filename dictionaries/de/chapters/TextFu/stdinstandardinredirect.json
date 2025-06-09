@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "stdin (Standard In)",
+  "lessonContent": "In unserer vorherigen Lektion haben wir gelernt, dass wir verschiedene stdout-Streams verwenden können, wie z.B. eine Datei oder den Bildschirm. Nun gibt es auch verschiedene Standard-Input (stdin)-Streams, die wir ebenfalls verwenden können. Wir wissen, dass wir stdin von Geräten wie der Tastatur haben, aber wir können auch Dateien, Ausgaben von anderen Prozessen und das Terminal verwenden, schauen wir uns ein Beispiel an. \n\nLassen Sie uns die Datei peanuts.txt aus der vorherigen Lektion für dieses Beispiel verwenden, erinnern Sie sich, sie enthielt den Text Hallo Welt. \n\n<pre>$ cat <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt </pre>\n\nGenau wie wir <b>&gt;</b> für die stdout-Umleitung hatten, können wir <b>&lt;</b> für die stdin-Umleitung verwenden. \n\nNormalerweise senden Sie in dem cat-Befehl eine Datei an ihn und diese Datei wird dann zu stdin, in diesem Fall haben wir peanuts.txt umgeleitet, um unser stdin zu sein. Dann wird die Ausgabe von cat peanuts.txt, die Hallo Welt sein würde, in eine andere Datei namens banana.txt umgeleitet.",
+  "exercise": "Probieren Sie ein paar Befehle aus:\n<pre>\n$ echo <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ ls <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ pwd <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n</pre>",
+  "quizQuestion": "Welchen Umleiter verwenden Sie, um stdin umzuleiten?",
+  "quizAnswer": "<",
+  "slug": "stdinstandardinredirect"
+}

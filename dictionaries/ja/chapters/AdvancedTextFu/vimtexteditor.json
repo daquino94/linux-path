@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Vim (Vi Improved)",
+  "lessonContent": "Vimはvi（Improved）の略で、その名前の通り、viテキストエディタコマンドの改良版を表しています。\n\n非常に軽量で、Vimを使用してファイルを開いたり編集したりするのは迅速で簡単です。ほとんどの場合、ランダムなLinuxディストリビューションを起動した場合、vimがデフォルトでインストールされている可能性が高いです。\n\nVimを起動するには、単に次のように入力します：<pre>vim</pre>",
+  "exercise": "このレッスンには演習問題はありません。",
+  "quizQuestion": "質問はありません、次に進んでください！",
+  "quizAnswer": "",
+  "slug": "vimtexteditor"
+}

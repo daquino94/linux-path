@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "用户管理工具",
+  "lessonContent": "大多数企业环境都在使用管理系统来管理用户、账户和密码。但是，在单台计算机上有一些有用的命令可以用来管理用户。\n\n<b>添加用户</b>\n\n您可以使用adduser或useradd命令。adduser命令包含更多有用的功能，比如创建一个主目录等。有用于添加新用户的配置文件，可以根据您希望为默认用户分配的内容进行自定义。\n\n<pre>$ sudo useradd bob</pre>\n\n您会发现上述命令在/etc/passwd中为bob创建了一个条目，设置了默认组，并在/etc/shadow文件中添加了一个条目。\n\n<b>删除用户</b>\n\n要删除用户，您可以使用userdel命令。\n\n<pre>$ sudo userdel bob</pre>\n\n这基本上会尽力撤消useradd所做的文件更改。\n\n<b>更改密码</b>\n\n<pre>$ passwd bob</pre>\n\n这将允许您更改自己或其他用户的密码（如果您是root用户）。",
+  "exercise": "创建一个新用户，然后更改他们的密码并登录为新用户。",
+  "quizQuestion": "用于更改密码的命令是什么？",
+  "quizAnswer": "passwd",
+  "slug": "usermanagementtools"
+}

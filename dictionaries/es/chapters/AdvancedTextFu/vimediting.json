@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Edición en Vim",
+  "lessonContent": "Ahora que tenemos un par de líneas escritas, editémoslas un poco más y eliminemos algo de desorden.<br><p></p><ul><br><li>x - se utiliza para cortar el texto seleccionado y también para eliminar caracteres</li><br><li>dd - se utiliza para eliminar la línea actual</li><br><li>y - copiar lo que sea seleccionado</li><br><li>yy - copiar la línea actual</li><br><li>p - pegar el texto copiado antes del cursor</li><br></ul><p></p>",
+  "exercise": "Sé que esta lección añadió algunas rarezas, abre un editor de texto y juega con estos comandos.",
+  "quizQuestion": "¿Qué caracter se utiliza para eliminar una línea entera?",
+  "quizAnswer": "dd",
+  "slug": "edicionenvim"
+}

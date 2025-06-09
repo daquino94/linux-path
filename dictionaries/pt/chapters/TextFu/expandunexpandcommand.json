@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "expandir e desexpandir",
+  "lessonContent": "Em nossa lição sobre o comando cut, tínhamos nosso arquivo sample.txt que continha uma guia. Normalmente, as guias geralmente mostram uma diferença perceptível, mas alguns arquivos de texto não mostram isso de forma suficiente. Ter guias em um arquivo de texto pode não ser o espaçamento desejado. Para alterar suas guias para espaços, use o comando expandir. \n\n<pre>$ expandir sample.txt</pre>\n\nO comando acima imprimirá a saída com cada guia convertida em um grupo de espaços. Para salvar esta saída em um arquivo, use a redireção de saída como abaixo. \n\n<pre>$ expandir sample.txt > result.txt</pre>\n\nAo contrário do expandir, podemos converter de volta cada grupo de espaços para uma guia com o comando desexpandir: \n\n<pre>$ desexpandir -a result.txt</pre>",
+  "exercise": "O que acontece se você digitar apenas expandir sem entrada de arquivo?",
+  "quizQuestion": "Qual comando é usado para converter guias em espaços?",
+  "quizAnswer": "expandir",
+  "slug": "comandoexpandirdesexpandir"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Samba",
+  "lessonContent": "コンピューティングの初期に、Windows マシンと Linux マシンがファイルを共有する必要性が生じ、その結果 Server Message Block (SMB) プロトコルが誕生しました。SMB は Windows オペレーティングシステム間（Mac も SMB でファイル共有しています）でファイルを共有するために使用され、後に Common Internet File System (CIFS) プロトコルとしてクリーンアップおよび最適化されました。\n\nSamba とは、Linux 上で CIFS を操作するためのユーティリティのことです。ファイル共有に加えて、プリンターなどのリソースを共有することもできます。\n\n<b>Samba を使用してネットワーク共有を作成する</b>\n\nWindows マシンがアクセスできるネットワーク共有を作成する基本的な手順を見ていきましょう。\n\n<b>Samba をインストールする</b>\n\n<pre>$ sudo apt update\n$ sudo apt install samba</pre>\n\n<b>smb.conf を設定する</b>\n\nSamba の構成ファイルは /etc/samba/smb.conf にあります。このファイルには、共有するディレクトリ、アクセス許可、その他のオプションなどが記述されている必要があります。デフォルトの smb.conf には、すでに多くのコメント付きコードが含まれており、これらを使用して独自の構成を記述する例として利用できます。\n\n<pre>$ sudo vi /etc/samba/smb.conf</pre>\n\n<b>Samba のパスワードを設定する</b>\n\n<pre>$ sudo smbpasswd -a [ユーザー名]</pre>\n\n<b>共有ディレクトリを作成する</b>\n\n<pre>$ mkdir /my/directory/to/share</pre>\n\n<b>Samba サービスを再起動する</b>\n\n<pre>$ sudo service smbd restart</pre>\n\n<b>Windows を介した Samba 共有へのアクセス</b>\n\nWindows では、実行プロンプトにネットワーク接続を入力するだけです: \\\\HOST\\共有名。\n\n<b>Linux を介した Samba/Windows 共有へのアクセス</b>\n\n<pre>$ smbclient //HOST/directory -U user</pre>\n\nSamba パッケージには、Windows または Samba サーバーにアクセスするために使用できる <b>smbclient</b> というコマンドラインツールが含まれています。共有に接続したら、ファイルを移動したり、転送したりすることができます。\n\n<b>システムに Samba 共有をアタッチする</b>\n\n1 つずつファイルを転送する代わりに、ネットワーク共有をシステムにマウントすることができます。\n\n<pre>$ sudo mount -t cifs servername:directory mountpount -o user=username,pass=password</pre>",
+  "exercise": "Samba 共有を設定し、まだ設定していない場合は smb.conf を開いて構成ファイル内のオプションを把握してください。",
+  "quizQuestion": "Windows と Linux 間のファイル転送に使用されている最新のプロトコルは何ですか？",
+  "quizAnswer": "CIFS",
+  "slug": "samba"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "/etc/group",
+  "lessonContent": "另一个用于用户管理的文件是 /etc/group 文件。该文件允许具有不同权限的不同组。\n\n<pre>$ cat /etc/group\n\nroot:*:0:pete\n</pre>\n\n与 /etc/password 字段非常相似，/etc/group 字段如下：\n\n<ol>\n<li>组名</li>\n<li>组密码 - 无需设置组密码，使用像 sudo 这样的提升特权是标准的。默认值将放置一个 \"*\"。</li>\n<li>组ID（GID）</li>\n<li>用户列表 - 您可以手动指定您想要放入特定组中的用户</li>\n</ol>",
+  "exercise": "运行命令 <b>groups</b>。你看到了什么？",
+  "quizQuestion": "root 的 GID 是多少？",
+  "quizAnswer": "0",
+  "slug": "etcgroupfile"
+}

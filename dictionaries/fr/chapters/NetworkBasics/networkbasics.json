@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Bases du réseau",
+  "lessonContent": "Jetons un coup d'œil à un réseau domestique typique, vous avez quelques composants différents. \n\n<ul>\n<li>FAI - Votre fournisseur de services Internet, la société à laquelle vous payez pour obtenir Internet à votre domicile.</li>\n<li>Routeur - Le routeur permet à chaque machine de votre réseau de se connecter à Internet. Dans la plupart des routeurs modernes, vous pouvez vous connecter via le sans fil ou un câble Ethernet.</li>\n<li>WAN - Réseau étendu, c'est ce que nous appelons le réseau qui englobe tout entre votre routeur et un réseau plus large tel qu'Internet.</li>\n<li>WLAN - Réseau local sans fil, c'est le réseau entre votre routeur et tous les appareils sans fil que vous pourriez avoir comme des ordinateurs portables.</li>\n<li>LAN - Réseau local, c'est le réseau entre votre routeur et tous les appareils câblés tels que les PC de bureau.</li>\n<li>Hôtes - Chaque machine sur un réseau est appelée un hôte.</li>\n</ul>\n\nLes données et les informations qui sont transmises à travers les réseaux sont appelées des paquets et à la fin de la section Nomade du Réseau, vous comprendrez en détail comment un paquet se déplace vers et depuis les hôtes.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Comment appelle-t-on le réseau local?",
+  "quizAnswer": "LAN",
+  "slug": "basesreseau"
+}

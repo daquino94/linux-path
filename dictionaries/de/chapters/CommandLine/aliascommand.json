@@ -1,0 +1,9 @@
+{
+  "id": 18,
+  "title": "alias",
+  "lessonContent": "Manchmal kann das Tippen von Befehlen wirklich repetitiv werden, oder wenn Sie einen langen Befehl viele Male eingeben müssen, ist es am besten, ein Alias zu haben, das Sie dafür verwenden können. Um ein Alias für einen Befehl zu erstellen, geben Sie einfach einen Aliasnamen an und setzen ihn auf den Befehl. \n\n<pre>$ alias foobar='ls -la'</pre>\n\nJetzt können Sie anstelle von ls -la foobar eingeben und der Befehl wird ausgeführt, ziemlich coole Sache. Beachten Sie, dass dieser Befehl Ihr Alias nach dem Neustart nicht speichert, daher müssen Sie ein dauerhaftes Alias in hinzufügen:\n\n<pre>~/.bashrc</pre>\n\noder ähnlichen Dateien, wenn Sie möchten, dass es nach dem Neustart bestehen bleibt.\n\nSie können Aliase mit dem Befehl unalias entfernen: \n\n<pre>$ unalias foobar</pre>",
+  "exercise": "Erstellen Sie ein paar Aliase und entfernen Sie sie dann.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um ein Alias zu erstellen?",
+  "quizAnswer": "alias",
+  "slug": "aliascommand"
+}

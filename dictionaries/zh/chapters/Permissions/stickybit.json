@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "粘滞位",
+  "lessonContent": "我想谈谈的最后一个特殊权限位是粘滞位。\n\n这个权限位“粘住了一个文件/目录”，这意味着只有所有者或root用户才能删除或修改文件。这对于共享目录非常有用。看看下面的示例：\n\n<pre>$ ls -ld /tmp\ndrwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp\n</pre>\n\n你会在这里看到一个特殊的权限位 <b>t</b>，这意味着每个人都可以在 /tmp 目录中添加文件、写文件、修改文件，但只有 root 可以删除 /tmp 目录。\n\n<b>修改粘滞位</b>\n\n<pre>$ sudo chmod +t mydir\n\n$ sudo chmod 1755 mydir</pre>\n\n粘滞位的数字表示是 <b>1</b>",
+  "exercise": "你认为还有哪些文件和目录启用了粘滞位？",
+  "quizQuestion": "什么符号代表粘滞位？",
+  "quizAnswer": "t",
+  "slug": "stickybit"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Dépendances des packages",
+  "lessonContent": "Les packages fonctionnent très rarement seuls, ils sont le plus souvent accompagnés de dépendances pour les aider à fonctionner. Par exemple, disons que nous avons un groupe de restaurants, ces restaurants proposent tous une cuisine différente, cependant ils se procurent tous leurs ingrédients auprès de la même ferme. Leur nourriture dépend des approvisionnements de la ferme, si la ferme arrêtait soudainement de fournir de la nourriture, alors les restaurants se retrouveraient dans un état assez critique. \n\nSous Linux, ces dépendances sont souvent d'autres packages ou des bibliothèques partagées. Les bibliothèques partagées sont des bibliothèques de code que d'autres programmes veulent utiliser et qu'ils ne veulent pas avoir à réécrire eux-mêmes. Pensez de nouveau au restaurant, combien de travail cela représenterait-il si chaque restaurant cultivait aussi sa propre nourriture ? Trop.\n\nNous approfondirons davantage les bibliothèques partagées dans le cours sur le système de fichiers, donc pour l'instant souvenez-vous simplement que les packages ont des dépendances pour les aider à fonctionner, que ces dépendances soient d'autres packages ou des bibliothèques ; si les dépendances ne sont pas présentes, le package finira dans un état cassé et la plupart du temps ne s'installera même pas.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Pas de questions, passez à la suite !",
+  "quizAnswer": "",
+  "slug": "packagedependencies"
+}

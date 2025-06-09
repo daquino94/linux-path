@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "DNSツール",
+  "lessonContent": "<b>nslookup</b>\n\n\"名前サーバールックアップ\"ツールは、リソースレコードに関する情報を検索するために名前サーバーにクエリを送信するために使用されます。google.comの名前サーバーがどこにあるかを見つけましょう。\n\n<pre>\npete@icebox:~$ nslookup www.google.com\nServer:         127.0.1.1\nAddress:        127.0.1.1#53\n\nNon-authoritative answer:\nName:   www.google.com\nAddress: 216.58.192.4\n</pre>\n\n<b>dig</b>\n\nDig（ドメイン情報グローパー）は、DNS名前サーバーに関する情報を取得するための強力なツールであり、nslookupよりも柔軟性があり、DNSの問題のトラブルシューティングに適しています。\n\n\n<pre>\npete@icebox:~$ dig www.google.com\n\n; <<>> DiG 9.9.5-3-Ubuntu <<>> www.google.com\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42376\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; MBZ: 0005 , udp: 512\n;; QUESTION SECTION:\n;www.google.com.                        IN      A\n\n;; ANSWER SECTION:\nwww.google.com.         5       IN      A       74.125.239.147\nwww.google.com.         5       IN      A       74.125.239.144\nwww.google.com.         5       IN      A       74.125.239.146\nwww.google.com.         5       IN      A       74.125.239.145\nwww.google.com.         5       IN      A       74.125.239.148\n\n;; Query time: 27 msec\n;; SERVER: 127.0.1.1#53(127.0.1.1)\n;; WHEN: Sun Feb 07 10:14:00 PST 2016\n;; MSG SIZE  rcvd: 123\n</pre>",
+  "exercise": "digのmanページを読んでください。",
+  "quizQuestion": "DNS名前サーバーに関する詳細情報を取得するために使用されるツールは何ですか？",
+  "quizAnswer": "dig",
+  "slug": "dnstools"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 12,
+  "title": "内核",
+  "description": "Linux 系统中最重要的部分，了解它的工作原理以及如何配置。",
+  "image": "/images/chapters/kernel.png",
+  "slug": "kernel"
+}

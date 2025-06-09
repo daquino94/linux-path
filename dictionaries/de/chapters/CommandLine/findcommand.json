@@ -1,0 +1,9 @@
+{
+  "id": 14,
+  "title": "find",
+  "lessonContent": "Mit all diesen Dateien, die wir im System haben, kann es ein wenig hektisch werden, wenn man versucht, eine bestimmte zu finden. Nun, es gibt einen Befehl, den wir dafür verwenden können, find! \n\n<pre>$ find /home -name puppies.jpg</pre>\n\nMit find müssen Sie das Verzeichnis angeben, in dem Sie suchen werden, wonach Sie suchen, in diesem Fall versuchen wir, eine Datei mit dem Namen puppies.jpg zu finden. \n\nSie können angeben, nach welchem Dateityp Sie suchen. \n\n<pre>$ find /home -type d -name MyFolder</pre>\n\nSie sehen, dass ich den Dateityp, nach dem ich suche, als (d) für Verzeichnis festgelegt habe und immer noch nach dem Namen MyFolder suche. \n\nEine coole Sache ist, dass find nicht am Verzeichnis, in dem Sie suchen, haltmacht, sondern auch in allen Unterverzeichnissen dieses Verzeichnisses sucht.",
+  "exercise": "<ol>\n<li>Suchen Sie eine Datei im Stammverzeichnis, die das Wort net enthält.</li>\n</ol>",
+  "quizQuestion": "Welche Option sollte ich für find angeben, wenn ich nach Namen suchen möchte?",
+  "quizAnswer": "-name",
+  "slug": "findcommand"
+}

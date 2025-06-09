@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Red Hat Enterprise Linux",
+  "lessonContent": "<b>概述</b>\nRed Hat Enterprise Linux通常简称为RHEL，由Red Hat开发。RHEL有严格的规定限制自由再分发，尽管它仍然免费提供源代码。\n\n<b>软件包管理</b>\nRHEL使用与Debian不同的软件包管理器，即RPM软件包管理器，我们最终也会学习到。\n\n<b>可配置性</b>\n基于RHEL的操作系统与基于Debian的操作系统略有不同，最明显的区别在于软件包管理。如果您决定选择RHEL，最好了解您将要使用它。\n\n<b>用途</b>\n正如名称所示，它主要用于企业，因此如果您需要一个稳定的服务器操作系统，这将是一个不错的选择。",
+  "exercise": "如果您对将RHEL作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>",
+  "quizQuestion": "RHEL使用什么软件包管理器？",
+  "quizAnswer": "RPM",
+  "slug": "redhatenterpriselinux"
+}

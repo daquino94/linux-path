@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "title": "文件系统",
+  "description": "了解Linux文件系统、不同类型的文件系统、分区等。",
+  "image": "/images/chapters/filesystem.png",
+  "slug": "thefilesystem"
+}

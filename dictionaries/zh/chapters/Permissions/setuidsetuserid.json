@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Setuid",
+  "lessonContent": "有许多情况下，普通用户需要提升权限来执行操作。系统管理员无法始终在用户需要访问受保护文件时输入 root 密码，因此有特殊的文件权限位来允许这种行为。设置用户 ID（SUID）允许用户以程序文件的所有者身份而不是自身身份运行程序。\n\n让我们看一个例子：\n\n假设我想更改我的密码，简单吧？我只需使用 passwd 命令：\n\n<pre>$ passwd</pre>\n\n密码命令在做什么？它修改了一些文件，但最重要的是它修改了 /etc/shadow 文件。让我们看看那个文件：\n\n<pre>$ ls -l /etc/shadow\n\n-rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow\n</pre>\n\n等等，这个文件是 root 拥有的？我们怎么可能修改一个属于 root 的文件？\n\n让我们看另一个权限集，这次是我们运行的命令：\n\n<pre>$ ls -l /usr/bin/passwd\n\n-rwsr-xr-x 1 root root 47032 Dec 1 11:45 /usr/bin/passwd\n</pre>\n\n你会注意到这里有一个新的权限位 <b>s</b>。这个权限位是 SUID，当文件设置了这个权限时，允许启动程序的用户获取文件所有者的权限以及执行权限，这里是 root。因此，当用户运行密码命令时，实际上是以 root 身份运行。\n\n这就是为什么我们能够在运行 passwd 命令时访问像 /etc/shadow 这样的受保护文件。现在，如果你移除了那个位，你会发现你将无法修改 /etc/shadow，因此也无法更改密码。\n\n<b>修改 SUID</b>\n\n和普通权限一样，有两种方法可以修改 SUID 权限。\n\n<i>符号方式：</i>\n<pre>$ sudo chmod u+s myfile</pre>\n\n<i>数字方式：</i>\n<pre> sudo chmod 4755 myfile</pre>\n\n如您所见，SUID 由数字 4 表示，并添加到权限集之前。您可能会看到 SUID 以大写 <b>S</b> 表示，这意味着它仍然执行相同的操作，但没有执行权限。",
+  "exercise": "仔细查看 /etc/passwd 的权限，您还注意到了其他什么吗？启用 SUID 的文件也很容易辨认。",
+  "quizQuestion": "什么数字代表 SUID？",
+  "quizAnswer": "4",
+  "slug": "setuidsetuserid"
+}

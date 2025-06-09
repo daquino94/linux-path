@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "内核日志记录",
+  "lessonContent": "<b>/var/log/dmesg</b>\n在启动时，您的系统会记录有关内核环形缓冲区的信息。这向我们展示了有关硬件驱动程序、内核信息和启动过程中的状态等信息。此日志文件位于 /var/log/dmesg，每次启动时都会重置，现在您可能看不到它的任何用处，但如果您在启动过程中遇到问题或硬件问题，dmesg 是查看的最佳位置。您还可以使用 dmesg 命令查看此日志。\n\n<b>/var/log/kern.log</b>\n您可以使用的另一个日志来查看内核信息是 /var/log/kern.log 文件，它记录了系统上的内核信息和事件，还记录了 dmesg 输出。",
+  "exercise": "查看您的 dmesg 和 kern 日志，您注意到了什么不同之处？",
+  "quizQuestion": "用于查看内核启动消息的命令是什么？",
+  "quizAnswer": "dmesg",
+  "slug": "kernellogging"
+}

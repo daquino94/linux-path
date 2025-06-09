@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Vim 导航",
+  "lessonContent": "现在你可能会注意到，这里根本不使用鼠标。要在 vim 中导航文本文档，请使用以下键：\n\n<ul>\n<li>h 或左箭头 - 将向左移动一个字符</li>\n<li>k 或上箭头 - 将向上移动一行</li>\n<li>j 或下箭头 - 将向下移动一行</li>\n<li>l 或右箭头 - 将向右移动一个字符</li>\n</ul>",
+  "exercise": "此课程无练习。",
+  "quizQuestion": "用什么字母向下移动？",
+  "quizAnswer": "j",
+  "slug": "vimnavigation"
+}

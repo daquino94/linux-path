@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "Inodes",
+  "lessonContent": "记得我们的文件系统由所有实际文件和管理这些文件的数据库组成吗？这个数据库被称为inode表。\n\n<b>什么是inode？</b>\n\ninode（索引节点）是这个表中的一个条目，每个文件都有一个。它描述了文件的所有信息，比如：\n\n<ul>\n<li>文件类型 - 普通文件、目录、字符设备等</li>\n<li>所有者</li>\n<li>组</li>\n<li>访问权限</li>\n<li>时间戳 - mtime（最后一次文件修改时间）、ctime（最后一次属性更改时间）、atime（最后一次访问时间）</li>\n<li>指向文件的硬链接数</li>\n<li>文件大小</li>\n<li>分配给文件的块数</li>\n<li>指向文件数据块的指针 - 最重要的部分！</li>\n</ul>\n\n基本上，inode存储了文件的所有信息，除了文件名和文件本身！\n\n<b>inode何时创建？</b>\n\n当创建文件系统时，也会分配inode空间。有一些算法会确定您根据磁盘容量等需要多少inode空间。您可能在生活中的某个时候看到过磁盘空间不足的错误。同样的情况也可能发生在inode上（尽管较少），您可能会用完inode，因此无法创建更多文件。请记住，数据存储取决于数据和数据库（inode）。\n\n要查看系统上剩余的inode数量，请使用命令<b>df -i</b>\n\n<b>inode信息</b>\n\ninode通过编号进行标识，当文件被创建时，会分配一个inode编号，编号按顺序分配。但是，有时您创建新文件时可能会注意到它获得的inode编号比其他文件低，这是因为一旦inode被删除，它们可以被其他文件重用。要查看inode编号，请运行<b>ls -li</b>：\n\n<pre>\npete@icebox:~$ ls -li\n140 drwxr-xr-x 2 pete pete 6 Jan 20 20:13 Desktop\n141 drwxr-xr-x 2 pete pete 6 Jan 20 20:01 Documents\n</pre>\n\n此命令中的第一个字段列出了inode编号。\n\n您还可以使用stat查看有关文件的详细信息，它还会告诉您有关inode的信息。\n\n<pre>\npete@icebox:~$ stat ~/Desktop/\n  File: ‘/home/pete/Desktop/’\n  Size: 6               Blocks: 0          IO Block: 4096   directory\nDevice: 806h/2054d      Inode: 140         Links: 2\nAccess: (0755/drwxr-xr-x)  Uid: ( 1000/   pete)   Gid: ( 1000/   pete)\nAccess: 2016-01-20 20:13:50.647435982 -0800\nModify: 2016-01-20 20:13:06.191675843 -0800\nChange: 2016-01-20 20:13:06.191675843 -0800\n Birth: -\n</pre>\n\n\n<b>inode如何定位文件？</b>\n\n我们知道我们的数据在磁盘的某个地方，不幸的是，它可能不是按顺序存储的，因此我们必须使用inode。inode指向文件的实际数据块。在典型的文件系统中（并非所有文件系统都相同），每个inode包含15个指针，前12个指针直接指向数据块。第13个指针指向一个包含更多指针的块，第14个指针指向另一个嵌套的指针块，第15个指针再次指向另一个指针块！令人困惑，我知道！之所以这样做是为了保持每个inode的结构相同，但能够引用不同大小的文件。如果您有一个小文件，您可以通过前12个直接指针更快地找到它，较大的文件可以通过指针的嵌套找到。无论如何，inode的结构都是相同的。",
+  "exercise": "观察一些不同文件的inode编号，哪些通常是最先创建的？",
+  "quizQuestion": "如何查看系统上剩余的inode数量？",
+  "quizAnswer": "df -i",
+  "slug": "inodes"
+}

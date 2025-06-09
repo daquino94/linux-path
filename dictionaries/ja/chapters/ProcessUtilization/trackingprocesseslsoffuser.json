@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "lsof と fuser",
+  "lessonContent": "USB ドライブを接続していくつかのファイルで作業を開始したとします。作業が終わったら USB デバイスをアンマウントしようとすると、「デバイスまたはリソースがビジー状態です」というエラーが表示されます。USB ドライブ内でまだ使用中のファイルを特定するにはどうすればよいでしょうか？ 実際には、このために使用できるツールが 2 つあります：\n\n<b>lsof</b>\n\nファイルはテキストファイルや画像などだけでなく、システム上のすべてのもの（ディスク、パイプ、ネットワークソケット、デバイスなど）です。プロセスが使用しているものを確認するには、lsof コマンド（\"list open files\" の略）を使用します。これにより、すべてのオープンファイルとそれに関連するプロセスのリストが表示されます。\n\n<pre>\npete@icebox:~$ lsof .\nCOMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME\nlxsession 1491 pete  cwd    DIR    8,6     4096  131 .\nupdate-no 1796 pete  cwd    DIR    8,6     4096  131 .\nnm-applet 1804 pete  cwd    DIR    8,6     4096  131 .\nindicator 1809 pete  cwd    DIR    8,6     4096  131 .\nxterm     2205 pete  cwd    DIR    8,6     4096  131 .\nbash      2207 pete  cwd    DIR    8,6     4096  131 .\nlsof      5914 pete  cwd    DIR    8,6     4096  131 .\nlsof      5915 pete  cwd    DIR    8,6     4096  131 .\n</pre>\n\nこれで、デバイス/ファイルを現在保持しているプロセスがわかります。USB の例では、これらのプロセスを終了してから、この厄介なドライブをアンマウントできます。\n\n<b>fuser</b>\n\nプロセスを追跡する別の方法は、fuser コマンド（\"file user\" の略）を使用することです。これにより、ファイルを使用しているプロセスまたはファイルユーザーに関する情報が表示されます。\n\n<pre>\npete@icebox:~$ fuser -v .\n                     USER        PID ACCESS COMMAND\n/home/pete:         pete  1491 ..c.. lxsession\n                     pete  1796 ..c.. update-notifier\n                     pete  1804 ..c.. nm-applet\n                     pete  1809 ..c.. indicator-power\n                     pete  2205 ..c.. xterm\n                     pete  2207 ..c.. bash\n</pre>\n\n現在 /home/pete ディレクトリを使用しているプロセスがわかります。lsof と fuser ツールは非常に似ており、これらのツールに慣れて、次回ファイルやプロセスを追跡する際に使用してみてください。",
+  "exercise": "lsof と fuser の man ページを読んでください。これらのツールをより柔軟に使用できる多くの情報が提供されています。",
+  "quizQuestion": "オープンされているファイルとそれに関連するプロセス情報をリストするために使用されるコマンドは何ですか？",
+  "quizAnswer": "lsof",
+  "slug": "trackingprocesseslsoffuser"
+}

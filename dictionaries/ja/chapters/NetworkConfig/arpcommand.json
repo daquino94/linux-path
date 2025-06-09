@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "arp",
+  "lessonContent": "ARP を使用して MAC アドレスを検索する際、最初にシステムに保存されている ARP キャッシュを確認します。このキャッシュは実際に表示することができます:\n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\nARP キャッシュは実際にはマシンが起動すると空になり、他のホストにパケットが送信されるとデータが追加されます。ARP キャッシュにない宛先にパケットを送信すると、以下のようなことが起こります:\n\n<ol>\n<li>ソースホストは ARP リクエストパケットを含む Ethernet フレームを作成します</li>\n<li>ソースホストはこのフレームをネットワーク全体にブロードキャストします</li>\n<li>ネットワーク内のホストのうち正しい MAC アドレスを知っているホストがあれば、MAC アドレスを含む応答パケットとフレームを送信します</li>\n<li>ソースホストは IP と MAC アドレスのマッピングを ARP キャッシュに追加し、その後パケットの送信を続行します</li>\n</ol>\n\narp キャッシュは ip コマンドを使用して表示することもできます:\n\n<pre>\n$ ip neighbour show\n</pre>",
+  "exercise": "マシンを再起動してからネットワークで何かを行ったときに ARP キャッシュに何が起こるかを観察してください。",
+  "quizQuestion": "ARP キャッシュを表示するために使用できるコマンドは何ですか？",
+  "quizAnswer": "arp",
+  "slug": "arpcommand"
+}

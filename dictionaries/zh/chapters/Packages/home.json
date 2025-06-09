@@ -1,0 +1,7 @@
+{
+  "id": 8,
+  "title": "软件包",
+  "description": "了解有关 dpkg、apt-get、rpm 和 yum 软件包管理工具的所有信息。",
+  "image": "/images/chapters/packages.png",
+  "slug": "packages"
+}

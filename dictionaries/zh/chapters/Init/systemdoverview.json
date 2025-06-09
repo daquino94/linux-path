@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Systemd概述",
+  "lessonContent": "Systemd正逐渐成为init的新兴标准。如果你有一个/usr/lib/systemd目录，你很可能正在使用systemd。\n\nSystemd使用目标来启动和运行系统。基本上，你有一个想要实现的目标，这个目标也有我们需要实现的依赖关系。Systemd非常灵活和强大，它不遵循严格的顺序来启动进程。以下是典型systemd引导过程中发生的事情：\n\n<ol>\n<li>首先，systemd加载其配置文件，通常位于/etc/systemd/system或/usr/lib/systemd/system中</li>\n<li>然后确定其引导目标，通常是default.target</li>\n<li>Systemd找出引导目标的依赖关系并激活它们</l>\n</ol>\n\n类似于Sys V运行级别，systemd引导到不同的目标：\n\n<ul>\n<li>poweroff.target - 关闭系统</li>\n<li>rescue.target - 单用户模式</li>\n<li>multi-user.target - 带网络的多用户模式</li>\n<li>graphical.target - 带网络和图形界面的多用户模式</li>\n<li>reboot.target - 重新启动</li>\n</ul>\n\ndefault.target的默认引导目标通常指向graphical.target。\n\nSystemd处理的主要对象称为单元。Systemd不仅仅停止和启动服务，它可以挂载文件系统，监视网络套接字等，正因为其强大性，它有不同类型的单元。最常见的单元包括：\n\n<ul>\n<li>Service units - 这些是我们一直在启动和停止的服务，这些单元文件以.service结尾</li>\n<li>Mount units - 这些挂载文件系统，这些单元文件以.mount结尾</li>\n<li>Target units - 这些将其他单元组合在一起，文件以.target结尾</li>\n</ul>\n\n例如，假设我们引导到default.target，那么这个目标将网络服务单元、crond服务单元等组合在一起，因此一旦激活一个单元，该单元下的所有内容也将被激活。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "用于将其他单元组合在一起的单元是什么？",
+  "quizAnswer": "target",
+  "slug": "systemdoverview"
+}

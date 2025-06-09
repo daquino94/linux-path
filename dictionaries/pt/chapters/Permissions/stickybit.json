@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "O Bit Sticky",
+  "lessonContent": "Um último bit de permissão especial sobre o qual quero falar é o bit sticky. \n\nEste bit de permissão, \"cola um arquivo/diretório\", o que significa que apenas o proprietário ou o usuário root podem excluir ou modificar o arquivo. Isso é muito útil para diretórios compartilhados. Dê uma olhada no exemplo abaixo:\n\n<pre>$ ls -ld /tmp\ndrwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp\n</pre>\n\nVocê verá um bit de permissão especial no final aqui <b>t</b>, isso significa que todos podem adicionar arquivos, escrever arquivos, modificar arquivos no diretório /tmp, mas apenas o root pode excluir o diretório /tmp. \n\n<b>Modificar o bit sticky</b>\n\n<pre>$ sudo chmod +t mydir\n\n$ sudo chmod 1755 mydir</pre>\n\nA representação numérica para o bit sticky é <b>1</b>",
+  "exercise": "Quais outros arquivos e diretórios você acha que têm um bit sticky ativado?",
+  "quizQuestion": "Que símbolo representa o bit sticky?",
+  "quizAnswer": "t",
+  "slug": "stickybit"
+}

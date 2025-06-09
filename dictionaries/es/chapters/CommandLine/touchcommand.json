@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "touch",
+  "lessonContent": "Aprendamos cómo crear algunos archivos. Una forma muy simple es usar el comando touch. Touch te permite crear nuevos archivos vacíos.\n\n<pre>$ touch mysuperduperfile</pre>\n\n¡Y boom, nuevo archivo! \n\nTouch también se utiliza para cambiar marcas de tiempo en archivos y directorios existentes. Pruébalo, haz un ls -l en un archivo y toma nota de la marca de tiempo, luego toca ese archivo y se actualizará la marca de tiempo. \n\nHay muchas otras formas de crear archivos que involucran otras cosas como redirección y editores de texto, pero llegaremos a eso en el curso de Manipulación de Texto.",
+  "exercise": "<ol>\n<li>Crear un nuevo archivo</li>\n<li>Tomar nota de la marca de tiempo</li>\n<li>Touchear el archivo y verificar la marca de tiempo nuevamente</li>\n</ol>",
+  "quizQuestion": "¿Cómo se crea un archivo llamado myfile?",
+  "quizAnswer": "touch myfile",
+  "slug": "touchcommand"
+}

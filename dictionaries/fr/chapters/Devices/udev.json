@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "udev",
+  "lessonContent": "À l'époque et même aujourd'hui si vous le souhaitez vraiment, vous créeriez des nœuds de périphérique en utilisant une commande telle que : \n\n<pre>$ mknod /dev/sdb1 b 8 3</pre>\n\nCette commande créera un nœud de périphérique /dev/sdb1 et le définira comme un périphérique de bloc (b) avec un numéro majeur de 8 et un numéro mineur de 3.\n\nPour supprimer un périphérique, vous supprimeriez simplement le fichier du périphérique dans le répertoire /dev. \n\nHeureusement, nous n'avons vraiment plus besoin de le faire grâce à udev. Le système udev crée et supprime dynamiquement les fichiers de périphérique pour nous en fonction de s'ils sont connectés ou non. Il y a un démon udevd qui fonctionne sur le système et qui écoute les messages du noyau concernant les périphériques connectés au système. Udevd analysera ces informations et les fera correspondre avec les règles spécifiées dans /etc/udev/rules.d, en fonction de ces règles, il créera très probablement des nœuds de périphérique et des liens symboliques pour les périphériques. Vous pouvez écrire vos propres règles udev, mais cela dépasse un peu le cadre de cette leçon. Heureusement, votre système est déjà livré avec de nombreuses règles udev, vous n'aurez donc probablement jamais besoin d'écrire les vôtres.\n\nVous pouvez également consulter la base de données udev et sysfs en utilisant la commande <b>udevadm</b>. Cet outil est très utile, mais parfois peut devenir très complexe, une commande simple pour afficher des informations pour un périphérique serait : \n\n<pre>$ udevadm info --query=all --name=/dev/sda</pre>",
+  "exercise": "Exécutez la commande udevadm donnée et examinez l'entrée.",
+  "quizQuestion": "Qu'est-ce qui ajoute et supprime dynamiquement des périphériques ?",
+  "quizAnswer": "udev",
+  "slug": "udev"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Enregistrer et quitter Vim",
+  "lessonContent": "Maintenant que vous avez terminé votre édition, il est temps d'enregistrer et de quitter Vim : \n\n<ul>\n<li>:w - écrit ou enregistre le fichier</li>\n<li>:q - quitte Vim</li>\n<li>:wq - écrit puis quitte</li>\n<li>:q! - quitte Vim sans enregistrer le fichier</li>\n<li>ZZ - équivalent de :wq, mais un caractère plus rapide</li>\n\n<li>u - annule votre dernière action</li>\n<li>Ctrl-r - refait votre dernière action</li>\n</ul>\n\nVous pourriez penser que ZZ n'est pas nécessaire, mais vous finirez par remarquer que vos doigts ont tendance à préférer cela plutôt que :wq.\n\nOuf, c'était beaucoup d'informations à assimiler sur Vim. Maintenant que vous connaissez quelques commandes de base et la navigation, vous pouvez commencer à éditer des fichiers texte. Il existe de nombreuses autres options que vous pouvez utiliser dans Vim pour améliorer votre maîtrise de cet éditeur de texte, consultez le guide en ligne de Vim pour en savoir plus.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Comment quitter Vim sans enregistrer ?",
+  "quizAnswer": ":q!",
+  "slug": "vimsavingandexiting"
+}

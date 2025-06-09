@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Cron Jobs",
+  "lessonContent": "Obwohl wir über die Ressourcennutzung gesprochen haben, denke ich, dass dies ein guter Zeitpunkt ist, um ein nützliches Tool in Linux zu erwähnen, das verwendet wird, um Aufgaben mit cron zu planen. Es gibt einen Dienst, der Programme für Sie zu der von Ihnen geplanten Zeit ausführt. Dies ist wirklich nützlich, wenn Sie ein Skript haben, das einmal täglich ausgeführt werden soll und etwas für Sie ausführen muss. \n\nZum Beispiel, sagen wir, ich habe ein Skript in /home/pete/scripts/change_wallpaper. Ich verwende dieses Skript jeden Morgen, um das Bild zu ändern, das ich als Hintergrundbild verwende, aber jeden Morgen muss ich dieses Skript manuell ausführen. Stattdessen kann ich einen Cron-Job erstellen, der mein Skript über cron ausführt. Ich kann die Zeit angeben, zu der dieser Cron-Job ausgeführt werden soll, und mein Skript ausführen. \n\n<pre>30 08 * * * /home/pete/scripts/change_wallpaper</pre>\n\nDie Felder sind von links nach rechts wie folgt:\n<ul>\n<li>Minute - (0-59)</li>\n<li>Stunde - (0-23)</li>\n<li>Tag des Monats - (1-31)</li>\n<li>Monat - (1-12)</li>\n<li>Tag der Woche - (0-7). 0 und 7 sind als Sonntag gekennzeichnet</li>\n</ul>\n\nDas Sternchen im Feld bedeutet, dass jeder Wert übereinstimmen soll. Also in meinem obigen Beispiel möchte ich, dass dies jeden Tag in jedem Monat um 8:30 Uhr läuft.\n\nUm einen Cronjob zu erstellen, bearbeiten Sie einfach die Crontab-Datei:\n\n<pre>crontab -e</pre>",
+  "exercise": "Erstellen Sie einen Cronjob, den Sie zu einer geplanten Zeit ausführen möchten.",
+  "quizQuestion": "Was ist der Befehl, um Ihre Cronjobs zu bearbeiten?",
+  "quizAnswer": "crontab -e",
+  "slug": "cronjobs"
+}

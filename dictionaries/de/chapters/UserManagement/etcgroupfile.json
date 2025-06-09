@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "/etc/group",
+  "lessonContent": "Eine weitere Datei, die bei der Benutzerverwaltung verwendet wird, ist die /etc/group-Datei. Diese Datei ermöglicht verschiedene Gruppen mit unterschiedlichen Berechtigungen. \n\n<pre>$ cat /etc/group\n\nroot:*:0:pete\n</pre>\n\nSehr ähnlich wie das /etc/password-Feld sind die /etc/group-Felder wie folgt:\n\n<ol>\n<li>Gruppenname</li>\n<li>Gruppenpasswort - Es ist nicht erforderlich, ein Gruppenpasswort festzulegen. Die Verwendung eines erhöhten Privilegs wie sudo ist Standard. Ein \"*\" wird als Standardwert eingesetzt.</li>\n<li>Gruppen-ID (GID)</li>\n<li>Liste der Benutzer - Sie können manuell Benutzer angeben, die Sie in einer bestimmten Gruppe haben möchten</li>\n</ol>",
+  "exercise": "Führen Sie den Befehl <b>groups</b> aus. Was sehen Sie?",
+  "quizQuestion": "Was ist die GID von root?",
+  "quizAnswer": "0",
+  "slug": "etcgroupfile"
+}

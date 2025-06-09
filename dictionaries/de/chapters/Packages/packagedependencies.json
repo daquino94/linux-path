@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Paketabhängigkeiten",
+  "lessonContent": "Pakete funktionieren sehr selten alleine, sie werden meistens von Abhängigkeiten begleitet, um ihnen beim Ausführen zu helfen. Zum Beispiel, nehmen wir an, wir haben eine Gruppe von Restaurants, diese Restaurants bieten alle verschiedene Küchen an, jedoch beziehen sie alle ihre Zutaten vom selben Bauernhof. Ihr Essen ist abhängig von den Vorräten des Bauernhofs, wenn der Bauernhof plötzlich aufhören würde, Essen zu liefern, dann wären die Restaurants in einem ziemlich schlechten Zustand. \n\nIn Linux sind diese Abhängigkeiten oft andere Pakete oder gemeinsam genutzte Bibliotheken. Gemeinsam genutzte Bibliotheken sind Codebibliotheken, die von anderen Programmen verwendet werden möchten und die nicht selbst neu schreiben möchten. Denken Sie wieder an das Restaurant, wie viel Arbeit wäre es, wenn jedes Restaurant auch seine eigenen Lebensmittel anbauen würde? Zu viel.\n\nWir werden uns im Kurs zum Dateisystem genauer mit gemeinsam genutzten Bibliotheken befassen, also denken Sie jetzt einfach daran, dass Pakete Abhängigkeiten haben, um ihnen beim Ausführen zu helfen, ob diese Abhängigkeiten andere Pakete oder Bibliotheken sind, wenn die Abhängigkeiten nicht vorhanden sind, wird das Paket in einem fehlerhaften Zustand enden und die meiste Zeit nicht einmal installiert werden.",
+  "exercise": "Für diese Lektion sind keine Übungen vorgesehen.",
+  "quizQuestion": "Keine Fragen, gehen Sie weiter!",
+  "quizAnswer": "",
+  "slug": "packagedependencies"
+}

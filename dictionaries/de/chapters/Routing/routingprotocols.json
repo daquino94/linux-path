@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Routing-Protokolle",
+  "lessonContent": "Es wäre mühsam, für jedes Gerät in Ihrem Netzwerk manuell Routen in einer Routing-Tabelle konfigurieren zu müssen. Deshalb verwenden wir sogenannte Routing-Protokolle. Routing-Protokolle werden verwendet, um unserem System bei Netzwerkänderungen zu helfen. Sie lernen verschiedene Routen kennen, bauen sie in der Routing-Tabelle auf und leiten dann unsere Pakete auf diese Weise weiter. Es gibt zwei Hauptarten von Routing-Protokollen: Distanzvektorprotokolle und Linkzustandsprotokolle.\n\n<b>Konvergenz</b>\n\nBevor wir über die Protokolle sprechen, sollten wir einen Begriff im Routing besprechen, der als Konvergenz bezeichnet wird. Bei der Verwendung von Routing-Protokollen kommunizieren Router mit anderen Routern, um Informationen über das Netzwerk zu sammeln und auszutauschen. Wenn sie sich darauf einigen, wie ein Netzwerk aussehen sollte, bildet jede Routing-Tabelle die vollständige Topologie des Netzwerks ab und 'konvergiert' somit. Wenn in der Netzwerktopologie etwas passiert, wird die Konvergenz vorübergehend unterbrochen, bis alle Router über diese Änderung informiert sind.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Wie lautet der Begriff, wenn alle Routing-Tabellen die Netzwerktopologie kennen?",
+  "quizAnswer": "Konvergenz",
+  "slug": "routingprotocols"
+}

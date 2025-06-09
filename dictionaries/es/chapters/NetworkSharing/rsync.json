@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "rsync",
+  "lessonContent": "Otra herramienta utilizada para copiar datos entre diferentes hosts es rsync (abreviatura de sincronización remota). Rsync es muy similar a scp, pero tiene una diferencia importante. Rsync utiliza un algoritmo especial que verifica de antemano si ya existen datos que estás copiando y solo copiará las diferencias. Por ejemplo, supongamos que estabas copiando un archivo y tu red se interrumpió, por lo tanto, tu copia se detuvo a la mitad. En lugar de volver a copiar todo desde el principio, rsync solo copiará las partes que no se copiaron. \n\nTambién verifica la integridad de un archivo que estás copiando con sumas de verificación. Estas pequeñas optimizaciones permiten una mayor flexibilidad en la transferencia de archivos y hacen que rsync sea ideal para la sincronización de directorios de forma remota y local, copias de seguridad de datos, transferencias de datos grandes y más.\n\nAlgunas opciones comúnmente utilizadas de rsync:\n\n<ul>\n<li>v - salida detallada</li>\n<li>r - recursivo en directorios</li>\n<li>h - salida legible para humanos</li>\n<li>z - comprimido para una transferencia más fácil, ideal para conexiones lentas</li>\n</ul>\n\n<b>Copiar/sincronizar archivos en el mismo host</b>\n\n<pre>$ rsync -zvr /mi/directorio/local/uno /mi/directorio/local/dos</pre>\n\n<b>Copiar/sincronizar archivos en el host local desde un host remoto</b>\n\n<pre>$ rsync /directorio/local usuario@hostremoto.com:/directorio/remoto</pre>\n\n<b>Copiar/sincronizar archivos en un host remoto desde un host local</b>\n\n<pre>$ rsync usuario@hostremoto.com:/directorio/remoto /directorio/local</pre>",
+  "exercise": "Utiliza rsync para sincronizar un directorio con otro directorio, ¡asegúrate de no sobrescribir un directorio importante!",
+  "quizQuestion": "¿Qué comando sería útil para copias de seguridad de datos?",
+  "quizAnswer": "rsync",
+  "slug": "rsync"
+}

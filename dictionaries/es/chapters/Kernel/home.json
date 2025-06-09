@@ -1,0 +1,7 @@
+{
+  "id": 12,
+  "title": "Kernel",
+  "description": "La parte más importante del sistema Linux, aprende cómo funciona y cómo configurarlo.",
+  "image": "/images/chapters/kernel.png",
+  "slug": "kernel"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Gestionnaire de réseau",
+  "lessonContent": "Bien sûr, si vous souhaitez que le réseau de votre système soit opérationnel automatiquement, il existe déjà quelque chose en place pour cela. La plupart des distributions utilisent le démon NetworkManager pour configurer automatiquement leurs réseaux. \n\nVous remarquerez NetworkManager sous la forme d'un applet quelque part sur la barre des tâches de votre bureau si vous utilisez une interface graphique. Comme vous pouvez le constater, il gère le matériel réseau et les informations de connexion. Par exemple, au démarrage, NetworkManager recueillera des informations sur le matériel réseau, recherchera des connexions sans fil, filaires, etc. et les activera ensuite.\n\nIl existe également des outils en ligne de commande pour interagir avec NetworkManager :\n\n<b>nm-tool</b>\n\nnm-tools rapporte l'état de NetworkManager et de ses périphériques\n\n<pre>\npete@icebox:/$ nm-tool\nNetworkManager Tool\n\nÉtat : connecté (global)\n\n- Périphérique : eth0  [Connexion filaire 1] -------------------------------------------\n  Type :              Filaire\n  Pilote :            pcnet32\n  État :             connecté\n  Par défaut :           oui\n  Adresse matérielle :        12:3D:45:56:7D:CC\n\n  Capacités :\n    Détection du support :  oui\n\n  Propriétés filaires\n    Support :         activé\n\n  Paramètres IPv4 :\n    Adresse :         192.168.22.1\n    Préfixe :          24 (255.255.255.0)\n    Passerelle :         192.168.22.2\n\n    DNS :             192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nLa commande nmcli vous permet de contrôler et de modifier NetworkManager, consultez le manuel pour plus de détails.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Quelle est la commande pour afficher les informations de NetworkManager ?",
+  "quizAnswer": "nm-tool",
+  "slug": "networkmanager"
+}

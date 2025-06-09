@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "cut",
+  "lessonContent": "Wir werden ein paar nützliche Befehle lernen, die Sie zum Verarbeiten von Text verwenden können. Bevor wir beginnen, erstellen wir eine Datei, mit der wir arbeiten werden. Kopieren und fügen Sie den folgenden Befehl ein, fügen Sie dann zwischen lazy und dog ein TAB ein (halten Sie die Strg-Taste gedrückt + TAB).\n\n<pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>\n\nDer erste Befehl, den wir lernen werden, ist der cut-Befehl. Er extrahiert Textteile aus einer Datei. \n\nUm Inhalte anhand einer Liste von Zeichen zu extrahieren: \n\n<pre>$ cut -c 5 sample.txt</pre>\n\nDies gibt das 5. Zeichen in jeder Zeile der Datei aus. In diesem Fall ist es \"q\", beachten Sie, dass auch das Leerzeichen als Zeichen zählt. \n\nUm die Inhalte nach einem Feld zu extrahieren, müssen wir eine kleine Änderung vornehmen: \n\n<pre>$ cut -f 2 sample.txt</pre>\n\nDer -f- oder Feld-Befehl schneidet Text basierend auf Feldern ab, standardmäßig verwendet er TABs als Trennzeichen, sodass alles, was durch ein TAB getrennt ist, als Feld betrachtet wird. Sie sollten \"dog\" als Ausgabe sehen.\n\nSie können den Feld-Befehl mit dem Trennzeichen-Befehl kombinieren, um die Inhalte nach einem benutzerdefinierten Trennzeichen zu extrahieren: \n\n<pre>$ cut -f 1 -d \";\" sample.txt</pre>\n\nDies ändert das TAB-Trennzeichen in ein \";\"-Trennzeichen, und da wir das erste Feld schneiden, sollte das Ergebnis \"The quick brown\" sein.",
+  "exercise": "Was bewirkt der folgende Befehl? Warum?\n\n<pre>$ cut -c 5-10 sample.txt\n$ cut -c 5- sample.txt\n$ cut -c -5 sample.txt\n</pre>",
+  "quizQuestion": "Welchen Befehl würden Sie verwenden, um das erste Zeichen jeder Zeile in einer Datei zu erhalten?",
+  "quizAnswer": "cut -c 1",
+  "slug": "cutcommand"
+}

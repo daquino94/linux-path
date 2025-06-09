@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Fedora",
+  "lessonContent": "<b>Überblick</b>\nUnterstützt von Red Hat ist das Fedora-Projekt communitygetrieben und enthält Open-Source- und kostenlose Software. Red Hat Enterprise Linux verzweigt sich von Fedora ab, daher kann man Fedora als ein Upstream-RHEL-Betriebssystem betrachten. Letztendlich erhält RHEL nach gründlichen Tests und Qualitätssicherung Updates von Fedora. Denken Sie bei Fedora an eine Ubuntu-Äquivalente, die anstelle von Debian ein Red-Hat-Backend verwendet.\n\n<b>Paketverwaltung</b>\nVerwendet den Red Hat Paketmanager.\n\n<b>Konfigurierbarkeit</b>\nWenn Sie ein auf Red Hat basierendes Betriebssystem verwenden möchten, ist dies eine benutzerfreundliche Version.\n\n<b>Verwendung</b>\nFedora ist großartig, wenn Sie ein auf Red Hat basierendes Betriebssystem ohne Preisschild möchten. Empfohlen für Desktop und Laptop.",
+  "exercise": "Wenn Sie daran interessiert sind, Fedora als Ihr Betriebssystem zu haben, gehen Sie zum Installationsabschnitt und probieren Sie es aus: <a href='https://getfedora.org/'>https://getfedora.org/</a>",
+  "quizQuestion": "Wovon verzweigt sich RHEL ab?",
+  "quizAnswer": "Fedora",
+  "slug": "fedora"
+}

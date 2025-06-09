@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "fichier",
+  "lessonContent": "Dans la leçon précédente, nous avons appris sur touch, revenons-y un instant. Avez-vous remarqué que le nom du fichier ne respectait pas les normes de nommage standard comme vous l'avez probablement vu avec d'autres systèmes d'exploitation comme Windows ? Normalement, vous vous attendriez à un fichier appelé banane.jpeg et vous vous attendriez à un fichier image JPEG. \n\nSous Linux, les noms de fichiers ne sont pas obligés de représenter le contenu du fichier. Vous pouvez créer un fichier appelé drole.gif qui n'est pas réellement un GIF. \n\nPour savoir de quel type de fichier il s'agit, vous pouvez utiliser la commande file. Elle vous montrera une description du contenu du fichier.\n\n<pre>$ file banane.jpg</pre>",
+  "exercise": "Exécutez la commande file sur quelques répertoires et fichiers différents et notez la sortie.",
+  "quizQuestion": "Quelle commande pouvez-vous utiliser pour trouver le type de fichier d'un fichier ?",
+  "quizAnswer": "file",
+  "slug": "commandefichier"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 18,
+  "title": "Разделение сети на подсети",
+  "description": "Узнайте о подсетях и как выполнять арифметику подсетей!",
+  "image": "/images/chapters/subnetting.png",
+  "slug": "subnetting"
+}

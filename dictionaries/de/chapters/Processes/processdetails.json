@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Prozessdetails",
+  "lessonContent": "Bevor wir uns mit praktischeren Anwendungen von Prozessen befassen, müssen wir zunächst verstehen, was sie sind und wie sie funktionieren. Dieser Teil kann verwirrend sein, da wir in die Details eintauchen, also kommen Sie gerne zu dieser Lektion zurück, wenn Sie jetzt nicht darüber lernen möchten. \n\nEin Prozess ist, wie wir bereits gesagt haben, ein laufendes Programm im System, genauer gesagt ist es das System, das Speicher, CPU, E/A zuweist, um das Programm auszuführen. Ein Prozess ist eine Instanz eines laufenden Programms, öffnen Sie drei Terminalfenster, führen Sie in zwei Fenstern den <b>cat</b>-Befehl ohne Übergeben von Optionen aus (der cat-Prozess bleibt als Prozess geöffnet, weil er stdin erwartet). Führen Sie nun im dritten Fenster aus: <b>ps aux | grep cat</b>. Sie werden feststellen, dass es zwei Prozesse für cat gibt, obwohl sie dasselbe Programm aufrufen.\n\nDer Kernel ist für Prozesse zuständig, wenn wir ein Programm ausführen, lädt der Kernel den Programmcode in den Speicher, bestimmt und allokiert Ressourcen und behält dann jeden Prozess im Auge, er weiß: \n\n<ul>\n<li>Der Status des Prozesses</li>\n<li>Die Ressourcen, die der Prozess verwendet und erhält</li>\n<li>Der Prozessbesitzer</li>\n<li>Signalverarbeitung (dazu später mehr)</li>\n<li>Und im Grunde alles andere</li>\n</ul>\n\nAlle Prozesse versuchen, einen Teil dieses süßen Ressourcenkuchens zu bekommen, es ist die Aufgabe des Kernels sicherzustellen, dass Prozesse je nach Prozessanforderungen die richtige Menge an Ressourcen erhalten. Wenn ein Prozess endet, werden die von ihm verwendeten Ressourcen nun für andere Prozesse freigegeben.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Was verwaltet und steuert Prozesse?",
+  "quizAnswer": "Kernel",
+  "slug": "prozessdetails"
+}

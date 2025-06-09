@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "sort",
+  "lessonContent": "Команда sort полезна для сортировки строк.\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ sort file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\nТакже можно выполнить обратную сортировку: \n\n<pre>$ sort -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\nИ также сортировку по числовому значению: \n\n<pre>$ sort -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+  "exercise": "Настоящая мощь команды sort проявляется в ее способности комбинироваться с другими командами, попробуйте следующую команду и посмотрите, что произойдет?\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "Какой флаг используется для выполнения обратной сортировки?",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

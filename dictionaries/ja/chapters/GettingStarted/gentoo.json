@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Gentoo",
+  "lessonContent": "<b>概要</b>\nGentooは、価格を払うことでオペレーティングシステムの柔軟性を提供します。システムに手を汚すことを気にしない上級ユーザー向けに作られています。\n\n<b>パッケージ管理</b>\nGentooは独自のパッケージ管理システムであるPortageを使用しています。Portageパッケージ管理は非常にモジュラーでメンテナンスが容易であり、オペレーティングシステム全体の柔軟性に大きく貢献しています。\n\n<b>設定可能性</b>\nLinuxを始めたばかりで、より難しい道を選びたい場合は、GentooまたはArch Linuxをディストリビューションとして選択すると良いでしょう。\n\n<b>用途</b>\nデスクトップやノートパソコン向けに最適です。",
+  "exercise": "Gentooをオペレーティングシステムとして使用したい場合は、インストールセクションに移動して試してみてください：<a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>",
+  "quizQuestion": "Gentooはどのパッケージ管理システムを使用していますか？",
+  "quizAnswer": "Portage",
+  "slug": "gentoo"
+}

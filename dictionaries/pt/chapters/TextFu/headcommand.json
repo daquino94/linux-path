@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "cabeça",
+  "lessonContent": "Vamos dizer que temos um arquivo muito longo, na verdade temos muitos para escolher, vá em frente e cat /var/log/syslog. Você deve ver páginas e mais páginas de texto. E se eu quisesse ver apenas as primeiras linhas deste arquivo de texto? Bem, podemos fazer isso com o comando head, por padrão o comando head mostrará as primeiras 10 linhas de um arquivo.\n\n<pre>$ head /var/log/syslog</pre>\n\nVocê também pode modificar a contagem de linhas para o que você escolher, digamos que eu queira ver as primeiras 15 linhas em vez disso. \n\n<pre>$ head -n 15 /var/log/syslog</pre>\n\nA bandeira -n significa número de linhas.",
+  "exercise": "O que o seguinte comando faz e por quê? \n\n<pre>$ head -c 15 /var/log/syslog</pre>",
+  "quizQuestion": "Que bandeira você usaria para alterar o número de linhas que deseja visualizar para o comando head?",
+  "quizAnswer": "-n",
+  "slug": "comandohead"
+}

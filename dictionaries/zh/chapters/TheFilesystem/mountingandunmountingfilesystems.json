@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "挂载和卸载",
+  "lessonContent": "在查看文件系统内容之前，您需要将其挂载。为此，您需要设备位置、文件系统类型和挂载点，挂载点是系统上的一个目录，文件系统将附加到该目录上。因此，我们基本上希望将设备挂载到挂载点。\n\n首先创建挂载点，在我们的情况下 <b>mkdir /mydrive</b>\n\n<pre>$ sudo mount -t ext4 /dev/sdb2 /mydrive</pre>\n\n就这么简单！现在当我们进入 /mydrive 时，我们可以看到文件系统内容，<b>-t</b> 指定文件系统类型，然后是设备位置，最后是挂载点。\n\n要从挂载点卸载设备：\n\n<pre>$ sudo umount /mydrive \n或 \n$ sudo umount /dev/sdb2</pre>\n\n请记住，内核按照找到它们的顺序命名设备。如果我们挂载设备后由于某种原因设备名称发生更改怎么办？幸运的是，您可以使用设备的通用唯一标识符（UUID）而不是名称。\n\n要查看系统上块设备的UUID：\n\n<pre>\npete@icebox:~$ sudo blkid\n/dev/sda1: UUID=\"130b882f-7d79-436d-a096-1e594c92bb76\" TYPE=\"ext4\" \n/dev/sda5: UUID=\"22c3d34b-467e-467c-b44d-f03803c2c526\" TYPE=\"swap\" \n/dev/sda6: UUID=\"78d203a0-7c18-49bd-9e07-54f44cdb5726\" TYPE=\"xfs\" \n</pre>\n\n我们可以看到设备名称、相应的文件系统类型和它们的UUID。现在，当我们想要挂载某个内容时，我们可以使用：\n\n<pre>$ sudo mount UUID=130b882f-7d79-436d-a096-1e594c92bb76 /mydrive</pre>\n\n大多数情况下，您不需要通过UUID挂载设备，使用设备名称更容易，通常操作系统会知道如何挂载常见设备，如USB驱动器。但是，如果您需要在启动时自动挂载文件系统，比如添加了第二个硬盘，您将需要使用UUID，我们将在下一课中介绍这一点。",
+  "exercise": "查看 mount 和 umount 的 man 手册，看看您可以使用哪些其他选项。",
+  "quizQuestion": "用于附加文件系统的命令是什么？",
+  "quizAnswer": "mount",
+  "slug": "挂载和卸载文件系统"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Motifs de recherche Vim",
+  "lessonContent": "Pour rechercher une expression, il suffit de taper la touche / puis votre résultat de recherche lorsque vous êtes dans une session vim. Une fois que vous appuyez sur Entrée, vous pouvez appuyer sur \"n\" pour aller vers l'avant ou \"N\" pour aller vers l'arrière dans vos résultats de recherche.\n\n<pre>\nMon joli fichier est très joli.\n\n/pretty\n\ntrouvera les mots jolis dans le fichier texte.\n</pre>\n\n\nLa commande de recherche ? recherchera le fichier texte en arrière, donc dans l'exemple précédent, le dernier joli apparaîtrait en premier. \n<pre>\nMon joli fichier est très joli.\n\n?pretty\n\ntrouvera les mots jolis dans le fichier texte.\n</pre>",
+  "exercise": "Jouez avec la touche de recherche, ouvrez un fichier texte dans vim avec : vim [fichier texte] et commencez à rechercher !",
+  "quizQuestion": "Quelle touche est utilisée pour rechercher dans vim ?",
+  "quizAnswer": "/",
+  "slug": "vimsearchpatterns"
+}

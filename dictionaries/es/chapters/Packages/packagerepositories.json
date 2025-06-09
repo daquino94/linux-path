@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Repositorios de paquetes",
+  "lessonContent": "¿Cómo es que los paquetes que se suben a internet terminan en nuestros ordenadores? ¿Vas a la página de descarga de cada paquete que deseas y haces clic en descargar e instalar? Bueno, en realidad puedes hacer eso, pero hay algo mejor llamado repositorios de paquetes. Los repositorios son simplemente ubicaciones de almacenamiento central para paquetes. Hay un montón de repositorios que contienen muchos paquetes y lo mejor de todo es que todos se encuentran en internet, sin discos de instalación tontos. Tu máquina no sabe dónde buscar estos repositorios a menos que le digas explícitamente dónde buscar.\n\nPor ejemplo, digamos que quiero el software WackyWidgets en mi máquina. Bueno, WackyWidgets gestiona sus propios repositorios para sus paquetes de widgets, dentro de este repositorio hay 10 paquetes, el paquete CoolWidget, el paquete SuperWidget, etc. WackyWidgets aloja este repositorio en un enlace de origen llamado: http://download.widgets/linux/deb/\n\nAhora, en lugar de ir a su sitio web para descargar el paquete directamente, puedes decirle a tu máquina que busque el software de WackyWidgets desde el enlace de origen.\n\nTu distribución ya viene con fuentes preaprobadas para obtener paquetes y así es como instala todos los paquetes base que ves en tu sistema. En un sistema Debian, este archivo de fuentes es el archivo <b>/etc/apt/sources.list</b>. Tu máquina sabrá buscar allí y comprobará si has añadido algún repositorio de origen.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Dónde se encuentra el archivo de fuentes en un sistema Debian?",
+  "quizAnswer": "/etc/apt/sources.list",
+  "slug": "repositoriosdepaquetes"
+}

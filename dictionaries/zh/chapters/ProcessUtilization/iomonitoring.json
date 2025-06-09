@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "I/O 监控",
+  "lessonContent": "我们还可以使用一个方便的工具<iostat>来监控 CPU 使用情况以及磁盘使用情况\n\n<pre>\npete@icebox:~$ iostat\nLinux 3.13.0-39-lowlatency (icebox)     01/28/2016      _i686_  (1 CPU)\n\navg-cpu:  %user   %nice %system %iowait  %steal   %idle\n           0.13    0.03    0.50    0.01    0.00   99.33\n\nDevice:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn\nsda               0.17         3.49         1.92     385106     212417\n</pre>\n\n第一部分是 CPU 信息:\n\n<ul>\n<li>%user - 显示在用户级别（应用程序）执行时的 CPU 利用率百分比</li>\n<li>%nice - 显示在用户级别以 nice 优先级执行时的 CPU 利用率百分比</li>\n<li>%system - 显示在系统级别（内核）执行时的 CPU 利用率百分比</li>\n<li>%iowait - 显示 CPU 或 CPU 空闲的百分比，系统期间有未完成的磁盘 I/O 请求</li>\n<li>%steal - 显示虚拟 CPU 或 CPU 在强制等待中花费的时间百分比，当 hypervisor 为另一个虚拟处理器提供服务时</li>\n<li>%idle - 显示 CPU 或 CPU 空闲且系统没有未完成的磁盘 I/O 请求的时间百分比</li>\n</ul>\n\n第二部分是磁盘利用率:\n\n<ul>\n<li>tps - 表示发往设备的每秒传输次数。传输是发往设备的 I/O 请求。多个逻辑请求可以合并为单个发往设备的 I/O 请求。传输大小不确定</li>\n<li>kB_read/s - 表示以每秒千字节为单位从设备读取的数据量</li>\n<li>kB_wrtn/s - 表示以每秒千字节为单位写入设备的数据量</li>\n<li>kB_read - 读取的总千字节数</li>\n<li>kB_wrtn - 写入的总千字节数</li>\n</ul>",
+  "exercise": "使用 iostat 查看磁盘使用情况",
+  "quizQuestion": "用于查看 I/O 和 CPU 使用情况的命令是什么？",
+  "quizAnswer": "iostat",
+  "slug": "iomonitoring"
+}

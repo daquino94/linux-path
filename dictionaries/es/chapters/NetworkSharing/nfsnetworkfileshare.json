@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "NFS",
+  "lessonContent": "El intercambio de archivos en red más estándar para Linux es NFS (Sistema de Archivos de Red), NFS permite a un servidor compartir directorios y archivos con uno o más clientes a través de la red. \n\nNo entraremos en los detalles de cómo crear un servidor NFS ya que puede volverse complejo, sin embargo discutiremos cómo configurar clientes NFS.\n\n<b>Configuración de cliente NFS</b>\n\n<pre>$ sudo service nfsclient start\n$ sudo mount server:/directory /mount_directory</pre>\n\n<b>Montaje automático</b>\n\nDigamos que usas el servidor NFS con frecuencia y deseas mantenerlo montado permanentemente, normalmente pensarías en editar el archivo /etc/fstab, pero es posible que no siempre obtengas una conexión al servidor y eso puede causar problemas al arrancar. En su lugar, lo que deseas hacer es configurar el montaje automático para que puedas conectarte al servidor NFS cuando sea necesario. Esto se hace con la herramienta <b>automount</b> o en versiones recientes de Linux con <b>amd</b>. Cuando se accede a un archivo en un directorio especificado, automount buscará el servidor remoto y lo montará automáticamente.",
+  "exercise": "Lee la página de manual de NFS para aprender más.",
+  "quizQuestion": "¿Qué herramienta se utiliza para gestionar puntos de montaje automáticamente?",
+  "quizAnswer": "automount",
+  "slug": "nfsnetworkfileshare"
+}

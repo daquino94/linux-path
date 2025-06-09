@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Authentifizierungsprotokollierung",
+  "lessonContent": "Die Authentifizierungsprotokollierung kann sehr nützlich sein, wenn Sie Probleme beim Anmelden haben. \n\n<b>/var/log/auth.log</b>\n\nDies enthält Systemberechtigungsprotokolle, wie z.B. Benutzeranmeldung und die verwendete Authentifizierungsmethode. \n\nBeispiel-Snippet:\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "Führen Sie einige fehlgeschlagene Anmeldeversuche durch und dann einen erfolgreichen, sehen Sie sich Ihr /var/log/auth.log an und sehen Sie, was passiert ist.",
+  "quizQuestion": "Welches Protokoll wird für die Benutzerauthentifizierung verwendet?",
+  "quizAnswer": "auth.log",
+  "slug": "authenticationlogging"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Estados de energía",
+  "lessonContent": "Es difícil de creer que en realidad no hemos discutido formas de controlar el estado de tu sistema a través de la línea de comandos, pero al hablar de init, no solo hablamos de los modos que nos permiten iniciar nuestro sistema, sino también de los que detienen nuestro sistema.\n\nPara apagar tu sistema:\n\n<pre>$ sudo shutdown -h now</pre>\n\nEsto detendrá el sistema (lo apagará), también debes especificar un tiempo en el que deseas que esto ocurra. Puedes agregar un tiempo en minutos que apagará el sistema en esa cantidad de tiempo.\n\n<pre>$ sudo shutdown -h +2</pre>\n\nEsto apagará tu sistema en dos minutos. También puedes reiniciar con el comando shutdown: \n\n<pre>$ sudo shutdown -r now</pre>\n\nO simplemente usa el comando reboot:\n\n<pre>$ sudo reboot</pre>",
+  "exercise": "¿Qué crees que está sucediendo con init cuando apagas tu máquina?",
+  "quizQuestion": "¿Cuál es el comando para apagar tu sistema en 4 minutos?",
+  "quizAnswer": "sudo shutdown -h +4",
+  "slug": "powerstates"
+}

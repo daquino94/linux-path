@@ -1,0 +1,7 @@
+{
+  "id": 20,
+  "title": "ネットワーク構成",
+  "description": "Linuxツールを使用したネットワーク構成について学びます！",
+  "image": "/images/chapters/networkConfiguration.png",
+  "slug": "networkconfig"
+}

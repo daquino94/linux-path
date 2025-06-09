@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "磁盘分区",
+  "lessonContent": "让我们通过在 USB 驱动器上进行文件系统的一些实际操作来学习一些实用的东西。如果你没有 USB 驱动器，别担心，你仍然可以跟着学习接下来的几节课。\n\n首先，我们需要对磁盘进行分区。有许多可用工具可以实现这一点：\n\n<ul>\n<li>fdisk - 基本的命令行分区工具，不支持 GPT</li>\n<li>parted - 这是一个支持 MBR 和 GPT 分区的命令行工具</li>\n<li>gparted - 这是 parted 的图形界面版本</li>\n<li>gdisk - fdisk 的变体，仅支持 GPT 而不支持 MBR</li>\n</ul>\n\n让我们使用 parted 来进行分区。假设我连接了 USB 设备，我们看到设备名称是 /dev/sdb2。\n\n<b>启动 parted</b>\n\n<pre>$ sudo parted</pre>\n\n你将进入 parted 工具，这里你可以运行命令来对设备进行分区。\n\n<b>选择设备</b>\n\n<pre>select /dev/sdb2</pre>\n\n要选择要操作的设备，请通过设备名称选择它。\n\n<b>查看当前分区表</b>\n\n<pre>\n(parted) print                                                            \nModel: Seagate (scsi)\nDisk /dev/sda: 21.5GB\nSector size (logical/physical): 512B/512B\nPartition Table: msdos\n\nNumber  Start   End     Size    Type      File system     Flags\n 1      1049kB  6860MB  6859MB  primary   ext4            boot\n 2      6861MB  21.5GB  14.6GB  extended\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n 6      7381MB  21.5GB  14.1GB  logical   xfs\n</pre>\n\n在这里，你将看到设备上可用的分区。 <b>Start</b> 和 <b>End</b> 是分区在硬盘上占用空间的起始和结束点，你需要找到适合你的分区的良好起始点和结束点。\n\n<b>对设备进行分区</b>\n\n<pre>mkpart primary 123 4567</pre>\n\n现在只需选择一个起始点和结束点并进行分区，你需要根据使用的表类型指定分区类型。\n\n<b>调整分区大小</b>\n\n如果没有空间，你也可以调整分区大小。\n\n<pre>resize 2 1245 3456</pre>\n\n选择分区号，然后选择要调整大小的起始点和结束点。\n\nParted 是一个非常强大的工具，在对磁盘进行分区时应当小心。",
+  "exercise": "使用一半的驱动器空间将 USB 驱动器分区为 ext4 和另一半为空闲空间。",
+  "quizQuestion": "使用 parted 命令进行分区的是什么？",
+  "quizAnswer": "mkpart",
+  "slug": "diskpartitioning"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Edição no Emacs",
+  "lessonContent": "<b>Navegação de Texto</b>\n\n<pre>\nC-seta para cima : mover para cima um parágrafo\nC-seta para baixo: mover para baixo um parágrafo\nC-seta para a esquerda: mover uma palavra para a esquerda\nC-seta para a direita: mover uma palavra para a direita\nM-> : mover para o final do buffer\n</pre>\n\nCom a navegação de texto, seus botões de texto regulares funcionam como deveriam, início, fim, página para cima, página para baixo e as setas, etc.\n\n<b>Recortar e Colar</b>\n\nPara recortar (matar) ou colar (inserir) no Emacs, você precisará ser capaz de selecionar o texto primeiro. Para selecionar o texto, mova o cursor para onde deseja recortar ou colar e pressione <pre>tecla C-space</pre> e depois use as teclas de navegação para selecionar o texto desejado. Agora você pode recortar e colar da seguinte forma:\n\n<pre>\nC-w : recortar\nC-y : inserir\n</pre>",
+  "exercise": "Brinque com a navegação de texto.",
+  "quizQuestion": "Como você move para o final do buffer?",
+  "quizAnswer": "M->",
+  "slug": "emacsediting"
+}

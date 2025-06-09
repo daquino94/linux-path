@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Dépôts de packages",
+  "lessonContent": "Comment les packages qui sont téléchargés sur internet se retrouvent-ils sur nos ordinateurs ? Allez-vous sur la page de téléchargement de chaque package que vous voulez et cliquez sur télécharger et installer ? Eh bien, en réalité, vous pouvez le faire, mais il y a quelque chose de mieux appelé dépôts de packages. Les dépôts sont simplement des emplacements de stockage central pour les packages. Il existe des tonnes de dépôts qui contiennent de nombreux packages et surtout ils se trouvent tous sur internet, pas de disques d'installation ridicules. Votre machine ne sait pas où chercher ces dépôts à moins que vous ne lui disiez explicitement où chercher.\n\nPar exemple, disons que je veux le logiciel WackyWidgets sur ma machine. Eh bien, WackyWidgets gère ses propres dépôts pour ses packages de widgets, à l'intérieur de ce dépôt se trouvent 10 packages, le package CoolWidget, le package SuperWidget, etc. WackyWidgets héberge ce dépôt à un lien source appelé : http://download.widgets/linux/deb/\n\nMaintenant, au lieu d'aller sur leur site web pour télécharger le package directement, vous pouvez dire à votre machine de trouver le logiciel WackyWidgets à partir du lien source.\n\nVotre distribution est déjà livrée avec des sources pré-approuvées pour obtenir des packages et c'est ainsi qu'elle installe tous les packages de base que vous voyez sur votre système. Sur un système Debian, ce fichier de sources est le fichier <b>/etc/apt/sources.list</b>. Votre machine saura chercher là-bas et vérifier les dépôts source que vous avez ajoutés.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Où se trouve le fichier de sources dans un système Debian ?",
+  "quizAnswer": "/etc/apt/sources.list",
+  "slug": "depotsdepackages"
+}

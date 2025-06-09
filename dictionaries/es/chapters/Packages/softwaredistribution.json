@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Distribución de Software",
+  "lessonContent": "Tu sistema está compuesto por muchos paquetes como navegadores de internet, editores de texto, reproductores multimedia, etc. Estos paquetes son gestionados a través de gestores de paquetes, que instalan y mantienen el software en tu sistema. Sin embargo, no todos los paquetes se instalan a través de gestores de paquetes, comúnmente puedes instalar paquetes directamente desde su código fuente (pronto veremos eso). La mayoría de las veces usarás un gestor de paquetes para instalar software, las variedades más comunes de paquetes son Debian (.deb) y Red Hat (.rpm). Los paquetes de estilo Debian se utilizan en distribuciones como Debian, Ubuntu, LinuxMint, etc. Los paquetes de estilo Red Hat se ven en Red Hat Enterprise Linux, Fedora, CentOS, etc.\n\n¿Qué son los paquetes? Puedes conocerlos como Chrome, Photoshop, etc., pero en realidad son simplemente muchos archivos que han sido compilados en uno solo. Las personas (o a veces una sola persona) que escriben este software son conocidas como <b>proveedores de origen</b>, compilan su código y escriben cómo instalarlo. Estos proveedores de origen trabajan en sacar nuevo software y actualizar el software existente. Cuando están listos para lanzarlo al mundo, envían su paquete a los <b>mantenedores de paquetes</b>, quienes se encargan de poner este software en manos de los usuarios. Estos mantenedores de paquetes revisan, gestionan y distribuyen este software en forma de paquetes.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¡Sin preguntas, sigue adelante!",
+  "quizAnswer": "",
+  "slug": "softwaredistribution"
+}

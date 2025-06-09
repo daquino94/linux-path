@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Vim Suchmuster",
+  "lessonContent": "Um nach einem Ausdruck zu suchen, geben Sie einfach den / Schlüssel ein und dann Ihr Suchergebnis, während Sie sich in einer Vim-Sitzung befinden. Sobald Sie die Eingabetaste drücken, können Sie \"n\" drücken, um vorwärts zu gehen oder \"N\", um rückwärts in Ihren Suchergebnissen zu gehen.\n\n<pre>\nMeine hübsche Datei ist sehr hübsch.\n\n/pretty\n\nwird die hübschen Wörter in der Textdatei finden.\n</pre>\n\n\nDer ? Suchbefehl sucht rückwärts in der Textdatei, also würde im vorherigen Beispiel das letzte hübsche zuerst auftauchen. \n<pre>\nMeine hübsche Datei ist sehr hübsch.\n\n?pretty\n\nwird die hübschen Wörter in der Textdatei finden.\n</pre>",
+  "exercise": "Spielen Sie mit dem Suchschlüssel, öffnen Sie eine Textdatei in Vim mit: vim [textfile] und beginnen Sie mit der Suche!",
+  "quizQuestion": "Welcher Schlüssel wird in Vim zum Suchen verwendet?",
+  "quizAnswer": "/",
+  "slug": "vimsearchpatterns"
+}

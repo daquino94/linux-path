@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "dhclient",
+  "lessonContent": "我们之前讨论过DHCP，大多数情况下，您永远不需要静态设置IP地址、子网掩码等。相反，您将使用DHCP！dhclient在启动时会从dhclient.conf文件中获取网络接口列表。对于列出的每个接口，它都会尝试使用DHCP协议配置接口。\n\n在dhclient.leases文件中，dhclient会跟踪系统重新启动后的租约列表，在读取dhclient.conf后，会读取dhclient.leases文件以了解它已经分配了哪些租约。\n\n<b>获取新IP的方法</b>\n\n<pre>$ sudo dhclient</pre>",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "谁尝试使用DHCP协议分配IP地址？",
+  "quizAnswer": "dhclient",
+  "slug": "dhclient"
+}

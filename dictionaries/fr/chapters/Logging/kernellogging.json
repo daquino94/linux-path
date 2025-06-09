@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Journalisation du noyau",
+  "lessonContent": "<b>/var/log/dmesg</b>\nAu démarrage, votre système enregistre des informations sur le tampon d'anneau du noyau. Cela nous montre des informations sur les pilotes matériels, les informations du noyau et l'état lors du démarrage, et plus encore. Ce fichier journal peut être trouvé à /var/log/dmesg et est réinitialisé à chaque démarrage, vous ne verrez peut-être pas d'utilité pour le moment, mais si vous rencontrez des problèmes lors du démarrage ou un problème matériel, dmesg est le meilleur endroit où regarder. Vous pouvez également afficher ce journal en utilisant la commande dmesg. \n\n<b>/var/log/kern.log</b>\nUn autre journal que vous pouvez utiliser pour afficher les informations du noyau est le fichier /var/log/kern.log, qui enregistre les informations et les événements du noyau sur votre système, il enregistre également la sortie de dmesg.",
+  "exercise": "Regardez vos journaux dmesg et kern, quelles différences remarquez-vous ?",
+  "quizQuestion": "Quelle commande peut être utilisée pour afficher les messages de démarrage du noyau ?",
+  "quizAnswer": "dmesg",
+  "slug": "journalisationnoyau"
+}

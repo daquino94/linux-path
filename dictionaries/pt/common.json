@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "image": "/images/penguinLaptop.png",
+    "title": "Desbloqueie o poder do Linux",
+    "subtitle": "Uma nova vida para o LinuxJourney, que ajudou tantas pessoas a dar os primeiros passos no mundo do Linux."
+  },
+  "resources": {
+    "title": "Recursos",
+    "hero": {
+      "image": "/images/penguinBook.png",
+      "title": "Recursos",
+      "subtitle": "Descubra livros, tutoriais e ferramentas selecionadas para aprofundar seu conhecimento em Linux."
+    },
+    "data": [
+      {
+        "image": "/images/link.png",
+        "title": "Tutorial oficial do Ubuntu",
+        "description": "Um guia passo a passo para iniciantes que explica a história do terminal e comandos básicos",
+        "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+      },
+      {
+        "image": "/images/link.png",
+        "title": "DigitalOcean",
+        "description": "Uma visão clara de como o terminal funciona, como executar comandos e navegar no sistema de arquivos.",
+        "href": "https://digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Como o Linux Funciona",
+        "description": "Um dos livros mais altamente recomendados!",
+        "href": "https://www.amazon.com/gp/product/1593275676/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275676&linkCode=as2&tag=linuxjourne0c-20&linkId=a8c48da327d15530a7214f453d5a55da"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Manual de Administração de Sistemas UNIX e Linux",
+        "description": "Livro extremamente abrangente para todo SysAdmin.",
+        "href": "https://www.amazon.com/gp/product/0131480057/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0131480057&linkCode=as2&tag=linuxjourne0c-20&linkId=de7ed3d4e4bf2c29b637855e351cffd2"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Bíblia de Comandos do Linux",
+        "description": "Ótimo guia abrangente para script shell.",
+        "href": "https://www.amazon.com/gp/product/111898384X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=111898384X&linkCode=as2&tag=linuxjourne0c-20&linkId=41767d3a073f8d20ff0db23bb11a2ac7"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "A Interface de Programação do Linux: Um Sistema Linux e UNIX",
+        "description": "Para usuários sérios de Linux, ótimo começo para programação de kernel.",
+        "href": "https://www.amazon.com/gp/product/1593272200/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593272200&linkCode=as2&tag=linuxjourne0c-20&linkId=5d63b12b27c4106a518799e42a9c379d"
+      }
+    ]
+  },
+  "chapterWrapper": {
+    "content": "Conteúdo",
+    "exerciseAndQuiz": "Exercício e quiz"
+  },
+  "navbar": {
+    "siteName": "Linux Path",
+    "home": "Início",
+    "lessons": "Lições",
+    "resources": "Recursos",
+    "language": "Idioma"
+  },
+  "exerciseBox": {
+    "exercise": "Exercício"
+  },
+  "quizBox": {
+    "quiz": "Quiz",
+    "checkAnswer": "Verificar Resposta",
+    "showCorrectAnswer": "Mostrar resposta correta",
+    "correctAnswer": "Resposta correta: ",
+    "placeholderAnswer": "Digite sua resposta aqui",
+    "nextLesson": "Próxima lição",
+    "backToChapters": "Voltar para os capítulos"
+  }
+}

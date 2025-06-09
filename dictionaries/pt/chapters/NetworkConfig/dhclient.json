@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "dhclient",
+  "lessonContent": "Já discutimos sobre o DHCP antes e na maioria das vezes você nunca precisará definir estaticamente seus endereços IP, máscaras de sub-rede, etc. Em vez disso, você estará usando o DHCP! O dhclient é iniciado durante a inicialização e obtém uma lista de interfaces de rede do arquivo dhclient.conf. Para cada interface listada, ele tenta configurar a interface usando o protocolo DHCP.\n\nNo arquivo dhclient.leases, o dhclient mantém uma lista de concessões através dos reinícios do sistema, após ler o dhclient.conf, o arquivo dhclient.leases é lido para informá-lo sobre quais concessões ele já atribuiu.\n\n<b>Para obter um novo IP</b>\n\n<pre>$ sudo dhclient</pre>",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "O que tenta atribuir endereços IP com o protocolo DHCP?",
+  "quizAnswer": "dhclient",
+  "slug": "dhclient"
+}

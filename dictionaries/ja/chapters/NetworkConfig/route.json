@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "ルート",
+  "lessonContent": "すでに、routeコマンドを使用してルーティングテーブルを表示する方法について説明しました。ルートを追加または削除したい場合は、手動で行うことができます。\n\n<b>新しいルートを追加</b>\n\n<pre>\n$ sudo route add -net 192.168.2.1/23 gw 10.11.12.3\n</pre>\n\n<b>ルートを削除</b>\n\n<pre>\n$ sudo route del -net 192.168.2.1/23 \n</pre>\n\nこれらの変更は、<b>ip</b>コマンドでも実行できます:\n\n<b>ルートを追加する</b>\n<pre>\n$ ip route add 192.168.2.1/23 via 10.11.12.3\n</pre>\n\n<b>ルートを削除する</b>\n<pre>\n$ ip route delete 192.168.2.1/23 via 10.11.12.3\nまたは\n$ ip route delete 192.168.2.1/23\n</pre>",
+  "exercise": "このレッスンには練習問題はありませんが、ここで説明したコマンドに関する詳細情報は、manページで確認できます。\n\n<pre>$ man route</pre>\n\n<pre>$ man ip-route</pre>",
+  "quizQuestion": "ルートを削除するためのコマンドフラグは何ですか？",
+  "quizAnswer": "del",
+  "slug": "route"
+}

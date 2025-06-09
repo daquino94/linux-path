@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Die Auswahl einer Linux-Distribution",
+  "lessonContent": "Im vorherigen Lektion haben wir über den Linux-Kernel gelernt, der täglich Millionen von Geräten antreibt. Etwas, bevor wir weitermachen, der Begriff Linux ist tatsächlich ein Missverständnis, da er sich eigentlich auf den Linux-Kernel bezieht. Viele Distributionen verwenden jedoch den Linux-Kernel und sind daher allgemein als Linux-Betriebssysteme bekannt. \n\nEin Linux-System ist in drei Hauptteile unterteilt:\n\n<ul>\n<li>Hardware - Dies umfasst alle Hardware, auf der Ihr System läuft, sowie Speicher, CPU, Festplatten usw.</li>\n<li>Linux-Kernel - Wie bereits erwähnt, ist der Kernel das Herzstück des Betriebssystems. Er verwaltet die Hardware und sagt ihr, wie sie mit dem System interagieren soll.</li>\n<li>User Space - Hier werden Benutzer wie Sie direkt mit dem System interagieren.</li>\n</ul>\n\nDer erste Schritt, den wir unternehmen müssen, ist die Installation von Linux auf Ihrem Rechner. Sie haben viele Optionen zur Auswahl, und dieser Kurs wird Sie informieren und Ihnen helfen, bei der Auswahl einer Linux-Distribution zu beginnen. \n\nEs gibt viele Linux-Distributionen zur Auswahl, wir werden nur die beliebtesten Optionen durchgehen.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Keine Fragen, überspringen!",
+  "quizAnswer": "",
+  "slug": "auswahleinerlinuxdistribution"
+}

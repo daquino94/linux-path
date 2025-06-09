@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Protocoles de routage",
+  "lessonContent": "Il serait fastidieux de devoir configurer manuellement des routes sur une table de routage pour chaque appareil de votre réseau, c'est pourquoi nous utilisons ce que l'on appelle les protocoles de routage. Les protocoles de routage sont utilisés pour aider notre système à s'adapter aux changements du réseau, il apprend différentes routes, les construit dans la table de routage et ensuite route nos paquets de cette manière. Il existe deux types principaux de protocoles de routage, les protocoles de vecteur de distance et les protocoles d'état de liaison.\n\n<b>Convergence</b>\n\nAvant de parler des protocoles, nous devrions expliquer un terme utilisé dans le routage appelé convergence. Lors de l'utilisation de protocoles de routage, les routeurs communiquent avec d'autres routeurs pour collecter et échanger des informations sur le réseau. Lorsqu'ils sont d'accord sur l'apparence d'un réseau, chaque table de routage cartographie la topologie complète du réseau, ce qui permet de \"converger\". Lorsqu'un événement survient dans la topologie du réseau, la convergence se rompra temporairement jusqu'à ce que tous les routeurs soient conscients de ce changement.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Quel est le terme utilisé lorsque toutes les tables de routage connaissent la topologie du réseau?",
+  "quizAnswer": "convergence",
+  "slug": "protocolesderoutage"
+}

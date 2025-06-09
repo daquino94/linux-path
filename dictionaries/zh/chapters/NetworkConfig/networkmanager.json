@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "网络管理器",
+  "lessonContent": "当然，如果您希望系统的网络自动运行，已经有相应的解决方案。大多数发行版使用 NetworkManager 守护程序来自动配置网络。\n\n如果您使用图形界面，您会在桌面任务栏的某个位置看到 NetworkManager 的小程序。它负责管理您网络的硬件和连接信息。例如，在启动时，NetworkManager 会收集网络硬件信息，搜索无线、有线连接等，然后激活它。\n\n还有一些命令行工具可以与 NetworkManager 交互：\n\n<b>nm-tool</b>\n\nnm-tool 报告 NetworkManager 的状态和设备\n\n<pre>\npete@icebox:/$ nm-tool\nNetworkManager 工具\n\n状态: 已连接 (全局)\n\n- 设备: eth0  [有线连接 1] -------------------------------------------\n  类型:              有线\n  驱动程序:            pcnet32\n  状态:             已连接\n  默认:           是\n  硬件地址:        12:3D:45:56:7D:CC\n\n  功能:\n    载波检测:  是\n\n  有线属性\n    载波:         开启\n\n  IPv4 设置:\n    地址:         192.168.22.1\n    前缀:          24 (255.255.255.0)\n    网关:         192.168.22.2\n\n    DNS:             192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nnmcli 命令允许您控制和修改 NetworkManager，请参阅 man 手册获取更多详细信息。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "查看 NetworkManager 信息的命令是什么？",
+  "quizAnswer": "nm-tool",
+  "slug": "networkmanager"
+}

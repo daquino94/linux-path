@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Edición en Emacs",
+  "lessonContent": "<b>Navegación de texto</b>\n\n<pre>\nC-flecha arriba : mover hacia arriba un párrafo\nC-flecha abajo: mover hacia abajo un párrafo\nC-flecha izquierda: mover una palabra a la izquierda\nC-flecha derecha: mover una palabra a la derecha\nM-> : mover al final del búfer\n</pre>\n\nCon la navegación de texto, tus botones de texto regulares funcionan como deberían, inicio, fin, página arriba, página abajo y las teclas de flecha, etc.\n\n<b>Cortar y pegar</b>\n\nPara cortar (eliminar) o pegar (insertar) en Emacs primero necesitarás ser capaz de seleccionar texto. Para seleccionar texto, mueve tu cursor a donde quieras cortar o pegar y presiona <pre>tecla C-espacio</pre> luego puedes usar las teclas de navegación para seleccionar el texto que desees. Ahora puedes cortar y pegar de la siguiente manera:\n\n<pre>\nC-w : cortar\nC-y : pegar\n</pre>",
+  "exercise": "Juega con la navegación de texto.",
+  "quizQuestion": "¿Cómo te mueves al final del búfer?",
+  "quizAnswer": "M->",
+  "slug": "emacsediting"
+}

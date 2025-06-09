@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "/etc/fstab",
+  "lessonContent": "Cuando queremos montar sistemas de archivos automáticamente al inicio, podemos agregarlos a un archivo llamado /etc/fstab (pronunciado \"eff es tab\" no \"eff stab\"), abreviatura de tabla de sistemas de archivos. Este archivo contiene una lista permanente de sistemas de archivos que están montados.\n\n<pre>\npete@icebox:~$ cat /etc/fstab\nUUID=130b882f-7d79-436d-a096-1e594c92bb76 /               ext4    relatime,errors=remount-ro 0       1\nUUID=78d203a0-7c18-49bd-9e07-54f44cdb5726 /home           xfs     relatime        0       2\nUUID=22c3d34b-467e-467c-b44d-f03803c2c526 none            swap    sw              0       0\n</pre>\n\nCada línea representa un sistema de archivos, los campos son: \n\n<ul>\n<li>UUID - Identificador del dispositivo</li>\n<li>Punto de montaje - Directorio al que se monta el sistema de archivos</li>\n<li>Tipo de sistema de archivos</li>\n<li>Opciones - otras opciones de montaje, consulte la página del manual para más detalles</li>\n<li>Dump - utilizado por la utilidad de volcado para decidir cuándo hacer una copia de seguridad, debería ser 0 por defecto</li>\n<li>Pass - Utilizado por fsck para decidir en qué orden se deben verificar los sistemas de archivos, si el valor es 0, no se verificará</li>\n</ul>\n\nPara agregar una entrada, simplemente modifique directamente el archivo /etc/fstab utilizando la sintaxis de entrada anterior. Ten cuidado al modificar este archivo, podrías complicarte un poco la vida si te equivocas.",
+  "exercise": "Agrega la unidad USB en la que hemos estado trabajando como una entrada en /etc/fstab, cuando reinicies deberías seguir viéndola montada.",
+  "quizQuestion": "¿Qué archivo se utiliza para definir cómo deben montarse los sistemas de archivos?",
+  "quizAnswer": "/etc/fstab",
+  "slug": "etcfstabfilesystemtable"
+}

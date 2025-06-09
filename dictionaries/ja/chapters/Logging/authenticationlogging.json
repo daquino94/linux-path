@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "認証ログ記録",
+  "lessonContent": "認証ログ記録は、ログインに問題がある場合に非常に役立ちます。\n\n<b>/var/log/auth.log</b>\n\nこれには、ユーザーログインや使用された認証方法などのシステム認可ログが含まれています。\n\nサンプルスニペット:\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "いくつかの失敗したログインを行い、その後成功したログインを行い、/var/log/auth.logを確認して何が起こったかを見てください。",
+  "quizQuestion": "ユーザー認証に使用されるログは何ですか？",
+  "quizAnswer": "auth.log",
+  "slug": "authenticationlogging"
+}

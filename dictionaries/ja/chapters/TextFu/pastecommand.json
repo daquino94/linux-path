@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "paste",
+  "lessonContent": "pasteコマンドはcatコマンドに似ており、ファイル内の行を結合します。次の内容を持つ新しいファイルを作成しましょう：\n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\nこれらのすべての行を1行に結合しましょう：\n\n<pre>$ paste -s sample2.txt</pre>\n\npasteのデフォルトの区切り文字はTABですので、今は1行に各単語を区切るTABがあります。\n\nこの区切り文字（-d）を少し読みやすいものに変更しましょう：\n\n<pre>$ paste -d ' ' -s sample2.txt</pre>\n\nこれですべてがスペースで区切られた1行になるはずです。",
+  "exercise": "複数のファイルを一緒に貼り付けてみて、何が起こるか試してみてください。",
+  "quizQuestion": "すべてを1行にするためにpasteと一緒に使用するフラグは何ですか？",
+  "quizAnswer": "-s",
+  "slug": "pastecommand"
+}

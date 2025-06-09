@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "queue",
+  "lessonContent": "Similaire à la commande head, la commande tail vous permet de voir les 10 dernières lignes d'un fichier par défaut.\n\n<pre>$ tail /var/log/syslog</pre>\n\nEn plus de head, vous pouvez changer le nombre de lignes que vous souhaitez voir.\n\n<pre>$ tail -n 10 /var/log/syslog</pre>\n\nUne autre excellente option que vous pouvez utiliser est le drapeau -f (suivre), cela suivra le fichier à mesure qu'il grandit. Essayez et voyez ce qui se passe. \n\n<pre>$ tail -f /var/log/syslog</pre> \n\nVotre fichier syslog changera continuellement pendant que vous interagissez avec votre système et en utilisant tail -f, vous pouvez voir tout ce qui est ajouté à ce fichier.",
+  "exercise": "Consultez la page de manuel de la commande tail et lisez certaines des autres commandes que nous n'avons pas discutées. \n\n<pre>$ man tail</pre>",
+  "quizQuestion": "Quel est le drapeau utilisé pour suivre un fichier dans tail?",
+  "quizAnswer": "-f",
+  "slug": "commandetail"
+}

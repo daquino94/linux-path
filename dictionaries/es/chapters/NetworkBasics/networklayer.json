@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Capa de Red",
+  "lessonContent": "La capa de red determina la ruta de nuestros paquetes desde nuestro host de origen hasta un host de destino. Afortunadamente, en nuestro ejemplo, nuestro paquete solo viaja dentro de la misma red, pero Internet está compuesto por muchas redes. Estas redes más pequeñas que conforman Internet se conocen como subredes. Todas las subredes se conectan de alguna manera, por eso podemos acceder a www.google.com aunque esté en su propia red. No entraré en detalles ya que tenemos un curso completo dedicado a las subredes, pero por ahora, en relación con nuestra capa de red, sepa que las direcciones IP definen las reglas para viajar a diferentes subredes. \n\nEn la capa de red, recibe el segmento proveniente de la capa de transporte y encapsula este segmento en un paquete IP, luego adjunta la dirección IP del host de origen y la dirección IP del host de destino al encabezado del paquete. En este punto, nuestro paquete tiene información sobre a dónde va y de dónde viene. Ahora envía nuestro paquete a la capa de hardware físico.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cómo se llaman las redes más pequeñas que conforman Internet?",
+  "quizAnswer": "subredes",
+  "slug": "capadered"
+}

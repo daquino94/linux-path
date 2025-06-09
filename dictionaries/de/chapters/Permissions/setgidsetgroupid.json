@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Setgid",
+  "lessonContent": "Ähnlich wie das Set-User-ID-Berechtigungsbit gibt es ein Set-Group-ID (SGID)-Berechtigungsbit. Dieses Bit ermöglicht es einem Programm, so zu laufen, als wäre es ein Mitglied dieser Gruppe. \n\nSchauen wir uns ein Beispiel an: \n\n<pre>$ ls -l /usr/bin/wall\n-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall\n</pre>\n\nWir können jetzt sehen, dass das Berechtigungsbit im Gruppenberechtigungsset ist. \n\n<b>Ändern von SGID</b>\n\n<pre>$ sudo chmod g+s myfile\n$ sudo chmod 2555 myfile\n</pre>\n\nDie numerische Darstellung für SGID ist 2.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Welche Zahl repräsentiert das SGID?",
+  "quizAnswer": "2",
+  "slug": "setgidsetgroupid"
+}

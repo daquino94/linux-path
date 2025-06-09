@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Vim 搜索模式",
+  "lessonContent": "要搜索表达式，只需在 vim 会话中键入 / 键，然后输入您要搜索的结果。按下回车后，您可以按 \"n\" 向前或按 \"N\" 向后查看搜索结果。\n\n<pre>\n我的漂亮文件非常漂亮。\n\n/漂亮\n\n将在文本文件中找到漂亮的单词。\n</pre>\n\n\n? 搜索命令将向后搜索文本文件，因此在上一个示例中，最后一个漂亮会首先出现。\n<pre>\n我的漂亮文件非常漂亮。\n\n?漂亮\n\n将在文本文件中找到漂亮的单词。\n</pre>",
+  "exercise": "尝试使用搜索键，在 vim 中打开文本文件：vim [textfile]，然后开始搜索！",
+  "quizQuestion": "在 vim 中用于搜索的键是什么？",
+  "quizAnswer": "/",
+  "slug": "vimsearchpatterns"
+}

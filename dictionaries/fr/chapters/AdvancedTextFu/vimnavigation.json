@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Navigation Vim",
+  "lessonContent": "Maintenant, vous pouvez remarquer que la souris n'est pas du tout utilisée ici. Pour naviguer dans un document texte dans vim, utilisez les touches suivantes: \n\n<ul>\n<li>h ou la flèche gauche - vous déplacera d'un caractère vers la gauche</li>\n<li>k ou la flèche vers le haut - vous déplacera d'une ligne vers le haut</li>\n<li>j ou la flèche vers le bas - vous déplacera d'une ligne vers le bas</li>\n<li>l ou la flèche droite - vous déplacera d'un caractère vers la droite</li>\n</ul>",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Quelle lettre est utilisée pour descendre?",
+  "quizAnswer": "j",
+  "slug": "vimnavigation"
+}

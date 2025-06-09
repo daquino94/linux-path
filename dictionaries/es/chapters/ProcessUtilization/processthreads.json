@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Hilos de Proceso",
+  "lessonContent": "Es posible que hayas escuchado los términos procesos de un solo hilo y procesos multihilo. Los hilos son muy similares a los procesos, en el sentido de que se utilizan para ejecutar el mismo programa, a menudo se les llama procesos livianos. Si un proceso tiene un hilo, es de un solo hilo y si un proceso tiene más de un hilo, es multihilo. Sin embargo, todos los procesos tienen al menos un hilo. \n\nLos procesos operan con sus propios recursos del sistema aislados, sin embargo, los hilos pueden compartir estos recursos entre sí fácilmente, lo que facilita la comunicación entre ellos y a veces es más eficiente tener una aplicación multihilo que una aplicación multiproceso.\n\nBásicamente, digamos que abres LibreOffice Writer y Chrome, cada uno es su propio proceso separado. Ahora entras en Writer y comienzas a editar texto, cuando editas el texto se guarda automáticamente. Estos dos procesos paralelos \"livianos\" de guardar y editar son hilos. \n\nPara ver los hilos de proceso, puedes usar: \n\n<pre>\npete@icebox:~$ ps m\n  PID TTY      STAT   TIME COMMAND\n 2207 pts/2    -      0:01 bash\n    - -        Ss     0:01 -\n 5252 pts/2    -      0:00 ps m\n    - -        R+     0:00 -\n</pre>\n\nLos procesos se indican con cada PID y debajo de los procesos están sus hilos (indicados por --). Por lo tanto, puedes ver que los procesos anteriores son de un solo hilo.",
+  "exercise": "Ejecuta el comando <b>ps m</b> y mira qué procesos en ejecución son multihilo.",
+  "quizQuestion": "Verdadero o falso, todos los procesos comienzan como de un solo hilo.",
+  "quizAnswer": "Verdadero",
+  "slug": "processthreads"
+}

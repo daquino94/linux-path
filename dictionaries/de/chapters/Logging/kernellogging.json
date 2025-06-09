@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Kernel Logging",
+  "lessonContent": "<b>/var/log/dmesg</b>\nBeim Booten protokolliert Ihr System Informationen über den Kernel-Ringpuffer. Dies zeigt uns Informationen über Hardwaretreiber, Kernelinformationen und -status während des Bootvorgangs und mehr. Diese Protokolldatei befindet sich unter /var/log/dmesg und wird bei jedem Neustart zurückgesetzt. Möglicherweise sehen Sie jetzt keinen Nutzen darin, aber wenn Sie jemals Probleme beim Booten oder Hardwareprobleme haben, ist dmesg der beste Ort, um nachzusehen. Sie können dieses Protokoll auch mit dem Befehl dmesg anzeigen. \n\n<b>/var/log/kern.log</b>\nEin weiteres Protokoll, das Sie zur Anzeige von Kernelinformationen verwenden können, ist die Datei /var/log/kern.log. Hier werden die Kernelinformationen und -ereignisse auf Ihrem System protokolliert, es protokolliert auch die Ausgabe von dmesg.",
+  "exercise": "Schauen Sie sich Ihre dmesg- und kern-Protokolle an, welche Unterschiede bemerken Sie?",
+  "quizQuestion": "Welcher Befehl kann verwendet werden, um Kernel-Bootnachrichten anzuzeigen?",
+  "quizAnswer": "dmesg",
+  "slug": "kernellogging"
+}

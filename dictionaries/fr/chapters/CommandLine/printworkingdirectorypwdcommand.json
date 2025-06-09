@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "pwd (Afficher le répertoire de travail)",
+  "lessonContent": "Tout dans Linux est un fichier. Au fur et à mesure que vous explorez plus en profondeur Linux, vous comprendrez cela, mais pour l'instant gardez-le simplement à l'esprit. Chaque fichier est organisé dans une arborescence de répertoires hiérarchique. Le premier répertoire dans le système de fichiers est judicieusement nommé le 'répertoire racine'. Le répertoire racine contient de nombreux dossiers et fichiers, dans lesquels vous pouvez stocker d'autres dossiers et fichiers, et ainsi de suite. Voici un exemple de ce à quoi ressemble l'arborescence des répertoires : \n\n<pre>/\n|-- bin\n|   |-- fichier1\n|   |-- fichier2\n|-- etc\n|   |-- fichier3\n|   `-- répertoire1\n|       |-- fichier4\n|       `-- fichier5\n|-- home\n|-- var\n</pre>\n\nLes emplacements de ces fichiers et répertoires sont appelés 'chemins'. Si vous aviez un dossier nommé 'home' qui contenait un dossier à l'intérieur nommé 'pete' et un autre dossier dans ce dossier nommé 'Films', ce chemin ressemblerait à ceci : '/home/pete/Films'. Assez simple, n'est-ce pas ?\n\nNaviguer dans le système de fichiers, tout comme naviguer dans la vie réelle, est plus facile si vous savez où vous êtes et où vous allez. Pour voir où vous êtes, vous pouvez utiliser la commande 'pwd'. Cette commande signifie “print working directory” et elle vous montre dans quel répertoire vous vous trouvez. Notez que le chemin provient du répertoire racine.\n\n<pre>$ pwd</pre>\n\nOù êtes-vous ? Où suis-je ? Essayez.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Comment puis-je savoir dans quel répertoire vous vous trouvez actuellement ?",
+  "quizAnswer": "pwd",
+  "slug": "commandepwdafficherlerépertoiredetravail"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Vim (Vi Improved)",
+  "lessonContent": "Vim steht für vi (Improved), genau wie der Name schon sagt, steht es für eine verbesserte Version des vi-Texteditor-Befehls.\n\nEs ist super leichtgewichtig, das Öffnen und Bearbeiten einer Datei mit vim ist schnell und einfach. Es ist auch fast immer verfügbar, wenn Sie eine zufällige Linux-Distribution gestartet haben, ist die Wahrscheinlichkeit hoch, dass vim standardmäßig installiert ist. \n\nUm vim zu starten, geben Sie einfach ein: <pre>vim</pre>",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Keine Fragen, weitermachen!",
+  "quizAnswer": "",
+  "slug": "vimtexteditor"
+}

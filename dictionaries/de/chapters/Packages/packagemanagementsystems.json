@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "yum und apt",
+  "lessonContent": "Ah, die Batmans des Paketmanagements, diese Systeme kommen mit allem Drum und Dran, um die Paketinstallation, -entfernung und -änderungen zu erleichtern, einschließlich der Installation von Paketabhängigkeiten. Zwei der beliebtesten Managementsysteme sind <b>yum</b> und <b>apt</b>. Yum ist exklusiv für die Red Hat-Familie und apt ist exklusiv für die Debian-Familie.\n\n<b>Installieren eines Pakets aus einem Repository</b>\n\n<pre>\nDebian: $ apt install paketname\nRPM: $ yum install paketname\n</pre>\n\n<b>Ein Paket entfernen</b>\n\n<pre>\nDebian: $ apt remove paketname\nRPM: $ yum erase paketname\n</pre>\n\n<b>Aktualisieren von Paketen für ein Repository</b>\n\nEs ist immer bewährte Praxis, Ihre Paket-Repositories zu aktualisieren, damit sie vor der Installation und Aktualisierung eines Pakets auf dem neuesten Stand sind. \n\n<pre>\nDebian: apt update; apt upgrade\nRPM: yum update\n</pre>\n\n<b>Informationen zu einem installierten Paket abrufen</b>\n\n<pre>\nDebian: apt show paketname\nRPM: yum info paketname\n</pre>",
+  "exercise": "Führen Sie jeden dieser Paketbefehle aus und sehen Sie sich die Ausgabe an, die Sie erhalten.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um Paketinformationen auf einem Debian-System anzuzeigen?",
+  "quizAnswer": "apt show",
+  "slug": "packagemanagementsystems"
+}

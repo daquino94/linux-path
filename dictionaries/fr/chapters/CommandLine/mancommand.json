@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "homme",
+  "lessonContent": "Gee, j'aimerais que certains de ces programmes aient un manuel pour que nous puissions voir plus d'informations à leur sujet. Eh bien, heureusement ils en ont un ! Appelées pages de manuel, vous pouvez voir les manuels d'une commande avec la commande man. \n\n<pre>$ man ls</pre>\n\nLes pages de manuel sont des manuels qui sont par défaut intégrés dans la plupart des systèmes d'exploitation Linux. Elles fournissent de la documentation sur les commandes et d'autres aspects du système. \n\nEssayez-le sur quelques commandes pour obtenir plus d'informations à leur sujet.",
+  "exercise": "Exécutez la commande man sur la commande ls.",
+  "quizQuestion": "Comment voir les manuels d'une commande ?",
+  "quizAnswer": "man",
+  "slug": "commandeman"
+}

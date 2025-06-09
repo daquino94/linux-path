@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "mkdir (创建目录)",
+  "lessonContent": "我们需要一些目录来存储我们一直在处理的所有这些文件。mkdir命令（Make Directory）非常有用，如果目录不存在，它将创建一个目录。您甚至可以同时创建多个目录。\n\n<pre>$ mkdir books paintings</pre>\n\n您还可以使用-p（父目录标志）同时创建子目录。\n\n<pre>$ mkdir -p books/hemmingway/favorites</pre>",
+  "exercise": "创建一些目录并将一些文件移动到该目录。",
+  "quizQuestion": "用于创建目录的命令是什么？",
+  "quizAnswer": "mkdir",
+  "slug": "makedirectorymkdircommand"
+}

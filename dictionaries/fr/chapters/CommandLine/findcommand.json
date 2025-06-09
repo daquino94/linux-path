@@ -1,0 +1,9 @@
+{
+  "id": 14,
+  "title": "trouver",
+  "lessonContent": "Avec tous ces fichiers que nous avons sur le système, cela peut devenir un peu chaotique d'essayer de trouver un spécifique. Eh bien, il y a une commande que nous pouvons utiliser pour cela, find! \n\n<pre>$ find /home -name puppies.jpg</pre>\n\nAvec find, vous devrez spécifier le répertoire dans lequel vous effectuerez la recherche, ce que vous recherchez, dans ce cas, nous essayons de trouver un fichier nommé puppies.jpg. \n\nVous pouvez spécifier le type de fichier que vous essayez de trouver. \n\n<pre>$ find /home -type d -name MyFolder</pre>\n\nVous pouvez voir que j'ai défini le type de fichier que je cherche comme (d) pour répertoire et je recherche toujours par le nom de MyFolder. \n\nUne chose intéressante à noter est que find ne s'arrête pas au répertoire que vous recherchez, il regardera également à l'intérieur de tous les sous-répertoires que ce répertoire pourrait avoir.",
+  "exercise": "<ol>\n<li>Trouvez un fichier à partir du répertoire racine qui contient le mot net.</li>\n</ol>",
+  "quizQuestion": "Quelle option dois-je spécifier pour find si je veux rechercher par nom?",
+  "quizAnswer": "-name",
+  "slug": "commandetrouver"
+}

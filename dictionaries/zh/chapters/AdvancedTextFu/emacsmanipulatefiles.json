@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "Emacs 操作文件",
+  "lessonContent": "在许多（如果不是全部）Emacs 文档中，您会看到类似 C-[字母] 的语法。这只是表示按下 Ctrl-字母键，但为了简便起见，我们将 Ctrl 缩写为 C。如果您看到类似 M-[字母] 的语法，那意味着使用 Meta 键，通常是 Alt 键。\n\n<b>保存文件</b>\n\n<pre>\nC-x C-s - 保存文件\nC-x C-w - 另存为\nC-x s - 保存所有\n</pre>\n\n保存文件选项会提示您是否要保存每个文件。\n\n<b>打开文件</b>\n\n<pre>\nC-x C-f\n</pre>\n\n这将提示您输入要打开的文件名。如果您没有已经存在的文件，它将创建一个新文件。您也可以加载一个目录。",
+  "exercise": "尝试打开文件和保存文件。",
+  "quizQuestion": "用于打开文件的命令是什么？",
+  "quizAnswer": "C-x C-f",
+  "slug": "emacsmanipulatefiles"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "traceroute",
+  "lessonContent": "Der traceroute-Befehl wird verwendet, um zu sehen, wie Pakete geroutet werden. Er funktioniert, indem er Pakete mit zunehmenden TTL-Werten sendet, beginnend mit 1. Der erste Router erhält das Paket und verringert den TTL-Wert um eins, wodurch das Paket verworfen wird. Der Router sendet uns eine ICMP Time Exceeded-Nachricht zurück. Dann erhält das nächste Paket einen TTL von 2, sodass es den ersten Router passiert, aber wenn es zum zweiten Router gelangt, ist der TTL 0 und es wird eine weitere ICMP Time Exceeded-Nachricht zurückgegeben. Traceroute funktioniert auf diese Weise, weil es beim Senden und Verwerfen von Paketen eine Liste der Router erstellt, die die Pakete durchlaufen, bis es schließlich sein Ziel erreicht und eine ICMP Echo Reply-Nachricht erhält. \n\nHier ist ein kleiner Ausschnitt eines traceroute: \n\n<pre>\n$ traceroute google.com                                                                          \ntraceroute zu google.com (216.58.216.174), maximal 30 Sprünge, 60 Byte Pakete                          \n 1  192.168.4.254 (192.168.4.254)  0.028 ms  0.009 ms  0.008 ms                                  \n 2  100.64.1.113 (100.64.1.113)  1.227 ms  1.226 ms 0.920 ms\n 3  100.64.0.20 (100.64.0.20)  1.501 ms 1.556 ms  0.855 ms                                                                                 \n</pre>\n\nJede Zeile ist ein Router oder eine Maschine, die zwischen mir und meinem Ziel liegt. Es zeigt den Namen des Ziels und seine IP-Adresse, und die letzten drei Spalten entsprechen der Round-Trip-Zeit eines Pakets zu diesem Router. Standardmäßig senden wir drei Pakete entlang der Route.",
+  "exercise": "Führen Sie den traceroute-Befehl auf Ihrem Rechner aus und beobachten Sie die Ausgabe.",
+  "quizQuestion": "Was wird um eins verringert, wenn Pakete über das Netzwerk gehoppt werden?",
+  "quizAnswer": "ttl",
+  "slug": "traceroute"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "kill (终止)",
+  "lessonContent": "您可以发送终止进程的信号，这样的命令称为kill命令。\n\n<pre>$ kill 12445</pre>\n\n12445是您要终止的进程的PID。默认情况下，它发送一个TERM信号。SIGTERM信号被发送到一个进程以请求其终止，允许它清理释放资源并保存其状态。\n\n您还可以使用kill命令指定信号：\n\n<pre>$ kill -9 12445</pre>\n\n这将运行SIGKILL信号并终止进程。\n\n<b>SIGHUP、SIGINT、SIGTERM、SIGKILL、SIGSTOP之间的区别？</b>\n\n这些信号听起来都相当相似，但它们确实有区别。\n\n<ul>\n<li>SIGHUP - 挂断，当控制终端关闭时发送给进程。例如，如果您关闭了一个中有进程运行的终端窗口，您将收到SIGHUP信号。所以基本上您被挂断了</li>\n<li>SIGINT - 是一个中断信号，因此您可以使用Ctrl-C，系统将尝试优雅地终止进程</li>\n<li>SIGTERM - 终止进程，但允许其先进行一些清理</li>\n<li>SIGKILL - 终止进程，火力全开，不进行任何清理</li>\n<li>SIGSTOP - 停止/挂起进程</li>\n</ul>",
+  "exercise": "使用不同的信号终止一些进程。",
+  "quizQuestion": "默认kill命令的信号名称是什么？",
+  "quizAnswer": "SIGTERM",
+  "slug": "killingprocesses"
+}

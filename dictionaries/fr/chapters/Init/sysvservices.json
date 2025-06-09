@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Service System V",
+  "lessonContent": "Il existe de nombreux outils en ligne de commande que vous pouvez utiliser pour gérer les services Sys V. \n\n<b>Liste des services</b>\n\n<pre>$ service --status-all</pre>\n\n<b>Démarrer un service</b>\n\n<pre>$ sudo service networking start</pre>\n\n<b>Arrêter un service</b>\n\n<pre>$ sudo service networking stop</pre>\n\n<b>Redémarrer un service</b>\n\n<pre>$ sudo service networking restart</pre>\n\nCes commandes ne sont pas spécifiques aux systèmes d'initialisation Sys V, vous pouvez également utiliser ces commandes pour gérer les services Upstart. Étant donné que Linux essaie de s'éloigner des scripts d'initialisation Sys V plus traditionnels, il existe encore des éléments en place pour faciliter cette transition.",
+  "exercise": "Gérez quelques services et modifiez leurs états, que constatez-vous?",
+  "quizQuestion": "Quelle est la commande pour arrêter un service nommé peanut avec Sys V?",
+  "quizAnswer": "sudo service peanut stop",
+  "slug": "servicesysv"
+}

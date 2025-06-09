@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "grep",
+  "lessonContent": "O comando grep é possivelmente o comando de processamento de texto mais comum que você usará. Ele permite que você pesquise arquivos em busca de caracteres que correspondam a um determinado padrão. E se você quisesse saber se um arquivo existe em um determinado diretório ou se quisesse ver se uma string foi encontrada em um arquivo? Certamente você não iria vasculhar cada linha de texto, você usaria o grep!\n\nVamos usar nosso arquivo sample.txt como exemplo: \n\n<pre>$ grep raposa sample.txt</pre>\n\nVocê deve ver que o grep encontrou a palavra raposa no arquivo sample.txt. \n\nVocê também pode pesquisar padrões que não diferenciam maiúsculas de minúsculas com a flag -i: \n\n<pre>$ grep -i algumPadrao algumArquivo</pre>\n\nPara tornar o grep ainda mais flexível, você pode combiná-lo com outros comandos com |.\n\n<pre>$ env | grep -i Usuário</pre>\n\nComo você pode ver, o grep é bastante versátil. Você até pode usar expressões regulares em seu padrão: \n\n<pre>$ ls /algumdiretorio | grep '.txt$'</pre>\n\nDeve retornar todos os arquivos que terminam com .txt em algumdiretorio.",
+  "exercise": "Você pode ter ouvido falar de egrep ou fgrep, essas chamadas de grep estão obsoletas e foram substituídas por grep -E e grep -F. Leia a página de manual do grep para aprender mais.",
+  "quizQuestion": "Qual comando você usa para encontrar um determinado padrão?",
+  "quizAnswer": "grep",
+  "slug": "comandogrep"
+}

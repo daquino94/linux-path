@@ -1,0 +1,7 @@
+{
+  "id": 12,
+  "title": "カーネル",
+  "description": "Linuxシステムの最も重要な部分であり、その動作方法や構成方法について学びます。",
+  "image": "/images/chapters/kernel.png",
+  "slug": "kernel"
+}

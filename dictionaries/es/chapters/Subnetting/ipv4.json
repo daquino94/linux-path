@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "IPv4",
+  "lessonContent": "Cada host de red tiene una dirección única, y cada dirección única se puede utilizar para localizar el host dentro de la red. Estas direcciones únicas se conocen como 'direcciones IP'. Una dirección IPv4 se ve algo así:\n\n<pre>204.23.124.23</pre>\n\nEsta dirección en realidad contiene dos partes: la parte de red (que identifica en qué red se encuentra) y la parte de host (que identifica el host). Para este curso, principalmente estaremos discutiendo direcciones IPv4, que es lo que comúnmente verás al referirte a 'direcciones IP'. \n\nUna dirección IP se separa en octetos por los puntos. Hay 4 octetos en una dirección IPv4. Si conoces un poco de informática, sabrás que un octeto son 8 bits, y sabrás que 8 bits en realidad equivalen a 1 byte. Esto significa que una dirección IPv4 tiene 4 bytes. Usamos bits con frecuencia al tratar con subredes y direcciones IP.\n\nPuedes ver tu dirección IP con el comando 'ifconfig -a':\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\nComo puedes ver, mi dirección IPv4 es: 192.168.1.129",
+  "exercise": "Encuentra tu dirección IP con ifconfig.",
+  "quizQuestion": "¿Cuántos bytes hay en una dirección IPv4?",
+  "quizAnswer": "4",
+  "slug": "ipv4"
+}

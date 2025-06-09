@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "O Shell",
+  "lessonContent": "O mundo é sua ostra, ou na verdade o shell é sua ostra. O que é o shell? O shell é basicamente um programa que recebe seus comandos do teclado e os envia para o sistema operacional executar. Se você já usou uma GUI, provavelmente já viu programas como 'Terminal' ou 'Console', esses são apenas programas que iniciam um shell para você. Ao longo de todo este curso, estaremos aprendendo sobre as maravilhas do shell. \n\nNeste curso, usaremos o programa shell bash (Bourne Again shell), quase todas as distribuições Linux usarão o bash por padrão. Existem outros shells disponíveis, como ksh, zsh, tsch, mas não vamos entrar em nenhum deles. \n\nVamos direto ao ponto! Dependendo da distribuição, seu prompt de shell pode mudar, mas em sua maioria deve seguir o seguinte formato:\n<pre>nome_de_usuário@nome_do_host:diretório_atual\npete@icebox:/home/pete $</pre>\n\nPercebeu o $ no final do prompt? Diferentes shells terão prompts diferentes, no nosso caso o $ é para um usuário normal usando Bash, Bourne ou Korn shell, você não adiciona o símbolo do prompt ao digitar o comando, apenas saiba que ele está lá.\n\nVamos começar com um comando simples, echo. O comando echo apenas imprime os argumentos de texto na tela.\n\n<pre>$ echo Olá Mundo</pre>",
+  "exercise": "Tente alguns outros comandos Linux e veja o que eles exibem:\n\n<ol>\n<li>$ date</li>\n<li>$ whoami</li>\n</ol>",
+  "quizQuestion": "O que deve ser exibido na tela quando você digitar echo Olá Mundo?",
+  "quizAnswer": "Olá Mundo",
+  "slug": "o-shell"
+}

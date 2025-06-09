@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "常规日志记录",
+  "lessonContent": "您可以查看系统上许多日志文件，其中许多重要日志文件位于 /var/log 目录下。我们不会逐一讨论它们，但我们将讨论其中几个主要日志文件。\n\n您可以查看两个常规日志文件，以了解系统正在执行的操作：\n\n<b>/var/log/messages</b>\n\n此日志包含所有非关键和非调试消息，包括启动时记录的消息（dmesg）、auth、cron、daemon 等。非常有用，可以让您了解机器的运行情况。\n\n<b>/var/log/syslog</b>\n\n此日志记录除了认证消息之外的所有内容，对于调试机器上的错误非常有用。\n\n在排除系统问题时，这两个日志应该足够了。但是，如果您只想查看特定的日志组件，也有单独的日志文件。",
+  "exercise": "查看您的 /var/log/messages 和 /var/log/syslog 文件，看看它们之间的区别。",
+  "quizQuestion": "哪个日志文件记录除了认证消息之外的所有内容？",
+  "quizAnswer": "syslog",
+  "slug": "generallogging"
+}

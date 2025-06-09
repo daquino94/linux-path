@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Fedora",
+  "lessonContent": "<b>Présentation</b>\nSoutenu par Red Hat, le projet Fedora est piloté par la communauté et contient des logiciels open source et gratuits. Red Hat Enterprise Linux dérive de Fedora, donc pensez à Fedora comme un système d'exploitation RHEL en amont. Finalement, RHEL recevra des mises à jour de Fedora après des tests approfondis et un contrôle qualité. Pensez à Fedora comme un équivalent d'Ubuntu qui utilise un backend Red Hat au lieu de Debian.\n\n<b>Gestion des paquets</b>\nUtilise le gestionnaire de paquets Red Hat.\n\n<b>Configurabilité</b>\nSi vous souhaitez utiliser un système d'exploitation basé sur Red Hat, c'est une version conviviale.\n\n<b>Utilisations</b>\nFedora est excellent si vous voulez un système d'exploitation basé sur Red Hat sans l'étiquette de prix. Recommandé pour les ordinateurs de bureau et les ordinateurs portables.",
+  "exercise": "Si vous êtes intéressé par l'utilisation de Fedora comme système d'exploitation, rendez-vous dans la section d'installation et essayez-le : <a href='https://getfedora.org/'>https://getfedora.org/</a>",
+  "quizQuestion": "De quoi RHEL est-il dérivé ?",
+  "quizAnswer": "Fedora",
+  "slug": "fedora"
+}

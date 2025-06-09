@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "stdin (標準入力)",
+  "lessonContent": "前のレッスンで、ファイルや画面などさまざまなstdoutストリームを使用できることを学びました。同様に、標準入力（stdin）ストリームもさまざまなものがあります。キーボードなどのデバイスからのstdinがあることはわかっていますが、ファイルや他のプロセスからの出力、端末も使用できます。例を見てみましょう。\n\n前のレッスンで peanuts.txt ファイルを使用しましょう。そのファイルには Hello World というテキストが含まれていました。\n\n<pre>$ cat <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt </pre>\n\nstdoutリダイレクションに<b>&gt;</b>を使用していたのと同様に、stdinリダイレクションに<b>&lt;</b>を使用できます。\n\ncatコマンドでは通常、ファイルを送信してstdinとして使用しますが、この場合、peanuts.txt をstdinとしてリダイレクトしました。その後、Hello World である peanuts.txt の出力が banana.txt という別のファイルにリダイレクトされます。",
+  "exercise": "いくつかのコマンドを試してみてください:\n<pre>\n$ echo <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ ls <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ pwd <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n</pre>",
+  "quizQuestion": "stdinをリダイレクトするために使用するリダイレクターは何ですか？",
+  "quizAnswer": "<",
+  "slug": "stdinstandardinredirect"
+}

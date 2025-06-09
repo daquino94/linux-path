@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Umask",
+  "lessonContent": "Chaque fichier créé est accompagné d'un ensemble de permissions par défaut. Si vous souhaitez modifier cet ensemble de permissions par défaut, vous pouvez le faire avec la commande umask. Cette commande utilise l'ensemble de permissions en 3 bits que nous voyons dans les permissions numériques. \n\nAu lieu d'ajouter ces permissions, umask les supprime. \n\n<pre>$ umask 021</pre>\n\nDans l'exemple ci-dessus, nous indiquons que nous voulons que les permissions par défaut des nouveaux fichiers permettent aux utilisateurs d'accéder à tout, mais pour les groupes, nous voulons leur retirer leur permission d'écriture et pour les autres, nous voulons leur retirer leur permission d'exécution. L'umask par défaut sur la plupart des distributions est 022, ce qui signifie un accès utilisateur complet, mais pas d'accès en écriture pour les groupes et les autres utilisateurs.\n\nLorsque vous exécutez la commande umask, elle attribuera cet ensemble de permissions par défaut à tout nouveau fichier que vous créez. Cependant, si vous souhaitez le conserver, vous devrez modifier votre fichier de démarrage (.profile), mais nous en discuterons dans une leçon ultérieure.",
+  "exercise": "<ol>\n<li>Créez un nouveau fichier, puis notez ses permissions.</li>\n<li>Modifiez l'umask, puis créez un autre nouveau fichier.</li>\n<li>Vérifiez à nouveau les permissions sur le nouveau fichier, que vous attendez-vous à voir ?</li>\n<ol>",
+  "quizQuestion": "Quelle commande est utilisée pour modifier les permissions de fichier par défaut ?",
+  "quizAnswer": "umask",
+  "slug": "umask"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "mv (Verschieben)",
+  "lessonContent": "Wird zum Verschieben von Dateien und auch zum Umbenennen verwendet. In Bezug auf Flags und Funktionalität ähnelt es dem cp-Befehl. \n\nSie können Dateien wie folgt umbenennen:\n\n<pre>$ mv alteDatei neueDatei</pre>\n\nOder Sie können eine Datei tatsächlich in ein anderes Verzeichnis verschieben: \n\n<pre>$ mv datei2 /home/pete/Dokumente</pre>\n\nUnd mehr als eine Datei verschieben:\n\n<pre>$ mv datei_1 datei_2 /irgendeinVerzeichnis</pre>\n\nSie können auch Verzeichnisse umbenennen:\n\n<pre>$ mv verzeichnis1 verzeichnis2</pre>\n\nWie bei cp, wenn Sie eine Datei oder ein Verzeichnis verschieben, wird alles im selben Verzeichnis überschrieben. Sie können also das -i-Flag verwenden, um eine Warnung vor dem Überschreiben zu erhalten.\n\n<pre>mv -i verzeichnis1 verzeichnis2</pre>\n\nAngenommen, Sie möchten tatsächlich eine Datei verschieben, um die vorherige zu überschreiben. Sie können auch ein Backup dieser Datei erstellen und die alte Version einfach mit einem ~ umbenennen. \n\n<pre>$ mv -b verzeichnis1 verzeichnis2</pre>",
+  "exercise": "Benennen Sie eine Datei um und verschieben Sie dann diese Datei in ein anderes Verzeichnis.",
+  "quizQuestion": "Wie benennen Sie eine Datei namens cat in dog um?",
+  "quizAnswer": "mv cat dog",
+  "slug": "movemvcommand"
+}

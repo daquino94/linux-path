@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "ネットワークマネージャ",
+  "lessonContent": "もちろん、システムのネットワーキングを自動的に設定したい場合は、すでにそのための仕組みが用意されています。ほとんどのディストリビューションは、ネットワークを自動的に構成するために NetworkManager デーモンを利用しています。\n\nGUI を使用している場合、デスクトップのタスクバーのどこかに NetworkManager のアプレットが表示されているのがわかるでしょう。それはネットワークのハードウェアや接続情報を管理しています。たとえば、起動時に NetworkManager はネットワークハードウェア情報を収集し、ワイヤレス、有線などの接続を検索し、それをアクティブにします。\n\nNetworkManager とやり取りするためのコマンドラインツールもあります:\n\n<b>nm-tool</b>\n\nnm-tool は NetworkManager の状態とデバイスを報告します\n\n<pre>\npete@icebox:/$ nm-tool\nNetworkManager Tool\n\nState: connected (global)\n\n- Device: eth0  [Wired connection 1] -------------------------------------------\n  Type:              Wired\n  Driver:            pcnet32\n  State:             connected\n  Default:           yes\n  HW Address:        12:3D:45:56:7D:CC\n\n  Capabilities:\n    Carrier Detect:  yes\n\n  Wired Properties\n    Carrier:         on\n\n  IPv4 Settings:\n    Address:         192.168.22.1\n    Prefix:          24 (255.255.255.0)\n    Gateway:         192.168.22.2\n\n    DNS:             192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nnmcli コマンドを使用すると、NetworkManager を制御および変更できます。詳細については man ページを参照してください。",
+  "exercise": "このレッスンには演習問題はありません。",
+  "quizQuestion": "NetworkManager の情報を表示するコマンドは何ですか？",
+  "quizAnswer": "nm-tool",
+  "slug": "networkmanager"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Vimの検索パターン",
+  "lessonContent": "式を検索するには、vimセッション中に/キーを入力し、検索結果を入力します。Enterを押すと、検索結果を前方に進むには\"n\"、後方に進むには\"N\"を押すことができます。\n\n<pre>\nMy pretty file is very pretty.\n\n/pretty\n\nテキストファイル内のprettyワードを見つけます。\n</pre>\n\n\n?検索コマンドは、テキストファイルを後方に検索します。したがって、前の例では、最後のprettyが最初に表示されます。\n<pre>\nMy pretty file is very pretty.\n\n?pretty\n\nテキストファイル内のprettyワードを見つけます。\n</pre>",
+  "exercise": "検索キーを使って遊んでみてください。vimでテキストファイルを開いてください: vim [textfile] そして検索を始めてください！",
+  "quizQuestion": "Vimで検索に使用されるキーは何ですか？",
+  "quizAnswer": "/",
+  "slug": "vimsearchpatterns"
+}

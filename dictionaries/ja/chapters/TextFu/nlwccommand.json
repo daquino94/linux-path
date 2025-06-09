@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "wc and nl",
+  "lessonContent": "wc（word count）コマンドはファイル内の単語の合計数を表示します。\n\n<pre>$ wc /etc/passwd\n 96     265    5925 /etc/passwd\n</pre>\n\nそれぞれ、行数、単語数、バイト数を表示します。\n\n特定のフィールドのカウントのみを表示するには、それぞれ -l、-w、-c を使用します。\n\n<pre>$ wc -l /etc/passwd\n96</pre>\n\nファイル内の行数を確認するために使用できる別のコマンドは、nl（number lines）コマンドです。\n\n<pre>\nfile1.txt\ni\nlike\nturtles\n</pre>\n\n<pre>$ nl file1.txt\n1. i\n2. like\n3. turtles\n</pre>",
+  "exercise": "nl ファイルを使用して行の合計数を取得するには、出力全体を検索せずにどのようにすればよいですか？ ヒント：このコースで学んだ他のコマンドを使用します。",
+  "quizQuestion": "ファイル内の単語の合計数と単語のみを取得するために使用するコマンドは何ですか？",
+  "quizAnswer": "wc -w",
+  "slug": "nlwccommand"
+}

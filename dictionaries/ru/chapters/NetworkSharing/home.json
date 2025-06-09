@@ -1,0 +1,7 @@
+{
+  "id": 16,
+  "title": "Совместное использование сети",
+  "description": "Узнайте о совместном использовании сети с помощью rsync, scp, nfs и других инструментов.",
+  "image": "/images/chapters/networkSharing.png",
+  "slug": "networksharing"
+}

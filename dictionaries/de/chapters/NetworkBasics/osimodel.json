@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "OSI-Modell",
+  "lessonContent": "Bevor wir uns mit einigen praktischen Netzwerkthemen befassen können, müssen wir uns mit einigen langweiligen Fachbegriffen beschäftigen, die Sie wahrscheinlich schon einmal gehört haben. Das OSI (Open Systems Interconnection) Modell ist ein theoretisches Netzwerkmodell. Dieses Modell zeigt uns, wie ein Paket durch ein Netzwerk in sieben verschiedenen Schichten wandert. Ich werde nicht auf die Details dieses Modells eingehen, da die meisten dieser Netzwerkkurse sich auf das TCP/IP-Modell konzentrieren werden, aber es sollte erwähnt werden, dass ein solches theoretisches Netzwerkmodell existiert und tatsächlich einen großen Einfluss auf das TCP/IP-Netzwerkmodell hatte, das wir heute verwenden.",
+  "exercise": "Lesen Sie mehr über das OSI-Modell: <a href=\"https://de.wikipedia.org/wiki/OSI-Modell\">https://de.wikipedia.org/wiki/OSI-Modell</a>",
+  "quizQuestion": "Was wird als theoretisches Netzwerkmodell verwendet?",
+  "quizAnswer": "OSI",
+  "slug": "osimodel"
+}

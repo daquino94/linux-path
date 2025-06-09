@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Registro de autenticación",
+  "lessonContent": "El registro de autenticación puede ser muy útil para revisar si tienes problemas al iniciar sesión. \n\n<b>/var/log/auth.log</b>\n\nEsto contiene registros de autorización del sistema, como el inicio de sesión del usuario y el método de autenticación utilizado. \n\nFragmento de ejemplo:\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "Realiza algunos intentos fallidos de inicio de sesión y luego uno exitoso, revisa tu /var/log/auth.log y observa qué sucedió.",
+  "quizQuestion": "¿Qué registro se utiliza para la autenticación de usuario?",
+  "quizAnswer": "auth.log",
+  "slug": "registroautenticacion"
+}

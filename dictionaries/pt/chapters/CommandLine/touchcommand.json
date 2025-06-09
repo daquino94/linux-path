@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "touch",
+  "lessonContent": "Vamos aprender como criar alguns arquivos. Uma maneira muito simples é usar o comando touch. Touch permite que você crie novos arquivos vazios.\n\n<pre>$ touch mysuperduperfile</pre>\n\nE pronto, novo arquivo! \n\nTouch também é usado para alterar os carimbos de data e hora em arquivos e diretórios existentes. Experimente, faça um ls -l em um arquivo e anote o carimbo de data e hora, em seguida, toque nesse arquivo e ele atualizará o carimbo de data e hora. \n\nExistem muitas outras maneiras de criar arquivos que envolvem outras coisas como redirecionamento e editores de texto, mas vamos chegar a isso no curso de Manipulação de Texto.",
+  "exercise": "<ol>\n<li>Crie um novo arquivo</li>\n<li>Anote o carimbo de data e hora</li>\n<li>Toque no arquivo e verifique o carimbo de data e hora novamente</li>\n</ol>",
+  "quizQuestion": "Como você cria um arquivo chamado myfile?",
+  "quizAnswer": "touch myfile",
+  "slug": "touchcommand"
+}

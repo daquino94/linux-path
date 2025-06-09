@@ -1,0 +1,9 @@
+{
+  "id": 17,
+  "title": "whatis",
+  "lessonContent": "Puh, wir haben bisher ziemlich viele Befehle gelernt. Wenn Sie jemals Zweifel darüber haben, was ein Befehl tut, können Sie den whatis-Befehl verwenden. Der whatis-Befehl liefert eine kurze Beschreibung von Befehlszeilenprogrammen. \n\n<pre>$ whatis cat</pre>\n\nDie Beschreibung stammt aus der Handbuchseite jedes Befehls. Wenn Sie whatis cat ausführen, sehen Sie eine kurze Beschreibung.",
+  "exercise": "Führen Sie den whatis-Befehl für den less-Befehl aus.",
+  "quizQuestion": "Welchen Befehl können Sie verwenden, um eine kurze Beschreibung eines Befehls zu sehen?",
+  "quizAnswer": "whatis",
+  "slug": "whatiscommand"
+}

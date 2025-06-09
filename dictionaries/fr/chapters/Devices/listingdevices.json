@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "lsusb, lspci, lssci",
+  "lessonContent": "Tout comme nous utiliserions la commande ls pour lister les fichiers et répertoires, nous pouvons utiliser des outils similaires qui listent des informations sur les périphériques.\n\n<b>Liste des périphériques USB</b>\n\n<pre>$ lsusb </pre>\n\n<b>Liste des périphériques PCI</b>\n\n<pre>$ lspci </pre>\n\n<b>Liste des périphériques SCSI</b>\n\n<pre>$ lsscsi </pre>",
+  "exercise": "Essayez chacune de ces commandes et observez la sortie que vous recevez.",
+  "quizQuestion": "Quelle commande peut être utilisée pour afficher les périphériques USB?",
+  "quizAnswer": "lsusb",
+  "slug": "listingdevices"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "展开和收缩",
+  "lessonContent": "在我们关于cut命令的课程中，我们有一个包含制表符的sample.txt文件。通常，制表符会显示明显的区别，但有些文本文件显示得不够清晰。在文本文件中有制表符可能不是您想要的间距。要将制表符更改为空格，请使用expand命令。\n\n<pre>$ expand sample.txt</pre>\n\n上述命令将输出每个制表符转换为一组空格。要将此输出保存到文件中，请使用输出重定向，如下所示。\n\n<pre>$ expand sample.txt > result.txt</pre>\n\n与expand相反，我们可以使用unexpand命令将每组空格转换回制表符：\n\n<pre>$ unexpand -a result.txt</pre>",
+  "exercise": "如果您只键入expand而没有文件输入会发生什么？",
+  "quizQuestion": "用于将制表符转换为空格的命令是什么？",
+  "quizAnswer": "expand",
+  "slug": "expandunexpandcommand"
+}

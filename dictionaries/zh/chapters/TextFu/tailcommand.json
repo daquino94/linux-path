@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "tail",
+  "lessonContent": "类似于 head 命令，tail 命令默认情况下让您看到文件的最后 10 行。\n\n<pre>$ tail /var/log/syslog</pre>\n\n与 head 一起，您可以更改要查看的行数。\n\n<pre>$ tail -n 10 /var/log/syslog</pre>\n\n另一个很棒的选项是 -f（跟踪）标志，这将随着文件的增长而跟踪文件。尝试一下，看看会发生什么。\n\n<pre>$ tail -f /var/log/syslog</pre>\n\n当您与系统交互并使用 tail -f 时，您的 syslog 文件将不断变化，您可以看到添加到该文件的所有内容。",
+  "exercise": "查看 tail 的 man 手册，并阅读一些我们没有讨论的其他命令。\n\n<pre>$ man tail</pre>",
+  "quizQuestion": "在 tail 中用于跟踪文件的标志是什么？",
+  "quizAnswer": "-f",
+  "slug": "tailcommand"
+}

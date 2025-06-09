@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Calcul de sous-réseau",
+  "lessonContent": "Ok, nous savons que les masques de sous-réseau sont importants pour déterminer combien d'hôtes nous pouvons avoir sur notre sous-réseau. Alors, combien d'hôtes cela pourrait-il être ? \n\nDisons que j'ai une adresse IP de <b>192.168.1.0</b> et un masque de sous-réseau de <b>255.255.255.0</b>, maintenant alignons ces nombres sous forme binaire. Pour l'instant, utilisez une calculatrice en ligne pour convertir ces valeurs de décimal en binaire.\n\n<pre>\n192.168.1.165  = 11000000.10101000.00000001.10100101\n255.255.255.0  = 11111111.11111111.11111111.00000000\n</pre>\n\nL'adresse IP est masquée par notre masque de sous-réseau, lorsque vous voyez un 1, il est masqué et nous faisons semblant de ne pas le voir. Donc, les seuls hôtes possibles que nous pouvons avoir sont de la région 00000000. Rappelez-vous que 11111111 en forme binaire équivaut à 255, nous comptons également 0 comme un numéro d'hôte, donc il y a 256 options possibles. Cependant, il peut sembler que nous avons 256 options possibles, mais en réalité, nous soustrayons 2 hôtes car nous devons tenir compte de l'adresse de diffusion et de l'adresse de sous-réseau, ce qui nous laisse avec 254 hôtes possibles sur notre sous-réseau. Donc, nous savons que nous pouvons avoir des hôtes avec des adresses IP allant de 192.168.1.1 à 192.168.1.254.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Quelle est l'équivalent binaire de 255 ?",
+  "quizAnswer": "11111111",
+  "slug": "subnetmath"
+}

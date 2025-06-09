@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Journalisation de l'authentification",
+  "lessonContent": "La journalisation de l'authentification peut être très utile pour examiner si vous rencontrez des problèmes de connexion. \n\n<b>/var/log/auth.log</b>\n\nCela contient les journaux d'autorisation du système, tels que les connexions d'utilisateurs et la méthode d'authentification utilisée. \n\nExtrait d'exemple:\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "Effectuez quelques échecs de connexion puis une réussie, regardez votre /var/log/auth.log et voyez ce qui s'est passé.",
+  "quizQuestion": "Quel journal est utilisé pour l'authentification de l'utilisateur?",
+  "quizAnswer": "auth.log",
+  "slug": "journalisationauthentification"
+}

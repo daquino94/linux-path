@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Dicas de Subnetting",
+  "lessonContent": "Eu odeio ter que adicionar esta seção, no mundo real você provavelmente nunca teria que fazer cálculos de sub-rede à mão, no entanto, se você estivesse sendo entrevistado sobre isso, teria que saber como converter para e de forma binária para subnetting. Felizmente, existem algumas dicas de aritmética que você pode memorizar. \n\nPrimeiro, memorize seus cálculos em base-2, apenas faça isso:\n\n<ul>\n<li>2^1 = 2</li>\n<li>2^2 = 4</li>\n<li>2^3 = 8</li>\n<li>2^4 = 16</li>\n<li>2^5 = 32</li>\n<li>2^6 = 64</li>\n<li>2^7 = 128</li>\n<li>2^8 = 256</li>\n<li>2^9 = 512</li>\n<li>2^10 = 1024</li>\n<li>2^11 = 2048</li>\n<li>2^12 = 4096</li>\n</ul>\n\n<b>Tabela Decimal para Binário</b>\n\n<pre>\n1   1  1  1  1 1 1 1\n128 64 32 16 8 4 2 1\n</pre>\n\nExistem muitas razões pelas quais o gráfico a seguir parece da maneira que parece, se você estiver curioso sobre como funciona, existem muitos recursos online.\n\nOk, memorizou esses? Vamos fazer uma rápida conversão de decimal para binário:\n\n<b>Converter 192.168.23.43 para Binário</b>\n\nLembre-se: 128 / 64 / 32 / 16 / 8 / 4 / 2 / 1\n\nVamos passar pela conversão do primeiro octeto para binário e você entenderá como o restante funciona.\n\n<ol>\n<li>Você consegue subtrair 192 - 128? Sim, então o primeiro bit é 1</li>\n<li>192 - 128 = 64, o próximo número no gráfico é 64, você consegue subtrair 64 - 64? Sim, então o segundo bit é 1</li>\n<li>Nós acabamos de números para subtrair, então nossa forma binária de 192 é 11000000</li>\n</ol>\n\n<b>Converter Binário 11000000 para Decimal</b>\n\nPara a conversão de binário para decimal, some os números que têm 1, então:\n\n128 + 64 + 0 + 0 + 0 + 0 + 0 + 0 = 192!",
+  "exercise": "Olhe para seu endereço IP e máscara de sub-rede e veja quantos hosts você pode ter em sua sub-rede.",
+  "quizQuestion": "Qual é a conversão binária de 123?",
+  "quizAnswer": "1111011",
+  "slug": "dicas-de-subnetting"
+}

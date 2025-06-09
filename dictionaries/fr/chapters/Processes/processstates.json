@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "États des processus",
+  "lessonContent": "Jetons un coup d'œil à nouveau à la commande ps aux :\n\n<pre>$ ps aux</pre>\n\nDans la colonne STAT, vous verrez de nombreuses valeurs. Un processus Linux peut se trouver dans plusieurs états différents. Les codes d'état les plus courants que vous verrez sont décrits ci-dessous :\n\n<ul>\n<li>R : en cours d'exécution ou prêt à être exécuté, il attend simplement que le CPU le traite</li>\n<li>S : sommeil interruptible, en attente de l'achèvement d'un événement, comme une entrée depuis le terminal</li>\n<li>D : sommeil non interruptible, des processus qui ne peuvent pas être tués ou interrompus par un signal, généralement pour les arrêter, vous devez redémarrer ou résoudre le problème</li>\n<li>Z : Zombie, nous avons discuté dans une leçon précédente que les zombies sont des processus terminés qui attendent que leur statut soit collecté</li>\n<li>T : Arrêté, un processus qui a été suspendu/arrêté</li>\n</ul>",
+  "exercise": "Jetez un œil aux processus en cours d'exécution sur votre système et vérifiez leurs états de processus.",
+  "quizQuestion": "Quel code STAT est utilisé pour représenter un sommeil non interruptible ?",
+  "quizAnswer": "D",
+  "slug": "processstates"
+}

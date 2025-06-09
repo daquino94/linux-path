@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "信号",
+  "lessonContent": "信号是通知进程发生了某事的一种方式。\n\n<b>我们为什么需要信号</b>\n\n它们是软件中断，有很多用途：\n\n<ul>\n<li>用户可以键入特殊的终端字符（Ctrl-C）或（Ctrl-Z）来终止、中断或挂起进程</li>\n<li>硬件问题可能发生，内核希望通知进程</li>\n<li>软件问题可能发生，内核希望通知进程</li>\n<li>它们基本上是进程之间通信的方式</li>\n</ul>\n\n<b>信号处理</b>\n\n当某个事件生成信号时，它会被传递给一个进程，在传递之前被视为处于挂起状态。当进程运行时，信号将被传递。但是，进程有信号掩码，它们可以设置信号传递被阻止的情况。当信号被传递时，进程可以执行多种操作：\n\n<ul>\n<li>忽略信号</li>\n<li>\"捕获\"信号并执行特定的处理程序例程</li>\n<li>进程可能被终止，而不是正常的退出系统调用</li>\n<li>根据信号掩码阻止信号</li>\n</ul>\n\n<b>常见信号</b>\n\n每个信号都由具有形式SIGxxx的符号名称的整数定义。一些最常见的信号包括：\n\n<ul>\n<li>SIGHUP或HUP或1：挂断</li>\n<li>SIGINT或INT或2：中断</li>\n<li>SIGKILL或KILL或9：终止</li>\n<li>SIGSEGV或SEGV或11：分段错误</li>\n<li>SIGTERM或TERM或15：软件终止</li>\n<li>SIGSTOP或STOP：停止</li>\n</ul>\n\n信号的数字可能有所不同，因此通常通过它们的名称来引用。\n\n一些信号是无法阻止的，SIGKILL信号就是一个例子。KILL信号会销毁进程。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "哪个信号是无法阻止的？",
+  "quizAnswer": "SIGKILL",
+  "slug": "processsignals"
+}

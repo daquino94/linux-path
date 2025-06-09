@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "La Shell",
+  "lessonContent": "El mundo es tu ostra, o realmente la cáscara es tu ostra. ¿Qué es la cáscara? La cáscara es básicamente un programa que toma tus comandos del teclado y los envía al sistema operativo para que los ejecute. Si alguna vez has usado una GUI, probablemente hayas visto programas como \"Terminal\" o \"Consola\", que son solo programas que inician una cáscara para ti. A lo largo de todo este curso estaremos aprendiendo sobre las maravillas de la cáscara. \n\nEn este curso utilizaremos el programa de cáscara bash (Bourne Again shell), casi todas las distribuciones de Linux usarán por defecto la cáscara bash. Hay otras cáscaras disponibles como ksh, zsh, tsch, pero no nos adentraremos en ninguna de esas. \n\n¡Comencemos! Dependiendo de la distribución, tu indicador de cáscara podría cambiar, pero en su mayoría debería seguir el siguiente formato:\n<pre>nombredeusuario@nombredehost:directorioactual\npete@icebox:/home/pete $</pre>\n\n¿Notas el $ al final del indicador? Diferentes cáscaras tendrán indicadores diferentes, en nuestro caso el $ es para un usuario normal que usa Bash, Bourne o Korn shell, no agregas el símbolo del indicador cuando escribes el comando, solo debes saber que está ahí.\n\nComencemos con un comando simple, echo. El comando echo simplemente imprime los argumentos de texto en la pantalla.\n\n<pre>$ echo Hola Mundo</pre>",
+  "exercise": "Intenta algunos otros comandos de Linux y observa qué es lo que imprimen:\n\n<ol>\n<li>$ date</li>\n<li>$ whoami</li>\n</ol>",
+  "quizQuestion": "¿Qué debería imprimirse en la pantalla cuando escribes echo Hola Mundo?",
+  "quizAnswer": "Hola Mundo",
+  "slug": "lashell"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "historia",
+  "lessonContent": "En tu shell, hay un historial de los comandos que ingresaste previamente, puedes revisar estos comandos. Esto es bastante útil cuando quieres encontrar y ejecutar un comando que usaste previamente sin tener que escribirlo de nuevo.\n\n<pre>$ history</pre>\n\n¿Quieres ejecutar el mismo comando que hiciste antes? Simplemente presiona la flecha hacia arriba. \n\n¿Quieres ejecutar el comando anterior sin tener que escribirlo de nuevo? Usa !!. Si escribiste cat file1 y quieres ejecutarlo de nuevo, simplemente escribe !! y se ejecutará el último comando que ejecutaste. \n\nOtro atajo de historial es ctrl-R, este es el comando de búsqueda inversa, si presionas ctrl-R y comienzas a escribir partes del comando que deseas, te mostrará coincidencias y puedes navegar a través de ellas presionando nuevamente la tecla ctrl-R. Una vez que encuentres el comando que deseas usar nuevamente, simplemente presiona la tecla Enter.\n\n¿Nuestro terminal está un poco desordenado, verdad? Hagamos una pequeña limpieza, usa el comando clear para limpiar tu pantalla.\n\n<pre>$ clear</pre>\n\n¡Ahí, eso se ve mejor, ¿verdad? \n\nMientras hablamos de cosas útiles, una de las características más útiles en cualquier entorno de línea de comandos es la autocompletado de pestañas. Si comienzas a escribir el inicio de un comando, archivo, directorio, etc. y presionas la tecla Tab, se autocompletará según lo que encuentre en el directorio que estás buscando siempre y cuando no tengas otros archivos que comiencen con esas letras. Por ejemplo, si estabas intentando ejecutar el comando chrome, puedes escribir chr y presionar Tab y se autocompletará chrome.",
+  "exercise": "Navega a través de tu historial de comandos anteriores con las teclas de arriba y abajo. Juega con la búsqueda inversa ctrl-R.",
+  "quizQuestion": "¿Cuál es el comando para limpiar el terminal?",
+  "quizAnswer": "clear",
+  "slug": "comandohistorial"
+}

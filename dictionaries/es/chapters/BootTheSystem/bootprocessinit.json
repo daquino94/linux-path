@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Proceso de Arranque: Init",
+  "lessonContent": "Hemos discutido init en lecciones anteriores y sabemos que es el primer proceso que se inicia y que inicia todos los otros servicios esenciales en nuestro sistema. Pero ¿cómo?\n\nEn realidad, hay tres implementaciones principales de init en Linux: \n\n<b>System V init (sysv)</b>\n\nEste es el sistema init tradicional. Inicia y detiene procesos secuencialmente, basándose en scripts de inicio. El estado de la máquina se denota por niveles de ejecución, cada nivel de ejecución inicia o detiene una máquina de manera diferente. \n\n<b>Upstart</b>\n\nEste es el init que encontrarás en instalaciones antiguas de Ubuntu. Upstart utiliza la idea de trabajos y eventos y funciona iniciando trabajos que realizan ciertas acciones en respuesta a eventos. \n\n<b>Systemd</b>\n\nEste es el nuevo estándar para init, está orientado a objetivos. Básicamente tienes un objetivo que deseas lograr y systemd intenta satisfacer las dependencias del objetivo para completarlo. \n\nTenemos un curso completo sobre sistemas de Init donde profundizaremos en cada uno de estos sistemas con más detalle.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cuál es el estándar más reciente para init?",
+  "quizAnswer": "systemd",
+  "slug": "procesodearranqueinit"
+}

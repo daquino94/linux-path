@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Controlando la Terminal",
+  "lessonContent": "Discutimos cómo hay un campo TTY en la salida de ps. El TTY es la terminal que ejecutó el comando.\n\nHay dos tipos de terminales, dispositivos de terminal regulares y dispositivos de pseudoterminal. Un dispositivo de terminal regular es un dispositivo de terminal nativo en el que puedes escribir y enviar salida a tu sistema, esto suena como la aplicación de terminal que has estado lanzando para llegar a tu shell, pero no lo es. \n\nVamos a hacer una transición para que puedas ver esta acción, adelante y escribe Ctrl-Alt-F1 para entrar en TTY1 (la primera consola virtual), notarás cómo no tienes nada excepto la terminal, sin gráficos, etc. Esto se considera un dispositivo de terminal regular, puedes salir de esto con Ctrl-Alt-F7. \n\nUn pseudoterminal es en lo que has estado acostumbrado a trabajar, emulan terminales con la ventana de terminal de shell y se denotan con PTS. Si vuelves a mirar ps, verás tu proceso de shell bajo pts/*. \n\nOk, ahora volviendo al control de la terminal, los procesos suelen estar vinculados a una terminal de control. Por ejemplo, si estuvieras ejecutando un programa en tu ventana de shell como find y cerraras la ventana, tu proceso también se cerraría. \n\nHay procesos como procesos daemon, que son procesos especiales que básicamente mantienen el sistema en funcionamiento. A menudo se inician en el arranque del sistema y generalmente se terminan cuando se apaga el sistema. Se ejecutan en segundo plano y como no queremos que estos procesos especiales se terminen, no están vinculados a una terminal de control. En la salida de ps, el TTY se enumera como un ? lo que significa que no tiene una terminal de control.",
+  "exercise": "Mira tu salida de ps y lista todos los valores TTY únicos.",
+  "quizQuestion": "¿Qué valor se da para un proceso que no tiene una terminal de control?",
+  "quizAnswer": "?",
+  "slug": "controlandolaterminal"
+}

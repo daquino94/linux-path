@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Datei",
+  "lessonContent": "In der vorherigen Lektion haben wir über touch gelernt, lassen Sie uns kurz darauf zurückkommen. Haben Sie bemerkt, dass der Dateiname nicht dem Standardnamensschema entsprach, wie Sie es wahrscheinlich von anderen Betriebssystemen wie Windows kennen? Normalerweise würden Sie erwarten, dass eine Datei namens banana.jpeg vorliegt und eine JPEG-Bilddatei erwarten. \n\nIn Linux müssen Dateinamen nicht den Inhalt der Datei repräsentieren. Sie können eine Datei namens funny.gif erstellen, die tatsächlich kein GIF ist. \n\nUm herauszufinden, um welche Art von Datei es sich handelt, können Sie den Befehl file verwenden. Er zeigt Ihnen eine Beschreibung des Dateiinhalts an.\n\n<pre>$ file banana.jpg</pre>",
+  "exercise": "Führen Sie den Befehl file in einigen verschiedenen Verzeichnissen und Dateien aus und notieren Sie die Ausgabe.",
+  "quizQuestion": "Welchen Befehl können Sie verwenden, um den Dateityp einer Datei zu finden?",
+  "quizAnswer": "file",
+  "slug": "filecommand"
+}

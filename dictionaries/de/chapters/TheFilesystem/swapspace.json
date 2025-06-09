@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "swap",
+  "lessonContent": "In unserem vorherigen Beispiel habe ich Ihnen gezeigt, wie Sie Ihre Partitionstabelle sehen können. Lassen Sie uns dieses Beispiel erneut betrachten, genauer gesagt diese Zeile:\n\n<pre>\nNumber  Start   End     Size    Type      File system     Flags\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n</pre>\n\nWas ist diese Swap-Partition? Nun, Swap ist das, was wir verwenden, um virtuellen Speicher für unser System zuzuweisen. Wenn Ihr Speicher knapp ist, verwendet das System diese Partition, um Teile des Speichers von inaktiven Prozessen auf die Festplatte zu \"swappen\", sodass Sie nicht durch Speichermangel beeinträchtigt werden.\n\n<b>Verwendung einer Partition für den Swap-Speicher</b>\n\nAngenommen, wir möchten unsere Partition /dev/sdb2 für den Swap-Speicher verwenden.\n\n<ol>\n<li>Stellen Sie zunächst sicher, dass sich nichts auf der Partition befindet</li>\n<li>Führen Sie aus: mkswap /dev/sdb2, um Swap-Bereiche zu initialisieren</li>\n<li>Führen Sie aus: swapon /dev/sdb2, um das Swap-Gerät zu aktivieren</li>\n<li>Wenn Sie möchten, dass die Swap-Partition beim Booten bestehen bleibt, müssen Sie einen Eintrag in der Datei /etc/fstab hinzufügen. sw ist der Dateisystemtyp, den Sie verwenden werden.</li>\n<li>Um den Swap zu entfernen: swapoff /dev/sdb2</li>\n</ol>\n\nIm Allgemeinen sollten Sie etwa doppelt so viel Swap-Speicher zuweisen, wie Sie an Arbeitsspeicher haben. Moderne Systeme heute sind jedoch normalerweise leistungsfähig genug und verfügen bereits über ausreichend RAM.",
+  "exercise": "Partitionieren Sie den freien Speicher im USB-Laufwerk für den Swap-Speicher.",
+  "quizQuestion": "Was ist der Befehl, um den Swap-Speicher auf einem Gerät zu aktivieren?",
+  "quizAnswer": "swapon",
+  "slug": "swapspace"
+}

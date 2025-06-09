@@ -1,0 +1,7 @@
+{
+  "id": 14,
+  "title": "Prozessauslastung",
+  "description": "Erlernen Sie die Ressourcenüberwachung mit top, Lastdurchschnitten, iostat und mehr!",
+  "image": "/images/chapters/processUtilization.png",
+  "slug": "processutilization"
+}

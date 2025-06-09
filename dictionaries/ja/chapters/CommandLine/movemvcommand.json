@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "mv (Move)",
+  "lessonContent": "ファイルを移動および名前変更するために使用されます。フラグや機能に関しては、cpコマンドと非常に似ています。\n\n次のようにファイルの名前を変更できます：\n\n<pre>$ mv oldfile newfile</pre>\n\nまた、ファイルを別のディレクトリに移動することもできます：\n\n<pre>$ mv file2 /home/pete/Documents</pre>\n\n複数のファイルを移動することもできます：\n\n<pre>$ mv file_1 file_2 /somedirectory</pre>\n\nディレクトリの名前も変更できます：\n\n<pre>$ mv directory1 directory2</pre>\n\ncpと同様に、ファイルやディレクトリをmvすると、同じディレクトリ内のものが上書きされます。したがって、上書きする前にプロンプトを表示するために-iフラグを使用できます。\n\n<pre>mv -i directory1 directory2</pre>\n\n以前のファイルを上書きしてmvしたい場合、そのファイルのバックアップを作成し、古いバージョンに~を付けてリネームします。\n\n<pre>$ mv -b directory1 directory2</pre>",
+  "exercise": "ファイルの名前を変更し、そのファイルを別のディレクトリに移動してください。",
+  "quizQuestion": "catという名前のファイルをdogにリネームする方法は？",
+  "quizAnswer": "mv cat dog",
+  "slug": "movemvcommand"
+}

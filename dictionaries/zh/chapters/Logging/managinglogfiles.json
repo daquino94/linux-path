@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "管理日志文件",
+  "lessonContent": "日志文件生成大量数据，并将这些数据存储在您的硬盘上，然而这会带来许多问题，大多数情况下，我们只想查看更新的日志，我们还希望高效地管理我们的磁盘空间，那么我们该如何做到这一切呢？答案是使用logrotate。\n\nlogrotate实用程序为我们进行日志管理。它有一个配置文件，允许我们指定要保留多少个日志以及哪些日志，如何压缩日志以节省空间等。logrotate工具通常每天在cron中运行一次，并且配置文件可以在/etc/logrotate.d中找到。\n\n您可以使用其他日志旋转工具来管理日志，但logrotate是最常见的一个。",
+  "exercise": "查看您的logrotate配置文件，看看它是如何管理您的一些日志的。",
+  "quizQuestion": "用于管理日志的实用程序是什么？",
+  "quizAnswer": "logrotate",
+  "slug": "managinglogfiles"
+}

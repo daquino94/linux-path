@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "stderr (Standard Error)",
+  "lessonContent": "今度は少し違ったことを試してみましょう。システムに存在しないディレクトリの内容をリストアップし、再び出力を peanuts.txt ファイルにリダイレクトしてみましょう。\n\n<pre>$ ls /fake/directory > peanuts.txt </pre>\n\n表示されるのは次の通りです：\n\n<pre>ls: cannot access /fake/directory: No such file or directory</pre>\n\nおそらく「そのメッセージはファイルに送られるべきではなかったのでは？」と思っているかもしれません。実際には、ここで標準エラー（stderr）と呼ばれる別のI/Oストリームが動作しています。デフォルトでは、stderrは出力を画面に送信します。これはstdoutとはまったく別のストリームです。そのため、出力を別の方法でリダイレクトする必要があります。\n\n残念ながら、リダイレクタは<b>&lt;</b>や<b>&gt;</b>を使うのと同じくらい簡単ではありませんが、かなり近いです。ファイルディスクリプタを使用する必要があります。ファイルディスクリプタは、ファイルやストリームにアクセスするために使用される非負の数値です。後で詳細に説明しますが、今のところ、stdin、stdout、stderrのファイルディスクリプタはそれぞれ0、1、2です。\n\nしたがって、stderrをファイルにリダイレクトしたい場合は、次のようにします：\n\n<pre>$ ls /fake/directory 2> peanuts.txt</pre>\n\npeanuts.txt にはstderrメッセージのみが表示されます。\n\nでは、stderrとstdoutの両方を peanuts.txt ファイルに表示したい場合はどうすればよいでしょうか？これもファイルディスクリプタを使用して行うことができます：\n\n<pre>$ ls /fake/directory > peanuts.txt 2>&1</pre>\n\nこれにより、ls /fake/directory の結果が peanuts.txt ファイルに送信され、その後、2>&1 を使用してstderrをstdoutにリダイレクトします。ここで操作の順序が重要です。2>&1 は、stderrをstdoutが指す先に送信します。この場合、stdoutはファイルを指しているため、2>&1 もstderrをファイルに送信します。したがって、peanuts.txt ファイルを開くと、stderrとstdoutの両方が表示されるはずです。この場合、上記のコマンドはstderrのみを出力します。\n\nstdoutとstderrの両方をファイルにリダイレクトする簡単な方法があります：\n\n<pre>$ ls /fake/directory &> peanuts.txt</pre>\n\nさらに、すべての不要な情報を取り除き、stderrメッセージを完全に削除したい場合はどうすればよいでしょうか？特別なファイルである /dev/null に出力をリダイレクトすることもでき、入力を破棄します。\n\n<pre>$ ls /fake/directory 2> /dev/null</pre>",
+  "exercise": "次のコマンドは何をしていますか？\n\n<pre>$ ls /fake/directory >> /dev/null 2>&1</pre>",
+  "quizQuestion": "stderrのリダイレクタは何ですか？",
+  "quizAnswer": "2>",
+  "slug": "stderrstandarderrorredirect"
+}

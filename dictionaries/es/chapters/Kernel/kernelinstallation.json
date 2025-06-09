@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Instalación del Kernel",
+  "lessonContent": "Ok, ahora que hemos dejado atrás todas esas cosas aburridas, hablemos sobre la instalación y modificación real de los kernels. Puedes instalar varios kernels en tu sistema, ¿recuerdas nuestra lección sobre el proceso de arranque? En nuestro menú GRUB podemos elegir a qué kernel arrancar. \n\nPara ver qué versión de kernel tienes en tu sistema, usa el siguiente comando:\n\n<pre>$ uname -r\n3.19.0-43-generic</pre>\n\nEl comando uname imprime información del sistema, el comando -r imprimirá toda la versión de lanzamiento del kernel.\n\nPuedes instalar el kernel de Linux de diferentes maneras, puedes descargar el paquete fuente y compilarlo desde la fuente o puedes instalarlo usando herramientas de gestión de paquetes.\n\n<pre>$ sudo apt install linux-generic-lts-vivid</pre>\n\ny luego simplemente reinicia en el kernel que instalaste. ¿Simple verdad? Más o menos, también necesitarás instalar otros paquetes de Linux como los linux-headers, linux-image-generic, etc.). También puedes especificar el número de versión, por lo que el comando anterior puede parecerse a <b>sudo apt install 3.19.0-43-generic</b>\n\nAlternativamente, si solo deseas la versión actualizada del kernel, simplemente usa dist-upgrade, realiza actualizaciones a todos los paquetes en tu sistema:\n\n<pre>$ sudo apt dist-upgrade</pre>\n\nHay muchas versiones de kernel diferentes, algunas se utilizan como LTS (soporte a largo plazo), otras son las más recientes y mejores, la compatibilidad puede ser muy diferente entre las versiones del kernel, por lo que es posible que desees probar diferentes kernels.",
+  "exercise": "<ol>\n<li>Descubre qué versión de kernel tienes.</li>\n<li>Investiga las diferentes versiones de kernels disponibles.</li>\n</ol>",
+  "quizQuestion": "¿Cómo puedes ver la versión del kernel de tu sistema?",
+  "quizAnswer": "uname -r",
+  "slug": "instalacionkernel"
+}

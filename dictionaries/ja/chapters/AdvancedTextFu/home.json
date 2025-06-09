@@ -1,0 +1,7 @@
+{
+  "id": 4,
+  "title": "Advanced Text-Fu",
+  "description": "vim および emacs を使用して Linux のスパイダーモンキーのようにテキストをナビゲートします。",
+  "image": "/images/chapters/textManipolationAdvance.png",
+  "slug": "advancedtextfu"
+}

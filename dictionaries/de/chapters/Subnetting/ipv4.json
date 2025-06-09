@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "IPv4",
+  "lessonContent": "Jeder Netzwerkhost hat eine eindeutige Adresse, und jede eindeutige Adresse kann verwendet werden, um den Host im Netzwerk zu lokalisieren. Diese eindeutigen Adressen werden als 'IP-Adressen' bezeichnet. Eine IPv4-Adresse sieht ungefähr so aus:\n\n<pre>204.23.124.23</pre>\n\nDiese Adresse enthält tatsächlich zwei Teile: den Netzwerkanteil (der angibt, in welchem Netzwerk es sich befindet) und den Hostanteil (der den Host identifiziert). In diesem Kurs werden wir hauptsächlich über IPv4-Adressen sprechen, die Sie normalerweise sehen, wenn von 'IP-Adressen' die Rede ist.\n\nEine IP-Adresse wird durch die Punkte in Oktette unterteilt. Es gibt 4 Oktette in einer IPv4-Adresse. Wenn Sie ein wenig Informatik kennen, wissen Sie, dass ein Oktett 8 Bits sind, und Sie wissen, dass 8 Bits tatsächlich 1 Byte entsprechen. Das bedeutet, dass eine IPv4-Adresse 4 Bytes hat. Wir verwenden Bits häufig, wenn es um Subnetze und IP-Adressen geht.\n\nSie können Ihre IP-Adresse mit dem Befehl 'ifconfig -a' anzeigen:\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\nWie Sie sehen können, ist meine IPv4-Adresse: 192.168.1.129",
+  "exercise": "Finden Sie Ihre IP-Adresse mit ifconfig.",
+  "quizQuestion": "Wie viele Bytes sind in einer IPv4-Adresse?",
+  "quizAnswer": "4",
+  "slug": "ipv4"
+}

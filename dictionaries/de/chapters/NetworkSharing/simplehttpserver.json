@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Einfacher HTTP-Server",
+  "lessonContent": "Python hat ein sehr nützliches Tool zum Bereitstellen von Dateien über HTTP. Dies ist großartig, wenn Sie einfach einen schnellen Netzwerkfreigabe erstellen möchten, auf die andere Maschinen in Ihrem Netzwerk zugreifen können. Um das zu tun, gehen Sie einfach in das Verzeichnis, das Sie freigeben möchten, und führen Sie aus:\n\n<pre>$ python -m SimpleHTTPServer</pre>\n\nDies richtet einen einfachen Webserver ein, auf den Sie über die lokale Adresse zugreifen können. Holen Sie sich also die IP-Adresse der Maschine, auf der Sie dies ausgeführt haben, und greifen Sie dann auf einem anderen Gerät im Browser darauf zu: http://IP_ADRESSE:8000. Auf Ihrem eigenen Gerät können Sie die verfügbaren Dateien anzeigen, indem Sie http://localhost:8000 in Ihrem Webbrowser eingeben.\n\nSie können dies auch mit Node tun oder wenn Sie Python 3 ausführen, wird die Syntax etwas anders sein.",
+  "exercise": "Versuchen Sie, einen SimpleHTTPServer einzurichten!",
+  "quizQuestion": "Welches Tool können Sie verwenden, um mit Python einen einfachen HTTP-Server zu erstellen?",
+  "quizAnswer": "SimpleHTTPServer",
+  "slug": "simplehttpserver"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 17,
+  "title": "Fondamentaux du réseau",
+  "description": "Apprenez les bases du réseau et le modèle TCP/IP.",
+  "image": "/images/chapters/networkFundamentals.png",
+  "slug": "networkbasics"
+}

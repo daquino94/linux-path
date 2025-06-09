@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "/proc 文件系统",
+  "lessonContent": "请记住，在 Linux 中，一切都是文件，甚至进程也是。进程信息存储在一个特殊的文件系统中，即 /proc 文件系统。\n\n<pre>$ ls /proc</pre>\n\n您应该在这里看到多个值，每个 PID 都有一个子目录。如果您在 ps 输出中查看了一个 PID，您可以在 /proc 目录中找到它。\n\n继续，进入其中一个进程并查看该文件：\n\n<pre>$ cat /proc/12345/status</pre>\n\n您应该看到进程状态信息以及更详细的信息。/proc 目录是内核查看系统的方式，因此这里的信息比您在 ps 中看到的要多得多。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "哪个文件系统存储进程信息？",
+  "quizAnswer": "/proc",
+  "slug": "procfilesystem"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "/etc/group",
+  "lessonContent": "ユーザー管理で使用される別のファイルは /etc/group ファイルです。このファイルを使用すると、異なる権限を持つ異なるグループを作成できます。\n\n<pre>$ cat /etc/group\n\nroot:*:0:pete\n</pre>\n\n/etc/password フィールドと非常に似ていますが、/etc/group フィールドは以下のようになっています：\n\n<ol>\n<li>グループ名</li>\n<li>グループパスワード - グループパスワードを設定する必要はありません。sudo のような昇格特権を使用するのが標準です。デフォルト値として \"*\" が入ります。</li>\n<li>グループ ID (GID)</li>\n<li>ユーザーのリスト - 特定のグループに含めたいユーザーを手動で指定できます</li>\n</ol>",
+  "exercise": "<b>groups</b> コマンドを実行してください。何が表示されますか？",
+  "quizQuestion": "root の GID は何ですか？",
+  "quizAnswer": "0",
+  "slug": "etcgroupfile"
+}

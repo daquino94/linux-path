@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "编译源代码",
+  "lessonContent": "通常情况下，您会遇到一些只提供纯源代码形式的晦涩软件包。您需要使用一些命令来编译并安装系统上的源代码软件包。\n\n首先，您需要安装软件以安装编译源代码所需的工具。\n\n<pre>$ sudo apt install build-essential</pre>\n\n完成后，解压软件包文件的内容，通常是一个 .tar.gz 文件。\n\n<pre>$ tar -xzvf package.tar.gz</pre>\n\n在执行任何操作之前，请查看软件包内的 README 或 INSTALL 文件。有时会有特定的安装说明。\n\n根据开发人员使用的编译方法不同，您需要使用不同的命令，比如 cmake 或其他。\n\n但是，最常见的是基本的 make 编译，因此我们将讨论它：\n\n软件包内容中将包含一个 configure 脚本，此脚本会检查系统上的依赖关系，如果缺少任何内容，您将看到错误并需要解决这些依赖关系。\n\n<pre>$ ./configure</pre>\n\n<b>./</b> 允许您在当前目录中执行脚本。\n\n<pre>$ make</pre>\n\n软件包内容中有一个名为 Makefile 的文件，其中包含构建软件的规则。运行 make 命令时，它会查看此文件以构建软件。\n\n<pre>$ sudo make install</pre>\n\n此命令实际上安装软件包，它将正确的文件复制到计算机上的正确位置。\n\n如果要卸载软件包，请使用：\n\n<pre>$ sudo make uninstall</pre>\n\n使用 make install 时要小心，您可能没有意识到背后实际发生了多少事情。如果决定删除此软件包，可能并未真正删除所有内容，因为您可能没有意识到添加到系统中的内容。相反，请忘记我刚刚向您解释的有关 make install 的所有内容，并使用 <b>checkinstall</b> 命令。此命令将为您创建一个 .deb 文件，您可以轻松安装和卸载。\n\n<pre>$ sudo checkinstall</pre>\n\n此命令实际上会执行 \"make install\" 并构建一个 .deb 软件包并安装它。这样可以更轻松地稍后删除软件包。",
+  "exercise": "从可信站点找到一个源代码程序并从源代码安装。",
+  "quizQuestion": "在任何情况下，您应该始终使用什么来替代 make install？",
+  "quizAnswer": "checkinstall",
+  "slug": "compilesourcecode"
+}

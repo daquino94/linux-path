@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Benutzerverwaltungstools",
+  "lessonContent": "Die meisten Unternehmensumgebungen verwenden Verwaltungssysteme, um Benutzer, Konten und Passwörter zu verwalten. Auf einem einzelnen Computer gibt es jedoch nützliche Befehle, um Benutzer zu verwalten.\n\n<b>Benutzer hinzufügen</b>\n\nSie können den adduser- oder den useradd-Befehl verwenden. Der adduser-Befehl enthält mehr hilfreiche Funktionen wie das Erstellen eines Home-Verzeichnisses und mehr. Es gibt Konfigurationsdateien zum Hinzufügen neuer Benutzer, die je nach Bedarf des Standardbenutzers angepasst werden können. \n\n<pre>$ sudo useradd bob</pre>\n\nSie werden feststellen, dass der obige Befehl einen Eintrag in /etc/passwd für bob erstellt, Standardgruppen einrichtet und einen Eintrag in der Datei /etc/shadow hinzufügt.\n\n<b>Benutzer entfernen</b>\n\nUm einen Benutzer zu entfernen, können Sie den userdel-Befehl verwenden.\n\n<pre>$ sudo userdel bob</pre>\n\nDies macht im Wesentlichen sein Bestes, um die Dateiänderungen durch useradd rückgängig zu machen.\n\n<b>Passwörter ändern</b>\n\n<pre>$ passwd bob</pre>\n\nDies ermöglicht es Ihnen, das Passwort von sich selbst oder einem anderen Benutzer zu ändern (wenn Sie root sind).",
+  "exercise": "Erstellen Sie einen neuen Benutzer, ändern Sie dann sein Passwort und melden Sie sich als der neue Benutzer an.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um ein Passwort zu ändern?",
+  "quizAnswer": "passwd",
+  "slug": "benutzerverwaltungstools"
+}

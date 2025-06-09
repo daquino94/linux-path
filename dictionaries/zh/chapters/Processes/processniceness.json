@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "niceness",
+  "lessonContent": "当您在计算机上同时运行多个应用程序，比如 Chrome、Microsoft Word 或 Photoshop 时，这些进程似乎在同时运行，但实际上并非如此。\n\n进程使用 CPU 进行一小段时间的处理，称为时间片。然后它们暂停几毫秒，另一个进程获得一小段时间片。默认情况下，进程调度以轮询方式进行。每个进程获得足够的时间片，直到它完成处理。内核处理所有这些进程切换，并且在大多数情况下表现得相当不错。\n\n进程无法决定何时以及多长时间获得 CPU 时间，如果所有进程表现正常，它们将（大致上）获得相等的 CPU 时间。但是，可以通过一个 nice 值来影响内核的进程调度算法。Niceness 是一个相当奇怪的名字，但它的意思是进程有一个数字来确定它们在 CPU 中的优先级。较高的数字意味着进程很友好，对 CPU 的优先级较低，而较低或负数的数字意味着进程不太友好，它希望尽可能多地使用 CPU。\n\n<pre>$ top</pre>\n\n您现在可以看到一个 NI 列，那是进程的 niceness 级别。\n\n要更改 niceness 级别，您可以使用 nice 和 renice 命令：\n\n<pre>$ nice -n 5 apt upgrade</pre>\n\nnice 命令用于为新进程设置优先级。renice 命令用于为现有进程设置优先级。\n\n<pre>$ renice 10 -p 3245</pre>",
+  "exercise": "哪些进程不太友好，为什么？",
+  "quizQuestion": "如果我想让一个进程获得更多的 CPU 优先级，我应该使用较低还是较高的 nice 数字？",
+  "quizAnswer": "较低",
+  "slug": "processniceness"
+}

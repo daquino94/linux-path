@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Monitoramento de Memória",
+  "lessonContent": "Além do monitoramento da CPU e do monitoramento de E/S, você pode monitorar o uso de memória com <b>vmstat</b>\n\n<pre>\npete@icebox:~$ vmstat\nprocs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st\n 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0\n</pre>\n\nOs campos são os seguintes:\n\n<b>procs</b>\n<ul>\n<li>r - Número de processos em execução</li>\n<li>b - Número de processos em sono ininterruptível</li>\n</ul>\n\n<b>memória</b>\n<ul>\n<li>swpd - Quantidade de memória virtual usada</li>\n<li>free - Quantidade de memória livre</li>\n<li>buff - Quantidade de memória usada como buffers</li>\n<li>cache - Quantidade de memória usada como cache</li>\n</ul>\n\n<b>swap</b>\n<ul>\n<li>si - Quantidade de memória trocada do disco para a memória</li>\n<li>so - Quantidade de memória trocada da memória para o disco</li>\n</ul>\n\n<b>io</b>\n<ul>\n<li>bi - Quantidade de blocos recebidos de um dispositivo de bloco</li>\n<li>bo - Quantidade de blocos enviados para um dispositivo de bloco</li>\n</ul>\n\n<b>sistema</b>\n<ul>\n<li>in - Número de interrupções por segundo</li>\n<li>cs - Número de trocas de contexto por segundo</li>\n</ul>\n\n<b>cpu</b>\n<ul>\n<li>us - Tempo gasto em tempo de usuário</li>\n<li>sy - Tempo gasto em tempo de kernel</li>\n<li>id - Tempo gasto ocioso</li>\n<li>wa - Tempo gasto esperando por E/S</li>\n</ul>",
+  "exercise": "Observe o uso de memória com vmstat.",
+  "quizQuestion": "Qual ferramenta é usada para visualizar a utilização de memória?",
+  "quizAnswer": "vmstat",
+  "slug": "monitoramentomemoria"
+}

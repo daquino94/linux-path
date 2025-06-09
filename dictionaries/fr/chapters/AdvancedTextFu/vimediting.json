@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Édition Vim",
+  "lessonContent": "Maintenant que nous avons quelques lignes écrites, éditons un peu plus et supprimons quelques éléments inutiles.<br><p></p><ul><br><li>x - utilisé pour couper le texte sélectionné, également utilisé pour supprimer des caractères</li><br><li>dd - utilisé pour supprimer la ligne actuelle</li><br><li>y - copier ou copier ce qui est sélectionné</li><br><li>yy - copier ou copier la ligne actuelle</li><br><li>p - coller le texte copié avant le curseur</li><br></ul><p></p>",
+  "exercise": "Je sais que cette leçon a ajouté quelques bizarreries, ouvrez un éditeur de texte et jouez avec cela.",
+  "quizQuestion": "Quel caractère est utilisé pour supprimer une ligne entière?",
+  "quizAnswer": "dd",
+  "slug": "vimediting"
+}

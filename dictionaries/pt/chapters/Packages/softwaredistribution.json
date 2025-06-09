@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Distribuição de Software",
+  "lessonContent": "Seu sistema é composto por muitos pacotes, como navegadores de internet, editores de texto, players de mídia, etc. Esses pacotes são gerenciados por meio de gerenciadores de pacotes, que instalam e mantêm o software em seu sistema. Nem todos os pacotes são instalados por meio de gerenciadores de pacotes, no entanto, você pode instalar pacotes comumente diretamente a partir do código-fonte (falaremos sobre isso em breve). No entanto, na maioria das vezes, você usará um gerenciador de pacotes para instalar software, sendo a variedade mais comum de pacotes os Debian (.deb) e Red Hat (.rpm). Os pacotes no estilo Debian são usados em distribuições como Debian, Ubuntu, LinuxMint, etc. Os pacotes no estilo Red Hat são vistos no Red Hat Enterprise Linux, Fedora, CentOS, etc.\n\nO que são pacotes? Você pode conhecê-los como Chrome, Photoshop, etc., e são, mas na realidade são apenas muitos arquivos compilados em um só. As pessoas (ou às vezes uma única pessoa) que escrevem esse software são conhecidas como <b>fornecedores upstream</b>, eles compilam seu código e escrevem como instalá-lo. Esses fornecedores upstream trabalham para lançar novos softwares e atualizar softwares existentes. Quando estão prontos para lançá-los para o mundo, enviam seu pacote para os <b>mantenedores de pacotes</b>, que cuidam de disponibilizar esse software nas mãos dos usuários. Esses mantenedores de pacotes revisam, gerenciam e distribuem esse software na forma de pacotes.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Sem perguntas, siga em frente!",
+  "quizAnswer": "",
+  "slug": "softwaredistribution"
+}

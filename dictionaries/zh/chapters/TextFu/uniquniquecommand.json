@@ -1,0 +1,9 @@
+{
+  "id": 14,
+  "title": "uniq (Unique)",
+  "lessonContent": "uniq (unique) 命令是另一个用于解析文本的有用工具。\n\n假设您有一个包含许多重复行的文件：\n\n<pre>\nreading.txt\nbook\nbook\npaper\npaper\narticle\narticle\nmagazine\n</pre>\n\n如果您想要删除重复项，您可以使用 uniq 命令：\n\n<pre>$ uniq reading.txt\nbook\npaper\narticle\nmagazine</pre>\n\n让我们统计每行出现的次数：\n\n<pre>$ uniq -c reading.txt\n2 book\n2 paper\n2 article\n1 magazine</pre>\n\n只获取唯一值：\n\n<pre>$ uniq -u reading.txt\nmagazine</pre>\n\n只获取重复值：\n\n<pre>$ uniq -d reading.txt\nbook\npaper\narticle\n</pre>\n\n<b>注意</b>：uniq 仅在重复行相邻时才能检测到重复行。例如：\n\n假设您有一个包含非相邻重复行的文件：\n\n<pre>\nreading.txt\nbook\npaper\nbook\npaper\narticle\nmagazine\narticle\n</pre>\n\n<pre>$ uniq reading.txt\nreading.txt\nbook\npaper\nbook\npaper\narticle\nmagazine\narticle</pre>\n\nuniq 返回的结果将包含所有条目，不像第一个示例那样。\n\n为了克服 uniq 的这一限制，我们可以将 sort 与 uniq 结合使用：\n\n<pre>\n$ sort reading.txt | uniq\narticle\nbook\nmagazine\npaper</pre>",
+  "exercise": "如果尝试 uniq -uc，将得到什么结果？",
+  "quizQuestion": "您会使用什么命令在文件中删除重复项？",
+  "quizAnswer": "uniq",
+  "slug": "uniquniquecommand"
+}

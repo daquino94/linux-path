@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Modelo OSI",
+  "lessonContent": "Antes de podermos olhar para algumas coisas práticas de rede, temos que revisar alguns termos chatos que você provavelmente já ouviu falar antes. O modelo OSI (Open Systems Interconnection) é um modelo teórico de rede. Este modelo nos mostra como um pacote percorre uma rede em sete camadas diferentes. Não entrarei em detalhes sobre este modelo, já que a maioria desses cursos de rede será focada no modelo TCP/IP, mas deve ser mencionado que existe um modelo teórico de rede e que realmente desempenhou um grande papel no modelo de rede TCP/IP que usamos hoje.",
+  "exercise": "Leia mais sobre o modelo OSI: <a href=\"https://en.wikipedia.org/wiki/OSI_model\">https://en.wikipedia.org/wiki/OSI_model</a>",
+  "quizQuestion": "O que é usado como modelo teórico de rede?",
+  "quizAnswer": "OSI",
+  "slug": "osimodel"
+}

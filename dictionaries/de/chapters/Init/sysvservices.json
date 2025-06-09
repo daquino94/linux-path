@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "System V Service",
+  "lessonContent": "Es gibt viele Befehlszeilentools, die Sie verwenden können, um Sys V-Dienste zu verwalten. \n\n<b>Dienste auflisten</b>\n\n<pre>$ service --status-all</pre>\n\n<b>Einen Dienst starten</b>\n\n<pre>$ sudo service networking start</pre>\n\n<b>Einen Dienst stoppen</b>\n\n<pre>$ sudo service networking stop</pre>\n\n<b>Einen Dienst neu starten</b>\n\n<pre>$ sudo service networking restart</pre>\n\nDiese Befehle sind nicht spezifisch für Sys V Init-Systeme, Sie können sie auch verwenden, um Upstart-Dienste zu verwalten. Da Linux versucht, sich von den traditionelleren Sys V Init-Skripten zu entfernen, gibt es immer noch Maßnahmen, um diesen Übergang zu erleichtern.",
+  "exercise": "Verwalten Sie ein paar Dienste und ändern Sie deren Zustände, was beobachten Sie?",
+  "quizQuestion": "Wie lautet der Befehl, um einen Dienst namens peanut mit Sys V zu stoppen?",
+  "quizAnswer": "sudo service peanut stop",
+  "slug": "sysvservices"
+}

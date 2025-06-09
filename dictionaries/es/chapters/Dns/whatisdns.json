@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "¿Qué es DNS?",
+  "lessonContent": "Imagina si cada vez que quisieras hacer una búsqueda en Google tuvieras que escribir http://192.78.12.4 en lugar de www.google.com. Bueno, sin DNS (\"Sistema de Nombres de Dominio\") eso es exactamente lo que sucedería. La red de bajo nivel solo entiende la dirección IP cruda para identificar un host. DNS nos permite a los humanos hacer un seguimiento de sitios web y hosts por nombre en lugar de una dirección IP. Es como una lista de contactos para Internet. Si conoces el nombre de alguien pero no conoces su número de teléfono, simplemente puedes buscarlo en tu lista de contactos.\n\nDNS es fundamentalmente una base de datos distribuida de nombres de host a direcciones IP, gestionamos nuestra base de datos para que las personas sepan cómo llegar a nuestro sitio/dominio, y en otro lugar otra persona está gestionando su base de datos para que otros puedan llegar a su dominio. Estos dominios pueden entonces comunicarse entre sí y construir una enorme lista de contactos de Internet.\n\nEn este curso, repasaremos algunos conceptos básicos de DNS, pero ten en cuenta que DNS es un tema exhaustivo y si realmente quieres profundizar en él, necesitarás hacer una investigación adicional.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "Verdadero o falso, ¿DNS nos ayuda a encontrar direcciones MAC para nombres de host?",
+  "quizAnswer": "falso",
+  "slug": "queesdns"
+}

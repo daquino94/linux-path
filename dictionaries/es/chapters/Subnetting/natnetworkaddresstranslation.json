@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "NAT",
+  "lessonContent": "Hemos mencionado NAT (traducción de direcciones de red) antes pero no profundizamos en ello, cuando estamos trabajando en nuestra red, ¿significa eso que Internet puede ver nuestra dirección IP? No exactamente.\n\nNAT hace que un dispositivo como nuestro enrutador actúe como intermediario entre Internet y la red privada. Por lo tanto, solo se requiere una única dirección IP para representar a todo un grupo de computadoras.\n\nPiensa en NAT como un recepcionista en una oficina grande, si alguien quiere contactarte, solo conoce el número de toda la oficina, el recepcionista tendría que buscar tu número de extensión y transferir la llamada a ti.\n\n<b>¿Cómo funciona?</b>\n\nUn caso simple se vería así:\n\n<ol>\n<li>Patty quiere conectarse a www.google.com, por lo que su máquina envía esta solicitud a través del enrutador</li>\n<li>El enrutador toma esa solicitud y abre su propia conexión a google.com, luego envía la solicitud de Patty una vez que establece una conexión</li>\n<li>El enrutador es el intermediario entre Patty y www.google.com. Google no sabe acerca de Patty, en cambio, todo lo que puede ver es el enrutador.</li>\n</ol>\n\nNAT y el enrutamiento de paquetes en general pueden volverse bastante complicados, pero no profundizaremos en los detalles.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Qué se utiliza para representar una única dirección privada en Internet?",
+  "quizAnswer": "NAT",
+  "slug": "traducciondedireccionesderednat"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "tr (Traducir)",
+  "lessonContent": "El comando tr (traducir) te permite traducir un conjunto de caracteres a otro conjunto de caracteres. Intentemos un ejemplo de traducir todos los caracteres en minúsculas a caracteres en mayúsculas. \n\n<pre>$ tr a-z A-Z\nhello\nHELLO</pre>\n\nComo puedes ver, hicimos que los rangos de a-z se convirtieran en A-Z y todo el texto que escribimos en minúsculas se convierte en mayúsculas.",
+  "exercise": "Prueba el siguiente comando, ¿qué sucede? \n\n<pre>$ tr -d ello\nhello</pre>",
+  "quizQuestion": "¿Qué comando se utiliza para traducir caracteres?",
+  "quizAnswer": "tr",
+  "slug": "trtranslatecommand"
+}

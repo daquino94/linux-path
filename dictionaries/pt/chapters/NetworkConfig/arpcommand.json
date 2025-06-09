@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "arp",
+  "lessonContent": "Lembre-se de que ao pesquisarmos um endereço MAC com ARP, ele primeiro verifica o cache ARP armazenado localmente em nosso sistema, você pode realmente visualizar esse cache: \n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\nO cache ARP está realmente vazio quando uma máquina é inicializada, ele é preenchido à medida que os pacotes são enviados para outros hosts. Se enviarmos um pacote para um destino que não está no cache ARP, o seguinte acontece:\n\n<ol>\n<li>O host de origem cria o quadro Ethernet com um pacote de solicitação ARP</li>\n<li>O host de origem transmite este quadro para toda a rede</li>\n<li>Se um dos hosts na rede conhece o endereço MAC correto, ele enviará um pacote de resposta e um quadro contendo o endereço MAC</li>\n<li>O host de origem adiciona o mapeamento de IP para endereço MAC ao cache ARP e então prossegue com o envio do pacote</li>\n</ol>\n\nVocê também pode visualizar seu cache ARP via o comando ip:\n\n<pre>\n$ ip neighbour show\n</pre>",
+  "exercise": "Observe o que acontece com seu cache ARP quando você reinicia sua máquina e depois faz algo na rede.",
+  "quizQuestion": "Que comando você pode usar para visualizar seu cache ARP?",
+  "quizAnswer": "arp",
+  "slug": "arpcommand"
+}

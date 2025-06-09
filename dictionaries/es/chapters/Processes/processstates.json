@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Estados de Proceso",
+  "lessonContent": "Echemos un vistazo nuevamente al comando ps aux:\n\n<pre>$ ps aux</pre>\n\nEn la columna STAT, verás muchos valores. Un proceso de Linux puede estar en varios estados diferentes. Los códigos de estado más comunes que verás se describen a continuación:\n\n<ul>\n<li>R: en ejecución o listo, está esperando a que la CPU lo procese</li>\n<li>S: Sueño interrumpible, esperando a que se complete un evento, como la entrada desde la terminal</li>\n<li>D: Sueño ininterrumpible, procesos que no pueden ser eliminados o interrumpidos con una señal, generalmente para hacer que desaparezcan debes reiniciar o solucionar el problema</li>\n<li>Z: Zombi, discutimos en una lección anterior que los zombis son procesos terminados que están esperando a que se recojan sus estados</li>\n<li>T: Detenido, un proceso que ha sido suspendido/detenido</li>\n</ul>",
+  "exercise": "Echa un vistazo a los procesos en ejecución en tu sistema y revisa sus estados de proceso.",
+  "quizQuestion": "¿Qué código STAT se utiliza para representar un sueño ininterrumpible?",
+  "quizAnswer": "D",
+  "slug": "estadosdeproceso"
+}

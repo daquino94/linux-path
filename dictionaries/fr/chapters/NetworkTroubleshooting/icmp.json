@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "ICMP",
+  "lessonContent": "Le protocole de messages de contrôle Internet (ICMP) fait partie de la suite de protocoles TCP/IP, il est utilisé pour envoyer des mises à jour et des messages d'erreur et est un protocole extrêmement utile utilisé pour le débogage des problèmes réseau tels qu'une livraison de paquets échouée.\n\nChaque message ICMP contient un champ type, code et checksum. Le champ type est le type de message ICMP, le code est un sous-type et décrit plus d'informations sur le message et le checksum est utilisé pour détecter tout problème d'intégrité du message.\n\nRegardons quelques types ICMP courants:\n\n<ul>\n<li>Type 0 - Réponse Echo</li>\n<li>Type 3 - Destination Inatteignable</li>\n<li>Type 8 - Requête Echo</li>\n<li>Type 11 - Temps écoulé</li>\n</ul>\n\nLorsqu'un paquet ne peut pas atteindre sa destination, un message ICMP de type 3 est généré, et à l'intérieur du type 3, il existe 16 valeurs de code qui décriront davantage pourquoi il ne peut pas atteindre la destination:\n\n<ul>\n<li>Code 0 - Réseau Inatteignable</li>\n<li>Code 1 - Hôte Inatteignable</li>\netc..etc..\n</ul>\n\nCes messages auront plus de sens lorsque nous utiliserons certains outils de dépannage réseau.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Quel est le type ICMP pour une requête echo?",
+  "quizAnswer": "8",
+  "slug": "icmp"
+}

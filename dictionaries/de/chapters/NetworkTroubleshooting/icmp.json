@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "ICMP",
+  "lessonContent": "Das Internet Control Message Protocol (ICMP) ist Teil der TCP/IP-Protokollfamilie. Es wird verwendet, um Aktualisierungen und Fehlermeldungen zu senden und ist ein äußerst nützliches Protokoll zur Fehlerbehebung von Netzwerkproblemen wie einem fehlgeschlagenen Paketzustellung.\n\nJede ICMP-Nachricht enthält ein Typ-, Code- und Prüfsummenfeld. Das Typ-Feld ist der Typ der ICMP-Nachricht, der Code ist ein Untertyp und beschreibt weitere Informationen über die Nachricht und die Prüfsumme wird verwendet, um Probleme mit der Integrität der Nachricht zu erkennen.\n\nLassen Sie uns einige gängige ICMP-Typen betrachten:\n\n<ul>\n<li>Typ 0 - Echo-Antwort</li>\n<li>Typ 3 - Ziel nicht erreichbar</li>\n<li>Typ 8 - Echo-Anforderung</li>\n<li>Typ 11 - Zeitüberschreitung</li>\n</ul>\n\nWenn ein Paket sein Ziel nicht erreichen kann, wird eine ICMP-Nachricht vom Typ 3 generiert. Innerhalb von Typ 3 gibt es 16 Code-Werte, die weiter beschreiben, warum das Ziel nicht erreicht werden kann:\n\n<ul>\n<li>Code 0 - Netzwerk nicht erreichbar</li>\n<li>Code 1 - Host nicht erreichbar</li>\netc..etc..\n</ul>\n\nDiese Nachrichten werden sinnvoller, wenn wir einige Netzwerkdiagnosetools verwenden.",
+  "exercise": "Für diese Lektion gibt es keine Übungen.",
+  "quizQuestion": "Was ist der ICMP-Typ für Echo-Anforderung?",
+  "quizAnswer": "8",
+  "slug": "icmp"
+}

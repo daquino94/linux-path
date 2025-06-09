@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Speicherüberwachung",
+  "lessonContent": "Zusätzlich zur CPU-Überwachung und I/O-Überwachung können Sie Ihren Speicherverbrauch mit <b>vmstat</b> überwachen\n\n<pre>\npete@icebox:~$ vmstat\nprocs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st\n 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0\n</pre>\n\nDie Felder sind wie folgt:\n\n<b>procs</b>\n<ul>\n<li>r - Anzahl der Prozesse für Laufzeit</li>\n<li>b - Anzahl der Prozesse im nicht unterbrechbaren Schlaf</li>\n</ul>\n\n<b>memory</b>\n<ul>\n<li>swpd - Menge des verwendeten virtuellen Speichers</li>\n<li>free - Menge des freien Speichers</li>\n<li>buff - Menge des als Puffer verwendeten Speichers</li>\n<li>cache - Menge des als Cache verwendeten Speichers</li>\n</ul>\n\n<b>swap</b>\n<ul>\n<li>si - Menge des von der Festplatte eingetauschten Speichers</li>\n<li>so - Menge des auf die Festplatte ausgelagerten Speichers</li>\n</ul>\n\n<b>io</b>\n<ul>\n<li>bi - Menge der von einem Blockgerät empfangenen Blöcke</li>\n<li>bo - Menge der an ein Blockgerät gesendeten Blöcke</li>\n</ul>\n\n<b>system</b>\n<ul>\n<li>in - Anzahl der Unterbrechungen pro Sekunde</li>\n<li>cs - Anzahl der Kontextwechsel pro Sekunde</li>\n</ul>\n\n<b>cpu</b>\n<ul>\n<li>us - Zeit im Benutzermodus verbracht</li>\n<li>sy - Zeit im Kernelmodus verbracht</li>\n<li>id - Zeit im Leerlauf verbracht</li>\n<li>wa - Zeit im Warten auf I/O verbracht</li>\n</ul>",
+  "exercise": "Betrachten Sie Ihren Speicherverbrauch mit vmstat.",
+  "quizQuestion": "Welches Tool wird verwendet, um die Speicherauslastung anzuzeigen?",
+  "quizAnswer": "vmstat",
+  "slug": "speicherueberwachung"
+}

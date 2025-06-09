@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "less",
+  "lessonContent": "Wenn Sie Textdateien anzeigen, die größer sind als eine einfache Ausgabe, ist less mehr. (Es gibt tatsächlich einen Befehl namens more, der etwas Ähnliches tut, daher ist dies ironisch.) Der Text wird seitenweise angezeigt, sodass Sie durch eine Textdatei Seite für Seite navigieren können. \n\nSchauen Sie sich den Inhalt einer Datei mit less an. Sobald Sie im less-Befehl sind, können Sie tatsächlich andere Tastaturbefehle verwenden, um in der Datei zu navigieren. \n\n<pre>$ less /home/pete/Documents/text1</pre>\n\nVerwenden Sie den folgenden Befehl, um durch less zu navigieren: \n\n<ul>\n<li>q - Wird verwendet, um less zu beenden und zum Shell zurückzukehren.</li>\n<li>Seite nach oben, Seite nach unten, Hoch und Runter - Navigation mit den Pfeiltasten und Seitentasten.</li>\n<li>g - Bewegt sich zum Anfang der Textdatei.</li>\n<li>G - Bewegt sich zum Ende der Textdatei.</li>\n<li>/Suche - Sie können nach einem bestimmten Text innerhalb des Textdokuments suchen. Voranstellen der Wörter, nach denen Sie suchen möchten, mit /</li>\n<li>h - Wenn Sie während der Verwendung von less etwas Hilfe benötigen, verwenden Sie help.</li>\n</ul>",
+  "exercise": "Führen Sie less auf einer Datei aus, blättern Sie dann im Dokument nach oben und unten. Versuchen Sie, nach einem bestimmten Wort zu suchen. Navigieren Sie schnell zum Anfang oder zum Ende der Datei.",
+  "quizQuestion": "Wie beenden Sie einen less-Befehl?",
+  "quizAnswer": "q",
+  "slug": "lesscommand"
+}

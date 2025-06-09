@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "क्रमबद्ध",
+  "lessonContent": "क्रमबद्ध कमांड लाइनों को क्रमबद्ध करने के लिए उपयोगी है।\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ sort file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\nआप एक उल्टा क्रमबद्ध भी कर सकते हैं: \n\n<pre>$ sort -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\nऔर संख्यात्मक मान के माध्यम से भी क्रमबद्ध कर सकते हैं: \n\n<pre>$ sort -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+  "exercise": "क्रमबद्ध की असली ताकत अन्य कमांड्स के साथ मिलाकर उपयोग करने में है, निम्नलिखित कमांड का प्रयास करें और देखें क्या होता है?\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "उल्टा क्रमबद्ध करने के लिए आप कौन सा फ्लैग प्रयोग करते हैं?",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

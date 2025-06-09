@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "cp (复制)",
+  "lessonContent": "让我们开始复制这些文件。就像在其他操作系统中复制和粘贴文件一样，Shell 为我们提供了更简单的方法。\n\n<pre>$ cp mycoolfile /home/pete/Documents/cooldocs</pre>\n\nmycoolfile 是您要复制的文件，/home/pete/Documents/cooldocs 是您要将文件复制到的位置。\n\n您还可以复制多个文件和目录，以及使用通配符。通配符是可以替换为基于模式选择的字符，使您在搜索时具有更大的灵活性。您可以在每个命令中使用通配符以获得更大的灵活性。\n\n<ul>\n<li>* 通配符的通配符，用于表示所有单个字符或任何字符串。</li>\n<li>? 用于表示一个字符</li>\n<li>[] 用于表示括号内的任何字符</li>\n</ul>\n\n<pre>$ cp *.jpg /home/pete/Pictures</pre>\n\n这将把当前目录中所有扩展名为 .jpg 的文件复制到 Pictures 目录中。\n\n一个有用的命令是使用 -r 标志，这将递归复制目录中的文件和子目录。\n\n尝试对包含一些文件的目录使用 cp 命令将其复制到您的 Documents 目录。没有成功吗？那是因为您需要使用 -r 命令同时复制文件和目录内的内容。\n\n<pre>$ cp -r Pumpkin/ /home/pete/Documents</pre>\n\n需要注意的一点是，如果您将文件复制到具有相同文件名的目录中，该文件将被覆盖为您要复制的内容。如果您有一个不希望被意外覆盖的文件，可以使用 -i 标志（交互式）在覆盖文件之前提示您。\n\n<pre>$ cp -i mycoolfile /home/pete/Pictures</pre>",
+  "exercise": "复制一些文件，小心不要覆盖任何重要内容。",
+  "quizQuestion": "复制目录时需要指定哪个标志？",
+  "quizAnswer": "-r",
+  "slug": "copycpcommand"
+}

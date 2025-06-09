@@ -1,0 +1,9 @@
+{
+  "id": 17,
+  "title": "whatis",
+  "lessonContent": "哇，到目前为止我们已经学习了相当多的命令，如果您对某个命令的功能感到怀疑，您可以使用 whatis 命令。 whatis 命令提供命令行程序的简要描述。\n\n<pre>$ whatis cat</pre>\n\n描述是从每个命令的手册页中获取的。如果您运行 whatis cat，您会看到一个简短描述的小段落。",
+  "exercise": "在 less 命令上运行 whatis 命令。",
+  "quizQuestion": "您可以使用哪个命令来查看命令的简要描述？",
+  "quizAnswer": "whatis",
+  "slug": "whatiscommand"
+}

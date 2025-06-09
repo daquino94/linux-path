@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "NAT",
+  "lessonContent": "Já mencionamos o NAT (tradução de endereços de rede) antes, mas não aprofundamos. Quando estamos trabalhando em nossa rede, isso significa que a Internet pode ver nosso endereço IP? Não exatamente.\n\nO NAT faz com que um dispositivo como nosso roteador atue como intermediário entre a Internet e a rede privada. Assim, apenas um único endereço IP exclusivo é necessário para representar todo um grupo de computadores.\n\nPense no NAT como um recepcionista em um grande escritório, se alguém quiser entrar em contato com você, eles só conhecem o número do escritório inteiro, o recepcionista então teria que procurar o seu número de ramal e encaminhar a ligação para você.\n\n<b>Como funciona?</b>\n\nUm caso simples seria assim:\n\n<ol>\n<li>Patty quer se conectar ao www.google.com, então sua máquina envia essa solicitação através do roteador</li>\n<li>O roteador pega essa solicitação e abre sua própria conexão com o google.com, então envia a solicitação de Patty assim que estabelece a conexão</li>\n<li>O roteador é o intermediário entre Patty e www.google.com. O Google não sabe sobre Patty, em vez disso, tudo o que pode ver é o roteador.</li>\n</ol>\n\nO NAT e o roteamento de pacotes em geral podem ficar bastante complicados, mas não vamos nos aprofundar nos detalhes.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "O que é usado para representar um único endereço privado para a Internet?",
+  "quizAnswer": "NAT",
+  "slug": "traducaodenatdeenderecoderede"
+}

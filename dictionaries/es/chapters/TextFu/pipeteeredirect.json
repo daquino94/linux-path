@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "tubería y tee",
+  "lessonContent": "Vamos a adentrarnos un poco en la fontanería ahora, no realmente pero más o menos. Vamos a probar un comando: \n\n<pre>$ ls -la /etc</pre>\n\nDeberías ver una lista muy larga de elementos, en realidad es un poco difícil de leer. En lugar de redirigir esta salida a un archivo, ¿no sería agradable si pudiéramos ver la salida en otro comando como less? ¡Bueno, podemos hacerlo!\n\n<pre>$ ls -la /etc | less </pre>\n\nEl operador de tubería |, representado por una barra vertical, nos permite obtener la salida estándar de un comando y hacerla la entrada estándar de otro proceso. En este caso, tomamos la salida estándar de ls -la /etc y luego la <i>tuberizamos</i> al comando less. El comando de tubería es extremadamente útil y seguiremos usándolo por toda la eternidad. \n\n¿Y si quisiera escribir la salida de mi comando en dos flujos diferentes? Eso es posible con el comando tee: \n\n<pre>$ ls | tee peanuts.txt</pre>\n\nDeberías ver la salida de ls en tu pantalla y si abres el archivo peanuts.txt deberías ver la misma información!",
+  "exercise": "Intenta los siguientes comandos: \n<pre>$ ls | tee peanuts.txt banan.txt</pre>",
+  "quizQuestion": "¿Qué tecla representa el operador de tubería?",
+  "quizAnswer": "|",
+  "slug": "pipeteeredirect"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "OSIモデル",
+  "lessonContent": "実用的なネットワーキングに取り組む前に、以前に聞いたことがあるかもしれない退屈な専門用語を見ていかなければなりません。 OSI（Open Systems Interconnection）モデルは、ネットワーキングの理論モデルです。 このモデルは、パケットがネットワークを7つの異なるレイヤーを通過する方法を示しています。 このモデルの詳細には触れませんが、ほとんどのネットワーキングコースはTCP/IPモデルに焦点を当てているため、そのような理論的なネットワーキングモデルが存在し、実際に今日使用しているTCP/IPネットワーキングモデルに大きな影響を与えていることを述べておくべきです。",
+  "exercise": "OSIモデルについて詳しく読む: <a href=\"https://en.wikipedia.org/wiki/OSI_model\">https://en.wikipedia.org/wiki/OSI_model</a>",
+  "quizQuestion": "ネットワーキングの理論モデルとして何が使用されていますか？",
+  "quizAnswer": "OSI",
+  "slug": "osimodel"
+}

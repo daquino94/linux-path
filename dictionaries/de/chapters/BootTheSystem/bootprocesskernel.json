@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Boot-Vorgang: Kernel",
+  "lessonContent": "Nun, da unser Bootloader die erforderlichen Parameter übergeben hat, schauen wir uns an, wie der Startvorgang erfolgt:\n\n<b>Initrd vs Initramfs</b>\n\nEs gibt ein gewisses Huhn-und-Ei-Problem, wenn wir über den Kernel-Startvorgang sprechen. Der Kernel verwaltet die Hardware unseres Systems, jedoch sind nicht alle Treiber während des Startvorgangs für den Kernel verfügbar. Daher sind wir auf ein temporäres Wurzeldateisystem angewiesen, das nur die wesentlichen Module enthält, die der Kernel benötigt, um auf den Rest der Hardware zuzugreifen. In älteren Versionen von Linux wurde diese Aufgabe dem initrd (Initial RAM-Disk) übertragen. Der Kernel würde das initrd einbinden, die erforderlichen Starttreiber erhalten und dann, wenn er alles geladen hatte, was er brauchte, das initrd durch das eigentliche Wurzeldateisystem ersetzen. Heutzutage haben wir etwas namens initramfs, dies ist ein temporäres Wurzeldateisystem, das in den Kernel selbst integriert ist, um alle erforderlichen Treiber für das eigentliche Wurzeldateisystem zu laden, sodass keine Suche nach der initrd-Datei mehr erforderlich ist. \n\n<b>Einhängen des Wurzeldateisystems</b>\n\nNun hat der Kernel alle Module, die er benötigt, um ein Wurzeldatengerät zu erstellen und die Wurzelpartition einzuhängen. Bevor Sie jedoch weitermachen, wird die Wurzelpartition tatsächlich zuerst im Nur-Lese-Modus eingehängt, damit fsck sicher ausgeführt und die Systemintegrität überprüft werden kann. Anschließend wird das Wurzeldateisystem im Lese-Schreib-Modus neu eingehängt. Dann lokalisiert der Kernel das init-Programm und führt es aus.",
+  "exercise": "Für diese Lektion sind keine Übungen verfügbar.",
+  "quizQuestion": "Was wird in modernen Systemen verwendet, um ein temporäres Wurzeldateisystem zu laden?",
+  "quizAnswer": "initramfs",
+  "slug": "bootprocesskernel"
+}

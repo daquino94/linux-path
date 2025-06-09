@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "sort",
+  "lessonContent": "El comando sort es útil para ordenar líneas.\n\n<pre>\nfile1.txt\nperro\nvaca\ngato\nelefante\npájaro\n\n$ sort file1.txt\npájaro\ngato\nvaca\nperro\nelefante\n</pre>\n\nTambién puedes hacer una ordenación inversa: \n\n<pre>$ sort -r file1.txt\nelefante\nperro\nvaca\ngato\npájaro\n</pre>\n\nY también ordenar por valor numérico: \n\n<pre>$ sort -n file1.txt\npájaro\ngato\nvaca\nelefante\nperro\n</pre>",
+  "exercise": "El verdadero poder de sort radica en su capacidad para combinarse con otros comandos, prueba el siguiente comando y observa qué sucede?\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "¿Qué bandera utilizas para hacer una ordenación inversa?",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "内核模块",
+  "lessonContent": "假设我有一辆漂亮的车，我在它身上投入了大量的时间和金钱。我加了一个扰流板、拖车钩、自行车架和其他一些随机的东西。这些组件实际上并不改变汽车的核心功能，我可以很容易地移除和添加它们。内核使用相同的概念来管理内核模块。\n\n内核本身是一个单片软件，当我们想要为新类型的键盘添加支持时，我们不会直接将这段代码编写到内核代码中。就像我们不会将自行车架融入我们的汽车中一样（也许有些人会这样做）。内核模块是可以根据需要加载和卸载到内核中的代码片段。它们允许我们扩展内核的功能，而不必实际添加到核心内核代码中。我们还可以添加模块而无需重新启动系统（在大多数情况下）。\n\n<b>查看当前加载的模块列表</b>\n\n<pre>$ lsmod</pre>\n\n<b>加载一个模块</b>\n\n<pre>$ sudo modprobe 蓝牙</pre>\n\nModprobe 会尝试从 <b>/lib/modules/(内核版本)/kernel/drivers</b> 加载模块。内核模块也可能有依赖关系，如果模块未加载，modprobe 会加载我们的模块依赖项。\n\n<b>卸载一个模块</b>\n\n<pre>$ sudo modprobe -r 蓝牙</pre>\n\n<b>开机加载</b>\n\n您还可以在系统启动时加载模块，而不是使用 modprobe 临时加载它们（重新启动后将卸载）。只需修改 <b>/etc/modprobe.d</b> 目录，并添加一个配置文件，如下所示：\n\n<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf\n\noptions peanut_butter type=almond\n</pre>\n\n这是一个有些离奇的例子，但如果您有一个名为 peanut_butter 的模块，并且想要为 type=almond 添加一个内核参数，您可以使用这个配置文件在启动时加载它。还要注意，内核模块有自己的内核参数，因此您需要阅读有关模块的具体信息以了解更多。\n\n<b>不要在启动时加载</b>\n\n您还可以通过添加一个配置文件来确保模块不会在启动时加载，如下所示：\n\n<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf\n\nblacklist peanut_butter\n</pre>",
+  "exercise": "使用 modprobe 卸载您的蓝牙模块，看看会发生什么。您将如何解决这个问题？",
+  "quizQuestion": "用于卸载模块的命令是什么？",
+  "quizAnswer": "modprobe -r",
+  "slug": "kernelmodules"
+}

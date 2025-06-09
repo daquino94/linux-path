@@ -1,0 +1,9 @@
+{
+  "id": 17,
+  "title": "whatis",
+  "lessonContent": "Ufa, aprendemos bastante comandos até agora, se você estiver em dúvida sobre o que um comando faz, você pode usar o comando whatis. O comando whatis fornece uma breve descrição dos programas de linha de comando. \n\n<pre>$ whatis cat</pre>\n\nA descrição é obtida da página do manual de cada comando. Se você executasse whatis cat, veria que há um pequeno texto com uma breve descrição.",
+  "exercise": "Execute o comando whatis no comando less.",
+  "quizQuestion": "Que comando você pode usar para ver uma pequena descrição de um comando?",
+  "quizAnswer": "whatis",
+  "slug": "whatiscommand"
+}

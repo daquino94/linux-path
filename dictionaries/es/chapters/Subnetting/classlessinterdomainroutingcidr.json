@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "CIDR",
+  "lessonContent": "CIDR (enrutamiento interdominio sin clases) se utiliza para representar una máscara de subred de una manera más compacta. Puede ver subredes anotadas en notación CIDR, donde una subred como 10.42.3.0/255.255.255.0 se escribe como 10.42.3.0/24, lo que simplemente significa que incluye tanto el prefijo de subred como la máscara de subred.\n\nRecuerde que una dirección IP consta de 4 bytes o 32 bits, CIDR indica la cantidad de bits utilizados como prefijo de red. Entonces, 123.12.24.0/23 significa que se utilizan los primeros 23 bits. ¿Qué significa eso? ¿Cuántos hosts son esos? \n\nUn truco simple es restar el total de bits que puede tener una dirección IP (32) de la dirección CIDR (23), por lo que quedan 9 bits, 2^9 = 512, pero tenemos que eliminar 2 direcciones (dirección de subred y dirección de difusión), por lo que tenemos 510 hosts utilizables.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¡No hay preguntas, sigue adelante!",
+  "quizAnswer": "",
+  "slug": "enrutamientointerdominiosinclasescidr"
+}

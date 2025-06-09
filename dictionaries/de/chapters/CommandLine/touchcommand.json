@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "touch",
+  "lessonContent": "Lass uns lernen, wie man einige Dateien erstellt. Ein sehr einfacher Weg ist die Verwendung des touch-Befehls. Touch ermöglicht es, neue leere Dateien zu erstellen.\n\n<pre>$ touch mysuperduperfile</pre>\n\nUnd zack, neue Datei!\n\nTouch wird auch verwendet, um Zeitstempel auf vorhandenen Dateien und Verzeichnissen zu ändern. Probier es aus, führe ein ls -l auf einer Datei durch und notiere den Zeitstempel, dann touch diese Datei und der Zeitstempel wird aktualisiert.\n\nEs gibt viele andere Möglichkeiten, Dateien zu erstellen, die andere Dinge wie Umleitung und Texteditoren beinhalten, aber darauf werden wir im Kurs zur Textmanipulation eingehen.",
+  "exercise": "<ol>\n<li>Erstelle eine neue Datei</li>\n<li>Notiere den Zeitstempel</li>\n<li>Touch die Datei und überprüfe erneut den Zeitstempel</li>\n</ol>",
+  "quizQuestion": "Wie erstellt man eine Datei namens myfile?",
+  "quizAnswer": "touch myfile",
+  "slug": "touchcommand"
+}

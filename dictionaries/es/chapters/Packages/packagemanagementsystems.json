@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "yum y apt",
+  "lessonContent": "Ah, los Batmans de la gestión de paquetes, estos sistemas vienen con todo lo necesario para facilitar la instalación, eliminación y cambios de paquetes, incluida la instalación de dependencias de paquetes. Dos de los sistemas de gestión más populares son <b>yum</b> y <b>apt</b>. Yum es exclusivo de la familia Red Hat y apt es exclusivo de la familia Debian.\n\n<b>Instalar un paquete desde un repositorio</b>\n\n<pre>\nDebian: $ apt install nombre_paquete\nRPM: $ yum install nombre_paquete\n</pre>\n\n<b>Eliminar un paquete</b>\n\n<pre>\nDebian: $ apt remove nombre_paquete\nRPM: $ yum erase nombre_paquete\n</pre>\n\n<b>Actualizar paquetes de un repositorio</b>\n\nSiempre es mejor práctica actualizar los repositorios de paquetes para que estén actualizados antes de instalar y actualizar un paquete.\n\n<pre>\nDebian: apt update; apt upgrade\nRPM: yum update\n</pre>\n\n<b>Obtener información sobre un paquete instalado</b>\n\n<pre>\nDebian: apt show nombre_paquete\nRPM: yum info nombre_paquete\n</pre>",
+  "exercise": "Ejecuta cada uno de estos comandos de paquete y observa la salida que recibes.",
+  "quizQuestion": "¿Qué comando se utiliza para mostrar información del paquete en un sistema Debian?",
+  "quizAnswer": "apt show",
+  "slug": "sistemasdegestiondepaquetes"
+}

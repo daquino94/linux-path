@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "作业控制",
+  "lessonContent": "假设你正在一个终端窗口上工作，并且运行一个需要很长时间的命令。在命令完成之前，你无法与 shell 交互，但我们希望继续在我们的机器上工作，所以我们需要保持 shell 开启。幸运的是，我们可以通过作业控制来控制我们的进程运行方式：\n\n<b>将作业发送到后台</b>\n\n在命令后添加一个 & 符号将其放入后台运行，这样你仍然可以使用你的 shell。让我们看一个例子：\n\n<pre>$ sleep 1000 &\n$ sleep 1001 &\n$ sleep 1002 &\n</pre>\n\n<b>查看所有后台作业</b>\n\n现在你可以查看刚刚发送到后台的作业。\n\n<pre>$ jobs\n\n[1]    Running     sleep 1000 &\n[2]-   Running     sleep 1001 &\n[3]+   Running     sleep 1002 &\n\n</pre>\n\n这将显示作业 ID 在第一列，然后是状态和运行的命令。作业 ID 旁边的 <b>+</b> 表示它是最近启动的后台作业。带有 <b>-</b> 的作业是第二近的命令。\n\n<b>将现有作业发送到后台</b>\n\n如果你已经运行了一个作业并希望将其发送到后台，你无需终止它并重新开始。首先暂停作业，然后运行 <b>bg</b> 命令将其发送到后台。\n\n<pre>\npete@icebox ~ $ sleep 1003\n^Z\n[4]+    Stopped     sleep 1003\n\npete@icebox ~ $ bg\n[4]+    sleep 1003 &\n\npete@icebox ~ $ jobs\n\n[1]    Running     sleep 1000 &\n[2]    Running     sleep 1001 &\n[3]-   Running     sleep 1002 &\n[4]+   Running     sleep 1003 &\n</pre>\n\n<b>将后台作业移到前台</b>\n\n要将作业从后台移到前台，只需指定你想要的作业 ID。如果运行 fg 而不带任何选项，它将恢复最近的后台作业（带有 + 标志的作业）\n\n<pre>$ fg %1</pre>\n\n<b>终止后台作业</b>\n\n与将作业从后台移到前台类似，你可以使用相同的形式通过使用作业 ID 来终止进程。\n\n<pre>kill %1</pre>",
+  "exercise": "在后台和前台之间移动一些作业",
+  "quizQuestion": "用于列出后台作业的命令是什么？",
+  "quizAnswer": "jobs",
+  "slug": "jobcontrol"
+}

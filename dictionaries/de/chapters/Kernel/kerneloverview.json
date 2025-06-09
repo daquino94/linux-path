@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Überblick über den Kernel",
+  "lessonContent": "Wie Sie bis zu diesem Punkt gelernt haben, ist der Kernel der Kern des Betriebssystems. Wir haben über die anderen Teile des Betriebssystems gesprochen, aber noch nicht gezeigt, wie sie alle zusammenarbeiten. Das Linux-Betriebssystem kann in drei verschiedene Abstraktionsebenen unterteilt werden.\n\nDie grundlegendste Ebene ist die Hardware, dazu gehören unsere CPU, Speicher, Festplatten, Netzwerkanschlüsse usw. Die physische Ebene, die tatsächlich berechnet, was unsere Maschine tut.\n\nDie nächste Ebene ist der Kernel, der die Prozess- und Speicherverwaltung, die Gerätekommunikation, Systemaufrufe, die Einrichtung unseres Dateisystems usw. übernimmt. Die Aufgabe des Kernels besteht darin, mit der Hardware zu kommunizieren, um sicherzustellen, dass sie das tut, was wir wollen, dass unsere Prozesse tun. \n\nUnd die Ebene, mit der Sie vertraut sind, ist der Benutzerbereich, der Benutzerbereich umfasst die Shell, die Programme, die Sie ausführen, die Grafiken usw.\n\nIn diesem Kurs werden wir uns auf den Kernel konzentrieren und seine Feinheiten kennenlernen.",
+  "exercise": "Für diese Lektion sind keine Übungen vorgesehen.",
+  "quizQuestion": "Welche Ebene des Betriebssystems verwaltet Geräte?",
+  "quizAnswer": "kernel",
+  "slug": "kerneloverview"
+}

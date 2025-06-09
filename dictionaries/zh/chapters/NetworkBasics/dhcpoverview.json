@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "DHCP 概述",
+  "lessonContent": "我们尚未讨论的一个重要网络概念是 DHCP（动态主机配置协议）\n\nDHCP 为我们的设备分配 IP 地址、子网掩码和网关。例如，假设您有一部手机，想要获取一个电话号码开始与他人通话。您必须致电您的手机运营商，他们会为您提供一个号码。只要您支付账单，您就可以继续使用手机。在这种情况下，DHCP 就像手机运营商，它为您提供 IP 地址，以便您可以与其他 IP 地址通信。您还被租用了一个 IP 地址，这些 IP 地址有一定的使用期限，然后根据您的租约设置进行续订。\n\nDHCP 有许多优点，它使网络管理员不必担心分配 IP 地址，还可以防止设置重复的 IP 地址。每个物理网络都应该有自己的 DHCP 服务器，以便主机可以请求 IP 地址。在常规家庭设置中，路由器通常充当 DHCP 服务器。\n\nDHCP 获取所有您的动态主机信息的方式是：\n\n<ol>\n<li>DHCP DISCOVER - 此消息被广播以搜索 DHCP 服务器。</li>\n<li>DHCP OFFER - 网络中的 DHCP 服务器回复一个提供消息。提供包含有 DHCP 租约时间、子网掩码、IP 地址等的数据包。</li>\n<li>DHCP REQUEST - 客户端发送另一个广播以通知所有 DHCP 服务器它接受了哪个提供。</li>\n<li>DHCP ACK - 服务器发送确认消息。</li>\n</ol>\n\nDHCP 涉及的内容比这更复杂，但这就是其要点。",
+  "exercise": "此课程没有练习。",
+  "quizQuestion": "DHCP 请求的步骤是什么？",
+  "quizAnswer": "DISCOVER, OFFER, REQUEST, ACK",
+  "slug": "dhcpoverview"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "sysfs",
+  "lessonContent": "Sysfs foi criado há muito tempo para gerenciar melhor dispositivos em nosso sistema que o diretório /dev falhou em fazer. Sysfs é um sistema de arquivos virtual, mais frequentemente montado no diretório /sys. Ele nos fornece informações mais detalhadas do que seríamos capazes de ver no diretório /dev. Ambos os diretórios /sys e /dev parecem ser muito semelhantes e são em alguns aspectos, mas eles têm diferenças importantes. Basicamente, o diretório /dev é simples, permite que outros programas acessem os dispositivos em si, enquanto o sistema de arquivos /sys é usado para visualizar informações e gerenciar o dispositivo. \n\nO sistema de arquivos /sys basicamente contém todas as informações de todos os dispositivos em seu sistema, como o fabricante e modelo, onde o dispositivo está conectado, o estado do dispositivo, a hierarquia dos dispositivos e muito mais. Os arquivos que você vê aqui não são nós de dispositivo, então você não interage realmente com dispositivos a partir do diretório /sys, mas sim está gerenciando dispositivos. \n\nDê uma olhada no conteúdo do diretório /sys:\n\n<pre>\npete@icebox:~$ ls /sys/block/sda\nalignment_offset  discard_alignment  holders   removable  sda6       trace\nbdi               events             inflight  ro         size       uevent\ncapability        events_async       power     sda1       slaves\ndev               events_poll_msecs  queue     sda2       stat\ndevice            ext_range          range     sda5       subsystem\n</pre>",
+  "exercise": "Verifique o conteúdo do diretório /sys e veja quais arquivos estão localizados lá.",
+  "quizQuestion": "Qual diretório é usado para visualizar informações detalhadas sobre dispositivos?",
+  "quizAnswer": "/sys",
+  "slug": "sysfs"
+}

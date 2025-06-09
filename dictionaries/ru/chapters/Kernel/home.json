@@ -1,0 +1,7 @@
+{
+  "id": 12,
+  "title": "Ядро",
+  "description": "Самая важная часть системы Linux, узнайте, как оно работает и как его настраивать.",
+  "image": "/images/chapters/kernel.png",
+  "slug": "kernel"
+}

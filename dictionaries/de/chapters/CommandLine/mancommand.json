@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "man",
+  "lessonContent": "Ich wünschte, einige dieser Programme hätten ein Handbuch, damit wir mehr Informationen über sie sehen können. Zum Glück haben sie das! Passenderweise als man pages bezeichnet, können Sie die Handbücher für einen Befehl mit dem man Befehl anzeigen. \n\n<pre>$ man ls</pre>\n\nMan pages sind Handbücher, die standardmäßig in den meisten Linux-Betriebssystemen integriert sind. Sie bieten Dokumentationen zu Befehlen und anderen Aspekten des Systems. \n\nProbieren Sie es mit einigen Befehlen aus, um mehr Informationen über sie zu erhalten.",
+  "exercise": "Führen Sie den man Befehl auf den ls Befehl aus.",
+  "quizQuestion": "Wie sehen Sie die Handbücher für einen Befehl?",
+  "quizAnswer": "man",
+  "slug": "mancommand"
+}

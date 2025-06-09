@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "ルーティングテーブル",
+  "lessonContent": "自分のマシンのルーティングテーブルを見てみましょう：\n\n<pre>\npete@icebox:~$ sudo route -n\nKernel IP routing table\nDestination     Gateway         Genmask         Flags Metric Ref    Use Iface\n0.0.0.0         192.168.224.2   0.0.0.0         UG    0      0        0 eth0\n192.168.224.0   0.0.0.0         255.255.255.0   U     1      0        0 eth0\n</pre>\n\n<b>Destination</b>\n\n最初のフィールドには、宛先IPアドレスが192.168.224.0とあります。これは、このネットワークに向けられたパケットは、私のEthernetケーブル（eth0）を介して送信されることを意味します。たとえば、私が192.168.224.5であり、192.168.224.7に到達したい場合、ネットワークインターフェースeth0を直接使用します。\n\n<b>Gateway</b>\n\n同じネットワーク上にないパケットを送信する場合、このゲートウェイアドレスに送信されます。これは、別のネットワークへのゲートウェイであるという名前が適切です。\n\n<b>Genmask</b>\n\nこれは、IPアドレスがどの宛先に一致するかを把握するために使用されるサブネットマスクです。\n\n<b>Flags</b>\n\n<ul>\n<li>UG - ネットワークがアップでゲートウェイである</li>\n<li>U - ネットワークがアップ</li>\n</ul>\n\n<b>Iface</b>\n\nこれは、パケットが送信されるインターフェースです。eth0は通常、システム上の最初のEthernetデバイスを表します。",
+  "exercise": "ルーティングテーブルを確認し、パケットがどこに送られるかを確認してください。",
+  "quizQuestion": "ルーティングテーブルが宛先を知らない場合、パケットはどこにルーティングされますか？",
+  "quizAnswer": "Gateway",
+  "slug": "routingtable"
+}

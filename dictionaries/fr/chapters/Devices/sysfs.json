@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "sysfs",
+  "lessonContent": "Sysfs a été créé il y a longtemps pour mieux gérer les périphériques de notre système que le répertoire /dev n'arrivait pas à faire. Sysfs est un système de fichiers virtuel, le plus souvent monté sur le répertoire /sys. Il nous fournit des informations plus détaillées que ce que nous pourrions voir dans le répertoire /dev. Les deux répertoires /sys et /dev semblent être très similaires et le sont à certains égards, mais ils présentent des différences majeures. Fondamentalement, le répertoire /dev est simple, il permet à d'autres programmes d'accéder aux périphériques eux-mêmes, tandis que le système de fichiers /sys est utilisé pour afficher des informations et gérer le périphérique. \n\nLe système de fichiers /sys contient essentiellement toutes les informations sur tous les périphériques de votre système, telles que le fabricant et le modèle, où le périphérique est branché, l'état du périphérique, la hiérarchie des périphériques et plus encore. Les fichiers que vous voyez ici ne sont pas des nœuds de périphérique, vous n'interagissez donc pas vraiment avec les périphériques à partir du répertoire /sys, mais vous gérez les périphériques. \n\nJetez un œil au contenu du répertoire /sys:\n\n<pre>\npete@icebox:~$ ls /sys/block/sda\nalignment_offset  discard_alignment  holders   removable  sda6       trace\nbdi               events             inflight  ro         size       uevent\ncapability        events_async       power     sda1       slaves\ndev               events_poll_msecs  queue     sda2       stat\ndevice            ext_range          range     sda5       subsystem\n</pre>",
+  "exercise": "Consultez le contenu du répertoire /sys et voyez quels fichiers s'y trouvent.",
+  "quizQuestion": "Quel répertoire est utilisé pour afficher des informations détaillées sur les périphériques?",
+  "quizAnswer": "/sys",
+  "slug": "sysfs"
+}

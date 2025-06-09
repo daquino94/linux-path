@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Ferramentas de Gerenciamento de Usuários",
+  "lessonContent": "A maioria dos ambientes empresariais está usando sistemas de gerenciamento para gerenciar usuários, contas e senhas. No entanto, em um único computador, existem comandos úteis para gerenciar usuários.\n\n<b>Adicionando Usuários</b>\n\nVocê pode usar o comando adduser ou useradd. O comando adduser contém mais recursos úteis, como criar um diretório home e outros. Existem arquivos de configuração para adicionar novos usuários que podem ser personalizados dependendo do que você deseja alocar a um usuário padrão. \n\n<pre>$ sudo useradd bob</pre>\n\nVocê verá que o comando acima cria uma entrada em /etc/passwd para bob, configura grupos padrão e adiciona uma entrada ao arquivo /etc/shadow.\n\n<b>Removendo Usuários</b>\n\nPara remover um usuário, você pode usar o comando userdel.\n\n<pre>$ sudo userdel bob</pre>\n\nBasicamente, isso faz o melhor para desfazer as alterações feitas por useradd.\n\n<b>Alterando Senhas</b>\n\n<pre>$ passwd bob</pre>\n\nIsso permitirá que você altere a senha de si mesmo ou de outro usuário (se você for root).",
+  "exercise": "Crie um novo usuário, em seguida, altere sua senha e faça login como o novo usuário.",
+  "quizQuestion": "Qual comando é usado para alterar uma senha?",
+  "quizAnswer": "passwd",
+  "slug": "ferramentasdegerenciamentodeusuarios"
+}

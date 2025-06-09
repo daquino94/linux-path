@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Noções Básicas de Rede",
+  "lessonContent": "Vamos dar uma olhada em uma rede doméstica típica, você tem alguns componentes diferentes. \n\n<ul>\n<li>ISP - Seu provedor de serviços de Internet, a empresa que você paga para obter Internet em sua casa.</li>\n<li>Router - O roteador permite que cada máquina em sua rede se conecte à Internet. Na maioria dos roteadores modernos, você pode se conectar via wireless ou um cabo Ethernet.</li>\n<li>WAN - Rede de Área Ampla, é isso que chamamos a rede que abrange tudo entre seu roteador e uma rede mais ampla, como a Internet.</li>\n<li>WLAN - Rede Local sem Fio, é a rede entre seu roteador e quaisquer dispositivos sem fio que você possa ter, como laptops.</li>\n<li>LAN - Rede Local, é a rede entre seu roteador e quaisquer dispositivos com fio, como PCs de mesa.</li>\n<li>Hosts - Cada máquina em uma rede é conhecida como um host.</li>\n</ul>\n\nOs dados e informações que são transmitidos pelas redes são conhecidos como pacotes e, até o final da seção do Networking Nomad, você entenderá em detalhes como um pacote viaja de e para os hosts.",
+  "exercise": "Sem exercícios para esta lição.",
+  "quizQuestion": "Como é conhecida a rede local?",
+  "quizAnswer": "LAN",
+  "slug": "noçõesbásicasderede"
+}

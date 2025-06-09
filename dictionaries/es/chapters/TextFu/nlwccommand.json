@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "wc and nl",
+  "lessonContent": "El comando wc (word count) muestra el recuento total de palabras en un archivo. \n\n<pre>$ wc /etc/passwd\n 96     265    5925 /etc/passwd\n</pre>\n\nMuestra el número de líneas, número de palabras y número de bytes, respectivamente.\n\nPara ver solo el recuento de un campo específico, use -l, -w o -c respectivamente. \n\n<pre>$ wc -l /etc/passwd\n96</pre>\n\nOtro comando que puedes usar para verificar el recuento de líneas en un archivo es el comando nl (number lines). \n\n<pre>\nfile1.txt\ni\nlike\nturtles\n</pre>\n\n<pre>$ nl file1.txt\n1. i\n2. like\n3. turtles\n</pre>",
+  "exercise": "¿Cómo obtendrías el recuento total de líneas usando el archivo nl sin buscar a través de toda la salida? Pista: Utiliza algunos de los otros comandos que aprendiste en este curso.",
+  "quizQuestion": "¿Qué comando usarías para obtener el número total de palabras en un archivo y solo las palabras?",
+  "quizAnswer": "wc -w",
+  "slug": "nlwccommand"
+}

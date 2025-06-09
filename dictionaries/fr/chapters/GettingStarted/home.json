@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "title": "Démarrage",
+  "description": "Qu'est-ce que Linux ? Commencez par choisir une distribution et l'installer.",
+  "image": "/images/chapters/gettingStarted.png",
+  "slug": "gettingstarted"
+}

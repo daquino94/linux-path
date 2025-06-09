@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Registo do Kernel",
+  "lessonContent": "<b>/var/log/dmesg</b>\nAo inicializar, o seu sistema regista informações sobre o buffer de anel do kernel. Isso nos mostra informações sobre drivers de hardware, informações do kernel e status durante a inicialização e muito mais. Este arquivo de log pode ser encontrado em /var/log/dmesg e é redefinido a cada inicialização, você pode não ver realmente nenhuma utilidade nele agora, mas se você tiver problemas com algo durante a inicialização ou um problema de hardware, o dmesg é o melhor lugar para procurar. Você também pode visualizar este log usando o comando dmesg. \n\n<b>/var/log/kern.log</b>\nOutro log que você pode usar para visualizar informações do kernel é o arquivo /var/log/kern.log, este loga as informações e eventos do kernel em seu sistema, também loga a saída do dmesg.",
+  "exercise": "Olhe para seus logs de dmesg e kern, que diferenças você nota?",
+  "quizQuestion": "Que comando pode ser usado para visualizar mensagens de inicialização do kernel?",
+  "quizAnswer": "dmesg",
+  "slug": "kernellogging"
+}

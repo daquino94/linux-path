@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "IPv4",
+  "lessonContent": "Chaque hôte réseau a une adresse unique, et chaque adresse unique peut être utilisée pour localiser l'hôte dans le réseau. Ces adresses uniques sont connues sous le nom d'« adresses IP ». Une adresse IPv4 ressemble à ceci :\n\n<pre>204.23.124.23</pre>\n\nCette adresse contient en réalité deux parties : la partie réseau (qui identifie sur quel réseau elle se trouve) et la partie hôte (qui identifie l'hôte). Pour ce cours, nous discuterons principalement des adresses IPv4, que vous verrez couramment lorsque vous ferez référence aux 'adresses IP'.\n\nUne adresse IP est séparée en octets par les points. Il y a 4 octets dans une adresse IPv4. Si vous connaissez un peu l'informatique, vous saurez qu'un octet est composé de 8 bits, et vous saurez que 8 bits équivalent en réalité à 1 octet. Cela signifie qu'une adresse IPv4 a 4 octets. Nous utilisons fréquemment les bits lors de la manipulation des sous-réseaux et des adresses IP.\n\nVous pouvez voir votre adresse IP avec la commande 'ifconfig -a' :\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\nComme vous pouvez le voir, mon adresse IPv4 est : 192.168.1.129",
+  "exercise": "Trouvez votre adresse IP avec ifconfig.",
+  "quizQuestion": "Combien d'octets y a-t-il dans une adresse IPv4 ?",
+  "quizAnswer": "4",
+  "slug": "ipv4"
+}

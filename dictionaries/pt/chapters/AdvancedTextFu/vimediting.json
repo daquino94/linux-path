@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Edição no Vim",
+  "lessonContent": "Agora que temos algumas linhas escritas, vamos editá-las um pouco mais e remover algumas coisas inúteis.<br><p></p><ul><br><li>x - usado para cortar o texto selecionado, também usado para excluir caracteres</li><br><li>dd - usado para excluir a linha atual</li><br><li>y - copiar o que estiver selecionado</li><br><li>yy - copiar a linha atual</li><br><li>p - colar o texto copiado antes do cursor</li><br></ul><p></p>",
+  "exercise": "Eu sei que esta lição adicionou algumas coisas estranhas, abra um editor de texto e brinque com elas.",
+  "quizQuestion": "Qual caractere é usado para excluir uma linha inteira?",
+  "quizAnswer": "dd",
+  "slug": "vimediting"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "expand und unexpand",
+  "lessonContent": "In unserer Lektion zum cut-Befehl hatten wir unsere sample.txt-Datei, die ein Tabulatorzeichen enthielt. Normalerweise zeigen TABs einen deutlichen Unterschied, aber einige Textdateien zeigen das nicht deutlich genug. Tabulatoren in einer Textdatei sind möglicherweise nicht der gewünschte Abstand, den Sie möchten. Verwenden Sie den expand-Befehl, um Ihre Tabulatoren in Leerzeichen zu ändern. \n\n<pre>$ expand sample.txt</pre>\n\nDer obige Befehl gibt die Ausgabe aus, wobei jeder TAB in eine Gruppe von Leerzeichen umgewandelt wird. Um diese Ausgabe in einer Datei zu speichern, verwenden Sie eine Ausgaberichtung wie unten gezeigt. \n\n<pre>$ expand sample.txt > result.txt</pre>\n\nIm Gegensatz zu expand können wir jede Gruppe von Leerzeichen mit dem unexpand-Befehl wieder in einen TAB umwandeln: \n\n<pre>$ unexpand -a result.txt</pre>",
+  "exercise": "Was passiert, wenn Sie einfach expand ohne Dateieingabe eingeben?",
+  "quizQuestion": "Welcher Befehl wird verwendet, um TABs in Leerzeichen umzuwandeln?",
+  "quizAnswer": "expand",
+  "slug": "expandunexpandcommand"
+}

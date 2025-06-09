@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Protocole de passerelle frontalière",
+  "lessonContent": "Le dernier protocole important que nous aborderons est BGP, BGP est essentiellement la façon dont fonctionne Internet. Il est utilisé pour collecter et échanger des informations de routage entre les systèmes autonomes. Pensez à un système autonome comme un fournisseur de services Internet, une entreprise, une université, une organisation, etc. Sans BGP, ces systèmes ne sauraient pas comment communiquer entre eux, ils resteraient cloisonnés. Au lieu de router à l'intérieur de ces systèmes autonomes, BGP route entre eux.\n\nDisons que vous êtes sur votre réseau domestique et que je travaille depuis Starbucks, je veux pouvoir communiquer avec vous, donc j'envoie un e-mail et le paquet réseau voyage à travers le réseau de Starbucks, il rebondit là-bas et passe à travers les tables de routage dans le réseau de Starbucks jusqu'à ce qu'il atteigne enfin un point à la frontière du réseau de Starbucks et le transmette à un routeur de passerelle frontalière. Ce routeur contient les informations pour que mon paquet quitte le réseau de Starbucks et traverse d'autres réseaux.",
+  "exercise": "Pas d'exercices pour cette leçon.",
+  "quizQuestion": "Quel protocole fait essentiellement fonctionner Internet?",
+  "quizAnswer": "BGP",
+  "slug": "protocolepasserellefrontalierebgp"
+}

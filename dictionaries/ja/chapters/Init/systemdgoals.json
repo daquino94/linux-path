@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Systemd Goals",
+  "lessonContent": "systemd ユニットファイルの詳細については触れません。ただし、ユニットファイルの概要とユニットの手動制御について簡単に説明します。\n\nこちらは基本的なサービスユニットファイルです: foobar.service\n\n<pre>\n[Unit]\nDescription=My Foobar\nBefore=bar.target\n\n[Service]\nExecStart=/usr/bin/foobar\n\n[Install]\nWantedBy=multi-user.target\n</pre>\n\nこれは単純なサービスターゲットで、ファイルの先頭に [Unit] のセクションがあり、ここではユニットファイルに説明を付けたり、ユニットをアクティブにする順序を制御したりできます。次の部分は [Service] セクションで、ここではサービスの開始、停止、再読み込みができます。[Install] セクションは依存関係に使用されます。systemd ファイルの書き方についてはこれだけの紹介ですので、もっと知りたい場合は詳細を読んでください。\n\nさて、systemd ユニットで使用できるいくつかのコマンドについて説明します:\n\n<b>ユニットの一覧表示</b>\n\n<pre>$ systemctl list-units</pre>\n\n<b>ユニットの状態を表示</b>\n\n<pre>$ systemctl status networking.service</pre>\n\n<b>サービスの開始</b>\n\n<pre>$ sudo systemctl start networking.service</pre>\n\n<b>サービスの停止</b>\n\n<pre>$ sudo systemctl stop networking.service</pre>\n\n<b>サービスの再起動</b>\n\n<pre>$ sudo systemctl restart networking.service</pre>\n\n<b>ユニットの有効化</b>\n\n<pre>$ sudo systemctl enable networking.service</pre>\n\n<b>ユニットの無効化</b>\n\n<pre>$ sudo systemctl disable networking.service</pre>\n\nsystemd の深いところについてはまだ見ていないので、さらに学びたい場合は詳細を読んでください。",
+  "exercise": "ユニットの状態を表示し、いくつかのサービスを開始および停止してください。何が観察されますか？",
+  "quizQuestion": "peanut.service というサービスを開始するコマンドは何ですか？",
+  "quizAnswer": "sudo systemctl start peanut.service",
+  "slug": "systemdgoals"
+}

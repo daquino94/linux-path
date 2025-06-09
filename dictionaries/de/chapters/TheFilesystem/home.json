@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "title": "Das Dateisystem",
+  "description": "Erfahren Sie mehr über das Linux-Dateisystem, die verschiedenen Arten von Dateisystemen, Partitionierung und mehr.",
+  "image": "/images/chapters/filesystem.png",
+  "slug": "dasdateisystem"
+}

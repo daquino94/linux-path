@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "帮助",
+  "lessonContent": "Linux具有一些很棒的内置工具，可以帮助您学习如何使用命令或检查命令的可用标志。其中一个工具是help，它是一个内置的bash命令，用于为其他bash命令（如echo、logout、pwd等）提供帮助。\n\n<pre>$ help echo</pre>\n\n这将为您提供运行echo时可以使用的描述和选项。对于其他可执行程序，通常会有一个名为--help或类似的选项。\n\n<pre>$ echo --help</pre>\n\n并非所有发布可执行程序的开发人员都会遵守这一标准，但这可能是您找到有关程序的一些帮助的最佳途径。",
+  "exercise": "在echo命令、logout命令和pwd命令上运行help。",
+  "quizQuestion": "如何快速获取内置bash命令的命令行帮助？",
+  "quizAnswer": "help",
+  "slug": "helpcommand"
+}

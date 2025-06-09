@@ -1,0 +1,7 @@
+{
+  "id": 9,
+  "title": "Geräte",
+  "description": "Erfahren Sie mehr über Linux-Geräte und wie sie mit dem Kernel und dem Benutzerbereich interagieren.",
+  "image": "/images/chapters/devices.png",
+  "slug": "devices"
+}

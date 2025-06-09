@@ -1,0 +1,7 @@
+{
+  "id": 8,
+  "title": "Packages",
+  "description": "Apprenez tout sur les outils de gestion de paquets dpkg, apt-get, rpm et yum.",
+  "image": "/images/chapters/packages.png",
+  "slug": "packages"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "cut",
+  "lessonContent": "テキストを処理するために使用できる便利なコマンドをいくつか学びます。始める前に、作業するファイルを作成しましょう。次のコマンドをコピーして貼り付け、その後、lazyとdogの間にTABを追加してください（Ctrl-v + TABを押してください）。\n\n<pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>\n\n最初に学ぶコマンドはcutコマンドです。これはファイルからテキストの一部を抽出します。\n\n文字のリストによってコンテンツを抽出するには：\n\n<pre>$ cut -c 5 sample.txt</pre>\n\nこれにより、ファイルの各行の5番目の文字が出力されます。この場合、「q」です。スペースも1文字としてカウントされることに注意してください。\n\nフィールドによってコンテンツを抽出するには、少し変更する必要があります：\n\n<pre>$ cut -f 2 sample.txt</pre>\n\n-fまたはfieldフラグは、デフォルトでTABを区切り文字として使用し、TABで区切られたすべてがフィールドと見なされます。出力として「dog」が表示されるはずです。\n\nフィールドフラグと区切り文字フラグを組み合わせて、カスタム区切り文字によってコンテンツを抽出できます：\n\n<pre>$ cut -f 1 -d \";\" sample.txt</pre>\n\nこれにより、TAB区切り文字が「;」区切り文字に変更され、最初のフィールドを切り取るため、結果は「The quick brown」になります。",
+  "exercise": "次のコマンドは何をしますか？なぜですか？\n\n<pre>$ cut -c 5-10 sample.txt\n$ cut -c 5- sample.txt\n$ cut -c -5 sample.txt\n</pre>",
+  "quizQuestion": "ファイルの各行の最初の文字を取得するために使用するコマンドは何ですか？",
+  "quizAnswer": "cut -c 1",
+  "slug": "cutcommand"
+}

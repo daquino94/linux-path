@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "NFS",
+  "lessonContent": "Die am häufigsten verwendete Netzwerkdateifreigabe für Linux ist NFS (Network File System). NFS ermöglicht einem Server, Verzeichnisse und Dateien mit einem oder mehreren Clients über das Netzwerk zu teilen. \n\nWir werden hier nicht auf die Details zur Erstellung eines NFS-Servers eingehen, da dies komplex werden kann. Wir werden jedoch die Einrichtung von NFS-Clients besprechen.\n\n<b>Einrichten eines NFS-Clients</b>\n\n<pre>$ sudo service nfsclient start\n$ sudo mount server:/verzeichnis /mount_verzeichnis</pre>\n\n<b>Automatisches Einhängen</b>\n\nAngenommen, Sie verwenden den NFS-Server häufig und möchten ihn dauerhaft eingehängt halten. Normalerweise würden Sie denken, dass Sie die Datei /etc/fstab bearbeiten müssten, aber Sie erhalten möglicherweise nicht immer eine Verbindung zum Server, was beim Booten Probleme verursachen kann. Stattdessen sollten Sie das automatische Einhängen einrichten, damit Sie sich bei Bedarf mit dem NFS-Server verbinden können. Dies wird mit dem <b>automount</b>-Tool oder in neueren Versionen von Linux mit <b>amd</b> durchgeführt. Wenn auf eine Datei in einem bestimmten Verzeichnis zugegriffen wird, sucht automount den entfernten Server und hängt ihn automatisch ein.",
+  "exercise": "Lesen Sie die Manpage für NFS, um mehr zu erfahren.",
+  "quizQuestion": "Welches Tool wird verwendet, um Einhängepunkte automatisch zu verwalten?",
+  "quizAnswer": "automount",
+  "slug": "nfsnetworkfileshare"
+}

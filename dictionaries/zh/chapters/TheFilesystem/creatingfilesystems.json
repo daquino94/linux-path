@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "创建文件系统",
+  "lessonContent": "既然您已经对磁盘进行了分区，让我们来创建一个文件系统吧！\n\n<pre>$ sudo mkfs -t ext4 /dev/sdb2</pre>\n\n就是这么简单！<b>mkfs</b>（make filesystem）工具允许我们指定我们想要的文件系统类型以及我们想要的位置。您只会想要在新分区的磁盘上创建文件系统，或者如果您正在重新分区旧磁盘的话。如果您试图在现有文件系统之上创建一个文件系统，很可能会使您的文件系统处于损坏状态。",
+  "exercise": "在 USB 驱动器上创建一个 ext4 文件系统。",
+  "quizQuestion": "用于创建文件系统的命令是什么？",
+  "quizAnswer": "mkfs",
+  "slug": "creatingfilesystems"
+}

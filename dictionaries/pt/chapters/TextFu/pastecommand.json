@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "colar",
+  "lessonContent": "O comando colar é semelhante ao comando cat, ele mescla linhas em um arquivo. Vamos criar um novo arquivo com o seguinte conteúdo: \n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\nVamos combinar todas essas linhas em uma linha: \n\n<pre>$ colar -s sample2.txt</pre>\n\nO delimitador padrão para o colar é TAB, então agora há uma linha com TABs separando cada palavra.\n\nVamos alterar este delimitador (-d) para algo um pouco mais legível: \n\n<pre>$ colar -d ' ' -s sample2.txt</pre>\n\nAgora tudo deve estar em uma linha delimitada por espaços.",
+  "exercise": "Tente colar vários arquivos juntos, o que acontece?",
+  "quizQuestion": "Que flag você usa com colar para colocar tudo em uma linha?",
+  "quizAnswer": "-s",
+  "slug": "comandocolar"
+}

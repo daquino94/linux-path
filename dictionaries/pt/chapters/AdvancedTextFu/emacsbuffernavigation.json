@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "Navegação de Buffer no Emacs",
+  "lessonContent": "Para mover-se entre buffers (ou arquivos que você está visitando), use os seguintes comandos:\n\n<b>Trocar buffers</b>\n\n<pre>\nC-x b - trocar buffer\nC-x seta para a direita - ciclo para a direita pelos buffers\nC-x seta para a esquerda - ciclo para a esquerda pelos buffers\n</pre>\n\n<b>Fechar o buffer</b>\n\n<pre>C-x k</pre>\n\n<b>Dividir o buffer atual</b>\n\n<pre>C-x 2</pre>\n\nIsso permite ver múltiplos buffers em uma tela. Para mover-se entre esses buffers, use: C-x o\n\n<b>Definir um único buffer como tela atual</b>\n\n<pre>C-x 1</pre>\n\nSe você já usou um multiplexador de terminal como screen e tmux, os comandos de buffer serão muito familiares.",
+  "exercise": "Brinque com os buffers.",
+  "quizQuestion": "Como você mata um buffer?",
+  "quizAnswer": "C-x k",
+  "slug": "navegacaodebuffernoemacs"
+}

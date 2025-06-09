@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Navegação no Vim",
+  "lessonContent": "Agora você pode notar que o mouse não é usado aqui. Para navegar em um documento de texto no vim, use as seguintes teclas: \n\n<ul>\n<li>h ou a seta para a esquerda - irá movê-lo para a esquerda um caractere</li>\n<li>k ou a seta para cima - irá movê-lo para cima uma linha</li>\n<li>j ou a seta para baixo - irá movê-lo para baixo uma linha</li>\n<li>l ou a seta para a direita - irá movê-lo para a direita um caractere</li>\n</ul>",
+  "exercise": "Sem exercícios para esta lição.",
+  "quizQuestion": "Que letra é usada para mover para baixo?",
+  "quizAnswer": "j",
+  "slug": "navegacaonovim"
+}

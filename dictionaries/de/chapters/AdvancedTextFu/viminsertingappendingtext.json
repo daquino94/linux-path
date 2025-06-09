@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Vim Text anhängen",
+  "lessonContent": "<p>Vielleicht ist Ihnen aufgefallen, dass Sie nichts eingeben können. Das liegt daran, dass Sie sich im Befehlsmodus befinden. Das kann ziemlich verwirrend sein, besonders wenn Sie einfach eine Datei öffnen und Text eingeben möchten. Der Befehlsmodus wird verwendet, wenn Sie Befehle wie h, j, k, l usw. eingeben. Um Text einzufügen, müssen Sie zuerst den Einfügemodus aktivieren. </p><p></p><ul><br><li>i - Text vor dem Cursor einfügen</li><br><li>O - Text in der vorherigen Zeile einfügen</li><br><li>o - Text in der nächsten Zeile einfügen</li><br><li>a - Text nach dem Cursor anhängen</li><br><li>A - Text am Ende der Zeile anhängen</li><br></ul><p></p><p>Beachten Sie, dass wenn Sie einen dieser Einfügemodi eingeben, vim den Einfügemodus am unteren Rand der Shell aktiviert. Um den Einfügemodus zu verlassen und zum Befehlsmodus zurückzukehren, drücken Sie einfach die Esc-Taste.</p>",
+  "exercise": "Spielen Sie mit dem Wechsel zwischen Einfüge- und Befehlsmodus.",
+  "quizQuestion": "Welche Taste wird verwendet, um Text vor dem Cursor einzufügen?",
+  "quizAnswer": "i",
+  "slug": "vimtexteinfügenanhängen"
+}

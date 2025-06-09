@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Estados de Energia",
+  "lessonContent": "Difícil de acreditar que ainda não discutimos formas de controlar o estado do seu sistema através da linha de comando, mas ao falar sobre o init, não apenas falamos sobre os modos que nos permitem iniciar nosso sistema, mas também aqueles que o desligam.\n\nPara desligar o seu sistema:\n\n<pre>$ sudo shutdown -h now</pre>\n\nIsso irá parar o sistema (desligá-lo), você também deve especificar um horário para que isso aconteça. Você pode adicionar um tempo em minutos que irá desligar o sistema em determinado tempo.\n\n<pre>$ sudo shutdown -h +2</pre>\n\nIsso irá desligar o seu sistema em dois minutos. Você também pode reiniciar com o comando shutdown: \n\n<pre>$ sudo shutdown -r now</pre>\n\nOu simplesmente usar o comando reboot:\n\n<pre>$ sudo reboot</pre>",
+  "exercise": "O que você acha que está acontecendo com o init quando desliga sua máquina?",
+  "quizQuestion": "Qual é o comando para desligar o seu sistema em 4 minutos?",
+  "quizAnswer": "sudo shutdown -h +4",
+  "slug": "powerstates"
+}

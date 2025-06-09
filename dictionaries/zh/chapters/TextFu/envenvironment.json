@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "env (环境)",
+  "lessonContent": "运行以下命令：\n\n<pre>$ echo $HOME</pre>\n\n您应该看到您的主目录路径，我的看起来像是 /home/pete。\n\n这个命令呢？\n\n<pre>$ echo $USER </pre>\n\n您应该看到您的用户名！\n\n这些信息是从哪里来的？它们来自您的环境变量。您可以通过输入以下命令查看这些变量\n\n<pre>$ env </pre>\n\n这会输出关于您当前设置的环境变量的大量信息。这些变量包含了shell和其他进程可以使用的有用信息。\n\n这里是一个简短的示例：\n\n<pre>\nPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\nPWD=/home/user\nUSER=pete\n</pre>\n\n\n其中一个特别重要的变量是 PATH 变量。您可以通过在变量名前面加上 $ 来访问这些变量，就像这样：\n\n<pre>\n$ echo $PATH\n/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\n</pre>\n\n这将返回一个由冒号分隔的路径列表，当系统运行命令时会搜索这些路径。假设您手动从互联网下载并安装一个软件包，并将其放在一个非标准目录中，想要运行该命令，您输入 $ coolcommand，提示说找不到命令。那很荒谬，您正在查看一个文件夹中的二进制文件并且知道它存在。发生的情况是 $PATH 变量不检查该目录以查找此二进制文件，因此会抛出错误。\n\n假设您有大量二进制文件想要从该目录运行，您可以修改 PATH 变量以在 PATH 环境变量中包含该目录。",
+  "exercise": "以下命令的输出是什么？为什么？\n<pre>$ echo $HOME</pre>",
+  "quizQuestion": "如何查看您的环境变量？",
+  "quizAnswer": "env",
+  "slug": "envenvironment"
+}

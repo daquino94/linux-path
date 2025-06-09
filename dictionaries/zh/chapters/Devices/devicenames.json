@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "设备名称",
+  "lessonContent": "以下是您可能会遇到的最常见设备名称：\n\n<b>SCSI设备</b>\n\n如果您的计算机上有任何形式的大容量存储，很可能正在使用SCSI（发音为“scuzzy”）协议。SCSI代表Small Computer System Interface，这是一种用于允许磁盘、打印机、扫描仪和其他外围设备与系统通信的协议。您可能听说过现代系统中实际上不再使用的SCSI设备，但是我们的Linux系统将SCSI磁盘对应到/dev中的硬盘驱动器。它们由sd（SCSI磁盘）前缀表示：\n\n常见的SCSI设备文件：\n\n<ul>\n<li>/dev/sda - 第一个硬盘</li>\n<li>/dev/sdb - 第二个硬盘</li>\n<li>/dev/sda3 - 第一个硬盘上的第三个分区</li>\n</ul>\n\n<b>伪设备</b>\n\n正如我们之前讨论的，伪设备实际上并未真正连接到您的系统，最常见的伪设备是字符设备：\n\n<ul>\n<li>/dev/zero - 接受并丢弃所有输入，生成连续的NULL（零值）字节流</li>\n<li>/dev/null - 接受并丢弃所有输入，不生成任何输出</li>\n<li>/dev/random - 生成随机数</li>\n</ul>\n\n<b>PATA设备</b>\n\n在旧系统中，有时您可能会看到硬盘以hd前缀命名：\n\n<ul>\n<li>/dev/hda - 第一个硬盘</li>\n<li>/dev/hdd2 - 第四个硬盘上的第二个分区</li>\n</ul>",
+  "exercise": "向伪设备写入内容并查看发生了什么，注意不要将您的磁盘写入这些设备！",
+  "quizQuestion": "第二个SCSI磁盘上第一个分区的设备名称通常是什么？",
+  "quizAnswer": "sdb1",
+  "slug": "devicenames"
+}

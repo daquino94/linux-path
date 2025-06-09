@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Vim 编辑",
+  "lessonContent": "现在我们已经写了几行，让我们再编辑一下，去掉一些多余的内容。<br><p></p><ul><br><li>x - 用于剪切所选文本，也用于删除字符</li><br><li>dd - 用于删除当前行</li><br><li>y - 复制所选内容</li><br><li>yy - 复制当前行</li><br><li>p - 在光标之前粘贴已复制的文本</li><br></ul><p></p>",
+  "exercise": "我知道这节课添加了一些奇怪的东西，打开文本编辑器，尝试一下这些内容。",
+  "quizQuestion": "用于删除整行的字符是什么？",
+  "quizAnswer": "dd",
+  "slug": "vimediting"
+}

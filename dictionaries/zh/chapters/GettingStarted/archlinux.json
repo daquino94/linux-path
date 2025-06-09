@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Arch Linux",
+  "lessonContent": "<b>概述</b>\nArch 是一个由社区驱动的轻量级和灵活的 Linux 发行版。与 Debian 类似，Arch 使用滚动发布模型，因此增量更新最终成为稳定版本。您需要动手操作才能理解系统及其功能，但作为回报，您将完全掌控系统。\n\n<b>软件包管理</b>\n它使用自己的软件包管理器 Pacman 来安装、更新和管理软件包。\n\n<b>可配置性</b>\n如果您想要一个轻量级操作系统并真正想了解 Linux，请使用 Arch！学习曲线有点陡峭，但对于那些 Linux 高级用户来说，这是一个很好的选择。\n\n<b>用途</b>\n非常适合台式机和笔记本电脑。如果您还有一个像树莓派这样的小设备，并且需要在上面安装轻量级操作系统，那么选择 Arch 绝对没错。",
+  "exercise": "如果您对将 Arch 作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>",
+  "quizQuestion": "Arch Linux 使用哪个软件包管理器？",
+  "quizAnswer": "Pacman",
+  "slug": "archlinux"
+}

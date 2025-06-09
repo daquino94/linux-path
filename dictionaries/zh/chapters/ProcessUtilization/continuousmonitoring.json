@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "持续监控",
+  "lessonContent": "这些监控工具适用于在您的机器出现问题时查看，但是当您不在查看时出现问题的机器呢？对于这些情况，您需要使用持续监控工具，这种工具将收集、报告和保存系统活动信息。在本课程中，我们将介绍一个很好的工具<b>sar</b>。\n\n<b>安装 sar</b>\nSar 是一个用于对系统进行历史分析的工具，首先确保已安装 sysstat 包，通过安装 sysstat 包 <b>sudo apt install sysstat</b>。\n\n<b>设置数据收集</b>\n通常安装 sysstat 后，系统将自动开始收集数据，如果没有，您可以通过修改 /etc/default/sysstat 中的 ENABLED 字段来启用它。\n\n<b>使用 sar</b>\n\n<pre>$ sudo sar -q</pre>\n\n此命令将列出从当天开始的详细信息。\n\n<pre>$ sudo sar -r</pre>\n\n这将列出当天开始的内存使用情况的详细信息。\n\n<pre>$ sudo sar -P</pre>\n\n这将列出 CPU 使用情况的详细信息。\n\n要查看不同日期的视图，您可以进入 /var/log/sysstat/saXX，其中 XX 是您想查看的日期。\n\n<pre>$sar -q /var/log/sysstat/sa02</pre>",
+  "exercise": "在您的系统上安装 sar 并开始收集和分析系统资源利用情况。",
+  "quizQuestion": "用于监控系统资源的好工具是什么？",
+  "quizAnswer": "sar",
+  "slug": "continuousmonitoring"
+}

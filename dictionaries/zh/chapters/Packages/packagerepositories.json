@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "软件包存储库",
+  "lessonContent": "那些上传到互联网的软件包是如何最终出现在我们的计算机上的呢？你是不是要去每个想要的软件包的下载页面，然后点击下载和安装？实际上你可以这样做，但有一种更好的方法叫做软件包存储库。存储库只是软件包的中央存储位置。有大量的存储库保存着许多软件包，最重要的是它们都可以在互联网上找到，没有愚蠢的安装光盘。除非你明确告诉它在哪里查找，否则你的计算机不知道要去哪里找这些存储库。\n\n举个例子，假设我想在我的计算机上安装WackyWidgets软件。WackyWidgets为他们的小部件软件包管理自己的存储库，在这个存储库中有10个软件包，如CoolWidget软件包、SuperWidget软件包等。WackyWidgets将这个存储库托管在一个名为：http://download.widgets/linux/deb/ 的源链接上。\n\n现在，你可以告诉你的计算机从源链接中找到WackyWidgets软件，而不是直接从他们的网站下载软件包。\n\n你的发行版已经预先批准了用于获取软件包的源，这就是它安装在系统上的所有基本软件包的来源。在Debian系统上，这个源文件是<b>/etc/apt/sources.list</b>文件。你的计算机会知道要在那里查找并检查你添加的任何源存储库。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "在Debian系统中，源文件在哪里？",
+  "quizAnswer": "/etc/apt/sources.list",
+  "slug": "packagerepositories"
+}

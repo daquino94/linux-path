@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "openSUSE",
+  "lessonContent": "<b>Vue d'ensemble</b>\nopenSUSE Linux est créé par le projet openSUSE. Une communauté qui promeut l'utilisation de Linux partout, travaillant ensemble de manière ouverte, transparente et amicale dans le cadre de la communauté mondiale des logiciels libres et open source. openSUSE est la deuxième distribution Linux encore en activité la plus ancienne et partage le système de base avec les produits primés SUSE Linux Enterprise de SUSE.\n\n<b>Gestion des paquets</b>\nUtilise le gestionnaire de paquets RPM.\n\n<b>Configurabilité</b>\nopenSUSE est un excellent choix pour un nouvel utilisateur de Linux. Il offre une application d'installation/administration graphique facile à utiliser (<a href=\"http://yast.github.io/\">YaST</a>) et un système de base bien rangé, facile à bricoler. openSUSE inclut tout ce dont vous avez besoin pour profiter d'Internet sans souci de virus/logiciels espions et pour exprimer votre créativité, que ce soit avec vos photos, vidéos, musique ou code.\n\n<b>Utilisations</b>\nopenSUSE Leap est tout à fait capable d'être utilisé sur un PC de bureau et un ordinateur portable.",
+  "exercise": "Si vous êtes intéressé par l'utilisation de openSUSE comme système d'exploitation, rendez-vous sur la page de téléchargement et essayez-le : <a href='https://software.opensuse.org/'>software.opensuse.org</a>",
+  "quizQuestion": "Quel est le nom de l'outil d'administration/installation d'openSUSE?",
+  "quizAnswer": "yast",
+  "slug": "opensuse"
+}

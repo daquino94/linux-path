@@ -1,0 +1,7 @@
+{
+  "id": 16,
+  "title": "ネットワーク共有",
+  "description": "rsync、scp、nfsなどを使用したネットワーク共有について学びます。",
+  "image": "/images/chapters/networkSharing.png",
+  "slug": "networksharing"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 11,
+  "title": "システムの起動",
+  "description": "Linuxの起動プロセスの段階について学ぶ。",
+  "image": "/images/chapters/boot.png",
+  "slug": "bootthesystem"
+}

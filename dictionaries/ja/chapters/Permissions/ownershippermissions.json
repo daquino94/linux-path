@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "所有権の権限",
+  "lessonContent": "ファイルの権限を変更するだけでなく、ファイルのグループとユーザーの所有権も変更できます。\n\n<b>ユーザー所有権の変更</b>\n\n<pre>$ sudo chown patty myfile</pre>\n\nこのコマンドは、myfile の所有者を patty に設定します。\n\n<b>グループ所有権の変更</b>\n\n<pre>$ sudo chgrp whales myfile</pre>\n\nこのコマンドは、myfile のグループを whales に設定します。\n\n<b>ユーザーとグループの両方の所有権を同時に変更する</b>\nユーザーの後にコロンとグループ名を追加すると、ユーザーとグループを同時に設定できます。\n\n<pre>$ sudo chown patty:whales myfile</pre>",
+  "exercise": "いくつかのテストファイルのグループとユーザーを変更してください。その後、ls -l で権限を確認してください。",
+  "quizQuestion": "ユーザー所有権を変更するために使用するコマンドは何ですか？",
+  "quizAnswer": "chown",
+  "slug": "ownershippermissions"
+}

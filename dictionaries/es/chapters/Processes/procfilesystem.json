@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "/Sistema de archivos proc",
+  "lessonContent": "Recuerda que todo en Linux es un archivo, incluso los procesos. La información del proceso se almacena en un sistema de archivos especial conocido como el sistema de archivos /proc.\n\n<pre>$ ls /proc</pre>\n\nDeberías ver múltiples valores aquí, hay subdirectorios para cada PID. Si miraras un PID en la salida de ps, podrías encontrarlo en el directorio /proc.\n\nAdelante, ingresa a uno de los procesos y mira ese archivo:\n\n<pre>$ cat /proc/12345/status</pre>\n\nDeberías ver información del estado del proceso y también información más detallada. El directorio /proc es cómo el kernel ve el sistema, por lo que hay mucha más información aquí de la que verías en ps.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Qué sistema de archivos almacena información del proceso?",
+  "quizAnswer": "/proc",
+  "slug": "sistema-archivos-proc"
+}

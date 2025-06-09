@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Permisos de Archivos",
+  "lessonContent": "Como aprendimos anteriormente, los archivos tienen diferentes permisos o modos de archivo. Veamos un ejemplo:\n\n<pre>$ ls -l Desktop/\ndrwxr-xr-x 2 pete penguins 4096 Dec 1 11:45 .\n</pre>\n\nHay cuatro partes en los permisos de un archivo. La primera parte es el tipo de archivo, que está indicado por el primer carácter en los permisos, en nuestro caso, al ser un directorio, muestra <b>d</b> para el tipo de archivo. Comúnmente se verá un <b>-</b> para un archivo regular. \n\nLas siguientes tres partes del modo de archivo son los permisos reales. Los permisos se agrupan en conjuntos de 3 bits cada uno. Los primeros 3 bits son los permisos de usuario, luego los permisos de grupo y luego los permisos de otros. He añadido la barra vertical para hacer más fácil la diferenciación.\n\n<pre>d | rwx | r-x | r-x </pre>\n\nCada carácter representa un permiso diferente: \n<ul>\n<li>r: legible</li>\n<li>w: escribible</li>\n<li>x: ejecutable (básicamente un programa ejecutable)</li>\n<li>-: vacío</li>\n</ul>\n\nEntonces, en el ejemplo anterior, vemos que el usuario pete tiene permisos de lectura, escritura y ejecución en el archivo. El grupo penguins tiene permisos de lectura y ejecución. Y finalmente, los otros usuarios (todos los demás) tienen permisos de lectura y ejecución.",
+  "exercise": "Utiliza el comando ls -l en varios archivos y recita sus permisos, usuario y grupo.",
+  "quizQuestion": "¿Qué bit de permiso se utiliza para ejecutable?",
+  "quizAnswer": "x",
+  "slug": "filepermissions"
+}

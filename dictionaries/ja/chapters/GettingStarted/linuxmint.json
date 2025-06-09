@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Linux Mint",
+  "lessonContent": "<b>概要</b>\nLinux MintはUbuntuをベースにしています。Ubuntuのソフトウェアリポジトリを使用しているため、両方のディストリビューションで同じパッケージが利用可能です。Linux Mintは、UnityなどUbuntuに含まれる一部のプロプライエタリソフトウェアが含まれていないため、他の人々によって好まれています。\n\n<b>パッケージ管理</b>\nLinux MintはUbuntuベースなので、Debianパッケージマネージャを使用しています。\n\n<b>設定可能性</b>\n優れたユーザーインターフェースで、初心者向けであり、Ubuntuよりも軽量です。このコースではLinux Mintを使用しますが、他のディストリビューションでも使用できます。\n\n<b>用途</b>\nデスクトップやノートパソコン向けに優れています。",
+  "exercise": "Linux Mintをオペレーティングシステムとして使用したい場合は、インストールセクションに移動して試してみてください：<a href='http://linuxmint.com/'>http://linuxmint.com/</a>",
+  "quizQuestion": "Linux Mintは何をベースにしていますか？",
+  "quizAnswer": "Ubuntu",
+  "slug": "linuxmint"
+}

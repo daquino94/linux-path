@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "文本编辑器",
+  "lessonContent": "如果你把几个死忠的 Linux 用户聚在一起，问他们最好用的文本编辑器是什么，你会听到关于 vim 或 emacs 的神圣之争永无止境。如果你在意生命安全，千万别提及使用 GUI 编辑器。\n\nVim 和 emacs 是流行的文本编辑器，在大多数 Linux 发行版上默认安装，它们各有优缺点。如果你想像忍者一样熟练地操作系统，你需要选择其中一个文本编辑器来使用。它们本质上是编码、文字处理和基本上一体化的编辑器。",
+  "exercise": "稍微了解一下 vim 和 emacs：\n\n<a href=\"http://www.vim.org/\">Vim</a>\n<a href=\"https://www.gnu.org/software/emacs/\">emacs</a>",
+  "quizQuestion": "没有问题，请继续！",
+  "quizAnswer": "",
+  "slug": "texteditorsvimoremacs"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Fedora",
+  "lessonContent": "<b>概要</b>\nRed Hat の支援を受けて、Fedora プロジェクトはコミュニティ主導のオープンソースおよび無料ソフトウェアを含んでいます。Red Hat Enterprise Linux は Fedora から派生しており、Fedora を RHEL の上流バージョンと考えることができます。最終的には、RHEL は Fedora からのアップデートを受け取りますが、それは徹底的なテストと品質保証の後です。Fedora は、Debian ではなく Red Hat バックエンドを使用した Ubuntu の相当物と考えることができます。\n\n<b>パッケージ管理</b>\nRed Hat パッケージマネージャを使用します。\n\n<b>設定可能性</b>\nRed Hat ベースのオペレーティングシステムを使用したい場合、これはユーザーフレンドリーなバージョンです。\n\n<b>用途</b>\n価格タグなしで Red Hat ベースのオペレーティングシステムを使用したい場合、Fedora は最適です。デスクトップおよびノートパソコン向けに推奨されています。",
+  "exercise": "Fedora をオペレーティングシステムとして使用したい場合は、インストールセクションに移動して試してみてください：<a href='https://getfedora.org/'>https://getfedora.org/</a>",
+  "quizQuestion": "RHEL は何から派生していますか？",
+  "quizAnswer": "Fedora",
+  "slug": "fedora"
+}

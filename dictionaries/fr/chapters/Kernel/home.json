@@ -1,0 +1,7 @@
+{
+  "id": 12,
+  "title": "Noyau",
+  "description": "La partie la plus importante du système Linux, apprenez comment il fonctionne et comment le configurer.",
+  "image": "/images/chapters/kernel.png",
+  "slug": "kernel"
+}

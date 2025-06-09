@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "lsusb, lspci, lssci",
+  "lessonContent": "lsコマンドを使用してファイルやディレクトリの一覧を表示するのと同様に、デバイスに関する情報をリストするための類似したツールを使用できます。\n\n<b>USBデバイスのリスト表示</b>\n\n<pre>$ lsusb </pre>\n\n<b>PCIデバイスのリスト表示</b>\n\n<pre>$ lspci </pre>\n\n<b>SCSIデバイスのリスト表示</b>\n\n<pre>$ lsscsi </pre>",
+  "exercise": "これらのコマンドを試して、受け取る出力を確認してください。",
+  "quizQuestion": "USBデバイスを表示するために使用できるコマンドは何ですか？",
+  "quizAnswer": "lsusb",
+  "slug": "listingdevices"
+}

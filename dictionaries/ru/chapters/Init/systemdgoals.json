@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Цели systemd",
+  "lessonContent": "Мы не будем вдаваться в детали написания файлов юнитов systemd. Однако мы рассмотрим краткий обзор файла юнита и способы ручного управления юнитами. \n\nВот базовый файл юнита службы: foobar.service\n\n<pre>\n[Unit]\nDescription=My Foobar\nBefore=bar.target\n\n[Service]\nExecStart=/usr/bin/foobar\n\n[Install]\nWantedBy=multi-user.target\n</pre>\n\nЭто простая целевая служба, в начале файла мы видим раздел [Unit], который позволяет нам дать нашему файлу юнита описание, а также контролировать порядок активации юнита. Следующая часть - раздел [Service], здесь мы можем запускать, останавливать или перезагружать службу. Раздел [Install] используется для зависимостей. Это только верхушка айсберга при написании файлов systemd, поэтому я настоятельно рекомендую вам изучить эту тему, если хотите узнать больше. \n\nТеперь давайте рассмотрим некоторые команды, которые можно использовать с юнитами systemd: \n\n<b>Список юнитов</b>\n\n<pre>$ systemctl list-units</pre>\n\n<b>Просмотр статуса юнита</b>\n\n<pre>$ systemctl status networking.service</pre>\n\n<b>Запуск службы</b>\n\n<pre>$ sudo systemctl start networking.service</pre>\n\n<b>Остановка службы</b>\n\n<pre>$ sudo systemctl stop networking.service</pre>\n\n<b>Перезапуск службы</b>\n\n<pre>$ sudo systemctl restart networking.service</pre>\n\n<b>Включение юнита</b>\n\n<pre>$ sudo systemctl enable networking.service</pre>\n\n<b>Отключение юнита</b>\n\n<pre>$ sudo systemctl disable networking.service</pre>\n\nОпять же, вы еще не видели всей глубины systemd, поэтому изучите эту тему, если хотите узнать больше.",
+  "exercise": "Просмотрите статусы юнитов и запустите и остановите несколько служб. Что вы заметили?",
+  "quizQuestion": "Какая команда для запуска службы с именем peanut.service?",
+  "quizAnswer": "sudo systemctl start peanut.service",
+  "slug": "systemdgoals"
+}

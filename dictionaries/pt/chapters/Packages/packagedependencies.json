@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Dependências de Pacotes",
+  "lessonContent": "Pacotes raramente funcionam sozinhos, geralmente são acompanhados por dependências para ajudá-los a funcionar. Por exemplo, vamos dizer que temos um grupo de restaurantes, esses restaurantes preparam diferentes culinárias, no entanto, todos eles obtêm seus ingredientes da mesma fazenda. Sua comida depende do fornecimento da fazenda, se a fazenda parasse de fornecer comida de repente, os restaurantes estariam em maus lençóis. \n\nNo Linux, essas dependências são frequentemente outros pacotes ou bibliotecas compartilhadas. Bibliotecas compartilhadas são conjuntos de códigos que outros programas desejam usar e não querem ter que reescrever para si mesmos. Pense no restaurante novamente, quanto trabalho seria se cada restaurante também cultivasse sua própria comida? Muito.\n\nVamos explorar mais sobre bibliotecas compartilhadas no curso de sistema de arquivos, então por agora apenas lembre-se de que os pacotes têm dependências para ajudá-los a funcionar, se essas dependências forem outros pacotes ou bibliotecas, se as dependências não estiverem presentes, o pacote acabará em um estado quebrado e na maioria das vezes nem será instalado.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Sem perguntas, continue!",
+  "quizAnswer": "",
+  "slug": "dependenciasdepacotes"
+}

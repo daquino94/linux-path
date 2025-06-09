@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Matemáticas de subredes",
+  "lessonContent": "Ok, sabemos que las máscaras de subred son importantes para averiguar cuántos hosts podemos tener en nuestra subred. Entonces, ¿cuántos hosts serían esos? \n\nDigamos que tengo una dirección IP de <b>192.168.1.0</b> y una máscara de subred de <b>255.255.255.0</b>, ahora alineemos estos números en forma binaria. Por ahora, usa una calculadora en línea para convertir estos valores de decimal a binario.\n\n<pre>\n192.168.1.165  = 11000000.10101000.00000001.10100101\n255.255.255.0  = 11111111.11111111.11111111.00000000\n</pre>\n\nLa dirección IP está enmascarada por nuestra máscara de subred, cuando ves un 1, está enmascarado y fingimos que no lo vemos. Entonces, los únicos hosts posibles que podemos tener son de la región 00000000. Recuerda que 11111111 en forma binaria equivale a 255, también consideramos 0 como un número de host, por lo que hay 256 opciones posibles. Sin embargo, puede parecer que tenemos 256 opciones posibles, pero en realidad restamos 2 hosts porque tenemos que tener en cuenta la dirección de difusión y la dirección de subred, lo que nos deja con 254 hosts posibles en nuestra subred. Así que sabemos que podemos tener hosts con direcciones IP que van desde 192.168.1.1 - 192.168.1.254.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cuál es el equivalente binario de 255?",
+  "quizAnswer": "11111111",
+  "slug": "subnetmath"
+}

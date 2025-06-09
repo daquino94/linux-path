@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "image": "/images/penguinLaptop.png",
+    "title": "Linux की शक्ति को अनलॉक करें",
+    "subtitle": "Linux के विश्व में पहले कदम रखने में कितनी सहायता की है, उसके लिए एक नया जीवन LinuxJourney के लिए।"
+  },
+  "resources": {
+    "title": "साधन",
+    "hero": {
+      "image": "/images/penguinBook.png",
+      "title": "साधन",
+      "subtitle": "अपने Linux ज्ञान को गहराई देने के लिए चुने गए पुस्तकें, ट्यूटोरियल और उपकरण खोजें।"
+    },
+    "data": [
+      {
+        "image": "/images/link.png",
+        "title": "आधिकारिक Ubuntu ट्यूटोरियल",
+        "description": "शुरुआत के लिए एक कदम-से-कदम मार्गदर्शिका जो टर्मिनल का इतिहास और मूल कमांडों की समझ कराती है",
+        "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+      },
+      {
+        "image": "/images/link.png",
+        "title": "DigitalOcean",
+        "description": "टर्मिनल काम करने का स्पष्ट अवलोकन, कमांड चलाने और फाइल सिस्टम में नेविगेट करने के लिए।",
+        "href": "https://digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "कैसे Linux काम करता है",
+        "description": "सबसे अधिक सिफारिश की गई पुस्तकों में से एक!",
+        "href": "https://www.amazon.com/gp/product/1593275676/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275676&linkCode=as2&tag=linuxjourne0c-20&linkId=a8c48da327d15530a7214f453d5a55da"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "UNIX और Linux सिस्टम प्रशासन हैंडबुक",
+        "description": "प्रत्येक सिसएडमिन के लिए अत्यंत व्यापक पुस्तक।",
+        "href": "https://www.amazon.com/gp/product/0131480057/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0131480057&linkCode=as2&tag=linuxjourne0c-20&linkId=de7ed3d4e4bf2c29b637855e351cffd2"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Linux कमांड बाइबिल",
+        "description": "शैल स्क्रिप्टिंग के लिए महान व्यापक मार्गदर्शिका।",
+        "href": "https://www.amazon.com/gp/product/111898384X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=111898384X&linkCode=as2&tag=linuxjourne0c-20&linkId=41767d3a073f8d20ff0db23bb11a2ac7"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "The Linux Programming Interface: एक Linux और UNIX सिस्टम",
+        "description": "गंभीर Linux उपयोगकर्ताओं के लिए, कर्नेल प्रोग्रामिंग में शुरुआत के लिए महान।",
+        "href": "https://www.amazon.com/gp/product/1593272200/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593272200&linkCode=as2&tag=linuxjourne0c-20&linkId=5d63b12b27c4106a518799e42a9c379d"
+      }
+    ]
+  },
+  "chapterWrapper": {
+    "content": "सामग्री",
+    "exerciseAndQuiz": "अभ्यास और क्विज़"
+  },
+  "navbar": {
+    "siteName": "Linux Path",
+    "home": "होम",
+    "lessons": "पाठ्यक्रम",
+    "resources": "साधन",
+    "language": "भाषा"
+  },
+  "exerciseBox": {
+    "exercise": "अभ्यास"
+  },
+  "quizBox": {
+    "quiz": "क्विज़",
+    "checkAnswer": "जवाब जांचें",
+    "showCorrectAnswer": "सही उत्तर दिखाएं",
+    "correctAnswer": "सही उत्तर: ",
+    "placeholderAnswer": "यहाँ अपना उत्तर लिखें",
+    "nextLesson": "अगला पाठ",
+    "backToChapters": "अध्यायों पर वापस जाएं"
+  }
+}

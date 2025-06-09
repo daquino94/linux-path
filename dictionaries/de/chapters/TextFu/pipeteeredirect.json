@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Rohr und T-Stück",
+  "lessonContent": "Lassen Sie uns jetzt etwas über Sanitärinstallationen sprechen, nicht wirklich, aber irgendwie. Lassen Sie uns einen Befehl ausprobieren: \n\n<pre>$ ls -la /etc</pre>\n\nSie sollten eine sehr lange Liste von Elementen sehen, die eigentlich etwas schwer zu lesen ist. Anstatt diese Ausgabe in eine Datei umzuleiten, wäre es nicht schön, wenn wir die Ausgabe einfach in einem anderen Befehl wie less sehen könnten? Nun, das können wir! \n\n<pre>$ ls -la /etc | less </pre>\n\nDer Pipe-Operator |, dargestellt durch einen senkrechten Strich, ermöglicht es uns, den stdout eines Befehls zu erhalten und diesen zum stdin eines anderen Prozesses zu machen. In diesem Fall haben wir den stdout von ls -la /etc genommen und ihn dann an den less-Befehl <i>gepiped</i>. Der Pipe-Befehl ist äußerst nützlich und wir werden ihn bis in alle Ewigkeit weiterverwenden. \n\nNun, was ist, wenn ich die Ausgabe meines Befehls in zwei verschiedene Streams schreiben möchte? Das ist mit dem tee-Befehl möglich: \n\n<pre>$ ls | tee peanuts.txt</pre>\n\nSie sollten die Ausgabe von ls auf Ihrem Bildschirm sehen und wenn Sie die Datei peanuts.txt öffnen, sollten Sie dieselben Informationen sehen!",
+  "exercise": "Versuchen Sie die folgenden Befehle: \n<pre>$ ls | tee peanuts.txt banan.txt</pre>",
+  "quizQuestion": "Welche Taste repräsentiert den Pipe-Operator?",
+  "quizAnswer": "|",
+  "slug": "pipeteeredirect"
+}

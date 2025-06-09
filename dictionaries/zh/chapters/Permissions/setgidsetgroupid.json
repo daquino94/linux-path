@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Setgid",
+  "lessonContent": "类似于设置用户 ID 权限位，还有一个设置组 ID（SGID）权限位。此位允许程序以该组成员的身份运行。\n\n让我们看一个示例：\n\n<pre>$ ls -l /usr/bin/wall\n-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall\n</pre>\n\n现在我们可以看到权限位在组权限集中。\n\n<b>修改 SGID</b>\n\n<pre>$ sudo chmod g+s myfile\n$ sudo chmod 2555 myfile\n</pre>\n\nSGID 的数字表示是 2。",
+  "exercise": "此课程没有练习。",
+  "quizQuestion": "什么数字代表 SGID？",
+  "quizAnswer": "2",
+  "slug": "setgidsetgroupid"
+}

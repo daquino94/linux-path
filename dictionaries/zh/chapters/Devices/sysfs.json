@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "sysfs",
+  "lessonContent": "Sysfs是很久以前创建的，用于更好地管理系统上的设备，而/dev目录无法做到这一点。Sysfs是一个虚拟文件系统，通常挂载到/sys目录。它为我们提供比/dev目录中能看到的更详细的信息。/sys和/dev这两个目录似乎非常相似，在某些方面确实如此，但它们有重大区别。基本上，/dev目录很简单，它允许其他程序访问设备本身，而/sys文件系统用于查看信息和管理设备。\n\n/sys文件系统基本上包含系统上所有设备的所有信息，例如制造商和型号、设备插入的位置、设备状态、设备层次结构等。您在这里看到的文件不是设备节点，因此您不会真正通过/sys目录与设备交互，而是在管理设备。\n\n查看/sys目录的内容：\n\n<pre>\npete@icebox:~$ ls /sys/block/sda\nalignment_offset  discard_alignment  holders   removable  sda6       trace\nbdi               events             inflight  ro         size       uevent\ncapability        events_async       power     sda1       slaves\ndev               events_poll_msecs  queue     sda2       stat\ndevice            ext_range          range     sda5       subsystem\n</pre>",
+  "exercise": "查看/sys目录的内容，看看其中有哪些文件。",
+  "quizQuestion": "用于查看设备详细信息的目录是哪个？",
+  "quizAnswer": "/sys",
+  "slug": "sysfs"
+}

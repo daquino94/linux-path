@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "OSI 模型",
+  "lessonContent": "在我们深入研究一些实际的网络内容之前，我们必须先了解一些可能以前就听说过的乏味术语。OSI（开放系统互连）模型是一个网络的理论模型。该模型向我们展示了数据包如何在网络中的七个不同层中传输。我不会详细介绍这个模型，因为大多数网络课程都会专注于 TCP/IP 模型，但应该提到这样一个理论网络模型存在，并实际上在我们今天使用的 TCP/IP 网络模型中起到了重要作用。",
+  "exercise": "阅读有关 OSI 模型的更多信息：<a href=\"https://en.wikipedia.org/wiki/OSI_model\">https://en.wikipedia.org/wiki/OSI_model</a>",
+  "quizQuestion": "什么被用作网络的理论模型？",
+  "quizAnswer": "OSI",
+  "slug": "osimodel"
+}

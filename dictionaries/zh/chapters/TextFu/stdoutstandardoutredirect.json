@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "stdout (Standard Out)",
+  "lessonContent": "到目前为止，我们已经熟悉了许多命令及其输出，这使我们进入了下一个主题 I/O（输入/输出）流。让我们运行以下命令，然后我们将讨论它是如何工作的。\n\n<pre>$ echo Hello World > peanuts.txt</pre>\n\n刚才发生了什么？好吧，检查一下您运行该命令的目录，您应该看到一个名为 peanuts.txt 的文件，在该文件中您应该看到文本 Hello World。在一个命令中发生了很多事情，让我们来分解一下。\n\n首先让我们分解第一部分：\n\n<pre>$ echo Hello World</pre>\n\n我们知道这会将 Hello World 打印到屏幕上，但是如何实现的呢？进程使用 I/O 流来接收输入并返回输出。默认情况下，echo 命令从键盘获取输入（标准输入或 stdin），并将输出（标准输出或 stdout）返回到屏幕上。因此，当您在 shell 中键入 echo Hello World 时，您会在屏幕上看到 Hello World。但是，I/O 重定向允许我们更改此默认行为，从而提供更大的文件灵活性。\n\n让我们继续处理命令的下一部分：\n\n<pre> > </pre>\n\n> 是一个重定向运算符，允许我们更改标准输出的位置。它允许我们将 echo Hello World 的输出发送到文件而不是屏幕上。如果文件不存在，它将为我们创建它。但是，如果文件已经存在，它将覆盖它（根据您使用的 shell，您可以添加一个 shell 标志来防止这种情况发生）。\n\n这基本上就是 stdout 重定向的工作原理！\n\n好吧，假设我不想覆盖我的 peanuts.txt，幸运的是，也有一个重定向运算符可以做到这一点，>>：\n\n<pre>$ echo Hello World >> peanuts.txt</pre>\n\n这将将 Hello World 追加到 peanuts.txt 文件的末尾，如果文件不存在，它将像 > 重定向器一样为我们创建它！",
+  "exercise": "尝试几个命令：\n\n<pre>\n$ ls -l /var/log > myoutput.txt\n$ echo Hello World > rm\n$ > somefile.txt \n</pre>",
+  "quizQuestion": "您使用哪个重定向器将输出追加到文件中？",
+  "quizAnswer": ">>",
+  "slug": "stdoutstandardoutredirect"
+}

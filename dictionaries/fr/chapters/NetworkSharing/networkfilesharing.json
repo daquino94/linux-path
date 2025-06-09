@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Présentation du partage de fichiers",
+  "lessonContent": "Vous n'êtes généralement pas le seul ordinateur sur votre réseau, c'est particulièrement vrai si vous travaillez dans un environnement commercial. Lorsque nous voulons transférer des données d'une machine à une autre, il est parfois plus facile de connecter une clé USB et de les copier manuellement. Mais la plupart du temps, si vous travaillez avec des machines sur le même réseau, la manière de transférer des données est par le biais du partage de fichiers en réseau. \n\nDans ce cours, nous passerons en revue quelques méthodes différentes pour copier des données de et vers différentes machines sur votre réseau. Nous discuterons de quelques copies de fichiers simples, puis nous parlerons du montage de répertoires entiers sur votre machine qui agissent comme un lecteur séparé. \n\nUn outil simple de partage de fichiers est la commande <b>scp</b>. La commande scp signifie copie sécurisée, elle fonctionne exactement comme le fait la commande cp, mais vous permet de copier d'un hôte à un autre sur le même réseau. Elle fonctionne via ssh, donc toutes vos actions utilisent la même authentification et sécurité que ssh. \n\n<b>Pour copier un fichier de l'hôte local vers un hôte distant</b>\n\n<pre>$ scp myfile.txt username@remotehost.com:/remote/directory</pre>\n\n<b>Pour copier un fichier d'un hôte distant vers votre hôte local</b>\n\n<pre>$ scp username@remotehost.com:/remote/directory/myfile.txt /local/directory</pre>\n\n<b>Pour copier un répertoire de votre hôte local vers un hôte distant</b>\n\n<pre>$ scp -r mydir username@remotehost.com:/remote/directory</pre>",
+  "exercise": "Essayez de copier un fichier avec scp d'une machine à une autre.",
+  "quizQuestion": "Quelle commande pouvez-vous utiliser pour copier des fichiers en toute sécurité d'un hôte à un autre?",
+  "quizAnswer": "scp",
+  "slug": "partagedefichiersenreseau"
+}

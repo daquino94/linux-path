@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "Emacsバッファナビゲーション",
+  "lessonContent": "バッファ（または訪れているファイル）を移動するには、次のコマンドを使用します：\n\n<b>バッファの切り替え</b>\n\n<pre>\nC-x b - バッファの切り替え\nC-x right arrow - バッファを右にサイクル\nC-x left arrow - バッファを左にサイクル\n</pre>\n\n<b>バッファを閉じる</b>\n\n<pre>C-x k</pre>\n\n<b>現在のバッファを分割する</b>\n\n<pre>C-x 2</pre>\n\nこれにより、1つの画面で複数のバッファを表示できます。これらのバッファ間を移動するには、C-x o を使用します。\n\n<b>1つのバッファを現在の画面に設定する</b>\n\n<pre>C-x 1</pre>\n\nもし、screen や tmux のようなターミナルマルチプレクサを使用したことがある場合、バッファのコマンドは非常に馴染み深いものに感じるでしょう。",
+  "exercise": "バッファを操作してみてください。",
+  "quizQuestion": "バッファを閉じる方法は？",
+  "quizAnswer": "C-x k",
+  "slug": "emacsbuffernavigation"
+}

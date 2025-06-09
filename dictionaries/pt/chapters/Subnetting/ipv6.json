@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "IPv6",
+  "lessonContent": "Já ouvimos o termo IPv6 aqui e ali, mas o que é? Cada dispositivo que se conecta à Internet recebe seu próprio endereço IP, bem, isso acontece ser um número finito que estamos prestes a atingir nesta era digital. O IPv6 foi criado para nos permitir conectar mais hosts à Internet, ele vem com mais melhorias de IP, no entanto, sua adoção é bastante lenta. Não é destinado a substituir o IPv4, eles são destinados a se complementar. Os dois protocolos IP são muito semelhantes e se você conhece o IPv4, você entenderá o IPv6, a principal diferença é a forma como o endereço é escrito. Aqui está como um endereço IPv6 típico se parece:\n\n<pre>\n2dde:1235:1256:3:200:f8ed:fe23:59cf\n</pre>",
+  "exercise": "Verifique ifconfig para ver se você tem um endereço IPv6 listado.",
+  "quizQuestion": "Qual endereço IP é usado para aumentar o número de hosts que podem se conectar à Internet?",
+  "quizAnswer": "IPv6",
+  "slug": "ipv6"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Serveur HTTP Simple",
+  "lessonContent": "Python dispose d'un outil très utile pour servir des fichiers via HTTP. C'est idéal si vous souhaitez simplement créer un partage réseau rapide auquel d'autres machines de votre réseau peuvent accéder. Pour cela, il vous suffit de vous rendre dans le répertoire que vous souhaitez partager et d'exécuter :\n\n<pre>$ python -m SimpleHTTPServer</pre>\n\nCela configure un serveur web de base auquel vous pouvez accéder via l'adresse localhost. Ainsi, récupérez l'adresse IP de la machine sur laquelle vous avez exécuté cette commande, puis sur une autre machine, accédez-y dans le navigateur avec : http://ADRESSE_IP:8000. Sur votre propre machine, vous pouvez voir les fichiers disponibles en tapant : http://localhost:8000 dans votre navigateur web.\n\nVous pouvez également faire cela avec node ou si vous utilisez Python 3, la syntaxe sera un peu différente.",
+  "exercise": "Essayez de configurer un SimpleHTTPServer !",
+  "quizQuestion": "Quel outil pouvez-vous utiliser pour créer un serveur http simple avec python ?",
+  "quizAnswer": "SimpleHTTPServer",
+  "slug": "simplehttpserver"
+}

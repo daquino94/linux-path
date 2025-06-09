@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "Réparation du système de fichiers",
+  "lessonContent": "Parfois, notre système de fichiers n'est pas toujours dans la meilleure condition, si nous subissons une coupure brutale, nos données peuvent devenir corrompues. Il revient au système de tenter de nous remettre dans un état de fonctionnement (bien que nous puissions certainement essayer nous-mêmes).\n\nLa commande <b>fsck</b> (filesystem check) est utilisée pour vérifier la cohérence d'un système de fichiers et peut même essayer de le réparer pour nous. Habituellement, lorsque vous démarrez un disque, fsck s'exécute avant que votre disque ne soit monté pour s'assurer que tout va bien. Parfois cependant, votre disque est tellement endommagé que vous devrez le faire manuellement. Cependant, assurez-vous de le faire lorsque vous êtes dans un disque de secours ou quelque part où vous pouvez accéder à votre système de fichiers sans qu'il soit monté.\n\n<pre>$ sudo fsck /dev/sda</pre>",
+  "exercise": "Consultez la page de manuel de fsck pour voir ce qu'il peut faire d'autre.",
+  "quizQuestion": "Quelle commande est utilisée pour vérifier l'intégrité d'un système de fichiers?",
+  "quizAnswer": "fsck",
+  "slug": "reparationdusystemedefichiers"
+}

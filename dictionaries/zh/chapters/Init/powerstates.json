@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "电源状态",
+  "lessonContent": "很难相信我们实际上还没有讨论通过命令行控制系统状态的方法，但在谈论 init 时，我们不仅谈论启动系统的模式，还谈论停止系统的模式。\n\n要关闭系统：\n\n<pre>$ sudo shutdown -h now</pre>\n\n这将停止系统（关闭电源），您还必须指定希望执行此操作的时间。您可以添加一个以分钟为单位的时间，系统将在该时间内关闭。\n\n<pre>$ sudo shutdown -h +2</pre>\n\n这将在两分钟内关闭您的系统。您还可以使用 shutdown 命令重新启动：\n\n<pre>$ sudo shutdown -r now</pre>\n\n或者只需使用 reboot 命令：\n\n<pre>$ sudo reboot</pre>",
+  "exercise": "当您关闭计算机时，您认为 init 在发生什么？",
+  "quizQuestion": "在4分钟内关闭系统的命令是什么？",
+  "quizAnswer": "sudo shutdown -h +4",
+  "slug": "powerstates"
+}

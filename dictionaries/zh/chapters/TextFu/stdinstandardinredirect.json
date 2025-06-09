@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "stdin (标准输入)",
+  "lessonContent": "在我们之前的课程中，我们学习到我们有不同的stdout流可以使用，比如文件或屏幕。同样，我们也可以使用不同的标准输入(stdin)流。我们知道我们可以从键盘等设备获得stdin，但我们也可以使用文件、其他进程的输出和终端，让我们看一个例子。\n\n让我们在之前的课程中使用peanuts.txt文件作为示例，记住它里面有文本“Hello World”。\n\n<pre>$ cat <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt </pre>\n\n就像我们用于stdout重定向的 <b>&gt;</b> 一样，我们可以使用 <b>&lt;</b> 来进行stdin重定向。\n\n通常在cat命令中，您将一个文件发送给它，该文件将成为stdin，在这种情况下，我们将peanuts.txt重定向为我们的stdin。然后cat peanuts.txt的输出，也就是Hello World，被重定向到另一个名为banana.txt的文件。",
+  "exercise": "尝试一些命令：\n<pre>\n$ echo <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ ls <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ pwd <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n</pre>",
+  "quizQuestion": "您使用哪个重定向符号来重定向stdin？",
+  "quizAnswer": "<",
+  "slug": "stdinstandardinredirect"
+}

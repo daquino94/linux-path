@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Servicio de System V",
+  "lessonContent": "Hay muchas herramientas de línea de comandos que puedes usar para gestionar los servicios de Sys V. \n\n<b>Listar servicios</b>\n\n<pre>$ service --status-all</pre>\n\n<b>Iniciar un servicio</b>\n\n<pre>$ sudo service networking start</pre>\n\n<b>Detener un servicio</b>\n\n<pre>$ sudo service networking stop</pre>\n\n<b>Reiniciar un servicio</b>\n\n<pre>$ sudo service networking restart</pre>\n\nEstos comandos no son específicos de los sistemas de inicio Sys V, también puedes usar estos comandos para gestionar servicios de Upstart. Dado que Linux está tratando de alejarse de los scripts de inicio más tradicionales de Sys V, todavía hay cosas en su lugar para ayudar en esa transición.",
+  "exercise": "Administra un par de servicios y cambia sus estados, ¿qué observas?",
+  "quizQuestion": "¿Cuál es el comando para detener un servicio llamado peanut con Sys V?",
+  "quizAnswer": "sudo service peanut stop",
+  "slug": "sysvservices"
+}

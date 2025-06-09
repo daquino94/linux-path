@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Protocolos de Vetor de Distância",
+  "lessonContent": "Os protocolos de vetor de distância determinam o caminho de outras redes usando o número de saltos que um pacote faz pela rede. Se a rede A estiver a 3 saltos de distância e a rede B estiver ao lado da rede A, então assumimos que deve estar a 4 saltos de distância. Nos protocolos de vetor de distância, a próxima rota seria aquela com a menor quantidade de saltos.\n\nOs protocolos de vetor de distância são ótimos para redes pequenas, mas quando as redes começam a escalar, leva mais tempo para os roteadores convergirem porque periodicamente enviam a tabela de roteamento inteira para todos os roteadores. Outra desvantagem dos protocolos de vetor de distância é a eficiência, pois escolhem rotas mais próximas em saltos, mas nem sempre escolhem a rota mais eficiente.\n\nUm dos protocolos de vetor de distância comuns é o RIP (Routing Information Protocol), que transmite a tabela de roteamento para todos os roteadores na rede a cada 30 segundos. Para uma rede grande, isso pode exigir muita capacidade, e por isso o RIP limita sua contagem de saltos para 15.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Verdadeiro ou falso, os protocolos de distância usam a rota com a menor quantidade de largura de banda?",
+  "quizAnswer": "falso",
+  "slug": "protocolosdevetordedistancia"
+}

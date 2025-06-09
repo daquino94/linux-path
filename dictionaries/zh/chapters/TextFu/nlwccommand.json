@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "wc and nl",
+  "lessonContent": "wc（word count）命令显示文件中单词的总数。\n\n<pre>$ wc /etc/passwd\n 96     265    5925 /etc/passwd\n</pre>\n\n它分别显示行数、单词数和字节数。\n\n要仅查看特定字段的计数，分别使用-l、-w或-c。\n\n<pre>$ wc -l /etc/passwd\n96</pre>\n\n您可以使用nl（number lines）命令来检查文件中行数的计数。\n\n<pre>\nfile1.txt\ni\nlike\nturtles\n</pre>\n\n<pre>$ nl file1.txt\n1. i\n2. like\n3. turtles\n</pre>",
+  "exercise": "如何使用nl文件获取行数的总计数，而无需搜索整个输出？提示：使用您在本课程中学到的其他一些命令。",
+  "quizQuestion": "您会使用什么命令来获取文件中单词的总数以及仅单词？",
+  "quizAnswer": "wc -w",
+  "slug": "nlwccommand"
+}

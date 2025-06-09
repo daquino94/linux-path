@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Texteditoren",
+  "lessonContent": "Wenn Sie ein paar Hardcore-Linux-Benutzer in einem Raum versammeln und sie fragen, welcher der beste Texteditor ist, werden Sie eine endlose Debatte über die Göttlichkeit von entweder vim oder emacs hören. Versuchen Sie nicht einmal, die Verwendung eines GUI-Editors anzusprechen, wenn Ihnen Ihr Leben lieb ist. \n\nVim und emacs sind beliebte Texteditoren, die standardmäßig in den meisten Linux-Distributionen installiert sind, und sie haben beide ihre Vor- und Nachteile. Wenn Sie Ihr System wie ein Ninja bedienen möchten, müssen Sie einen dieser Texteditoren verwenden. Sie sind im Wesentlichen Code-, Textverarbeitungs- und praktisch All-in-One-Editoren.",
+  "exercise": "Machen Sie eine kleine Tour mit vim und emacs:\n\n<a href=\"http://www.vim.org/\">Vim</a>\n<a href=\"https://www.gnu.org/software/emacs/\">emacs</a>",
+  "quizQuestion": "Keine Fragen, gehen Sie weiter!",
+  "quizAnswer": "",
+  "slug": "texteditorsvimoremacs"
+}

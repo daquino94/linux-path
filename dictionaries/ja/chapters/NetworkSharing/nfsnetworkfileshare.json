@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "NFS",
+  "lessonContent": "Linux における最も標準的なネットワークファイル共有は NFS (Network File System) です。NFS を使用すると、サーバーがネットワークを介して1台以上のクライアントとディレクトリやファイルを共有できます。\n\nNFS サーバーの作成方法の詳細については触れませんが、NFS クライアントの設定については議論します。\n\n<b>NFS クライアントの設定</b>\n\n<pre>$ sudo service nfsclient start\n$ sudo mount server:/directory /mount_directory</pre>\n\n<b>自動マウント</b>\n\nNFS サーバーを頻繁に使用し、常時マウントしたい場合、通常は /etc/fstab ファイルを編集すると考えるかもしれませんが、サーバーへの接続が常に確立されない可能性があり、起動時に問題が発生することがあります。その代わりに、必要な時に NFS サーバーに接続できるように自動マウントを設定することが望ましいです。これは <b>automount</b> ツールまたは最近の Linux のバージョンでは <b>amd</b> を使用して行われます。指定されたディレクトリ内のファイルにアクセスすると、automount はリモートサーバーを検索し、自動的にマウントします。",
+  "exercise": "NFS の man ページを読んでさらに学習してください。",
+  "quizQuestion": "マウントポイントを自動的に管理するために使用されるツールは何ですか？",
+  "quizAnswer": "automount",
+  "slug": "nfsnetworkfileshare"
+}

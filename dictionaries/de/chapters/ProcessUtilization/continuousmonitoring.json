@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Kontinuierliche Überwachung",
+  "lessonContent": "Diese Überwachungstools sind gut, um zu prüfen, wenn Ihre Maschine Probleme hat, aber was ist mit Maschinen, die Probleme haben, wenn Sie nicht hinschauen. Für diese benötigen Sie ein kontinuierliches Überwachungstool, etwas, das Ihre Systemaktivitätsinformationen sammelt, meldet und speichert. In dieser Lektion werden wir ein großartiges Tool namens <b>sar</b> verwenden.\n\n<b>Installation von sar</b>\nSar ist ein Tool, das zur historischen Analyse Ihres Systems verwendet wird. Stellen Sie zunächst sicher, dass es installiert ist, indem Sie das Paket sysstat installieren <b>sudo apt install sysstat</b>.\n\n<b>Einrichten der Datensammlung</b>\nNormalerweise beginnt Ihr System automatisch mit der Datensammlung, sobald Sie sysstat installiert haben. Falls nicht, können Sie es aktivieren, indem Sie das ENABLED-Feld in /etc/default/sysstat ändern.\n\n<b>Verwendung von sar</b>\n\n<pre>$ sudo sar -q</pre>\n\nDieser Befehl listet die Details ab dem Start des Tages auf.\n\n<pre>$ sudo sar -r</pre>\n\nDies listet die Details zur Speicherauslastung seit dem Start des Tages auf.\n\n<pre>$ sudo sar -P</pre>\n\nDies listet die Details zur CPU-Auslastung auf.\n\nUm die Ansicht eines anderen Tages zu sehen, können Sie in /var/log/sysstat/saXX gehen, wobei XX der Tag ist, den Sie anzeigen möchten.\n\n<pre>$sar -q /var/log/sysstat/sa02</pre>",
+  "exercise": "Installieren Sie sar auf Ihrem System und beginnen Sie mit der Sammlung und Analyse der Ressourcennutzung Ihres Systems.",
+  "quizQuestion": "Was ist ein gutes Tool zur Überwachung von Systemressourcen?",
+  "quizAnswer": "sar",
+  "slug": "kontinuierlicheüberwachung"
+}

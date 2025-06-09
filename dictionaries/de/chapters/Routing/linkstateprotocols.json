@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Link State Protokolle",
+  "lessonContent": "Link State Protokolle sind ideal für große Netzwerke. Sie sind komplexer als Distanzvektorprotokolle, aber ein großer Vorteil ist ihre Fähigkeit, schnell zu konvergieren. Dies liegt daran, dass sie anstatt regelmäßig die gesamte Routing-Tabelle zu senden, nur Aktualisierungen an benachbarte Routen senden. Sie verwenden einen anderen Algorithmus, um zuerst den kürzesten Pfad zu berechnen und ihr Netzwerktopologie in Form eines Graphen zu konstruieren, um zu zeigen, welche Router mit anderen Routern verbunden sind.\n\nEines der gängigen Link State Protokolle ist OSPF (Open Shortest Path First). Es aktualisiert die Routing-Tabellen nur bei einer Netzwerkänderung. Es hat keine Hop-Limitierung.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Was ist eines der häufigsten Link State Protokolle?",
+  "quizAnswer": "OSPF",
+  "slug": "linkstateprotocols"
+}

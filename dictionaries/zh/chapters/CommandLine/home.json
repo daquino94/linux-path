@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "title": "命令行",
+  "description": "学习命令行的基础知识，浏览文件、目录等。",
+  "image": "/images/chapters/commandLine.png",
+  "slug": "commandline"
+}

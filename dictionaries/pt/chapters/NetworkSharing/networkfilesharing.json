@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Visão Geral do Compartilhamento de Arquivos",
+  "lessonContent": "Normalmente, você não é o único computador em sua rede, especialmente se estiver trabalhando em um ambiente comercial. Quando queremos transferir dados de uma máquina para outra, às vezes pode ser mais fácil conectar uma unidade USB e copiá-los manualmente. Mas na maioria das vezes, se estiver trabalhando com máquinas na mesma rede, a maneira de transferir dados é através do compartilhamento de arquivos em rede. \n\nNeste curso, vamos revisar alguns métodos diferentes para copiar dados de e para diferentes máquinas em sua rede. Vamos discutir algumas cópias simples de arquivos e, em seguida, falaremos sobre montar diretórios inteiros em sua máquina que funcionam como uma unidade separada. \n\nUma ferramenta simples de compartilhamento de arquivos é o comando <b>scp</b>. O comando scp significa cópia segura, funciona exatamente como o comando cp, mas permite que você copie de um host para outro host na mesma rede. Ele funciona via ssh, então todas as suas ações estão usando a mesma autenticação e segurança do ssh. \n\n<b>Para copiar um arquivo de um host local para um host remoto</b>\n\n<pre>$ scp myfile.txt username@remotehost.com:/remote/directory</pre>\n\n<b>Para copiar um arquivo de um host remoto para seu host local</b>\n\n<pre>$ scp username@remotehost.com:/remote/directory/myfile.txt /local/directory</pre>\n\n<b>Para copiar um diretório do seu host local para um host remoto</b>\n\n<pre>$ scp -r mydir username@remotehost.com:/remote/directory</pre>",
+  "exercise": "Tente copiar um arquivo com o scp de uma máquina para outra.",
+  "quizQuestion": "Que comando você pode usar para copiar arquivos com segurança de um host para outro?",
+  "quizAnswer": "scp",
+  "slug": "compartilhamentodearquivosnarede"
+}

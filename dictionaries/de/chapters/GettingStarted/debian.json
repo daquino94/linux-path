@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Debian",
+  "lessonContent": "<b>Übersicht</b>\nDebian ist ein Betriebssystem, das ausschließlich aus freier und quelloffener Software besteht. Es ist weit verbreitet und wird seit über 20 Jahren entwickelt. Es gibt drei Zweige, die Sie verwenden können: Stabil, Testen und Unstabil. \n\nStabil ist insgesamt ein guter Zweig, auf dem man sich befinden kann. Testen und Unstabil sind Rolling Releases. Das bedeutet, dass alle inkrementellen Änderungen in diesen Zweigen letztendlich stabil werden. Wenn Sie beispielsweise von Windows 8 auf Windows 10 aktualisieren möchten, müssen Sie eine vollständige Windows 10-Installation durchführen. Wenn Sie jedoch auf der Testversion sind, erhalten Sie automatisch Updates, bis es zur nächsten Betriebssystemversion wird, ohne eine vollständige Installation durchführen zu müssen. \n\n<b>Paketverwaltung</b>\nDebian verwendet auch Debian-Paketverwaltungstools. Jede Linux-Distribution installiert und verwaltet Pakete auf unterschiedliche Weise und verwendet unterschiedliche Paketverwaltungstools. Darauf werden wir in einem späteren Kurs genauer eingehen. \n\n<b>Konfigurierbarkeit</b>\nDebian erhält möglicherweise nicht die neuesten Updates, ist jedoch äußerst stabil. Wenn Sie ein gutes \"Kern\"-Betriebssystem möchten, ist dies das Richtige für Sie.\n\n<b>Verwendungszwecke</b>\nDebian ist insgesamt ein großartiges Betriebssystem für jede Plattform.",
+  "exercise": "Wenn Sie daran interessiert sind, Debian als Ihr Betriebssystem zu haben, gehen Sie zum Installationsabschnitt und probieren Sie es aus: <a href='https://www.debian.org/'>https://www.debian.org/</a>",
+  "quizQuestion": "Welche Art von Release haben Testen und Unstabil?",
+  "quizAnswer": "Rolling",
+  "slug": "debian"
+}

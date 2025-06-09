@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Gentoo",
+  "lessonContent": "<b>Übersicht</b>\nGentoo bietet eine unglaubliche Flexibilität beim Betriebssystem zu einem Preis. Es ist für fortgeschrittene Benutzer gemacht, die keine Angst davor haben, sich die Hände schmutzig zu machen.\n\n<b>Paketverwaltung</b>\nGentoo verwendet seine eigene Paketverwaltung, Portage. Die Portage-Paketverwaltung ist sehr modular und einfach zu pflegen, was einen großen Teil der Gesamtflexibilität des Betriebssystems ausmacht.\n\n<b>Anpassbarkeit</b>\nWenn Sie gerade erst mit Linux anfangen und einen schwierigeren Weg einschlagen möchten, würde ich Gentoo oder Arch Linux als Ihre Distribution wählen.\n\n<b>Verwendungszwecke</b>\nHervorragend für Desktop und Laptop.",
+  "exercise": "Wenn Sie daran interessiert sind, Gentoo als Ihr Betriebssystem zu haben, gehen Sie zum Installationsabschnitt und probieren Sie es aus: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>",
+  "quizQuestion": "Welches Paketverwaltungssystem verwendet Gentoo?",
+  "quizAnswer": "Portage",
+  "slug": "gentoo"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "tr (Translate)",
+  "lessonContent": "tr (translate)コマンドを使用すると、1つの文字セットを別の文字セットに変換できます。すべての小文字を大文字に変換する例を試してみましょう。\n\n<pre>$ tr a-z A-Z\nhello\nHELLO</pre>\n\na-zの範囲をA-Zに変更し、入力したすべての小文字が大文字に変換されることがわかります。",
+  "exercise": "次のコマンドを試してください。何が起こりますか？\n\n<pre>$ tr -d ello\nhello</pre>",
+  "quizQuestion": "文字を変換するために使用されるコマンドは何ですか？",
+  "quizAnswer": "tr",
+  "slug": "trtranslatecommand"
+}

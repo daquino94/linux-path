@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "/proc-Dateisystem",
+  "lessonContent": "Denken Sie daran, dass in Linux alles eine Datei ist, auch Prozesse. Prozessinformationen werden in einem speziellen Dateisystem namens /proc-Dateisystem gespeichert.\n\n<pre>$ ls /proc</pre>\n\nSie sollten hier mehrere Werte sehen, es gibt Unterverzeichnisse für jede PID. Wenn Sie sich eine PID im ps-Output angesehen haben, sollten Sie sie im /proc-Verzeichnis finden können.\n\nGehen Sie jetzt weiter und geben Sie einen der Prozesse ein und sehen Sie sich diese Datei an:\n\n<pre>$ cat /proc/12345/status</pre>\n\nSie sollten Informationen zum Prozesszustand sowie detailliertere Informationen sehen. Das /proc-Verzeichnis ist die Art und Weise, wie der Kernel das System betrachtet, daher gibt es hier viel mehr Informationen als das, was Sie in ps sehen würden.",
+  "exercise": "Für diese Lektion gibt es keine Übungen.",
+  "quizQuestion": "Welches Dateisystem speichert Prozessinformationen?",
+  "quizAnswer": "/proc",
+  "slug": "procfilesystem"
+}

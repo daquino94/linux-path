@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "arp",
+  "lessonContent": "Souvenez-vous que lorsque nous recherchons une adresse MAC avec ARP, il vérifie d'abord le cache ARP stocké localement sur notre système, vous pouvez en fait afficher ce cache : \n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\nLe cache ARP est en fait vide lorsqu'une machine démarre, il se remplit au fur et à mesure que des paquets sont envoyés à d'autres hôtes. Si nous envoyons un paquet à une destination qui n'est pas dans le cache ARP, les événements suivants se produisent :\n\n<ol>\n<li>L'hôte source crée le trame Ethernet avec un paquet de demande ARP</li>\n<li>L'hôte source diffuse cette trame sur l'ensemble du réseau</li>\n<li>Si l'un des hôtes sur le réseau connaît la bonne adresse MAC, il enverra un paquet de réponse et une trame contenant l'adresse MAC</li>\n<li>L'hôte source ajoute le mappage adresse IP - adresse MAC au cache ARP et procède ensuite à l'envoi du paquet</li>\n</ol>\n\nVous pouvez également afficher votre cache ARP via la commande ip :\n\n<pre>\n$ ip neighbour show\n</pre>",
+  "exercise": "Observez ce qui se passe avec votre cache ARP lorsque vous redémarrez votre machine et que vous effectuez ensuite une action sur le réseau.",
+  "quizQuestion": "Quelle commande pouvez-vous utiliser pour afficher votre cache ARP ?",
+  "quizAnswer": "arp",
+  "slug": "arpcommand"
+}

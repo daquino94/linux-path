@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Protocolos de enrutamiento",
+  "lessonContent": "Sería un dolor tener que configurar manualmente rutas en una tabla de enrutamiento para cada dispositivo en su red, por lo que en su lugar utilizamos lo que se conocen como protocolos de enrutamiento. Los protocolos de enrutamiento se utilizan para ayudar a nuestro sistema a adaptarse a los cambios de red, aprenden diferentes rutas, las construyen en la tabla de enrutamiento y luego enrutan nuestros paquetes de esa manera. Hay dos tipos principales de protocolos de enrutamiento, protocolos de vector de distancia y protocolos de estado de enlace.\n\n<b>Convergencia</b>\n\nAntes de hablar sobre los protocolos, deberíamos repasar un término utilizado en enrutamiento conocido como convergencia. Al utilizar protocolos de enrutamiento, los enrutadores se comunican entre sí para recopilar e intercambiar información sobre la red. Cuando están de acuerdo en cómo debería verse una red, cada tabla de enrutamiento mapea la topología completa de la red, por lo tanto, \"converge\". Cuando ocurre algo en la topología de la red, la convergencia se romperá temporalmente hasta que todos los enrutadores sean conscientes de este cambio.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cuál es el término utilizado cuando todas las tablas de enrutamiento conocen la topología de la red?",
+  "quizAnswer": "convergencia",
+  "slug": "protocolosde enrutamiento"
+}

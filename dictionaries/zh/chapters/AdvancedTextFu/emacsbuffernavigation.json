@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "Emacs缓冲区导航",
+  "lessonContent": "要在缓冲区（或您正在访问的文件）之间移动，请使用以下命令：\n\n<b>切换缓冲区</b>\n\n<pre>\nC-x b - 切换缓冲区\nC-x right arrow - 右循环浏览缓冲区\nC-x left arrow - 左循环浏览缓冲区\n</pre>\n\n<b>关闭缓冲区</b>\n\n<pre>C-x k</pre>\n\n<b>拆分当前缓冲区</b>\n\n<pre>C-x 2</pre>\n\n这允许您在一个屏幕上看到多个缓冲区。要在这些缓冲区之间移动，请使用：C-x o\n\n<b>将单个缓冲区设置为当前屏幕</b>\n\n<pre>C-x 1</pre>\n\n如果您曾经使用过像screen和tmux这样的终端复用器，那么缓冲区命令会感觉非常熟悉。",
+  "exercise": "尝试操作缓冲区。",
+  "quizQuestion": "如何关闭一个缓冲区？",
+  "quizAnswer": "C-x k",
+  "slug": "emacsbuffernavigation"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Besitzberechtigungen",
+  "lessonContent": "Neben der Änderung von Berechtigungen für Dateien können Sie auch die Gruppen- und Benutzerbesitzrechte der Datei ändern. \n\n<b>Benutzerbesitz ändern</b>\n\n<pre>$ sudo chown patty myfile</pre>\n\nMit diesem Befehl wird der Besitzer von myfile auf patty gesetzt.\n\n<b>Gruppenbesitz ändern</b>\n\n<pre>$ sudo chgrp whales myfile</pre>\n\nMit diesem Befehl wird die Gruppe von myfile auf whales gesetzt.\n\n<b>Sowohl Benutzer- als auch Gruppenbesitz gleichzeitig ändern</b>\nWenn Sie nach dem Benutzernamen einen Doppelpunkt und den Gruppennamen hinzufügen, können Sie sowohl den Benutzer als auch die Gruppe gleichzeitig festlegen.\n\n<pre>$ sudo chown patty:whales myfile</pre>",
+  "exercise": "Ändern Sie die Gruppe und den Benutzer einiger Testdateien. Sehen Sie sich anschließend die Berechtigungen mit ls -l an.",
+  "quizQuestion": "Welchen Befehl verwenden Sie, um den Benutzerbesitz zu ändern?",
+  "quizAnswer": "chown",
+  "slug": "ownershippermissions"
+}

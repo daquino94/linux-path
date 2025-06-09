@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "route",
+  "lessonContent": "Wir haben bereits besprochen, wie Sie unsere Routing-Tabellen mit dem route-Befehl anzeigen können. Wenn Sie Routen hinzufügen oder entfernen möchten, können Sie dies manuell tun.\n\n<b>Fügen Sie eine neue Route hinzu</b>\n\n<pre>\n$ sudo route add -net 192.168.2.1/23 gw 10.11.12.3\n</pre>\n\n<b>Löschen Sie eine Route</b>\n\n<pre>\n$ sudo route del -net 192.168.2.1/23 \n</pre>\n\nSie können diese Änderungen auch mit dem <b>ip</b>-Befehl durchführen:\n\n<b>Um eine Route hinzuzufügen</b>\n<pre>\n$ ip route add 192.168.2.1/23 via 10.11.12.3\n</pre>\n\n<b>Um eine Route zu löschen</b>\n<pre>\n$ ip route delete 192.168.2.1/23 via 10.11.12.3\noder\n$ ip route delete 192.168.2.1/23\n</pre>",
+  "exercise": "Für diese Lektion gibt es keine Übungen, aber Sie können weitere Informationen zu den hier besprochenen Befehlen in den Handbuchseiten nachlesen\n\n<pre>$ man route</pre>\n\n<pre>$ man ip-route</pre>",
+  "quizQuestion": "Was ist das Befehlsflag zum Löschen einer Route?",
+  "quizAnswer": "del",
+  "slug": "route"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "内存监控",
+  "lessonContent": "除了 CPU 监控和 I/O 监控外，您还可以使用 <b>vmstat</b> 监控内存使用情况\n\n<pre>\npete@icebox:~$ vmstat\nprocs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st\n 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0\n</pre>\n\n字段如下:\n\n<b>procs</b>\n<ul>\n<li>r - 运行时间的进程数</li>\n<li>b - 无法中断睡眠状态的进程数</li>\n</ul>\n\n<b>memory</b>\n<ul>\n<li>swpd - 使用的虚拟内存量</li>\n<li>free - 空闲内存量</li>\n<li>buff - 用作缓冲区的内存量</li>\n<li>cache - 用作缓存的内存量</li>\n</ul>\n\n<b>swap</b>\n<ul>\n<li>si - 从磁盘交换进的内存量</li>\n<li>so - 交换出到磁盘的内存量</li>\n</ul>\n\n<b>io</b>\n<ul>\n<li>bi - 从块设备接收的块数量</li>\n<li>bo - 发送到块设备的块数量</li>\n</ul>\n\n<b>system</b>\n<ul>\n<li>in - 每秒的中断次数</li>\n<li>cs - 每秒的上下文切换次数</li>\n</ul>\n\n<b>cpu</b>\n<ul>\n<li>us - 用户时间消耗</li>\n<li>sy - 内核时间消耗</li>\n<li>id - 空闲时间消耗</li>\n<li>wa - 等待 I/O 的时间消耗</li>\n</ul>",
+  "exercise": "使用 vmstat 查看内存使用情况。",
+  "quizQuestion": "用于查看内存利用率的工具是什么？",
+  "quizAnswer": "vmstat",
+  "slug": "memorymonitoring"
+}

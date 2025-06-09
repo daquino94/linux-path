@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Upstart 任务",
+  "lessonContent": "Upstart 可以触发许多事件和任务运行，不幸的是，没有简单的方法来查看事件或任务的来源，因此您将不得不在 /etc/init 中查看任务配置。大多数情况下，您不会需要查看 Upstart 任务配置文件，但您可能会更轻松地控制一些特定的任务。在 Upstart 系统中，有许多有用的命令可供使用。\n\n<b>查看任务</b>\n\n<pre>initctl list\n\nshutdown stop/waiting\nconsole stop/waiting\n...\n</pre>\n\n您将看到一个包含不同状态的 Upstart 任务列表。在每一行中，作业名称是第一个值，第二个字段（/ 之前）实际上是作业的目标，第三个值（/ 之后）是当前状态。因此，我们看到我们的 shutdown 任务最终希望停止，但当前处于等待状态。随着您启动或停止任务，任务状态和目标将发生变化。\n\n<b>查看特定任务</b>\n\n<pre>initctl status networking\nnetworking start/running\n</pre>\n\n我们不会深入讨论如何编写 Upstart 任务配置的细节，但我们已经知道这些配置中的任务是停止、启动和重新启动的。这些任务还会发出事件，因此它们可以启动其他任务。我们将介绍 Upstart 操作的手动命令，但如果您感兴趣，您应该更深入地研究 .conf 文件。\n\n<b>手动启动任务</b>\n\n<pre>$ sudo initctl start networking</pre>\n\n<b>手动停止任务</b>\n\n<pre>$ sudo initctl stop networking</pre>\n\n<b>手动重新启动任务</b>\n\n<pre>$ sudo initctl restart networking</pre>\n\n<b>手动发出事件</b>\n\n<pre>$ sudo initctl emit some_event</pre>",
+  "exercise": "观察您的 Upstart 任务列表，现在使用我们今天学到的命令之一更改任务状态。之后您注意到了什么？",
+  "quizQuestion": "如何手动重新启动名为 peanuts 的 Upstart 任务？",
+  "quizAnswer": "sudo initctl restart peanuts",
+  "slug": "upstartjobs"
+}

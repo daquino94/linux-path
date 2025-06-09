@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Upstartの概要",
+  "lessonContent": "UpstartはCanonicalによって開発されました。そのため、Ubuntuではしばらくの間initの実装として使用されていましたが、現代のUbuntuインストールではsystemdが使用されています。UpstartはSys Vの問題点（厳格な起動プロセス、タスクのブロックなど）を改善するために作成されました。Upstartのイベントとジョブ駆動モデルにより、イベントが発生するとそれに応答できます。\n\nUpstartを使用しているかどうかを確認するには、/usr/share/upstartディレクトリがあるかどうかを確認します。これはかなりの指標です。\n\nジョブはUpstartが実行するアクションであり、イベントは他のプロセスから受信したメッセージで、ジョブをトリガーします。ジョブとその構成のリストを表示するには:\n\n<pre>\npete@icebox:~$ ls /etc/init\nacpid.conf                   mountnfs.sh.conf\nalsa-restore.conf            mtab.sh.conf\nalsa-state.conf              networking.conf\nalsa-store.conf              network-interface.conf\nanacron.conf                 network-interface-container.conf\n</pre>\n\nこれらのジョブ構成には、ジョブを開始する方法やいつジョブを開始するかに関する情報が含まれています。\n\nたとえば、networking.confファイルでは、次のように記述されているかもしれません:\n<pre>\nstart on runlevel [235]\nstop on runlevel [0]\n</pre>\n\nこれは、ランレベル2、3、または5でネットワーキングの設定を開始し、ランレベル0でネットワーキングを停止することを意味します。構成ファイルを書く方法はさまざまあり、利用可能な異なるジョブ構成を見るとわかります。\n\nUpstartの動作方法は次のとおりです:\n\n<ol>\n<li>最初に、/etc/initからジョブ構成を読み込みます</li>\n<li>起動イベントが発生すると、そのイベントによってトリガーされたジョブが実行されます。</li>\n<li>これらのジョブは新しいイベントを作成し、それらのイベントがさらにジョブをトリガーします</li>\n<li>Upstartは、必要なすべてのジョブを完了するまでこれを続けます</li>\n</ol>",
+  "exercise": "/etc/init内のジョブ構成を理解できるかどうかを確認してください。",
+  "quizQuestion": "Ubuntuで使用されているinitの実装は何ですか？",
+  "quizAnswer": "upstart",
+  "slug": "upstartoverview"
+}

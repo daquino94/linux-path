@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "expand and unexpand",
+  "lessonContent": "Dans notre leçon sur la commande cut, nous avions notre fichier sample.txt qui contenait une tabulation. Normalement, les TABs montreraient généralement une différence notable, mais certains fichiers texte ne le montrent pas assez bien. Avoir des TABs dans un fichier texte peut ne pas correspondre à l'espacement souhaité. Pour changer vos TABs en espaces, utilisez la commande expand. \n\n<pre>$ expand sample.txt</pre>\n\nLa commande ci-dessus affichera une sortie avec chaque TAB converti en un groupe d'espaces. Pour enregistrer cette sortie dans un fichier, utilisez une redirection de sortie comme ci-dessous. \n\n<pre>$ expand sample.txt > result.txt</pre>\n\nContrairement à expand, nous pouvons convertir chaque groupe d'espaces en un TAB avec la commande unexpand : \n\n<pre>$ unexpand -a result.txt</pre>",
+  "exercise": "Que se passe-t-il si vous tapez simplement expand sans entrée de fichier ?",
+  "quizQuestion": "Quelle commande est utilisée pour convertir les TABs en espaces ?",
+  "quizAnswer": "expand",
+  "slug": "commandeexpandunexpand"
+}

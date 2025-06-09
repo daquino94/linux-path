@@ -1,0 +1,9 @@
+{
+  "id": 14,
+  "title": "查找",
+  "lessonContent": "在系统中有这么多文件，尝试找到特定文件可能会有点忙乱。好在有一个我们可以使用的命令，那就是 find！\n\n<pre>$ find /home -name puppies.jpg</pre>\n\n使用 find 时，您必须指定要搜索的目录，您要搜索的内容，在这种情况下，我们试图找到一个名为 puppies.jpg 的文件。\n\n您可以指定要查找的文件类型。\n\n<pre>$ find /home -type d -name MyFolder</pre>\n\n您可以看到我将要查找的文件类型设置为 (d) 代表目录，但我仍然是通过名称 MyFolder 进行搜索。\n\n值得注意的一点是，find 不会停止在您搜索的目录，它还会查找该目录可能包含的任何子目录中的文件。",
+  "exercise": "<ol>\n<li>从根目录查找一个文件，其中包含单词 net。</li>\n</ol>",
+  "quizQuestion": "如果我想按名称搜索，应该指定哪个选项？",
+  "quizAnswer": "-name",
+  "slug": "findcommand"
+}

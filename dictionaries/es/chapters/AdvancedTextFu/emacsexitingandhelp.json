@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "Salir de Emacs y Ayuda",
+  "lessonContent": "<b>Para cerrar Emacs</b>\n\n<pre>C-x C-c</pre>\n\nSi tienes buffers abiertos, te pedirá que los guardes antes de salir de Emacs.\n\n<b>¿Confundido?</b>\n\n<pre>C-h C-h : menú de ayuda</pre>\n\n<b>Deshacer</b>\n\n<pre>C-x u</pre>\n\nComo puedes ver, Emacs tiene más partes móviles, por lo que la curva de aprendizaje es un poco más pronunciada. Sin embargo, a cambio obtienes un editor de texto muy potente.",
+  "exercise": "Visita el sitio de Emacs para aprender más comandos. <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a>",
+  "quizQuestion": "¿Cómo se accede al menú de ayuda?",
+  "quizAnswer": "C-h C-h",
+  "slug": "emacsexitingandhelp"
+}

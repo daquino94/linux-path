@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Ajout de texte Vim",
+  "lessonContent": "<p>Vous avez peut-être remarqué que si vous essayez de taper quelque chose, vous ne pourriez pas. C'est parce que vous êtes en mode commande. Cela peut être assez déroutant surtout si vous voulez simplement ouvrir un fichier et saisir du texte. Le mode commande est utilisé lorsque vous saisissez des commandes comme h, j, k, l, etc. Pour insérer du texte, vous devrez d'abord passer en mode insertion.</p><p></p><ul><br><li>i - insérer du texte avant le curseur</li><br><li>O - insérer du texte sur la ligne précédente</li><br><li>o - insérer du texte sur la ligne suivante</li><br><li>a - ajouter du texte après le curseur</li><br><li>A - ajouter du texte à la fin de la ligne</li><br></ul><p></p><p>Remarquez comment lorsque vous tapez l'un de ces modes d'insertion, vous verrez que vim est passé en mode insertion en bas de l'invite de commande. Pour quitter le mode insertion et revenir en mode commande, appuyez simplement sur la touche Échap.</p>",
+  "exercise": "Jouez avec l'entrée et la sortie du mode insertion.",
+  "quizQuestion": "Quelle touche est utilisée pour insérer du texte avant le curseur?",
+  "quizAnswer": "i",
+  "slug": "viminsertingappendingtext"
+}

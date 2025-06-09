@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Editores de texto",
+  "lessonContent": "Si reúnes a un par de usuarios acérrimos de Linux en una habitación y les preguntas cuál es el mejor editor de texto para usar, escucharás un interminable debate sobre la divinidad de vim o emacs. Ni siquiera intentes mencionar el uso de un editor GUI si valoras tu vida. \n\nVim y emacs son editores de texto populares que vienen instalados por defecto en la mayoría de las distribuciones de Linux y ambos tienen sus pros y sus contras. Si quieres manejarte en tu sistema como un ninja, necesitarás elegir uno de estos editores de texto para usar. Básicamente son editores que sirven para programar, procesar documentos de texto y en general son todo en uno.",
+  "exercise": "Haz un pequeño recorrido por vim y emacs:\n\n<a href=\"http://www.vim.org/\">Vim</a>\n<a href=\"https://www.gnu.org/software/emacs/\">emacs</a>",
+  "quizQuestion": "¡Sin preguntas, sigue adelante!",
+  "quizAnswer": "",
+  "slug": "editorestextovimoremacs"
+}

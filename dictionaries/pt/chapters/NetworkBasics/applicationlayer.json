@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Camada de Aplicação",
+  "lessonContent": "Vamos supor que eu queira enviar um e-mail para a Patty. Vamos passar por cada uma das camadas TCP/IP para ver isso em ação. \n\nLembre-se de que pacotes são usados para transmitir dados através de redes, um pacote consiste em um cabeçalho e carga útil. O cabeçalho contém informações sobre para onde o pacote está indo e de onde ele veio. A carga útil são os dados reais que estão sendo transferidos. Conforme nosso pacote percorre a rede, cada camada adiciona um pouco de informação ao cabeçalho do pacote. Também tenha em mente que diferentes camadas usam um termo diferente para nosso \"pacote\". Na camada de transporte, essencialmente encapsulamos nossos dados em um segmento e na camada de enlace nos referimos a isso como um quadro, mas saiba que pacote pode ser usado em relação à mesma coisa.\n\nPrimeiro, começamos na camada de aplicação. Quando enviamos nosso e-mail através de nosso cliente de e-mail, a camada de aplicação encapsulará esses dados. A camada de aplicação se comunica com a camada de transporte por meio de uma porta especificada e através dessa porta envia seus dados. Queremos enviar um e-mail através do protocolo da camada de aplicação SMTP (protocolo de transferência de e-mail simples). Os dados são enviados através de nosso protocolo de transporte que abre uma conexão para esta porta (a porta 25 é usada para SMTP), então obtemos esses dados enviados através desta porta e esses dados são enviados para a camada de transporte para ser encapsulado em segmentos.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Qual camada é usada para apresentar os dados do pacote em um formato amigável ao usuário?",
+  "quizAnswer": "Aplicação",
+  "slug": "camadadeaplicacao"
+}

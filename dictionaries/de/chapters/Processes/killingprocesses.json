@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "kill (Beenden)",
+  "lessonContent": "Sie können Signale senden, die Prozesse beenden, ein solches Kommando wird passenderweise als das kill-Kommando bezeichnet. \n\n<pre>$ kill 12445</pre>\n\nDie 12445 ist die PID des Prozesses, den Sie beenden möchten. Standardmäßig sendet es ein TERM-Signal. Das SIGTERM-Signal wird an einen Prozess gesendet, um seine Beendigung zu fordern, indem er ihm erlaubt, seine Ressourcen sauber freizugeben und seinen Zustand zu speichern. \n\nSie können auch ein Signal mit dem kill-Kommando angeben: \n\n<pre>$ kill -9 12445</pre>\n\nDies wird das SIGKILL-Signal ausführen und den Prozess beenden. \n\n<b>Unterschiede zwischen SIGHUP, SIGINT, SIGTERM, SIGKILL, SIGSTOP?</b>\n\nDiese Signale klingen alle vernünftig ähnlich, haben aber ihre Unterschiede. \n\n<ul>\n<li>SIGHUP - Auflegen, wird an einen Prozess gesendet, wenn das steuernde Terminal geschlossen wird. Wenn Sie beispielsweise ein Terminalfenster geschlossen haben, in dem ein Prozess lief, würden Sie ein SIGHUP-Signal erhalten. Im Grunde genommen wurden Sie aufgelegt</li>\n<li>SIGINT - Ist ein Unterbrechungssignal, sodass Sie Strg-C verwenden können und das System versucht, den Prozess ordnungsgemäß zu beenden</li>\n<li>SIGTERM - Beendet den Prozess, erlaubt ihm jedoch, einige Aufräumarbeiten zu erledigen</li>\n<li>SIGKILL - Beendet den Prozess, beendet ihn mit Feuer, führt keine Aufräumarbeiten durch</li>\n<li>SIGSTOP - Stoppt/unterbricht einen Prozess</li>\n</ul>",
+  "exercise": "Beenden Sie einige Prozesse unter Verwendung verschiedener Signale.",
+  "quizQuestion": "Wie lautet der Signalname für das Standard-Kill-Kommando?",
+  "quizAnswer": "SIGTERM",
+  "slug": "prozesse-beenden"
+}

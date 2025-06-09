@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Stromzustände",
+  "lessonContent": "Kaum zu glauben, dass wir tatsächlich noch nicht über Möglichkeiten gesprochen haben, Ihren Systemzustand über die Befehlszeile zu steuern, aber wenn wir über init sprechen, sprechen wir nicht nur über die Modi, die uns dazu bringen, unser System zu starten, sondern auch über diejenigen, die unser System stoppen.\n\nUm Ihr System herunterzufahren:\n\n<pre>$ sudo shutdown -h now</pre>\n\nDies wird das System anhalten (ausschalten), Sie müssen auch eine Zeit angeben, wann dies geschehen soll. Sie können eine Zeit in Minuten hinzufügen, die das System in dieser Zeit herunterfährt.\n\n<pre>$ sudo shutdown -h +2</pre>\n\nDies wird Ihr System in zwei Minuten herunterfahren. Sie können auch mit dem shutdown-Befehl neu starten: \n\n<pre>$ sudo shutdown -r now</pre>\n\nOder einfach den reboot-Befehl verwenden:\n\n<pre>$ sudo reboot</pre>",
+  "exercise": "Was denken Sie, passiert mit init, wenn Sie Ihren Computer herunterfahren?",
+  "quizQuestion": "Was ist der Befehl, um Ihr System in 4 Minuten auszuschalten?",
+  "quizAnswer": "sudo shutdown -h +4",
+  "slug": "powerstates"
+}

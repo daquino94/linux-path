@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "joindre et diviser",
+  "lessonContent": "La commande join vous permet de joindre plusieurs fichiers ensemble par un champ commun : \n\nDisons que j'avais deux fichiers que je voulais joindre ensemble :\n<pre>file1.txt\n1 John\n2 Jane\n3 Mary\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n\n$ join file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\nVoyez comment mes fichiers ont été joints ensemble ? Ils sont joints ensemble par défaut par le premier champ et les champs doivent être identiques, s'ils ne le sont pas, vous pouvez les trier, donc dans ce cas, les fichiers sont joints via 1, 2, 3. \n\nComment joindriez-vous les fichiers suivants ? \n\n<pre>file1.txt\nJohn 1\nJane 2\nMary 3\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n</pre>\n\nPour joindre ce fichier, vous devez spécifier les champs que vous joignez, dans ce cas, nous voulons le champ 2 sur file1.txt et le champ 1 sur file2.txt, donc la commande ressemblerait à ceci :\n\n<pre>\n$ join -1 2 -2 1 file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\n-1 fait référence à file1.txt et -2 fait référence à file2.txt. Plutôt sympa. Vous pouvez également diviser un fichier en différents fichiers avec la commande split : \n\n<pre>$ split somefile</pre>\n\nCela le divisera en différents fichiers, par défaut, ils seront divisés une fois qu'ils atteignent une limite de 1000 lignes. Les fichiers sont nommés x** par défaut.",
+  "exercise": "Joindre deux fichiers avec un nombre différent de lignes dans chaque fichier, que se passe-t-il ?",
+  "quizQuestion": "Quelle commande utiliseriez-vous pour joindre les fichiers nommés chat chien vache ?",
+  "quizAnswer": "join chat chien vache",
+  "slug": "commandejoindivise"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 15,
+  "title": "ログ記録",
+  "description": "システムログと /var/log ディレクトリについて学びます。",
+  "image": "/images/chapters/logging.png",
+  "slug": "logging"
+}

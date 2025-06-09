@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Prozess Threads",
+  "lessonContent": "Du hast vielleicht von den Begriffen single-threaded und multi-threaded Prozessen gehört. Threads sind sehr ähnlich zu Prozessen, da sie verwendet werden, um dasselbe Programm auszuführen, oft als leichte Prozesse bezeichnet. Wenn ein Prozess einen Thread hat, ist er single-threaded, und wenn ein Prozess mehr als einen Thread hat, ist er multi-threaded. Allerdings haben alle Prozesse mindestens einen Thread. \n\nProzesse arbeiten mit ihren eigenen isolierten Systemressourcen, Threads können diese Ressourcen jedoch leicht untereinander teilen, was es ihnen erleichtert, untereinander zu kommunizieren. Manchmal ist es effizienter, eine multi-threaded Anwendung zu haben als eine multi-Prozess-Anwendung.\n\nGrundsätzlich, nehmen wir an, du öffnest LibreOffice Writer und Chrome, jeder ist sein eigener separater Prozess. Jetzt gehst du in Writer und fängst an, Text zu bearbeiten, wenn du den Text bearbeitest, wird er automatisch gespeichert. Diese beiden parallelen \"leichten Prozesse\" des Speicherns und Bearbeitens sind Threads. \n\nUm Prozess Threads anzuzeigen, kannst du verwenden: \n\n<pre>\npete@icebox:~$ ps m\n  PID TTY      STAT   TIME COMMAND\n 2207 pts/2    -      0:01 bash\n    - -        Ss     0:01 -\n 5252 pts/2    -      0:00 ps m\n    - -        R+     0:00 -\n</pre>\n\nDie Prozesse sind jeweils mit ihrer PID gekennzeichnet, und unter den Prozessen befinden sich ihre Threads (gekennzeichnet durch --). So kannst du sehen, dass die oben genannten Prozesse beide single-threaded sind.",
+  "exercise": "Führe den Befehl <b>ps m</b> aus und sieh nach, welche Prozesse bei dir multi-threaded laufen.",
+  "quizQuestion": "Wahr oder falsch, alle Prozesse starten als single-threaded.",
+  "quizAnswer": "Wahr",
+  "slug": "processthreads"
+}

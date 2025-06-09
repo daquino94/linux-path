@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Uso del Disco",
+  "lessonContent": "Hay algunas herramientas que puedes usar para ver la utilización de tus discos: \n\n<pre>\npete@icebox:~$ df -h\nFilesystem     1K-bloques    Usado Disponible Uso% Montado en\n/dev/sda1       6.2G  2.3G  3.6G  40% /\n</pre>\n\nEl comando df te muestra la utilización de tus sistemas de archivos actualmente montados. La bandera -h te da un formato legible para humanos. Puedes ver cuál es el dispositivo, cuánta capacidad se está utilizando y cuánta está disponible. \n\nDigamos que tu disco se está llenando y quieres saber qué archivos o directorios están ocupando ese espacio, para eso puedes usar el comando <b>du</b>. \n\n<pre>$ du -h</pre>\n\nEsto te muestra el uso del disco del directorio actual en el que te encuentras, puedes echar un vistazo al directorio raíz con <b>du -h /</b> pero eso puede ser un poco desordenado.\n\nAmbos comandos son tan similares en sintaxis que puede ser difícil recordar cuál usar, para verificar cuánto de tu <b>disco</b> está <b>libre</b> usa df. Para verificar el <b>uso del disco</b>, usa du.",
+  "exercise": "Observa tu uso de disco y espacio libre con du y df.",
+  "quizQuestion": "¿Qué comando se utiliza para mostrar cuánto espacio está libre en tu disco?",
+  "quizAnswer": "df",
+  "slug": "uso-del-disco"
+}

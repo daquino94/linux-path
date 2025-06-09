@@ -1,0 +1,9 @@
+{
+  "id": 19,
+  "title": "Beenden",
+  "lessonContent": "Nun, du hast einen guten Job gemacht, um die Grundlagen zu meistern. Wir haben nur an der Oberfläche gekratzt. Jetzt, da du gelernt hast zu krabbeln, werde ich dir im nächsten Kurs beibringen, wie man läuft. \n\nFür den Moment kannst du dir auf die Schulter klopfen und eine Pause machen. Um aus der Shell auszusteigen, kannst du den exit Befehl verwenden\n\n<pre>$ exit</pre>\n\nOder den logout Befehl:\n\n<pre>$ logout</pre>\n\nOder wenn du in einer Terminal-GUI arbeitest, kannst du einfach das Terminal schließen. Bis zum nächsten Kurs!",
+  "exercise": "Beende die Shell und schau, was passiert. Stelle sicher, dass du in dieser Shell keine weiteren Arbeiten mehr erledigen musst.",
+  "quizQuestion": "Wie kannst du aus der Shell aussteigen?",
+  "quizAnswer": "exit",
+  "slug": "exitcommand"
+}

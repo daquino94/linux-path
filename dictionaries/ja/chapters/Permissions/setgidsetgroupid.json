@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Setgid",
+  "lessonContent": "ユーザー ID 許可ビットに類似して、グループ ID (SGID) 許可ビットがあります。このビットを使用すると、プログラムをそのグループのメンバーであるかのように実行できます。\n\n1 つの例を見てみましょう:\n\n<pre>$ ls -l /usr/bin/wall\n-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall\n</pre>\n\n今、許可ビットがグループ許可セットにあることがわかります。\n\n<b>SGID の変更</b>\n\n<pre>$ sudo chmod g+s myfile\n$ sudo chmod 2555 myfile\n</pre>\n\nSGID の数値表現は 2 です。",
+  "exercise": "このレッスンには演習問題はありません。",
+  "quizQuestion": "SGID を表す数値は何ですか？",
+  "quizAnswer": "2",
+  "slug": "setgidsetgroupid"
+}

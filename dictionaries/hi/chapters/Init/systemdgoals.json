@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "सिस्टमडी लक्ष्य",
+  "lessonContent": "हम systemd यूनिट फ़ाइलें लिखने के विवरण में नहीं जाएंगे। हालांकि, हम एक यूनिट फ़ाइल का संक्षेप में अवलोकन करेंगे और कैसे इकाईयों को मैन्युअल रूप से नियंत्रित करें। \n\nयहाँ एक मूल सेवा यूनिट फ़ाइल है: foobar.service\n\n<pre>\n[Unit]\nDescription=मेरा फूबार\nBefore=bar.target\n\n[Service]\nExecStart=/usr/bin/foobar\n\n[Install]\nWantedBy=multi-user.target\n</pre>\n\nयह एक सरल सेवा लक्ष्य है, फ़ाइल के शुरू में हम एक खंड देखते हैं [इकाई], यह हमें हमारी यूनिट फ़ाइल को एक विवरण देने और यूनिट को सक्रिय करने के क्रम को नियंत्रित करने की अनुमति देता है। अगला हिस्सा [सेवा] खंड है, इसके तहत हम सेवा को शुरू, रोकें या पुनरारंभ कर सकते हैं। और [स्थापना] खंड आवश्यकता के लिए उपयोग किया जाता है। यह systemd फ़ाइलें लिखने के लिए केवल तिप्पणी है, इसलिए अगर आप अधिक जानना चाहते हैं तो मैं आपसे अनुरोध करता हूँ कि इस विषय पर पढ़ें। \n\nअब, चलो कुछ कमांड में प्रवेश करते हैं जिन्हें आप systemd यूनिट के साथ उपयोग कर सकते हैं: \n\n<b>इकाईयों की सूची</b>\n\n<pre>$ systemctl list-units</pre>\n\n<b>इकाई की स्थिति देखें</b>\n\n<pre>$ systemctl status networking.service</pre>\n\n<b>सेवा शुरू करें</b>\n\n<pre>$ sudo systemctl start networking.service</pre>\n\n<b>सेवा रोकें</b>\n\n<pre>$ sudo systemctl stop networking.service</pre>\n\n<b>सेवा पुनरारंभ करें</b>\n\n<pre>$ sudo systemctl restart networking.service</pre>\n\n<b>एक यूनिट सक्षम करें</b>\n\n<pre>$ sudo systemctl enable networking.service</pre>\n\n<b>एक यूनिट अक्षम करें</b>\n\n<pre>$ sudo systemctl disable networking.service</pre>\n\nफिर से, आपने अभी तक देखा है कि systemd कितनी गहराई में जाता है, इसलिए अगर आप और अधिक सीखना चाहते हैं तो इस पर पढ़ें।",
+  "exercise": "यूनिट स्थितियों को देखें और कुछ सेवाएँ शुरू और रोकें। आप क्या अनुभव करते हैं?",
+  "quizQuestion": "पीनट सेवा नामक एक सेवा को शुरू करने के लिए कमांड क्या है?",
+  "quizAnswer": "sudo systemctl start peanut.service",
+  "slug": "systemdgoals"
+}

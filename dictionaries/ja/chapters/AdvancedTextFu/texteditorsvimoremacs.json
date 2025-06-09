@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "テキストエディタ",
+  "lessonContent": "もし部屋に熱狂的なLinuxユーザーを数人集めて、どのテキストエディタが最適か尋ねると、vimまたはemacsの神聖さについての絶え間ない議論が聞こえてきます。GUIエディタの使用を持ち出すのはやめておいた方がいいでしょう。\n\nVimとemacsは、ほとんどのLinuxディストリビューションにデフォルトでインストールされており、それぞれに長所と短所があります。システムを忍者のように操作したい場合は、これらのテキストエディタのうちの1つを使う必要があります。基本的に、これらはコーディング、ワード文書処理、基本的にはすべてを行うエディタです。",
+  "exercise": "Vimとemacsの小さなツアーをしてみましょう:\n\n<a href=\"http://www.vim.org/\">Vim</a>\n<a href=\"https://www.gnu.org/software/emacs/\">emacs</a>",
+  "quizQuestion": "質問はありません。次に進んでください！",
+  "quizAnswer": "",
+  "slug": "texteditorsvimoremacs"
+}

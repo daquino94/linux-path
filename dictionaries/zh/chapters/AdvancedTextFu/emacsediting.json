@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Emacs编辑",
+  "lessonContent": "<b>文本导航</b>\n\n<pre>\nC-up箭头：向上移动一个段落\nC-down箭头：向下移动一个段落\nC-left箭头：向左移动一个单词\nC-right箭头：向右移动一个单词\nM->：移动到缓冲区末尾\n</pre>\n\n通过文本导航，您的常规文本按钮将按照预期工作，home、end、page up、page down以及箭头键等。\n\n<b>剪切和粘贴</b>\n\n要在Emacs中剪切（删除）或粘贴（插入），您需要先选择文本。要选择文本，请将光标移动到要剪切或粘贴的位置，然后按下<pre>C空格键</pre>，然后您可以使用导航键选择所需的文本。现在您可以这样进行剪切和粘贴：\n\n<pre>\nC-w：剪切\nC-y：粘贴\n</pre>",
+  "exercise": "尝试使用文本导航。",
+  "quizQuestion": "如何移动到缓冲区末尾？",
+  "quizAnswer": "M->",
+  "slug": "emacsediting"
+}

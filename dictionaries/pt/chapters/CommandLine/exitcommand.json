@@ -1,0 +1,9 @@
+{
+  "id": 19,
+  "title": "sair",
+  "lessonContent": "Bem, você fez um bom trabalho passando pelos conceitos básicos. Apenas arranhamos a superfície, agora que você aprendeu a engatinhar, nos próximos conjuntos de cursos, vou ensinar como andar. \n\nPor enquanto, você pode se dar tapinhas nas costas e fazer uma pausa. Para sair do shell, você pode usar o comando exit\n\n<pre>$ exit</pre>\n\nOu o comando logout:\n\n<pre>$ logout</pre>\n\nOu se estiver trabalhando em uma GUI de terminal, você pode simplesmente fechar o terminal, nos vemos no próximo curso!",
+  "exercise": "Sair do shell e ver o que acontece. Certifique-se de que não precisa fazer mais nenhum trabalho nesse shell.",
+  "quizQuestion": "Como você pode sair do shell?",
+  "quizAnswer": "exit",
+  "slug": "exitcommand"
+}

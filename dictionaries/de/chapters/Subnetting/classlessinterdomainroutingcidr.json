@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "CIDR",
+  "lessonContent": "CIDR (classless inter-domain routing) wird verwendet, um eine Subnetzmaske auf eine kompaktere Weise darzustellen. Sie können Subnetze in CIDR-Notation sehen, bei der ein Subnetz wie das 10.42.3.0/255.255.255.0 als 10.42.3.0/24 geschrieben wird, was einfach bedeutet, dass sowohl das Subnetzpräfix als auch die Subnetzmaske enthalten sind.\n\nDenken Sie daran, dass eine IP-Adresse aus 4 Bytes oder 32 Bits besteht. CIDR gibt an, wie viele Bits als Netzwerkpräfix verwendet werden. Also bedeutet 123.12.24.0/23, dass die ersten 23 Bits verwendet werden. Nun, was bedeutet das? Wie viele Hosts sind das? \n\nEin einfacher Trick besteht darin, die Gesamtanzahl der Bits, die eine IP-Adresse haben kann (32), von der CIDR-Adresse (23) abzuziehen. Das ergibt 9 Bits, 2^9 = 512, aber wir müssen 2 Adressen entfernen (Subnetzadresse und Broadcast-Adresse), also haben wir 510 verwendbare Hosts.",
+  "exercise": "Für diese Lektion sind keine Übungen vorgesehen.",
+  "quizQuestion": "Keine Fragen, weitermachen!",
+  "quizAnswer": "",
+  "slug": "classlessinterdomainroutingcidr"
+}

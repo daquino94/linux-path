@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "tar and gzip",
+  "lessonContent": "在我们深入讨论软件包安装和不同的管理器之前，我们需要讨论文件的归档和压缩，因为当你在互联网上寻找软件时，你很可能会遇到这些。\n\n你可能已经知道文件归档是什么了，你很可能遇到过 .rar 和 .zip 等文件类型。这些是文件的归档，它们包含许多文件，但它们以一个非常整洁的单个文件形式出现，被称为归档。\n\n<b>使用 gzip 压缩文件</b>\n\ngzip 是 Linux 中用于压缩文件的程序，它们以 .gz 扩展名结尾。\n\n要压缩文件：\n<pre>$ gzip mycoolfile</pre>\n\n要解压文件：\n<pre>$ gunzip mycoolfile.gz</pre>\n\n<b>使用 tar 创建归档</b>\n不幸的是，gzip 不能将多个文件添加到一个归档中。幸运的是，我们有 tar 程序可以做到这一点。当你使用 tar 创建一个归档时，它将具有 .tar 扩展名。\n\n<pre>$ tar cvf mytarfile.tar mycoolfile1 mycoolfile 2</pre>\n\n<ul>\n<li>c - 创建</li>\n<li>v - 告诉程序详细输出并让我们看到它在做什么</li>\n<li>f - tar 文件的文件名必须在此选项之后，如果你正在创建一个 tar 文件，你必须想一个名字</li>\n</ul>\n\n<b>使用 tar 解压归档</b>\n\n要提取 tar 文件的内容，请使用：\n\n<pre>$ tar xvf mytarfile.tar</pre>\n\n<ul>\n<li>x - 提取</li>\n<li>v - 告诉程序详细输出并让我们看到它在做什么</li>\n<li>f - 你想要提取的文件</li>\n</ul>\n\n<b>使用 tar 和 gzip 压缩/解压缩归档</b>\n\n很多时候，你会看到一个已经被压缩的 tar 文件，比如：mycompressedarchive.tar.gz，你只需要按照外到内的顺序操作，先使用 gunzip 去除压缩，然后再解压 tar 文件。或者你也可以使用 tar 的 <b>z</b> 选项，它只是告诉它使用 gzip 或 gunzip 实用程序。\n\n创建一个压缩的 tar 文件：\n<pre>$ tar czf myfile.tar.gz</pre>\n\n解压缩和解包：\n<pre>$ tar xzf file.tar</pre>\n\n如果你需要帮助，请记住这个：e<b>X</b>tract all <b>Z</b>ee <b>F</b>iles！\n\ntar 是一个非常重要但你很少记得的命令之一，相关的 xkcd 漫画：<a href=\"https://xkcd.com/1168/\">https://xkcd.com/1168/</a>\n\n<b>其他实用程序</b>\n\n在你的 Linux 之旅中，你会遇到其他归档和压缩类型，比如：bzip2、compress、zip、unzip 等。它们可能不太常见，但请记住不同的实用程序需要不同的命令。",
+  "exercise": "熟悉 tar 文档并查看 man 手册中提供的其他选项。",
+  "quizQuestion": "用于创建归档的 tar 标志是什么？",
+  "quizAnswer": "c",
+  "slug": "compressedarchivestar"
+}

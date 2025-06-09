@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "CIDR",
+  "lessonContent": "CIDR (classless inter-domain routing) é usado para representar uma máscara de sub-rede de forma mais compacta. Você pode ver sub-redes notadas na notação CIDR, onde uma sub-rede como 10.42.3.0/255.255.255.0 é escrita como 10.42.3.0/24, o que significa que inclui tanto o prefixo da sub-rede quanto a máscara da sub-rede.\n\nLembre-se de que um endereço IP consiste em 4 bytes ou 32 bits, o CIDR indica a quantidade de bits usados como prefixo de rede. Portanto, 123.12.24.0/23 significa que os primeiros 23 bits são usados. Bem, o que isso significa? Quantos hosts são esses?\n\nUm truque simples é subtrair o total de bits que um endereço IP pode ter (32) do endereço CIDR (23), o que deixa 9 bits, 2^9 = 512, mas temos que remover 2 endereços (endereço de sub-rede e endereço de broadcast), então temos 510 hosts utilizáveis.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Nenhuma pergunta, continue!",
+  "quizAnswer": "",
+  "slug": "classlessinterdomainroutingcidr"
+}

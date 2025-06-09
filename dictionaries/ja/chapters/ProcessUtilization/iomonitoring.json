@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "I/O モニタリング",
+  "lessonContent": "便利なツールである <b>iostat</b> を使用して CPU 使用率やディスク使用状況を監視することもできます。\n\n<pre>\npete@icebox:~$ iostat\nLinux 3.13.0-39-lowlatency (icebox)     01/28/2016      _i686_  (1 CPU)\n\navg-cpu:  %user   %nice %system %iowait  %steal   %idle\n           0.13    0.03    0.50    0.01    0.00   99.33\n\nDevice:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn\nsda               0.17         3.49         1.92     385106     212417\n</pre>\n\n最初の部分は CPU 情報です:\n\n<ul>\n<li>%user - アプリケーションで実行された CPU 利用率の割合を表示します。</li>\n<li>%nice - nice 優先度で実行されたユーザーレベルの CPU 利用率の割合を表示します。</li>\n<li>%system - カーネルで実行された CPU 利用率の割合を表示します。</li>\n<li>%iowait - システムが未処理のディスク I/O 要求を持っている間に CPU または CPU がアイドル状態であった割合を表示します。</li>\n<li>%steal - 仮想 CPU が他の仮想プロセッサをサービスしている間に仮想 CPU または CPU が非自発的な待機に費やした時間の割合を表示します。</li>\n<li>%idle - CPU または CPU がアイドル状態であり、システムが未処理のディスク I/O 要求を持っていなかった割合を表示します。</li>\n</ul>\n\n2 番目の部分はディスクの利用状況です:\n\n<ul>\n<li>tps - デバイスに発行された秒間転送数を示します。転送はデバイスへの I/O 要求です。複数の論理要求を単一のデバイスへの I/O 要求に組み合わせることができます。転送のサイズは不定です。</li>\n<li>kB_read/s - デバイスから読み取られたデータ量を秒単位のキロバイトで表します。</li>\n<li>kB_wrtn/s - デバイスに書き込まれたデータ量を秒単位のキロバイトで表します。</li>\n<li>kB_read - 読み取られた総キロバイト数です。</li>\n<li>kB_wrtn - 書き込まれた総キロバイト数です。</li>\n</ul>",
+  "exercise": "iostat を使用してディスク使用状況を表示します。",
+  "quizQuestion": "I/O および CPU 使用状況を表示するために使用できるコマンドは何ですか？",
+  "quizAnswer": "iostat",
+  "slug": "iomonitoring"
+}

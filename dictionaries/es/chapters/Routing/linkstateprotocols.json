@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Protocolos de Estado de Enlace",
+  "lessonContent": "Los protocolos de estado de enlace son ideales para redes a gran escala, son más complejos que los protocolos de vector de distancia, sin embargo, una gran ventaja es su capacidad para converger rápidamente, esto se debe a que en lugar de enviar periódicamente toda la tabla de enrutamiento, solo envían actualizaciones a las rutas vecinas. Utilizan un algoritmo diferente para calcular el camino más corto primero y construyen su topología de red en forma de grafo para mostrar qué enrutadores están conectados a otros enrutadores.\n\nUno de los protocolos de estado de enlace comunes es OSPF (Open Shortest Path First), solo actualiza las tablas de enrutamiento si hubo un cambio en la red. No tiene un límite de saltos.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cuál es uno de los protocolos de estado de enlace más comunes?",
+  "quizAnswer": "OSPF",
+  "slug": "protocolosdeestadoenlace"
+}

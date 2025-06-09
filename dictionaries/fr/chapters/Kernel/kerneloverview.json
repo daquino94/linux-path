@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Aperçu du Noyau",
+  "lessonContent": "Comme vous l'avez appris jusqu'à présent, le noyau est le cœur du système d'exploitation. Nous avons parlé des autres parties du système d'exploitation mais n'avons pas encore montré comment elles fonctionnent toutes ensemble. Le système d'exploitation Linux peut être organisé en trois niveaux d'abstraction différents.\n\nLe niveau le plus bas est le matériel, cela inclut notre CPU, la mémoire, les disques durs, les ports de réseau, etc. La couche physique qui effectivement calcule ce que notre machine fait.\n\nLe niveau suivant est le noyau, qui gère les processus et la mémoire, la communication avec les périphériques, les appels système, configure notre système de fichiers, etc. Le rôle du noyau est de communiquer avec le matériel pour s'assurer qu'il exécute ce que nous voulons que nos processus fassent. \n\nEt le niveau que vous connaissez est l'espace utilisateur, l'espace utilisateur inclut le shell, les programmes que vous exécutez, les graphiques, etc.\n\nDans ce cours, nous nous concentrerons sur le noyau et apprendrons ses subtilités.",
+  "exercise": "Pas d'exercices pour cette leçon.",
+  "quizQuestion": "Quel niveau du système d'exploitation gère les périphériques ?",
+  "quizAnswer": "noyau",
+  "slug": "aperçunoyau"
+}

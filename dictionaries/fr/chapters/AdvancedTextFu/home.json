@@ -1,0 +1,7 @@
+{
+  "id": 4,
+  "title": "Text-Fu Avancé",
+  "description": "Naviguez dans le texte comme un singe araignée Linux avec vim et emacs.",
+  "image": "/images/chapters/textManipolationAdvance.png",
+  "slug": "advancedtextfu"
+}

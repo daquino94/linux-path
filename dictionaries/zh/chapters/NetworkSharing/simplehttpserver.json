@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "简单的HTTP服务器",
+  "lessonContent": "Python有一个非常有用的工具，用于通过HTTP提供文件。如果您只想创建一个其他计算机可以访问的快速网络共享，这将非常有用。要做到这一点，只需转到要共享的目录并运行：\n\n<pre>$ python -m SimpleHTTPServer</pre>\n\n这将设置一个基本的Web服务器，您可以通过本地主机地址访问。因此，请获取运行此命令的计算机的IP地址，然后在另一台计算机上通过浏览器访问它：http://IP地址:8000。在您自己的计算机上，您可以通过在Web浏览器中输入http://localhost:8000来查看可用的文件。\n\n您也可以使用node执行此操作，或者如果您正在运行Python 3，则语法会有一点不同。",
+  "exercise": "尝试设置一个SimpleHTTPServer！",
+  "quizQuestion": "您可以使用什么工具来使用Python创建一个简单的http服务器？",
+  "quizAnswer": "SimpleHTTPServer",
+  "slug": "simplehttpserver"
+}

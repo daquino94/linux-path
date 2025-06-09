@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "less",
+  "lessonContent": "Si estás viendo archivos de texto más grandes que una simple salida, menos es más. (De hecho, hay un comando llamado more que hace algo similar, así que esto es irónico). El texto se muestra de forma paginada, por lo que puedes navegar a través de un archivo de texto página por página. \n\nAdelante y mira el contenido de un archivo con less. Una vez que estés en el comando less, puedes usar otros comandos de teclado para navegar en el archivo. \n\n<pre>$ less /home/pete/Documents/text1</pre>\n\nUtiliza el siguiente comando para navegar a través de less: \n\n<ul>\n<li>q - Se utiliza para salir de less y volver a tu shell.</li>\n<li>Página arriba, Página abajo, Arriba y Abajo - Navega usando las teclas de flecha y las teclas de página.</li>\n<li>g - Se mueve al principio del archivo de texto.</li>\n<li>G - Se mueve al final del archivo de texto.</li>\n<li>/búsqueda - Puedes buscar texto específico dentro del documento de texto. Antecede las palabras que deseas buscar con /</li>\n<li>h - Si necesitas un poco de ayuda sobre cómo usar less mientras estás en less, utiliza help.</li>\n</ul>",
+  "exercise": "Ejecuta less en un archivo, luego páginas arriba y alrededor del archivo. Intenta buscar una palabra específica. Navega rápidamente al principio o al final del archivo.",
+  "quizQuestion": "¿Cómo sales de un comando less?",
+  "quizAnswer": "q",
+  "slug": "lesscommand"
+}

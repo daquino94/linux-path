@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "États de puissance",
+  "lessonContent": "Difficile à croire que nous n'avons pas encore discuté des moyens de contrôler l'état de votre système via la ligne de commande, mais en parlant de init, nous ne parlons pas seulement des modes qui nous permettent de démarrer notre système, mais aussi de ceux qui l'arrêtent.\n\nPour éteindre votre système :\n\n<pre>$ sudo shutdown -h now</pre>\n\nCela arrêtera le système (l'éteindra), vous devez également spécifier un moment où vous souhaitez que cela se produise. Vous pouvez ajouter un temps en minutes qui éteindra le système dans ce laps de temps.\n\n<pre>$ sudo shutdown -h +2</pre>\n\nCela éteindra votre système dans deux minutes. Vous pouvez également redémarrer avec la commande shutdown :\n\n<pre>$ sudo shutdown -r now</pre>\n\nOu simplement utiliser la commande reboot :\n\n<pre>$ sudo reboot</pre>",
+  "exercise": "Que pensez-vous qu'il se passe avec init lorsque vous éteignez votre machine ?",
+  "quizQuestion": "Quelle est la commande pour éteindre votre système dans 4 minutes ?",
+  "quizAnswer": "sudo shutdown -h +4",
+  "slug": "powerstates"
+}

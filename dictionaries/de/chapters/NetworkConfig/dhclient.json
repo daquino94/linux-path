@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "dhclient",
+  "lessonContent": "Wir haben bereits über DHCP gesprochen und in den meisten Fällen müssen Sie Ihre IP-Adressen, Subnetzmasken usw. niemals statisch festlegen. Stattdessen verwenden Sie DHCP! Der dhclient wird beim Booten gestartet und erhält eine Liste von Netzwerkschnittstellen aus der Datei dhclient.conf. Für jede aufgeführte Schnittstelle versucht er, die Schnittstelle mithilfe des DHCP-Protokolls zu konfigurieren.\n\nIn der Datei dhclient.leases behält dhclient eine Liste von Leases über Systemneustarts hinweg bei. Nach dem Lesen von dhclient.conf wird die Datei dhclient.leases gelesen, um ihm mitzuteilen, welche Leases bereits zugewiesen wurden. \n\n<b>Um eine neue IP-Adresse zu erhalten</b>\n\n<pre>$ sudo dhclient</pre>",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Was versucht, IP-Adressen mit dem DHCP-Protokoll zuzuweisen?",
+  "quizAnswer": "dhclient",
+  "slug": "dhclient"
+}

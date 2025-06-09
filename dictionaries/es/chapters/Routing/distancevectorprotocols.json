@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Protocolos de vector de distancia",
+  "lessonContent": "Los protocolos de vector de distancia determinan la ruta de otras redes utilizando el recuento de saltos que un paquete realiza a través de la red. Si la red A estaba a 3 saltos de distancia y la red B estaba al lado de la red A, entonces asumimos que debe estar a 4 saltos de distancia. En los protocolos de vector de distancia, la siguiente ruta sería la que tenga la menor cantidad de saltos.\n\nLos protocolos de vector de distancia son ideales para redes pequeñas, cuando las redes comienzan a escalar, los enrutadores tardan más en converger porque envían periódicamente la tabla de enrutamiento completa a cada enrutador. Otra desventaja de los protocolos de vector de distancia es la eficiencia, elige rutas que están más cerca en saltos, pero no siempre elige la ruta más eficiente.\n\nUno de los protocolos de vector de distancia comunes es RIP (Protocolo de Información de Enrutamiento), que difunde la tabla de enrutamiento a cada enrutador en la red cada 30 segundos. Para una red grande, esto puede requerir muchos recursos, debido a eso RIP limita su recuento de saltos a 15.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "Verdadero o falso, ¿los protocolos de distancia utilizan la ruta con la menor cantidad de ancho de banda?",
+  "quizAnswer": "falso",
+  "slug": "protocolosdevectoradedistancia"
+}

@@ -1,0 +1,7 @@
+{
+  "id": 4,
+  "title": "高级文本操作",
+  "description": "使用 vim 和 emacs 像 Linux 蜘蛛猴一样浏览文本。",
+  "image": "/images/chapters/textManipolationAdvance.png",
+  "slug": "advancedtextfu"
+}

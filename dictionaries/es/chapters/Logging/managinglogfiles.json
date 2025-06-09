@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Gestión de archivos de registro",
+  "lessonContent": "Los archivos de registro generan mucha información y almacenan estos datos en sus discos duros, sin embargo, hay muchos problemas con esto, en su mayor parte solo queremos poder ver los registros más nuevos, también queremos administrar eficientemente nuestro espacio en disco, ¿cómo hacemos todo esto? La respuesta es con logrotate. \n\nLa utilidad logrotate gestiona los registros por nosotros. Tiene un archivo de configuración que nos permite especificar cuántos y qué registros mantener, cómo comprimir nuestros registros para ahorrar espacio y más. La herramienta logrotate generalmente se ejecuta a través de cron una vez al día y los archivos de configuración se pueden encontrar en /etc/logrotate.d. \n\nHay otras herramientas de rotación de registros que puede usar para administrar sus registros, pero logrotate es la más común.",
+  "exercise": "Mira tu archivo de configuración de logrotate y observa cómo gestiona algunos de tus registros.",
+  "quizQuestion": "¿Qué utilidad se utiliza para gestionar registros?",
+  "quizAnswer": "logrotate",
+  "slug": "gestiondearchivosderegistro"
+}

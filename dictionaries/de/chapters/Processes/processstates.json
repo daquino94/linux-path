@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Prozesszustände",
+  "lessonContent": "Lassen Sie uns den Befehl ps aux erneut betrachten:\n\n<pre>$ ps aux</pre>\n\nIm STAT-Feld sehen Sie viele Werte. Ein Linux-Prozess kann sich in verschiedenen Zuständen befinden. Die häufigsten Zustandscodes, die Sie sehen werden, sind unten beschrieben:\n\n<ul>\n<li>R: läuft oder ist ausführbar, er wartet nur darauf, dass die CPU ihn verarbeitet</li>\n<li>S: Unterbrechbarer Schlaf, wartet auf Abschluss eines Ereignisses, wie z.B. Eingabe vom Terminal</li>\n<li>D: Nicht unterbrechbarer Schlaf, Prozesse, die nicht beendet oder mit einem Signal unterbrochen werden können, normalerweise müssen Sie sie neu starten oder das Problem beheben, um sie zu beenden</li>\n<li>Z: Zombie, wir haben in einer früheren Lektion besprochen, dass Zombies beendete Prozesse sind, die darauf warten, dass ihre Status abgerufen werden</li>\n<li>T: Angehalten, ein Prozess, der angehalten wurde</li>\n</ul>",
+  "exercise": "Werfen Sie einen Blick auf die laufenden Prozesse auf Ihrem System und überprüfen Sie deren Prozesszustände.",
+  "quizQuestion": "Welcher STAT-Code wird verwendet, um einen nicht unterbrechbaren Schlaf darzustellen?",
+  "quizAnswer": "D",
+  "slug": "prozesszustaende"
+}

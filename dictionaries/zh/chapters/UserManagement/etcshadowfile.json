@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "/etc/shadow",
+  "lessonContent": " /etc/shadow 文件用于存储有关用户身份验证的信息。它需要超级用户读取权限。\n\n<pre>$ sudo cat /etc/shadow\n\nroot:MyEPTEa$6Nonsense:15000:0:99999:7:::\n</pre>\n\n您会注意到它看起来与 /etc/passwd 的内容非常相似，但在密码字段中，您会看到一个加密密码。字段由冒号分隔，如下所示：\n\n<ol>\n<li>用户名</li>\n<li>加密密码</li>\n<li>上次更改密码的日期 - 表示自1970年1月1日以来的天数。如果是0，那意味着用户下次登录时应更改密码</li>\n<li>最小密码年龄 - 用户必须等待才能再次更改密码的天数</li>\n<li>最大密码年龄 - 用户必须更改密码之前的最大天数</li>\n<li>密码警告期 - 密码将过期前的天数</li>\n<li>密码不活动期 - 密码过期后允许使用密码登录的天数</li>\n<li>帐户到期日期 - 用户将无法登录的日期</li>\n<li>保留字段以供将来使用</li>\n</ol>\n\n在今天的大多数发行版中，用户身份验证不仅依赖于 /etc/shadow 文件，还有其他机制，如 PAM（可插入式身份验证模块）来替代身份验证。",
+  "exercise": "查看 /etc/shadow 文件",
+  "quizQuestion": "没有问题，请继续！",
+  "quizAnswer": "",
+  "slug": "etcshadowfile"
+}

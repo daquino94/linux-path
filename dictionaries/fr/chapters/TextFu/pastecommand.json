@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "coller",
+  "lessonContent": "La commande coller est similaire à la commande cat, elle fusionne les lignes ensemble dans un fichier. Créons un nouveau fichier avec le contenu suivant : \n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\nCombinons maintenant toutes ces lignes en une seule ligne : \n\n<pre>$ coller -s sample2.txt</pre>\n\nLe délimiteur par défaut pour coller est la TABulation, donc maintenant il y a une seule ligne avec des TABs séparant chaque mot.\n\nChangeons ce délimiteur (-d) pour quelque chose de plus lisible : \n\n<pre>$ coller -d ' ' -s sample2.txt</pre>\n\nMaintenant tout devrait être sur une ligne délimitée par des espaces.",
+  "exercise": "Essayez de coller plusieurs fichiers ensemble, que se passe-t-il ?",
+  "quizQuestion": "Quel drapeau utilisez-vous avec coller pour mettre tout sur une seule ligne ?",
+  "quizAnswer": "-s",
+  "slug": "commandecoller"
+}

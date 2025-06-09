@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Upstart 概述",
+  "lessonContent": "Upstart 由 Canonical 开发，因此在 Ubuntu 上曾经是 init 的实现，然而在现代的 Ubuntu 安装中现在使用 systemd。Upstart 的创建是为了改进 Sys V 的问题，比如严格的启动流程、任务阻塞等。Upstart 的事件和作业驱动模型使其能够响应事件。 \n\n要查看是否正在使用 Upstart，如果有 /usr/share/upstart 目录，那就是一个很好的指示。 \n\n作业是 Upstart 执行的操作，事件是从其他进程接收的触发作业的消息。要查看作业及其配置的列表：\n\n<pre>\npete@icebox:~$ ls /etc/init\nacpid.conf                   mountnfs.sh.conf\nalsa-restore.conf            mtab.sh.conf\nalsa-state.conf              networking.conf\nalsa-store.conf              network-interface.conf\nanacron.conf                 network-interface-container.conf\n</pre>\n\n在这些作业配置中，将包含如何启动作业以及何时启动作业的信息。\n\n例如，在 networking.conf 文件中，可能会简单地说：\n<pre>\nstart on runlevel [235]\nstop on runlevel [0]\n</pre>\n\n这意味着它将在运行级别 2、3 或 5 上开始设置网络，并将在运行级别 0 上停止网络。有许多编写配置文件的方法，当您查看可用的不同作业配置时，您会发现这一点。 \n\nUpstart 的工作方式是：\n\n<ol>\n<li>首先，它从 /etc/init 加载作业配置</li>\n<li>一旦发生启动事件，它将运行由该事件触发的作业。</li>\n<li>这些作业将生成新事件，然后这些事件将触发更多作业</li>\n<li>Upstart 将继续执行此操作，直到完成所有必要的作业</li>\n</ol>",
+  "exercise": "如果您正在运行 Upstart，请看看 /etc/init 中的作业配置是否能够理解。",
+  "quizQuestion": "Ubuntu 使用的是哪种 init 实现？",
+  "quizAnswer": "upstart",
+  "slug": "upstartoverview"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Threads de Processo",
+  "lessonContent": "Você pode ter ouvido falar dos termos processos de única thread e processos de múltiplas threads. Threads são muito semelhantes a processos, no sentido de que são usados para executar o mesmo programa, sendo frequentemente referidos como processos leves. Se um processo tem uma thread, é de única thread e se um processo tem mais de uma thread, é de múltiplas threads. No entanto, todos os processos têm pelo menos uma thread. \n\nOs processos operam com seus próprios recursos de sistema isolados, no entanto, as threads podem compartilhar esses recursos entre si facilmente, tornando mais fácil a comunicação entre elas e, às vezes, é mais eficiente ter um aplicativo de múltiplas threads do que um aplicativo de múltiplos processos.\n\nBasicamente, vamos dizer que você abre o LibreOffice Writer e o Chrome, cada um é seu próprio processo separado. Agora você entra no Writer e começa a editar texto, quando você edita o texto, ele é salvo automaticamente. Esses dois processos paralelos de salvar e editar são threads. \n\nPara visualizar as threads de processo, você pode usar: \n\n<pre>\npete@icebox:~$ ps m\n  PID TTY      STAT   TIME COMMAND\n 2207 pts/2    -      0:01 bash\n    - -        Ss     0:01 -\n 5252 pts/2    -      0:00 ps m\n    - -        R+     0:00 -\n</pre>\n\nOs processos são indicados com cada PID e abaixo dos processos estão suas threads (indicadas por --). Assim, você pode ver que os processos acima são ambos de única thread.",
+  "exercise": "Execute o comando <b>ps m</b> e veja quais processos em execução são de múltiplas threads.",
+  "quizQuestion": "Verdadeiro ou falso, todos os processos começam como de única thread.",
+  "quizAnswer": "Verdadeiro",
+  "slug": "threadsdeprocesso"
+}

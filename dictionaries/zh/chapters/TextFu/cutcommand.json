@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "cut",
+  "lessonContent": "我们将学习一些有用的命令，用于处理文本。在开始之前，让我们创建一个我们将要操作的文件。复制并粘贴以下命令，然后在lazy和dog之间添加一个制表符（按住Ctrl-v + TAB）。\n\n<pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>\n\n我们将学习的第一个命令是cut命令。它从文件中提取文本的部分。\n\n按字符列表提取内容：\n\n<pre>$ cut -c 5 sample.txt</pre>\n\n这会输出文件每行的第5个字符。在这种情况下是\"q\"，请注意，空格也算一个字符。\n\n要按字段提取内容，我们需要做一点修改：\n\n<pre>$ cut -f 2 sample.txt</pre>\n\n-f或字段标志根据字段切割文本，默认情况下使用制表符作为分隔符，因此用制表符分隔的所有内容都被视为一个字段。您应该看到\"dog\"作为输出。\n\n您可以将字段标志与分隔符标志结合使用，以按自定义分隔符提取内容：\n\n<pre>$ cut -f 1 -d \";\" sample.txt</pre>\n\n这将把制表符分隔符更改为\";\"分隔符，由于我们正在切割第一个字段，结果应该是\"The quick brown\"。",
+  "exercise": "以下命令做什么？为什么？\n\n<pre>$ cut -c 5-10 sample.txt\n$ cut -c 5- sample.txt\n$ cut -c -5 sample.txt\n</pre>",
+  "quizQuestion": "您将使用哪个命令来获取文件中每行的第一个字符？",
+  "quizAnswer": "cut -c 1",
+  "slug": "cutcommand"
+}

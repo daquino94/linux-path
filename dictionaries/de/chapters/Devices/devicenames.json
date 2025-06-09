@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Gerätenamen",
+  "lessonContent": "Hier sind die häufigsten Gerätenamen, auf die Sie stoßen werden: \n\n<b>SCSI-Geräte</b>\n\nWenn Sie eine Art Massenspeicher auf Ihrem Gerät haben, ist die Wahrscheinlichkeit groß, dass es das SCSI-Protokoll verwendet. SCSI steht für Small Computer System Interface, es handelt sich um ein Protokoll, das die Kommunikation zwischen Festplatten, Druckern, Scannern und anderen Peripheriegeräten mit Ihrem System ermöglicht. Möglicherweise haben Sie von SCSI-Geräten gehört, die in modernen Systemen nicht mehr verwendet werden, jedoch ordnen unsere Linux-Systeme SCSI-Festplatten Festplattenlaufwerken in /dev zu. Sie werden durch einen Präfix von sd (SCSI-Disk) repräsentiert:\n\nGängige SCSI-Gerätedateien:\n\n<ul>\n<li>/dev/sda - Erste Festplatte</li>\n<li>/dev/sdb - Zweite Festplatte</li>\n<li>/dev/sda3 - Dritte Partition auf der ersten Festplatte</li>\n</ul>\n\n<b>Pseudo-Geräte</b>\n\nWie wir zuvor besprochen haben, sind Pseudo-Geräte nicht physisch mit Ihrem System verbunden, die häufigsten Pseudo-Geräte sind Zeichengeräte: \n\n<ul>\n<li>/dev/zero - akzeptiert und verwirft alle Eingaben, erzeugt einen kontinuierlichen Strom von NULL (Wert Null) Bytes</li>\n<li>/dev/null - akzeptiert und verwirft alle Eingaben, erzeugt keine Ausgabe</li>\n<li>/dev/random - erzeugt Zufallszahlen</li>\n</ul>\n\n<b>PATA-Geräte</b>\n\nManchmal werden in älteren Systemen Festplatten mit einem hd-Präfix bezeichnet: \n\n<ul>\n<li>/dev/hda - Erste Festplatte</li>\n<li>/dev/hdd2 - Zweite Partition auf der vierten Festplatte</li>\n</ul>",
+  "exercise": "Schreiben Sie auf die Pseudo-Geräte und sehen Sie, was passiert, seien Sie vorsichtig, dass Sie nicht auf Ihre Festplatten auf diese Geräte schreiben!",
+  "quizQuestion": "Wie würde üblicherweise der Gerätename für die erste Partition auf der zweiten SCSI-Festplatte lauten?",
+  "quizAnswer": "sdb1",
+  "slug": "gerätenamen"
+}

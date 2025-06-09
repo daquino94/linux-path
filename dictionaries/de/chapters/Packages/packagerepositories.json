@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Paket-Repositories",
+  "lessonContent": "Wie gelangen Pakete, die ins Internet hochgeladen werden, irgendwie auf unsere Computer? Gehst du auf die Download-Seite jedes Pakets, das du möchtest, und klickst auf Download und Installieren? Nun, eigentlich kannst du das tun, aber es gibt etwas Besseres namens Paket-Repositories. Repositories sind einfach zentrale Speicherorte für Pakete. Es gibt Unmengen von Repositories, die viele Pakete enthalten, und das Beste daran ist, dass sie alle im Internet zu finden sind, keine lästigen Installationsdisks. Deine Maschine weiß nicht, wo sie nach diesen Repositories suchen soll, es sei denn, du sagst ihr explizit, wo sie suchen soll.\n\nAngenommen, ich möchte beispielsweise die WackyWidgets-Software auf meiner Maschine haben. Nun, WackyWidgets verwaltet ihre eigenen Repositories für ihre Widget-Pakete. In diesem Repository befinden sich 10 Pakete, das CoolWidget-Paket, das SuperWidget-Paket usw. WackyWidgets hostet dieses Repository unter einem Quellenlink namens: http://download.widgets/linux/deb/\n\nAnstatt also auf ihrer Website direkt das Paket herunterzuladen, kannst du deiner Maschine sagen, dass sie die WackyWidgets-Software über den Quellenlink finden soll. \n\nDeine Distribution wird bereits mit vorab genehmigten Quellen geliefert, um Pakete zu beziehen, und so werden alle Basispakete installiert, die du auf deinem System siehst. Auf einem Debian-System ist diese Quellen-Datei die <b>/etc/apt/sources.list</b>-Datei. Deine Maschine wird wissen, dass sie dort nachschauen und nach allen von dir hinzugefügten Quellen-Repositories suchen soll.",
+  "exercise": "Für diese Lektion sind keine Übungen verfügbar.",
+  "quizQuestion": "Wo befindet sich die Quellen-Datei in einem Debian-System?",
+  "quizAnswer": "/etc/apt/sources.list",
+  "slug": "packagerepositories"
+}

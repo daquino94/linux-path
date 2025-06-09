@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Criando Sistemas de Arquivos",
+  "lessonContent": "Agora que você realmente particionou um disco, vamos criar um sistema de arquivos!\n\n<pre>$ sudo mkfs -t ext4 /dev/sdb2</pre>\n\nSimples assim! A ferramenta <b>mkfs</b> (make filesystem) nos permite especificar o tipo de sistema de arquivos que queremos e onde queremos. Você só vai querer criar um sistema de arquivos em um disco recém-particionado ou se estiver reparticionando um antigo. Provavelmente deixará seu sistema de arquivos em um estado corrompido se tentar criar um em cima de um existente.",
+  "exercise": "Faça um sistema de arquivos ext4 na unidade USB.",
+  "quizQuestion": "Qual comando é usado para criar um sistema de arquivos?",
+  "quizAnswer": "mkfs",
+  "slug": "criandosistemasdearquivos"
+}

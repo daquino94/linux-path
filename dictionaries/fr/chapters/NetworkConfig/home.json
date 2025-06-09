@@ -1,0 +1,7 @@
+{
+  "id": 20,
+  "title": "Configuration du réseau",
+  "description": "Apprenez la configuration du réseau en utilisant des outils Linux!",
+  "image": "/images/chapters/networkConfiguration.png",
+  "slug": "networkconfig"
+}
