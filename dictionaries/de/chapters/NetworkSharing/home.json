@@ -1,0 +1,7 @@
+{
+  "id": 16,
+  "title": "Netzwerkfreigabe",
+  "description": "Erfahren Sie mehr über Netzwerkfreigabe mit rsync, scp, nfs und mehr.",
+  "image": "/images/chapters/networkSharing.png",
+  "slug": "networksharing"
+}

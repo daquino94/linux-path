@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "メモリーモニタリング",
+  "lessonContent": "CPU モニタリングと I/O モニタリングに加えて、<b>vmstat</b> を使用してメモリ使用状況をモニタリングできます。\n\n<pre>\npete@icebox:~$ vmstat\nprocs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st\n 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0\n</pre>\n\n以下は各フィールドです:\n\n<b>procs</b>\n<ul>\n<li>r - 実行時間のプロセス数</li>\n<li>b - 割り込み不可能なスリープ中のプロセス数</li>\n</ul>\n\n<b>memory</b>\n<ul>\n<li>swpd - 使用されている仮想メモリ量</li>\n<li>free - 空きメモリ量</li>\n<li>buff - バッファとして使用されているメモリ量</li>\n<li>cache - キャッシュとして使用されているメモリ量</li>\n</ul>\n\n<b>swap</b>\n<ul>\n<li>si - ディスクからスワップインされたメモリ量</li>\n<li>so - ディスクにスワップアウトされたメモリ量</li>\n</ul>\n\n<b>io</b>\n<ul>\n<li>bi - ブロックデバイスから受信したブロックの量</li>\n<li>bo - ブロックデバイスに送信されたブロックの量</li>\n</ul>\n\n<b>system</b>\n<ul>\n<li>in - 1 秒あたりの割り込み数</li>\n<li>cs - 1 秒あたりのコンテキストスイッチ数</li>\n</ul>\n\n<b>cpu</b>\n<ul>\n<li>us - ユーザ時間で費やされた時間</li>\n<li>sy - カーネル時間で費やされた時間</li>\n<li>id - アイドルで費やされた時間</li>\n<li>wa - IO を待っている時間</li>\n</ul>",
+  "exercise": "vmstat でメモリ使用状況を確認してください。",
+  "quizQuestion": "メモリ使用率を表示するために使用されるツールは何ですか？",
+  "quizAnswer": "vmstat",
+  "slug": "memorymonitoring"
+}

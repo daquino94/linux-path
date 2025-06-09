@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "arp",
+  "lessonContent": "Recuerda que cuando buscamos una dirección MAC con ARP, primero verifica la caché ARP almacenada localmente en nuestro sistema, en realidad puedes ver esta caché: \n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\nLa caché ARP en realidad está vacía cuando una máquina se inicia, se va llenando a medida que se envían paquetes a otros hosts. Si enviamos un paquete a un destino que no está en la caché ARP, sucede lo siguiente:\n\n<ol>\n<li>El host fuente crea el marco Ethernet con un paquete de solicitud ARP</li>\n<li>El host fuente difunde este marco a toda la red</li>\n<li>Si uno de los hosts en la red conoce la dirección MAC correcta, enviará un paquete de respuesta y un marco que contenga la dirección MAC</li>\n<li>El host fuente agrega el mapeo de dirección IP a dirección MAC a la caché ARP y luego procede a enviar el paquete</li>\n</ol>\n\nTambién puedes ver tu caché ARP a través del comando ip:\n\n<pre>\n$ ip neighbour show\n</pre>",
+  "exercise": "Observa qué sucede con tu caché ARP cuando reinicias tu máquina y luego haces algo en la red.",
+  "quizQuestion": "¿Qué comando puedes usar para ver tu caché ARP?",
+  "quizAnswer": "arp",
+  "slug": "arpcommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Visión general del Kernel",
+  "lessonContent": "Como has aprendido hasta este punto, el kernel es el núcleo del sistema operativo. Hemos hablado sobre las otras partes del sistema operativo pero aún no hemos mostrado cómo todas trabajan juntas. El sistema operativo Linux se puede organizar en tres niveles diferentes de abstracción.\n\nEl nivel más básico es el hardware, esto incluye nuestra CPU, memoria, discos duros, puertos de red, etc. La capa física que realmente calcula lo que nuestra máquina está haciendo.\n\nEl siguiente nivel es el kernel, que maneja el proceso y la gestión de memoria, la comunicación de dispositivos, las llamadas al sistema, configura nuestro sistema de archivos, etc. El trabajo del kernel es hablar con el hardware para asegurarse de que haga lo que queremos que hagan nuestros procesos.\n\nY el nivel con el que estás familiarizado es el espacio de usuario, el espacio de usuario incluye la terminal, los programas que ejecutas, los gráficos, etc.\n\nEn este curso, nos enfocaremos en el kernel y aprenderemos sus complejidades.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Qué nivel del sistema operativo gestiona los dispositivos?",
+  "quizAnswer": "kernel",
+  "slug": "kerneloverview"
+}

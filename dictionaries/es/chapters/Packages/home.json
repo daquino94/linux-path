@@ -1,0 +1,7 @@
+{
+  "id": 8,
+  "title": "Paquetes",
+  "description": "Aprenda todo sobre las herramientas de gestión de paquetes dpkg, apt-get, rpm y yum.",
+  "image": "/images/chapters/packages.png",
+  "slug": "paquetes"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Processus de démarrage : Noyau",
+  "lessonContent": "Maintenant que notre chargeur d'amorçage a transmis les paramètres nécessaires, voyons comment il démarre :\n\n<b>Initrd vs Initramfs</b>\n\nIl y a un peu un problème de poule et d'œuf lorsque nous parlons du démarrage du noyau. Le noyau gère le matériel de nos systèmes, cependant tous les pilotes ne sont pas disponibles pour le noyau lors du démarrage. Nous dépendons donc d'un système de fichiers racine temporaire qui contient uniquement les modules essentiels dont le noyau a besoin pour accéder au reste du matériel. Dans les anciennes versions de Linux, cette tâche était confiée à l'initrd (disque RAM initial). Le noyau montait l'initrd, obtenait les pilotes de démarrage nécessaires, puis lorsqu'il avait chargé tout ce dont il avait besoin, il remplaçait l'initrd par le véritable système de fichiers racine. De nos jours, nous avons quelque chose appelé l'initramfs, qui est un système de fichiers racine temporaire intégré au noyau lui-même pour charger tous les pilotes nécessaires pour le véritable système de fichiers racine, donc plus besoin de localiser le fichier initrd. \n\n<b>Montage du système de fichiers racine</b>\n\nMaintenant que le noyau a tous les modules dont il a besoin pour créer un périphérique racine et monter la partition racine. Avant d'aller plus loin cependant, la partition racine est en fait montée en mode lecture seule d'abord pour que fsck puisse s'exécuter en toute sécurité et vérifier l'intégrité du système. Ensuite, il remonte le système de fichiers racine en mode lecture-écriture. Ensuite, le noyau localise le programme init et l'exécute.",
+  "exercise": "Pas d'exercices pour cette leçon.",
+  "quizQuestion": "Qu'est-ce qui est utilisé dans les systèmes modernes pour charger un système de fichiers racine temporaire ?",
+  "quizAnswer": "initramfs",
+  "slug": "processusdedemarragenoyau"
+}

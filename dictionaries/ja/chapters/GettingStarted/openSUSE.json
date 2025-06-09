@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "openSUSE",
+  "lessonContent": "<b>概要</b>\nopenSUSE LinuxはopenSUSE Projectによって作成されています。Linuxの利用を促進し、世界中のフリーかつオープンソースソフトウェアコミュニティの一部として、オープンで透明性があり友好的な方法で協力しています。openSUSEは、現在も稼働している2番目に古いLinuxディストリビューションであり、SUSEの受賞歴のあるSUSE Linux Enterprise製品とベースシステムを共有しています。\n\n<b>パッケージ管理</b>\nRPMパッケージマネージャを使用します。\n\n<b>設定可能性</b>\nopenSUSEは新しいLinuxユーザーにとって優れた選択肢です。使いやすいグラフィカルインストーラー/管理アプリケーション（<a href=\"http://yast.github.io/\">YaST</a>）と整頓されたベースシステムを提供し、簡単にいじることができます。openSUSEには、インターネットを安全に楽しむために必要なすべてが含まれており、ウイルス/スパイウェアの心配なく、写真、ビデオ、音楽、コードなどを自由に楽しむことができます。\n\n<b>使用方法</b>\nopenSUSE LeapはデスクトップPCやノートパソコンで完全に使用することができます。",
+  "exercise": "openSUSEをオペレーティングシステムとして使用したい場合は、ダウンロードページにアクセスして試してみてください：<a href='https://software.opensuse.org/'>software.opensuse.org</a>",
+  "quizQuestion": "openSUSEの管理/インストールツールの名前は何ですか？",
+  "quizAnswer": "yast",
+  "slug": "opensuse"
+}

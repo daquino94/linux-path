@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Gentoo",
+  "lessonContent": "<b>概述</b>\nGentoo以操作系统的灵活性而著称，但代价也不菲。它专为不介意在系统中动手的高级用户而设计。\n\n<b>软件包管理</b>\nGentoo使用自己的软件包管理工具Portage。Portage软件包管理非常模块化且易于维护，这在整个操作系统中扮演着非常灵活的重要角色。\n\n<b>可配置性</b>\n如果您刚开始接触Linux，想选择一条更具挑战性的道路，我建议选择Gentoo或Arch Linux作为您的发行版。\n\n<b>用途</b>\n非常适合台式机和笔记本电脑。",
+  "exercise": "如果您对将Gentoo作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>",
+  "quizQuestion": "Gentoo使用哪种软件包管理系统？",
+  "quizAnswer": "Portage",
+  "slug": "gentoo"
+}

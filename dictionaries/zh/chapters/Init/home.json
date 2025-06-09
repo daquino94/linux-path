@@ -1,0 +1,7 @@
+{
+  "id": 13,
+  "title": "初始化",
+  "description": "了解不同的初始化系统，SysV，Upstart 和 systemd。",
+  "image": "/images/chapters/init.png",
+  "slug": "init"
+}

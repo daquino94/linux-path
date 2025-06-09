@@ -1,0 +1,7 @@
+{
+  "id": 15,
+  "title": "Registro",
+  "description": "Aprende sobre los registros del sistema y el directorio /var/log.",
+  "image": "/images/chapters/logging.png",
+  "slug": "logging"
+}

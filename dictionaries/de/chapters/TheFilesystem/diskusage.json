@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Festplattenauslastung",
+  "lessonContent": "Es gibt einige Tools, die Sie verwenden können, um die Auslastung Ihrer Festplatten zu sehen: \n\n<pre>\npete@icebox:~$ df -h\nFilesystem     1K-Blöcke    Verwendet Verfügbar Verw% Eingehängt auf\n/dev/sda1       6,2G  2,3G  3,6G  40% /\n</pre>\n\nDer df-Befehl zeigt Ihnen die Auslastung Ihrer aktuell eingehängten Dateisysteme. Die -h-Flagge gibt Ihnen ein menschenlesbares Format. Sie können sehen, um welches Gerät es sich handelt und wie viel Kapazität verwendet und verfügbar ist. \n\nAngenommen, Ihre Festplatte wird voll und Sie möchten wissen, welche Dateien oder Verzeichnisse diesen Speicherplatz belegen, dafür können Sie den <b>du</b>-Befehl verwenden. \n\n<pre>$ du -h</pre>\n\nDies zeigt Ihnen die Festplattenauslastung des aktuellen Verzeichnisses, in dem Sie sich befinden. Sie können einen Blick auf das Stammverzeichnis mit <b>du -h /</b> werfen, aber das kann etwas unübersichtlich werden.\n\nBeide Befehle sind in der Syntax so ähnlich, dass es schwer sein kann, sich zu merken, welchen man verwenden soll. Um zu überprüfen, wie viel Ihrer <b>Festplatte</b> <b>frei</b> ist, verwenden Sie df. Um die <b>Festplattenauslastung</b> zu überprüfen, verwenden Sie du.",
+  "exercise": "Schauen Sie sich Ihre Festplattenauslastung und den freien Speicherplatz mit du und df an.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um anzuzeigen, wie viel Speicherplatz auf Ihrer Festplatte frei ist?",
+  "quizAnswer": "df",
+  "slug": "diskusage"
+}

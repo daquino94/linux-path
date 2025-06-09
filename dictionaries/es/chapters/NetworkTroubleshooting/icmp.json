@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "ICMP",
+  "lessonContent": "El Protocolo de Mensajes de Control de Internet (ICMP) es parte de la suite de protocolos TCP/IP, se utiliza para enviar actualizaciones y mensajes de error y es un protocolo extremadamente útil utilizado para depurar problemas de red como una entrega de paquetes fallida.\n\nCada mensaje ICMP contiene un campo de tipo, código y checksum. El campo de tipo es el tipo de mensaje ICMP, el código es un subtipo y describe más información sobre el mensaje y el checksum se utiliza para detectar problemas con la integridad del mensaje.\n\nVeamos algunos tipos comunes de ICMP:\n\n<ul>\n<li>Tipo 0 - Respuesta de Eco</li>\n<li>Tipo 3 - Destino Inalcanzable</li>\n<li>Tipo 8 - Solicitud de Eco</li>\n<li>Tipo 11 - Tiempo Excedido</li>\n</ul>\n\nCuando un paquete no puede llegar a un destino, se genera un mensaje ICMP de Tipo 3, dentro de Tipo 3 hay 16 valores de código que describirán más por qué no puede llegar al destino:\n\n<ul>\n<li>Código 0 - Red Inalcanzable</li>\n<li>Código 1 - Host Inalcanzable</li>\netc..etc..\n</ul>\n\nEstos mensajes tendrán más sentido a medida que utilicemos algunas herramientas de solución de problemas de red.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cuál es el tipo ICMP para la solicitud de eco?",
+  "quizAnswer": "8",
+  "slug": "icmp"
+}

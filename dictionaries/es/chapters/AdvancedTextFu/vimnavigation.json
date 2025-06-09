@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Navegación en Vim",
+  "lessonContent": "Ahora puedes notar que el mouse no se utiliza aquí. Para navegar por un documento de texto en vim, utiliza las siguientes teclas: \n\n<ul>\n<li>h o la flecha izquierda - te moverá a la izquierda un carácter</li>\n<li>k o la flecha arriba - te moverá hacia arriba una línea</li>\n<li>j o la flecha abajo - te moverá hacia abajo una línea</li>\n<li>l o la flecha derecha - te moverá a la derecha un carácter</li>\n</ul>",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Qué letra se utiliza para moverse hacia abajo?",
+  "quizAnswer": "j",
+  "slug": "vimnavigation"
+}

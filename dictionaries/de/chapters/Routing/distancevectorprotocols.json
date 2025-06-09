@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Distanzvektorprotokolle",
+  "lessonContent": "Distanzvektorprotokolle bestimmen den Pfad anderer Netzwerke anhand der Hop-Anzahl, die ein Paket über das Netzwerk nimmt. Wenn Netzwerk A 3 Hops entfernt war und Netzwerk B neben Netzwerk A lag, nehmen wir an, dass es 4 Hops entfernt sein muss. Bei Distanzvektorprotokollen wäre die nächste Route diejenige mit der geringsten Anzahl von Hops.\n\nDistanzvektorprotokolle eignen sich gut für kleine Netzwerke. Wenn Netzwerke jedoch skalieren, dauert es länger, bis die Router konvergieren, da sie regelmäßig die gesamte Routing-Tabelle an jeden Router senden. Ein weiterer Nachteil von Distanzvektorprotokollen ist die Effizienz, da sie Routen wählen, die in Hops näher sind, aber nicht immer die effizienteste Route wählen.\n\nEines der gängigen Distanzvektorprotokolle ist RIP (Routing Information Protocol). Es sendet alle 30 Sekunden die Routing-Tabelle an jeden Router im Netzwerk. Für ein großes Netzwerk kann dies einige ernsthafte Ressourcen erfordern, weshalb RIP die Hop-Anzahl auf 15 begrenzt.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Wahr oder falsch, Distanzprotokolle verwenden die Route mit der geringsten Bandbreite?",
+  "quizAnswer": "falsch",
+  "slug": "distanzvektorprotokolle"
+}

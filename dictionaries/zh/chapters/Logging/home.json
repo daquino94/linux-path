@@ -1,0 +1,7 @@
+{
+  "id": 15,
+  "title": "日志记录",
+  "description": "了解系统日志和 /var/log 目录。",
+  "image": "/images/chapters/logging.png",
+  "slug": "logging"
+}

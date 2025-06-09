@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "Emacs Exiting and Help",
+  "lessonContent": "<b>Emacs を終了する</b>\n\n<pre>C-x C-c</pre>\n\nもし開いているバッファがあれば、Emacs を終了する前に保存するかどうか尋ねられます。\n\n<b>分からないことがあれば？</b>\n\n<pre>C-h C-h：ヘルプメニュー</pre>\n\n<b>元に戻す</b>\n\n<pre>C-x u</pre>\n\nEmacs には多くの機能があるため、学習コストは少し高くなります。しかし、その代わり非常に強力なテキストエディタが手に入ります。",
+  "exercise": "Emacs サイトを訪れてさらなるコマンドについて学びましょう。 <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a>",
+  "quizQuestion": "ヘルプメニューにアクセスする方法は？",
+  "quizAnswer": "C-h C-h",
+  "slug": "emacsexitingandhelp"
+}

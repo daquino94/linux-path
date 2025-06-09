@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "grep",
+  "lessonContent": "grepコマンドはおそらく使用する最も一般的なテキスト処理コマンドです。特定のパターンに一致する文字を検索することができます。あるディレクトリにファイルが存在するかどうかを知りたい場合や、ファイル内に特定の文字列が見つかったかどうかを知りたい場合は、grepを使用します。\n\n例として、sample.txtファイルを使用してみましょう：\n\n<pre>$ grep fox sample.txt</pre>\n\ngrepがsample.txtファイルでfoxを見つけたことがわかるはずです。\n\n-iフラグを使用して大文字小文字を区別しないパターンをgrepすることもできます：\n\n<pre>$ grep -i somepattern somefile</pre>\n\ngrepを他のコマンドと組み合わせてさらに柔軟に使用することもできます。\n\n<pre>$ env | grep -i User</pre>\n\ngrepは非常に柔軟です。パターンに正規表現を使用することもできます：\n\n<pre>$ ls /somedir | grep '.txt$'</pre>\n\nsomedir内の.txtで終わるすべてのファイルを返すはずです。",
+  "exercise": "egrepやfgrepについて聞いたことがあるかもしれませんが、これらは非推奨のgrep呼び出しであり、grep -Eおよびgrep -Fに置き換えられました。詳細についてはgrepのmanページを参照してください。",
+  "quizQuestion": "特定のパターンを見つけるために使用するコマンドは何ですか？",
+  "quizAnswer": "grep",
+  "slug": "grepcommand"
+}

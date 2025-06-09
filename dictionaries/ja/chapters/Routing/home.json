@@ -1,0 +1,7 @@
+{
+  "id": 19,
+  "title": "ルーティング",
+  "description": "ネットワークを横断してパケットがどのようにルーティングされるかを学びます！",
+  "image": "/images/chapters/routing.png",
+  "slug": "routing"
+}

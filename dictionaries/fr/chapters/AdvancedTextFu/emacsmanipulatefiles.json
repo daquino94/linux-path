@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "Manipuler les fichiers dans Emacs",
+  "lessonContent": "Dans beaucoup (si ce n'est pas tous) de la documentation d'Emacs, vous verrez la syntaxe C-[lettre]. Cela signifie simplement appuyer sur Ctrl-lettre, mais à des fins de raccourci, nous appellerons Ctrl avec C. Si vous voyez une syntaxe telle que M-[lettre], cela signifie utiliser la touche Meta, le plus souvent la touche Alt.\n\n<b>Enregistrer des fichiers</b>\n\n<pre>\nC-x C-s - Enregistrer un fichier\nC-x C-w - Enregistrer le fichier sous\nC-x s - Tout enregistrer\n</pre>\n\nLes options d'enregistrement de fichiers vous demanderont si vous souhaitez enregistrer chaque fichier.\n\n<b>Ouvrir un fichier</b>\n\n<pre>\nC-x C-f\n</pre>\n\nCela vous demandera de taper un nom de fichier à ouvrir. Si vous n'avez pas de fichier qui existe déjà, il créera un nouveau fichier. Vous pouvez également charger un répertoire.",
+  "exercise": "Jouez avec l'ouverture de fichiers et l'enregistrement de fichiers.",
+  "quizQuestion": "Quelle commande est utilisée pour ouvrir un fichier?",
+  "quizAnswer": "C-x C-f",
+  "slug": "emacsmanipulatefiles"
+}

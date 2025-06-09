@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "El bit pegajoso",
+  "lessonContent": "Un último bit de permiso especial del que quiero hablar es el bit pegajoso. \n\nEste bit de permiso \"pega un archivo/directorio\", lo que significa que solo el propietario o el usuario root pueden eliminar o modificar el archivo. Esto es muy útil para directorios compartidos. Echa un vistazo al ejemplo a continuación:\n\n<pre>$ ls -ld /tmp\ndrwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp\n</pre>\n\nVerás un bit de permiso especial al final aquí <b>t</b>, esto significa que cualquiera puede agregar archivos, escribir archivos, modificar archivos en el directorio /tmp, pero solo root puede eliminar el directorio /tmp. \n\n<b>Modificar el bit pegajoso</b>\n\n<pre>$ sudo chmod +t mydir\n\n$ sudo chmod 1755 mydir</pre>\n\nLa representación numérica para el bit pegajoso es <b>1</b>",
+  "exercise": "¿Qué otros archivos y directorios crees que tienen habilitado un bit pegajoso?",
+  "quizQuestion": "¿Qué símbolo representa el bit pegajoso?",
+  "quizAnswer": "t",
+  "slug": "stickybit"
+}

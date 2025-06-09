@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Permisos de Propietario",
+  "lessonContent": "Además de modificar los permisos en los archivos, también puedes modificar el grupo y la propiedad de usuario del archivo. \n\n<b>Modificar la propiedad de usuario</b>\n\n<pre>$ sudo chown patty myfile</pre>\n\nEste comando establecerá al propietario de myfile como patty.\n\n<b>Modificar la propiedad de grupo</b>\n\n<pre>$ sudo chgrp whales myfile</pre>\n\nEste comando establecerá al grupo de myfile como whales.\n\n<b>Modificar tanto la propiedad de usuario como la de grupo al mismo tiempo</b>\nSi agregas dos puntos y el nombre del grupo después del usuario, puedes establecer tanto el usuario como el grupo al mismo tiempo.\n\n<pre>$ sudo chown patty:whales myfile</pre>",
+  "exercise": "Modifica el grupo y el usuario de algunos archivos de prueba. Después echa un vistazo a los permisos con ls -l.",
+  "quizQuestion": "¿Qué comando utilizas para cambiar la propiedad de usuario?",
+  "quizAnswer": "chown",
+  "slug": "permisosdepropietario"
+}

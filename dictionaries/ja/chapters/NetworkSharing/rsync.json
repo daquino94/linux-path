@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "rsync",
+  "lessonContent": "異なるホストからデータをコピーするために使用される別のツールはrsync（リモート同期の略）です。rsyncはscpに非常に似ていますが、主な違いがあります。rsyncは、すでにコピーしようとしているデータがあるか事前にチェックする特別なアルゴリズムを使用し、差分のみをコピーします。たとえば、ファイルをコピーしている途中でネットワークが途切れた場合、コピーが途中で停止します。最初からすべてを再コピーする代わりに、rsyncはコピーされなかった部分のみをコピーします。\n\nまた、チェックサムを使用してコピーするファイルの整合性を検証します。これらの小さな最適化により、ファイル転送の柔軟性が向上し、rsyncはリモートおよびローカルでのディレクトリ同期、データバックアップ、大規模データ転送などに最適です。\n\nよく使用されるrsyncオプション:\n\n<ul>\n<li>v -冗長な出力</li>\n<li>r -ディレクトリに再帰</li>\n<li>h -人間に読みやすい出力</li>\n<li>z -圧縮された転送、遅い接続に最適</li>\n</ul>\n\n<b>同じホスト上でファイルをコピー/同期する</b>\n\n<pre>$ rsync -zvr /my/local/directory/one /my/local/directory/two</pre>\n\n<b>リモートホストからローカルホストにファイルをコピー/同期する</b>\n\n<pre>$ rsync /local/directory username@remotehost.com:/remote/directory</pre>\n\n<b>ローカルホストからリモートホストにファイルをコピー/同期する</b>\n\n<pre>$ rsync username@remotehost.com:/remote/directory /local/directory</pre>",
+  "exercise": "ディレクトリを別のディレクトリに同期するためにrsyncを使用し、重要なディレクトリを上書きしないようにしてください！",
+  "quizQuestion": "データバックアップに役立つコマンドは何ですか？",
+  "quizAnswer": "rsync",
+  "slug": "rsync"
+}

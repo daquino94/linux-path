@@ -1,0 +1,9 @@
+{
+  "id": 19,
+  "title": "退出",
+  "lessonContent": "嗯，你确实在基础知识上做得很好。我们只是触及到了皮毛，现在你已经学会爬行，接下来的课程中，我将教你如何行走。\n\n现在，你可以给自己鼓掌并休息一下。要退出 shell，你可以使用 exit 命令\n\n<pre>$ exit</pre>\n\n或者使用 logout 命令：\n\n<pre>$ logout</pre>\n\n或者如果你在终端 GUI 中工作，你可以直接关闭终端，在下一个课程见！",
+  "exercise": "退出 shell 并看看会发生什么。确保你不需要在该 shell 中再做任何工作。",
+  "quizQuestion": "你如何退出 shell？",
+  "quizAnswer": "exit",
+  "slug": "exitcommand"
+}

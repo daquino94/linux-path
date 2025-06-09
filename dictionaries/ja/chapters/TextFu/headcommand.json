@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "head",
+  "lessonContent": "非常に長いファイルがあるとしましょう。実際、選択肢がたくさんあります。/var/log/syslog を cat してみてください。ページごとにテキストが表示されるはずです。このテキストファイルの最初の数行だけを見たい場合はどうすればよいでしょうか？head コマンドを使用することでそれができます。デフォルトでは、head コマンドはファイルの最初の 10 行を表示します。\n\n<pre>$ head /var/log/syslog</pre>\n\n行数を任意に変更することもできます。たとえば、最初の 15 行を表示したい場合はどうすればよいでしょうか。\n\n<pre>$ head -n 15 /var/log/syslog</pre>\n\n-n フラグは行数を表します。",
+  "exercise": "次のコマンドは何を行い、なぜですか？\n\n<pre>$ head -c 15 /var/log/syslog</pre>",
+  "quizQuestion": "head コマンドで表示する行数を変更するために使用するフラグは何ですか？",
+  "quizAnswer": "-n",
+  "slug": "headcommand"
+}

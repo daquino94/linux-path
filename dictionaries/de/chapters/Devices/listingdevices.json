@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "lsusb, lspci, lssci",
+  "lessonContent": "Genau wie wir den ls-Befehl verwenden würden, um Dateien und Verzeichnisse aufzulisten, können wir ähnliche Tools verwenden, die Informationen über Geräte auflisten.\n\n<b>USB-Geräte auflisten</b>\n\n<pre>$ lsusb </pre>\n\n<b>PCI-Geräte auflisten</b>\n\n<pre>$ lspci </pre>\n\n<b>SCSI-Geräte auflisten</b>\n\n<pre>$ lsscsi </pre>",
+  "exercise": "Probieren Sie jeden dieser Befehle aus und sehen Sie sich die Ausgabe an, die Sie erhalten.",
+  "quizQuestion": "Welcher Befehl kann verwendet werden, um USB-Geräte anzuzeigen?",
+  "quizAnswer": "lsusb",
+  "slug": "listingdevices"
+}

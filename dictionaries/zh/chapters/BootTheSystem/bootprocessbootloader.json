@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "引导过程：引导加载程序",
+  "lessonContent": "引导加载程序的主要职责是：\n\n<ul>\n<li>引导进入操作系统，也可以用于引导非Linux操作系统</li>\n<li>选择要使用的内核</li>\n<li>指定内核参数</li>\n</ul>\n\nLinux最常见的引导加载程序是GRUB，您很可能在您的系统上使用它。还有许多其他引导加载程序可供选择，如LILO、efilinux、coreboot、SYSLINUX等。但是，在我们的示例中，我们将只使用GRUB作为我们的引导加载程序。\n\n因此，我们知道引导加载程序的主要目标是加载内核，但它在哪里找到内核呢？要找到它，我们需要查看我们的内核参数。可以通过在启动时使用'e'键进入GRUB菜单来找到这些参数。如果您没有GRUB，不用担心，我们将介绍您将看到的引导参数：\n\n<ul>\n<li>initrd - 指定初始RAM磁盘的位置（我们将在下一课中详细讨论此内容）。</li>\n<li>BOOT_IMAGE - 这是内核映像的位置</li>\n<li>root - 根文件系统的位置，内核在此位置内搜索以找到init。通常由其UUID或设备名称（如/dev/sda1）表示。</li>\n<li>ro - 这个参数很常见，它将文件系统挂载为只读模式。</li>\n<li>quiet - 添加此参数以便在引导过程中不看到后台显示的消息。</li>\n<li>splash - 这允许显示启动画面。</li>\n</ul>",
+  "exercise": "如果您的引导加载程序是GRUB，请使用'e'键进入GRUB菜单并查看设置。",
+  "quizQuestion": "哪个内核参数使您看不到引导消息？",
+  "quizAnswer": "quiet",
+  "slug": "bootprocessbootloader"
+}

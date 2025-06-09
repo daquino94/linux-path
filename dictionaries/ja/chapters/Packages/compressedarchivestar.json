@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "tar and gzip",
+  "lessonContent": "パッケージのインストールや異なるマネージャーに取り組む前に、ファイルのアーカイブ化と圧縮について話し合う必要があります。インターネットでソフトウェアを探す際には、おそらくこれらに遭遇することが多いでしょう。\n\nおそらくすでにファイルアーカイブというものを知っているでしょう。.rar や .zip などのファイル形式に遭遇したことがあるかもしれません。これらはファイルのアーカイブであり、1 つのアーカイブとして非常に整然とした単一のファイルに多くのファイルが含まれています。\n\n<b>gzip を使用したファイルの圧縮</b>\n\ngzip は Linux でファイルを圧縮するためのプログラムで、.gz 拡張子で終わります。\n\nファイルを圧縮するには:\n<pre>$ gzip mycoolfile</pre>\n\nファイルを解凍するには:\n<pre>$ gunzip mycoolfile.gz</pre>\n\n<b>tar を使用したアーカイブの作成</b>\n残念ながら、gzip は複数のファイルを 1 つのアーカイブに追加することができません。幸いにも、これを行う tar プログラムがあります。tar を使用してアーカイブを作成すると、.tar 拡張子が付きます。\n\n<pre>$ tar cvf mytarfile.tar mycoolfile1 mycoolfile 2</pre>\n\n<ul>\n<li>c - 作成</li>\n<li>v - プログラムに冗長モードで動作させ、何を行っているかを表示させる</li>\n<li>f - tar ファイルのファイル名はこのオプションの後に記入する必要があります。tar ファイルを作成する場合は、名前を考える必要があります</li>\n</ul>\n\n<b>tar を使用したアーカイブの展開</b>\n\ntar ファイルの内容を抽出するには、次のようにします:\n\n<pre>$ tar xvf mytarfile.tar</pre>\n\n<ul>\n<li>x - 抽出</li>\n<li>v - プログラムに冗長モードで動作させ、何を行っているかを表示させる</li>\n<li>f - 抽出したいファイル</li>\n</ul>\n\n<b>tar と gzip を使用したアーカイブの圧縮/解凍</b>\n\n多くの場合、mycompressedarchive.tar.gz などの圧縮された tar ファイルが見られます。圧縮を解除するにはまず gunzip で圧縮を解除し、その後 tar ファイルを展開します。または tar に <b>z</b> オプションを使用することもできます。これは gzip または gunzip ユーティリティを使用するように指示するだけです。\n\n圧縮された tar ファイルを作成:\n<pre>$ tar czf myfile.tar.gz</pre>\n\n解凍して展開:\n<pre>$ tar xzf file.tar</pre>\n\nヘルプが必要な場合は、次を覚えておいてください: すべてのファイルを e<b>X</b>tract し、<b>Z</b>ee の <b>F</b>iles を処理します！\n\ntar は非常に重要なコマンドの 1 つですが、実際にはあまり覚えていないコマンドの 1 つです。関連する xkcd: <a href=\"https://xkcd.com/1168/\">https://xkcd.com/1168/</a>\n\n<b>その他のユーティリティ</b>\n\nLinux の旅の途中で、bzip2、compress、zip、unzip などの他のアーカイブや圧縮形式に遭遇することがあります。これらは少し一般的でないかもしれませんが、異なるユーティリティには異なるコマンドが必要であることを覚えておいてください。",
+  "exercise": "tar のドキュメントを確認し、man ページで利用可能な他のオプションを見てください。",
+  "quizQuestion": "アーカイブを作成するために使用される tar フラグは何ですか？",
+  "quizAnswer": "c",
+  "slug": "compressedarchivestar"
+}

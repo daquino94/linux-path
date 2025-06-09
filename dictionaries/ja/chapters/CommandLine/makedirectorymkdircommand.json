@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "mkdir (Make Directory)",
+  "lessonContent": "これまでに作業してきたファイルを保存するためにいくつかのディレクトリが必要になります。mkdirコマンド（Make Directory）はそのために便利です。ディレクトリが存在しない場合、ディレクトリを作成します。複数のディレクトリを同時に作成することもできます。\n\n<pre>$ mkdir books paintings</pre>\n\n-p（親フラグ）を使用して同時にサブディレクトリを作成することもできます。\n\n<pre>$ mkdir -p books/hemmingway/favorites</pre>",
+  "exercise": "いくつかのディレクトリを作成し、そのディレクトリにいくつかのファイルを移動してください。",
+  "quizQuestion": "ディレクトリを作成するために使用されるコマンドは何ですか？",
+  "quizAnswer": "mkdir",
+  "slug": "makedirectorymkdircommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "less",
+  "lessonContent": "如果您查看的文本文件比简单输出大，less就更好了。（实际上有一个名为more的命令，执行类似的操作，所以这有些讽刺。）文本以分页方式显示，因此您可以逐页浏览文本文件。\n\n继续使用less查看文件内容。一旦进入less命令，您实际上可以使用其他键盘命令在文件中导航。\n\n<pre>$ less /home/pete/Documents/text1</pre>\n\n使用以下命令在less中导航：\n\n<ul>\n<li>q - 用于退出less并返回到您的shell。</li>\n<li>Page up，Page down，Up和Down - 使用箭头键和页面键进行导航。</li>\n<li>g - 移动到文本文件的开头。</li>\n<li>G - 移动到文本文件的末尾。</li>\n<li>/search - 您可以在文本文档中搜索特定文本。使用/作为搜索词的前缀。</li>\n<li>h - 如果您在less中需要一点关于如何使用less的帮助，请使用help。</li>\n</ul>",
+  "exercise": "在文件上运行less，然后向上翻页并在文件周围浏览。尝试搜索特定单词。快速导航到文件的开头或结尾。",
+  "quizQuestion": "如何退出less命令？",
+  "quizAnswer": "q",
+  "slug": "lesscommand"
+}

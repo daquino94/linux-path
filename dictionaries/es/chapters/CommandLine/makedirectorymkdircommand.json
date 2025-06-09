@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "mkdir (Crear directorio)",
+  "lessonContent": "Vamos a necesitar algunos directorios para almacenar todos estos archivos en los que hemos estado trabajando. El comando mkdir (Make Directory) es útil para eso, creará un directorio si aún no existe. Incluso puedes crear varios directorios al mismo tiempo.\n\n<pre>$ mkdir books paintings</pre>\n\nTambién puedes crear subdirectorios al mismo tiempo con la bandera -p (padre).\n\n<pre>$ mkdir -p books/hemmingway/favorites</pre>",
+  "exercise": "Crea un par de directorios y mueve algunos archivos a ese directorio.",
+  "quizQuestion": "¿Qué comando se utiliza para crear un directorio?",
+  "quizAnswer": "mkdir",
+  "slug": "makedirectorymkdircommand"
+}

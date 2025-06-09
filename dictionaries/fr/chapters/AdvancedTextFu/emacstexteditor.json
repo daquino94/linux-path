@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Emacs",
+  "lessonContent": "Emacs est destiné aux utilisateurs qui recherchent un éditeur de texte extrêmement puissant, ce qui est peut-être un euphémisme car vous vivez essentiellement dans emacs. Vous pouvez effectuer toutes vos modifications de code, manipulations de fichiers, etc. tout en restant dans emacs. Il est un peu plus lent à charger et la courbe d'apprentissage est un peu plus raide que vim, mais si vous recherchez un éditeur puissant et extrêmement extensible, celui-ci est fait pour vous. Quand je dis extensible, je veux littéralement dire que vous pouvez écrire des scripts pour emacs qui étendent sa fonctionnalité.\n\nPour démarrer emacs, il suffit d'utiliser :\n\n<pre>emacs</pre>\n\nVous devriez être accueilli par le tampon d'accueil par défaut.\n\nLes tampons dans emacs sont l'endroit où réside votre texte. Ainsi, si vous ouvrez un fichier, un tampon est utilisé pour stocker le contenu de ce fichier. Vous pouvez avoir plusieurs tampons ouverts en même temps et vous pouvez facilement passer de l'un à l'autre.",
+  "exercise": "Pas d'exercices pour cette leçon.",
+  "quizQuestion": "Pas de questions, passez à la suite !",
+  "quizAnswer": "",
+  "slug": "emacstexteditor"
+}

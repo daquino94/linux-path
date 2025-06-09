@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "tri",
+  "lessonContent": "La commande de tri est utile pour trier des lignes.\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ trier file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\nVous pouvez également effectuer un tri inverse : \n\n<pre>$ trier -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\nEt aussi trier par valeur numérique : \n\n<pre>$ trier -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+  "exercise": "Le véritable pouvoir du tri réside dans sa capacité à être combiné avec d'autres commandes, essayez la commande suivante et voyez ce qui se passe?\n\n<pre>$ ls /etc | trier -rn</pre>",
+  "quizQuestion": "Quel drapeau utilisez-vous pour effectuer un tri inverse?",
+  "quizAnswer": "-r",
+  "slug": "commandetrier"
+}

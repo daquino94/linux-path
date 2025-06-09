@@ -1,0 +1,1943 @@
+{
+  "chapters": [
+    {
+      "description": "什么是Linux？选择发行版并进行安装的入门指南。",
+      "id": 1,
+      "image": "/images/chapters/gettingStarted.png",
+      "lessons": [
+        {
+          "exercise": "额外阅读：\n<li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>\n<li><a href='https://en.wikipedia.org/wiki/Ken_Thompson'>Ken Thompson</a></li>\n<li><a href='https://stallman.org/'>Richard Stallman</a></li>\n<li><a href='https://en.wikipedia.org/wiki/Linus_Torvalds'>Linus Torvalds</a></li>",
+          "id": 1,
+          "lessonContent": "嘿，新手！所以你决定深入这个美妙的世界，被称为 Linux？那你最好系好安全带，因为这将是一段漫长而艰难的旅程。我的名字是企鹅皮特，我在这里引导你完成这个旅程。让我们从 Linux 的一点背景开始吧。\n\n要了解 Linux 是如何诞生的，让我们回到 1969 年的开始，那时贝尔实验室的 Ken Thompson 和 Dennis Ritchie 开发了 UNIX 操作系统。后来用 C 语言重写，使其更具可移植性，并最终成为广泛使用的操作系统。\n\n十年左右后，Richard Stallman 开始着手开发 GNU（GNU 不是 UNIX）项目，GNU 内核称为 Hurd，但遗憾的是从未完成。GNU 通用公共许可证（GPL），作为此举的结果，也随之产生。\n\n内核是操作系统中最重要的部分。它允许硬件与软件进行通信。它还做了很多其他事情，但我们将在另一个课程中深入探讨。现在，只需知道内核控制系统上发生的几乎所有事情即可。\n\n在此期间，其他努力，如 BSD、MINIX 等，都开发成类 UNIX 系统。然而，所有这些类 UNIX 系统共同之处是缺乏统一的内核。\n\n然后在 1991 年，一个名叫 Linus Torvalds 的年轻人开始开发我们今天所知的 Linux 内核。",
+          "quizAnswer": "Linus Torvalds",
+          "quizQuestion": "谁开发了 Linux 内核？",
+          "slug": "linuxhistory",
+          "title": "历史"
+        },
+        {
+          "exercise": "本课程无练习。",
+          "id": 2,
+          "lessonContent": "在上一课中，我们了解了每天为数百万设备提供动力的 Linux 内核。在我们继续之前，有一件事需要说明，Linux 这个术语实际上是一个误称，因为它实际上指的是 Linux 内核。然而，许多发行版使用 Linux 内核，因此通常被称为 Linux 操作系统。\n\nLinux 系统分为三个主要部分：\n\n<ul>\n<li>硬件 - 这包括系统运行的所有硬件以及内存、CPU、磁盘等。</li>\n<li>Linux 内核 - 正如我们上面讨论的那样，内核是操作系统的核心。它管理硬件并告诉硬件如何与系统交互。</li>\n<li>用户空间 - 这是您这样的用户将直接与系统交互的地方。</li>\n</ul>\n\n因此，我们需要采取的第一步是在您的计算机上安装 Linux。您有许多选择，本课程将帮助您了解并开始选择 Linux 发行版。\n\n有许多 Linux 发行版可供选择，我们将简要介绍最受欢迎的选项。",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请跳过！",
+          "slug": "choosingalinuxdistribution",
+          "title": "选择 Linux 发行版"
+        },
+        {
+          "exercise": "如果您对将 Debian 作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='https://www.debian.org/'>https://www.debian.org/</a>",
+          "id": 3,
+          "lessonContent": "<b>概述</b>\nDebian 是一个完全由自由和开源软件组成的操作系统。它广为人知，已经开发了20多年。有三个分支可供选择，稳定版、测试版和不稳定版。\n\n稳定版是一个总体上很好的分支。测试版和不稳定版是滚动发布。这意味着这些分支中的任何增量更改最终都会成为稳定版。例如，如果您想从 Windows 8 升级到 Windows 10，您必须进行完整的 Windows 10 安装。但是，如果您使用测试版，您将自动获得更新，直到它成为下一个操作系统发布版本，而无需进行完整安装。\n\n<b>软件包管理</b>\nDebian 还使用 Debian 软件包管理工具。每个 Linux 发行版都以不同的方式安装和管理软件包，并使用不同的软件包管理工具。我们将在以后的课程中更深入地讨论这个问题。\n\n<b>可配置性</b>\nDebian 可能不会获得最新的更新，但它非常稳定。如果您想要一个良好的“核心”操作系统，那么这个操作系统非常适合您。\n\n<b>用途</b>\nDebian 是任何平台的一个非常好的操作系统。",
+          "quizAnswer": "滚动",
+          "quizQuestion": "测试版和不稳定版有什么样的发布方式？",
+          "slug": "debian",
+          "title": "Debian"
+        },
+        {
+          "exercise": "如果您对将RHEL作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>",
+          "id": 4,
+          "lessonContent": "<b>概述</b>\nRed Hat Enterprise Linux通常简称为RHEL，由Red Hat开发。RHEL有严格的规定限制自由再分发，尽管它仍然免费提供源代码。\n\n<b>软件包管理</b>\nRHEL使用与Debian不同的软件包管理器，即RPM软件包管理器，我们最终也会学习到。\n\n<b>可配置性</b>\n基于RHEL的操作系统与基于Debian的操作系统略有不同，最明显的区别在于软件包管理。如果您决定选择RHEL，最好了解您将要使用它。\n\n<b>用途</b>\n正如名称所示，它主要用于企业，因此如果您需要一个稳定的服务器操作系统，这将是一个不错的选择。",
+          "quizAnswer": "RPM",
+          "quizQuestion": "RHEL使用什么软件包管理器？",
+          "slug": "redhatenterpriselinux",
+          "title": "Red Hat Enterprise Linux"
+        },
+        {
+          "exercise": "如果您对将 Ubuntu 作为您的操作系统感兴趣，请转到安装部分并尝试一下：\n<a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>",
+          "id": 5,
+          "lessonContent": "<b>概述</b>\nUbuntu 是个人计算机上最受欢迎的 Linux 发行版之一。Ubuntu 也默认发布自己的桌面环境管理器 Unity。\n\n<b>软件包管理</b>\nUbuntu 是由 Canonical 开发的基于 Debian 的操作系统。因此，它使用核心的 Debian 软件包管理系统。\n\n<b>可配置性</b>\nUbuntu 对于想要尝试 Linux 的初学者来说是一个很好的选择。Ubuntu 提供了易用性和出色的用户界面体验，这导致了它被广泛采用。它被广泛使用和支持，并且在可用性方面与其他操作系统（如OSX和Windows）最为相似。\n\n<b>用途</b>\n非常适合任何平台，包括台式机、笔记本电脑和服务器。",
+          "quizAnswer": "Debian",
+          "quizQuestion": "Ubuntu 是基于哪个操作系统的？",
+          "slug": "ubuntu",
+          "title": "Ubuntu"
+        },
+        {
+          "exercise": "如果您对将 Fedora 作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='https://getfedora.org/'>https://getfedora.org/</a>",
+          "id": 6,
+          "lessonContent": "<b>概述</b>\n由 Red Hat 支持，Fedora 项目是由社区驱动的，包含开源和免费软件。Red Hat Enterprise Linux 是基于 Fedora 分支开发的，因此可以将 Fedora 视为上游 RHEL 操作系统。最终，经过彻底测试和质量保证后，RHEL 将从 Fedora 获取更新。将 Fedora 视为使用红帽后端而不是 Debian 的 Ubuntu 等效物。\n\n<b>软件包管理</b>\n使用 Red Hat 软件包管理器。\n\n<b>可配置性</b>\n如果您想使用基于 Red Hat 的操作系统，这是一个用户友好的版本。\n\n<b>用途</b>\n如果您想要一个基于 Red Hat 的操作系统，但又不想付费，那么 Fedora 是一个很好的选择。推荐用于台式机和笔记本电脑。",
+          "quizAnswer": "Fedora",
+          "quizQuestion": "RHEL 是基于什么分支开发的？",
+          "slug": "fedora",
+          "title": "Fedora"
+        },
+        {
+          "exercise": "如果您对将Linux Mint作为操作系统感兴趣，请转到安装部分并尝试一下：<a href='http://linuxmint.com/'>http://linuxmint.com/</a>",
+          "id": 7,
+          "lessonContent": "<b>概述</b>\nLinux Mint基于Ubuntu。它使用Ubuntu的软件存储库，因此这两个发行版都提供相同的软件包。与Ubuntu相比，其他人更喜欢Linux Mint，因为它不包含Ubuntu包含的一些专有软件，比如Unity。\n\n<b>软件包管理</b>\n由于Linux Mint基于Ubuntu，因此它使用Debian软件包管理器。\n\n<b>可配置性</b>\n出色的用户界面，非常适合初学者，比Ubuntu更精简。在本课程中，我将使用Linux Mint，但也可以使用其他发行版。\n\n<b>用途</b>\n非常适合台式机和笔记本电脑。",
+          "quizAnswer": "Ubuntu",
+          "quizQuestion": "Linux Mint基于哪个发行版？",
+          "slug": "linuxmint",
+          "title": "Linux Mint"
+        },
+        {
+          "exercise": "如果您对将Gentoo作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>",
+          "id": 8,
+          "lessonContent": "<b>概述</b>\nGentoo以操作系统的灵活性而著称，但代价也不菲。它专为不介意在系统中动手的高级用户而设计。\n\n<b>软件包管理</b>\nGentoo使用自己的软件包管理工具Portage。Portage软件包管理非常模块化且易于维护，这在整个操作系统中扮演着非常灵活的重要角色。\n\n<b>可配置性</b>\n如果您刚开始接触Linux，想选择一条更具挑战性的道路，我建议选择Gentoo或Arch Linux作为您的发行版。\n\n<b>用途</b>\n非常适合台式机和笔记本电脑。",
+          "quizAnswer": "Portage",
+          "quizQuestion": "Gentoo使用哪种软件包管理系统？",
+          "slug": "gentoo",
+          "title": "Gentoo"
+        },
+        {
+          "exercise": "如果您对将 Arch 作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>",
+          "id": 9,
+          "lessonContent": "<b>概述</b>\nArch 是一个由社区驱动的轻量级和灵活的 Linux 发行版。与 Debian 类似，Arch 使用滚动发布模型，因此增量更新最终成为稳定版本。您需要动手操作才能理解系统及其功能，但作为回报，您将完全掌控系统。\n\n<b>软件包管理</b>\n它使用自己的软件包管理器 Pacman 来安装、更新和管理软件包。\n\n<b>可配置性</b>\n如果您想要一个轻量级操作系统并真正想了解 Linux，请使用 Arch！学习曲线有点陡峭，但对于那些 Linux 高级用户来说，这是一个很好的选择。\n\n<b>用途</b>\n非常适合台式机和笔记本电脑。如果您还有一个像树莓派这样的小设备，并且需要在上面安装轻量级操作系统，那么选择 Arch 绝对没错。",
+          "quizAnswer": "Pacman",
+          "quizQuestion": "Arch Linux 使用哪个软件包管理器？",
+          "slug": "archlinux",
+          "title": "Arch Linux"
+        },
+        {
+          "exercise": "如果您对将openSUSE作为操作系统感兴趣，请访问下载页面并尝试一下：<a href='https://software.opensuse.org/'>software.opensuse.org</a>",
+          "id": 10,
+          "lessonContent": "<b>概述</b>\nopenSUSE Linux是由openSUSE项目创建的。这是一个促进Linux在各处使用的社区，作为全球自由开源软件社区的一部分，以开放、透明和友好的方式共同合作。openSUSE是仍在运行的第二古老的Linux发行版，并与SUSE屡获殊荣的SUSE Linux Enterprise产品共享基本系统。\n\n<b>软件包管理</b>\n使用RPM软件包管理器。\n\n<b>可配置性</b>\nopenSUSE是新Linux用户的绝佳选择。它提供了一个易于使用的图形安装/管理应用程序（<a href=\"http://yast.github.io/\">YaST</a>）和一个整洁的基本系统，易于调整。openSUSE包含了您在互联网上无忧无虑地享受照片、视频、音乐或代码创作所需的一切，无需担心病毒/间谍软件。\n\n<b>用途</b>\nopenSUSE Leap完全可以用于台式电脑和笔记本电脑。",
+          "quizAnswer": "yast",
+          "quizQuestion": "openSUSE的管理/安装工具名称是什么？",
+          "slug": "opensuse",
+          "title": "openSUSE"
+        }
+      ],
+      "slug": "gettingstarted",
+      "title": "入门指南"
+    },
+    {
+      "description": "学习命令行的基础知识，浏览文件、目录等。",
+      "id": 2,
+      "image": "/images/chapters/commandLine.png",
+      "lessons": [
+        {
+          "exercise": "尝试一些其他 Linux 命令，看看它们的输出是什么：\n\n<ol>\n<li>$ date</li>\n<li>$ whoami</li>\n</ol>",
+          "id": 1,
+          "lessonContent": "世界是你的海蛎，或者说外壳是你的海蛎。什么是外壳？外壳基本上是一个程序，它从键盘接收你的命令并将其发送给操作系统执行。如果你曾经使用过 GUI，你可能见过像“终端”或“控制台”这样的程序，这些只是为你启动外壳的程序。在整个课程中，我们将学习外壳的奇妙之处。\n\n在本课程中，我们将使用外壳程序 bash（Bourne Again shell），几乎所有的 Linux 发行版都会默认使用 bash 外壳。还有其他可用的外壳，比如 ksh、zsh、tsch，但我们不会涉及到这些。\n\n让我们开始吧！根据你的发行版，你的外壳提示符可能会改变，但大部分情况下应该遵循以下格式：\n<pre>用户名@主机名:当前目录\npete@icebox:/home/pete $</pre>\n\n注意提示符末尾的 $？不同的外壳会有不同的提示符，在我们的情况下，$ 是给使用 Bash、Bourne 或 Korn 外壳的普通用户，当你输入命令时不需要添加提示符，只需知道它在那里。\n\n让我们从一个简单的命令开始，echo。echo 命令只是将文本参数打印到显示器上。\n\n<pre>$ echo Hello World</pre>",
+          "quizAnswer": "Hello World",
+          "quizQuestion": "当你输入 echo Hello World 时，应该输出什么到显示器上？",
+          "slug": "theshell",
+          "title": "外壳"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 2,
+          "lessonContent": "Linux 中的一切都是文件。当您深入了解 Linux 时，您会明白这一点，但现在只需记住这一点。每个文件都组织在一个分层目录树中。文件系统中的第一个目录被恰当地命名为 '根目录'。根目录中有许多文件夹和文件，您可以在其中存储更多的文件夹和文件，依此类推。以下是目录树的示例：\n\n<pre>/\n|-- bin\n|   |-- file1\n|   |-- file2\n|-- etc\n|   |-- file3\n|   `-- directory1\n|       |-- file4\n|       `-- file5\n|-- home\n|-- var\n</pre>\n\n这些文件和目录的位置被称为 '路径'。如果您有一个名为 'home' 的文件夹，里面有一个名为 'pete' 的文件夹，以及该文件夹中的另一个名为 'Movies' 的文件夹，该路径将如下所示：'/home/pete/Movies'。相当简单，对吧？\n\n在文件系统中导航，就像在现实生活中导航一样，如果您知道自己在哪里和要去哪里，就会更容易。要查看您所在的位置，可以使用 'pwd' 命令。此命令表示“打印工作目录”，它会显示您当前所在的目录。请注意，路径源自根目录。\n\n<pre>$ pwd</pre>\n\n你在哪里？我在哪里？试一试吧。",
+          "quizAnswer": "pwd",
+          "quizQuestion": "如何查找当前所在的目录？",
+          "slug": "printworkingdirectorypwdcommand",
+          "title": "pwd (Print Working Directory)"
+        },
+        {
+          "exercise": "<ol>\n<li>运行不带任何标志的 cd 命令，它会把你带到哪里？</li>\n</ol>",
+          "id": 3,
+          "lessonContent": "现在你知道自己在哪里了，让我们看看能否在文件系统中移动一下。记住，我们需要使用路径来导航。有两种不同的方式来指定路径，即绝对路径和相对路径。\n\n<ul>\n<li>绝对路径：这是从根目录开始的路径。根目录是最高领导。根目录通常显示为斜杠。每当你的路径以 / 开头时，这意味着你从根目录开始。例如，/home/pete/Desktop。</li>\n\n<li>相对路径：这是从你当前所在的文件系统位置开始的路径。如果我在位置 /home/pete/Documents 并且想要进入 Documents 内部名为 taxes 的目录，我不必指定整个从根目录开始的路径，比如 /home/pete/Documents/taxes，我只需进入 taxes/。</li>\n</ul>\n\n现在你知道路径是如何工作的，我们只需要一些东西来帮助我们切换到想要的目录。幸运的是，我们有 cd 或“change directory” 来做到这一点。\n\n<pre>$ cd /home/pete/Pictures</pre>\n\n现在我已经将我的目录位置更改为 /home/pete/Pictures。\n\n现在在这个目录中，我有一个名为 Hawaii 的文件夹，我可以通过以下方式导航到该文件夹：\n\n<pre>$ cd Hawaii</pre>\n\n注意我只使用了文件夹的名称吗？这是因为我已经在 /home/pete/Pictures 中了。\n\n总是使用绝对路径和相对路径导航可能会很累人，幸运的是，有一些快捷方式可以帮助你。\n\n<ul>\n<li>. (当前目录)。这是你当前所在的目录。</li>\n<li>.. (上级目录)。带你到当前目录的上一级目录。</li>\n<li>~ (主目录)。此目录默认为你的“主目录”。例如 /home/pete。</li>\n<li>- (上一个目录)。这将带你到刚才所在的上一个目录。</li>\n</ul>\n\n<pre>$ cd .\n$ cd ..\n$ cd ~\n$ cd -\n</pre>\n试一试吧！",
+          "quizAnswer": "cd ..",
+          "quizQuestion": "如果你在 /home/pete/Pictures 并且想要去 /home/pete，一个好的快捷方式是什么？",
+          "slug": "changedirectorycdcommand",
+          "title": "cd (Change Directory)"
+        },
+        {
+          "exercise": "使用不同的标志运行 ls 并查看您收到的输出。",
+          "id": 4,
+          "lessonContent": "现在我们知道如何在系统中移动，那么我们如何找出可用的内容呢？现在就好像我们在黑暗中移动一样。好吧，我们可以使用令人惊叹的 ls 命令来列出目录内容。ls 命令将默认列出当前目录中的目录和文件，但您也可以指定要列出目录的路径。\n\n<pre>$ ls\n$ ls /home/pete</pre>\n\nls 是一个非常有用的工具，它还会显示您查看的文件和目录的详细信息。\n\n还要注意，并非所有目录中的文件都是可见的。以 . 开头的文件名是隐藏的，但您可以使用 ls 命令查看它们，并向其传递 -a 标志（a 代表全部）。\n\n<pre>$ ls -a</pre>\n\nls 还有一个非常有用的标志，-l 代表 long，这将以详细格式显示文件的详细列表。这将显示详细信息，从左到右依次是：文件权限、链接数、所有者名称、所有者组、文件大小、最后修改时间戳和文件/目录名称。\n\n<pre>$ ls -l</pre>\n\n<pre>pete@icebox:~$ ls -l\ntotal 80\ndrwxr-x--- 7 pete penguingroup   4096 Nov 20 16:37 Desktop\ndrwxr-x--- 2 pete penguingroup   4096 Oct 19 10:46  Documents\ndrwxr-x--- 4 pete penguingroup   4096 Nov 20 09:30 Downloads\ndrwxr-x--- 2 pete penguingroup   4096 Oct  7 13:13   Music\ndrwxr-x--- 2 pete penguingroup   4096 Sep 21 14:02 Pictures\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>\n\n命令有称为标志（或参数或选项，无论您想如何称呼它）的东西，以添加更多功能。看看我们如何添加 -a 和 -l，您可以将它们一起添加为 -la。标志的顺序决定了其顺序，大多数情况下这并不重要，因此您也可以执行 ls -al，它仍然可以工作。\n\n<pre>$ ls -la</pre>",
+          "quizAnswer": "ls -a",
+          "quizQuestion": "您会使用什么命令来查看隐藏文件？",
+          "slug": "listdirectorieslscommand",
+          "title": "ls (列出目录)"
+        },
+        {
+          "exercise": "<ol>\n<li>创建一个新文件</li>\n<li>注意时间戳</li>\n<li>Touch 该文件并再次检查时间戳</li>\n</ol>",
+          "id": 5,
+          "lessonContent": "让我们学习如何创建一些文件。一个非常简单的方法是使用 touch 命令。Touch 允许你创建新的空文件。\n\n<pre>$ touch mysuperduperfile</pre>\n\n然后，新文件就创建了！\n\nTouch 还用于更改现有文件和目录的时间戳。试一试，在文件上运行 ls -l 并注意时间戳，然后 touch 该文件，时间戳将会更新。\n\n还有许多其他创建文件的方法，涉及其他内容，比如重定向和文本编辑器，但我们将在文本操作课程中介绍。",
+          "quizAnswer": "touch myfile",
+          "quizQuestion": "如何创建一个名为 myfile 的文件？",
+          "slug": "touchcommand",
+          "title": "touch"
+        },
+        {
+          "exercise": "运行 file 命令在几个不同的目录和文件上，并注意输出。",
+          "id": 6,
+          "lessonContent": "在上一课中，我们学习了关于 touch 命令，让我们再回顾一下。你是否注意到文件名不符合标准命名，就像你可能在其他操作系统（如 Windows）中看到的那样？通常，你会期望一个名为 banana.jpeg 的文件，并期望是一个 JPEG 图片文件。\n\n在 Linux 中，文件名并不需要代表文件的内容。你可以创建一个名为 funny.gif 的文件，但它实际上并不是一个 GIF 文件。\n\n要找出文件的类型，你可以使用 file 命令。它会显示文件内容的描述。\n\n<pre>$ file banana.jpg</pre>",
+          "quizAnswer": "file",
+          "quizQuestion": "你可以使用什么命令来查找文件的类型？",
+          "slug": "filecommand",
+          "title": "文件"
+        },
+        {
+          "exercise": "在不同的文件和目录上运行 cat。然后尝试 cat 多个文件。",
+          "id": 7,
+          "lessonContent": "我们几乎完成了文件导航，但首先让我们学习如何读取文件。一个简单的命令是 cat 命令，它代表 concatenate，它不仅显示文件内容，还可以合并多个文件并显示它们的输出。\n\n<pre>$ cat dogfile birdfile</pre>\n\n它不适用于查看大文件，只适用于短内容。我们会在下一课中讨论许多其他工具，用于查看更大的文本文件。",
+          "quizAnswer": "cat",
+          "quizQuestion": "查看文件内容的好方法是什么？",
+          "slug": "catcommand",
+          "title": "猫"
+        },
+        {
+          "exercise": "在文件上运行less，然后向上翻页并在文件周围浏览。尝试搜索特定单词。快速导航到文件的开头或结尾。",
+          "id": 8,
+          "lessonContent": "如果您查看的文本文件比简单输出大，less就更好了。（实际上有一个名为more的命令，执行类似的操作，所以这有些讽刺。）文本以分页方式显示，因此您可以逐页浏览文本文件。\n\n继续使用less查看文件内容。一旦进入less命令，您实际上可以使用其他键盘命令在文件中导航。\n\n<pre>$ less /home/pete/Documents/text1</pre>\n\n使用以下命令在less中导航：\n\n<ul>\n<li>q - 用于退出less并返回到您的shell。</li>\n<li>Page up，Page down，Up和Down - 使用箭头键和页面键进行导航。</li>\n<li>g - 移动到文本文件的开头。</li>\n<li>G - 移动到文本文件的末尾。</li>\n<li>/search - 您可以在文本文档中搜索特定文本。使用/作为搜索词的前缀。</li>\n<li>h - 如果您在less中需要一点关于如何使用less的帮助，请使用help。</li>\n</ul>",
+          "quizAnswer": "q",
+          "quizQuestion": "如何退出less命令？",
+          "slug": "lesscommand",
+          "title": "less"
+        },
+        {
+          "exercise": "使用向上和向下箭头键浏览您的先前命令历史记录。尝试使用 ctrl-R 进行反向搜索。",
+          "id": 9,
+          "lessonContent": "在您的 shell 中，有您之前输入的命令的历史记录，您实际上可以浏览这些命令。当您想要查找并运行以前使用过的命令而无需重新输入时，这非常有用。\n\n<pre>$ history</pre>\n\n想要运行之前执行过的相同命令？只需按向上箭头键。\n\n想要运行上一个命令而无需再次输入？使用 !!。如果您输入了 cat file1 并希望再次运行它，实际上只需输入 !!，它将运行您上次运行的命令。\n\n另一个历史记录的快捷键是 ctrl-R，这是反向搜索命令，如果按下 ctrl-R 并开始键入您想要的命令的部分，它将显示匹配项，您只需再次按下 ctrl-R 键即可浏览它们。找到要再次使用的命令后，只需按 Enter 键。\n\n我们的终端有点凌乱了吧？让我们做一点清理，使用 clear 命令清除您的显示。\n\n<pre>$ clear</pre>\n\n看起来好多了，不是吗？\n\n谈到有用的事情，任何命令行环境中最有用的功能之一是制表符补全。如果您开始键入命令、文件、目录等的开头，并按 Tab 键，它将根据您在搜索的目录中找到的内容自动补全，只要没有其他以这些字母开头的文件。例如，如果您尝试运行命令 chrome，您可以键入 chr 并按 Tab 键，它将自动补全为 chrome。",
+          "quizAnswer": "clear",
+          "quizQuestion": "清除终端的命令是什么？",
+          "slug": "historycommand",
+          "title": "历史"
+        },
+        {
+          "exercise": "复制一些文件，小心不要覆盖任何重要内容。",
+          "id": 10,
+          "lessonContent": "让我们开始复制这些文件。就像在其他操作系统中复制和粘贴文件一样，Shell 为我们提供了更简单的方法。\n\n<pre>$ cp mycoolfile /home/pete/Documents/cooldocs</pre>\n\nmycoolfile 是您要复制的文件，/home/pete/Documents/cooldocs 是您要将文件复制到的位置。\n\n您还可以复制多个文件和目录，以及使用通配符。通配符是可以替换为基于模式选择的字符，使您在搜索时具有更大的灵活性。您可以在每个命令中使用通配符以获得更大的灵活性。\n\n<ul>\n<li>* 通配符的通配符，用于表示所有单个字符或任何字符串。</li>\n<li>? 用于表示一个字符</li>\n<li>[] 用于表示括号内的任何字符</li>\n</ul>\n\n<pre>$ cp *.jpg /home/pete/Pictures</pre>\n\n这将把当前目录中所有扩展名为 .jpg 的文件复制到 Pictures 目录中。\n\n一个有用的命令是使用 -r 标志，这将递归复制目录中的文件和子目录。\n\n尝试对包含一些文件的目录使用 cp 命令将其复制到您的 Documents 目录。没有成功吗？那是因为您需要使用 -r 命令同时复制文件和目录内的内容。\n\n<pre>$ cp -r Pumpkin/ /home/pete/Documents</pre>\n\n需要注意的一点是，如果您将文件复制到具有相同文件名的目录中，该文件将被覆盖为您要复制的内容。如果您有一个不希望被意外覆盖的文件，可以使用 -i 标志（交互式）在覆盖文件之前提示您。\n\n<pre>$ cp -i mycoolfile /home/pete/Pictures</pre>",
+          "quizAnswer": "-r",
+          "quizQuestion": "复制目录时需要指定哪个标志？",
+          "slug": "copycpcommand",
+          "title": "cp (复制)"
+        },
+        {
+          "exercise": "重命名一个文件，然后将该文件移动到另一个目录。",
+          "id": 11,
+          "lessonContent": "用于移动文件，也可用于重命名文件。在标志和功能方面与cp命令非常相似。\n\n您可以这样重命名文件：\n\n<pre>$ mv 旧文件 新文件</pre>\n\n或者您可以将文件移动到另一个目录：\n\n<pre>$ mv 文件2 /home/pete/Documents</pre>\n\n并移动多个文件：\n\n<pre>$ mv 文件_1 文件_2 /某个目录</pre>\n\n您也可以重命名目录：\n\n<pre>$ mv 目录1 目录2</pre>\n\n与cp命令一样，如果您移动文件或目录，它将覆盖同一目录中的任何内容。因此，您可以使用-i标志在覆盖任何内容之前提示您。\n\n<pre>mv -i 目录1 目录2</pre>\n\n假设您确实想要移动文件以覆盖先前的文件。您还可以备份该文件，它将使用~重命名旧版本。\n\n<pre>$ mv -b 目录1 目录2</pre>",
+          "quizAnswer": "mv cat dog",
+          "quizQuestion": "如何将名为cat的文件重命名为dog？",
+          "slug": "movemvcommand",
+          "title": "mv (移动)"
+        },
+        {
+          "exercise": "创建一些目录并将一些文件移动到该目录。",
+          "id": 12,
+          "lessonContent": "我们需要一些目录来存储我们一直在处理的所有这些文件。mkdir命令（Make Directory）非常有用，如果目录不存在，它将创建一个目录。您甚至可以同时创建多个目录。\n\n<pre>$ mkdir books paintings</pre>\n\n您还可以使用-p（父目录标志）同时创建子目录。\n\n<pre>$ mkdir -p books/hemmingway/favorites</pre>",
+          "quizAnswer": "mkdir",
+          "quizQuestion": "用于创建目录的命令是什么？",
+          "slug": "makedirectorymkdircommand",
+          "title": "mkdir (创建目录)"
+        },
+        {
+          "exercise": "<ol>\n<li>创建一个名为 -file 的文件（不要忘记破折号！）。</li>\n<li>删除该文件。</li>\n</ol>",
+          "id": 13,
+          "lessonContent": "现在我觉得我们有太多文件了，让我们删除一些文件。要删除文件，您可以使用 rm 命令。rm（remove）命令用于删除文件和目录。\n\n<pre>$ rm file1</pre>\n\n使用 rm 时要小心，没有神奇的垃圾桶可以找回已删除的文件。一旦删除，它们就永远消失了，所以要小心。\n\n幸运的是，已经实施了一些安全措施，所以普通用户不能轻易删除一堆重要文件。受写保护的文件在删除之前会提示您确认。如果一个目录受写保护，也不会轻易被删除。\n\n现在如果您不在乎这些，您绝对可以删除一堆文件。\n\n<pre>$ rm -f file1</pre>\n\n-f 或 force 选项告诉 rm 删除所有文件，无论它们是否受写保护，而不会提示用户（只要您具有适当的权限）。\n\n<pre>$ rm -i file</pre>\n\n像许多其他命令一样，添加 -i 标志将提示您是否要实际删除文件或目录。\n\n<pre>$ rm -r directory</pre>\n\n默认情况下无法直接 rm 目录，您需要添加 -r 标志（递归）以删除所有文件和可能存在的任何子目录。\n\n您可以使用 rmdir 命令删除目录。\n\n<pre>$ rmdir directory</pre>",
+          "quizAnswer": "",
+          "quizQuestion": "如何删除名为 myfile 的文件？",
+          "slug": "removermcommand",
+          "title": "rm (删除)"
+        },
+        {
+          "exercise": "<ol>\n<li>从根目录查找一个文件，其中包含单词 net。</li>\n</ol>",
+          "id": 14,
+          "lessonContent": "在系统中有这么多文件，尝试找到特定文件可能会有点忙乱。好在有一个我们可以使用的命令，那就是 find！\n\n<pre>$ find /home -name puppies.jpg</pre>\n\n使用 find 时，您必须指定要搜索的目录，您要搜索的内容，在这种情况下，我们试图找到一个名为 puppies.jpg 的文件。\n\n您可以指定要查找的文件类型。\n\n<pre>$ find /home -type d -name MyFolder</pre>\n\n您可以看到我将要查找的文件类型设置为 (d) 代表目录，但我仍然是通过名称 MyFolder 进行搜索。\n\n值得注意的一点是，find 不会停止在您搜索的目录，它还会查找该目录可能包含的任何子目录中的文件。",
+          "quizAnswer": "-name",
+          "quizQuestion": "如果我想按名称搜索，应该指定哪个选项？",
+          "slug": "findcommand",
+          "title": "查找"
+        },
+        {
+          "exercise": "在echo命令、logout命令和pwd命令上运行help。",
+          "id": 15,
+          "lessonContent": "Linux具有一些很棒的内置工具，可以帮助您学习如何使用命令或检查命令的可用标志。其中一个工具是help，它是一个内置的bash命令，用于为其他bash命令（如echo、logout、pwd等）提供帮助。\n\n<pre>$ help echo</pre>\n\n这将为您提供运行echo时可以使用的描述和选项。对于其他可执行程序，通常会有一个名为--help或类似的选项。\n\n<pre>$ echo --help</pre>\n\n并非所有发布可执行程序的开发人员都会遵守这一标准，但这可能是您找到有关程序的一些帮助的最佳途径。",
+          "quizAnswer": "help",
+          "quizQuestion": "如何快速获取内置bash命令的命令行帮助？",
+          "slug": "helpcommand",
+          "title": "帮助"
+        },
+        {
+          "exercise": "在 ls 命令上运行 man 命令。",
+          "id": 16,
+          "lessonContent": "天哪，我希望这些程序中有一些手册，这样我们就可以查看更多关于它们的信息。幸运的是它们确实有！被称为 man 页面，你可以使用 man 命令查看命令的手册。\n\n<pre>$ man ls</pre>\n\nMan 页面是默认内置在大多数 Linux 操作系统中的手册。它们提供有关命令和系统其他方面的文档。\n\n尝试在一些命令上使用它，以获取更多关于它们的信息。",
+          "quizAnswer": "man",
+          "quizQuestion": "如何查看命令的手册？",
+          "slug": "mancommand",
+          "title": "man"
+        },
+        {
+          "exercise": "在 less 命令上运行 whatis 命令。",
+          "id": 17,
+          "lessonContent": "哇，到目前为止我们已经学习了相当多的命令，如果您对某个命令的功能感到怀疑，您可以使用 whatis 命令。 whatis 命令提供命令行程序的简要描述。\n\n<pre>$ whatis cat</pre>\n\n描述是从每个命令的手册页中获取的。如果您运行 whatis cat，您会看到一个简短描述的小段落。",
+          "quizAnswer": "whatis",
+          "quizQuestion": "您可以使用哪个命令来查看命令的简要描述？",
+          "slug": "whatiscommand",
+          "title": "whatis"
+        },
+        {
+          "exercise": "创建一些别名，然后删除它们。",
+          "id": 18,
+          "lessonContent": "有时输入命令可能会变得非常重复，或者如果您需要多次输入一个长命令，最好为此设置一个别名。要为命令创建别名，您只需指定一个别名并将其设置为该命令。\n\n<pre>$ alias foobar='ls -la'</pre>\n\n现在，您可以输入 foobar 而不是 ls -la，它将执行该命令，非常方便。请记住，此命令在重新启动后不会保存您的别名，因此您需要在以下位置添加永久别名：\n\n<pre>~/.bashrc</pre>\n\n或者类似的文件，如果您希望在重新启动后保留它。\n\n您可以使用 unalias 命令删除别名：\n\n<pre>$ unalias foobar</pre>",
+          "quizAnswer": "alias",
+          "quizQuestion": "用于创建别名的命令是什么？",
+          "slug": "aliascommand",
+          "title": "别名"
+        },
+        {
+          "exercise": "退出 shell 并看看会发生什么。确保你不需要在该 shell 中再做任何工作。",
+          "id": 19,
+          "lessonContent": "嗯，你确实在基础知识上做得很好。我们只是触及到了皮毛，现在你已经学会爬行，接下来的课程中，我将教你如何行走。\n\n现在，你可以给自己鼓掌并休息一下。要退出 shell，你可以使用 exit 命令\n\n<pre>$ exit</pre>\n\n或者使用 logout 命令：\n\n<pre>$ logout</pre>\n\n或者如果你在终端 GUI 中工作，你可以直接关闭终端，在下一个课程见！",
+          "quizAnswer": "exit",
+          "quizQuestion": "你如何退出 shell？",
+          "slug": "exitcommand",
+          "title": "退出"
+        }
+      ],
+      "slug": "commandline",
+      "title": "命令行"
+    },
+    {
+      "description": "学习基本文本操作和导航。",
+      "id": 3,
+      "image": "/images/chapters/textManipolation.png",
+      "lessons": [
+        {
+          "exercise": "尝试几个命令：\n\n<pre>\n$ ls -l /var/log > myoutput.txt\n$ echo Hello World > rm\n$ > somefile.txt \n</pre>",
+          "id": 1,
+          "lessonContent": "到目前为止，我们已经熟悉了许多命令及其输出，这使我们进入了下一个主题 I/O（输入/输出）流。让我们运行以下命令，然后我们将讨论它是如何工作的。\n\n<pre>$ echo Hello World > peanuts.txt</pre>\n\n刚才发生了什么？好吧，检查一下您运行该命令的目录，您应该看到一个名为 peanuts.txt 的文件，在该文件中您应该看到文本 Hello World。在一个命令中发生了很多事情，让我们来分解一下。\n\n首先让我们分解第一部分：\n\n<pre>$ echo Hello World</pre>\n\n我们知道这会将 Hello World 打印到屏幕上，但是如何实现的呢？进程使用 I/O 流来接收输入并返回输出。默认情况下，echo 命令从键盘获取输入（标准输入或 stdin），并将输出（标准输出或 stdout）返回到屏幕上。因此，当您在 shell 中键入 echo Hello World 时，您会在屏幕上看到 Hello World。但是，I/O 重定向允许我们更改此默认行为，从而提供更大的文件灵活性。\n\n让我们继续处理命令的下一部分：\n\n<pre> > </pre>\n\n> 是一个重定向运算符，允许我们更改标准输出的位置。它允许我们将 echo Hello World 的输出发送到文件而不是屏幕上。如果文件不存在，它将为我们创建它。但是，如果文件已经存在，它将覆盖它（根据您使用的 shell，您可以添加一个 shell 标志来防止这种情况发生）。\n\n这基本上就是 stdout 重定向的工作原理！\n\n好吧，假设我不想覆盖我的 peanuts.txt，幸运的是，也有一个重定向运算符可以做到这一点，>>：\n\n<pre>$ echo Hello World >> peanuts.txt</pre>\n\n这将将 Hello World 追加到 peanuts.txt 文件的末尾，如果文件不存在，它将像 > 重定向器一样为我们创建它！",
+          "quizAnswer": ">>",
+          "quizQuestion": "您使用哪个重定向器将输出追加到文件中？",
+          "slug": "stdoutstandardoutredirect",
+          "title": "stdout (Standard Out)"
+        },
+        {
+          "exercise": "尝试一些命令：\n<pre>\n$ echo <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ ls <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ pwd <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n</pre>",
+          "id": 2,
+          "lessonContent": "在我们之前的课程中，我们学习到我们有不同的stdout流可以使用，比如文件或屏幕。同样，我们也可以使用不同的标准输入(stdin)流。我们知道我们可以从键盘等设备获得stdin，但我们也可以使用文件、其他进程的输出和终端，让我们看一个例子。\n\n让我们在之前的课程中使用peanuts.txt文件作为示例，记住它里面有文本“Hello World”。\n\n<pre>$ cat <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt </pre>\n\n就像我们用于stdout重定向的 <b>&gt;</b> 一样，我们可以使用 <b>&lt;</b> 来进行stdin重定向。\n\n通常在cat命令中，您将一个文件发送给它，该文件将成为stdin，在这种情况下，我们将peanuts.txt重定向为我们的stdin。然后cat peanuts.txt的输出，也就是Hello World，被重定向到另一个名为banana.txt的文件。",
+          "quizAnswer": "<",
+          "quizQuestion": "您使用哪个重定向符号来重定向stdin？",
+          "slug": "stdinstandardinredirect",
+          "title": "stdin (标准输入)"
+        },
+        {
+          "exercise": "以下命令是在做什么？\n\n<pre>$ ls /fake/directory >> /dev/null 2>&1</pre>",
+          "id": 3,
+          "lessonContent": "现在让我们尝试一些略有不同的东西，尝试列出系统中不存在的目录的内容，并再次将输出重定向到 peanuts.txt 文件。\n\n<pre>$ ls /fake/directory > peanuts.txt </pre>\n\n你应该看到的是：\n\n<pre>ls: 无法访问 /fake/directory: 没有那个文件或目录</pre>\n\n现在你可能在想，难道这条消息不应该被发送到文件中吗？实际上这里还有另一个 I/O 流在起作用，称为标准错误（stderr）。默认情况下，stderr 也会将其输出发送到屏幕上，它是一个完全不同于 stdout 的流。因此，你需要以不同的方式重定向其输出。\n\n不幸的是，重定向器不像使用 <b>&lt;</b> 或 <b>&gt;</b> 那样简单。我们将不得不使用文件描述符。文件描述符是用于访问文件或流的非负数。稍后我们将深入讨论这一点，但现在要知道 stdin、stdout 和 stderr 的文件描述符分别是 0、1 和 2。\n\n因此，如果我们现在想将 stderr 重定向到文件中，可以这样做：\n\n<pre>$ ls /fake/directory 2> peanuts.txt</pre>\n\n你应该在 peanuts.txt 文件中看到只有 stderr 消息。\n\n那么如果我想在 peanuts.txt 文件中看到 stderr 和 stdout 两者的输出呢？也可以使用文件描述符来实现：\n\n<pre>$ ls /fake/directory > peanuts.txt 2>&1</pre>\n\n这将 ls /fake/directory 的结果发送到 peanuts.txt 文件，然后通过 2>&1 将 stderr 重定向到 stdout。这里操作的顺序很重要，2>&1 将 stderr 发送到 stdout 指向的位置。在这种情况下，stdout 指向一个文件，因此 2>&1 也将 stderr 发送到文件中。因此，如果你打开 peanuts.txt 文件，你应该可以看到 stderr 和 stdout。在我们的情况下，上述命令只输出 stderr。\n\n还有一种更简洁的方式可以将 stdout 和 stderr 都重定向到一个文件中：\n\n<pre>$ ls /fake/directory &> peanuts.txt</pre>\n\n那么如果我不想要任何杂乱信息，想要完全摆脱 stderr 消息呢？你也可以将输出重定向到一个名为 /dev/null 的特殊文件中，它会丢弃任何输入。\n\n<pre>$ ls /fake/directory 2> /dev/null</pre>",
+          "quizAnswer": "2>",
+          "quizQuestion": "stderr 的重定向器是什么？",
+          "slug": "stderrstandarderrorredirect",
+          "title": "stderr (标准错误)"
+        },
+        {
+          "exercise": "尝试以下命令：\n<pre>$ ls | tee peanuts.txt banan.txt</pre>",
+          "id": 4,
+          "lessonContent": "现在让我们进入一些管道操作，虽然不完全是，但有点像。让我们尝试一个命令：\n\n<pre>$ ls -la /etc</pre>\n\n你应该会看到一个非常长的项目列表，实际上有点难以阅读。与其将此输出重定向到文件，不如直接在另一个命令中查看输出，这样不是更好吗？我们可以做到！\n\n<pre>$ ls -la /etc | less </pre>\n\n管道操作符|，用竖线表示，允许我们获取一个命令的stdout，并将其作为另一个进程的stdin。在这种情况下，我们获取了ls -la /etc的stdout，然后将其<i>管道</i>到less命令。管道命令非常有用，我们将继续永远使用它。\n\n那么，如果我想将命令的输出写入两个不同的流中怎么办？使用tee命令就可以实现：\n\n<pre>$ ls | tee peanuts.txt</pre>\n\n你应该在屏幕上看到ls的输出，如果打开peanuts.txt文件，你也应该看到相同的信息！",
+          "quizAnswer": "|",
+          "quizQuestion": "哪个键代表管道操作符？",
+          "slug": "pipeteeredirect",
+          "title": "管道和tee"
+        },
+        {
+          "exercise": "以下命令的输出是什么？为什么？\n<pre>$ echo $HOME</pre>",
+          "id": 5,
+          "lessonContent": "运行以下命令：\n\n<pre>$ echo $HOME</pre>\n\n您应该看到您的主目录路径，我的看起来像是 /home/pete。\n\n这个命令呢？\n\n<pre>$ echo $USER </pre>\n\n您应该看到您的用户名！\n\n这些信息是从哪里来的？它们来自您的环境变量。您可以通过输入以下命令查看这些变量\n\n<pre>$ env </pre>\n\n这会输出关于您当前设置的环境变量的大量信息。这些变量包含了shell和其他进程可以使用的有用信息。\n\n这里是一个简短的示例：\n\n<pre>\nPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\nPWD=/home/user\nUSER=pete\n</pre>\n\n\n其中一个特别重要的变量是 PATH 变量。您可以通过在变量名前面加上 $ 来访问这些变量，就像这样：\n\n<pre>\n$ echo $PATH\n/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\n</pre>\n\n这将返回一个由冒号分隔的路径列表，当系统运行命令时会搜索这些路径。假设您手动从互联网下载并安装一个软件包，并将其放在一个非标准目录中，想要运行该命令，您输入 $ coolcommand，提示说找不到命令。那很荒谬，您正在查看一个文件夹中的二进制文件并且知道它存在。发生的情况是 $PATH 变量不检查该目录以查找此二进制文件，因此会抛出错误。\n\n假设您有大量二进制文件想要从该目录运行，您可以修改 PATH 变量以在 PATH 环境变量中包含该目录。",
+          "quizAnswer": "env",
+          "quizQuestion": "如何查看您的环境变量？",
+          "slug": "envenvironment",
+          "title": "env (环境)"
+        },
+        {
+          "exercise": "以下命令做什么？为什么？\n\n<pre>$ cut -c 5-10 sample.txt\n$ cut -c 5- sample.txt\n$ cut -c -5 sample.txt\n</pre>",
+          "id": 6,
+          "lessonContent": "我们将学习一些有用的命令，用于处理文本。在开始之前，让我们创建一个我们将要操作的文件。复制并粘贴以下命令，然后在lazy和dog之间添加一个制表符（按住Ctrl-v + TAB）。\n\n<pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>\n\n我们将学习的第一个命令是cut命令。它从文件中提取文本的部分。\n\n按字符列表提取内容：\n\n<pre>$ cut -c 5 sample.txt</pre>\n\n这会输出文件每行的第5个字符。在这种情况下是\"q\"，请注意，空格也算一个字符。\n\n要按字段提取内容，我们需要做一点修改：\n\n<pre>$ cut -f 2 sample.txt</pre>\n\n-f或字段标志根据字段切割文本，默认情况下使用制表符作为分隔符，因此用制表符分隔的所有内容都被视为一个字段。您应该看到\"dog\"作为输出。\n\n您可以将字段标志与分隔符标志结合使用，以按自定义分隔符提取内容：\n\n<pre>$ cut -f 1 -d \";\" sample.txt</pre>\n\n这将把制表符分隔符更改为\";\"分隔符，由于我们正在切割第一个字段，结果应该是\"The quick brown\"。",
+          "quizAnswer": "cut -c 1",
+          "quizQuestion": "您将使用哪个命令来获取文件中每行的第一个字符？",
+          "slug": "cutcommand",
+          "title": "cut"
+        },
+        {
+          "exercise": "尝试将多个文件粘贴在一起，会发生什么？",
+          "id": 7,
+          "lessonContent": "paste 命令类似于 cat 命令，它将文件中的行合并在一起。让我们创建一个包含以下内容的新文件：\n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\n让我们将所有这些行合并为一行：\n\n<pre>$ paste -s sample2.txt</pre>\n\npaste 的默认分隔符是 TAB，因此现在有一行，其中每个单词之间用 TAB 分隔。\n\n让我们将这个分隔符（-d）更改为更易读的内容：\n\n<pre>$ paste -d ' ' -s sample2.txt</pre>\n\n现在所有内容应该在一行上，用空格分隔。",
+          "quizAnswer": "-s",
+          "quizQuestion": "使用 paste 命令使所有内容都在一行上时要使用哪个标志？",
+          "slug": "pastecommand",
+          "title": "paste"
+        },
+        {
+          "exercise": "以下命令的作用是什么？为什么？\n\n<pre>$ head -c 15 /var/log/syslog</pre>",
+          "id": 8,
+          "lessonContent": "假设我们有一个非常长的文件，实际上我们有许多可供选择，继续执行 cat /var/log/syslog。您应该看到一页又一页的文本。如果我只想看到这个文本文件的前几行怎么办？好吧，我们可以使用 head 命令来做到这一点，默认情况下，head 命令会显示文件中的前 10 行。\n\n<pre>$ head /var/log/syslog</pre>\n\n您还可以将行数修改为您选择的任何值，假设我想看到前 15 行。\n\n<pre>$ head -n 15 /var/log/syslog</pre>\n\n-n 标志代表行数。",
+          "quizAnswer": "-n",
+          "quizQuestion": "您会使用哪个标志来更改您想要查看的 head 命令的行数？",
+          "slug": "headcommand",
+          "title": "头部"
+        },
+        {
+          "exercise": "查看 tail 的 man 手册，并阅读一些我们没有讨论的其他命令。\n\n<pre>$ man tail</pre>",
+          "id": 8,
+          "lessonContent": "类似于 head 命令，tail 命令默认情况下让您看到文件的最后 10 行。\n\n<pre>$ tail /var/log/syslog</pre>\n\n与 head 一起，您可以更改要查看的行数。\n\n<pre>$ tail -n 10 /var/log/syslog</pre>\n\n另一个很棒的选项是 -f（跟踪）标志，这将随着文件的增长而跟踪文件。尝试一下，看看会发生什么。\n\n<pre>$ tail -f /var/log/syslog</pre>\n\n当您与系统交互并使用 tail -f 时，您的 syslog 文件将不断变化，您可以看到添加到该文件的所有内容。",
+          "quizAnswer": "-f",
+          "quizQuestion": "在 tail 中用于跟踪文件的标志是什么？",
+          "slug": "tailcommand",
+          "title": "tail"
+        },
+        {
+          "exercise": "如果您只键入expand而没有文件输入会发生什么？",
+          "id": 10,
+          "lessonContent": "在我们关于cut命令的课程中，我们有一个包含制表符的sample.txt文件。通常，制表符会显示明显的区别，但有些文本文件显示得不够清晰。在文本文件中有制表符可能不是您想要的间距。要将制表符更改为空格，请使用expand命令。\n\n<pre>$ expand sample.txt</pre>\n\n上述命令将输出每个制表符转换为一组空格。要将此输出保存到文件中，请使用输出重定向，如下所示。\n\n<pre>$ expand sample.txt > result.txt</pre>\n\n与expand相反，我们可以使用unexpand命令将每组空格转换回制表符：\n\n<pre>$ unexpand -a result.txt</pre>",
+          "quizAnswer": "expand",
+          "quizQuestion": "用于将制表符转换为空格的命令是什么？",
+          "slug": "expandunexpandcommand",
+          "title": "展开和收缩"
+        },
+        {
+          "exercise": "连接两个具有不同行数的文件，会发生什么？",
+          "id": 11,
+          "lessonContent": "join命令允许您通过共同字段将多个文件连接在一起：\n\n假设我有两个文件想要连接在一起：\n<pre>file1.txt\n1 John\n2 Jane\n3 Mary\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n\n$ join file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\n看到它是如何将我的文件连接在一起的吗？它们默认通过第一个字段连接在一起，字段必须相同，如果不同，您可以对它们进行排序，所以在这种情况下，文件通过1、2、3连接在一起。\n\n我们如何连接以下文件？\n\n<pre>file1.txt\nJohn 1\nJane 2\nMary 3\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n</pre>\n\n要连接此文件，您需要指定要连接的字段，这种情况下，我们想要file1.txt上的第2个字段和file2.txt上的第1个字段，因此命令看起来像这样：\n\n<pre>\n$ join -1 2 -2 1 file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\n-1指的是file1.txt，-2指的是file2.txt。相当巧妙。您还可以使用split命令将文件拆分为不同的文件：\n\n<pre>$ split somefile</pre>\n\n这将把它拆分成不同的文件，默认情况下，它们将在达到1000行限制时拆分。文件默认命名为x**。",
+          "quizAnswer": "join cat dog cow",
+          "quizQuestion": "您会使用什么命令来连接名为cat dog cow的文件？",
+          "slug": "joinsplitcommand",
+          "title": "连接和拆分"
+        },
+        {
+          "exercise": "sort 的真正威力在于其与其他命令结合的能力，尝试以下命令，看看会发生什么？\n\n<pre>$ ls /etc | sort -rn</pre>",
+          "id": 12,
+          "lessonContent": "sort 命令对于排序行很有用。\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ sort file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\n您还可以进行逆向排序：\n\n<pre>$ sort -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\n还可以按数值排序：\n\n<pre>$ sort -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+          "quizAnswer": "-r",
+          "quizQuestion": "进行逆向排序时使用哪个标志？",
+          "slug": "sortcommand",
+          "title": "排序"
+        },
+        {
+          "exercise": "尝试以下命令会发生什么？\n\n<pre>$ tr -d ello\nhello</pre>",
+          "id": 13,
+          "lessonContent": "tr (translate) 命令允许您将一组字符翻译为另一组字符。让我们尝试一个将所有小写字符翻译为大写字符的示例。\n\n<pre>$ tr a-z A-Z\nhello\nHELLO</pre>\n\n正如您所看到的，我们将 a-z 的范围转换为 A-Z，并且我们键入的所有小写文本都变成了大写。",
+          "quizAnswer": "tr",
+          "quizQuestion": "用于翻译字符的命令是什么？",
+          "slug": "trtranslatecommand",
+          "title": "tr (翻译)"
+        },
+        {
+          "exercise": "如果尝试 uniq -uc，将得到什么结果？",
+          "id": 14,
+          "lessonContent": "uniq (unique) 命令是另一个用于解析文本的有用工具。\n\n假设您有一个包含许多重复行的文件：\n\n<pre>\nreading.txt\nbook\nbook\npaper\npaper\narticle\narticle\nmagazine\n</pre>\n\n如果您想要删除重复项，您可以使用 uniq 命令：\n\n<pre>$ uniq reading.txt\nbook\npaper\narticle\nmagazine</pre>\n\n让我们统计每行出现的次数：\n\n<pre>$ uniq -c reading.txt\n2 book\n2 paper\n2 article\n1 magazine</pre>\n\n只获取唯一值：\n\n<pre>$ uniq -u reading.txt\nmagazine</pre>\n\n只获取重复值：\n\n<pre>$ uniq -d reading.txt\nbook\npaper\narticle\n</pre>\n\n<b>注意</b>：uniq 仅在重复行相邻时才能检测到重复行。例如：\n\n假设您有一个包含非相邻重复行的文件：\n\n<pre>\nreading.txt\nbook\npaper\nbook\npaper\narticle\nmagazine\narticle\n</pre>\n\n<pre>$ uniq reading.txt\nreading.txt\nbook\npaper\nbook\npaper\narticle\nmagazine\narticle</pre>\n\nuniq 返回的结果将包含所有条目，不像第一个示例那样。\n\n为了克服 uniq 的这一限制，我们可以将 sort 与 uniq 结合使用：\n\n<pre>\n$ sort reading.txt | uniq\narticle\nbook\nmagazine\npaper</pre>",
+          "quizAnswer": "uniq",
+          "quizQuestion": "您会使用什么命令在文件中删除重复项？",
+          "slug": "uniquniquecommand",
+          "title": "uniq (Unique)"
+        },
+        {
+          "exercise": "如何使用nl文件获取行数的总计数，而无需搜索整个输出？提示：使用您在本课程中学到的其他一些命令。",
+          "id": 15,
+          "lessonContent": "wc（word count）命令显示文件中单词的总数。\n\n<pre>$ wc /etc/passwd\n 96     265    5925 /etc/passwd\n</pre>\n\n它分别显示行数、单词数和字节数。\n\n要仅查看特定字段的计数，分别使用-l、-w或-c。\n\n<pre>$ wc -l /etc/passwd\n96</pre>\n\n您可以使用nl（number lines）命令来检查文件中行数的计数。\n\n<pre>\nfile1.txt\ni\nlike\nturtles\n</pre>\n\n<pre>$ nl file1.txt\n1. i\n2. like\n3. turtles\n</pre>",
+          "quizAnswer": "wc -w",
+          "quizQuestion": "您会使用什么命令来获取文件中单词的总数以及仅单词？",
+          "slug": "nlwccommand",
+          "title": "wc and nl"
+        },
+        {
+          "exercise": "您可能听说过egrep或fgrep，这些是已弃用的grep调用，现已由grep -E和grep -F取代。阅读grep手册以了解更多信息。",
+          "id": 16,
+          "lessonContent": "grep命令可能是您将使用的最常见的文本处理命令。它允许您搜索文件以查找与某种模式匹配的字符。如果您想知道某个目录中是否存在文件，或者想知道文件中是否找到了某个字符串，您肯定不会逐行查找文本，而会使用grep！\n\n让我们以sample.txt文件为例：\n\n<pre>$ grep fox sample.txt</pre>\n\n您应该看到grep在sample.txt文件中找到了fox。\n\n您还可以使用-i标志搜索不区分大小写的模式：\n\n<pre>$ grep -i somepattern somefile</pre>\n\n要使grep更加灵活，您可以将其与其他命令结合使用|。\n\n<pre>$ env | grep -i User</pre>\n\n正如您所看到的，grep非常灵活。您甚至可以在模式中使用正则表达式：\n\n<pre>$ ls /somedir | grep '.txt$'</pre>\n\n应返回以.txt结尾的所有文件在somedir中。",
+          "quizAnswer": "grep",
+          "quizQuestion": "您使用哪个命令来查找特定模式？",
+          "slug": "grepcommand",
+          "title": "grep"
+        }
+      ],
+      "slug": "textfu",
+      "title": "文本操作"
+    },
+    {
+      "description": "使用 vim 和 emacs 像 Linux 蜘蛛猴一样浏览文本。",
+      "id": 4,
+      "image": "/images/chapters/textManipolationAdvance.png",
+      "lessons": [
+        {
+          "exercise": "尝试将正则表达式与 grep 结合起来，搜索一些文件。\n\n<pre>\ngrep [在此处放入正则表达式] [文件]",
+          "id": 1,
+          "lessonContent": "正则表达式是一种强大的工具，用于基于模式的选择。它使用类似于我们已经遇到的特殊符号，比如 * 通配符。\n\n我们将介绍一些最常见的正则表达式，这些几乎适用于任何编程语言。\n\n我们将使用以下短语作为我们的测试字符串：\n<pre>\nsally sells seashells \nby the seashore\n</pre>\n\n<b>1. 以 ^ 开头的行</b>\n\n<pre>\n<b>^</b>by\n将匹配行 \"by the seashore\"\n</pre>\n\n<b>2. 以 $ 结尾的行</b>\n\n<pre>\nseashore<b>$</b>\n将匹配行 \"by the seashore\"\n</pre>\n\n<b>3. 用 . 匹配任意单个字符</b>\n\n<pre>\nb<b>.</b>\n将匹配 by\n</pre>\n\n<b>4. 使用 [] 和 () 的括号符号</b>\n\n这可能有点棘手，括号允许我们指定括号中包含的字符。\n\n<pre>\nd<b>[iou]</b>g\n将匹配：dig, dog, dug\n</pre>\n\n前面的锚点 ^ 在括号中使用时表示除括号内字符外的任何字符。\n\n<pre>\nd<b>[^i]</b>g\n将匹配：dog 和 dug，但不包括 dig\n</pre>\n\n括号还可以使用范围来增加要使用的字符数量。\n\n<pre>\nd<b>[a-c]</b>g\n将匹配类似 dag、dbg 和 dcg 的模式\n</pre>\n\n但要注意，括号是区分大小写的：\n\n<pre>\nd<b>[A-C]</b>g\n将匹配 dAg、dBg 和 dCg，但不包括 dag、dbg 和 dcg\n</pre>\n\n这些就是一些基本的正则表达式。",
+          "quizAnswer": ".",
+          "quizQuestion": "你会使用什么正则表达式来匹配单个字符？",
+          "slug": "regularexpressionsregex",
+          "title": "正则表达式 (Regular Expressions)"
+        },
+        {
+          "exercise": "稍微了解一下 vim 和 emacs：\n\n<a href=\"http://www.vim.org/\">Vim</a>\n<a href=\"https://www.gnu.org/software/emacs/\">emacs</a>",
+          "id": 2,
+          "lessonContent": "如果你把几个死忠的 Linux 用户聚在一起，问他们最好用的文本编辑器是什么，你会听到关于 vim 或 emacs 的神圣之争永无止境。如果你在意生命安全，千万别提及使用 GUI 编辑器。\n\nVim 和 emacs 是流行的文本编辑器，在大多数 Linux 发行版上默认安装，它们各有优缺点。如果你想像忍者一样熟练地操作系统，你需要选择其中一个文本编辑器来使用。它们本质上是编码、文字处理和基本上一体化的编辑器。",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请继续！",
+          "slug": "texteditorsvimoremacs",
+          "title": "文本编辑器"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 3,
+          "lessonContent": "Vim 代表 vi（改进版），正如其名称所示，它代表 vi 文本编辑器命令的改进版本。\n\n它非常轻量级，使用 vim 打开和编辑文件快速简便。而且几乎总是可用的，如果你启动了一个随机的 Linux 发行版，很可能 vim 是默认安装的。\n\n要启动 vim，只需输入：<pre>vim</pre>",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请继续！",
+          "slug": "vimtexteditor",
+          "title": "Vim（Vi 改进版）"
+        },
+        {
+          "exercise": "尝试使用搜索键，在 vim 中打开文本文件：vim [textfile]，然后开始搜索！",
+          "id": 4,
+          "lessonContent": "要搜索表达式，只需在 vim 会话中键入 / 键，然后输入您要搜索的结果。按下回车后，您可以按 \"n\" 向前或按 \"N\" 向后查看搜索结果。\n\n<pre>\n我的漂亮文件非常漂亮。\n\n/漂亮\n\n将在文本文件中找到漂亮的单词。\n</pre>\n\n\n? 搜索命令将向后搜索文本文件，因此在上一个示例中，最后一个漂亮会首先出现。\n<pre>\n我的漂亮文件非常漂亮。\n\n?漂亮\n\n将在文本文件中找到漂亮的单词。\n</pre>",
+          "quizAnswer": "/",
+          "quizQuestion": "在 vim 中用于搜索的键是什么？",
+          "slug": "vimsearchpatterns",
+          "title": "Vim 搜索模式"
+        },
+        {
+          "exercise": "此课程无练习。",
+          "id": 5,
+          "lessonContent": "现在你可能会注意到，这里根本不使用鼠标。要在 vim 中导航文本文档，请使用以下键：\n\n<ul>\n<li>h 或左箭头 - 将向左移动一个字符</li>\n<li>k 或上箭头 - 将向上移动一行</li>\n<li>j 或下箭头 - 将向下移动一行</li>\n<li>l 或右箭头 - 将向右移动一个字符</li>\n</ul>",
+          "quizAnswer": "j",
+          "quizQuestion": "用什么字母向下移动？",
+          "slug": "vimnavigation",
+          "title": "Vim 导航"
+        },
+        {
+          "exercise": "尝试进入和退出插入模式。",
+          "id": 6,
+          "lessonContent": "<p>现在你可能已经注意到，如果你尝试输入一些内容，你将无法输入。那是因为你处于命令模式。这可能会变得非常令人困惑，特别是当你只想打开一个文件并输入文本时。命令模式用于输入命令，如h、j、k、l等。要插入文本，你需要先进入插入模式。</p><p></p><ul><br><li>i - 在光标前插入文本</li><br><li>O - 在上一行插入文本</li><br><li>o - 在下一行插入文本</li><br><li>a - 在光标后追加文本</li><br><li>A - 在行尾追加文本</li><br></ul><p></p><p>注意当你输入任何这些插入模式时，你会看到vim已经进入了插入模式，显示在shell底部。要退出插入模式并返回命令模式，只需按Esc键。</p>",
+          "quizAnswer": "i",
+          "quizQuestion": "在光标前插入文本使用哪个按键？",
+          "slug": "viminsertingappendingtext",
+          "title": "Vim 添加文本"
+        },
+        {
+          "exercise": "我知道这节课添加了一些奇怪的东西，打开文本编辑器，尝试一下这些内容。",
+          "id": 7,
+          "lessonContent": "现在我们已经写了几行，让我们再编辑一下，去掉一些多余的内容。<br><p></p><ul><br><li>x - 用于剪切所选文本，也用于删除字符</li><br><li>dd - 用于删除当前行</li><br><li>y - 复制所选内容</li><br><li>yy - 复制当前行</li><br><li>p - 在光标之前粘贴已复制的文本</li><br></ul><p></p>",
+          "quizAnswer": "dd",
+          "quizQuestion": "用于删除整行的字符是什么？",
+          "slug": "vimediting",
+          "title": "Vim 编辑"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 8,
+          "lessonContent": "现在您已经完成了编辑，是时候实际保存并退出 vim 了：\n\n<ul>\n<li>:w - 写入或保存文件</li>\n<li>:q - 退出 vim</li>\n<li>:wq - 写入然后退出</li>\n<li>:q! - 不保存文件退出 vim</li>\n<li>ZZ - 等同于 :wq，但比较快捷</li>\n\n<li>u - 撤销上一步操作</li>\n<li>Ctrl-r - 重做上一步操作</li>\n</ul>\n\n您可能认为 ZZ 不是必需的，但最终您会发现您的手指可能更倾向于使用它，而不是 :wq。\n\n哇，这是关于 Vim 的大量信息。现在您已经了解了一些基本命令和导航，可以开始编辑一些文本文件了。在 vim 中还有许多选项可供您使用，以提高您掌握这个文本编辑器的能力，请查看 Vim 的在线指南。",
+          "quizAnswer": ":q!",
+          "quizQuestion": "如何在不保存的情况下退出 vim？",
+          "slug": "vimsavingandexiting",
+          "title": "Vim 保存和退出"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 9,
+          "lessonContent": "Emacs 适用于希望使用功能强大的文本编辑器的用户，这可能是一个轻描淡写的说法，因为你基本上生活在 emacs 中。您可以在 emacs 中进行所有的代码编辑、文件操作等。它比 vim 加载速度慢一点，学习曲线比较陡峭，但如果您想要一个功能强大且极具扩展性的编辑器，那么 Emacs 就是您的选择。当我说扩展性时，我真的是指您可以编写脚本来扩展 Emacs 的功能。\n\n要启动 Emacs，只需使用：\n\n<pre>emacs</pre>\n\n您应该会看到默认的欢迎缓冲区。\n\n在 Emacs 中，缓冲区是您的文本所在的位置。因此，如果您打开一个文件，将使用一个缓冲区来存储该文件的内容。您可以同时打开多个缓冲区，并且可以轻松地在缓冲区之间切换。",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请继续！",
+          "slug": "emacstexteditor",
+          "title": "Emacs"
+        },
+        {
+          "exercise": "尝试打开文件和保存文件。",
+          "id": 10,
+          "lessonContent": "在许多（如果不是全部）Emacs 文档中，您会看到类似 C-[字母] 的语法。这只是表示按下 Ctrl-字母键，但为了简便起见，我们将 Ctrl 缩写为 C。如果您看到类似 M-[字母] 的语法，那意味着使用 Meta 键，通常是 Alt 键。\n\n<b>保存文件</b>\n\n<pre>\nC-x C-s - 保存文件\nC-x C-w - 另存为\nC-x s - 保存所有\n</pre>\n\n保存文件选项会提示您是否要保存每个文件。\n\n<b>打开文件</b>\n\n<pre>\nC-x C-f\n</pre>\n\n这将提示您输入要打开的文件名。如果您没有已经存在的文件，它将创建一个新文件。您也可以加载一个目录。",
+          "quizAnswer": "C-x C-f",
+          "quizQuestion": "用于打开文件的命令是什么？",
+          "slug": "emacsmanipulatefiles",
+          "title": "Emacs 操作文件"
+        },
+        {
+          "exercise": "尝试操作缓冲区。",
+          "id": 11,
+          "lessonContent": "要在缓冲区（或您正在访问的文件）之间移动，请使用以下命令：\n\n<b>切换缓冲区</b>\n\n<pre>\nC-x b - 切换缓冲区\nC-x right arrow - 右循环浏览缓冲区\nC-x left arrow - 左循环浏览缓冲区\n</pre>\n\n<b>关闭缓冲区</b>\n\n<pre>C-x k</pre>\n\n<b>拆分当前缓冲区</b>\n\n<pre>C-x 2</pre>\n\n这允许您在一个屏幕上看到多个缓冲区。要在这些缓冲区之间移动，请使用：C-x o\n\n<b>将单个缓冲区设置为当前屏幕</b>\n\n<pre>C-x 1</pre>\n\n如果您曾经使用过像screen和tmux这样的终端复用器，那么缓冲区命令会感觉非常熟悉。",
+          "quizAnswer": "C-x k",
+          "quizQuestion": "如何关闭一个缓冲区？",
+          "slug": "emacsbuffernavigation",
+          "title": "Emacs缓冲区导航"
+        },
+        {
+          "exercise": "尝试使用文本导航。",
+          "id": 12,
+          "lessonContent": "<b>文本导航</b>\n\n<pre>\nC-up箭头：向上移动一个段落\nC-down箭头：向下移动一个段落\nC-left箭头：向左移动一个单词\nC-right箭头：向右移动一个单词\nM->：移动到缓冲区末尾\n</pre>\n\n通过文本导航，您的常规文本按钮将按照预期工作，home、end、page up、page down以及箭头键等。\n\n<b>剪切和粘贴</b>\n\n要在Emacs中剪切（删除）或粘贴（插入），您需要先选择文本。要选择文本，请将光标移动到要剪切或粘贴的位置，然后按下<pre>C空格键</pre>，然后您可以使用导航键选择所需的文本。现在您可以这样进行剪切和粘贴：\n\n<pre>\nC-w：剪切\nC-y：粘贴\n</pre>",
+          "quizAnswer": "M->",
+          "quizQuestion": "如何移动到缓冲区末尾？",
+          "slug": "emacsediting",
+          "title": "Emacs编辑"
+        },
+        {
+          "exercise": "访问 Emacs 网站以了解更多命令。 <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a>",
+          "id": 13,
+          "lessonContent": "<b>关闭 Emacs</b>\n\n<pre>C-x C-c</pre>\n\n如果有任何打开的缓冲区，在退出 Emacs 之前它会要求您保存。\n\n<b>感到困惑？</b>\n\n<pre>C-h C-h：帮助菜单</pre>\n\n<b>撤销</b>\n\n<pre>C-x u</pre>\n\n正如您所见，Emacs 有更多的功能，因此学习曲线稍微陡峭。不过，作为交换，您将获得一个非常强大的文本编辑器。",
+          "quizAnswer": "C-h C-h",
+          "quizQuestion": "如何访问帮助菜单？",
+          "slug": "emacsexitingandhelp",
+          "title": "Emacs 退出和帮助"
+        }
+      ],
+      "slug": "advancedtextfu",
+      "title": "高级文本操作"
+    },
+    {
+      "description": "了解用户角色和管理。",
+      "id": 5,
+      "image": "/images/chapters/userManagment.png",
+      "lessons": [
+        {
+          "exercise": "本课程没有练习。",
+          "id": 1,
+          "lessonContent": "在任何传统操作系统中，都存在用户和用户组。它们仅用于访问和权限。运行进程时，该进程将作为该进程的所有者运行，无论是简还是鲍勃。文件访问和所有权也取决于权限。您不希望简能看到鲍勃的文件，反之亦然。\n\n每个用户都有自己的主目录，其中存储其特定于用户的文件，这通常位于/home/用户名中，但在不同的发行版中可能会有所不同。\n\n系统使用用户ID（UID）来管理用户，用户名是将用户与身份关联的友好方式，但系统通过其UID标识用户。系统还使用用户组来管理权限，用户组只是具有由该组设置的权限的用户集，系统通过其组ID（GID）来标识它们。\n\n在Linux中，除了正常使用系统的人之外，您还会有用户。有时这些用户是连续运行进程以保持系统运行的系统守护程序。最重要的用户之一是root或超级用户，root是系统上最强大的用户，root可以访问任何文件，并启动和终止任何进程。因此，始终以root身份操作可能是危险的，您可能会意外删除系统关键文件。幸运的是，如果需要root访问权限并且用户具有root访问权限，则可以使用sudo命令以root身份运行命令。sudo命令（superuser do）用于以root访问权限运行命令，我们将在以后的课程中更深入地讨论用户如何获得root访问权限。\n\n尝试查看受保护的文件，如/etc/shadow：\n\n<pre>$ cat /etc/shadow</pre>\n\n注意您会收到权限被拒绝的错误，请使用以下命令查看权限：\n\n<pre>$ ls -la /etc/shadow\n\n-rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow\n</pre>\n\n我们还没有讨论权限，但这里发生的情况是root是文件的所有者，您需要root访问权限或者是shadow组的成员才能读取内容。现在以sudo身份运行命令：\n\n<pre>$ sudo cat /etc/shadow</pre>\n\n现在您将能够查看文件的内容！",
+          "quizAnswer": "sudo",
+          "quizQuestion": "您用什么命令以root身份运行？",
+          "slug": "usersandgroups",
+          "title": "用户和用户组"
+        },
+        {
+          "exercise": "打开/etc/sudoers文件，查看计算机上其他用户拥有的超级用户权限。",
+          "id": 2,
+          "lessonContent": "我们已经看过使用sudo命令获取超级用户访问权限的一种方法。您也可以使用su命令以超级用户身份运行命令。如果没有指定用户名，此命令将“替代用户”并打开一个root shell。只要您知道密码，就可以使用此命令替代任何用户。\n\n<pre>$ su</pre>\n\n使用此方法存在一些缺点：在root中运行所有内容更容易出现关键错误，您不会记录用于更改系统配置的命令等。基本上，如果您需要以超级用户身份运行命令，只需使用sudo。\n\n现在您知道以超级用户身份运行的命令，问题是如何知道谁有权限这样做？系统不会让每个人都以超级用户身份运行命令，那么它是如何知道的呢？有一个名为/etc/sudoers的文件，该文件列出可以运行sudo的用户。您可以使用<b>visudo</b>命令编辑此文件。",
+          "quizAnswer": "/etc/sudoers",
+          "quizQuestion": "哪个文件显示具有sudo访问权限的用户？",
+          "slug": "rootuser",
+          "title": "根"
+        },
+        {
+          "exercise": "查看您的 /etc/passwd 文件，查看一些用户并注意他们拥有的访问权限。",
+          "id": 3,
+          "lessonContent": "请记住，用户名并不是用户的真正标识。系统使用用户ID（UID）来识别用户。要查找哪个用户映射到哪个ID，请查看 /etc/passwd 文件。\n\n<pre>$ cat /etc/passwd</pre>\n\n该文件显示用户列表以及有关它们的详细信息。例如，该文件中的第一行很可能如下所示：\n\n<pre>root:x:0:0:root:/root:/bin/bash</pre>\n\n每行显示一个用户的用户信息，通常你会看到 root 用户作为第一行。有许多由冒号分隔的字段，告诉您有关用户的其他信息，让我们一起看看它们：\n\n<ol>\n<li>用户名</li>\n<li>用户密码 - 密码实际上并未存储在此文件中，通常存储在 /etc/shadow 文件中。我们将在下一课中更多地讨论 /etc/shadow，但现在要知道它包含加密的用户密码。您可以看到许多不同的符号在此字段中，如果看到 \"x\"，这意味着密码存储在 /etc/shadow 文件中，\"*\" 表示用户没有登录访问权限，如果是空白字段，则表示用户没有密码。</li>\n<li>用户ID - 如您所见，root 的 UID 为 0</li>\n<li>组ID</li>\n<li>GECOS 字段 - 用于一般性地留下关于用户或帐户的注释，例如他们的真实姓名或电话号码，逗号分隔。</li>\n<li>用户主目录</li>\n<li>用户 shell - 您可能会看到许多用户将 bash 作为其 shell 的默认设置</li>\n</ol>\n\n通常在用户设置页面中，您预计只会看到人类用户。但是，您会注意到 /etc/passwd 包含其他用户。请记但，用户实际上只是在系统上以不同权限运行进程。有时我们希望以预定的权限运行进程。例如，daemon 用户用于守护进程。\n\n还应注意，如果要添加用户并使用 <b>vipw</b> 工具修改信息，您可以手动编辑 /etc/passwd 文件，但是这类操作最好留给我们将在以后的课程中讨论的工具，如 useradd 和 userdel。",
+          "quizAnswer": "*",
+          "quizQuestion": "如果用户没有登录访问权限，在 /etc/passwd 中如何表示？",
+          "slug": "etcpasswdfile",
+          "title": "/etc/passwd"
+        },
+        {
+          "exercise": "查看 /etc/shadow 文件",
+          "id": 4,
+          "lessonContent": " /etc/shadow 文件用于存储有关用户身份验证的信息。它需要超级用户读取权限。\n\n<pre>$ sudo cat /etc/shadow\n\nroot:MyEPTEa$6Nonsense:15000:0:99999:7:::\n</pre>\n\n您会注意到它看起来与 /etc/passwd 的内容非常相似，但在密码字段中，您会看到一个加密密码。字段由冒号分隔，如下所示：\n\n<ol>\n<li>用户名</li>\n<li>加密密码</li>\n<li>上次更改密码的日期 - 表示自1970年1月1日以来的天数。如果是0，那意味着用户下次登录时应更改密码</li>\n<li>最小密码年龄 - 用户必须等待才能再次更改密码的天数</li>\n<li>最大密码年龄 - 用户必须更改密码之前的最大天数</li>\n<li>密码警告期 - 密码将过期前的天数</li>\n<li>密码不活动期 - 密码过期后允许使用密码登录的天数</li>\n<li>帐户到期日期 - 用户将无法登录的日期</li>\n<li>保留字段以供将来使用</li>\n</ol>\n\n在今天的大多数发行版中，用户身份验证不仅依赖于 /etc/shadow 文件，还有其他机制，如 PAM（可插入式身份验证模块）来替代身份验证。",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请继续！",
+          "slug": "etcshadowfile",
+          "title": "/etc/shadow"
+        },
+        {
+          "exercise": "运行命令 <b>groups</b>。你看到了什么？",
+          "id": 5,
+          "lessonContent": "另一个用于用户管理的文件是 /etc/group 文件。该文件允许具有不同权限的不同组。\n\n<pre>$ cat /etc/group\n\nroot:*:0:pete\n</pre>\n\n与 /etc/password 字段非常相似，/etc/group 字段如下：\n\n<ol>\n<li>组名</li>\n<li>组密码 - 无需设置组密码，使用像 sudo 这样的提升特权是标准的。默认值将放置一个 \"*\"。</li>\n<li>组ID（GID）</li>\n<li>用户列表 - 您可以手动指定您想要放入特定组中的用户</li>\n</ol>",
+          "quizAnswer": "0",
+          "quizQuestion": "root 的 GID 是多少？",
+          "slug": "etcgroupfile",
+          "title": "/etc/group"
+        },
+        {
+          "exercise": "创建一个新用户，然后更改他们的密码并登录为新用户。",
+          "id": 6,
+          "lessonContent": "大多数企业环境都在使用管理系统来管理用户、账户和密码。但是，在单台计算机上有一些有用的命令可以用来管理用户。\n\n<b>添加用户</b>\n\n您可以使用adduser或useradd命令。adduser命令包含更多有用的功能，比如创建一个主目录等。有用于添加新用户的配置文件，可以根据您希望为默认用户分配的内容进行自定义。\n\n<pre>$ sudo useradd bob</pre>\n\n您会发现上述命令在/etc/passwd中为bob创建了一个条目，设置了默认组，并在/etc/shadow文件中添加了一个条目。\n\n<b>删除用户</b>\n\n要删除用户，您可以使用userdel命令。\n\n<pre>$ sudo userdel bob</pre>\n\n这基本上会尽力撤消useradd所做的文件更改。\n\n<b>更改密码</b>\n\n<pre>$ passwd bob</pre>\n\n这将允许您更改自己或其他用户的密码（如果您是root用户）。",
+          "quizAnswer": "passwd",
+          "quizQuestion": "用于更改密码的命令是什么？",
+          "slug": "usermanagementtools",
+          "title": "用户管理工具"
+        }
+      ],
+      "slug": "usermanagement",
+      "title": "用户管理"
+    },
+    {
+      "description": "了解权限级别和修改权限。",
+      "id": 6,
+      "image": "/images/chapters/permissions.png",
+      "lessons": [
+        {
+          "exercise": "使用 ls -l 命令查看多个文件并 recite 它们的权限、用户和组。",
+          "id": 1,
+          "lessonContent": "正如我们之前学到的那样，文件具有不同的权限或文件模式。让我们看一个例子：\n\n<pre>$ ls -l Desktop/\ndrwxr-xr-x 2 pete penguins 4096 Dec 1 11:45 .\n</pre>\n\n文件权限有四个部分。第一部分是文件类型，由权限中的第一个字符表示，在我们的例子中，因为我们正在查看一个目录，所以文件类型显示为 <b>d</b>。通常，您会看到一个 <b>-</b> 表示常规文件。\n\n文件模式的下三个部分是实际权限。权限被分成每组3位。前3位是用户权限，然后是组权限，最后是其他权限。我添加了竖线以便更容易区分。\n\n<pre>d | rwx | r-x | r-x </pre>\n\n每个字符代表不同的权限：\n<ul>\n<li>r: 可读</li>\n<li>w: 可写</li>\n<li>x: 可执行（基本上是可执行程序）</li>\n<li>-: 空</li>\n</ul>\n\n因此，在上面的例子中，我们看到用户 pete 对文件具有读取、写入和执行权限。组 penguins 具有读取和执行权限。最后，其他用户（所有其他人）具有读取和执行权限。",
+          "quizAnswer": "x",
+          "quizQuestion": "可执行权限使用哪个权限位？",
+          "slug": "filepermissions",
+          "title": "文件权限"
+        },
+        {
+          "exercise": "更改一些基本文本文件的权限，并在执行 ls -l 时查看位的变化。",
+          "id": 2,
+          "lessonContent": "使用 <b>chmod</b> 命令可以轻松更改权限。\n\n首先，选择要更改的权限集，用户、组或其他。您可以使用 <b>+</b> 或 <b>-</b> 添加或删除权限，让我们看一些示例。\n\n<b>在文件上添加权限位</b>\n<pre>$ chmod u+x myfile</pre>\n\n上述命令的含义是：通过在用户集上添加可执行权限位来更改 myfile 的权限。因此，现在用户对此文件具有可执行权限！\n\n<b>从文件中删除权限位</b>\n<pre>$ chmod u-x myfile</pre>\n\n<b>在文件上添加多个权限位</b>\n<pre>$ chmod ug+w</pre>\n\n还有另一种使用数字格式更改权限的方法。这种方法允许您一次性更改所有权限。不再使用 r、w 或 x 来表示权限，而是使用数字表示单个权限集。因此，无需使用 g 表示组或使用 u 表示用户。\n\n以下是数字表示：\n\n<ul>\n<li>4：读权限</li>\n<li>2：写权限</li>\n<li>1：执行权限</li>\n</ul>\n\n让我们看一个示例：\n\n<pre>$ chmod 755 myfile</pre>\n\n你能猜到我们给这个文件赋予了什么权限吗？让我们来分解一下，现在 755 包含了所有权限。第一个数字（7）表示用户权限，第二个数字（5）表示组权限，最后一个 5 表示其他用户权限。\n\n等一下，7 和 5 上面没列出来，我们从哪里得到这些数字的？记住，现在我们将所有权限组合成一个数字，所以你需要进行一些数学运算。\n\n7 = 4 + 2 + 1，所以 7 是用户权限，具有读、写和执行权限\n\n5 = 4 + 1，组具有读和执行权限\n\n5 = 4 + 1，所有其他用户具有读和执行权限\n\n需要注意的一点是：随意更改权限并不是一个好主意，您可能会潜在地暴露一个敏感文件供所有人修改，但是很多时候您确实需要更改权限，只是在使用 chmod 命令时要小心谨慎。",
+          "quizAnswer": "4",
+          "quizQuestion": "在使用数字格式时，哪个数字代表读权限？",
+          "slug": "修改权限",
+          "title": "修改权限"
+        },
+        {
+          "exercise": "修改一些测试文件的组和用户。然后使用 ls -l 查看权限。",
+          "id": 3,
+          "lessonContent": "除了修改文件权限外，您还可以修改文件的组和用户所有权。\n\n<b>修改用户所有权</b>\n\n<pre>$ sudo chown patty myfile</pre>\n\n此命令将把 myfile 的所有者设置为 patty。\n\n<b>修改组所有权</b>\n\n<pre>$ sudo chgrp whales myfile</pre>\n\n此命令将把 myfile 的组设置为 whales。\n\n<b>同时修改用户和组所有权</b>\n如果您在用户后面添加冒号和组名，您可以同时设置用户和组。\n\n<pre>$ sudo chown patty:whales myfile</pre>",
+          "quizAnswer": "chown",
+          "quizQuestion": "您使用哪个命令来更改用户所有权？",
+          "slug": "ownershippermissions",
+          "title": "所有权权限"
+        },
+        {
+          "exercise": "<ol>\n<li>创建一个新文件，然后记录其权限。</li>\n<li>修改umask，然后创建另一个新文件。</li>\n<li>再次检查新文件的权限，您期望看到什么？</li>\n<ol>",
+          "id": 4,
+          "lessonContent": "每个创建的文件都带有一组默认权限。如果您想要更改该默认权限集，可以使用umask命令来实现。该命令使用数字权限中的3位权限集。\n\n但是，umask不是添加这些权限，而是去除这些权限。\n\n<pre>$ umask 021</pre>\n\n在上面的示例中，我们指定希望新文件的默认权限允许用户访问所有内容，但对于组，我们希望去除他们的写权限，对于其他用户，我们希望去除他们的执行权限。大多数发行版的默认umask为022，表示所有用户访问权限，但组和其他用户无写入权限。\n\n运行umask命令后，它将在您创建的任何新文件上给出该默认权限集。但是，如果您希望其持久存在，您将需要修改您的启动文件（.profile），但我们将在后续课程中讨论这一点。",
+          "quizAnswer": "umask",
+          "quizQuestion": "用于更改默认文件权限的命令是什么？",
+          "slug": "umask",
+          "title": "Umask"
+        },
+        {
+          "exercise": "仔细查看 /etc/passwd 的权限，您还注意到了其他什么吗？启用 SUID 的文件也很容易辨认。",
+          "id": 5,
+          "lessonContent": "有许多情况下，普通用户需要提升权限来执行操作。系统管理员无法始终在用户需要访问受保护文件时输入 root 密码，因此有特殊的文件权限位来允许这种行为。设置用户 ID（SUID）允许用户以程序文件的所有者身份而不是自身身份运行程序。\n\n让我们看一个例子：\n\n假设我想更改我的密码，简单吧？我只需使用 passwd 命令：\n\n<pre>$ passwd</pre>\n\n密码命令在做什么？它修改了一些文件，但最重要的是它修改了 /etc/shadow 文件。让我们看看那个文件：\n\n<pre>$ ls -l /etc/shadow\n\n-rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow\n</pre>\n\n等等，这个文件是 root 拥有的？我们怎么可能修改一个属于 root 的文件？\n\n让我们看另一个权限集，这次是我们运行的命令：\n\n<pre>$ ls -l /usr/bin/passwd\n\n-rwsr-xr-x 1 root root 47032 Dec 1 11:45 /usr/bin/passwd\n</pre>\n\n你会注意到这里有一个新的权限位 <b>s</b>。这个权限位是 SUID，当文件设置了这个权限时，允许启动程序的用户获取文件所有者的权限以及执行权限，这里是 root。因此，当用户运行密码命令时，实际上是以 root 身份运行。\n\n这就是为什么我们能够在运行 passwd 命令时访问像 /etc/shadow 这样的受保护文件。现在，如果你移除了那个位，你会发现你将无法修改 /etc/shadow，因此也无法更改密码。\n\n<b>修改 SUID</b>\n\n和普通权限一样，有两种方法可以修改 SUID 权限。\n\n<i>符号方式：</i>\n<pre>$ sudo chmod u+s myfile</pre>\n\n<i>数字方式：</i>\n<pre> sudo chmod 4755 myfile</pre>\n\n如您所见，SUID 由数字 4 表示，并添加到权限集之前。您可能会看到 SUID 以大写 <b>S</b> 表示，这意味着它仍然执行相同的操作，但没有执行权限。",
+          "quizAnswer": "4",
+          "quizQuestion": "什么数字代表 SUID？",
+          "slug": "setuidsetuserid",
+          "title": "Setuid"
+        },
+        {
+          "exercise": "此课程没有练习。",
+          "id": 6,
+          "lessonContent": "类似于设置用户 ID 权限位，还有一个设置组 ID（SGID）权限位。此位允许程序以该组成员的身份运行。\n\n让我们看一个示例：\n\n<pre>$ ls -l /usr/bin/wall\n-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall\n</pre>\n\n现在我们可以看到权限位在组权限集中。\n\n<b>修改 SGID</b>\n\n<pre>$ sudo chmod g+s myfile\n$ sudo chmod 2555 myfile\n</pre>\n\nSGID 的数字表示是 2。",
+          "quizAnswer": "2",
+          "quizQuestion": "什么数字代表 SGID？",
+          "slug": "setgidsetgroupid",
+          "title": "Setgid"
+        },
+        {
+          "exercise": "我们还没有讨论过进程，我们仍然可以实时查看这种变化发生：\n\n<ol>\n<li>打开一个终端窗口，并运行命令：<b>watch -n 1 \"ps aux | grep passwd\"</b>。这将监视passwd进程。</li>\n<li>打开第二个终端窗口并运行：<b>passwd</b></li>\n<li>查看第一个终端窗口，你会看到一个passwd进程出现。进程表中的第一列是有效用户ID，惊讶吧，它是root用户！</li>\n</ol>",
+          "id": 7,
+          "lessonContent": "让我们稍微讨论一下进程权限，还记得我告诉过你吗，当你使用SUID权限位运行passwd命令时，你将以root用户身份运行程序？这是正确的，但这是否意味着因为你暂时是root，你可以修改其他用户的密码？不，幸运的是不行！\n\n这是因为Linux实现了许多UID。每个进程都有三个与之关联的UID：\n\n当你启动一个进程时，它将以启动它的用户或组的权限运行，这被称为<b>有效用户ID</b>。这个UID用于授予进程访问权限。因此，如果Bob运行了touch命令，进程将以他的身份运行，他创建的任何文件都将归属于他。\n\n还有另一个UID，称为<b>真实用户ID</b>，这是启动进程的用户的ID。这些用于跟踪启动进程的用户是谁。\n\n最后一个UID是<b>保存的用户ID</b>，这允许进程在有效UID和真实UID之间切换，反之亦然。这很有用，因为我们不希望我们的进程始终以提升的特权运行，仅在特定时间使用特权是个好习惯。\n\n现在让我们通过再次查看passwd命令来将这些内容整合起来。\n\n运行passwd命令时，你的有效UID是你的用户ID，暂且说是500吧。哦，等等，记得passwd命令启用了SUID权限。所以当你运行它时，你的有效UID现在是0（0是root的UID）。现在这个程序可以以root身份访问文件。\n\n假设你有了一点权力，想要修改Sally的密码，Sally的UID是600。那么你将没那么幸运，幸运的是，这个进程也有你的真实UID，这种情况下是500。它知道你的UID是500，因此你不能修改UID为600的密码。（当然，如果你是机器上的超级用户并且可以控制和更改一切，这种情况总是被绕过的）。\n\n由于你运行了passwd，它将使用你的真实UID启动进程，并保存文件所有者的UID（有效UID），因此你可以在两者之间切换。如果不需要，就不需要修改所有具有root访问权限的文件。\n\n大多数情况下，真实UID和有效UID是相同的，但在像passwd命令这样的情况下，它们会发生变化。",
+          "quizAnswer": "有效",
+          "quizQuestion": "哪个UID决定授予什么访问权限？",
+          "slug": "processpermissions",
+          "title": "进程权限"
+        },
+        {
+          "exercise": "你认为还有哪些文件和目录启用了粘滞位？",
+          "id": 8,
+          "lessonContent": "我想谈谈的最后一个特殊权限位是粘滞位。\n\n这个权限位“粘住了一个文件/目录”，这意味着只有所有者或root用户才能删除或修改文件。这对于共享目录非常有用。看看下面的示例：\n\n<pre>$ ls -ld /tmp\ndrwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp\n</pre>\n\n你会在这里看到一个特殊的权限位 <b>t</b>，这意味着每个人都可以在 /tmp 目录中添加文件、写文件、修改文件，但只有 root 可以删除 /tmp 目录。\n\n<b>修改粘滞位</b>\n\n<pre>$ sudo chmod +t mydir\n\n$ sudo chmod 1755 mydir</pre>\n\n粘滞位的数字表示是 <b>1</b>",
+          "quizAnswer": "t",
+          "quizQuestion": "什么符号代表粘滞位？",
+          "slug": "stickybit",
+          "title": "粘滞位"
+        }
+      ],
+      "slug": "permissions",
+      "title": "权限"
+    },
+    {
+      "description": "了解系统上运行的进程。",
+      "id": 7,
+      "image": "/images/chapters/processes.png",
+      "lessons": [
+        {
+          "exercise": "使用带有不同标志的 ps 命令，看看输出如何变化。",
+          "id": 1,
+          "lessonContent": "进程是在您的计算机上运行的程序。它们由内核管理，每个进程都有一个与之关联的 ID，称为 <b>进程 ID（PID）</b>。此 PID 是按照创建进程的顺序分配的。\n\n继续运行 ps 命令以查看正在运行的进程列表：\n\n<pre>$ ps\n\nPID        TTY     STAT   TIME          CMD\n41230    pts/4    Ss        00:00:00     bash\n51224    pts/4    R+        00:00:00     ps\n</pre>\n\n这显示了当前进程的快照：\n\n<ul>\n<li>PID: 进程 ID</li>\n<li>TTY: 与进程关联的控制终端（稍后我们将详细介绍）</li>\n<li>STAT: 进程状态代码</li>\n<li>TIME: 总 CPU 使用时间</li>\n<li>CMD: 可执行文件/命令的名称</li>\n</ul>\n\n如果查看 ps 的 man 手册，您会看到可以传递许多命令选项，这些选项将根据您要使用的选项（BSD、GNU 或 Unix）而变化。在我看来，BSD 风格更受欢迎，因此我们将使用它。如果您好奇各种风格之间的区别是使用的破折号数量和标志。\n\n<pre>$ ps aux</pre>\n\n<b>a</b> 显示所有正在运行的进程，包括其他用户运行的进程。 <b>u</b> 显示有关进程的更多详细信息。最后，<b>x</b> 列出所有没有与之关联的 TTY 的进程，这些程序在 TTY 字段中显示为 ?，它们在作为系统启动的一部分启动的守护进程中最常见。\n\n现在您会注意到看到了更多字段，无需记住它们全部，在稍后关于高级进程的课程中，我们将再次介绍其中一些：\n\n<ul>\n<li>USER: 有效用户（我们正在使用其访问权限的用户）</li>\n<li>PID: 进程 ID</li>\n<li>%CPU: 使用的 CPU 时间除以进程运行时间</li>\n<li>%MEM: 进程的常驻集大小与计算机上的物理内存的比率</li>\n<li>VSZ: 整个进程的虚拟内存使用量</li>\n<li>RSS: 常驻集大小，任务使用的未交换物理内存</li>\n<li>TTY: 与进程关联的控制终端</li>\n<li>STAT: 进程状态代码</li>\n<li>START: 进程的启动时间</li>\n<li>TIME: 总 CPU 使用时间</li>\n<li>COMMAND: 可执行文件/命令的名称</li>\n</ul>\n\nps 命令可能会有点混乱，目前我们将主要查看 PID、STAT 和 COMMAND 字段。\n\n另一个非常有用的命令是 <b>top</b> 命令，top 提供有关系统上运行的进程的实时信息，而不是快照。默认情况下，您每 10 秒刷新一次。Top 是一个非常有用的工具，可以查看哪些进程占用了大量资源。\n\n<pre>$ top</pre>",
+          "quizAnswer": "u",
+          "quizQuestion": "用于查看有关进程的详细信息的 ps 标志是什么？",
+          "slug": "monitorprocessespscommand",
+          "title": "ps (进程)"
+        },
+        {
+          "exercise": "查看您的 ps 输出，并列出所有唯一的 TTY 值。",
+          "id": 2,
+          "lessonContent": "我们讨论了 ps 输出中有一个 TTY 字段。TTY 是执行命令的终端。\n\n有两种类型的终端，普通终端设备和伪终端设备。普通终端设备是您可以键入并向系统发送输出的本机终端设备，这听起来像您一直在启动以进入 shell 的终端应用程序，但实际上并非如此。\n\n我们将转到另一个话题，让您看到这个过程，继续键入 Ctrl-Alt-F1 进入 TTY1（第一个虚拟控制台），您会注意到除了终端外什么都没有，没有图形等。这被视为普通终端设备，您可以使用 Ctrl-Alt-F7 退出。\n\n伪终端是您一直在使用的，它们通过 shell 终端窗口模拟终端，并以 PTS 表示。如果再次查看 ps，您将看到 shell 进程在 pts/* 下。\n\n好的，现在回到控制终端，进程通常绑定到控制终端。例如，如果您在 shell 窗口上运行程序（如 find）并关闭窗口，则您的进程也将随之关闭。\n\n还有一些守护进程等特殊进程，它们基本上是使系统保持运行的进程。它们通常在系统启动时启动，并在系统关闭时通常被终止。它们在后台运行，由于我们不希望这些特殊进程被终止，它们不绑定到控制终端。在 ps 输出中，TTY 列为 <b>?</b>，表示它没有控制终端。",
+          "quizAnswer": "?",
+          "quizQuestion": "对于没有控制终端的进程，会给出什么值？",
+          "slug": "controllingterminal",
+          "title": "控制终端"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 3,
+          "lessonContent": "在我们深入了解进程的更多实际应用之前，我们必须首先了解它们是什么以及它们是如何工作的。由于我们要深入探讨细节，这部分可能会让人感到困惑，所以如果您现在不想学习，请随时回到这节课。\n\n如前所述，进程是系统上运行的程序，更准确地说，它是系统分配内存、CPU、I/O 以使程序运行。进程是运行程序的一个实例，请打开3个终端窗口，在两个窗口中运行 <b>cat</b> 命令而不传递任何选项（cat 进程将保持打开状态，因为它期望 stdin）。现在在第三个窗口中运行：<b>ps aux | grep cat</b>。您将看到有两个 cat 进程，尽管它们调用的是同一个程序。\n\n内核负责处理进程，当我们运行一个程序时，内核会将程序的代码加载到内存中，确定并分配资源，然后监视每个进程，它知道：\n\n<ul>\n<li>进程的状态</li>\n<li>进程正在使用和接收的资源</li>\n<li>进程所有者</li>\n<li>信号处理（稍后详细介绍）</li>\n<li>以及基本上所有其他内容</li>\n</ul>\n\n所有进程都在争夺那甜蜜资源蛋糕的一口，内核的工作是确保进程根据其需求获得正确数量的资源。当一个进程结束时，它所使用的资源现在可以供其他进程使用。",
+          "quizAnswer": "内核",
+          "quizQuestion": "是什么管理和控制进程？",
+          "slug": "processdetails",
+          "title": "进程详情"
+        },
+        {
+          "exercise": "查看您正在运行的进程，您能看到哪些进程有父进程吗？",
+          "id": 4,
+          "lessonContent": "再次强调，本课程和下一课程纯粹是信息，让您了解底层情况，欢迎在更多处理进程的实践后再回顾此内容。\n\n当创建新进程时，现有进程基本上通过一种称为 fork 系统调用（系统调用将在很远的将来讨论）来克隆自身。fork 系统调用创建一个几乎相同的子进程，这个子进程获得一个新的进程 ID（PID），原始进程成为其父进程，并具有称为父进程 ID PPID 的内容。之后，子进程可以继续使用其父进程之前使用的相同程序，或者更常见的是使用 execve 系统调用启动一个新程序。这个系统调用会破坏内核为该进程设置的内存管理，并为新程序设置新的内存管理。\n\n我们可以看到这一过程：\n\n<pre>$ ps l</pre>\n\n选项 l 为我们提供了一个“长格式”或更详细的运行进程视图。您会看到一个标有 PPID 的列，这是父进程 ID。现在看看您的终端，您会看到一个正在运行的进程，那就是您的 shell，所以在我的系统上，我有一个正在运行 bash 的进程。现在回想一下，当您运行 ps l 命令时，您是从运行 bash 的进程中运行的。现在您会看到 bash shell 的 PID 是 ps l 命令的 PPID。\n\n因此，如果每个进程都必须有一个父进程，并且它们只是彼此的分支，那么必须有一个所有进程的母进程，对吧？您是正确的，系统启动时，内核会创建一个名为 init 的进程，它的 PID 为 1。init 进程无法终止，除非系统关闭。它以 root 权限运行，并运行许多保持系统运行的进程。我们将在系统引导课程中更仔细地研究 init，现在只需知道它是生成所有其他进程的进程即可。",
+          "quizAnswer": "fork",
+          "quizQuestion": "哪个系统调用会创建一个新进程？",
+          "slug": "processcreation",
+          "title": "进程创建"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 5,
+          "lessonContent": "现在我们知道了当进程被创建时发生了什么，那么当我们不再需要它时会发生什么呢？请注意，有时Linux可能会变得有点黑暗...\n\n进程可以使用_exit系统调用退出，这将释放该进程正在使用的资源以供重新分配。因此，当一个进程准备终止时，它会使用称为终止状态的东西告诉内核它为什么要终止。最常见的状态是0，表示进程成功。然而，这还不足以完全终止一个进程。父进程必须通过使用wait系统调用来确认子进程的终止，wait系统调用会检查子进程的终止状态。我知道这听起来有点可怕，但wait调用是必要的，毕竟什么父母不想知道他们的孩子是怎么死的呢？\n\n还有另一种终止进程的方法，那就是使用信号，我们将很快讨论这个。\n\n<b>孤儿进程</b>\n\n当父进程在子进程之前死亡时，内核知道它不会收到wait调用，因此它会将这些进程变成\"孤儿\"，并将它们交给init（记得所有进程的母亲）。Init最终将为这些孤儿执行wait系统调用，以便它们可以终止。\n\n<b>僵尸进程</b>\n\n当子进程终止而父进程尚未调用wait时会发生什么？我们仍然希望能够看到子进程是如何终止的，因此即使子进程已经完成，内核也会将子进程转变为僵尸进程。子进程使用的资源仍然可以供其他进程使用，但是进程表中仍然存在这个僵尸进程的条目。僵尸进程也无法被终止，因为它们在技术上已经\"死\"，所以无法使用信号来终止它们。最终，如果父进程调用wait系统调用，僵尸进程将消失，这被称为\"收割\"。如果父进程不执行wait调用，init将接管这个僵尸进程并自动执行wait并移除僵尸。拥有太多僵尸进程可能是一件坏事，因为它们会占用进程表上的空间，如果进程表填满了，将会阻止其他进程运行。",
+          "quizAnswer": "0",
+          "quizQuestion": "进程成功的最常见终止状态是什么？",
+          "slug": "processtermination",
+          "title": "进程终止"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 6,
+          "lessonContent": "信号是通知进程发生了某事的一种方式。\n\n<b>我们为什么需要信号</b>\n\n它们是软件中断，有很多用途：\n\n<ul>\n<li>用户可以键入特殊的终端字符（Ctrl-C）或（Ctrl-Z）来终止、中断或挂起进程</li>\n<li>硬件问题可能发生，内核希望通知进程</li>\n<li>软件问题可能发生，内核希望通知进程</li>\n<li>它们基本上是进程之间通信的方式</li>\n</ul>\n\n<b>信号处理</b>\n\n当某个事件生成信号时，它会被传递给一个进程，在传递之前被视为处于挂起状态。当进程运行时，信号将被传递。但是，进程有信号掩码，它们可以设置信号传递被阻止的情况。当信号被传递时，进程可以执行多种操作：\n\n<ul>\n<li>忽略信号</li>\n<li>\"捕获\"信号并执行特定的处理程序例程</li>\n<li>进程可能被终止，而不是正常的退出系统调用</li>\n<li>根据信号掩码阻止信号</li>\n</ul>\n\n<b>常见信号</b>\n\n每个信号都由具有形式SIGxxx的符号名称的整数定义。一些最常见的信号包括：\n\n<ul>\n<li>SIGHUP或HUP或1：挂断</li>\n<li>SIGINT或INT或2：中断</li>\n<li>SIGKILL或KILL或9：终止</li>\n<li>SIGSEGV或SEGV或11：分段错误</li>\n<li>SIGTERM或TERM或15：软件终止</li>\n<li>SIGSTOP或STOP：停止</li>\n</ul>\n\n信号的数字可能有所不同，因此通常通过它们的名称来引用。\n\n一些信号是无法阻止的，SIGKILL信号就是一个例子。KILL信号会销毁进程。",
+          "quizAnswer": "SIGKILL",
+          "quizQuestion": "哪个信号是无法阻止的？",
+          "slug": "processsignals",
+          "title": "信号"
+        },
+        {
+          "exercise": "使用不同的信号终止一些进程。",
+          "id": 7,
+          "lessonContent": "您可以发送终止进程的信号，这样的命令称为kill命令。\n\n<pre>$ kill 12445</pre>\n\n12445是您要终止的进程的PID。默认情况下，它发送一个TERM信号。SIGTERM信号被发送到一个进程以请求其终止，允许它清理释放资源并保存其状态。\n\n您还可以使用kill命令指定信号：\n\n<pre>$ kill -9 12445</pre>\n\n这将运行SIGKILL信号并终止进程。\n\n<b>SIGHUP、SIGINT、SIGTERM、SIGKILL、SIGSTOP之间的区别？</b>\n\n这些信号听起来都相当相似，但它们确实有区别。\n\n<ul>\n<li>SIGHUP - 挂断，当控制终端关闭时发送给进程。例如，如果您关闭了一个中有进程运行的终端窗口，您将收到SIGHUP信号。所以基本上您被挂断了</li>\n<li>SIGINT - 是一个中断信号，因此您可以使用Ctrl-C，系统将尝试优雅地终止进程</li>\n<li>SIGTERM - 终止进程，但允许其先进行一些清理</li>\n<li>SIGKILL - 终止进程，火力全开，不进行任何清理</li>\n<li>SIGSTOP - 停止/挂起进程</li>\n</ul>",
+          "quizAnswer": "SIGTERM",
+          "quizQuestion": "默认kill命令的信号名称是什么？",
+          "slug": "killingprocesses",
+          "title": "kill (终止)"
+        },
+        {
+          "exercise": "哪些进程不太友好，为什么？",
+          "id": 8,
+          "lessonContent": "当您在计算机上同时运行多个应用程序，比如 Chrome、Microsoft Word 或 Photoshop 时，这些进程似乎在同时运行，但实际上并非如此。\n\n进程使用 CPU 进行一小段时间的处理，称为时间片。然后它们暂停几毫秒，另一个进程获得一小段时间片。默认情况下，进程调度以轮询方式进行。每个进程获得足够的时间片，直到它完成处理。内核处理所有这些进程切换，并且在大多数情况下表现得相当不错。\n\n进程无法决定何时以及多长时间获得 CPU 时间，如果所有进程表现正常，它们将（大致上）获得相等的 CPU 时间。但是，可以通过一个 nice 值来影响内核的进程调度算法。Niceness 是一个相当奇怪的名字，但它的意思是进程有一个数字来确定它们在 CPU 中的优先级。较高的数字意味着进程很友好，对 CPU 的优先级较低，而较低或负数的数字意味着进程不太友好，它希望尽可能多地使用 CPU。\n\n<pre>$ top</pre>\n\n您现在可以看到一个 NI 列，那是进程的 niceness 级别。\n\n要更改 niceness 级别，您可以使用 nice 和 renice 命令：\n\n<pre>$ nice -n 5 apt upgrade</pre>\n\nnice 命令用于为新进程设置优先级。renice 命令用于为现有进程设置优先级。\n\n<pre>$ renice 10 -p 3245</pre>",
+          "quizAnswer": "较低",
+          "quizQuestion": "如果我想让一个进程获得更多的 CPU 优先级，我应该使用较低还是较高的 nice 数字？",
+          "slug": "processniceness",
+          "title": "niceness"
+        },
+        {
+          "exercise": "查看系统上正在运行的进程，并检查它们的进程状态。",
+          "id": 9,
+          "lessonContent": "让我们再次看一下 ps aux 命令：\n\n<pre>$ ps aux</pre>\n\n在 STAT 列中，您会看到很多值。Linux 进程可以处于多种不同的状态。您将看到的最常见状态代码如下所述：\n\n<ul>\n<li>R: 运行或可运行，它只是在等待 CPU 处理它</li>\n<li>S: 可中断睡眠，等待事件完成，例如来自终端的输入</li>\n<li>D: 不可中断睡眠，无法被信号杀死或中断的进程，通常为了让它们消失，您必须重新启动或修复问题</li>\n<li>Z: 僵尸，我们在之前的课程中讨论过，僵尸是已终止的进程，正在等待收集其状态</li>\n<li>T: 已停止，已被暂停/停止的进程</li>\n</ul>",
+          "quizAnswer": "D",
+          "quizQuestion": "用于表示不可中断睡眠的 STAT 代码是什么？",
+          "slug": "processstates",
+          "title": "进程状态"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 10,
+          "lessonContent": "请记住，在 Linux 中，一切都是文件，甚至进程也是。进程信息存储在一个特殊的文件系统中，即 /proc 文件系统。\n\n<pre>$ ls /proc</pre>\n\n您应该在这里看到多个值，每个 PID 都有一个子目录。如果您在 ps 输出中查看了一个 PID，您可以在 /proc 目录中找到它。\n\n继续，进入其中一个进程并查看该文件：\n\n<pre>$ cat /proc/12345/status</pre>\n\n您应该看到进程状态信息以及更详细的信息。/proc 目录是内核查看系统的方式，因此这里的信息比您在 ps 中看到的要多得多。",
+          "quizAnswer": "/proc",
+          "quizQuestion": "哪个文件系统存储进程信息？",
+          "slug": "procfilesystem",
+          "title": "/proc 文件系统"
+        },
+        {
+          "exercise": "在后台和前台之间移动一些作业",
+          "id": 11,
+          "lessonContent": "假设你正在一个终端窗口上工作，并且运行一个需要很长时间的命令。在命令完成之前，你无法与 shell 交互，但我们希望继续在我们的机器上工作，所以我们需要保持 shell 开启。幸运的是，我们可以通过作业控制来控制我们的进程运行方式：\n\n<b>将作业发送到后台</b>\n\n在命令后添加一个 & 符号将其放入后台运行，这样你仍然可以使用你的 shell。让我们看一个例子：\n\n<pre>$ sleep 1000 &\n$ sleep 1001 &\n$ sleep 1002 &\n</pre>\n\n<b>查看所有后台作业</b>\n\n现在你可以查看刚刚发送到后台的作业。\n\n<pre>$ jobs\n\n[1]    Running     sleep 1000 &\n[2]-   Running     sleep 1001 &\n[3]+   Running     sleep 1002 &\n\n</pre>\n\n这将显示作业 ID 在第一列，然后是状态和运行的命令。作业 ID 旁边的 <b>+</b> 表示它是最近启动的后台作业。带有 <b>-</b> 的作业是第二近的命令。\n\n<b>将现有作业发送到后台</b>\n\n如果你已经运行了一个作业并希望将其发送到后台，你无需终止它并重新开始。首先暂停作业，然后运行 <b>bg</b> 命令将其发送到后台。\n\n<pre>\npete@icebox ~ $ sleep 1003\n^Z\n[4]+    Stopped     sleep 1003\n\npete@icebox ~ $ bg\n[4]+    sleep 1003 &\n\npete@icebox ~ $ jobs\n\n[1]    Running     sleep 1000 &\n[2]    Running     sleep 1001 &\n[3]-   Running     sleep 1002 &\n[4]+   Running     sleep 1003 &\n</pre>\n\n<b>将后台作业移到前台</b>\n\n要将作业从后台移到前台，只需指定你想要的作业 ID。如果运行 fg 而不带任何选项，它将恢复最近的后台作业（带有 + 标志的作业）\n\n<pre>$ fg %1</pre>\n\n<b>终止后台作业</b>\n\n与将作业从后台移到前台类似，你可以使用相同的形式通过使用作业 ID 来终止进程。\n\n<pre>kill %1</pre>",
+          "quizAnswer": "jobs",
+          "quizQuestion": "用于列出后台作业的命令是什么？",
+          "slug": "jobcontrol",
+          "title": "作业控制"
+        }
+      ],
+      "slug": "processes",
+      "title": "进程"
+    },
+    {
+      "description": "了解有关 dpkg、apt-get、rpm 和 yum 软件包管理工具的所有信息。",
+      "id": 8,
+      "image": "/images/chapters/packages.png",
+      "lessons": [
+        {
+          "exercise": "此课程无练习。",
+          "id": 1,
+          "lessonContent": "您的系统由许多软件包组成，如互联网浏览器、文本编辑器、媒体播放器等。这些软件包通过软件包管理器进行管理，软件包管理器在您的系统上安装和维护软件。但并非所有软件包都通过软件包管理器安装，您通常可以直接从它们的源代码安装软件（我们很快会介绍这个）。然而，大多数情况下，您将使用软件包管理器来安装软件，最常见的软件包类型是Debian（.deb）和Red Hat（.rpm）。Debian风格的软件包用于Debian、Ubuntu、LinuxMint等发行版。Red Hat风格的软件包出现在Red Hat企业Linux、Fedora、CentOS等发行版中。\n\n什么是软件包？您可能知道它们是Chrome、Photoshop等，确实是，但它们实际上只是许多文件编译成一个文件。编写这些软件的人（有时是一个人）被称为<b>上游提供者</b>，他们编译他们的代码并编写安装说明。这些上游提供者致力于发布新软件并更新现有软件。当他们准备好向世界发布时，他们将软件包发送给<b>软件包维护者</b>，后者负责将这款软件交到用户手中。这些软件包维护者审查、管理并以软件包的形式分发这些软件。",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请继续！",
+          "slug": "softwaredistribution",
+          "title": "软件分发"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 2,
+          "lessonContent": "那些上传到互联网的软件包是如何最终出现在我们的计算机上的呢？你是不是要去每个想要的软件包的下载页面，然后点击下载和安装？实际上你可以这样做，但有一种更好的方法叫做软件包存储库。存储库只是软件包的中央存储位置。有大量的存储库保存着许多软件包，最重要的是它们都可以在互联网上找到，没有愚蠢的安装光盘。除非你明确告诉它在哪里查找，否则你的计算机不知道要去哪里找这些存储库。\n\n举个例子，假设我想在我的计算机上安装WackyWidgets软件。WackyWidgets为他们的小部件软件包管理自己的存储库，在这个存储库中有10个软件包，如CoolWidget软件包、SuperWidget软件包等。WackyWidgets将这个存储库托管在一个名为：http://download.widgets/linux/deb/ 的源链接上。\n\n现在，你可以告诉你的计算机从源链接中找到WackyWidgets软件，而不是直接从他们的网站下载软件包。\n\n你的发行版已经预先批准了用于获取软件包的源，这就是它安装在系统上的所有基本软件包的来源。在Debian系统上，这个源文件是<b>/etc/apt/sources.list</b>文件。你的计算机会知道要在那里查找并检查你添加的任何源存储库。",
+          "quizAnswer": "/etc/apt/sources.list",
+          "quizQuestion": "在Debian系统中，源文件在哪里？",
+          "slug": "packagerepositories",
+          "title": "软件包存储库"
+        },
+        {
+          "exercise": "熟悉 tar 文档并查看 man 手册中提供的其他选项。",
+          "id": 3,
+          "lessonContent": "在我们深入讨论软件包安装和不同的管理器之前，我们需要讨论文件的归档和压缩，因为当你在互联网上寻找软件时，你很可能会遇到这些。\n\n你可能已经知道文件归档是什么了，你很可能遇到过 .rar 和 .zip 等文件类型。这些是文件的归档，它们包含许多文件，但它们以一个非常整洁的单个文件形式出现，被称为归档。\n\n<b>使用 gzip 压缩文件</b>\n\ngzip 是 Linux 中用于压缩文件的程序，它们以 .gz 扩展名结尾。\n\n要压缩文件：\n<pre>$ gzip mycoolfile</pre>\n\n要解压文件：\n<pre>$ gunzip mycoolfile.gz</pre>\n\n<b>使用 tar 创建归档</b>\n不幸的是，gzip 不能将多个文件添加到一个归档中。幸运的是，我们有 tar 程序可以做到这一点。当你使用 tar 创建一个归档时，它将具有 .tar 扩展名。\n\n<pre>$ tar cvf mytarfile.tar mycoolfile1 mycoolfile 2</pre>\n\n<ul>\n<li>c - 创建</li>\n<li>v - 告诉程序详细输出并让我们看到它在做什么</li>\n<li>f - tar 文件的文件名必须在此选项之后，如果你正在创建一个 tar 文件，你必须想一个名字</li>\n</ul>\n\n<b>使用 tar 解压归档</b>\n\n要提取 tar 文件的内容，请使用：\n\n<pre>$ tar xvf mytarfile.tar</pre>\n\n<ul>\n<li>x - 提取</li>\n<li>v - 告诉程序详细输出并让我们看到它在做什么</li>\n<li>f - 你想要提取的文件</li>\n</ul>\n\n<b>使用 tar 和 gzip 压缩/解压缩归档</b>\n\n很多时候，你会看到一个已经被压缩的 tar 文件，比如：mycompressedarchive.tar.gz，你只需要按照外到内的顺序操作，先使用 gunzip 去除压缩，然后再解压 tar 文件。或者你也可以使用 tar 的 <b>z</b> 选项，它只是告诉它使用 gzip 或 gunzip 实用程序。\n\n创建一个压缩的 tar 文件：\n<pre>$ tar czf myfile.tar.gz</pre>\n\n解压缩和解包：\n<pre>$ tar xzf file.tar</pre>\n\n如果你需要帮助，请记住这个：e<b>X</b>tract all <b>Z</b>ee <b>F</b>iles！\n\ntar 是一个非常重要但你很少记得的命令之一，相关的 xkcd 漫画：<a href=\"https://xkcd.com/1168/\">https://xkcd.com/1168/</a>\n\n<b>其他实用程序</b>\n\n在你的 Linux 之旅中，你会遇到其他归档和压缩类型，比如：bzip2、compress、zip、unzip 等。它们可能不太常见，但请记住不同的实用程序需要不同的命令。",
+          "quizAnswer": "c",
+          "quizQuestion": "用于创建归档的 tar 标志是什么？",
+          "slug": "compressedarchivestar",
+          "title": "tar and gzip"
+        },
+        {
+          "exercise": "本课程无练习。",
+          "id": 4,
+          "lessonContent": "软件包很少能够独立运行，它们通常需要依赖项来帮助其运行。例如，假设我们有一组餐馆，这些餐馆都提供不同的美食，但它们都从同一个农场获得食材。它们的食物依赖于农场的供应，如果农场突然停止供应食物，那么这些餐馆将陷入困境。\n\n在 Linux 中，这些依赖通常是其他软件包或共享库。共享库是其他程序想要使用的代码库，它们不想为自己重写。再次想象一下餐馆，如果每家餐馆都自己种植食物，那会是多么繁重的工作？太多了。\n\n我们将在文件系统课程中更深入地了解共享库，所以现在只需记住，软件包有依赖项来帮助其运行，无论这些依赖项是其他软件包还是库，如果依赖项不存在，软件包最终会处于损坏状态，大多数情况下甚至无法安装。",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请继续前进！",
+          "slug": "packagedependencies",
+          "title": "软件包依赖"
+        },
+        {
+          "exercise": "找一个您想要在系统上安装的程序，比如 Google Chrome，并使用其中一条命令来安装它。",
+          "id": 5,
+          "lessonContent": "尽管本课程的大部分内容都是关于软件包管理系统（软件包管理的“蝙蝠侠”），但我们不应忘记“罗宾”。虽然它们非常有用且可靠，但它们不带有那辆酷炫的蝙蝠车和实用的蝙蝠腰带。\n\n就像 .exe 是一个单独的可执行文件一样，.deb 和 .rpm 也是如此。如果您使用软件包存储库，通常不会看到这些文件，但如果您直接下载软件包，您很可能会得到这些流行格式的文件。显然，它们分别适用于它们的发行版，.deb 适用于基于 Debian 的系统，.rpm 适用于基于 Red Hat 的系统。\n\n要安装这些直接软件包，您可以使用软件包管理命令：rpm 和 dpkg。这些工具用于安装软件包文件，但它们不会安装软件包的依赖项，因此如果您的软件包有 10 个依赖项，您必须单独安装这些软件包，然后安装它们的依赖项，以此类推。正如您所看到的，这正是导致我们后来将要讨论的完整管理系统的原因之一。\n\n请记住，您将无数次需要使用这些工具之一来安装、查询或验证软件包，所以请记住这些命令。\n\n<b>安装软件包</b>\n\n<pre>\nDebian: $ dpkg -i some_deb_package.deb\nRPM: $ rpm -i some_rpm_package.rpm\n</pre>\n\n<b>i</b> 代表安装。您也可以使用更长的格式 --install。\n\n<b>卸载软件包</b>\n\n<pre>\nDebian: $ dpkg -r some_deb_package.deb\nRPM: $ rpm -e some_rpm_package.rpm\n</pre>\n\nDebian: <b>r</b> 代表移除\nRPM: <b>e</b> 代表擦除\n\n<b>列出已安装的软件包</b>\n\n<pre>\nDebian: $ dpkg -l\nRPM: $ rpm -qa\n</pre>\n\nDebian: <b>l</b> 代表列出\nRPM: <b>q</b> 代表查询，<b>a</b> 代表全部",
+          "quizAnswer": "dpkg",
+          "quizQuestion": "什么是 .deb 文件的软件包管理工具？",
+          "slug": "packageinstalltools",
+          "title": "rpm and dpkg"
+        },
+        {
+          "exercise": "运行每个软件包命令，查看您收到的输出。",
+          "id": 6,
+          "lessonContent": "啊，软件包管理的蝙蝠侠，这些系统具备所有必要的功能，使软件包的安装、删除和更改变得更容易，包括安装软件包依赖项。两个最受欢迎的管理系统是 <b>yum</b> 和 <b>apt</b>。Yum 专属于红帽家族，apt 专属于 Debian 家族。\n\n<b>从存储库安装软件包</b>\n\n<pre>\nDebian: $ apt install package_name\nRPM: $ yum install package_name\n</pre>\n\n<b>删除软件包</b>\n\n<pre>\nDebian: $ apt remove package_name\nRPM: $ yum erase package_name\n</pre>\n\n<b>为存储库更新软件包</b>\n\n在安装和更新软件包之前，最佳实践是始终更新软件包存储库，以确保它们是最新的。\n\n<pre>\nDebian: apt update; apt upgrade\nRPM: yum update\n</pre>\n\n<b>获取已安装软件包的信息</b>\n\n<pre>\nDebian: apt show package_name\nRPM: yum info package_name\n</pre>",
+          "quizAnswer": "apt show",
+          "quizQuestion": "在 Debian 系统上用于显示软件包信息的命令是什么？",
+          "slug": "packagemanagementsystems",
+          "title": "yum 和 apt"
+        },
+        {
+          "exercise": "从可信站点找到一个源代码程序并从源代码安装。",
+          "id": 7,
+          "lessonContent": "通常情况下，您会遇到一些只提供纯源代码形式的晦涩软件包。您需要使用一些命令来编译并安装系统上的源代码软件包。\n\n首先，您需要安装软件以安装编译源代码所需的工具。\n\n<pre>$ sudo apt install build-essential</pre>\n\n完成后，解压软件包文件的内容，通常是一个 .tar.gz 文件。\n\n<pre>$ tar -xzvf package.tar.gz</pre>\n\n在执行任何操作之前，请查看软件包内的 README 或 INSTALL 文件。有时会有特定的安装说明。\n\n根据开发人员使用的编译方法不同，您需要使用不同的命令，比如 cmake 或其他。\n\n但是，最常见的是基本的 make 编译，因此我们将讨论它：\n\n软件包内容中将包含一个 configure 脚本，此脚本会检查系统上的依赖关系，如果缺少任何内容，您将看到错误并需要解决这些依赖关系。\n\n<pre>$ ./configure</pre>\n\n<b>./</b> 允许您在当前目录中执行脚本。\n\n<pre>$ make</pre>\n\n软件包内容中有一个名为 Makefile 的文件，其中包含构建软件的规则。运行 make 命令时，它会查看此文件以构建软件。\n\n<pre>$ sudo make install</pre>\n\n此命令实际上安装软件包，它将正确的文件复制到计算机上的正确位置。\n\n如果要卸载软件包，请使用：\n\n<pre>$ sudo make uninstall</pre>\n\n使用 make install 时要小心，您可能没有意识到背后实际发生了多少事情。如果决定删除此软件包，可能并未真正删除所有内容，因为您可能没有意识到添加到系统中的内容。相反，请忘记我刚刚向您解释的有关 make install 的所有内容，并使用 <b>checkinstall</b> 命令。此命令将为您创建一个 .deb 文件，您可以轻松安装和卸载。\n\n<pre>$ sudo checkinstall</pre>\n\n此命令实际上会执行 \"make install\" 并构建一个 .deb 软件包并安装它。这样可以更轻松地稍后删除软件包。",
+          "quizAnswer": "checkinstall",
+          "quizQuestion": "在任何情况下，您应该始终使用什么来替代 make install？",
+          "slug": "compilesourcecode",
+          "title": "编译源代码"
+        }
+      ],
+      "slug": "packages",
+      "title": "软件包"
+    },
+    {
+      "description": "了解Linux设备以及它们如何与内核和用户空间交互。",
+      "id": 9,
+      "image": "/images/chapters/devices.png",
+      "lessons": [
+        {
+          "exercise": "查看 /dev 目录的内容，您是否认识任何熟悉的设备？",
+          "id": 1,
+          "lessonContent": "当您将设备连接到计算机时，通常需要设备驱动程序才能正常运行。您可以通过设备文件或设备节点与设备驱动程序进行交互，这些是看起来像常规文件的特殊文件。由于这些设备文件就像常规文件一样，您可以使用诸如 ls、cat 等程序与它们交互。这些设备文件通常存储在 /dev 目录中。继续在您的系统上 ls /dev 目录，您将看到大量存在于系统上的设备文件。\n\n<pre>$ ls /dev </pre>\n\n其中一些设备您可能已经使用并与之交互，例如 /dev/null。还记得当我们将输出发送到 /dev/null 时，内核知道该设备接受我们的所有输入并将其丢弃，因此不会返回任何内容。\n\n在过去，如果您想要向系统添加设备，您需要在 /dev 中添加设备文件，然后可能就忘记了。如果重复几次，您就会看到问题所在。/dev 目录将充斥着您早已升级、停止使用等设备的静态设备文件。设备还是按照内核发现它们的顺序分配设备文件。因此，每次重新启动系统时，设备可能会有不同的设备文件，具体取决于它们被发现的时间。\n\n幸运的是，我们不再使用那种方法，现在我们有一种方法，用于动态添加和删除当前在系统上使用的设备，我们将在接下来的课程中讨论这一点。",
+          "quizAnswer": "/dev",
+          "quizQuestion": "系统中的设备文件存储在哪里？",
+          "slug": "devdirectory",
+          "title": "/dev 目录"
+        },
+        {
+          "exercise": "查看您的 /dev 目录，找出您可以看到哪些类型的设备。",
+          "id": 2,
+          "lessonContent": "在我们讨论设备管理方式之前，让我们实际看一些设备。\n\n<pre>$ ls -l /dev\nbrw-rw----   1 root disk      8,   0 Dec 20 20:13 sda\ncrw-rw-rw-   1 root root      1,   3 Dec 20 20:13 null\nsrw-rw-rw-   1 root root           0 Dec 20 20:13 log\nprw-r--r--   1 root root           0 Dec 20 20:13 fdata\n</pre>\n\n从左到右，列的含义如下：\n\n<ul>\n<li>权限</li>\n<li>所有者</li>\n<li>组</li>\n<li>主设备号</li>\n<li>次设备号</li>\n<li>时间戳</li>\n<li>设备名称</li>\n</ul>\n\n请记住，在 ls 命令中，您可以通过每行的第一个位来查看文件类型。设备文件表示如下：\n\n<ul>\n<li>c - 字符设备</li>\n<li>b - 块设备</li>\n<li>p - 管道</li>\n<li>s - 套接字</li>\n</ul>\n\n<b>字符设备</b>\n\n这些设备以一个字符为单位传输数据。您会看到很多伪设备（/dev/null）作为字符设备，这些设备实际上并未真正连接到机器，但它们允许操作系统具有更大的功能。\n\n<b>块设备</b>\n\n这些设备以大的固定大小块传输数据。您最常见到使用数据块的设备是块设备，例如硬盘驱动器、文件系统等。\n\n<b>管道设备</b>\n\n命名管道允许两个或多个进程相互通信，这类似于字符设备，但输出不是发送到设备，而是发送到另一个进程。\n\n<b>套接字设备</b>\n\n套接字设备促进进程之间的通信，类似于管道设备，但它们可以同时与多个进程通信。\n\n<b>设备特征</b>\n\n设备使用两个数字进行特征化，即<b>主设备号</b>和<b>次设备号</b>。您可以在上面的 ls 示例中看到这些数字，它们由逗号分隔。例如，假设一个设备具有设备号：<b>8, 0</b>：\n\n主设备号表示所使用的设备驱动程序，在本例中为 8，通常是 sd 块设备的主号。次号告诉内核这个驱动类中的唯一设备是哪个，在本例中，0 用于表示第一个设备（a）。",
+          "quizAnswer": "c",
+          "quizQuestion": "在 ls -l 命令中，字符设备的符号是什么？",
+          "slug": "devicetypes",
+          "title": "设备类型"
+        },
+        {
+          "exercise": "向伪设备写入内容并查看发生了什么，注意不要将您的磁盘写入这些设备！",
+          "id": 3,
+          "lessonContent": "以下是您可能会遇到的最常见设备名称：\n\n<b>SCSI设备</b>\n\n如果您的计算机上有任何形式的大容量存储，很可能正在使用SCSI（发音为“scuzzy”）协议。SCSI代表Small Computer System Interface，这是一种用于允许磁盘、打印机、扫描仪和其他外围设备与系统通信的协议。您可能听说过现代系统中实际上不再使用的SCSI设备，但是我们的Linux系统将SCSI磁盘对应到/dev中的硬盘驱动器。它们由sd（SCSI磁盘）前缀表示：\n\n常见的SCSI设备文件：\n\n<ul>\n<li>/dev/sda - 第一个硬盘</li>\n<li>/dev/sdb - 第二个硬盘</li>\n<li>/dev/sda3 - 第一个硬盘上的第三个分区</li>\n</ul>\n\n<b>伪设备</b>\n\n正如我们之前讨论的，伪设备实际上并未真正连接到您的系统，最常见的伪设备是字符设备：\n\n<ul>\n<li>/dev/zero - 接受并丢弃所有输入，生成连续的NULL（零值）字节流</li>\n<li>/dev/null - 接受并丢弃所有输入，不生成任何输出</li>\n<li>/dev/random - 生成随机数</li>\n</ul>\n\n<b>PATA设备</b>\n\n在旧系统中，有时您可能会看到硬盘以hd前缀命名：\n\n<ul>\n<li>/dev/hda - 第一个硬盘</li>\n<li>/dev/hdd2 - 第四个硬盘上的第二个分区</li>\n</ul>",
+          "quizAnswer": "sdb1",
+          "quizQuestion": "第二个SCSI磁盘上第一个分区的设备名称通常是什么？",
+          "slug": "devicenames",
+          "title": "设备名称"
+        },
+        {
+          "exercise": "查看/sys目录的内容，看看其中有哪些文件。",
+          "id": 4,
+          "lessonContent": "Sysfs是很久以前创建的，用于更好地管理系统上的设备，而/dev目录无法做到这一点。Sysfs是一个虚拟文件系统，通常挂载到/sys目录。它为我们提供比/dev目录中能看到的更详细的信息。/sys和/dev这两个目录似乎非常相似，在某些方面确实如此，但它们有重大区别。基本上，/dev目录很简单，它允许其他程序访问设备本身，而/sys文件系统用于查看信息和管理设备。\n\n/sys文件系统基本上包含系统上所有设备的所有信息，例如制造商和型号、设备插入的位置、设备状态、设备层次结构等。您在这里看到的文件不是设备节点，因此您不会真正通过/sys目录与设备交互，而是在管理设备。\n\n查看/sys目录的内容：\n\n<pre>\npete@icebox:~$ ls /sys/block/sda\nalignment_offset  discard_alignment  holders   removable  sda6       trace\nbdi               events             inflight  ro         size       uevent\ncapability        events_async       power     sda1       slaves\ndev               events_poll_msecs  queue     sda2       stat\ndevice            ext_range          range     sda5       subsystem\n</pre>",
+          "quizAnswer": "/sys",
+          "quizQuestion": "用于查看设备详细信息的目录是哪个？",
+          "slug": "sysfs",
+          "title": "sysfs"
+        },
+        {
+          "exercise": "运行给定的 udevadm 命令并查看输入。",
+          "id": 5,
+          "lessonContent": "在过去，实际上即使在今天，如果你真的想要的话，你可以使用类似以下命令来创建设备节点：\n\n<pre>$ mknod /dev/sdb1 b 8 3</pre>\n\n这个命令将创建一个设备节点 /dev/sdb1，它将被创建为一个块设备（b），主设备号为8，次设备号为3。\n\n要移除一个设备，你只需要在 /dev 目录中删除设备文件。\n\n幸运的是，由于 udev，我们现在不再需要这样做。udev 系统会根据设备的连接情况动态地创建和移除设备文件。系统上运行着一个 udevd 守护进程，它会监听内核发送的关于连接到系统的设备的消息。Udevd 会解析这些信息，并将数据与 /etc/udev/rules.d 中指定的规则进行匹配，根据这些规则，它很可能会为设备创建设备节点和符号链接。你可以编写自己的 udev 规则，但这超出了本课程的范围。幸运的是，你的系统已经配备了许多 udev 规则，所以你可能永远不需要编写自己的规则。\n\n你还可以使用 <b>udevadm</b> 命令查看 udev 数据库和 sysfs。这个工具非常有用，但有时可能会变得非常复杂，查看设备信息的一个简单命令是：\n\n<pre>$ udevadm info --query=all --name=/dev/sda</pre>",
+          "quizAnswer": "udev",
+          "quizQuestion": "是什么动态地添加和移除设备？",
+          "slug": "udev",
+          "title": "udev"
+        },
+        {
+          "exercise": "尝试运行这些命令，查看您收到的输出。",
+          "id": 6,
+          "lessonContent": "就像我们使用ls命令列出文件和目录一样，我们可以使用类似的工具来列出有关设备的信息。\n\n<b>列出USB设备</b>\n\n<pre>$ lsusb </pre>\n\n<b>列出PCI设备</b>\n\n<pre>$ lspci </pre>\n\n<b>列出SCSI设备</b>\n\n<pre>$ lsscsi </pre>",
+          "quizAnswer": "lsusb",
+          "quizQuestion": "用于查看USB设备的命令是什么？",
+          "slug": "listingdevices",
+          "title": "lsusb, lspci, lssci"
+        },
+        {
+          "exercise": "使用 dd 命令备份您的驱动器，并将输出设置为 .img 文件。",
+          "id": 7,
+          "lessonContent": "dd 工具非常有用，用于转换和复制数据。它从文件或数据流中读取输入，并将其写入文件或数据流中。\n\n考虑以下命令：\n\n<pre>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1024 </pre>\n\n此命令将备份.img的内容复制到/dev/sdb。它将以 1024 字节的块复制数据，直到没有更多数据需要复制。\n\n<ul>\n<li>if=file - 输入文件，从文件中读取而不是标准输入</li>\n<li>of=file - 输出文件，写入文件而不是标准输出</li>\n<li>bs=bytes - 块大小，每次读取和写入这么多字节的数据。您可以使用不同的大小单位，通过使用 k 表示千字节，m 表示兆字节等，所以 1024 字节是 1k</li>\n<li>count=number - 要复制的块数。</li>\n</ul>\n\n您会看到一些使用 count 选项的 dd 命令，通常与 dd if 一起使用，如果要复制一个 1 兆字节的文件，通常希望在复制完成后看到该文件为 1 兆字节。假设您运行以下命令：\n\n<pre>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1M count=2</pre>\n\n我们的 backup.img 文件大小为 10M，但是在此命令中，我们要复制 1M 2 次，因此只复制了 2M，导致复制的数据不完整。在许多情况下，count 可以派上用场，但如果只是复制数据，您几乎可以省略 count 甚至 bs。如果您真的想要优化数据传输，那么您将需要开始使用这些选项。\n\ndd 非常强大，您可以使用它来备份任何东西，包括整个磁盘驱动器、恢复磁盘映像等。请小心，如果您不确定自己在做什么，这个强大的工具可能会带来代价。",
+          "quizAnswer": "bs",
+          "quizQuestion": "dd 选项的块大小是什么？",
+          "slug": "ddcommand",
+          "title": "dd"
+        }
+      ],
+      "slug": "devices",
+      "title": "设备"
+    },
+    {
+      "description": "了解Linux文件系统、不同类型的文件系统、分区等。",
+      "id": 10,
+      "image": "/images/chapters/filesystem.png",
+      "lessons": [
+        {
+          "exercise": "查看您的 /usr 目录，那里包含什么样的信息？",
+          "id": 1,
+          "lessonContent": "此时，您可能已经对系统的目录结构非常熟悉，如果还不熟悉，很快您就会了解。文件系统的结构可能有所不同，但大多数情况下应符合文件系统层次结构标准。\n\n继续执行 <b>ls -l /</b> 命令，查看根目录下列出的目录，您的目录结构可能与我的不同，但大多数目录应该看起来像以下内容：\n\n<ul>\n<li>/ - 整个文件系统层次结构的根目录，所有内容都嵌套在此目录下。</li>\n<li>/bin - 基本的可运行程序（二进制文件），包括最基本的命令，如 ls 和 cp。</li>\n<li>/boot - 包含内核引导加载程序文件。</li>\n<li>/dev - 设备文件。</li>\n<li>/etc - 核心系统配置目录，应仅包含配置文件，而不包含任何二进制文件。</li>\n<li>/home - 用户的个人目录，保存您的文档、文件、设置等。</li>\n<li>/lib - 保存供二进制文件使用的库文件。</li>\n<li>/media - 用作可移动介质（如 USB 驱动器）的附加点。</li>\n<li>/mnt - 临时挂载的文件系统。</li>\n<li>/opt - 可选的应用软件包。</li>\n<li>/proc - 关于当前运行进程的信息。</li>\n<li>/root - root 用户的主目录。</li>\n<li>/run - 上次引导以来运行系统的信息。</li>\n<li>/sbin - 包含基本系统二进制文件，通常只能由 root 用户运行。</li>\n<li>/srv - 系统提供的特定站点数据。</li>\n<li>/tmp - 用于临时文件存储。</li>\n<li>/usr - 不幸的是，这个名称起得不太好，通常不包含用户文件，而是用于用户安装的软件和实用程序，不过这并不意味着您不能在其中添加个人目录。此目录中包含 /usr/bin、/usr/local 等子目录。</li>\n<li>/var - 变量目录，用于系统日志、用户跟踪、缓存等。基本上是任何经常变化的内容。</li>\n</ul>",
+          "quizAnswer": "/var",
+          "quizQuestion": "用于存储日志的目录是哪个？",
+          "slug": "filesystemhierarchy",
+          "title": "文件系统层次结构"
+        },
+        {
+          "exercise": "在网上做一些关于其他文件系统类型的研究：ReiserFS、ZFS、JFS 等。",
+          "id": 2,
+          "lessonContent": "有许多不同的文件系统实现可用。有些比其他的更快，有些支持更大容量的存储，而其他一些只适用于较小容量的存储。不同的文件系统有不同的数据组织方式，我们将详细介绍有哪些文件系统类型。由于有许多不同的实现可用，应用程序需要一种处理不同操作的方法。因此有一种称为虚拟文件系统（VFS）的抽象层。它是应用程序和不同文件系统类型之间的一层，因此无论您有哪种文件系统，您的应用程序都能够使用它。\n\n您的磁盘上可以有许多文件系统，这取决于它们如何分区，我们将在接下来的课程中详细介绍。\n\n<b>日志记录</b>\n\n大多数文件系统类型默认都支持日志记录，但以防万一，您应该知道它的作用。假设您正在复制一个大文件，突然断电。如果您使用的是非日志记录文件系统，文件将会损坏，您的文件系统将变得不一致，然后在重新启动时，系统会执行文件系统检查以确保一切正常。但是，根据您的文件系统有多大，修复可能需要一段时间。\n\n现在，如果您使用的是支持日志记录的系统，在您的机器开始复制文件之前，它会将您要做的事情写入一个日志文件（日志）。现在，当您实际复制文件时，一旦完成，日志将标记该任务已完成。由于此操作，文件系统始终处于一致状态，因此它将准确知道您上次停止的位置，如果您的机器突然关闭。这也减少了启动时间，因为它不需要检查整个文件系统，只需查看您的日志。\n\n<b>常见桌面文件系统类型</b>\n\n<ul>\n<li>ext4 - 这是本机Linux文件系统的最新版本。它与旧版的ext2和ext3兼容。它支持高达1艾字节的磁盘容量和高达16 TB的文件大小等等。这是Linux文件系统的标准选择。</li>\n<li>Btrfs - \"Better or Butter FS\" 是Linux的一种新文件系统，具有快照、增量备份、性能提升等功能。它已广泛可用，但尚未完全稳定和兼容。</li>\n<li>XFS - 高性能日志文件系统，非常适合具有大文件的系统，如媒体服务器。</li>\n<li>NTFS 和 FAT - Windows 文件系统</li>\n<li>HFS+ - Macintosh 文件系统</li>\n</ul>\n\n查看您的机器上有哪些文件系统：\n\n<pre>\npete@icebox:~$ df -T\nFilesystem     Type     1K-blocks    Used Available Use% Mounted on\n/dev/sda1      ext4       6461592 2402708   3707604  40% /\nudev           devtmpfs    501356       4    501352   1% /dev\ntmpfs          tmpfs       102544    1068    101476   2% /run\n/dev/sda6      xfs       13752320  460112  13292208   4% /home\n</pre>\n\n<b>df</b> 命令报告文件系统磁盘空间使用情况和其他有关磁盘的详细信息，我们稍后将更多地讨论这个工具。",
+          "quizAnswer": "ext4",
+          "quizQuestion": "常见的 Linux 文件系统类型是什么？",
+          "slug": "filesystemtypes",
+          "title": "文件系统类型"
+        },
+        {
+          "exercise": "在你的机器上运行 <b>parted -l</b> 并评估结果。",
+          "id": 3,
+          "lessonContent": "硬盘可以被划分为分区，从本质上讲，这相当于创建了多个块设备。回想一下一些例子，比如 /dev/sda1 和 /dev/sda2，/dev/sda 代表整个磁盘，而 /dev/sda1 是该磁盘上的第一个分区。分区非常有用，可以用来分隔数据，如果需要某种文件系统，可以轻松地创建一个分区，而不是将整个磁盘作为一个文件系统类型。\n\n<b>分区表</b>\n\n每个磁盘都有一个分区表，该表告诉系统磁盘的分区情况。这个表告诉你分区的起始和结束位置，哪些分区是可引导的，磁盘的哪些扇区分配给了哪个分区等等。目前有两种主要的分区表方案，主引导记录（MBR）和全局唯一标识分区表（GPT）。\n\n<b>分区</b>\n\n磁盘由分区组成，帮助我们组织数据。你可以在一个磁盘上有多个分区，它们之间不能重叠。如果有未分配给任何分区的空间，那么它被称为未分配空间。分区的类型取决于你的分区表。在一个分区内，你可以有一个文件系统，或者将一个分区专门用于其他用途，比如交换空间（我们很快会讨论这个）。\n\n<i>MBR</i>\n\n<ul>\n<li>传统的分区表，曾被用作标准</li>\n<li>可以有主分区、扩展分区和逻辑分区</li>\n<li>MBR 有四个主分区的限制</li>\n<li>通过将主分区转换为扩展分区来创建额外的分区（一个磁盘上只能有一个扩展分区）。然后在扩展分区内添加逻辑分区。逻辑分区的使用方式与其他分区相同。有点奇怪，我知道。</li>\n<li>支持最大容量为 2TB 的磁盘</li>\n</ul>\n\n<i>GPT</i>\n\n<ul>\n<li>全局唯一标识分区表（GPT）正在成为磁盘分区的新标准</li>\n<li>只有一种类型的分区，可以创建多个</li>\n<li>每个分区都有一个全局唯一的 ID（GUID）</li>\n<li>主要与基于 UEFI 的引导一起使用（我们将在另一门课程中详细介绍）</li>\n</ul>\n\n<b>文件系统结构</b>\n\n我们从之前的课程中知道，文件系统是文件和目录的有序集合。简单来说，它由一个管理文件的数据库和实际文件本身组成，但我们将详细介绍一些内容。\n\n<ul>\n<li>引导块 - 位于文件系统的前几个扇区中，实际上并不被文件系统使用。它包含用于引导操作系统的信息。操作系统只需要一个引导块。如果你有多个分区，它们将有引导块，但其中许多是未使用的。</li>\n<li>超级块 - 这是位于引导块之后的单个块，包含有关文件系统的信息，如索引节点表的大小、逻辑块的大小和文件系统的大小。</li>\n<li>索引节点表 - 可以将其视为管理我们文件的数据库（我们有一整节课程讨论索引节点，所以不用担心）。每个文件或目录在索引节点表中都有一个唯一的条目，并且包含有关文件的各种信息。</li>\n<li>数据块 - 这是文件和目录的实际数据。</li>\n</ul>\n\n让我们看看不同的分区表。以下是使用 MBR 分区表（msdos）的一个分区示例。你可以看到主分区、扩展分区和逻辑分区。\n\n<pre>\npete@icebox:~$ sudo parted -l\nModel: Seagate (scsi)\nDisk /dev/sda: 21.5GB\nSector size (logical/physical): 512B/512B\nPartition Table: msdos\n\nNumber  Start   End     Size    Type      File system     Flags\n 1      1049kB  6860MB  6859MB  primary   ext4            boot\n 2      6861MB  21.5GB  14.6GB  extended\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n 6      7381MB  21.5GB  14.1GB  logical   xfs\n</pre>\n\n\n这个示例是 GPT，只使用了唯一的分区 ID。\n\n<pre>\nModel: Thumb Drive (scsi)\nDisk /dev/sdb: 4041MB\nSector size (logical/physical): 512B/512B\nPartition Table: gpt\n\nNumber  Start   End     Size     File system  Name        Flags\n 1      17.4kB  1000MB  1000MB                first\n 2      1000MB  4040MB  3040MB                second\n</pre>",
+          "quizAnswer": "扩展",
+          "quizQuestion": "在 MBR 分区方案中，用于创建超过 4 个分区的分区类型是什么？",
+          "slug": "anatomyofadisk",
+          "title": "磁盘解剖"
+        },
+        {
+          "exercise": "使用一半的驱动器空间将 USB 驱动器分区为 ext4 和另一半为空闲空间。",
+          "id": 4,
+          "lessonContent": "让我们通过在 USB 驱动器上进行文件系统的一些实际操作来学习一些实用的东西。如果你没有 USB 驱动器，别担心，你仍然可以跟着学习接下来的几节课。\n\n首先，我们需要对磁盘进行分区。有许多可用工具可以实现这一点：\n\n<ul>\n<li>fdisk - 基本的命令行分区工具，不支持 GPT</li>\n<li>parted - 这是一个支持 MBR 和 GPT 分区的命令行工具</li>\n<li>gparted - 这是 parted 的图形界面版本</li>\n<li>gdisk - fdisk 的变体，仅支持 GPT 而不支持 MBR</li>\n</ul>\n\n让我们使用 parted 来进行分区。假设我连接了 USB 设备，我们看到设备名称是 /dev/sdb2。\n\n<b>启动 parted</b>\n\n<pre>$ sudo parted</pre>\n\n你将进入 parted 工具，这里你可以运行命令来对设备进行分区。\n\n<b>选择设备</b>\n\n<pre>select /dev/sdb2</pre>\n\n要选择要操作的设备，请通过设备名称选择它。\n\n<b>查看当前分区表</b>\n\n<pre>\n(parted) print                                                            \nModel: Seagate (scsi)\nDisk /dev/sda: 21.5GB\nSector size (logical/physical): 512B/512B\nPartition Table: msdos\n\nNumber  Start   End     Size    Type      File system     Flags\n 1      1049kB  6860MB  6859MB  primary   ext4            boot\n 2      6861MB  21.5GB  14.6GB  extended\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n 6      7381MB  21.5GB  14.1GB  logical   xfs\n</pre>\n\n在这里，你将看到设备上可用的分区。 <b>Start</b> 和 <b>End</b> 是分区在硬盘上占用空间的起始和结束点，你需要找到适合你的分区的良好起始点和结束点。\n\n<b>对设备进行分区</b>\n\n<pre>mkpart primary 123 4567</pre>\n\n现在只需选择一个起始点和结束点并进行分区，你需要根据使用的表类型指定分区类型。\n\n<b>调整分区大小</b>\n\n如果没有空间，你也可以调整分区大小。\n\n<pre>resize 2 1245 3456</pre>\n\n选择分区号，然后选择要调整大小的起始点和结束点。\n\nParted 是一个非常强大的工具，在对磁盘进行分区时应当小心。",
+          "quizAnswer": "mkpart",
+          "quizQuestion": "使用 parted 命令进行分区的是什么？",
+          "slug": "diskpartitioning",
+          "title": "磁盘分区"
+        },
+        {
+          "exercise": "在 USB 驱动器上创建一个 ext4 文件系统。",
+          "id": 5,
+          "lessonContent": "既然您已经对磁盘进行了分区，让我们来创建一个文件系统吧！\n\n<pre>$ sudo mkfs -t ext4 /dev/sdb2</pre>\n\n就是这么简单！<b>mkfs</b>（make filesystem）工具允许我们指定我们想要的文件系统类型以及我们想要的位置。您只会想要在新分区的磁盘上创建文件系统，或者如果您正在重新分区旧磁盘的话。如果您试图在现有文件系统之上创建一个文件系统，很可能会使您的文件系统处于损坏状态。",
+          "quizAnswer": "mkfs",
+          "quizQuestion": "用于创建文件系统的命令是什么？",
+          "slug": "creatingfilesystems",
+          "title": "创建文件系统"
+        },
+        {
+          "exercise": "查看 mount 和 umount 的 man 手册，看看您可以使用哪些其他选项。",
+          "id": 6,
+          "lessonContent": "在查看文件系统内容之前，您需要将其挂载。为此，您需要设备位置、文件系统类型和挂载点，挂载点是系统上的一个目录，文件系统将附加到该目录上。因此，我们基本上希望将设备挂载到挂载点。\n\n首先创建挂载点，在我们的情况下 <b>mkdir /mydrive</b>\n\n<pre>$ sudo mount -t ext4 /dev/sdb2 /mydrive</pre>\n\n就这么简单！现在当我们进入 /mydrive 时，我们可以看到文件系统内容，<b>-t</b> 指定文件系统类型，然后是设备位置，最后是挂载点。\n\n要从挂载点卸载设备：\n\n<pre>$ sudo umount /mydrive \n或 \n$ sudo umount /dev/sdb2</pre>\n\n请记住，内核按照找到它们的顺序命名设备。如果我们挂载设备后由于某种原因设备名称发生更改怎么办？幸运的是，您可以使用设备的通用唯一标识符（UUID）而不是名称。\n\n要查看系统上块设备的UUID：\n\n<pre>\npete@icebox:~$ sudo blkid\n/dev/sda1: UUID=\"130b882f-7d79-436d-a096-1e594c92bb76\" TYPE=\"ext4\" \n/dev/sda5: UUID=\"22c3d34b-467e-467c-b44d-f03803c2c526\" TYPE=\"swap\" \n/dev/sda6: UUID=\"78d203a0-7c18-49bd-9e07-54f44cdb5726\" TYPE=\"xfs\" \n</pre>\n\n我们可以看到设备名称、相应的文件系统类型和它们的UUID。现在，当我们想要挂载某个内容时，我们可以使用：\n\n<pre>$ sudo mount UUID=130b882f-7d79-436d-a096-1e594c92bb76 /mydrive</pre>\n\n大多数情况下，您不需要通过UUID挂载设备，使用设备名称更容易，通常操作系统会知道如何挂载常见设备，如USB驱动器。但是，如果您需要在启动时自动挂载文件系统，比如添加了第二个硬盘，您将需要使用UUID，我们将在下一课中介绍这一点。",
+          "quizAnswer": "mount",
+          "quizQuestion": "用于附加文件系统的命令是什么？",
+          "slug": "挂载和卸载文件系统",
+          "title": "挂载和卸载"
+        },
+        {
+          "exercise": "将我们一直在使用的 USB 驱动器作为 /etc/fstab 中的一个条目添加进去，在重新启动后，您应该仍然可以看到它被挂载。",
+          "id": 7,
+          "lessonContent": "当我们想要在启动时自动挂载文件系统时，我们可以将它们添加到一个名为 /etc/fstab 的文件中（发音为 \"eff es tab\" 而不是 \"eff stab\"），缩写为文件系统表。该文件包含一个永久挂载的文件系统列表。\n\n<pre>\npete@icebox:~$ cat /etc/fstab\nUUID=130b882f-7d79-436d-a096-1e594c92bb76 /               ext4    relatime,errors=remount-ro 0       1\nUUID=78d203a0-7c18-49bd-9e07-54f44cdb5726 /home           xfs     relatime        0       2\nUUID=22c3d34b-467e-467c-b44d-f03803c2c526 none            swap    sw              0       0\n</pre>\n\n每一行代表一个文件系统，字段如下：\n\n<ul>\n<li>UUID - 设备标识符</li>\n<li>挂载点 - 文件系统挂载到的目录</li>\n<li>文件系统类型</li>\n<li>选项 - 其他挂载选项，请参阅 man 手册以获取更多详细信息</li>\n<li>Dump - 由 dump 实用程序使用以决定何时进行备份，您应该默认为 0</li>\n<li>Pass - 由 fsck 使用以决定应检查文件系统的顺序，如果值为 0，则不会被检查</li>\n</ul>\n\n要添加一个条目，只需直接修改 /etc/fstab 文件，使用上述条目语法。修改此文件时要小心，如果弄错了，可能会让您的生活变得更加困难。",
+          "quizAnswer": "/etc/fstab",
+          "quizQuestion": "用于定义文件系统应如何挂载的文件是什么？",
+          "slug": "etcfstabfilesystemtable",
+          "title": "/etc/fstab"
+        },
+        {
+          "exercise": "为 USB 驱动器中的空闲空间分区以用作交换空间。",
+          "id": 8,
+          "lessonContent": "在我们之前的示例中，我向您展示了如何查看您的分区表，让我们重新访问该示例，更具体地说是这一行：\n\n<pre>\nNumber  Start   End     Size    Type      File system     Flags\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n</pre>\n\n这个交换分区是什么？嗯，交换是我们用来为系统分配虚拟内存的。如果内存不足，系统会使用该分区将空闲进程的内存部分与磁盘进行“交换”，这样您就不会因为内存不足而陷入困境。\n\n<b>使用分区作为交换空间</b>\n\n假设我们想要将我们的 /dev/sdb2 分区用作交换空间。\n\n<ol>\n<li>首先确保分区上没有任何内容</li>\n<li>运行：mkswap /dev/sdb2 来初始化交换区域</li>\n<li>运行：swapon /dev/sdb2 这将启用交换设备</li>\n<li>如果要使交换分区在启动时保持存在，您需要在 /etc/fstab 文件中添加一个条目。sw 是您将使用的文件系统类型。</li>\n<li>要删除交换：swapoff /dev/sdb2</li>\n</ol>\n\n通常，您应该分配大约两倍于您的内存大小的交换空间。但是，如今的现代系统通常已经非常强大并且具有足够的RAM。",
+          "quizAnswer": "swapon",
+          "quizQuestion": "在设备上启用交换空间的命令是什么？",
+          "slug": "交换空间",
+          "title": "交换"
+        },
+        {
+          "exercise": "使用 du 和 df 查看您的磁盘使用情况和剩余空间。",
+          "id": 9,
+          "lessonContent": "有一些工具可用于查看磁盘的利用率：\n\n<pre>\npete@icebox:~$ df -h\nFilesystem     1K-blocks    Used Available Use% Mounted on\n/dev/sda1       6.2G  2.3G  3.6G  40% /\n</pre>\n\ndf 命令显示当前挂载的文件系统的利用情况。-h 标志提供人类可读的格式。您可以看到设备是什么，以及已使用和可用的容量。\n\n假设您的磁盘即将满，想知道哪些文件或目录占用了空间，您可以使用 <b>du</b> 命令。\n\n<pre>$ du -h</pre>\n\n这将显示您当前目录的磁盘使用情况，您可以使用 <b>du -h /</b> 查看根目录，但可能会有些混乱。\n\n这两个命令在语法上非常相似，很难记住应该使用哪个，要检查您的 <b>磁盘</b> 有多少是 <b>空闲</b>，请使用 df。要检查 <b>磁盘使用情况</b>，请使用 du。",
+          "quizAnswer": "df",
+          "quizQuestion": "用于显示磁盘上有多少空间是空闲的命令是？",
+          "slug": "diskusage",
+          "title": "磁盘使用情况"
+        },
+        {
+          "exercise": "查看fsck的man页面，了解它还可以做什么。",
+          "id": 10,
+          "lessonContent": "有时我们的文件系统并不总是处于最佳状态，如果突然关机，我们的数据可能会损坏。系统会尽力使我们恢复到工作状态（尽管我们也可以尝试自己修复）。\n\n<b>fsck</b>（文件系统检查）命令用于检查文件系统的一致性，甚至可以尝试修复它。通常在启动磁盘时，fsck会在磁盘挂载之前运行，以确保一切正常。但有时，您的磁盘可能状况很糟糕，您需要手动执行此操作。但请务必在救援磁盘或其他可以在未挂载情况下访问文件系统的地方执行此操作。\n\n<pre>$ sudo fsck /dev/sda</pre>",
+          "quizAnswer": "fsck",
+          "quizQuestion": "用于检查文件系统完整性的命令是什么？",
+          "slug": "filesystemrepair",
+          "title": "文件系统修复"
+        },
+        {
+          "exercise": "观察一些不同文件的inode编号，哪些通常是最先创建的？",
+          "id": 11,
+          "lessonContent": "记得我们的文件系统由所有实际文件和管理这些文件的数据库组成吗？这个数据库被称为inode表。\n\n<b>什么是inode？</b>\n\ninode（索引节点）是这个表中的一个条目，每个文件都有一个。它描述了文件的所有信息，比如：\n\n<ul>\n<li>文件类型 - 普通文件、目录、字符设备等</li>\n<li>所有者</li>\n<li>组</li>\n<li>访问权限</li>\n<li>时间戳 - mtime（最后一次文件修改时间）、ctime（最后一次属性更改时间）、atime（最后一次访问时间）</li>\n<li>指向文件的硬链接数</li>\n<li>文件大小</li>\n<li>分配给文件的块数</li>\n<li>指向文件数据块的指针 - 最重要的部分！</li>\n</ul>\n\n基本上，inode存储了文件的所有信息，除了文件名和文件本身！\n\n<b>inode何时创建？</b>\n\n当创建文件系统时，也会分配inode空间。有一些算法会确定您根据磁盘容量等需要多少inode空间。您可能在生活中的某个时候看到过磁盘空间不足的错误。同样的情况也可能发生在inode上（尽管较少），您可能会用完inode，因此无法创建更多文件。请记住，数据存储取决于数据和数据库（inode）。\n\n要查看系统上剩余的inode数量，请使用命令<b>df -i</b>\n\n<b>inode信息</b>\n\ninode通过编号进行标识，当文件被创建时，会分配一个inode编号，编号按顺序分配。但是，有时您创建新文件时可能会注意到它获得的inode编号比其他文件低，这是因为一旦inode被删除，它们可以被其他文件重用。要查看inode编号，请运行<b>ls -li</b>：\n\n<pre>\npete@icebox:~$ ls -li\n140 drwxr-xr-x 2 pete pete 6 Jan 20 20:13 Desktop\n141 drwxr-xr-x 2 pete pete 6 Jan 20 20:01 Documents\n</pre>\n\n此命令中的第一个字段列出了inode编号。\n\n您还可以使用stat查看有关文件的详细信息，它还会告诉您有关inode的信息。\n\n<pre>\npete@icebox:~$ stat ~/Desktop/\n  File: ‘/home/pete/Desktop/’\n  Size: 6               Blocks: 0          IO Block: 4096   directory\nDevice: 806h/2054d      Inode: 140         Links: 2\nAccess: (0755/drwxr-xr-x)  Uid: ( 1000/   pete)   Gid: ( 1000/   pete)\nAccess: 2016-01-20 20:13:50.647435982 -0800\nModify: 2016-01-20 20:13:06.191675843 -0800\nChange: 2016-01-20 20:13:06.191675843 -0800\n Birth: -\n</pre>\n\n\n<b>inode如何定位文件？</b>\n\n我们知道我们的数据在磁盘的某个地方，不幸的是，它可能不是按顺序存储的，因此我们必须使用inode。inode指向文件的实际数据块。在典型的文件系统中（并非所有文件系统都相同），每个inode包含15个指针，前12个指针直接指向数据块。第13个指针指向一个包含更多指针的块，第14个指针指向另一个嵌套的指针块，第15个指针再次指向另一个指针块！令人困惑，我知道！之所以这样做是为了保持每个inode的结构相同，但能够引用不同大小的文件。如果您有一个小文件，您可以通过前12个直接指针更快地找到它，较大的文件可以通过指针的嵌套找到。无论如何，inode的结构都是相同的。",
+          "quizAnswer": "df -i",
+          "quizQuestion": "如何查看系统上剩余的inode数量？",
+          "slug": "inodes",
+          "title": "Inodes"
+        },
+        {
+          "exercise": "尝试创建符号链接和硬链接，删除一些并查看发生了什么。",
+          "id": 12,
+          "lessonContent": "让我们使用一个关于索引节点信息的先前示例：\n\n<pre>\npete@icebox:~$ ls -li\n140 drwxr-xr-x 2 pete pete 6 Jan 20 20:13 Desktop\n141 drwxr-xr-x 2 pete pete 6 Jan 20 20:01 Documents\n</pre>\n\n您可能已经注意到我们一直在忽略 ls 命令中的第三个字段，该字段是链接计数。链接计数是文件具有的硬链接总数，这对您目前没有意义。所以让我们先讨论链接。\n\n<b>符号链接</b>\n\n在 Windows 操作系统中，有一种称为快捷方式的东西，快捷方式只是指向其他文件的别名。如果对原始文件执行某些操作，可能会破坏快捷方式。在 Linux 中，快捷方式的等效物是符号链接（或软链接或符号链接）。符号链接允许我们通过其文件名链接到另一个文件。Linux 中发现的另一种链接类型是硬链接，这实际上是另一个具有到索引节点的链接的文件。让我们从符号链接开始看看我是什么意思。\n\n<pre>\npete@icebox:~/Desktop$ echo 'myfile' > myfile\npete@icebox:~/Desktop$ echo 'myfile2' > myfile2\npete@icebox:~/Desktop$ echo 'myfile3' > myfile3\n\npete@icebox:~/Desktop$ ln -s myfile myfilelink\npete@icebox:~/Desktop$ ls -li\ntotal 12\n  151 -rw-rw-r-- 1 pete pete 7 Jan 21 21:36 myfile\n93401 -rw-rw-r-- 1 pete pete 8 Jan 21 21:36 myfile2\n93402 -rw-rw-r-- 1 pete pete 8 Jan 21 21:36 myfile3\n93403 lrwxrwxrwx 1 pete pete 6 Jan 21 21:39 myfilelink -> myfile\n</pre>\n\n您可以看到我创建了一个名为 myfilelink 的符号链接，指向 myfile。符号链接由 -> 表示。请注意，我得到了一个新的索引节点号，符号链接只是指向文件名的文件。当您修改符号链接时，文件也会被修改。索引节点号对文件系统是唯一的，您不能在单个文件系统中拥有两个相同的索引节点号，这意味着您不能通过其索引节点号引用不同文件系统中的文件。但是，如果您使用符号链接，它们不使用索引节点号，而是使用文件名，因此它们可以跨不同文件系统引用。\n\n<b>硬链接</b>\n\n让我们看一个硬链接的示例：\n\n<pre>\npete@icebox:~/Desktop$ ln myfile2 myhardlink\npete@icebox:~/Desktop$ ls -li\ntotal 16\n  151 -rw-rw-r-- 1 pete pete 7 Jan 21 21:36 myfile\n93401 -rw-rw-r-- 2 pete pete 8 Jan 21 21:36 myfile2\n93402 -rw-rw-r-- 1 pete pete 8 Jan 21 21:36 myfile3\n93403 lrwxrwxrwx 1 pete pete 6 Jan 21 21:39 myfilelink -> myfile\n93401 -rw-rw-r-- 2 pete pete 8 Jan 21 21:36 myhardlink\n</pre>\n\n硬链接只是创建另一个具有指向相同索引节点的链接的文件。因此，如果我修改了 myfile2 或 myhardlink 的内容，则两者都会看到更改，但如果删除了 myfile2，则仍可以通过 myhardlink 访问该文件。这就是 ls 命令中的链接计数起作用的地方。链接计数是索引节点具有的硬链接数，在删除文件时，它将减少该链接计数。只有当所有指向索引节点的硬链接都被删除时，索引节点才会被删除。创建文件时，其链接计数为 1，因为它是指向该索引节点的唯一文件。与符号链接不同，硬链接不跨文件系统，因为索引节点对文件系统是唯一的。\n\n<b>创建符号链接</b>\n\n<pre>\n$ ln -s myfile mylink</pre>\n\n要创建符号链接，您使用带有 -s 的 ln 命令，并指定目标文件，然后是链接名称。\n\n<b>创建硬链接</b>\n\n<pre>\n$ ln somefile somelink</pre>\n\n与创建符号链接类似，只是这次省略了 -s。",
+          "quizAnswer": "ln -s",
+          "quizQuestion": "用于创建符号链接的命令是什么？",
+          "slug": "symlinks",
+          "title": "符号链接"
+        }
+      ],
+      "slug": "thefilesystem",
+      "title": "文件系统"
+    },
+    {
+      "description": "了解 Linux 启动过程的各个阶段。",
+      "id": 11,
+      "image": "/images/chapters/boot.png",
+      "lessons": [
+        {
+          "exercise": "重新启动系统，看看您是否能在计算机引导时看到每个步骤。",
+          "id": 1,
+          "lessonContent": "现在我们已经对 Linux 的一些重要组件有了相当好的了解，让我们通过学习系统引导的方式将它们整合在一起。当您打开计算机时，它会展示一些很酷的东西，比如显示标志屏幕，运行一些不同的消息，然后最后您会看到一个登录窗口。其实在您按下电源按钮到登录之间发生了很多事情，我们将在本课程中讨论这些内容。\n\nLinux 引导过程可以简单分为 4 个阶段：\n\n<b>1. BIOS</b>\n\nBIOS（代表“基本输入/输出系统”）初始化硬件，并通过自检（POST）确保所有硬件正常运行。 BIOS 的主要工作是加载引导加载程序。\n\n<b>2. 引导加载程序</b>\n\n引导加载程序将内核加载到内存中，然后使用一组内核参数启动内核。 最常见的引导加载程序之一是 GRUB，这是一个通用的 Linux 标准。\n\n<b>3. 内核</b>\n\n当内核加载时，它立即初始化设备和内存。 内核的主要工作是加载 init 进程。\n\n<b>4. Init</b>\n\n请记住，init 进程是第一个启动的进程，init 在系统上启动和停止必要的服务进程。 Linux 发行版中有三种主要的 init 实现。 我们将简要介绍它们，然后在另一个课程中深入探讨。\n\n这就是 Linux 引导过程的（非常）简单解释。 我们将在接下来的课程中更详细地讨论这些阶段。",
+          "quizAnswer": "init",
+          "quizQuestion": "Linux 引导过程中的最后一个阶段是什么？",
+          "slug": "bootprocessoverview",
+          "title": "引导过程概述"
+        },
+        {
+          "exercise": "进入 BIOS 菜单，查看是否已启用 UEFI 引导。",
+          "id": 2,
+          "lessonContent": "<b>BIOS</b>\n\nLinux 启动过程的第一步是 BIOS，它执行系统完整性检查。BIOS 是一种固件，最常见于 IBM PC 兼容计算机，这是当今主要类型的计算机。您可能已经使用 BIOS 固件来更改硬盘的启动顺序，检查系统时间，您机器的 MAC 地址等。BIOS 的主要目标是找到系统引导加载程序。\n\n因此，一旦 BIOS 启动硬盘，它会搜索引导块以找出如何启动系统。根据您如何分区硬盘，它将查找主引导记录（MBR）或 GPT。MBR 位于硬盘的第一个扇区，即前 512 字节。MBR 包含加载磁盘上其他程序的代码，这个程序实际上会加载我们的引导加载程序。\n\n现在，如果您使用 GPT 对硬盘进行分区，引导加载程序的位置会有所变化。\n\n<b>UEFI</b>\n\n除了使用 BIOS 外，还有另一种启动系统的方法，那就是使用 UEFI（代表“统一可扩展固件接口”）。UEFI 旨在成为 BIOS 的继任者，当今大多数硬件都内置了 UEFI 固件。Macintosh 机器多年来一直在使用 EFI 引导，而 Windows 大多数已将所有内容移至 UEFI 引导。GPT 格式旨在与 EFI 一起使用。如果您要引导 GPT 硬盘，则不一定需要 EFI。GPT 硬盘的第一个扇区保留为“保护性 MBR”，以便在基于 BIOS 的机器上引导。\n\nUEFI 将所有启动信息存储在 .efi 文件中。此文件存储在硬件上名为 EFI 系统分区的特殊分区中。在此分区中，它将包含引导加载程序。UEFI 与传统 BIOS 固件相比具有许多改进。但是，由于我们使用的是 Linux，我们中的大多数人都在使用 BIOS。因此，所有这些课程将继续使用这种前提。",
+          "quizAnswer": "引导加载程序",
+          "quizQuestion": "BIOS 加载什么？",
+          "slug": "bootprocessbios",
+          "title": "启动过程：BIOS"
+        },
+        {
+          "exercise": "如果您的引导加载程序是GRUB，请使用'e'键进入GRUB菜单并查看设置。",
+          "id": 3,
+          "lessonContent": "引导加载程序的主要职责是：\n\n<ul>\n<li>引导进入操作系统，也可以用于引导非Linux操作系统</li>\n<li>选择要使用的内核</li>\n<li>指定内核参数</li>\n</ul>\n\nLinux最常见的引导加载程序是GRUB，您很可能在您的系统上使用它。还有许多其他引导加载程序可供选择，如LILO、efilinux、coreboot、SYSLINUX等。但是，在我们的示例中，我们将只使用GRUB作为我们的引导加载程序。\n\n因此，我们知道引导加载程序的主要目标是加载内核，但它在哪里找到内核呢？要找到它，我们需要查看我们的内核参数。可以通过在启动时使用'e'键进入GRUB菜单来找到这些参数。如果您没有GRUB，不用担心，我们将介绍您将看到的引导参数：\n\n<ul>\n<li>initrd - 指定初始RAM磁盘的位置（我们将在下一课中详细讨论此内容）。</li>\n<li>BOOT_IMAGE - 这是内核映像的位置</li>\n<li>root - 根文件系统的位置，内核在此位置内搜索以找到init。通常由其UUID或设备名称（如/dev/sda1）表示。</li>\n<li>ro - 这个参数很常见，它将文件系统挂载为只读模式。</li>\n<li>quiet - 添加此参数以便在引导过程中不看到后台显示的消息。</li>\n<li>splash - 这允许显示启动画面。</li>\n</ul>",
+          "quizAnswer": "quiet",
+          "quizQuestion": "哪个内核参数使您看不到引导消息？",
+          "slug": "bootprocessbootloader",
+          "title": "引导过程：引导加载程序"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 4,
+          "lessonContent": "现在我们的引导加载程序已经传递了必要的参数，让我们看看它是如何启动的：\n\n<b>Initrd vs Initramfs</b>\n\n当我们谈论内核引导时，存在一些鸡生蛋还是蛋生鸡的问题。内核管理系统的硬件，但在引导过程中，并非所有驱动程序都对内核可用。因此，我们依赖一个临时的根文件系统，其中只包含内核需要访问其余硬件所需的基本模块。在较旧版本的Linux中，这项工作由initrd（初始RAM磁盘）完成。内核会挂载initrd，获取必要的引导驱动程序，然后在加载完所需的一切后，会用实际的根文件系统替换initrd。如今，我们有一种称为initramfs的东西，这是一个内置到内核本身中的临时根文件系统，用于加载真实根文件系统所需的所有驱动程序，因此不再需要定位initrd文件。\n\n<b>挂载根文件系统</b>\n\n现在内核具有创建根设备和挂载根分区所需的所有模块。但在继续之前，根分区实际上首先以只读模式挂载，以便fsck可以安全运行并检查系统完整性。然后重新以读写模式挂载根文件系统。然后内核定位init程序并执行它。",
+          "quizAnswer": "initramfs",
+          "quizQuestion": "现代系统中用于加载临时根文件系统的是什么？",
+          "slug": "bootprocesskernel",
+          "title": "引导过程：内核"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 5,
+          "lessonContent": "我们在之前的课程中讨论过 init，并知道它是第一个启动的进程，它启动系统上的所有其他必要服务。但是它是如何做到的呢？\n\n实际上，在 Linux 中有三种主要的 init 实现：\n\n<b>System V init (sysv)</b>\n\n这是传统的 init 系统。它根据启动脚本顺序启动和停止进程。机器的状态由运行级别表示，每个运行级别以不同的方式启动或停止机器。\n\n<b>Upstart</b>\n\n这是您在旧版 Ubuntu 安装中找到的 init。Upstart 使用作业和事件的概念，通过启动执行特定操作的作业来响应事件。\n\n<b>Systemd</b>\n\n这是 init 的新标准，它是目标导向的。基本上，您有一个要实现的目标，systemd 会尝试满足目标的依赖关系以完成目标。\n\n我们有一个完整的 Init 系统课程，我们将更详细地研究这些系统。",
+          "quizAnswer": "systemd",
+          "quizQuestion": "init 的最新标准是什么？",
+          "slug": "bootprocessinit",
+          "title": "引导过程：初始化"
+        }
+      ],
+      "slug": "bootthesystem",
+      "title": "启动系统"
+    },
+    {
+      "description": "Linux 系统中最重要的部分，了解它的工作原理以及如何配置。",
+      "id": 12,
+      "image": "/images/chapters/kernel.png",
+      "lessons": [
+        {
+          "exercise": "本课程没有练习。",
+          "id": 1,
+          "lessonContent": "正如您到目前为止所学的那样，内核是操作系统的核心。我们已经讨论了操作系统的其他部分，但尚未展示它们如何一起工作。Linux操作系统可以分为三个不同的抽象级别。\n\n最基本的级别是硬件，包括CPU、内存、硬盘、网络端口等。这实际上是计算我们的机器正在做什么的物理层。\n\n接下来的级别是内核，它处理进程和内存管理、设备通信、系统调用，设置我们的文件系统等。内核的工作是与硬件通信，确保它执行我们希望进程执行的操作。\n\n您熟悉的级别是用户空间，用户空间包括shell、您运行的程序、图形等。\n\n在本课程中，我们将专注于内核并学习其复杂性。",
+          "quizAnswer": "内核",
+          "quizQuestion": "操作系统的哪个级别管理设备？",
+          "slug": "kerneloverview",
+          "title": "内核概述"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 2,
+          "lessonContent": "接下来的几节课会变得相当理论化，所以如果你正在寻找一些实用的东西，可以跳过去，稍后再回来。\n\n为什么我们为用户空间和内核设置不同的抽象层？为什么不能将两者的功能合并到一个层中？这两个层分开存在一个很好的原因。它们分别在不同的模式下运行，内核在内核模式下运行，用户空间在用户模式下运行。\n\n在内核模式下，内核可以完全访问硬件，控制一切。在用户空间模式下，你只能访问一小部分安全内存和 CPU。基本上，当我们想要执行涉及硬件的任何操作时，比如从磁盘读取数据、向磁盘写入数据、控制网络等，都是在内核模式下完成的。为什么这是必要的呢？想象一下，如果你的计算机被间谍软件感染了，你不希望它能直接访问系统的硬件。它可以访问你的所有数据、你的网络摄像头等等，这是不好的。\n\n这些不同的模式被称为权限级别（因为你获得的权限级别不同），通常被描述为保护环。为了更容易理解，我们可以这样说，假设你发现 Britney Spears 在你当地的俱乐部，她受到她的粉丝、个人保镖和俱乐部外的保安的保护。你想要她的签名（为什么不呢？），但你无法接近她，因为她受到了严密的保护。环的工作方式也是如此，最内层环对应最高的权限级别。在 x86 计算机架构中有两个主要级别或模式。环 #3 是用户模式应用程序运行的权限，环 #0 是内核运行的权限。环 #0 可以执行任何系统指令，并被完全信任。既然我们知道这些权限级别是如何工作的，那么我们如何能够向硬件写入任何内容呢？我们不会一直处于与内核不同的模式中吗？\n\n答案是通过系统调用，系统调用允许我们在内核模式下执行特权指令，然后切换回用户模式。",
+          "quizAnswer": "0",
+          "quizQuestion": "哪个环号具有最高权限？",
+          "slug": "kernelprivilegelevels",
+          "title": "权限级别"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 3,
+          "lessonContent": "还记得上一课中的 Britney 吗？假设我们想见她并一起喝点东西，我们要如何从站在人群中的室外到进入她最内圈呢？我们会使用系统调用。系统调用就像 VIP 通行证，让你直接进入通往 Britney 的秘密侧门。\n\n系统调用（syscall）为用户空间进程提供了一种请求内核为我们执行某些操作的方式。内核通过系统调用 API 提供了某些服务。这些服务允许我们读取或写入文件，修改内存使用情况，修改网络等。服务的数量是固定的，因此你不能随意添加系统调用，你的系统已经有一个包含了存在的系统调用以及每个系统调用都有唯一 ID 的表。\n\n我不会深入讲解系统调用的细节，因为那需要你了解一点 C 语言，但基本原理是，当你调用像 ls 这样的程序时，程序内部的代码包含了一个系统调用包装器（而不是实际的系统调用）。在这个包装器内部，它调用了系统调用，这将执行一个陷阱，然后这个陷阱被系统调用处理程序捕捉，然后引用系统调用表中的系统调用。假设我们正在尝试调用 stat() 系统调用，它由一个 syscall ID 标识，stat() 系统调用的目的是查询文件的状态。现在记住，你是以非特权模式运行 ls 程序。所以现在它看到你正在尝试进行系统调用，然后将你切换到内核模式，在那里它会做很多事情，但最重要的是查找你的系统调用号码，根据 syscall ID 在表中找到它，然后执行你想要运行的函数。完成后，它将返回到用户模式，你的进程将接收到一个返回状态，指示操作是否成功或是否出现错误。系统调用的内部工作非常详细，如果你想了解更多，我建议在网上查找相关信息。\n\n你可以使用 strace 命令查看进程所进行的系统调用。strace 命令对于调试程序执行方式非常有用。\n\n<pre>$ strace ls</pre>",
+          "quizAnswer": "系统调用",
+          "quizQuestion": "用什么来从用户模式切换到内核模式？",
+          "slug": "systemcalls",
+          "title": "系统调用"
+        },
+        {
+          "exercise": "<ol>\n<li>查找您的系统内核版本。</li>\n<li>研究可用的不同内核版本</li>\n</ol>",
+          "id": 4,
+          "lessonContent": "好的，现在我们把所有那些无聊的东西都讲完了，让我们谈谈实际安装和修改内核。您可以在系统上安装多个内核，还记得我们关于引导过程的课程吗？在我们的 GRUB 菜单中，我们可以选择要引导的内核。\n\n要查看系统上的内核版本，请使用以下命令：\n\n<pre>$ uname -r\n3.19.0-43-generic</pre>\n\nuname 命令打印系统信息，-r 命令将打印出所有内核发布版本。\n\n您可以以不同的方式安装 Linux 内核，可以下载源代码包并从源代码编译，也可以使用软件包管理工具进行安装。\n\n<pre>$ sudo apt install linux-generic-lts-vivid</pre>\n\n然后只需重新启动到您安装的内核。简单吧？有点，您还需要安装其他 Linux 软件包，如 linux-headers、linux-image-generic 等）。您还可以指定版本号，因此上述命令可以看起来像 <b>sudo apt install 3.19.0-43-generic</b>\n\n或者，如果您只想要更新的内核版本，只需使用 dist-upgrade，它会对系统上的所有软件包执行升级操作：\n\n<pre>$ sudo apt dist-upgrade</pre>\n\n有许多不同的内核版本，有些被用作 LTS（长期支持），有些是最新和最伟大的版本，内核版本之间的兼容性可能会有很大不同，因此您可能希望尝试不同的内核。",
+          "quizAnswer": "uname -r",
+          "quizQuestion": "如何查看系统的内核版本？",
+          "slug": "kernelinstallation",
+          "title": "内核安装"
+        },
+        {
+          "exercise": "进入您的 /boot 目录，查看其中有哪些文件。",
+          "id": 5,
+          "lessonContent": "当您安装新内核时会发生什么？实际上，系统会添加一些文件，这些文件通常会添加到 /boot 目录中。\n\n您会看到不同内核版本的多个文件：\n\n<ul>\n<li>vmlinuz - 这是实际的 Linux 内核</li>\n<li>initrd - 正如我们之前讨论过的，initrd 用作临时文件系统，在加载内核之前使用</li>\n<li>System.map - 符号查找表</li>\n<li>config - 内核配置设置，如果您正在编译自己的内核，可以设置哪些模块可以被加载</li>\n</ul>\n\n如果您的 /boot 目录空间不足，您可以随时删除这些文件的旧版本或者使用软件包管理器，但在此目录进行维护时要小心，不要意外删除正在使用的内核。",
+          "quizAnswer": "vmlinuz",
+          "quizQuestion": "/boot 目录中内核镜像的名称是什么？",
+          "slug": "kernellocation",
+          "title": "内核位置"
+        },
+        {
+          "exercise": "使用 modprobe 卸载您的蓝牙模块，看看会发生什么。您将如何解决这个问题？",
+          "id": 6,
+          "lessonContent": "假设我有一辆漂亮的车，我在它身上投入了大量的时间和金钱。我加了一个扰流板、拖车钩、自行车架和其他一些随机的东西。这些组件实际上并不改变汽车的核心功能，我可以很容易地移除和添加它们。内核使用相同的概念来管理内核模块。\n\n内核本身是一个单片软件，当我们想要为新类型的键盘添加支持时，我们不会直接将这段代码编写到内核代码中。就像我们不会将自行车架融入我们的汽车中一样（也许有些人会这样做）。内核模块是可以根据需要加载和卸载到内核中的代码片段。它们允许我们扩展内核的功能，而不必实际添加到核心内核代码中。我们还可以添加模块而无需重新启动系统（在大多数情况下）。\n\n<b>查看当前加载的模块列表</b>\n\n<pre>$ lsmod</pre>\n\n<b>加载一个模块</b>\n\n<pre>$ sudo modprobe 蓝牙</pre>\n\nModprobe 会尝试从 <b>/lib/modules/(内核版本)/kernel/drivers</b> 加载模块。内核模块也可能有依赖关系，如果模块未加载，modprobe 会加载我们的模块依赖项。\n\n<b>卸载一个模块</b>\n\n<pre>$ sudo modprobe -r 蓝牙</pre>\n\n<b>开机加载</b>\n\n您还可以在系统启动时加载模块，而不是使用 modprobe 临时加载它们（重新启动后将卸载）。只需修改 <b>/etc/modprobe.d</b> 目录，并添加一个配置文件，如下所示：\n\n<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf\n\noptions peanut_butter type=almond\n</pre>\n\n这是一个有些离奇的例子，但如果您有一个名为 peanut_butter 的模块，并且想要为 type=almond 添加一个内核参数，您可以使用这个配置文件在启动时加载它。还要注意，内核模块有自己的内核参数，因此您需要阅读有关模块的具体信息以了解更多。\n\n<b>不要在启动时加载</b>\n\n您还可以通过添加一个配置文件来确保模块不会在启动时加载，如下所示：\n\n<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf\n\nblacklist peanut_butter\n</pre>",
+          "quizAnswer": "modprobe -r",
+          "quizQuestion": "用于卸载模块的命令是什么？",
+          "slug": "kernelmodules",
+          "title": "内核模块"
+        }
+      ],
+      "slug": "kernel",
+      "title": "内核"
+    },
+    {
+      "description": "了解不同的初始化系统，SysV，Upstart 和 systemd。",
+      "id": 13,
+      "image": "/images/chapters/init.png",
+      "lessons": [
+        {
+          "exercise": "如果您正在运行 System V，请将您的机器的默认运行级别更改为其他级别，看看会发生什么。",
+          "id": 1,
+          "lessonContent": "init 的主要目的是启动和停止系统上的关键进程。Linux 中有三种主要的 init 实现，分别是 System V、Upstart 和 systemd。在本课程中，我们将介绍最传统的 init 版本，即 System V init 或 Sys V（发音为 'System Five'）。\n\n要确定是否正在使用 Sys V init 实现，如果有 /etc/inittab 文件，则很可能正在运行 Sys V。\n\nSys V 顺序启动和停止进程，因此，假设您想要启动名为 foo-a 的服务，在 foo-b 可以工作之前，您必须确保 foo-a 已经在运行。Sys V 使用脚本来实现这一点，这些脚本为我们启动和停止服务，我们可以编写自己的脚本，或者大多数情况下使用操作系统中已经内置的脚本，用于加载关键服务。\n\n使用此 init 实现的优点是相对容易解决依赖关系，因为您知道 foo-a 在 foo-b 之前启动，但性能并不理想，因为通常一次只启动或停止一件事。\n\n在使用 Sys V 时，机器的状态由从 0 到 6 设置的运行级别来定义。这些不同的模式将根据发行版而有所不同，但大多数情况下看起来会像下面这样：\n\n<ul>\n<li>0: 关机</li>\n<li>1: 单用户模式</li>\n<li>2: 无网络的多用户模式</li>\n<li>3: 带网络的多用户模式</li>\n<li>4: 未使用</li>\n<li>5: 带网络和 GUI 的多用户模式</li>\n<li>6: 重启</li>\n</ul>\n\n当系统启动时，它会查看您所处的运行级别，并执行位于该运行级别配置内部的脚本。这些脚本位于 <b>/etc/rc.d/rc[运行级别编号].d/</b> 或 <b>/etc/init.d</b> 中。以 S（启动）或 K（终止）开头的脚本将分别在启动和关闭时运行。这些字符旁边的数字表示它们运行的顺序。\n\n例如：\n\n<pre>\npete@icebox:/etc/rc.d/rc0.d$ ls\nK10updates  K80openvpn        \n</pre>\n\n我们可以看到，当我们切换到运行级别 0 或关机模式时，我们的机器将尝试运行一个脚本来终止更新服务，然后是 openvpn。要查看您的机器启动到哪个运行级别，可以在 /etc/inittab 文件中查看默认运行级别。您也可以在此文件中更改默认运行级别。\n\n值得注意的是，System V 正在逐渐被取代，也许不是今天，甚至是多年以后。但是，您可能会看到其他 init 实现中出现运行级别，这主要是为了支持那些仅使用 System V init 脚本启动或停止的服务。",
+          "quizAnswer": "0",
+          "quizQuestion": "通常用于关机的运行级别是什么？",
+          "slug": "sysvoverview",
+          "title": "System V 概述"
+        },
+        {
+          "exercise": "管理几个服务并更改它们的状态，您观察到了什么？",
+          "id": 2,
+          "lessonContent": "有许多命令行工具可用于管理 Sys V 服务。\n\n<b>列出服务</b>\n\n<pre>$ service --status-all</pre>\n\n<b>启动服务</b>\n\n<pre>$ sudo service networking start</pre>\n\n<b>停止服务</b>\n\n<pre>$ sudo service networking stop</pre>\n\n<b>重启服务</b>\n\n<pre>$ sudo service networking restart</pre>\n\n这些命令不仅适用于 Sys V init 系统，您也可以使用这些命令来管理 Upstart 服务。由于 Linux 正在试图摆脱更传统的 Sys V init 脚本，因此仍有一些措施来帮助过渡。",
+          "quizAnswer": "sudo service peanut stop",
+          "quizQuestion": "使用 Sys V，停止名为 peanut 的服务的命令是什么？",
+          "slug": "sysvservices",
+          "title": "System V 服务"
+        },
+        {
+          "exercise": "如果您正在运行 Upstart，请看看 /etc/init 中的作业配置是否能够理解。",
+          "id": 3,
+          "lessonContent": "Upstart 由 Canonical 开发，因此在 Ubuntu 上曾经是 init 的实现，然而在现代的 Ubuntu 安装中现在使用 systemd。Upstart 的创建是为了改进 Sys V 的问题，比如严格的启动流程、任务阻塞等。Upstart 的事件和作业驱动模型使其能够响应事件。 \n\n要查看是否正在使用 Upstart，如果有 /usr/share/upstart 目录，那就是一个很好的指示。 \n\n作业是 Upstart 执行的操作，事件是从其他进程接收的触发作业的消息。要查看作业及其配置的列表：\n\n<pre>\npete@icebox:~$ ls /etc/init\nacpid.conf                   mountnfs.sh.conf\nalsa-restore.conf            mtab.sh.conf\nalsa-state.conf              networking.conf\nalsa-store.conf              network-interface.conf\nanacron.conf                 network-interface-container.conf\n</pre>\n\n在这些作业配置中，将包含如何启动作业以及何时启动作业的信息。\n\n例如，在 networking.conf 文件中，可能会简单地说：\n<pre>\nstart on runlevel [235]\nstop on runlevel [0]\n</pre>\n\n这意味着它将在运行级别 2、3 或 5 上开始设置网络，并将在运行级别 0 上停止网络。有许多编写配置文件的方法，当您查看可用的不同作业配置时，您会发现这一点。 \n\nUpstart 的工作方式是：\n\n<ol>\n<li>首先，它从 /etc/init 加载作业配置</li>\n<li>一旦发生启动事件，它将运行由该事件触发的作业。</li>\n<li>这些作业将生成新事件，然后这些事件将触发更多作业</li>\n<li>Upstart 将继续执行此操作，直到完成所有必要的作业</li>\n</ol>",
+          "quizAnswer": "upstart",
+          "quizQuestion": "Ubuntu 使用的是哪种 init 实现？",
+          "slug": "upstartoverview",
+          "title": "Upstart 概述"
+        },
+        {
+          "exercise": "观察您的 Upstart 任务列表，现在使用我们今天学到的命令之一更改任务状态。之后您注意到了什么？",
+          "id": 4,
+          "lessonContent": "Upstart 可以触发许多事件和任务运行，不幸的是，没有简单的方法来查看事件或任务的来源，因此您将不得不在 /etc/init 中查看任务配置。大多数情况下，您不会需要查看 Upstart 任务配置文件，但您可能会更轻松地控制一些特定的任务。在 Upstart 系统中，有许多有用的命令可供使用。\n\n<b>查看任务</b>\n\n<pre>initctl list\n\nshutdown stop/waiting\nconsole stop/waiting\n...\n</pre>\n\n您将看到一个包含不同状态的 Upstart 任务列表。在每一行中，作业名称是第一个值，第二个字段（/ 之前）实际上是作业的目标，第三个值（/ 之后）是当前状态。因此，我们看到我们的 shutdown 任务最终希望停止，但当前处于等待状态。随着您启动或停止任务，任务状态和目标将发生变化。\n\n<b>查看特定任务</b>\n\n<pre>initctl status networking\nnetworking start/running\n</pre>\n\n我们不会深入讨论如何编写 Upstart 任务配置的细节，但我们已经知道这些配置中的任务是停止、启动和重新启动的。这些任务还会发出事件，因此它们可以启动其他任务。我们将介绍 Upstart 操作的手动命令，但如果您感兴趣，您应该更深入地研究 .conf 文件。\n\n<b>手动启动任务</b>\n\n<pre>$ sudo initctl start networking</pre>\n\n<b>手动停止任务</b>\n\n<pre>$ sudo initctl stop networking</pre>\n\n<b>手动重新启动任务</b>\n\n<pre>$ sudo initctl restart networking</pre>\n\n<b>手动发出事件</b>\n\n<pre>$ sudo initctl emit some_event</pre>",
+          "quizAnswer": "sudo initctl restart peanuts",
+          "quizQuestion": "如何手动重新启动名为 peanuts 的 Upstart 任务？",
+          "slug": "upstartjobs",
+          "title": "Upstart 任务"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 5,
+          "lessonContent": "Systemd正逐渐成为init的新兴标准。如果你有一个/usr/lib/systemd目录，你很可能正在使用systemd。\n\nSystemd使用目标来启动和运行系统。基本上，你有一个想要实现的目标，这个目标也有我们需要实现的依赖关系。Systemd非常灵活和强大，它不遵循严格的顺序来启动进程。以下是典型systemd引导过程中发生的事情：\n\n<ol>\n<li>首先，systemd加载其配置文件，通常位于/etc/systemd/system或/usr/lib/systemd/system中</li>\n<li>然后确定其引导目标，通常是default.target</li>\n<li>Systemd找出引导目标的依赖关系并激活它们</l>\n</ol>\n\n类似于Sys V运行级别，systemd引导到不同的目标：\n\n<ul>\n<li>poweroff.target - 关闭系统</li>\n<li>rescue.target - 单用户模式</li>\n<li>multi-user.target - 带网络的多用户模式</li>\n<li>graphical.target - 带网络和图形界面的多用户模式</li>\n<li>reboot.target - 重新启动</li>\n</ul>\n\ndefault.target的默认引导目标通常指向graphical.target。\n\nSystemd处理的主要对象称为单元。Systemd不仅仅停止和启动服务，它可以挂载文件系统，监视网络套接字等，正因为其强大性，它有不同类型的单元。最常见的单元包括：\n\n<ul>\n<li>Service units - 这些是我们一直在启动和停止的服务，这些单元文件以.service结尾</li>\n<li>Mount units - 这些挂载文件系统，这些单元文件以.mount结尾</li>\n<li>Target units - 这些将其他单元组合在一起，文件以.target结尾</li>\n</ul>\n\n例如，假设我们引导到default.target，那么这个目标将网络服务单元、crond服务单元等组合在一起，因此一旦激活一个单元，该单元下的所有内容也将被激活。",
+          "quizAnswer": "target",
+          "quizQuestion": "用于将其他单元组合在一起的单元是什么？",
+          "slug": "systemdoverview",
+          "title": "Systemd概述"
+        },
+        {
+          "exercise": "查看单元状态并启动和停止一些服务。您观察到了什么？",
+          "id": 6,
+          "lessonContent": "我们不会深入讨论编写 systemd 单元文件的细节。但我们会简要概述一个单元文件以及如何手动控制单元。\n\n这是一个基本的服务单元文件：foobar.service\n\n<pre>\n[Unit]\nDescription=My Foobar\nBefore=bar.target\n\n[Service]\nExecStart=/usr/bin/foobar\n\n[Install]\nWantedBy=multi-user.target\n</pre>\n\n这是一个简单的服务目标，在文件开头我们看到了 [Unit] 部分，这使我们能够为我们的单元文件提供描述，并控制激活单元的顺序。接下来是 [Service] 部分，在这里我们可以启动、停止或重新加载服务。[Install] 部分用于依赖关系。这只是编写 systemd 文件的冰山一角，所以如果想了解更多，请务必阅读相关内容。\n\n现在，让我们来了解一些您可以与 systemd 单元一起使用的命令：\n\n<b>列出单元</b>\n\n<pre>$ systemctl list-units</pre>\n\n<b>查看单元状态</b>\n\n<pre>$ systemctl status networking.service</pre>\n\n<b>启动服务</b>\n\n<pre>$ sudo systemctl start networking.service</pre>\n\n<b>停止服务</b>\n\n<pre>$ sudo systemctl stop networking.service</pre>\n\n<b>重启服务</b>\n\n<pre>$ sudo systemctl restart networking.service</pre>\n\n<b>启用单元</b>\n\n<pre>$ sudo systemctl enable networking.service</pre>\n\n<b>禁用单元</b>\n\n<pre>$ sudo systemctl disable networking.service</pre>\n\n再次强调，您尚未了解 systemd 的深度，所以如果想了解更多，请深入研究。",
+          "quizAnswer": "sudo systemctl start peanut.service",
+          "quizQuestion": "启动名为 peanut.service 的服务的命令是什么？",
+          "slug": "systemdgoals",
+          "title": "Systemd Goals"
+        },
+        {
+          "exercise": "当您关闭计算机时，您认为 init 在发生什么？",
+          "id": 7,
+          "lessonContent": "很难相信我们实际上还没有讨论通过命令行控制系统状态的方法，但在谈论 init 时，我们不仅谈论启动系统的模式，还谈论停止系统的模式。\n\n要关闭系统：\n\n<pre>$ sudo shutdown -h now</pre>\n\n这将停止系统（关闭电源），您还必须指定希望执行此操作的时间。您可以添加一个以分钟为单位的时间，系统将在该时间内关闭。\n\n<pre>$ sudo shutdown -h +2</pre>\n\n这将在两分钟内关闭您的系统。您还可以使用 shutdown 命令重新启动：\n\n<pre>$ sudo shutdown -r now</pre>\n\n或者只需使用 reboot 命令：\n\n<pre>$ sudo reboot</pre>",
+          "quizAnswer": "sudo shutdown -h +4",
+          "quizQuestion": "在4分钟内关闭系统的命令是什么？",
+          "slug": "powerstates",
+          "title": "电源状态"
+        }
+      ],
+      "slug": "init",
+      "title": "初始化"
+    },
+    {
+      "description": "使用 top、负载平均值、iostat 等学习资源监控！",
+      "id": 14,
+      "image": "/images/chapters/processUtilization.png",
+      "lessons": [
+        {
+          "exercise": "尝试使用 top 命令并查看哪些进程正在使用最多的资源。",
+          "id": 1,
+          "lessonContent": "在本课程中，我们将学习如何读取和分析系统上的资源利用情况，本课程展示了一些在需要跟踪进程活动时可以使用的好工具。\n\n<b>top</b>\n\n我们之前讨论过 top，但现在我们将深入了解它实际显示的内容。请记住，top 是我们用来实时查看系统利用率的工具，通过它我们可以查看进程的情况：\n\n<pre>\ntop - 18:06:26 up 6 days,  4:07,  2 users,  load average: 0.92, 0.62, 0.59\nTasks: 389 total,   1 running, 387 sleeping,   0 stopped,   1 zombie\n%Cpu(s):  1.8 us,  0.4 sy,  0.0 ni, 97.6 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st\nKiB Mem:  32870888 总计, 27467976 已用,  5402912 空闲,   518808 缓冲区\nKiB 交换空间: 33480700 总计,    39892 已用, 33440808 空闲. 19454152 缓存内存\n\n  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                             \n 6675 patty    20   0 1731472 520960  30876 S   8.3  1.6 160:24.79 chrome                             \n 6926 patty    20   0  935888 163456  25576 S   4.3  0.5   5:28.13 chrome \n</pre>\n\n让我们来解读这个输出的含义，你不必记住这些，但需要在需要参考时回来查看。\n\n<b>第一行：这是运行 uptime 命令时看到的相同信息（更多内容即将呈现）</b>\n\n字段从左到右分别是：\n<ol>\n<li>当前时间</li>\n<li>系统运行时间</li>\n<li>当前登录用户数</li>\n<li>系统平均负载（更多内容即将呈现）</li>\n</ol>\n\n<b>第二行：正在运行、睡眠、停止和僵尸状态的任务</b>\n\n<b>第三行：CPU 信息</b>\n\n<ol>\n<li>us: 用户 CPU 时间 - 用于运行未被调整优先级的用户进程的 CPU 时间百分比</li>\n<li>sy: 系统 CPU 时间 - 用于运行内核和内核进程的 CPU 时间百分比</li>\n<li>ni: nice CPU 时间 - 用于运行被调整优先级的进程的 CPU 时间百分比</li>\n<li>id: CPU 空闲时间 - 用于空闲的 CPU 时间百分比</li>\n<li>wa: I/O 等待 - 用于等待 I/O 的 CPU 时间百分比。如果此值较低，则问题可能不是磁盘或网络 I/O</li>\n<li>hi: 硬件中断 - 用于服务硬件中断的 CPU 时间百分比</li>\n<li>si: 软件中断 - 用于服务软件中断的 CPU 时间百分比</li>\n<li>st: 窃取时间 - 如果您运行虚拟机，这是从您那里被窃取用于其他任务的 CPU 时间百分比</li>\n</ol>\n\n<b>第四和第五行：内存使用情况和交换使用情况</b>\n\n<b>当前正在使用的进程列表</b>\n\n<ol>\n<li>PID：进程的 ID</li>\n<li>USER：拥有该进程的用户</li>\n<li>PR：进程的优先级</li>\n<li>NI：nice 值</li>\n<li>VIRT：进程使用的虚拟内存</li>\n<li>RES：来自进程的物理内存使用</li>\n<li>SHR：进程的共享内存</li>\n<li>S：指示进程状态：S=睡眠，R=运行，Z=僵尸，D=不可中断，T=停止</li>\n<li>%CPU - 这是进程使用的 CPU 百分比</li>\n<li>%MEM - 这是进程使用的 RAM 百分比</li>\n<li>TIME+ - 进程的总活动时间</li>\n<li>COMMAND - 进程的名称</li>\n</ol>\n\n如果您只想跟踪特定进程，也可以指定进程 ID：\n\n<pre>$ top -p 1</pre>",
+          "quizAnswer": "uptime",
+          "quizQuestion": "哪个命令显示与 top 第一行相同的输出？",
+          "slug": "trackingprocessestop",
+          "title": "追踪进程：top"
+        },
+        {
+          "exercise": "阅读 lsof 和 fuser 的 man 手册，其中包含了我们未涵盖的许多信息，可以让您更灵活地使用这些工具。",
+          "id": 2,
+          "lessonContent": "假设您插入了一个 USB 驱动器并开始处理一些文件，一旦完成后，您卸载 USB 设备时出现错误 \"设备或资源忙\"。您将如何找出仍在使用 USB 驱动器中的哪些文件？实际上，有两个工具可用于此：\n\n<b>lsof</b>\n\n请记住文件不仅仅是文本文件、图像等，它们是系统上的所有内容，磁盘、管道、网络套接字、设备等。要查看进程正在使用的内容，您可以使用 lsof 命令（缩写为 \"list open files\"），这将显示所有打开文件及其关联进程的列表。\n\n<pre>\npete@icebox:~$ lsof .\nCOMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME\nlxsession 1491 pete  cwd    DIR    8,6     4096  131 .\nupdate-no 1796 pete  cwd    DIR    8,6     4096  131 .\nnm-applet 1804 pete  cwd    DIR    8,6     4096  131 .\nindicator 1809 pete  cwd    DIR    8,6     4096  131 .\nxterm     2205 pete  cwd    DIR    8,6     4096  131 .\nbash      2207 pete  cwd    DIR    8,6     4096  131 .\nlsof      5914 pete  cwd    DIR    8,6     4096  131 .\nlsof      5915 pete  cwd    DIR    8,6     4096  131 .\n</pre>\n\n现在我可以看到哪些进程当前持有设备/文件。在我们的 USB 示例中，您还可以终止这些进程，以便卸载这个顽固的驱动器。\n\n<b>fuser</b>\n\n跟踪进程的另一种方法是使用 fuser 命令（缩写为 \"file user\"），这将显示使用文件或文件用户的进程的信息。\n\n<pre>\npete@icebox:~$ fuser -v .\n                     USER        PID ACCESS COMMAND\n/home/pete:         pete  1491 ..c.. lxsession\n                     pete  1796 ..c.. update-notifier\n                     pete  1804 ..c.. nm-applet\n                     pete  1809 ..c.. indicator-power\n                     pete  2205 ..c.. xterm\n                     pete  2207 ..c.. bash\n</pre>\n\n我们可以看到哪些进程当前正在使用我们的 /home/pete 目录。lsof 和 fuser 工具非常相似，请熟悉这些工具，并在下次需要跟踪文件或进程时尝试使用它们。",
+          "quizAnswer": "lsof",
+          "quizQuestion": "用于列出打开文件及其进程信息的命令是什么？",
+          "slug": "trackingprocesseslsoffuser",
+          "title": "lsof 和 fuser"
+        },
+        {
+          "exercise": "运行 <b>ps m</b> 命令，查看您正在运行的多线程进程。",
+          "id": 3,
+          "lessonContent": "您可能听说过单线程和多线程进程的术语。线程与进程非常相似，因为它们用于执行相同的程序，通常被称为轻量级进程。如果一个进程有一个线程，则为单线程；如果一个进程有多个线程，则为多线程。但是，所有进程至少有一个线程。\n\n进程使用其自己的隔离系统资源运行，但线程可以轻松地共享这些资源，使它们更容易相互通信，有时使用多线程应用程序比使用多进程应用程序更有效率。\n\n基本上，假设您打开 LibreOffice Writer 和 Chrome，每个都是独立的进程。现在您进入 Writer 并开始编辑文本，当您编辑文本时，它会自动保存。这两个并行的“轻量级进程”保存和编辑是线程。\n\n要查看进程线程，您可以使用：\n\n<pre>\npete@icebox:~$ ps m\n  PID TTY      STAT   TIME COMMAND\n 2207 pts/2    -      0:01 bash\n    - -        Ss     0:01 -\n 5252 pts/2    -      0:00 ps m\n    - -        R+     0:00 -\n</pre>\n\n进程用每个 PID 表示，进程下面是它们的线程（用 -- 表示）。因此，您可以看到上面的进程都是单线程的。",
+          "quizAnswer": "是",
+          "quizQuestion": "是或否，所有进程最初都是单线程的？",
+          "slug": "processthreads",
+          "title": "进程线程"
+        },
+        {
+          "exercise": "检查您系统的负载平均值并查看其运行情况。",
+          "id": 4,
+          "lessonContent": "让我们学习一个有用的命令，<b>uptime</b>。\n\n<pre>\npete@icebox:~$ uptime\n 17:23:35 up 1 day,  5:59,  2 users,  load average: 0.00, 0.02, 0.05\n</pre>\n\n在本课程的第一课中，我们讨论了uptime，但我们还没有介绍过负载平均字段。负载平均是查看系统 CPU 负载的好方法。这些数字代表了 1、5 和 15 分钟间隔内的平均 CPU 负载。我所说的 CPU 负载是什么意思呢？CPU 负载是等待被 CPU 执行的进程的平均数量。\n\n假设您有一颗单核 CPU，将这个核心想象成交通中的一个车道。如果高峰时间在高速公路上，这个车道会非常繁忙，交通将达到 100% 或负载为 1。现在交通变得非常糟糕，它堵塞了高速公路，并使常规道路的车流量增加了两倍，我们可以说您的负载为 200% 或负载为 2。现在假设情况有所缓解，高速公路上的车辆只有一半，我们可以说车道的负载为 0.5。当交通不存在时，我们可以更快地回家，负载应该理想地非常低，就像凌晨 2 点的交通量那样。在这种情况下，车辆是进程，这些进程只是在等待离开高速公路回家。\n\n现在仅仅因为您的负载平均值为 1，并不意味着您的计算机运行缓慢。如今，大多数现代计算机都有多个核心。如果您有一颗四核处理器（4 个核心）并且您的负载平均值为 1，实际上只影响了您 CPU 的 25%。将每个核心视为交通中的一个车道。您可以使用<b>cat /proc/cpuinfo</b>查看系统上的核心数量。\n\n观察负载平均时，您必须考虑核心数量，如果发现您的计算机始终使用高于平均负载的情况，可能出现了一些问题。",
+          "quizAnswer": "uptime",
+          "quizQuestion": "您可以使用哪个命令查看负载平均值？",
+          "slug": "cpumonitoring",
+          "title": "CPU 监控"
+        },
+        {
+          "exercise": "使用 iostat 查看磁盘使用情况",
+          "id": 5,
+          "lessonContent": "我们还可以使用一个方便的工具<iostat>来监控 CPU 使用情况以及磁盘使用情况\n\n<pre>\npete@icebox:~$ iostat\nLinux 3.13.0-39-lowlatency (icebox)     01/28/2016      _i686_  (1 CPU)\n\navg-cpu:  %user   %nice %system %iowait  %steal   %idle\n           0.13    0.03    0.50    0.01    0.00   99.33\n\nDevice:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn\nsda               0.17         3.49         1.92     385106     212417\n</pre>\n\n第一部分是 CPU 信息:\n\n<ul>\n<li>%user - 显示在用户级别（应用程序）执行时的 CPU 利用率百分比</li>\n<li>%nice - 显示在用户级别以 nice 优先级执行时的 CPU 利用率百分比</li>\n<li>%system - 显示在系统级别（内核）执行时的 CPU 利用率百分比</li>\n<li>%iowait - 显示 CPU 或 CPU 空闲的百分比，系统期间有未完成的磁盘 I/O 请求</li>\n<li>%steal - 显示虚拟 CPU 或 CPU 在强制等待中花费的时间百分比，当 hypervisor 为另一个虚拟处理器提供服务时</li>\n<li>%idle - 显示 CPU 或 CPU 空闲且系统没有未完成的磁盘 I/O 请求的时间百分比</li>\n</ul>\n\n第二部分是磁盘利用率:\n\n<ul>\n<li>tps - 表示发往设备的每秒传输次数。传输是发往设备的 I/O 请求。多个逻辑请求可以合并为单个发往设备的 I/O 请求。传输大小不确定</li>\n<li>kB_read/s - 表示以每秒千字节为单位从设备读取的数据量</li>\n<li>kB_wrtn/s - 表示以每秒千字节为单位写入设备的数据量</li>\n<li>kB_read - 读取的总千字节数</li>\n<li>kB_wrtn - 写入的总千字节数</li>\n</ul>",
+          "quizAnswer": "iostat",
+          "quizQuestion": "用于查看 I/O 和 CPU 使用情况的命令是什么？",
+          "slug": "iomonitoring",
+          "title": "I/O 监控"
+        },
+        {
+          "exercise": "使用 vmstat 查看内存使用情况。",
+          "id": 6,
+          "lessonContent": "除了 CPU 监控和 I/O 监控外，您还可以使用 <b>vmstat</b> 监控内存使用情况\n\n<pre>\npete@icebox:~$ vmstat\nprocs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st\n 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0\n</pre>\n\n字段如下:\n\n<b>procs</b>\n<ul>\n<li>r - 运行时间的进程数</li>\n<li>b - 无法中断睡眠状态的进程数</li>\n</ul>\n\n<b>memory</b>\n<ul>\n<li>swpd - 使用的虚拟内存量</li>\n<li>free - 空闲内存量</li>\n<li>buff - 用作缓冲区的内存量</li>\n<li>cache - 用作缓存的内存量</li>\n</ul>\n\n<b>swap</b>\n<ul>\n<li>si - 从磁盘交换进的内存量</li>\n<li>so - 交换出到磁盘的内存量</li>\n</ul>\n\n<b>io</b>\n<ul>\n<li>bi - 从块设备接收的块数量</li>\n<li>bo - 发送到块设备的块数量</li>\n</ul>\n\n<b>system</b>\n<ul>\n<li>in - 每秒的中断次数</li>\n<li>cs - 每秒的上下文切换次数</li>\n</ul>\n\n<b>cpu</b>\n<ul>\n<li>us - 用户时间消耗</li>\n<li>sy - 内核时间消耗</li>\n<li>id - 空闲时间消耗</li>\n<li>wa - 等待 I/O 的时间消耗</li>\n</ul>",
+          "quizAnswer": "vmstat",
+          "quizQuestion": "用于查看内存利用率的工具是什么？",
+          "slug": "memorymonitoring",
+          "title": "内存监控"
+        },
+        {
+          "exercise": "在您的系统上安装 sar 并开始收集和分析系统资源利用情况。",
+          "id": 7,
+          "lessonContent": "这些监控工具适用于在您的机器出现问题时查看，但是当您不在查看时出现问题的机器呢？对于这些情况，您需要使用持续监控工具，这种工具将收集、报告和保存系统活动信息。在本课程中，我们将介绍一个很好的工具<b>sar</b>。\n\n<b>安装 sar</b>\nSar 是一个用于对系统进行历史分析的工具，首先确保已安装 sysstat 包，通过安装 sysstat 包 <b>sudo apt install sysstat</b>。\n\n<b>设置数据收集</b>\n通常安装 sysstat 后，系统将自动开始收集数据，如果没有，您可以通过修改 /etc/default/sysstat 中的 ENABLED 字段来启用它。\n\n<b>使用 sar</b>\n\n<pre>$ sudo sar -q</pre>\n\n此命令将列出从当天开始的详细信息。\n\n<pre>$ sudo sar -r</pre>\n\n这将列出当天开始的内存使用情况的详细信息。\n\n<pre>$ sudo sar -P</pre>\n\n这将列出 CPU 使用情况的详细信息。\n\n要查看不同日期的视图，您可以进入 /var/log/sysstat/saXX，其中 XX 是您想查看的日期。\n\n<pre>$sar -q /var/log/sysstat/sa02</pre>",
+          "quizAnswer": "sar",
+          "quizQuestion": "用于监控系统资源的好工具是什么？",
+          "slug": "continuousmonitoring",
+          "title": "持续监控"
+        },
+        {
+          "exercise": "创建一个您想要在预定时间运行的 cron 作业。",
+          "id": 8,
+          "lessonContent": "尽管我们一直在谈论资源利用率，但我认为这是一个很好的时机来提一下 Linux 中使用 cron 调度任务的一个好工具。有一个服务可以在你预定的时间运行程序。如果你有一个每天需要执行某些任务的脚本，这将非常有用。\n\n例如，假设我有一个位于 /home/pete/scripts/change_wallpaper 的脚本。我每天早上都使用这个脚本来更改壁纸，但每天早上我都必须手动执行这个脚本。相反，我可以创建一个通过 cron 执行我的脚本的 cron 作业。我可以指定我希望这个 cron 作业运行的时间并执行我的脚本。\n\n<pre>30 08 * * * /home/pete/scripts/change_wallpaper</pre>\n\n从左到右的字段如下：\n<ul>\n<li>分钟 - (0-59)</li>\n<li>小时 - (0-23)</li>\n<li>月份中的某一天 - (1-31)</li>\n<li>月份 - (1-12)</li>\n<li>星期中的某一天 - (0-7). 0 和 7 表示星期日</li>\n</ul>\n\n字段中的星号表示匹配每个值。所以在我上面的例子中，我希望这个作业在每天的每个月的早上 8:30 运行。\n\n要创建一个 cron 作业，只需编辑 crontab 文件：\n\n<pre>crontab -e</pre>",
+          "quizAnswer": "crontab -e",
+          "quizQuestion": "编辑您的 cron 作业的命令是什么？",
+          "slug": "cronjobs",
+          "title": "Cron Jobs"
+        }
+      ],
+      "slug": "processutilization",
+      "title": "进程利用率"
+    },
+    {
+      "description": "了解系统日志和 /var/log 目录。",
+      "id": 15,
+      "image": "/images/chapters/logging.png",
+      "lessons": [
+        {
+          "exercise": "查看您的 /var/log/syslog 文件，看看您的计算机上还发生了什么。",
+          "id": 1,
+          "lessonContent": "您系统上的服务、内核、守护进程等不断执行某些操作，这些数据实际上会被发送以日志的形式保存在您的系统中。这使我们能够获得一个可读的事件日志，记录系统上发生的事件。这些数据通常保存在 /var 目录中，/var 目录是我们保存变量数据（如日志）的地方！\n\n这些消息是如何被接收到您的系统的？有一个名为 syslog 的服务会将这些信息发送给系统日志记录器。\n\nSyslog 实际上包含许多组件，其中一个重要的组件是一个名为 syslogd 的守护进程（较新的 Linux 发行版使用 rsyslogd），它会等待事件消息发生并筛选出它想知道的消息，然后根据消息应该执行的操作，将其发送到文件、您的控制台或不做任何处理。\n\n您可能会认为系统日志记录器是管理日志的集中地，但不幸的是它并非如此。您会看到许多应用程序编写自己的日志记录规则并生成不同的日志文件，但通常日志的格式应包括时间戳和事件详细信息。\n\n这里是 syslog 中的一行示例：\n\n<pre>\npete@icebox:~$ less /var/log/syslog\nJan 27 07:41:32 icebox anacron[4650]: Job `cron.weekly' started\n</pre>\n\n在这里，我们可以看到在 1 月 27 日 07:41:32 时，我们的 cron 服务运行了 cron.weekly 作业。您可以查看 syslog 收集的所有事件消息，位于 /var/log/syslog 文件中。",
+          "quizAnswer": "rsyslogd",
+          "quizQuestion": "在较新的 Linux 系统中，管理日志的守护进程是什么？",
+          "slug": "systemlogging",
+          "title": "系统日志记录"
+        },
+        {
+          "exercise": "查看您的 /etc/rsyslog.d 配置文件，看看通过系统记录器还记录了什么。",
+          "id": 2,
+          "lessonContent": "Syslog 服务管理并将日志发送到系统记录器。Rsyslog 是 syslog 的高级版本，大多数 Linux 发行版应该在使用这个新版本。Syslog 服务收集的所有日志的输出可以在 /var/log/syslog 中找到（除了认证消息之外的每条消息）。\n\n要找出系统记录器维护的文件，请查看 /etc/rsyslog.d 中的配置文件：\n\n<pre>\npete@icebox:~$ less /etc/rsyslog.d/50-default.conf \n#\nauth,authpriv.*                 /var/log/auth.log\n*.*;auth,authpriv.none          -/var/log/syslog\n#cron.*                         /var/log/cron.log\n#daemon.*                       -/var/log/daemon.log\nkern.*                          -/var/log/kern.log\n#lpr.*                          -/var/log/lpr.log\nmail.*                          -/var/log/mail.log\n#user.*                         -/var/log/user.log\n</pre>\n\n这些规则将日志文件表示为左列的选择器和右列的操作。操作告诉我们将日志信息发送到哪里，比如文件、控制台等。请记住，并非每个应用程序和服务都使用 rsyslog 来管理其日志，因此，如果您想具体了解记录了什么，您将不得不查看此目录内部。\n\n让我们实际看到日志记录的过程，您可以使用 logger 命令手动发送日志：\n\n<pre>\nlogger -s Hello\n</pre>\n\n现在查看您的 /var/log/syslog，您应该在日志中看到此条目！",
+          "quizAnswer": "logger",
+          "quizQuestion": "您可以使用什么命令手动记录消息？",
+          "slug": "syslog",
+          "title": "首先是一些标准日志文件。按设施记录。"
+        },
+        {
+          "exercise": "查看您的 /var/log/messages 和 /var/log/syslog 文件，看看它们之间的区别。",
+          "id": 3,
+          "lessonContent": "您可以查看系统上许多日志文件，其中许多重要日志文件位于 /var/log 目录下。我们不会逐一讨论它们，但我们将讨论其中几个主要日志文件。\n\n您可以查看两个常规日志文件，以了解系统正在执行的操作：\n\n<b>/var/log/messages</b>\n\n此日志包含所有非关键和非调试消息，包括启动时记录的消息（dmesg）、auth、cron、daemon 等。非常有用，可以让您了解机器的运行情况。\n\n<b>/var/log/syslog</b>\n\n此日志记录除了认证消息之外的所有内容，对于调试机器上的错误非常有用。\n\n在排除系统问题时，这两个日志应该足够了。但是，如果您只想查看特定的日志组件，也有单独的日志文件。",
+          "quizAnswer": "syslog",
+          "quizQuestion": "哪个日志文件记录除了认证消息之外的所有内容？",
+          "slug": "generallogging",
+          "title": "常规日志记录"
+        },
+        {
+          "exercise": "查看您的 dmesg 和 kern 日志，您注意到了什么不同之处？",
+          "id": 4,
+          "lessonContent": "<b>/var/log/dmesg</b>\n在启动时，您的系统会记录有关内核环形缓冲区的信息。这向我们展示了有关硬件驱动程序、内核信息和启动过程中的状态等信息。此日志文件位于 /var/log/dmesg，每次启动时都会重置，现在您可能看不到它的任何用处，但如果您在启动过程中遇到问题或硬件问题，dmesg 是查看的最佳位置。您还可以使用 dmesg 命令查看此日志。\n\n<b>/var/log/kern.log</b>\n您可以使用的另一个日志来查看内核信息是 /var/log/kern.log 文件，它记录了系统上的内核信息和事件，还记录了 dmesg 输出。",
+          "quizAnswer": "dmesg",
+          "quizQuestion": "用于查看内核启动消息的命令是什么？",
+          "slug": "kernellogging",
+          "title": "内核日志记录"
+        },
+        {
+          "exercise": "进行一些登录失败的尝试，然后进行一次成功的登录，查看您的/var/log/auth.log并查看发生了什么。",
+          "id": 5,
+          "lessonContent": "身份验证日志记录在解决登录问题时非常有用。\n\n<b>/var/log/auth.log</b>\n\n其中包含系统授权日志，例如用户登录和使用的身份验证方法。\n\n示例片段：\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+          "quizAnswer": "auth.log",
+          "quizQuestion": "用于用户身份验证的日志是什么？",
+          "slug": "authenticationlogging",
+          "title": "身份验证日志记录"
+        },
+        {
+          "exercise": "查看您的logrotate配置文件，看看它是如何管理您的一些日志的。",
+          "id": 6,
+          "lessonContent": "日志文件生成大量数据，并将这些数据存储在您的硬盘上，然而这会带来许多问题，大多数情况下，我们只想查看更新的日志，我们还希望高效地管理我们的磁盘空间，那么我们该如何做到这一切呢？答案是使用logrotate。\n\nlogrotate实用程序为我们进行日志管理。它有一个配置文件，允许我们指定要保留多少个日志以及哪些日志，如何压缩日志以节省空间等。logrotate工具通常每天在cron中运行一次，并且配置文件可以在/etc/logrotate.d中找到。\n\n您可以使用其他日志旋转工具来管理日志，但logrotate是最常见的一个。",
+          "quizAnswer": "logrotate",
+          "quizQuestion": "用于管理日志的实用程序是什么？",
+          "slug": "managinglogfiles",
+          "title": "管理日志文件"
+        }
+      ],
+      "slug": "logging",
+      "title": "日志记录"
+    },
+    {
+      "description": "学习使用rsync、scp、nfs等进行网络共享。",
+      "id": 16,
+      "image": "/images/chapters/networkSharing.png",
+      "lessons": [
+        {
+          "exercise": "尝试使用scp从一台机器复制文件到另一台机器。",
+          "id": 1,
+          "lessonContent": "您的网络上通常不只有一台计算机，特别是在商业环境中。当我们想要将数据从一台机器传输到另一台机器时，有时可能更容易连接一个USB驱动器并手动复制它们。但在大多数情况下，如果您正在处理同一网络上的机器，传输数据的方式是通过网络文件共享。\n\n在本课程中，我们将介绍几种不同的方法，用于在您的网络上将数据从不同的机器复制到另一台机器。我们将讨论一些简单的文件复制，然后我们将谈论挂载在您的机器上的整个目录，充当独立驱动器。\n\n一个简单的文件共享工具是<b>scp</b>命令。scp命令代表安全复制，它的工作方式与cp命令完全相同，但允许您从一个主机复制到同一网络上的另一个主机。它通过ssh工作，因此您的所有操作都使用与ssh相同的身份验证和安全性。\n\n<b>从本地主机复制文件到远程主机</b>\n\n<pre>$ scp myfile.txt username@remotehost.com:/remote/directory</pre>\n\n<b>从远程主机复制文件到本地主机</b>\n\n<pre>$ scp username@remotehost.com:/remote/directory/myfile.txt /local/directory</pre>\n\n<b>从本地主机复制目录到远程主机</b>\n\n<pre>$ scp -r mydir username@remotehost.com:/remote/directory</pre>",
+          "quizAnswer": "scp",
+          "quizQuestion": "您可以使用什么命令安全地从一个主机复制文件到另一个主机？",
+          "slug": "networkfilesharing",
+          "title": "文件共享概述"
+        },
+        {
+          "exercise": "使用rsync将一个目录同步到另一个目录，确保不要覆盖重要目录！",
+          "id": 2,
+          "lessonContent": "另一个用于从不同主机复制数据的工具是rsync（远程同步的缩写）。Rsync与scp非常相似，但它确实有一个主要区别。Rsync使用一种特殊算法提前检查您要复制的数据是否已存在，并仅复制差异。例如，假设您正在复制一个文件，您的网络中断了，因此您的复制停在了中途。rsync不会重新从头开始复制所有内容，而是只复制未复制的部分。\n\n它还通过校验和验证要复制的文件的完整性。这些小优化使得文件传输更加灵活，使rsync非常适合远程和本地目录同步、数据备份、大数据传输等。\n\n一些常用的rsync选项：\n\n<ul>\n<li>v - 显示详细输出</li>\n<li>r - 递归进入目录</li>\n<li>h - 以人类可读的方式显示输出</li>\n<li>z - 压缩以便更轻松传输，适用于慢速连接</li>\n</ul>\n\n<b>在同一主机上复制/同步文件</b>\n\n<pre>$ rsync -zvr /my/local/directory/one /my/local/directory/two</pre>\n\n<b>从远程主机复制/同步文件到本地主机</b>\n\n<pre>$ rsync /local/directory username@remotehost.com:/remote/directory</pre>\n\n<b>从本地主机复制/同步文件到远程主机</b>\n\n<pre>$ rsync username@remotehost.com:/remote/directory /local/directory</pre>",
+          "quizAnswer": "rsync",
+          "quizQuestion": "哪个命令对数据备份很有用？",
+          "slug": "rsync",
+          "title": "rsync"
+        },
+        {
+          "exercise": "尝试设置一个SimpleHTTPServer！",
+          "id": 3,
+          "lessonContent": "Python有一个非常有用的工具，用于通过HTTP提供文件。如果您只想创建一个其他计算机可以访问的快速网络共享，这将非常有用。要做到这一点，只需转到要共享的目录并运行：\n\n<pre>$ python -m SimpleHTTPServer</pre>\n\n这将设置一个基本的Web服务器，您可以通过本地主机地址访问。因此，请获取运行此命令的计算机的IP地址，然后在另一台计算机上通过浏览器访问它：http://IP地址:8000。在您自己的计算机上，您可以通过在Web浏览器中输入http://localhost:8000来查看可用的文件。\n\n您也可以使用node执行此操作，或者如果您正在运行Python 3，则语法会有一点不同。",
+          "quizAnswer": "SimpleHTTPServer",
+          "quizQuestion": "您可以使用什么工具来使用Python创建一个简单的http服务器？",
+          "slug": "simplehttpserver",
+          "title": "简单的HTTP服务器"
+        },
+        {
+          "exercise": "阅读 NFS 的 man 手册以了解更多信息。",
+          "id": 4,
+          "lessonContent": "Linux 中最标准的网络文件共享是 NFS（Network File System），NFS 允许服务器通过网络与一个或多个客户端共享目录和文件。\n\n我们不会深入讨论如何创建 NFS 服务器的细节，因为它可能会变得复杂，但我们将讨论如何设置 NFS 客户端。\n\n<b>设置 NFS 客户端</b>\n\n<pre>$ sudo service nfsclient start\n$ sudo mount server:/directory /mount_directory</pre>\n\n<b>自动挂载</b>\n\n假设您经常使用 NFS 服务器，并且希望保持永久挂载，通常您可能会编辑 /etc/fstab 文件，但您可能并不总是能够连接到服务器，这可能会导致启动时出现问题。相反，您应该设置自动挂载，以便在需要时连接到 NFS 服务器。这可以通过 <b>automount</b> 工具或最近版本的 Linux 中的 <b>amd</b> 来完成。当在指定目录中访问文件时，automount 将查找远程服务器并自动挂载它。",
+          "quizAnswer": "automount",
+          "quizQuestion": "用于自动管理挂载点的工具是什么？",
+          "slug": "nfsnetworkfileshare",
+          "title": "NFS"
+        },
+        {
+          "exercise": "如果您还没有设置 Samba 共享，请打开 smb.conf 并熟悉配置文件中的选项。",
+          "id": 5,
+          "lessonContent": "在计算机早期，Windows 机器需要与 Linux 机器共享文件，因此诞生了服务器消息块（SMB）协议。SMB 用于在 Windows 操作系统之间共享文件（Mac 也可以使用 SMB 进行文件共享），后来以通用互联网文件系统（CIFS）协议的形式进行了清理和优化。\n\nSamba 是我们称之为 Linux 实用工具，用于在 Linux 上处理 CIFS。除了文件共享，您还可以共享像打印机这样的资源。\n\n<b>使用 Samba 创建网络共享</b>\n\n让我们一起了解创建一个 Windows 机器可以访问的网络共享的基本步骤：\n\n<b>安装 Samba</b>\n\n<pre>$ sudo apt update\n$ sudo apt install samba</pre>\n\n<b>设置 smb.conf</b>\n\nSamba 的配置文件位于 /etc/samba/smb.conf，该文件应告诉系统应共享哪些目录、它们的访问权限以及更多选项。默认的 smb.conf 已经包含了大量的注释代码，您可以将其用作编写自己配置的示例。\n\n<pre>$ sudo vi /etc/samba/smb.conf</pre>\n\n<b>为 Samba 设置密码</b>\n\n<pre>$ sudo smbpasswd -a [用户名]</pre>\n\n<b>创建一个共享目录</b>\n\n<pre>$ mkdir /我/要/共享的/目录</pre>\n\n<b>重新启动 Samba 服务</b>\n\n<pre>$ sudo service smbd restart</pre>\n\n<b>通过 Windows 访问 Samba 共享</b>\n\n在 Windows 中，只需在运行提示符中键入网络连接：\\\\主机\\共享名称。\n\n<b>通过 Linux 访问 Samba/Windows 共享</b>\n\n<pre>$ smbclient //主机/目录 -U 用户</pre>\n\nSamba 包含一个名为 <b>smbclient</b> 的命令行工具，您可以使用它访问任何 Windows 或 Samba 服务器。一旦连接到共享，您就可以浏览和传输文件。\n\n<b>将 Samba 共享附加到您的系统</b>\n\n您可以将网络共享挂载到系统上，而不是逐个传输文件。\n\n<pre>$ sudo mount -t cifs 服务器名:目录 挂载点 -o user=用户名,pass=密码</pre>",
+          "quizAnswer": "CIFS",
+          "quizQuestion": "Windows 和 Linux 之间用于文件传输的最新协议是什么？",
+          "slug": "samba",
+          "title": "Samba"
+        }
+      ],
+      "slug": "networksharing",
+      "title": "网络共享"
+    },
+    {
+      "description": "了解网络基础知识和TCP/IP模型。",
+      "id": 17,
+      "image": "/images/chapters/networkFundamentals.png",
+      "lessons": [
+        {
+          "exercise": "此课程没有练习。",
+          "id": 1,
+          "lessonContent": "让我们看看一个典型的家庭网络，您有一些不同的组件。\n\n<ul>\n<li>ISP - 您的互联网服务提供商，您支付的公司，用于在您家中获得互联网。</li>\n<li>Router - 路由器允许网络上的每台机器连接到互联网。在大多数现代路由器中，您可以通过无线或以太网电缆连接。</li>\n<li>WAN - 广域网，这是我们称之为在您的路由器和更广泛网络之间的网络。</li>\n<li>WLAN - 无线局域网，这是您的路由器和任何无线设备（如笔记本电脑）之间的网络。</li>\n<li>LAN - 局域网，这是您的路由器和任何有线设备（如台式电脑）之间的网络。</li>\n<li>主机 - 网络上的每台机器称为主机。</li>\n</ul>\n\n通过网络传输的数据和信息称为数据包，在网络游牧民部分结束时，您将详细了解数据包如何往返于主机之间。",
+          "quizAnswer": "LAN",
+          "quizQuestion": "局域网被称为什么？",
+          "slug": "networkbasics",
+          "title": "网络基础"
+        },
+        {
+          "exercise": "阅读有关 OSI 模型的更多信息：<a href=\"https://en.wikipedia.org/wiki/OSI_model\">https://en.wikipedia.org/wiki/OSI_model</a>",
+          "id": 2,
+          "lessonContent": "在我们深入研究一些实际的网络内容之前，我们必须先了解一些可能以前就听说过的乏味术语。OSI（开放系统互连）模型是一个网络的理论模型。该模型向我们展示了数据包如何在网络中的七个不同层中传输。我不会详细介绍这个模型，因为大多数网络课程都会专注于 TCP/IP 模型，但应该提到这样一个理论网络模型存在，并实际上在我们今天使用的 TCP/IP 网络模型中起到了重要作用。",
+          "quizAnswer": "OSI",
+          "quizQuestion": "什么被用作网络的理论模型？",
+          "slug": "osimodel",
+          "title": "OSI 模型"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 3,
+          "lessonContent": "OSI 模型孕育出后来成为 TCP/IP 模型的基础，实际上互联网就是基于这个模型。它是网络的实际实现。TCP/IP 模型使用 TCP/IP 协议套件，我们通常简称为 TCP/IP。这些协议共同工作，指定数据应如何在网络中收集、寻址、传输和路由。使用 TCP/IP 模型，我们可以看到这些协议如何展示数据包在网络中的传输过程。\n\n<b>应用层</b>\n\nTCP/IP 模型的顶层。它确定您计算机上的程序（如您的网络浏览器）如何与传输层服务交互，以查看发送或接收的数据。\n\n该层使用：\n<ul>\n<li>HTTP（超文本传输协议）- 用于互联网上的网页。</li>\n<li>SMTP（简单邮件传输协议）- 电子邮件传输</li>\n</ul>\n\n<b>传输层</b>\n\n数据将如何传输，包括检查正确的端口、数据的完整性，基本上交付我们的数据包。\n\n该层使用：\n<ul>\n<li>TCP（传输控制协议）- 可靠的数据传递</li>\n<li>UDP（用户数据报协议）- 不可靠的数据传递</li>\n</ul>\n\n<b>网络层</b>\n\n该层规定如何在主机之间和跨网络之间移动数据包。\n\n该层使用：\n<ul>\n<li>IP（互联网协议）- 帮助从一台机器路由数据包到另一台机器。</li>\n<li>ICMP（互联网控制消息协议）- 帮助告诉我们发生了什么，如错误消息和调试信息。</li>\n</ul>\n\n<b>链路层</b>\n\n该层规定如何通过物理硬件发送数据。比如数据通过以太网、光纤等传输。\n\n上述各层使用的协议列表并不详尽，您将遇到许多其他起作用的协议。\n\n在接下来的课程中，我们将深入讨论每个层，并讨论我们的数据包如何在网络中穿越 TCP/IP 模型的视角（关于数据包如何在网络中传输存在许多观点，我们不会全部涵盖，但请知晓它们的存在）。",
+          "quizAnswer": "应用层",
+          "quizQuestion": "TCP/IP 模型的顶层是什么？",
+          "slug": "tcpipmodel",
+          "title": "TCP/IP 模型"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 4,
+          "lessonContent": "在我们深入了解数据包在网络中如何传输之前，我们必须熟悉一些术语。当您寄信时，您必须知道信件的收件人和寄件人。数据包也需要相同的信息，我们的主机和其他主机使用 MAC（媒体访问控制）地址和 IP 地址进行标识，为了方便我们人类，我们使用主机名来标识主机。\n\n<b>MAC 地址</b>\n\nMAC 地址是用作硬件地址的唯一标识符。该地址永远不会改变。当您想要访问互联网时，您的计算机需要具有称为网络接口卡的设备。此网络适配器具有自己的硬件地址，用于标识您的计算机。以太网设备的 MAC 地址看起来像这样 00:C4:B5:45:B2:43。MAC 地址是在制造网络适配器时分配的。每个制造商都有一个组织唯一标识符（OUI）来将其标识为制造商。此 OUI 由 MAC 地址的前 3 个字节表示。例如，戴尔的 OUI 是 00-14-22，因此来自戴尔的网络适配器的 MAC 地址可能是：00-14-22-34-B2-C2。\n\n<b>IP 地址</b>\n\nIP 地址用于在网络上标识设备，它们与硬件无关，并且根据您使用 IPv4 还是 IPv6 可以有不同的语法（稍后会详细介绍）。现在我们假设您正在使用 IPv4，因此典型的 IP 地址看起来像：10.24.12.4。IP 地址与网络的软件部分一起使用。每当系统连接到互联网时，它都应该有一个 IP 地址。如果您的网络发生变化，IP 地址也可能会更改，并且对整个互联网是唯一的（一旦我们了解了 NAT，情况就不总是这样）。\n\n请记住，要在网络中传输数据包，需要软件和硬件，因此我们为每个都有两个标识符，MAC（硬件）和 IP（软件）。\n\n<b>主机名</b>\n\n识别您的计算机的另一种方法是通过主机名。主机名使用您的 IP 地址，使您可以将该地址与一个易于阅读的名称关联起来。您可以只记住 myhost.com，而不是 192.12.41.4。",
+          "quizAnswer": "4",
+          "quizQuestion": "IPv4 地址有多少字节？",
+          "slug": "networkaddressing",
+          "title": "网络寻址"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 5,
+          "lessonContent": "假设我想给Patty发送一封电子邮件。我们将逐个讨论TCP/IP层，以便看到它的运作方式。\n\n请记住，数据包用于在网络间传输数据，一个数据包包含头部和有效载荷。头部包含有关数据包去向和来自何处的信息。有效载荷是实际传输的数据。当我们的数据包穿过网络时，每一层都会向数据包的头部添加一些信息。此外，请记住，不同的层使用不同的术语来表示我们的“数据包”。在传输层中，我们基本上将我们的数据封装在一个段中，在链路层中，我们将其称为帧，但只需知道“数据包”可以用于表示相同的东西。\n\n首先，我们从应用层开始。当我们通过电子邮件客户端发送电子邮件时，应用层将封装这些数据。应用层通过指定的端口与传输层通信，并通过此端口发送其数据。我们希望通过应用层协议SMTP（简单邮件传输协议）发送电子邮件。数据通过我们的传输协议发送，该协议打开到此端口的连接（端口25用于SMTP），因此我们通过此端口发送数据，然后将数据发送到传输层以封装成段。",
+          "quizAnswer": "应用层",
+          "quizQuestion": "哪个层用于以用户友好的格式呈现数据包数据？",
+          "slug": "applicationlayer",
+          "title": "应用层"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 6,
+          "lessonContent": "传输层帮助我们以网络可读的方式传输数据。它将我们的数据分成将要传输并按正确顺序重新组装的块。这些块被称为段。段使得在网络中传输数据变得更容易。\n\n<b>端口</b>\n\n尽管我们通过IP地址知道我们要发送数据的位置，但它们不足以将数据发送到特定的进程或服务。诸如HTTP之类的服务通过端口使用通信通道。如果我们要发送网页数据，我们需要通过HTTP端口（端口80）发送。除了形成段外，传输层还会将源端口和目标端口附加到段上，因此当接收方收到最终数据包时，它将知道要使用哪个端口。\n\n<b>UDP</b>\n\n有两种流行的传输协议UDP和TCP。我们将简要讨论UDP，并大部分时间花在TCP上，因为它是最常用的。\n\nUDP不是一种可靠的数据传输方法，事实上，它并不在乎您是否收到所有原始数据。这听起来可能很糟糕，但它确实有其用途，例如用于媒体流，如果您丢失一些帧，那么您可以更快地获取数据。\n\n<b>TCP</b>\n\nTCP提供可靠的面向连接的数据流。TCP使用端口将数据发送到主机并从主机接收数据。应用程序从其主机的一个端口打开到远程主机的另一个端口的连接。为了建立连接，我们使用TCP握手。\n\n<ul>\n<li>客户端（连接进程）向服务器发送一个SYN段以请求连接</li>\n<li>服务器向客户端发送一个SYN-ACK段以确认客户端的连接请求</li>\n<li>客户端向服务器发送一个ACK以确认服务器的连接请求</li>\n</ul>\n\n建立了这种连接后，数据可以在TCP连接上交换。数据以不同的段发送，并使用TCP序列号进行跟踪，以便在传递时可以按正确顺序排列。在我们的电子邮件示例中，传输层将目标端口（25）附加到源主机的源端口上。",
+          "quizAnswer": "TCP",
+          "quizQuestion": "什么是可靠的传输协议？",
+          "slug": "传输层",
+          "title": "传输层"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 7,
+          "lessonContent": "网络层确定了我们的数据包从源主机到目的主机的路由。幸运的是，在我们的示例中，我们的数据包只在同一网络内传输，但互联网由许多网络组成。构成互联网的这些较小网络被称为子网。所有子网以某种方式相互连接，这就是为什么我们能够访问 www.google.com，即使它在自己的网络中。我不会详细介绍，因为我们有一门专门讲解子网的课程，但就我们的网络层而言，要知道 IP 地址定义了前往不同子网的规则。\n\n在网络层中，它接收来自传输层的分段，并将该分段封装在 IP 数据包中，然后将源主机的 IP 地址和目的主机的 IP 地址附加到数据包头部。因此，此时，我们的数据包包含了它要去的地方和它来自哪里的信息。现在它将我们的数据包发送到物理硬件层。",
+          "quizAnswer": "子网",
+          "quizQuestion": "构成互联网的较小网络被称为什么？",
+          "slug": "networklayer",
+          "title": "网络层"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 8,
+          "lessonContent": "在TCP/IP模型的底部是链路层。这一层是硬件特定的层。\n\n在链路层，我们的数据包再次封装为称为帧的东西。帧头附加了我们主机的源MAC地址、目的MAC地址、校验和数据包分隔符，以便接收方可以知道数据包何时结束。\n\n幸运的是，我们在同一个网络上，因此我们的数据包不必走太远。首先，链路层将我的源MAC地址附加到帧头，但它也需要知道Patty的MAC地址。它如何知道那个地址，我如何找到它，因为它不在互联网上？我们使用ARP！\n\n<b>ARP（地址解析协议）</b>\n\nARP查找与IP地址关联的MAC地址。ARP在同一个网络中使用。如果Patty不在同一个网络上，我们将使用路由系统确定下一个将接收数据包的路由器，一旦我们在同一个网络上，我们就可以使用ARP。\n\n一旦我们在同一个网络上，系统首先使用ARP查找表，该表存储了关于哪个IP地址与哪个MAC地址相关联的信息。如果值不在表中，则使用ARP。然后系统将使用ARP协议向网络发送广播消息，以查找哪个主机具有IP地址10.10.1.4。广播消息是一种特殊消息，发送到网络上的所有主机（因为发送广播而得名）。任何具有请求的IP地址的机器都将回复一个包含IP地址和MAC地址的ARP数据包。\n\n现在我们已经拥有了所需的数据，IP地址和MAC地址，我们的链路层通过网络接口卡将此帧转发到下一个设备，并找到Patty的网络。这一步比我刚刚解释的要复杂一些，但我们将在路由课程中讨论更多细节。\n\n这就是一个简单（或者不那么简单）的数据包在TCP/IP层中的传输。请记住，数据包不是单向传输的。我们甚至还没有到达Patty的网络！在通过网络时，需要至少通过TCP/IP模型两次才能发送或接收任何数据。实际上，数据包的传输看起来会像这样：\n\n<b>数据包传输</b>\n\n<ol>\n<li>Pete给Patty发送电子邮件：这些数据被发送到传输层。</li>\n<li>传输层将数据封装为TCP或UDP头部以形成一个段，段附加目的地和源TCP或UDP端口，然后将该段发送到网络层。</li>\n<li>网络层将TCP段封装在IP数据包中，附加源和目的IP地址。然后将数据包路由到链路层。</li>\n<li>数据包然后到达Pete的物理硬件，并被封装在一个帧中。源和目的MAC地址被添加到帧中。</li>\n<li>Patty通过她的物理层接收到这个数据帧，并检查每个帧的数据完整性，然后解封帧内容并将IP数据包发送到网络层。</li>\n<li>网络层读取数据包以查找先前附加的源和目的IP地址。它检查它的IP是否与目的IP相同，是的！它解封数据包并将段发送到传输层。</li>\n<li>传输层解封段，检查TCP或UDP端口号，并根据这些端口号向应用层建立连接。</li>\n<li>应用层从传输层接收数据，并根据指定的端口号将其呈现给Patty，形成最终的电子邮件消息。</li>\n</ol>",
+          "quizAnswer": "ARP",
+          "quizQuestion": "在同一个网络中用什么来查找MAC地址？",
+          "slug": "linklayer",
+          "title": "链路层"
+        },
+        {
+          "exercise": "此课程没有练习。",
+          "id": 9,
+          "lessonContent": "我们尚未讨论的一个重要网络概念是 DHCP（动态主机配置协议）\n\nDHCP 为我们的设备分配 IP 地址、子网掩码和网关。例如，假设您有一部手机，想要获取一个电话号码开始与他人通话。您必须致电您的手机运营商，他们会为您提供一个号码。只要您支付账单，您就可以继续使用手机。在这种情况下，DHCP 就像手机运营商，它为您提供 IP 地址，以便您可以与其他 IP 地址通信。您还被租用了一个 IP 地址，这些 IP 地址有一定的使用期限，然后根据您的租约设置进行续订。\n\nDHCP 有许多优点，它使网络管理员不必担心分配 IP 地址，还可以防止设置重复的 IP 地址。每个物理网络都应该有自己的 DHCP 服务器，以便主机可以请求 IP 地址。在常规家庭设置中，路由器通常充当 DHCP 服务器。\n\nDHCP 获取所有您的动态主机信息的方式是：\n\n<ol>\n<li>DHCP DISCOVER - 此消息被广播以搜索 DHCP 服务器。</li>\n<li>DHCP OFFER - 网络中的 DHCP 服务器回复一个提供消息。提供包含有 DHCP 租约时间、子网掩码、IP 地址等的数据包。</li>\n<li>DHCP REQUEST - 客户端发送另一个广播以通知所有 DHCP 服务器它接受了哪个提供。</li>\n<li>DHCP ACK - 服务器发送确认消息。</li>\n</ol>\n\nDHCP 涉及的内容比这更复杂，但这就是其要点。",
+          "quizAnswer": "DISCOVER, OFFER, REQUEST, ACK",
+          "quizQuestion": "DHCP 请求的步骤是什么？",
+          "slug": "dhcpoverview",
+          "title": "DHCP 概述"
+        }
+      ],
+      "slug": "networkbasics",
+      "title": "网络基础"
+    },
+    {
+      "description": "了解子网和如何进行子网算术运算！",
+      "id": 18,
+      "image": "/images/chapters/subnetting.png",
+      "lessons": [
+        {
+          "exercise": "使用 ifconfig 查找你的 IP 地址。",
+          "id": 1,
+          "lessonContent": "每个网络主机都有一个唯一的地址，每个唯一的地址可以用来定位网络中的主机。这些唯一的地址被称为 'IP 地址'。IPv4 地址看起来像这样：\n\n<pre>204.23.124.23</pre>\n\n这个地址实际上包含两部分：网络部分（用于标识所在的网络）和主机部分（用于标识主机）。在本课程中，我们将主要讨论 IPv4 地址，这是在提到 'IP 地址' 时通常会看到的内容。\n\nIP 地址通过句点分成八进制。IPv4 地址有 4 个八进制。如果你了解一些计算机科学，你会知道一个八进制是 8 位，你会知道 8 位实际上等于 1 字节。这意味着 IPv4 地址有 4 个字节。在处理子网和 IP 地址时，我们经常使用位。\n\n你可以使用 'ifconfig -a' 命令查看你的 IP 地址：\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\n如你所见，我的 IPv4 地址是：192.168.1.129",
+          "quizAnswer": "4",
+          "quizQuestion": "IPv4 地址有多少个字节？",
+          "slug": "ipv4",
+          "title": "IPv4"
+        },
+        {
+          "exercise": "使用ifconfig查看您的子网掩码。",
+          "id": 2,
+          "lessonContent": "我怎样才能知道我是否与Patty在同一个网络上？我们可以看子网，简称子网络。子网是一组具有某种相似IP地址的主机。这些主机通常彼此靠近，您可以轻松地向同一子网上的主机发送和接收数据。可以将其视为在同一邮政编码区内发送邮件，比起发送到另一个州，这要容易得多。\n\n例如，所有以123.45.67开头的IP地址的主机将位于同一子网上。我的主机IP地址为123.45.67.8，Patty的IP地址为123.45.67.9。共同的数字是我的网络前缀，8和9是我们的主机，因此我的网络与Patty的相同。子网分为网络前缀，比如123.45.67.0和子网掩码。\n\n<b>子网掩码</b>\n\n子网掩码确定IP地址的哪一部分是网络部分，哪一部分是主机部分。\n\n典型的子网掩码可能如下所示：\n\n<pre>255.255.255.0</pre>\n\n255部分实际上是我们的掩码。为了更容易理解，记住我们将每个八位组称为8位？在计算机科学中，一个位用二进制形式的0或1表示。当使用二进制数时，1表示开，0表示关。那么8个0或1等于什么？\n\n在Google中输入“二进制转十进制计算器”，将11111111转换为十进制形式。你得到了什么？255！因此，一个八位组的范围是从0到255。因此，如果我们有一个子网掩码为255.255.255.0，IP地址为192.168.1.0，那么该子网上有多少主机？我们将在子网数学课程中找到答案。\n\n此外，当我们谈论子网时，通常用网络前缀后跟子网掩码来表示：\n\n<pre>123.234.0.0/255.255.0.0</pre>\n\n<b>为什么？</b>\n\n我们为什么要创建子网？子网划分用于分割网络并控制网络内的流量。因此，一个子网上的主机无法与不同子网上的另一个主机进行交互。\n\n但等一下，如果我想连接到像yahoo.com这样的其他主机怎么办？那么您需要连接子网。要连接子网，只需找到连接到多个子网的主机。例如，如果我的主机位于192.168.1.129的本地网络上，它可以访问该网络上的任何主机。要访问互联网的其他主机，它需要通过路由器进行通信。传统上，在大多数具有子网掩码为255.255.255.0的网络上，路由器通常位于子网的地址1，因此为192.168.1.1。现在该路由器将具有一个连接到另一个子网的端口（在路由课程中详细介绍）。某些IP地址（私有网络）对互联网不可见，我们有NAT等功能（稍后详细介绍）。",
+          "quizAnswer": "真",
+          "quizQuestion": "真或假，子网由子网掩码和网络前缀组成。",
+          "slug": "子网",
+          "title": "子网"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 3,
+          "lessonContent": "好的，我们知道子网掩码对于计算子网上可以拥有多少主机是很重要的。那么这会是多少主机呢？\n\n假设我有一个IP地址为 <b>192.168.1.0</b>，子网掩码为 <b>255.255.255.0</b>，现在让我们将这些数字以二进制形式排列起来。暂时使用在线计算器将这些值从十进制转换为二进制。\n\n<pre>\n192.168.1.165  = 11000000.10101000.00000001.10100101\n255.255.255.0  = 11111111.11111111.11111111.00000000\n</pre>\n\nIP地址被我们的子网掩码掩盖，当您看到一个1时，它被掩盖，我们假装看不到它。因此，我们可以拥有的唯一可能主机来自于00000000区域。请记住，二进制形式中的11111111等于255，我们还将0视为主机号，因此有256个可能的选项。然而，看起来我们有256个可能的选项，但实际上我们要减去2个主机，因为我们必须考虑广播地址和子网地址，这样我们在子网上只剩下254个可能的主机。所以我们知道我们可以拥有的主机的IP地址范围是从192.168.1.1到192.168.1.254。",
+          "quizAnswer": "11111111",
+          "quizQuestion": "255的二进制等价是什么？",
+          "slug": "subnetmath",
+          "title": "子网掩码计算"
+        },
+        {
+          "exercise": "查看你的 IP 地址和子网掩码，看看你的子网上可以有多少个主机。",
+          "id": 4,
+          "lessonContent": "我不喜欢不得不添加这一部分，在现实世界中，你很可能永远不需要手动进行子网数学运算，但是如果你在面试中被问到这个问题，你就必须知道如何将子网划分的二进制形式进行转换。幸运的是，有一些算术技巧可以记住。\n\n首先要记住你的二进制计算，就这么做吧：\n\n<ul>\n<li>2^1 = 2</li>\n<li>2^2 = 4</li>\n<li>2^3 = 8</li>\n<li>2^4 = 16</li>\n<li>2^5 = 32</li>\n<li>2^6 = 64</li>\n<li>2^7 = 128</li>\n<li>2^8 = 256</li>\n<li>2^9 = 512</li>\n<li>2^10 = 1024</li>\n<li>2^11 = 2048</li>\n<li>2^12 = 4096</li>\n</ul>\n\n<b>十进制转二进制表</b>\n\n<pre>\n1   1  1  1  1 1 1 1\n128 64 32 16 8 4 2 1\n</pre>\n\n为什么下面的表格看起来像这样有很多原因，如果你想知道它是如何工作的，网上有很多资源。\n\n好了，记住了吗？让我们快速进行一个十进制到二进制的转换：\n\n<b>将 192.168.23.43 转换为二进制</b>\n\n记住：128 / 64 / 32 / 16 / 8 / 4 / 2 / 1\n\n让我们逐步将第一个八位字节转换为二进制，你就会明白其余的是如何工作的。\n\n<ol>\n<li>你能够计算 192 - 128 吗？可以，所以第一个位是 1</li>\n<li>192 - 128 = 64，图表中的下一个数字是 64，你能计算 64 - 64 吗？可以，所以第二位是 1</li>\n<li>我们已经没有可以从中减去的数字了，所以 192 的二进制形式是 11000000</li>\n</ol>\n\n<b>将二进制 11000000 转换为十进制</b>\n\n对于二进制到十进制的转换，你要将所有为 1 的数字相加，所以：\n\n128 + 64 + 0 + 0 + 0 + 0 + 0 + 0 = 192！",
+          "quizAnswer": "1111011",
+          "quizQuestion": "123 的二进制转换是什么？",
+          "slug": "subnettingcheats",
+          "title": "子网划分技巧"
+        },
+        {
+          "exercise": "此课程没有练习。",
+          "id": 5,
+          "lessonContent": "CIDR（无类别域间路由）用于以更紧凑的方式表示子网掩码。您可能会看到以CIDR表示的子网，其中子网如10.42.3.0/255.255.255.0写成10.42.3.0/24，这意味着它包括子网前缀和子网掩码。\n\n请记住，IP地址由4个字节或32位组成，CIDR表示用作网络前缀的位数。因此，123.12.24.0/23表示使用了前23位。那是什么意思？这意味着有多少主机？\n\n一个简单的技巧是从IP地址可以拥有的总位数（32）中减去CIDR地址（23），这样剩下9位，2^9 = 512，但我们必须移除2个地址（子网地址和广播地址），因此我们有510个可用主机。",
+          "quizAnswer": "",
+          "quizQuestion": "没有问题，请继续！",
+          "slug": "classlessinterdomainroutingcidr",
+          "title": "CIDR"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 6,
+          "lessonContent": "我们之前提到过NAT（网络地址转换），但没有深入讨论。当我们在处理我们的网络时，这是否意味着互联网可以看到我们的IP地址？并非如此。\n\nNAT使得我们的路由器等设备充当互联网和私人网络之间的中介。因此，只需要一个单独的唯一IP地址来代表整个计算机组。\n\n想象NAT就像一个大办公室里的前台，如果有人想要联系你，他们只知道整个办公室的电话号码，前台会查找你的分机号码并将电话转接给你。\n\n<b>它是如何工作的？</b>\n\n一个简单的情况可能是这样的：\n\n<ol>\n<li>Patty想要连接到www.google.com，所以她的设备通过路由器发送这个请求</li>\n<li>路由器接收到请求后，打开自己与google.com的连接，然后在建立连接后发送Patty的请求</li>\n<li>路由器是Patty和www.google.com之间的中介。Google不知道Patty，它所看到的只是路由器。</li>\n</ol>\n\nNAT和数据包路由通常会变得相当复杂，但我们不会深入讨论细节。",
+          "quizAnswer": "NAT",
+          "quizQuestion": "用什么来代表一个单独的私人地址连接到互联网？",
+          "slug": "natnetworkaddresstranslation",
+          "title": "NAT"
+        },
+        {
+          "exercise": "检查 ifconfig，看看是否列出了 IPv6 地址。",
+          "id": 7,
+          "lessonContent": "我们时常听到 IPv6 这个术语，但它是什么呢？每个连接到互联网的设备都会获得自己的 IP 地址，然而在这个数字化时代，可用的 IP 地址数量是有限的，我们很快就会接近枯竭。IPv6 的出现是为了让我们能够连接更多主机到互联网，它带来了更多 IP 改进，然而它的采用速度相当缓慢。它并不是用来取代 IPv4 的，它们是相辅相成的。这两种 IP 协议非常相似，如果你了解 IPv4，你会理解 IPv6，它们主要的区别在于地址的书写方式。以下是一个典型的 IPv6 地址示例：\n\n<pre>\n2dde:1235:1256:3:200:f8ed:fe23:59cf\n</pre>",
+          "quizAnswer": "IPv6",
+          "quizQuestion": "用于增加可以连接到互联网的主机数量的 IP 地址是什么？",
+          "slug": "ipv6",
+          "title": "IPv6"
+        }
+      ],
+      "slug": "subnetting",
+      "title": "子网划分"
+    },
+    {
+      "description": "了解数据包如何在网络中路由！",
+      "id": 19,
+      "image": "/images/chapters/routing.png",
+      "lessons": [
+        {
+          "exercise": "本课程没有练习。",
+          "id": 1,
+          "lessonContent": "我们之前使用过“路由器”这个术语，希望您知道它是什么，因为您可能在家里有一个。路由器使网络上的设备能够相互通信，也能与其他网络通信。在典型的路由器上，您会有局域网端口，允许您的设备连接到同一局域网，还会有一个连接到互联网的上行端口，有时您会看到这个端口被标记为WAN，因为它实质上是将您连接到更广泛的网络。当我们进行任何网络活动时，都必须经过路由器。路由器决定我们的网络数据包应该去哪里，以及哪些数据包进来。它在多个网络之间路由我们的数据包，从源主机到目标主机。\n\n<b>路由器如何工作？</b>\n\n想象一下路由就像邮件投递，我们有一个地址要寄信，当我们把信送到邮局时，他们拿到信后会看到，哦，这封信要寄到加利福尼亚，我会把它放在去加利福尼亚的卡车上（我真的不知道邮政系统是如何工作的）。然后信件被送到旧金山，在旧金山有不同的邮政编码，然后在这些邮政编码中有更小的地址编码，直到最终有人能够将您的信送到您想要的地址。另一方面，如果您已经住在旧金山并且在同一个邮政编码区域内，邮递员可能会准确知道信件应该去哪里，而不需要将其交给其他人。\n\n当我们路由数据包时，它们使用类似的地址“路由”，例如要到达网络A，将这些数据包发送到网络B。当我们没有为此设置路由时，我们有一个默认路由，我们的数据包将使用该路由。这些路由设置在我们系统用于跨网络导航的路由表上。\n\n<b>跳数</b>\n\n随着数据包在网络中移动，它们通过跳数传输，一个跳数大致衡量了数据包从源到目的地所需的距离。比如，如果我有两个路由器连接主机A和主机B，因此我们说主机A和主机B之间有两个跳数。每个跳数是一个中间设备，如我们必须经过的路由器。\n\n<b>理解交换、路由和洪泛之间的基本区别？</b>\n数据包交换基本上是接收、处理和转发数据到目标设备。\n路由是创建路由表的过程，以便我们可以更好地进行数据包交换。\n在路由之前，使用的是洪泛。如果路由器不知道如何发送数据包，那么每个传入的数据包都将通过除了它到达的那个链接之外的每个传出链接发送。",
+          "quizAnswer": "跳数",
+          "quizQuestion": "数据包如何衡量距离？",
+          "slug": "whatisarouter",
+          "title": "什么是路由器？"
+        },
+        {
+          "exercise": "查看您的路由表，看看您的数据包可以去哪里。",
+          "id": 2,
+          "lessonContent": "查看您机器的路由表：\n\n<pre>\npete@icebox:~$ sudo route -n\nKernel IP routing table\nDestination     Gateway         Genmask         Flags Metric Ref    Use Iface\n0.0.0.0         192.168.224.2   0.0.0.0         UG    0      0        0 eth0\n192.168.224.0   0.0.0.0         255.255.255.0   U     1      0        0 eth0\n</pre>\n\n<b>目的地</b>\n\n在第一个字段中，我们有一个目的地IP地址为192.168.224.0，这表示任何试图到达该网络的数据包都会通过我的以太网电缆（eth0）发送。如果我是192.168.224.5并且想要到达192.168.224.7，我将直接使用网络接口eth0。\n\n请注意我们有地址<b>0.0.0.0</b>，这意味着未指定地址或地址未知。因此，例如，如果我想发送一个数据包到IP地址151.123.43.6，我们的路由表不知道该怎么走，所以将其表示为0.0.0.0，因此将我们的数据包路由到网关。\n\n<b>网关</b>\n\n如果我们发送的数据包不在同一网络上，它将被发送到此网关地址。这个网关恰如其名，是通往另一个网络的网关。\n\n<b>Genmask</b>\n\n这是子网掩码，用于确定哪些IP地址匹配哪个目的地。\n\n<b>标志</b>\n\n<ul>\n<li>UG - 网络已连接且是网关</li>\n<li>U - 网络已连接</li>\n</ul>\n\n<b>接口</b>\n\n这是我们的数据包将要传出的接口，eth0通常代表系统上的第一个以太网设备。",
+          "quizAnswer": "网关",
+          "quizQuestion": "如果我们的路由表不知道数据包应该路由到哪里，数据包会被路由到哪里？",
+          "slug": "routingtable",
+          "title": "路由表"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 3,
+          "lessonContent": "<b>让我们看看数据包在本地网络中的传输方式</b>\n\n<ol>\n<li>首先，本地机器将比较目标IP地址，看看它是否在相同的子网中，方法是查看其子网掩码。</li>\n<li>当数据包被发送时，它们需要有源MAC地址、目标MAC地址、源IP地址和目标IP地址，此时我们不知道目标MAC地址。</li>\n<li>为了到达目标主机，我们使用ARP在本地网络上广播请求，以查找目标主机的MAC地址。</li>\n<li>现在数据包可以成功发送了！</li>\n</ol>\n\n<b>让我们看看数据包在本网络之外的传输方式</b>\n\n<ol>\n<li>首先，本地机器将比较目标IP地址，因为它在我们的网络之外，所以看不到目标主机的MAC地址。我们也不能使用ARP，因为ARP请求是广播给本地连接的主机的。</li>\n<li>因此，我们的数据包现在查看路由表，它不知道目标IP的地址，所以将其发送到默认网关（另一台路由器）。因此，现在我们的数据包包含了源IP、目标IP和源MAC，但我们没有目标MAC。请记住，MAC地址只能通过相同网络到达。那么它会怎么做呢？它发送一个ARP请求，以获取默认网关的MAC地址。</li>\n<li>路由器查看数据包并确认目标MAC地址，但这不是最终的目标IP地址，因此它继续查看路由表，将数据包转发到另一个可以帮助数据包继续前进到其目的地的IP地址。每次数据包移动时，它会剥离旧的源和目标MAC地址，并使用新的源和目标MAC地址更新数据包。</li>\n<li>一旦数据包被转发到相同网络，我们使用ARP来找到最终的目标MAC地址</li>\n<li>在此过程中，我们的数据包不会更改源或目标IP地址。</li>\n</ol>",
+          "quizAnswer": "ARP",
+          "quizQuestion": "我们如何找到IP地址的MAC地址？",
+          "slug": "数据包的路径",
+          "title": "数据包的路径"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 4,
+          "lessonContent": "要为网络上的每个设备手动配置路由表将是一件麻烦事，因此我们使用被称为路由协议的东西。路由协议用于帮助我们的系统适应网络变化，它学习不同的路由，构建它们在路由表中，然后通过这种方式路由我们的数据包。主要有两种路由协议类型，分别是距离矢量协议和链路状态协议。\n\n<b>收敛</b>\n\n在我们讨论协议之前，我们应该了解一下路由中使用的一个术语，即收敛。使用路由协议时，路由器会与其他路由器通信，收集和交换有关网络的信息。当它们就网络应该如何看起来达成一致时，每个路由表都会映射出网络的完整拓扑结构，从而“收敛”。当网络拓扑发生变化时，收敛将暂时中断，直到所有路由器都意识到这一变化。",
+          "quizAnswer": "收敛",
+          "quizQuestion": "当所有路由表都知道网络拓扑时使用的术语是什么？",
+          "slug": "routingprotocols",
+          "title": "路由协议"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 5,
+          "lessonContent": "距离向量协议确定数据包在网络中经过的跳数来确定其他网络的路径。如果网络A距离为3跳，而网络B紧邻网络A，则我们假定网络B距离为4跳。在距离向量协议中，下一个路由将是跳数最少的路由。\n\n距离向量协议非常适用于小型网络，但随着网络规模的扩大，路由器收敛所需的时间会更长，因为它会定期将整个路由表发送给每个路由器。距离向量协议的另一个缺点是效率，它选择跳数较近的路由，但并不总是选择最有效的路由。\n\n常见的距离向量协议之一是RIP（路由信息协议），它每30秒向网络中的每个路由器广播路由表。对于大型网络，这可能需要大量资源，因此RIP将其跳数限制为15。",
+          "quizAnswer": "false",
+          "quizQuestion": "距离协议使用带宽最少的路由，是真是假？",
+          "slug": "distancevectorprotocols",
+          "title": "距离向量协议"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 6,
+          "lessonContent": "链路状态协议非常适用于大型网络，它们比距离矢量协议更复杂，但一个很大的优势是它们能够快速收敛，这是因为它们不是周期性地发送整个路由表，而是只向相邻路由发送更新。它们使用不同的算法来计算最短路径，并以图形的形式构建网络拓扑，显示哪些路由器连接到其他路由器。\n\n其中一个常见的链路状态协议是OSPF（开放最短路径优先），它只在网络发生更改时更新路由表。它没有跳数限制。",
+          "quizAnswer": "OSPF",
+          "quizQuestion": "什么是最常见的链路状态协议之一？",
+          "slug": "linkstateprotocols",
+          "title": "链路状态协议"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 7,
+          "lessonContent": "我们将讨论的最后一个重要协议是BGP，BGP基本上是互联网的运行方式。它用于在自治系统之间收集和交换路由信息。将自治系统视为互联网服务提供商、公司、大学、任何组织等。没有BGP，这些系统将不知道如何彼此通信，它们将被隔离。BGP不是在这些自治系统内部进行路由，而是在它们之间进行路由。\n\n假设您在家庭网络上，我在星巴克工作，我希望能够与您通信，因此我发送一封电子邮件，网络数据包通过星巴克的网络传输，经过那里反弹并通过星巴克网络中的路由表，最终到达星巴克网络边界的某一点，并将其传递给边界网关路由器。该路由器包含了我的数据包离开星巴克网络并穿越其他网络的信息。",
+          "quizAnswer": "BGP",
+          "quizQuestion": "哪种协议基本上使互联网工作？",
+          "slug": "bgpbordergatewayprotocol",
+          "title": "边界网关协议"
+        }
+      ],
+      "slug": "routing",
+      "title": "路由"
+    },
+    {
+      "description": "使用Linux工具了解网络配置！",
+      "id": 20,
+      "image": "/images/chapters/networkConfiguration.png",
+      "lessons": [
+        {
+          "exercise": "尝试将您的网络接口的状态更改为 up 或 down，并观察发生了什么。\n\n您能使用 ifconfig 和 ip 命令同时更改网络接口吗？",
+          "id": 1,
+          "lessonContent": "网络接口是内核将网络软件部分与硬件部分连接起来的方式。我们已经看到了一个例子：\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\n<b> ifconfig 命令</b>\n\n<b>ifconfig</b> 工具允许我们配置网络接口，如果没有设置任何网络接口，内核的设备驱动程序和网络将不知道如何通信。Ifconfig 在启动时运行并通过配置文件配置我们的接口，但我们也可以手动修改它们。Ifconfig 的输出显示接口名称在左侧，右侧显示详细信息。您最常见的接口名称可能是 eth0（机器中的第一张以太网卡）、wlan0（无线接口）、lo（环回接口）。环回接口用于表示您的计算机，它只是将您回环到自己。这对于调试或连接到本地运行的服务器很有用。\n\n接口的状态可以是 up 或 down，您可以猜到，如果要“关闭”一个接口，可以将其设置为 down。您可能会在 ifconfig 输出中最常查看的字段是 HWaddr（接口的 MAC 地址）、inet 地址（IPv4 地址）和 inet6（IPv6 地址）。当然，您还可以看到子网掩码和广播地址。您还可以在 /etc/network/interfaces 查看接口信息。\n\n<b>创建接口并启用它</b>\n\n<pre>$ ifconfig eth0 192.168.2.1 netmask 255.255.255.0 up</pre>\n\n这将为 eth0 接口分配 IP 地址和子网掩码，并将其启用。\n\n<b>启用或禁用接口</b>\n\n<pre>\n$ ifup eth0\n$ ifdown eth0\n</pre>\n\n<b> ip 命令 </b>\n\n<b>ip</b> 命令还允许我们操作系统的网络堆栈。根据您使用的发行版，这可能是操纵网络设置的首选方法。\n\n以下是一些使用示例：\n\n<b>显示所有接口的接口信息</b>\n<pre>\n$ ip link show\n</pre>\n\n<b>显示接口的统计信息</b>\n<pre>\n$ ip -s link show eth0\n</pre>\n\n<b>显示分配给接口的 IP 地址</b>\n<pre>\n$ ip address show\n</pre>\n\n<b>启用和禁用接口</b>\n<pre>\n$ ip link set eth0 up\n$ ip link set eth0 down\n</pre>\n\n<b>向接口添加 IP 地址</b>\n<pre>\n$ ip address add 192.168.1.1/24 dev eth0\n</pre>",
+          "quizAnswer": "ifconfig",
+          "quizQuestion": "配置我们的网络接口的命令是什么？",
+          "slug": "networkinterfaces",
+          "title": "网络接口"
+        },
+        {
+          "exercise": "本课程没有练习，但您可以在 man 手册中阅读有关此处讨论的命令的更多信息\n\n<pre>$ man route</pre>\n\n<pre>$ man ip-route</pre>",
+          "id": 2,
+          "lessonContent": "我们已经讨论过使用 route 命令查看我们的路由表，如果您想要手动添加或删除路由，可以这样做。\n\n<b>添加新路由</b>\n\n<pre>\n$ sudo route add -net 192.168.2.1/23 gw 10.11.12.3\n</pre>\n\n<b>删除路由</b>\n\n<pre>\n$ sudo route del -net 192.168.2.1/23 \n</pre>\n\n您也可以使用 <b>ip</b> 命令执行这些更改：\n\n<b>添加路由</b>\n<pre>\n$ ip route add 192.168.2.1/23 via 10.11.12.3\n</pre>\n\n<b>删除路由</b>\n<pre>\n$ ip route delete 192.168.2.1/23 via 10.11.12.3\n或\n$ ip route delete 192.168.2.1/23\n</pre>",
+          "quizAnswer": "del",
+          "quizQuestion": "删除路由的命令标志是什么？",
+          "slug": "route",
+          "title": "路由"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 3,
+          "lessonContent": "我们之前讨论过DHCP，大多数情况下，您永远不需要静态设置IP地址、子网掩码等。相反，您将使用DHCP！dhclient在启动时会从dhclient.conf文件中获取网络接口列表。对于列出的每个接口，它都会尝试使用DHCP协议配置接口。\n\n在dhclient.leases文件中，dhclient会跟踪系统重新启动后的租约列表，在读取dhclient.conf后，会读取dhclient.leases文件以了解它已经分配了哪些租约。\n\n<b>获取新IP的方法</b>\n\n<pre>$ sudo dhclient</pre>",
+          "quizAnswer": "dhclient",
+          "quizQuestion": "谁尝试使用DHCP协议分配IP地址？",
+          "slug": "dhclient",
+          "title": "dhclient"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 4,
+          "lessonContent": "当然，如果您希望系统的网络自动运行，已经有相应的解决方案。大多数发行版使用 NetworkManager 守护程序来自动配置网络。\n\n如果您使用图形界面，您会在桌面任务栏的某个位置看到 NetworkManager 的小程序。它负责管理您网络的硬件和连接信息。例如，在启动时，NetworkManager 会收集网络硬件信息，搜索无线、有线连接等，然后激活它。\n\n还有一些命令行工具可以与 NetworkManager 交互：\n\n<b>nm-tool</b>\n\nnm-tool 报告 NetworkManager 的状态和设备\n\n<pre>\npete@icebox:/$ nm-tool\nNetworkManager 工具\n\n状态: 已连接 (全局)\n\n- 设备: eth0  [有线连接 1] -------------------------------------------\n  类型:              有线\n  驱动程序:            pcnet32\n  状态:             已连接\n  默认:           是\n  硬件地址:        12:3D:45:56:7D:CC\n\n  功能:\n    载波检测:  是\n\n  有线属性\n    载波:         开启\n\n  IPv4 设置:\n    地址:         192.168.22.1\n    前缀:          24 (255.255.255.0)\n    网关:         192.168.22.2\n\n    DNS:             192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nnmcli 命令允许您控制和修改 NetworkManager，请参阅 man 手册获取更多详细信息。",
+          "quizAnswer": "nm-tool",
+          "quizQuestion": "查看 NetworkManager 信息的命令是什么？",
+          "slug": "networkmanager",
+          "title": "网络管理器"
+        },
+        {
+          "exercise": "观察当您重新启动机器然后在网络上执行操作时，您的ARP缓存会发生什么变化。",
+          "id": 5,
+          "lessonContent": "当我们使用ARP查找MAC地址时，请记住，它首先检查我们系统上本地存储的ARP缓存，您实际上可以查看此缓存：\n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\n当机器启动时，ARP缓存实际上是空的，它会在将数据包发送到其他主机时填充。如果我们向ARP缓存中不存在的目的地发送数据包，则会发生以下情况：\n\n<ol>\n<li>源主机创建带有ARP请求数据包的以太网帧</li>\n<li>源主机将此帧广播到整个网络</li>\n<li>如果网络上的某个主机知道正确的MAC地址，它将发送一个回复数据包和包含MAC地址的帧</li>\n<li>源主机将IP到MAC地址映射添加到ARP缓存，然后继续发送数据包</li>\n</ol>\n\n您还可以通过ip命令查看您的ARP缓存：\n\n<pre>\n$ ip neighbour show\n</pre>",
+          "quizAnswer": "arp",
+          "quizQuestion": "您可以使用什么命令查看您的ARP缓存？",
+          "slug": "arpcommand",
+          "title": "arp"
+        }
+      ],
+      "slug": "networkconfig",
+      "title": "网络配置"
+    },
+    {
+      "description": "了解常见的网络工具，帮助您诊断和解决问题！",
+      "id": 21,
+      "image": "/images/chapters/networkTroubleshooting.png",
+      "lessons": [
+        {
+          "exercise": "本课程没有练习。",
+          "id": 1,
+          "lessonContent": "Internet Control Message Protocol（ICMP）是TCP/IP协议套件的一部分，用于发送更新和错误消息，是用于调试网络问题（如传输失败的数据包）的极其有用的协议。\n\n每个ICMP消息包含类型、代码和校验字段。类型字段是ICMP消息的类型，代码是子类型，描述消息的更多信息，校验和用于检测消息完整性的任何问题。\n\n让我们看一些常见的ICMP类型：\n\n<ul>\n<li>类型0 - 回显应答</li>\n<li>类型3 - 目的地不可达</li>\n<li>类型8 - 回显请求</li>\n<li>类型11 - 超时</li>\n</ul>\n\n当数据包无法到达目的地时，将生成类型3的ICMP消息，类型3中有16个代码值，进一步描述为什么无法到达目的地：\n\n<ul>\n<li>代码0 - 网络不可达</li>\n<li>代码1 - 主机不可达</li>\n等等..等等..\n</ul>\n\n随着我们使用一些网络故障排除工具，这些消息将变得更有意义。",
+          "quizAnswer": "8",
+          "quizQuestion": "回显请求的ICMP类型是什么？",
+          "slug": "icmp",
+          "title": "ICMP"
+        },
+        {
+          "exercise": "对一个网站执行 ping 并查看您收到的输出。",
+          "id": 2,
+          "lessonContent": "Ping 是最简单的网络工具之一，用于测试数据包是否能到达主机。它通过向目标主机发送 ICMP 回显请求（Type 8）数据包，并等待 ICMP 回显回复（Type 0）来工作。当主机发送请求数据包并从目标接收到响应时，Ping 就成功了。让我们看一个例子：\n\n<pre>\npete@icebox:~$ ping -c 3 www.google.com\nPING www.google.com (74.125.239.112) 56(84) 字节的数据。\n64 字节来自 nuq05s01-in-f16.1e100.net (74.125.239.112) 的 icmp_seq=1 ttl=128 时间=29.0 ms\n64 字节来自 nuq05s01-in-f16.1e100.net (74.125.239.112) 的 icmp_seq=2 ttl=128 时间=23.7 ms\n64 字节来自 nuq05s01-in-f16.1e100.net (74.125.239.112) 的 icmp_seq=3 ttl=128 时间=15.1 ms\n</pre>\n\n在这个例子中，我们使用 ping 来检查是否可以到达 www.google.com。-c 标志（计数）用于在达到计数后停止发送回显请求数据包。\n\n第一部分表示我们正在向 74.125.239.112（google.com）发送 64 字节的数据包，其余部分显示了行程的详细信息。默认情况下，它每秒发送一个数据包。\n\n<b>icmp_seq</b>\n\nicmp_seq 字段用于显示发送的数据包的序列号，因此在这种情况下，我发送了 3 个数据包，并且我们可以看到 3 个数据包返回。如果进行 ping 并且有一些序列号丢失，这意味着发生了一些连接问题，并非所有数据包都通过。如果序列号是无序的，则您的连接可能非常慢，因为您的数据包超过了默认的一秒。\n\n<b>ttl</b>\n\n生存时间（ttl）字段用作跳数计数器，随着跳数的增加，计数器递减一次，一旦跳数计数器达到 0，我们的数据包就会消失。这旨在为数据包赋予寿命，我们不希望我们的数据包永远在网络中传播。\n\n<b>time</b>\n\n从您发送回显请求数据包到收到回显回复所花费的往返时间。",
+          "quizAnswer": "毫秒",
+          "quizQuestion": "往返时间的单位是什么？",
+          "slug": "ping",
+          "title": "ping"
+        },
+        {
+          "exercise": "在您的计算机上运行traceroute命令并观察输出。",
+          "id": 3,
+          "lessonContent": "traceroute命令用于查看数据包的路由情况。它通过发送具有递增TTL值的数据包来工作，从1开始。因此，第一个路由器接收数据包，并将TTL值减少一，从而丢弃数据包。路由器发送一个ICMP超时消息回给我们。然后下一个数据包的TTL为2，因此它通过第一个路由器，但当它到达第二个路由器时，TTL为0，返回另一个ICMP超时消息。traceroute的工作方式是，当它发送和丢弃数据包时，它会构建数据包经过的路由器列表，直到最终到达目的地并收到ICMP回显回复消息。\n\n这里是traceroute的一个小片段：\n\n<pre>\n$ traceroute google.com\ntraceroute to google.com (216.58.216.174), 30 hops max, 60 byte packets\n 1  192.168.4.254 (192.168.4.254)  0.028 ms  0.009 ms  0.008 ms\n 2  100.64.1.113 (100.64.1.113)  1.227 ms  1.226 ms 0.920 ms\n 3  100.64.0.20 (100.64.0.20)  1.501 ms 1.556 ms  0.855 ms\n</pre>\n\n每行代表我和目标之间的一个路由器或机器。它显示目标的名称和其IP地址，最后三列对应到达该路由器的数据包的往返时间。默认情况下，我们沿路由发送三个数据包。",
+          "quizAnswer": "ttl",
+          "quizQuestion": "在网络跳跃时会递减多少？",
+          "slug": "traceroute",
+          "title": "traceroute"
+        },
+        {
+          "exercise": "查看netstat的手册页，了解其提供的所有功能。",
+          "id": 4,
+          "lessonContent": "<b>知名端口</b>\n\n我们已经讨论了通过计算机端口进行数据传输，让我们看一些知名端口。\n\n您可以通过查看文件<b>/etc/services</b>获取知名端口列表：\n\n<pre>\nftp             21/tcp\nssh             22/tcp\nsmtp            25/tcp \ndomain          53/tcp  # DNS\nhttp            80/tcp\nhttps           443/tcp\n..等等..\n</pre>\n\n第一列是服务名称，然后是端口号和它使用的传输层协议。\n\n<b>netstat</b>\n\n一个非常有用的工具，可以获取有关您的网络的详细信息是<b>netstat</b>。Netstat显示各种与网络相关的信息，如网络连接、路由表、有关网络接口的信息等，它是网络工具中的瑞士军刀。我们将主要关注netstat具有的一个功能，即网络连接的状态。在我们看示例之前，让我们首先讨论套接字和端口。套接字是允许程序发送和接收数据的接口，而端口用于标识哪个应用程序应发送或接收数据。套接字地址是IP地址和端口的组合。主机和目的地之间的每个连接都需要一个唯一的套接字。例如，HTTP是在端口80上运行的服务，但是我们可以有许多HTTP连接，为了维护每个连接，每个连接都会创建一个套接字。\n\n<pre>\npete@icebox:~$ netstat -at\nActive Internet connections (servers and established)\nProto Recv-Q Send-Q Local Address           Foreign Address         State      \ntcp        0      0 icebox:domain           *:*                     LISTEN     \ntcp        0      0 localhost:ipp           *:*                     LISTEN     \ntcp        0      0 icebox.lan:44468        124.28.28.50:http       TIME_WAIT  \ntcp        0      0 icebox.lan:34751        124.28.29.50:http       TIME_WAIT  \ntcp        0      0 icebox.lan:34604        economy.canonical.:http TIME_WAIT  \ntcp6       0      0 ip6-localhost:ipp       [::]:*                  LISTEN     \ntcp6       1      0 ip6-localhost:35094     ip6-localhost:ipp       CLOSE_WAIT \ntcp6       0      0 ip6-localhost:ipp       ip6-localhost:35094     FIN_WAIT2\n</pre>\n\nnetstat -a命令显示网络连接的监听和非监听套接字，-t标志仅显示tcp连接。\n\n从左到右，列如下：\n\n<ul>\n<li>Proto：使用的协议，TCP或UDP。</li>\n<li>Recv-Q：等待接收的数据</li>\n<li>Send-Q：等待发送的数据</li>\n<li>Local Address：本地连接的主机</li>\n<li>Foreign Address：远程连接的主机</li>\n<li>State：套接字的状态</li>\n</ul>\n\n查看套接字状态的手册页，但这里有一些状态：\n\n<ul>\n<li>LISTENING：套接字正在等待传入连接，记住当我们建立TCP连接时，我们的目的地必须在我们连接之前监听我们。</li>\n<li>SYN_SENT：套接字正在积极尝试建立连接。</li>\n<li>ESTABLISHED：套接字已建立连接</li>\n<li>CLOSE_WAIT：远程主机已关闭，我们正在等待套接字关闭</li>\n<li>TIME_WAIT：套接字在关闭后等待处理仍在网络中的数据包</li>\n </ul>",
+          "quizAnswer": "443",
+          "quizQuestion": "HTTPS使用哪个端口？",
+          "slug": "netstat",
+          "title": "netstat"
+        },
+        {
+          "exercise": "下载并安装 Wireshark 工具，然后尝试使用界面。",
+          "id": 5,
+          "lessonContent": "数据包分析的主题可以填满一整门课程，有许多书籍专门讨论数据包分析。然而，今天我们只会学习基础知识。有两个非常流行的数据包分析工具，Wireshark 和 tcpdump。这些工具扫描您的网络接口，捕获数据包活动，解析数据包并输出信息供我们查看。它们让我们深入网络分析的细节，深入低级别的内容。我们将使用 tcpdump，因为它具有更简单的界面，但是如果您要选择数据包分析作为工具，我建议您研究一下 Wireshark。\n\n<b>安装 tcpdump</b>\n\n<pre>\n$ sudo apt install tcpdump\n</pre>\n\n<b>在接口上捕获数据包</b>\n\n<pre>\npete@icebox:~$ sudo tcpdump -i wlan0\ntcpdump: verbose output suppressed, use -v or -vv for full protocol decode\nlistening on wlan0, link-type EN10MB (Ethernet), capture size 65535 bytes\n11:28:23.958840 IP icebox.lan > nuq04s29-in-f4.1e100.net: ICMP echo request, id 1901, seq 2, length 64\n11:28:23.970928 IP nuq04s29-in-f4.1e100.net > icebox.lan: ICMP echo reply, id 1901, seq 2, length 64\n11:28:24.960464 IP icebox.lan > nuq04s29-in-f4.1e100.net: ICMP echo request, id 1901, seq 3, length 64\n11:28:24.979299 IP nuq04s29-in-f4.1e100.net > icebox.lan: ICMP echo reply, id 1901, seq 3, length 64\n11:28:25.961869 IP icebox.lan > nuq04s29-in-f4.1e100.net: ICMP echo request, id 1901, seq 4, length 64\n11:28:25.976176 IP nuq04s29-in-f4.1e100.net > icebox.lan: ICMP echo reply, id 1901, seq 4, length 64\n11:28:26.963667 IP icebox.lan > nuq04s29-in-f4.1e100.net: ICMP echo request, id 1901, seq 5, length 64\n11:28:26.976137 IP nuq04s29-in-f4.1e100.net > icebox.lan: ICMP echo reply, id 1901, seq 5, length 64\n11:28:30.674953 ARP, Request who-has 172.254.1.0 tell ThePickleParty.lan, length 28\n11:28:31.190665 IP ThePickleParty.lan.51056 > 192.168.86.255.rfe: UDP, length 306\n</pre>\n\n运行数据包捕获时会注意到很多活动，这是可以预期的，因为后台有很多网络活动。在上面的示例中，我只截取了我捕获的片段，具体是我决定 ping www.google.com 时的时间。\n\n<b>理解输出</b>\n\n<pre>\n11:28:23.958840 IP icebox.lan > nuq04s29-in-f4.1e100.net: ICMP echo request, id 1901, seq 2, length 64\n11:28:23.970928 IP nuq04s29-in-f4.1e100.net > icebox.lan: ICMP echo reply, id 1901, seq 2, length 64\n</pre>\n\n<ul>\n<li>第一个字段是网络活动的时间戳</li>\n<li>IP，包含协议信息</li>\n<li>接下来，您会看到源地址和目标地址：icebox.lan > nuq04s29-in-f4.1e100.net</li>\n<li>seq，这是 TCP 数据包的起始和结束序列号</li>\n<li>length，字节长度</li>\n</ul>\n\n从我们的 tcpdump 输出中可以看出，我们正在向 www.google.com 发送 ICMP 回显请求数据包，并收到 ICMP 回显回复数据包！还要注意，不同的数据包将输出不同的信息，请参考手册查看这些信息。\n\n<b>将 tcpdump 输出写入文件</b>\n\n<pre>\n$ sudo tcpdump -w /some/file\n</pre>\n\n一些最后的想法：我们只是浅尝辄止地涉及了数据包分析的主题。您可以查看很多内容，我们甚至还没有深入研究十六进制和 ASCII 输出。有很多在线资源可以帮助您了解更多关于数据包分析工具的内容，我建议您去找找看！",
+          "quizAnswer": "-i",
+          "quizQuestion": "使用 tcpdump 捕获特定接口的标志是什么？",
+          "slug": "packetanalysis",
+          "title": "数据包分析"
+        }
+      ],
+      "slug": "networktroubleshooting",
+      "title": "故障排除"
+    },
+    {
+      "description": "关于 DNS 的一切及更多信息。",
+      "id": 22,
+      "image": "/images/chapters/dns.png",
+      "lessons": [
+        {
+          "exercise": "本课程没有练习。",
+          "id": 1,
+          "lessonContent": "想象一下，如果每次你想在Google上搜索东西，你都必须输入http://192.78.12.4而不是www.google.com。如果没有DNS（\"域名系统\"），那就会发生这种情况。低级网络只能理解原始IP地址来识别主机。DNS允许我们人类通过名称而不是IP地址来跟踪网站和主机。这就像互联网的联系人列表。如果你知道某人的名字但不知道他们的电话号码，你可以简单地在联系人列表中查找。\n\nDNS基本上是一个主机名到IP地址的分布式数据库，我们管理我们的数据库以便人们知道如何访问我们的站点/域名，而其他地方的另一个人正在管理他们的数据库以便其他人可以访问他们的域名。然后这些域名能够相互通信并建立互联网的大型联系人列表。\n\n在本课程中，我们将介绍DNS的一些基础知识，但请注意DNS是一个详尽的主题，如果你真的想深入了解它，你需要进行一些额外的研究。",
+          "quizAnswer": "false",
+          "quizQuestion": "真或假，DNS帮助我们找到主机名的MAC地址？",
+          "slug": "whatisdns",
+          "title": "什么是DNS？"
+        },
+        {
+          "exercise": "此课程没有练习。",
+          "id": 2,
+          "lessonContent": "互联网的 DNS 数据库依赖于站点和组织提供该数据库的一部分。为了做到这一点，他们需要：\n\n<b>名称服务器</b>\n\n我们通过“名称服务器”设置 DNS，名称服务器加载我们的 DNS 设置和配置，并回答客户或其他想要了解“谷歌是谁？”之类问题的服务器的任何问题。如果名称服务器不知道该查询的答案，它将重定向请求到其他名称服务器。名称服务器可以是“权威的”，意味着它们持有您正在寻找的实际 DNS 记录，或者是“递归的”，意味着它们会询问其他服务器，那些服务器会询问其他服务器，直到找到包含 DNS 记录的权威服务器。递归服务器也可以缓存我们想要的信息，而不是到达权威服务器。\n\n<b>区域文件</b>\n\n名称服务器内部存在称为区域文件的东西。区域文件是名称服务器存储有关域的信息或如何到达该域的方式，如果不知道该域的话。\n\n<b>资源记录</b>\n\n区域文件由资源记录条目组成。每行是一个记录，包含有关主机、名称服务器、其他资源等的信息。字段包括以下内容：\n\n<ul>\n<li>记录名称</li>\n<li>TTL - 在此时间后我们将丢弃记录并获取新记录，在 DNS 中 TTL 由时间表示，因此记录可以具有一小时的 TTL。我们这样做的原因是因为互联网不断变化，一分钟一个主机可以映射到 X IP 地址，然后下一个可以在 Y IP 地址</li>\n<li>类 - 记录信息的命名空间，最常用的是用于 Internet 的 IN</li>\n<li>类型 - 记录数据中存储的信息类型。我们不会深入研究记录类型，但您可能已经看到常见的类型，如 A 用于地址，MX 或邮件交换器等。</li>\n<li>数据 - 如果是 A 记录，则此字段可以包含 IP 地址，或者根据记录类型包含其他内容。</li>\n</ul>\n<pre>\npatty    IN  A      192.168.0.4 \n</pre>",
+          "quizAnswer": "MX",
+          "quizQuestion": "用于邮件交换器的资源记录类型是什么？",
+          "slug": "dnscomponents",
+          "title": "DNS 组件"
+        },
+        {
+          "exercise": "此课程没有练习。",
+          "id": 3,
+          "lessonContent": "让我们看一个示例，了解您的主机如何使用 DNS 查找一个域名（catzontheinterwebz.com）。基本上，我们一直向下进行，直到到达知道该域名的 DNS 服务器为止。\n\n<b>本地 DNS 服务器</b>\n\n首先，我们的主机会询问：“catzontheinterwebz.com 在哪里？”，我们的本地 DNS 服务器不知道，于是它从漏斗的顶部开始询问根服务器。请记住，我们的主机并不是直接发送这些请求来查找 catzontheinterwebz.com，大多数用户与由他们的 ISP 提供的递归 DNS 服务器通信，然后该服务器负责查找 catzontheinterwebz.com 的位置。\n\n<b>根服务器</b>\n\n互联网上有 13 个根服务器，它们被镜像并分布在世界各地，用于处理互联网的 DNS 请求，因此实际上有数百个服务器在运行，它们由不同的组织控制，并包含关于顶级域的信息。顶级域是您所知道的 .org、.com、.net 等地址。因此，根服务器不知道 catzontheinterwebz.com 在哪里，所以它告诉我们询问由其提供的 IP 地址的 .com 顶级域 DNS 服务器。\n\n<b>顶级域</b>\n\n现在我们向知道“.com”地址的名称服务器发送另一个请求，并询问它是否知道 catzontheinterwebz.com 在哪里？TLD 在其区域文件中没有 catzontheinterwebz.com，但它确实看到了 catzontheinterwebz.com 的名称服务器的记录。因此，它给我们提供了该名称服务器的 IP 地址，并告诉我们去那里查找。\n\n<b>权威 DNS 服务器</b>\n\n现在我们向实际拥有我们想要的记录的 DNS 服务器发送最后一个请求。名称服务器看到它有一个 catzontheinterwebz.com 的区域文件，并且有一个用于此主机的 'www' 资源记录。然后，它给我们提供了此主机的 IP 地址，我们最终可以在互联网上看到一些猫了。",
+          "quizAnswer": "TLD",
+          "quizQuestion": "用于查找 .com、.net、.org 等地址的名称服务器的缩写是什么？",
+          "slug": "dnsprocess",
+          "title": "DNS 过程"
+        },
+        {
+          "exercise": "此课程没有练习。",
+          "id": 4,
+          "lessonContent": "<p>在我们的机器实际上访问 DNS 进行查询之前，首先会在我们的机器上进行本地查找。</p><br><p><b>/etc/hosts</b></p><p>/etc/hosts 文件包含一些主机名到 IP 地址的映射。字段相当自明了，有一个用于 IP 地址，一个用于主机名，然后是主机的任何别名。</p><pre>pete@icebox:~$ cat /etc/hosts<br>127.0.0.1       localhost<br>127.0.1.1       icebox</pre><p>通常会看到本地主机地址作为此文件中的默认地址。您还可以通过修改 /etc/hosts.deny 或 /etc/hosts.allow 文件来管理对主机的访问。但是，如果您关注安全性，这并不是一个好方法，您应该修改防火墙规则。 </p><p>让我们看一个有趣的 /etc/hosts 示例。修改文件并添加一行：</p><pre>123.45.6.7  www.google.com</pre><p>保存文件，现在访问 www.google.com。出现问题了吧？这是因为我们刚刚将 www.google.com 映射到一个完全错误的 IP 地址。由于我们的主机首先在本地查找 IP 地址映射，它永远不会到达 DNS 查找 google.com。</p><p><b>/etc/resolv.conf</b></p><p>传统上，我们使用一个名为 /etc/resolv.conf 的文件来映射 DNS 名称服务器以进行更高效的查找，但随着 DNS 的改进，这个文件往往是无关紧要的，事实上，您可以看到我的示例中 /etc/resolv.conf 并非手动管理。请参考您的发行版特定设置来管理 DNS 名称服务器映射。</p><pre>conf(5) file for glibc resolver(3) generated by resolvconf(8)<br>#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN<br>nameserver 127.0.1.1<br>search localdomain</pre>",
+          "quizAnswer": "/etc/hosts",
+          "quizQuestion": "在我们的机器上，用于将主机名映射到 IP 地址的文件是什么？",
+          "slug": "etchosts",
+          "title": "/etc/hosts"
+        },
+        {
+          "exercise": "本课程没有练习。",
+          "id": 5,
+          "lessonContent": "我们不会详细介绍如何设置 DNS 服务器，因为那将是一个相当冗长的教程。相反，这里是一个流行的 DNS 服务器的快速比较列表，可用于 Linux。\n\n<b>BIND</b>\n\n这是互联网上最流行的 DNS 服务器，是 Linux 发行版中使用的标准。它最初是在加州大学伯克利分校开发的，因此被称为 BIND（伯克利互联网名称域）。如果您需要功能齐全、灵活性强的解决方案，那么选择 BIND 绝对没错。\n\n<b>DNSmasq</b>\n\n比 BIND 更轻量级，配置也比较简单。如果您想要简单性，又不需要 BIND 的所有高级功能，可以使用 DNSmasq。它提供了设置 DHCP 和 DNS 所需的所有工具，适用于较小的网络。\n\n<b>PowerDNS</b>\n\n功能齐全，类似于 BIND，但提供了更多选项的灵活性。它可以从多个数据库（如 MySQL、PostgreSQL 等）中读取信息，以便更轻松地进行管理。仅仅因为 BIND 是我们的传统做法，并不意味着它必须一直保持不变。\n\n这并不是一个完整的列表，但应该能让您了解在设置自己的 DNS 服务器时应该从哪里入手。",
+          "quizAnswer": "BIND",
+          "quizQuestion": "Linux 的事实标准 DNS 服务器是什么？",
+          "slug": "dnssetup",
+          "title": "DNS 设置"
+        },
+        {
+          "exercise": "阅读dig的man手册。",
+          "id": 6,
+          "lessonContent": "<b>nslookup</b>\n\n\"名称服务器查找\"工具用于查询名称服务器以查找有关资源记录的信息。让我们找出google.com的名称服务器在哪里：\n\n<pre>\npete@icebox:~$ nslookup www.google.com\nServer:         127.0.1.1\nAddress:        127.0.1.1#53\n\n非权威答案：\nName:   www.google.com\nAddress: 216.58.192.4\n</pre>\n\n<b>dig</b>\n\nDig（域信息探测器）是一个强大的工具，用于获取有关DNS名称服务器的信息，比nslookup更灵活，非常适合排除DNS问题。\n\n\n<pre>\npete@icebox:~$ dig www.google.com\n\n; <<>> DiG 9.9.5-3-Ubuntu <<>> www.google.com\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42376\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; MBZ: 0005 , udp: 512\n;; QUESTION SECTION:\n;www.google.com.                        IN      A\n\n;; ANSWER SECTION:\nwww.google.com.         5       IN      A       74.125.239.147\nwww.google.com.         5       IN      A       74.125.239.144\nwww.google.com.         5       IN      A       74.125.239.146\nwww.google.com.         5       IN      A       74.125.239.145\nwww.google.com.         5       IN      A       74.125.239.148\n\n;; Query time: 27 msec\n;; SERVER: 127.0.1.1#53(127.0.1.1)\n;; WHEN: Sun Feb 07 10:14:00 PST 2016\n;; MSG SIZE  rcvd: 123\n</pre>",
+          "quizAnswer": "dig",
+          "quizQuestion": "用于获取DNS名称服务器详细信息的工具是什么？",
+          "slug": "dnstools",
+          "title": "DNS工具"
+        }
+      ],
+      "slug": "dns",
+      "title": "DNS"
+    }
+  ],
+  "common": {
+    "chapterWrapper": {
+      "content": "内容",
+      "exerciseAndQuiz": "练习与测验"
+    },
+    "exerciseBox": {
+      "exercise": "练习"
+    },
+    "hero": {
+      "image": "/images/penguinLaptop.png",
+      "subtitle": "LinuxJourney 的新生，帮助许多人迈出 Linux 世界的第一步。",
+      "title": "解锁 Linux 的力量"
+    },
+    "navbar": {
+      "home": "首页",
+      "language": "语言",
+      "lessons": "课程",
+      "resources": "资源",
+      "siteName": "Linux Path"
+    },
+    "quizBox": {
+      "backToChapters": "返回章节",
+      "checkAnswer": "检查答案",
+      "correctAnswer": "正确答案：",
+      "nextLesson": "下一课",
+      "placeholderAnswer": "在此输入您的答案",
+      "quiz": "测验",
+      "showCorrectAnswer": "显示正确答案"
+    },
+    "resources": {
+      "data": [
+        {
+          "description": "逐步指南，为初学者解释终端的历史和基本命令",
+          "href": "https://ubuntu.com/tutorials/command-line-for-beginners",
+          "image": "/images/link.png",
+          "title": "官方 Ubuntu 教程"
+        },
+        {
+          "description": "清晰介绍终端的工作原理，如何运行命令和导航文件系统。",
+          "href": "https://digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal",
+          "image": "/images/link.png",
+          "title": "DigitalOcean"
+        },
+        {
+          "description": "最受推荐的书籍之一！",
+          "href": "https://www.amazon.com/gp/product/1593275676/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275676&linkCode=as2&tag=linuxjourne0c-20&linkId=a8c48da327d15530a7214f453d5a55da",
+          "image": "/images/book.png",
+          "title": "How Linux Works"
+        },
+        {
+          "description": "每位系统管理员必备的极为全面的书籍。",
+          "href": "https://www.amazon.com/gp/product/0131480057/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0131480057&linkCode=as2&tag=linuxjourne0c-20&linkId=de7ed3d4e4bf2c29b637855e351cffd2",
+          "image": "/images/book.png",
+          "title": "UNIX and Linux System Administration Handbook"
+        },
+        {
+          "description": "Shell 脚本的绝佳全面指南。",
+          "href": "https://www.amazon.com/gp/product/111898384X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=111898384X&linkCode=as2&tag=linuxjourne0c-20&linkId=41767d3a073f8d20ff0db23bb11a2ac7",
+          "image": "/images/book.png",
+          "title": "Linux Command Bible"
+        },
+        {
+          "description": "对于认真的 Linux 用户，是进入内核编程的绝佳起点。",
+          "href": "https://www.amazon.com/gp/product/1593272200/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593272200&linkCode=as2&tag=linuxjourne0c-20&linkId=5d63b12b27c4106a518799e42a9c379d",
+          "image": "/images/book.png",
+          "title": "The Linux Programming Interface: A Linux and UNIX System"
+        }
+      ],
+      "hero": {
+        "image": "/images/penguinBook.png",
+        "subtitle": "发现精选的书籍、教程和工具，深化你的 Linux 知识。",
+        "title": "资源"
+      },
+      "title": "资源"
+    }
+  }
+}

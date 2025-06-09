@@ -1,0 +1,9 @@
+{
+  "id": 18,
+  "title": "alias",
+  "lessonContent": "Parfois, taper des commandes peut devenir vraiment répétitif, ou si vous devez taper une longue commande plusieurs fois, il est préférable d'avoir un alias que vous pouvez utiliser pour cela. Pour créer un alias pour une commande, vous spécifiez simplement un nom d'alias et le définissez sur la commande. \n\n<pre>$ alias foobar='ls -la'</pre>\n\nMaintenant, au lieu de taper ls -la, vous pouvez taper foobar et il exécutera cette commande, assez cool. Gardez à l'esprit que cette commande ne sauvegardera pas votre alias après le redémarrage, vous devrez donc ajouter un alias permanent dans :\n\n<pre>~/.bashrc</pre>\n\nou des fichiers similaires si vous souhaitez le conserver après le redémarrage.\n\nVous pouvez supprimer des alias avec la commande unalias : \n\n<pre>$ unalias foobar</pre>",
+  "exercise": "Créez quelques alias puis supprimez-les.",
+  "quizQuestion": "Quelle commande est utilisée pour créer un alias?",
+  "quizAnswer": "alias",
+  "slug": "aliascommand"
+}

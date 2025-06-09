@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "paste",
+  "lessonContent": "Der paste-Befehl ist ähnlich dem cat-Befehl, er fügt Zeilen in einer Datei zusammen. Lassen Sie uns eine neue Datei mit folgendem Inhalt erstellen: \n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\nLassen Sie uns all diese Zeilen in eine Zeile kombinieren: \n\n<pre>$ paste -s sample2.txt</pre>\n\nDer Standard-Trennzeichen für paste ist TAB, daher gibt es jetzt eine Zeile mit TABs, die jedes Wort trennen.\n\nLassen Sie uns dieses Trennzeichen (-d) auf etwas Lesbareres ändern: \n\n<pre>$ paste -d ' ' -s sample2.txt</pre>\n\nJetzt sollte alles in einer Zeile stehen, getrennt durch Leerzeichen.",
+  "exercise": "Versuchen Sie, mehrere Dateien zusammenzufügen, was passiert?",
+  "quizQuestion": "Welche Flagge verwenden Sie mit paste, um alles in eine Zeile zu bringen?",
+  "quizAnswer": "-s",
+  "slug": "pastecommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Le bit collant",
+  "lessonContent": "Un dernier bit de permission spécial dont je veux parler est le bit collant. \n\nCe bit de permission \"colle un fichier/répertoire\", cela signifie que seul le propriétaire ou l'utilisateur root peut supprimer ou modifier le fichier. Cela est très utile pour les répertoires partagés. Jetez un œil à l'exemple ci-dessous :\n\n<pre>$ ls -ld /tmp\ndrwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp\n</pre>\n\nVous verrez un bit de permission spécial à la fin ici <b>t</b>, cela signifie que tout le monde peut ajouter des fichiers, écrire des fichiers, modifier des fichiers dans le répertoire /tmp, mais seul root peut supprimer le répertoire /tmp. \n\n<b>Modifier le bit collant</b>\n\n<pre>$ sudo chmod +t mydir\n\n$ sudo chmod 1755 mydir</pre>\n\nLa représentation numérique du bit collant est <b>1</b>",
+  "exercise": "Quels autres fichiers et répertoires pensez-vous avoir un bit collant activé ?",
+  "quizQuestion": "Quel symbole représente le bit collant ?",
+  "quizAnswer": "t",
+  "slug": "stickybit"
+}

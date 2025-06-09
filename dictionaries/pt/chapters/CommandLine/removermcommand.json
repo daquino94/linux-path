@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "rm (Remover)",
+  "lessonContent": "Agora eu acho que temos muitos arquivos, vamos remover alguns arquivos. Para remover arquivos, você pode usar o comando rm. O comando rm (remover) é usado para excluir arquivos e diretórios. \n\n<pre>$ rm arquivo1</pre>\n\nTenha cuidado ao usar o rm, não há uma lixeira mágica da qual você possa recuperar arquivos removidos. Uma vez que eles se foram, eles se foram para sempre, então tenha cuidado. \n\nFelizmente, existem algumas medidas de segurança implementadas, para que o usuário comum não possa simplesmente remover um monte de arquivos importantes. Arquivos protegidos contra gravação solicitarão confirmação antes de serem excluídos. Se um diretório estiver protegido contra gravação, ele também não será facilmente removido. \n\nAgora, se você não se importa com nada disso, você pode absolutamente remover um monte de arquivos. \n\n<pre>$ rm -f arquivo1</pre>\n\nA opção -f ou force diz ao rm para remover todos os arquivos, estejam eles protegidos contra gravação ou não, sem solicitar a confirmação do usuário (desde que você tenha as permissões apropriadas).\n\n<pre>$ rm -i arquivo</pre>\n\nAdicionar a flag -i como muitos dos outros comandos, lhe dará um aviso se você realmente deseja remover os arquivos ou diretórios. \n\n<pre>$ rm -r diretório</pre>\n\nVocê não pode simplesmente usar rm em um diretório por padrão, você precisará adicionar a flag -r (recursivo) para remover todos os arquivos e subdiretórios que ele possa ter.\n\nVocê pode remover um diretório com o comando rmdir.\n\n<pre>$ rmdir diretório</pre>",
+  "exercise": "<ol>\n<li>Crie um arquivo chamado -arquivo (não esqueça do traço!).</li>\n<li>Remova esse arquivo.</li>\n</ol>",
+  "quizQuestion": "Como você remove um arquivo chamado myfile?",
+  "quizAnswer": "",
+  "slug": "removermcommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Emplacement du noyau",
+  "lessonContent": "Que se passe-t-il lorsque vous installez un nouveau noyau ? Eh bien, cela ajoute en fait quelques fichiers à votre système, ces fichiers sont généralement ajoutés au répertoire /boot. \n\nVous verrez plusieurs fichiers pour différentes versions de noyau :\n\n<ul>\n<li>vmlinuz - c'est le noyau Linux réel</li>\n<li>initrd - comme nous l'avons déjà discuté, l'initrd est utilisé comme un système de fichiers temporaire, utilisé avant le chargement du noyau</li>\n<li>System.map - table de recherche symbolique</li>\n<li>config - paramètres de configuration du noyau, si vous compilez votre propre noyau, vous pouvez définir quels modules peuvent être chargés</li>\n</ul>\n\nSi votre répertoire /boot manque d'espace, vous pouvez toujours supprimer d'anciennes versions de ces fichiers ou simplement utiliser un gestionnaire de paquets, mais soyez prudent lors de la maintenance dans ce répertoire et ne supprimez pas accidentellement le noyau que vous utilisez.",
+  "exercise": "Allez dans votre répertoire /boot et voyez quels fichiers s'y trouvent.",
+  "quizQuestion": "Comment s'appelle l'image du noyau dans /boot ?",
+  "quizAnswer": "vmlinuz",
+  "slug": "kernellocation"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "história",
+  "lessonContent": "No seu shell, há um histórico dos comandos que você digitou anteriormente, você pode realmente percorrer esses comandos. Isso é bastante útil quando você deseja encontrar e executar um comando que usou anteriormente sem precisar digitá-lo novamente.\n\n<pre>$ history</pre>\n\nQuer executar o mesmo comando que fez antes, basta pressionar a seta para cima.\n\nQuer executar o comando anterior sem digitá-lo novamente? Use !!. Se digitou cat file1 e deseja executá-lo novamente, pode simplesmente digitar !! e ele executará o último comando que você digitou.\n\nOutro atalho de histórico é ctrl-R, este é o comando de pesquisa reversa, se pressionar ctrl-R e começar a digitar partes do comando que deseja, ele mostrará correspondências e você pode navegar por elas pressionando novamente a tecla ctrl-R. Assim que encontrar o comando que deseja usar novamente, basta pressionar a tecla Enter.\n\nNosso terminal está ficando um pouco bagunçado, não está? Vamos fazer uma limpeza rápida, use o comando clear para limpar sua tela.\n\n<pre>$ clear</pre>\n\nAgora parece melhor, não é verdade?\n\nEnquanto falamos sobre coisas úteis, uma das características mais úteis em qualquer ambiente de linha de comando é a conclusão de tabulação. Se começar a digitar o início de um comando, arquivo, diretório, etc e pressionar a tecla Tab, ele completará com base no que encontrar no diretório que está pesquisando, desde que não tenha outros arquivos que comecem com essas letras. Por exemplo, se estivesse tentando executar o comando chrome, pode digitar chr e pressionar Tab e ele completará chrome.",
+  "exercise": "Navegue pelo histórico de comandos anteriores com as teclas de Seta para Cima e para Baixo. Brinque com a pesquisa reversa ctrl-R.",
+  "quizQuestion": "Qual é o comando para limpar o terminal?",
+  "quizAnswer": "clear",
+  "slug": "comandohistorico"
+}

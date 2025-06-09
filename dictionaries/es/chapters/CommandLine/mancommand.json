@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "man",
+  "lessonContent": "Vaya, desearía que algunos de estos programas tuvieran un manual para que pudiéramos ver más información sobre ellos. ¡Pues afortunadamente lo tienen! Llamadas páginas de manual, puedes ver los manuales de un comando con el comando man. \n\n<pre>$ man ls</pre>\n\nLas páginas de manual son manuales que vienen incorporados por defecto en la mayoría de los sistemas operativos Linux. Proporcionan documentación sobre comandos y otros aspectos del sistema. \n\nPruébalo en algunos comandos para obtener más información sobre ellos.",
+  "exercise": "Ejecuta el comando man en el comando ls.",
+  "quizQuestion": "¿Cómo se ven los manuales de un comando?",
+  "quizAnswer": "man",
+  "slug": "mancommand"
+}

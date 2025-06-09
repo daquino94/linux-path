@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "系统日志记录",
+  "lessonContent": "您系统上的服务、内核、守护进程等不断执行某些操作，这些数据实际上会被发送以日志的形式保存在您的系统中。这使我们能够获得一个可读的事件日志，记录系统上发生的事件。这些数据通常保存在 /var 目录中，/var 目录是我们保存变量数据（如日志）的地方！\n\n这些消息是如何被接收到您的系统的？有一个名为 syslog 的服务会将这些信息发送给系统日志记录器。\n\nSyslog 实际上包含许多组件，其中一个重要的组件是一个名为 syslogd 的守护进程（较新的 Linux 发行版使用 rsyslogd），它会等待事件消息发生并筛选出它想知道的消息，然后根据消息应该执行的操作，将其发送到文件、您的控制台或不做任何处理。\n\n您可能会认为系统日志记录器是管理日志的集中地，但不幸的是它并非如此。您会看到许多应用程序编写自己的日志记录规则并生成不同的日志文件，但通常日志的格式应包括时间戳和事件详细信息。\n\n这里是 syslog 中的一行示例：\n\n<pre>\npete@icebox:~$ less /var/log/syslog\nJan 27 07:41:32 icebox anacron[4650]: Job `cron.weekly' started\n</pre>\n\n在这里，我们可以看到在 1 月 27 日 07:41:32 时，我们的 cron 服务运行了 cron.weekly 作业。您可以查看 syslog 收集的所有事件消息，位于 /var/log/syslog 文件中。",
+  "exercise": "查看您的 /var/log/syslog 文件，看看您的计算机上还发生了什么。",
+  "quizQuestion": "在较新的 Linux 系统中，管理日志的守护进程是什么？",
+  "quizAnswer": "rsyslogd",
+  "slug": "systemlogging"
+}

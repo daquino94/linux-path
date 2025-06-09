@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Setgid",
+  "lessonContent": "Similar to the set user ID permission bit, there is a set group ID (SGID) permission bit. This bit allows a program to run as if it was a member of that group. \n\nLet's look at one example: \n\n<pre>$ ls -l /usr/bin/wall\n-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall\n</pre>\n\nAgora podemos ver que o bit de permissão está no conjunto de permissões do grupo. \n\n<b>Modificando SGID</b>\n\n<pre>$ sudo chmod g+s myfile\n$ sudo chmod 2555 myfile\n</pre>\n\nA representação numérica para SGID é 2.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Qual número representa o SGID?",
+  "quizAnswer": "2",
+  "slug": "setgidsetgroupid"
+}

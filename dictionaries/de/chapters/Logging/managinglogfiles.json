@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Verwalten von Protokolldateien",
+  "lessonContent": "Protokolldateien generieren viele Daten und speichern diese auf Ihren Festplatten. Es gibt jedoch viele Probleme damit. Im Wesentlichen möchten wir nur neuere Protokolle sehen und unseren Festplattenspeicher effizient verwalten. Wie machen wir das? Die Antwort lautet: mit logrotate. \n\nDas Dienstprogramm logrotate übernimmt das Protokollmanagement für uns. Es verfügt über eine Konfigurationsdatei, die es uns ermöglicht, anzugeben, wie viele und welche Protokolle aufbewahrt werden sollen, wie unsere Protokolle komprimiert werden sollen, um Speicherplatz zu sparen, und mehr. Das logrotate-Tool wird normalerweise einmal täglich aus cron ausgeführt, und die Konfigurationsdateien befinden sich in /etc/logrotate.d. \n\nEs gibt andere Tools zum Rotieren von Protokollen, die Sie verwenden können, aber logrotate ist das gängigste.",
+  "exercise": "Schauen Sie sich Ihre logrotate-Konfigurationsdatei an und sehen Sie, wie sie einige Ihrer Protokolle verwaltet.",
+  "quizQuestion": "Welches Dienstprogramm wird zum Verwalten von Protokollen verwendet?",
+  "quizAnswer": "logrotate",
+  "slug": "managinglogfiles"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Subnet Math",
+  "lessonContent": "Ok, wir wissen, dass Subnetzmasken wichtig sind, um herauszufinden, wie viele Hosts wir in unserem Subnetz haben können. Also wie viele Hosts wären das?\n\nAngenommen, ich habe eine IP-Adresse von <b>192.168.1.0</b> und eine Subnetzmaske von <b>255.255.255.0</b>, jetzt lassen Sie uns diese Zahlen in binärer Form gegenüberstellen. Verwenden Sie vorerst einen Online-Rechner, um diese Werte von Dezimal in binär umzuwandeln.\n\n<pre>\n192.168.1.165  = 11000000.10101000.00000001.10100101\n255.255.255.0  = 11111111.11111111.11111111.00000000\n</pre>\n\nDie IP-Adresse wird von unserer Subnetzmaske maskiert, wenn Sie eine 1 sehen, ist sie maskiert und wir tun so, als ob wir sie nicht sehen würden. Die einzigen möglichen Hosts, die wir haben können, stammen also aus dem Bereich 00000000. Denken Sie daran, dass 11111111 in binärer Form 255 entspricht, wir berücksichtigen auch die 0 als Hostnummer, daher gibt es 256 mögliche Optionen. Es mag jedoch so aussehen, als ob wir 256 mögliche Optionen hätten, aber tatsächlich ziehen wir 2 Hosts ab, weil wir die Broadcast-Adresse und die Subnetzadresse berücksichtigen müssen, was uns 254 mögliche Hosts in unserem Subnetz hinterlässt. Wir wissen also, dass wir Hosts mit IP-Adressen im Bereich von 192.168.1.1 - 192.168.1.254 haben können.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Was ist das binäre Äquivalent von 255?",
+  "quizAnswer": "11111111",
+  "slug": "subnetmath"
+}

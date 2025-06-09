@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "stdin (Entrada estándar)",
+  "lessonContent": "En nuestra lección anterior aprendimos que tenemos diferentes flujos de salida stdout que podemos usar, como un archivo o la pantalla. Bueno, también hay diferentes flujos de entrada estándar (stdin) que podemos usar. Sabemos que tenemos stdin de dispositivos como el teclado, pero también podemos usar archivos, la salida de otros procesos y el terminal, veamos un ejemplo. \n\nUsemos el archivo peanuts.txt en la lección anterior para este ejemplo, recuerda que tenía el texto Hola Mundo en él. \n\n<pre>$ cat <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt </pre>\n\nAsí como teníamos <b>&gt;</b> para la redirección de stdout, podemos usar <b>&lt;</b> para la redirección de stdin. \n\nNormalmente en el comando cat, envías un archivo y ese archivo se convierte en stdin, en este caso, redirigimos peanuts.txt para que sea nuestro stdin. Luego, la salida de cat peanuts.txt que sería Hola Mundo se redirige a otro archivo llamado banana.txt.",
+  "exercise": "Prueba un par de comandos:\n<pre>\n$ echo <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ ls <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n$ pwd <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt\n</pre>",
+  "quizQuestion": "¿Qué redireccionador utilizas para redirigir stdin?",
+  "quizAnswer": "<",
+  "slug": "stdinstandardinredirect"
+}

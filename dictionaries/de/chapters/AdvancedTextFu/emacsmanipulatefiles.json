@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "Emacs Dateien manipulieren",
+  "lessonContent": "In vielen (wenn nicht allen) Emacs-Dokumentationen sehen Sie die Syntax C-[Buchstabe]. Dies bedeutet einfach, die Strg-Taste und den Buchstaben zu drücken, aber der Einfachheit halber nennen wir Strg mit C. Wenn Sie die Syntax M-[Buchstabe] sehen, bedeutet das, die Meta-Taste zu verwenden, meistens die Alt-Taste.\n\n<b>Dateien speichern</b>\n\n<pre>\nC-x C-s - Eine Datei speichern\nC-x C-w - Datei speichern unter\nC-x s - Alle speichern\n</pre>\n\nDie Optionen zum Speichern von Dateien fordern Sie auf, ob Sie jede Datei speichern möchten.\n\n<b>Datei öffnen</b>\n\n<pre>\nC-x C-f\n</pre>\n\nDadurch werden Sie aufgefordert, einen Dateinamen zum Öffnen einzugeben. Wenn Sie keine bereits vorhandene Datei haben, wird eine neue Datei erstellt. Sie können auch ein Verzeichnis laden.",
+  "exercise": "Spielen Sie mit dem Öffnen von Dateien und dem Speichern von Dateien.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um eine Datei zu öffnen?",
+  "quizAnswer": "C-x C-f",
+  "slug": "emacsmanipulatefiles"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "touch",
+  "lessonContent": "Apprenons comment créer des fichiers. Une façon très simple est d'utiliser la commande touch. Touch vous permet de créer de nouveaux fichiers vides.\n\n<pre>$ touch mysuperduperfile</pre>\n\nEt voilà, un nouveau fichier ! \n\nTouch est également utilisé pour modifier les horodatages des fichiers et répertoires existants. Essayez, faites un ls -l sur un fichier et notez l'horodatage, puis touchez ce fichier et l'horodatage sera mis à jour. \n\nIl existe de nombreuses autres façons de créer des fichiers qui impliquent d'autres choses comme la redirection et les éditeurs de texte, mais nous aborderons cela dans le cours de Manipulation de texte.",
+  "exercise": "<ol>\n<li>Créez un nouveau fichier</li>\n<li>Notez l'horodatage</li>\n<li>Touchez le fichier et vérifiez à nouveau l'horodatage</li>\n</ol>",
+  "quizQuestion": "Comment créez-vous un fichier appelé myfile?",
+  "quizAnswer": "touch myfile",
+  "slug": "touchcommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "连接和拆分",
+  "lessonContent": "join命令允许您通过共同字段将多个文件连接在一起：\n\n假设我有两个文件想要连接在一起：\n<pre>file1.txt\n1 John\n2 Jane\n3 Mary\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n\n$ join file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\n看到它是如何将我的文件连接在一起的吗？它们默认通过第一个字段连接在一起，字段必须相同，如果不同，您可以对它们进行排序，所以在这种情况下，文件通过1、2、3连接在一起。\n\n我们如何连接以下文件？\n\n<pre>file1.txt\nJohn 1\nJane 2\nMary 3\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n</pre>\n\n要连接此文件，您需要指定要连接的字段，这种情况下，我们想要file1.txt上的第2个字段和file2.txt上的第1个字段，因此命令看起来像这样：\n\n<pre>\n$ join -1 2 -2 1 file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\n-1指的是file1.txt，-2指的是file2.txt。相当巧妙。您还可以使用split命令将文件拆分为不同的文件：\n\n<pre>$ split somefile</pre>\n\n这将把它拆分成不同的文件，默认情况下，它们将在达到1000行限制时拆分。文件默认命名为x**。",
+  "exercise": "连接两个具有不同行数的文件，会发生什么？",
+  "quizQuestion": "您会使用什么命令来连接名为cat dog cow的文件？",
+  "quizAnswer": "join cat dog cow",
+  "slug": "joinsplitcommand"
+}

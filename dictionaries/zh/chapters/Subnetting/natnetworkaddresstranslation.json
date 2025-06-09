@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "NAT",
+  "lessonContent": "我们之前提到过NAT（网络地址转换），但没有深入讨论。当我们在处理我们的网络时，这是否意味着互联网可以看到我们的IP地址？并非如此。\n\nNAT使得我们的路由器等设备充当互联网和私人网络之间的中介。因此，只需要一个单独的唯一IP地址来代表整个计算机组。\n\n想象NAT就像一个大办公室里的前台，如果有人想要联系你，他们只知道整个办公室的电话号码，前台会查找你的分机号码并将电话转接给你。\n\n<b>它是如何工作的？</b>\n\n一个简单的情况可能是这样的：\n\n<ol>\n<li>Patty想要连接到www.google.com，所以她的设备通过路由器发送这个请求</li>\n<li>路由器接收到请求后，打开自己与google.com的连接，然后在建立连接后发送Patty的请求</li>\n<li>路由器是Patty和www.google.com之间的中介。Google不知道Patty，它所看到的只是路由器。</li>\n</ol>\n\nNAT和数据包路由通常会变得相当复杂，但我们不会深入讨论细节。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "用什么来代表一个单独的私人地址连接到互联网？",
+  "quizAnswer": "NAT",
+  "slug": "natnetworkaddresstranslation"
+}

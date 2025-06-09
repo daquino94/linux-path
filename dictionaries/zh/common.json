@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "image": "/images/penguinLaptop.png",
+    "title": "解锁 Linux 的力量",
+    "subtitle": "LinuxJourney 的新生，帮助许多人迈出 Linux 世界的第一步。"
+  },
+  "resources": {
+    "title": "资源",
+    "hero": {
+      "image": "/images/penguinBook.png",
+      "title": "资源",
+      "subtitle": "发现精选的书籍、教程和工具，深化你的 Linux 知识。"
+    },
+    "data": [
+      {
+        "image": "/images/link.png",
+        "title": "官方 Ubuntu 教程",
+        "description": "逐步指南，为初学者解释终端的历史和基本命令",
+        "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+      },
+      {
+        "image": "/images/link.png",
+        "title": "DigitalOcean",
+        "description": "清晰介绍终端的工作原理，如何运行命令和导航文件系统。",
+        "href": "https://digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "How Linux Works",
+        "description": "最受推荐的书籍之一！",
+        "href": "https://www.amazon.com/gp/product/1593275676/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275676&linkCode=as2&tag=linuxjourne0c-20&linkId=a8c48da327d15530a7214f453d5a55da"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "UNIX and Linux System Administration Handbook",
+        "description": "每位系统管理员必备的极为全面的书籍。",
+        "href": "https://www.amazon.com/gp/product/0131480057/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0131480057&linkCode=as2&tag=linuxjourne0c-20&linkId=de7ed3d4e4bf2c29b637855e351cffd2"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Linux Command Bible",
+        "description": "Shell 脚本的绝佳全面指南。",
+        "href": "https://www.amazon.com/gp/product/111898384X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=111898384X&linkCode=as2&tag=linuxjourne0c-20&linkId=41767d3a073f8d20ff0db23bb11a2ac7"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "The Linux Programming Interface: A Linux and UNIX System",
+        "description": "对于认真的 Linux 用户，是进入内核编程的绝佳起点。",
+        "href": "https://www.amazon.com/gp/product/1593272200/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593272200&linkCode=as2&tag=linuxjourne0c-20&linkId=5d63b12b27c4106a518799e42a9c379d"
+      }
+    ]
+  },
+  "chapterWrapper": {
+    "content": "内容",
+    "exerciseAndQuiz": "练习与测验"
+  },
+  "navbar": {
+    "siteName": "Linux Path",
+    "home": "首页",
+    "lessons": "课程",
+    "resources": "资源",
+    "language": "语言"
+  },
+  "exerciseBox": {
+    "exercise": "练习"
+  },
+  "quizBox": {
+    "quiz": "测验",
+    "checkAnswer": "检查答案",
+    "showCorrectAnswer": "显示正确答案",
+    "correctAnswer": "正确答案：",
+    "placeholderAnswer": "在此输入您的答案",
+    "nextLesson": "下一课",
+    "backToChapters": "返回章节"
+  }
+}

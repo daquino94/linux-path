@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "tr (翻译)",
+  "lessonContent": "tr (translate) 命令允许您将一组字符翻译为另一组字符。让我们尝试一个将所有小写字符翻译为大写字符的示例。\n\n<pre>$ tr a-z A-Z\nhello\nHELLO</pre>\n\n正如您所看到的，我们将 a-z 的范围转换为 A-Z，并且我们键入的所有小写文本都变成了大写。",
+  "exercise": "尝试以下命令会发生什么？\n\n<pre>$ tr -d ello\nhello</pre>",
+  "quizQuestion": "用于翻译字符的命令是什么？",
+  "quizAnswer": "tr",
+  "slug": "trtranslatecommand"
+}

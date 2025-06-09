@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "所有权权限",
+  "lessonContent": "除了修改文件权限外，您还可以修改文件的组和用户所有权。\n\n<b>修改用户所有权</b>\n\n<pre>$ sudo chown patty myfile</pre>\n\n此命令将把 myfile 的所有者设置为 patty。\n\n<b>修改组所有权</b>\n\n<pre>$ sudo chgrp whales myfile</pre>\n\n此命令将把 myfile 的组设置为 whales。\n\n<b>同时修改用户和组所有权</b>\n如果您在用户后面添加冒号和组名，您可以同时设置用户和组。\n\n<pre>$ sudo chown patty:whales myfile</pre>",
+  "exercise": "修改一些测试文件的组和用户。然后使用 ls -l 查看权限。",
+  "quizQuestion": "您使用哪个命令来更改用户所有权？",
+  "quizAnswer": "chown",
+  "slug": "ownershippermissions"
+}

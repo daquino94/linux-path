@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Umask",
+  "lessonContent": "Jede Datei, die erstellt wird, kommt mit einem Standardberechtigungssatz. Wenn Sie jemals diesen Standardberechtigungssatz ändern möchten, können Sie dies mit dem Befehl umask tun. Dieser Befehl nimmt den 3-Bit-Berechtigungssatz, den wir in numerischen Berechtigungen sehen. \n\nAnstatt diese Berechtigungen hinzuzufügen, nimmt umask jedoch diese Berechtigungen weg. \n\n<pre>$ umask 021</pre>\n\nIm obigen Beispiel geben wir an, dass wir möchten, dass die Standardberechtigungen neuer Dateien Benutzern den Zugriff auf alles ermöglichen, aber für Gruppen möchten wir ihnen ihre Schreibberechtigung nehmen und für andere möchten wir ihre Ausführungsberechtigung nehmen. Die Standardumask in den meisten Distributionen ist 022, was bedeutet, dass alle Benutzer Zugriff haben, aber keine Schreibberechtigung für Gruppen- und andere Benutzer.\n\nWenn Sie den umask-Befehl ausführen, erhalten Sie diesen Standardberechtigungssatz für jede neue Datei, die Sie erstellen. Wenn Sie jedoch möchten, dass er bestehen bleibt, müssen Sie Ihre Startdatei (.profile) ändern, aber darüber werden wir in einer späteren Lektion sprechen.",
+  "exercise": "<ol>\n<li>Erstellen Sie eine neue Datei und notieren Sie dann ihre Berechtigungen.</li>\n<li>Ändern Sie die umask und erstellen Sie dann eine weitere neue Datei.</li>\n<li>Überprüfen Sie erneut die Berechtigungen der neuen Datei. Was erwarten Sie zu sehen?</li>\n<ol>",
+  "quizQuestion": "Mit welchem Befehl werden Standarddateiberechtigungen geändert?",
+  "quizAnswer": "umask",
+  "slug": "umask"
+}

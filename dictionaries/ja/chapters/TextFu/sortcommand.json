@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "sort",
+  "lessonContent": "sortコマンドは行をソートするのに便利です。\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ sort file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\nリバースソートもできます：\n\n<pre>$ sort -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\nまた、数値でソートすることもできます：\n\n<pre>$ sort -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+  "exercise": "sortの本当の力は他のコマンドと組み合わせることで発揮されます。次のコマンドを試して、何が起こるか見てみてください？\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "リバースソートを行うために使用するフラグは何ですか？",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

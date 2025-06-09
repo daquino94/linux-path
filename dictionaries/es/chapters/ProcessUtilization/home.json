@@ -1,0 +1,7 @@
+{
+  "id": 14,
+  "title": "Utilización del Proceso",
+  "description": "Aprende a monitorear recursos con top, promedios de carga, iostat ¡y más!",
+  "image": "/images/chapters/processUtilization.png",
+  "slug": "processutilization"
+}

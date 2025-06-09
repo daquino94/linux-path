@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "Reparo do Sistema de Arquivos",
+  "lessonContent": "Às vezes, nosso sistema de arquivos nem sempre está na melhor condição, se tivermos um desligamento repentino, nossos dados podem se corromper. Cabe ao sistema tentar nos colocar de volta em um estado de funcionamento (embora certamente possamos tentar por nós mesmos). \n\nO comando <b>fsck</b> (verificação do sistema de arquivos) é usado para verificar a consistência de um sistema de arquivos e até mesmo tentar repará-lo para nós. Geralmente, quando você inicializa um disco, o fsck será executado antes que seu disco seja montado para garantir que tudo esteja ok. Às vezes, no entanto, seu disco está tão ruim que você precisará fazer isso manualmente. No entanto, certifique-se de fazer isso enquanto estiver em um disco de resgate ou em algum lugar onde possa acessar seu sistema de arquivos sem que ele esteja montado.\n\n<pre>$ sudo fsck /dev/sda</pre>",
+  "exercise": "Olhe a página de manual do fsck para ver o que mais ele pode fazer.",
+  "quizQuestion": "Qual comando é usado para verificar a integridade de um sistema de arquivos?",
+  "quizAnswer": "fsck",
+  "slug": "reparo-do-sistema-de-arquivos"
+}

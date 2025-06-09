@@ -1,0 +1,7 @@
+{
+  "id": 15,
+  "title": "Protokollierung",
+  "description": "Erfahren Sie mehr über Systemprotokolle und das Verzeichnis /var/log.",
+  "image": "/images/chapters/logging.png",
+  "slug": "protokollierung"
+}

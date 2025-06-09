@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Protocoles d'état de liaison",
+  "lessonContent": "Les protocoles d'état de liaison sont excellents pour les réseaux à grande échelle, ils sont plus complexes que les protocoles de vecteur de distance, cependant, un grand avantage est leur capacité à converger rapidement, cela est dû au fait qu'au lieu d'envoyer périodiquement toute la table de routage, ils envoient uniquement des mises à jour aux routes voisines. Ils utilisent un algorithme différent pour calculer le plus court chemin en premier et construire leur topologie réseau sous forme de graphe pour montrer quels routeurs sont connectés à d'autres routeurs.\n\nUn des protocoles d'état de liaison courants est OSPF (Open Shortest Path First), il met à jour les tables de routage uniquement s'il y a eu un changement dans le réseau. Il n'a pas de limite de saut.",
+  "exercise": "Pas d'exercices pour cette leçon.",
+  "quizQuestion": "Quel est l'un des protocoles d'état de liaison les plus courants?",
+  "quizAnswer": "OSPF",
+  "slug": "protocolesetatdeliaison"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Herramientas DNS",
+  "lessonContent": "<b>nslookup</b>\n\nLa herramienta \"búsqueda de servidor de nombres\" se utiliza para consultar servidores de nombres para encontrar información sobre registros de recursos. Vamos a encontrar dónde está el servidor de nombres de google.com:\n\n<pre>\npete@icebox:~$ nslookup www.google.com\nServidor:         127.0.1.1\nDirección:        127.0.1.1#53\n\nRespuesta no autoritativa:\nNombre:   www.google.com\nDirección: 216.58.192.4\n</pre>\n\n<b>dig</b>\n\nDig (domain information groper) es una herramienta poderosa para obtener información sobre servidores de nombres DNS, es más flexible que nslookup y excelente para solucionar problemas de DNS.\n\n\n<pre>\npete@icebox:~$ dig www.google.com\n\n; <<>> DiG 9.9.5-3-Ubuntu <<>> www.google.com\n;; opciones globales: +cmd\n;; Recibida respuesta:\n;; ->>CABECERA<<- opcode: CONSULTA, estado: NOERROR, id: 42376\n;; flags: qr rd ra; CONSULTA: 1, RESPUESTA: 5, AUTORIDAD: 0, ADICIONAL: 1\n\n;; OPT PSEUDOSECCIÓN:\n; EDNS: versión: 0, flags:; MBZ: 0005 , udp: 512\n;; SECCIÓN DE PREGUNTA:\n;www.google.com.                        IN      A\n\n;; SECCIÓN DE RESPUESTA:\nwww.google.com.         5       IN      A       74.125.239.147\nwww.google.com.         5       IN      A       74.125.239.144\nwww.google.com.         5       IN      A       74.125.239.146\nwww.google.com.         5       IN      A       74.125.239.145\nwww.google.com.         5       IN      A       74.125.239.148\n\n;; Tiempo de consulta: 27 msec\n;; SERVIDOR: 127.0.1.1#53(127.0.1.1)\n;; CUÁNDO: Dom Feb 07 10:14:00 PST 2016\n;; TAMAÑO DEL MENSAJE  rcvd: 123\n</pre>",
+  "exercise": "Lee el manual de dig.",
+  "quizQuestion": "¿Qué herramienta se utiliza para obtener información detallada sobre servidores de nombres DNS?",
+  "quizAnswer": "dig",
+  "slug": "herramientas-dns"
+}

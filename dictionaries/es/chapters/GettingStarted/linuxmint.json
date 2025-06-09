@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Linux Mint",
+  "lessonContent": "<b>Descripción</b>\nLinux Mint se basa en Ubuntu. Utiliza los repositorios de software de Ubuntu, por lo que los mismos paquetes están disponibles en ambas distribuciones. Linux Mint es preferido por otros sobre Ubuntu porque no incluye algunos de los software propietarios que Ubuntu incluye, como Unity.\n\n<b>Gestión de paquetes</b>\nDado que Linux Mint se basa en Ubuntu, utiliza el gestor de paquetes Debian.\n\n<b>Configurabilidad</b>\nGran interfaz de usuario, ideal para principiantes y menos sobrecargado que Ubuntu. En este curso, estaré utilizando Linux Mint, pero se puede utilizar cualquier otra distribución. \n\n<b>Usos</b>\nIdeal para escritorio y portátil.",
+  "exercise": "Si estás interesado en tener Linux Mint como tu sistema operativo, dirígete a la sección de instalación e inténtalo: <a href='http://linuxmint.com/'>http://linuxmint.com/</a>",
+  "quizQuestion": "¿En qué se basa Linux Mint?",
+  "quizAnswer": "Ubuntu",
+  "slug": "linuxmint"
+}

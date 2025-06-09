@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "title": "入门指南",
+  "description": "什么是Linux？选择发行版并进行安装的入门指南。",
+  "image": "/images/chapters/gettingStarted.png",
+  "slug": "gettingstarted"
+}

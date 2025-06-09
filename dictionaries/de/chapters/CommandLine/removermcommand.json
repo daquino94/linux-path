@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "rm (Entfernen)",
+  "lessonContent": "Jetzt denke ich, dass wir zu viele Dateien haben, lass uns also einige Dateien entfernen. Um Dateien zu entfernen, kannst du den rm-Befehl verwenden. Der rm (remove)-Befehl wird verwendet, um Dateien und Verzeichnisse zu löschen. \n\n<pre>$ rm datei1</pre>\n\nSei vorsichtig beim Verwenden von rm, es gibt keinen magischen Papierkorb, aus dem du entfernte Dateien wiederherstellen kannst. Wenn sie weg sind, sind sie für immer weg, also sei vorsichtig. \n\nGlücklicherweise gibt es einige Sicherheitsmaßnahmen, damit der Durchschnittsbürger nicht einfach eine Menge wichtiger Dateien löschen kann. Schreibgeschützte Dateien fordern dich zur Bestätigung auf, bevor sie gelöscht werden. Wenn ein Verzeichnis schreibgeschützt ist, kann es auch nicht einfach entfernt werden. \n\nWenn dir das egal ist, kannst du absolut eine Menge Dateien löschen. \n\n<pre>$ rm -f datei1</pre>\n\nDie -f- oder Force-Option fordert rm auf, alle Dateien zu entfernen, unabhängig davon, ob sie schreibgeschützt sind oder nicht, ohne den Benutzer zur Bestätigung aufzufordern (solange du die entsprechenden Berechtigungen hast).\n\n<pre>$ rm -i datei</pre>\n\nWenn du die -i-Flagge wie bei vielen anderen Befehlen hinzufügst, erhältst du eine Aufforderung, ob du die Dateien oder Verzeichnisse tatsächlich entfernen möchtest. \n\n<pre>$ rm -r verzeichnis</pre>\n\nDu kannst ein Verzeichnis standardmäßig nicht einfach mit rm löschen, du musst die -r-Flagge (rekursiv) hinzufügen, um alle Dateien und eventuelle Unterverzeichnisse zu entfernen.\n\nDu kannst ein Verzeichnis mit dem rmdir-Befehl entfernen.\n\n<pre>$ rmdir verzeichnis</pre>",
+  "exercise": "<ol>\n<li>Erstelle eine Datei namens -datei (vergiss das Minuszeichen nicht!).</li>\n<li>Entferne diese Datei.</li>\n</ol>",
+  "quizQuestion": "Wie entfernst du eine Datei namens myfile?",
+  "quizAnswer": "",
+  "slug": "removermcommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Configuration DNS",
+  "lessonContent": "Nous n'aborderons pas la mise en place d'un serveur DNS, car ce serait un tutoriel assez long. À la place, voici une liste de comparaison rapide des serveurs DNS populaires à utiliser avec Linux.\n\n<b>BIND</b>\n\nLe serveur DNS le plus populaire sur Internet, c'est la norme utilisée avec les distributions Linux. Il a été initialement développé à l'Université de Californie à Berkeley, d'où le nom BIND (Berkeley Internet Name Domain). Si vous avez besoin de puissance et de flexibilité complètes, vous ne pouvez pas vous tromper avec BIND.\n\n<b>DNSmasq</b>\n\nLéger et beaucoup plus facile à configurer que BIND. Si vous recherchez la simplicité et que vous n'avez pas besoin de toutes les fonctionnalités de BIND, utilisez DNSmasq. Il est livré avec tous les outils dont vous avez besoin pour configurer DHCP et DNS, recommandé pour un réseau plus petit.\n\n<b>PowerDNS</b>\n\nComplet et similaire à BIND, il vous offre un peu plus de flexibilité avec des options. Il lit des informations à partir de plusieurs bases de données telles que MySQL, PostgreSQL, etc. pour une administration plus facile. Juste parce que BIND a été la façon dont nous faisons les choses, cela ne signifie pas que cela doit rester ainsi.\n\nCe n'est pas une liste complète, mais cela devrait vous donner une idée d'où chercher si vous mettez en place votre propre serveur DNS.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Quel est le serveur DNS de facto pour Linux?",
+  "quizAnswer": "BIND",
+  "slug": "configuration-dns"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "tubo e tee",
+  "lessonContent": "Vamos falar um pouco sobre encanamento agora, na verdade não, mas quase. Vamos tentar um comando: \n\n<pre>$ ls -la /etc</pre>\n\nVocê deve ver uma lista muito longa de itens, na verdade é um pouco difícil de ler. Em vez de redirecionar essa saída para um arquivo, não seria legal se pudéssemos ver a saída em outro comando como less? Bem, podemos! \n\n<pre>$ ls -la /etc | less </pre>\n\nO operador de pipe |, representado por uma barra vertical, nos permite obter o stdout de um comando e torná-lo o stdin de outro processo. Neste caso, pegamos o stdout do ls -la /etc e então <i>pipamos</i> para o comando less. O comando de pipe é extremamente útil e continuaremos a usá-lo para toda a eternidade. \n\nE se eu quisesse escrever a saída do meu comando para dois fluxos diferentes? Isso é possível com o comando tee: \n\n<pre>$ ls | tee peanuts.txt</pre>\n\nVocê deve ver a saída do ls na sua tela e se abrir o arquivo peanuts.txt, você deve ver as mesmas informações!",
+  "exercise": "Experimente os seguintes comandos: \n<pre>$ ls | tee peanuts.txt banan.txt</pre>",
+  "quizQuestion": "Qual tecla representa o operador de pipe?",
+  "quizAnswer": "|",
+  "slug": "pipeteeredirect"
+}

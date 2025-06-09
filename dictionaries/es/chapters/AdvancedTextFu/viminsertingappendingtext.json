@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Añadiendo texto en Vim",
+  "lessonContent": "<p>Ahora puede haber notado que si intentaba escribir algo, no podría hacerlo. Eso se debe a que está en modo comando. Esto puede ser bastante confuso, especialmente si solo desea abrir un archivo e ingresar texto. El modo comando se utiliza cuando se ingresan comandos como h, j, k, l, etc. Para insertar texto, primero deberá ingresar al modo inserción.</p><p></p><ul><br><li>i - insertar texto antes del cursor</li><br><li>O - insertar texto en la línea anterior</li><br><li>o - insertar texto en la línea siguiente</li><br><li>a - añadir texto después del cursor</li><br><li>A - añadir texto al final de la línea</li><br></ul><p></p><p>Observe cómo al escribir cualquiera de estos modos de inserción, verá que Vim ha ingresado al modo inserción en la parte inferior de la terminal. Para salir del modo inserción y volver al modo comando, simplemente presione la tecla Esc.</p>",
+  "exercise": "Juega con entrar y salir del modo inserción.",
+  "quizQuestion": "¿Qué tecla se utiliza para insertar texto antes del cursor?",
+  "quizAnswer": "i",
+  "slug": "viminsertingappendingtext"
+}

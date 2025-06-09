@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "title": "Empezando",
+  "description": "¿Qué es Linux? Comienza eligiendo una distribución e instalación.",
+  "image": "/images/chapters/gettingStarted.png",
+  "slug": "gettingstarted"
+}

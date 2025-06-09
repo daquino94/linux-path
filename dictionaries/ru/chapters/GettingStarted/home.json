@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "title": "Начало работы",
+  "description": "Что такое Linux? Начните с выбора дистрибутива и установки.",
+  "image": "/images/chapters/gettingStarted.png",
+  "slug": "gettingstarted"
+}

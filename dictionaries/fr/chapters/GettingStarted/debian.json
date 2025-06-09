@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Debian",
+  "lessonContent": "<b>Aperçu</b>\nDebian est un système d'exploitation composé entièrement de logiciels libres et open-source. Il est largement connu et est en développement depuis plus de 20 ans. Il existe trois branches que vous pouvez utiliser, Stable, Testing et Unstable. \n\nStable est une branche globalement bonne à utiliser. Testing et Unstable sont des versions en continu. Cela signifie que tout changement incrémentiel dans ces branches finira par devenir Stable. Par exemple, si vous vouliez passer de Windows 8 à Windows 10, vous devrez effectuer une installation complète de Windows 10. Cependant, en étant sur la version Testing, vous recevrez automatiquement des mises à jour jusqu'à ce qu'elle devienne la prochaine version du système d'exploitation sans avoir à effectuer une installation complète. \n\n<b>Gestion des paquets</b>\nDebian utilise également des outils de gestion des paquets Debian. Chaque distribution Linux installe et gère les paquets différemment et utilise des outils de gestion des paquets différents. Nous approfondirons ce sujet dans un prochain cours. \n\n<b>Configurabilité</b>\nDebian peut ne pas recevoir les dernières mises à jour, mais il est extrêmement stable. Si vous voulez un bon système d'exploitation \"de base\", celui-ci est fait pour vous.\n\n<b>Utilisations</b>\nDebian est un excellent système d'exploitation pour n'importe quelle plateforme.",
+  "exercise": "Si vous êtes intéressé par l'utilisation de Debian comme système d'exploitation, rendez-vous dans la section d'installation et essayez-le : <a href='https://www.debian.org/'>https://www.debian.org/</a>",
+  "quizQuestion": "Quel type de version les branches Testing et Unstable ont-elles ?",
+  "quizAnswer": "En continu",
+  "slug": "debian"
+}

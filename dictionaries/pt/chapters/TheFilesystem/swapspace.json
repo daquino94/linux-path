@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "swap",
+  "lessonContent": "No nosso exemplo anterior, mostrei como ver a sua tabela de partições, vamos revisitar esse exemplo, mais especificamente esta linha:\n\n<pre>\nNúmero  Início   Fim     Tamanho    Tipo      Sistema de arquivos     Flags\n 5      6861MB  7380MB  519MB   lógico   linux-swap(v1)\n</pre>\n\nO que é esta partição de swap? Bem, swap é o que usamos para alocar memória virtual para o nosso sistema. Se estiver com pouca memória, o sistema usa esta partição para \"trocar\" pedaços de memória de processos inativos para o disco, para que não fique sem memória.\n\n<b>Usando uma partição para espaço de swap</b>\n\nDigamos que queremos definir nossa partição /dev/sdb2 para ser usada como espaço de swap. \n\n<ol>\n<li>Primeiro, certifique-se de que não há nada na partição</li>\n<li>Execute: mkswap /dev/sdb2 para inicializar as áreas de swap</li>\n<li>Execute: swapon /dev/sdb2 para ativar o dispositivo de swap</li>\n<li>Se deseja que a partição de swap persista na inicialização, é necessário adicionar uma entrada ao arquivo /etc/fstab. sw é o tipo de sistema de arquivos que você usará.</li>\n<li>Para remover a swap: swapoff /dev/sdb2</li>\n</ol>\n\nGeralmente, você deve alocar cerca de duas vezes mais espaço de swap do que a memória que possui. Mas os sistemas modernos de hoje geralmente são bastante poderosos e têm RAM suficiente como está.",
+  "exercise": "Particionar o espaço livre na unidade USB para espaço de swap.",
+  "quizQuestion": "Qual é o comando para ativar o espaço de swap em um dispositivo?",
+  "quizAnswer": "swapon",
+  "slug": "swapspace"
+}

@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "image": "/images/penguinLaptop.png",
+    "title": "Entdecken Sie die Kraft von Linux",
+    "subtitle": "Ein neues Leben für LinuxJourney, das so vielen Menschen geholfen hat, ihre ersten Schritte in die Welt von Linux zu machen."
+  },
+  "resources": {
+    "title": "Ressourcen",
+    "hero": {
+      "image": "/images/penguinBook.png",
+      "title": "Ressourcen",
+      "subtitle": "Entdecken Sie kuratierte Bücher, Tutorials und Tools, um Ihr Linux-Wissen zu vertiefen."
+    },
+    "data": [
+      {
+        "image": "/images/link.png",
+        "title": "Offizielles Ubuntu-Tutorial",
+        "description": "Ein Schritt-für-Schritt-Leitfaden für Anfänger, der die Geschichte des Terminals und grundlegende Befehle erklärt",
+        "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+      },
+      {
+        "image": "/images/link.png",
+        "title": "DigitalOcean",
+        "description": "Eine klare Übersicht darüber, wie das Terminal funktioniert, wie Befehle ausgeführt und im Dateisystem navigiert werden.",
+        "href": "https://digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Wie Linux funktioniert",
+        "description": "Eines der am meisten empfohlenen Bücher!",
+        "href": "https://www.amazon.de/gp/product/1593275676/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275676&linkCode=as2&tag=linuxjourne0c-20&linkId=a8c48da327d15530a7214f453d5a55da"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "UNIX and Linux System Administration Handbook",
+        "description": "Extrem umfassendes Buch für jeden SysAdmin.",
+        "href": "https://www.amazon.de/gp/product/0131480057/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0131480057&linkCode=as2&tag=linuxjourne0c-20&linkId=de7ed3d4e4bf2c29b637855e351cffd2"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Linux Command Bible",
+        "description": "Großer umfassender Leitfaden zum Shell-Skripting.",
+        "href": "https://www.amazon.de/gp/product/111898384X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=111898384X&linkCode=as2&tag=linuxjourne0c-20&linkId=41767d3a073f8d20ff0db23bb11a2ac7"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "The Linux Programming Interface: A Linux and UNIX System",
+        "description": "Für ernsthafte Linux-Benutzer, ein großartiger Einstieg in die Kernelprogrammierung.",
+        "href": "https://www.amazon.de/gp/product/1593272200/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593272200&linkCode=as2&tag=linuxjourne0c-20&linkId=5d63b12b27c4106a518799e42a9c379d"
+      }
+    ]
+  },
+  "chapterWrapper": {
+    "content": "Inhalt",
+    "exerciseAndQuiz": "Übung & Quiz"
+  },
+  "navbar": {
+    "siteName": "Linux Path",
+    "home": "Startseite",
+    "lessons": "Lektionen",
+    "resources": "Ressourcen",
+    "language": "Sprache"
+  },
+  "exerciseBox": {
+    "exercise": "Übung"
+  },
+  "quizBox": {
+    "quiz": "Quiz",
+    "checkAnswer": "Antwort überprüfen",
+    "showCorrectAnswer": "Richtige Antwort anzeigen",
+    "correctAnswer": "Richtige Antwort: ",
+    "placeholderAnswer": "Geben Sie hier Ihre Antwort ein",
+    "nextLesson": "Nächste Lektion",
+    "backToChapters": "Zurück zu den Kapiteln"
+  }
+}

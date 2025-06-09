@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "歴史",
+  "lessonContent": "新人よ！Linuxという素晴らしい世界に飛び込むことを決めたのか？それなら覚悟しておくんだ。長くて険しい道のりになるぞ。私はペンギンのピートといい、この旅を案内するためにここにいる。Linuxの背景について少し始めてみよう。\n\nLinuxの始まりを知るためには、1969年にさかのぼってみよう。ベル研究所のケン・トンプソンとデニス・リッチーがUNIXオペレーティングシステムを開発した。後にC言語で書き直され、より移植性が高められ、広く使用されるオペレーティングシステムとなった。\n\n10年ほど後、リチャード・ストールマンはGNU（GNU is Not UNIX）プロジェクトに取り組み、Hurdと呼ばれるGNUカーネルを開発したが、残念ながら完成しなかった。この結果、GNU一般公衆利用許諾契約（GPL）というフリーソフトウェアライセンスも作成された。\n\nカーネルはオペレーティングシステムで最も重要な部分である。ハードウェアとソフトウェアの通信を可能にする。他にもたくさんのことを行うが、それについては別のコースで詳しく説明する。今のところは、カーネルがシステムで起こるほとんどのことを制御していることを知っておくといい。\n\nこの時期、BSD、MINIXなどのUNIXライクなシステムが開発された。しかし、これらのUNIXライクなシステムに共通していたのは、統一されたカーネルがなかったことだ。\n\nそして1991年、リーナス・トーバルズという若者が開発を始め、今日私たちが知っているLinuxカーネルが誕生した。",
+  "exercise": "追加の読み物:\n<li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>\n<li><a href='https://en.wikipedia.org/wiki/Ken_Thompson'>Ken Thompson</a></li>\n<li><a href='https://stallman.org/'>Richard Stallman</a></li>\n<li><a href='https://en.wikipedia.org/wiki/Linus_Torvalds'>Linus Torvalds</a></li>",
+  "quizQuestion": "Linuxカーネルを開発したのは誰か？",
+  "quizAnswer": "リーナス・トーバルズ",
+  "slug": "linuxhistory"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "外壳",
+  "lessonContent": "世界是你的海蛎，或者说外壳是你的海蛎。什么是外壳？外壳基本上是一个程序，它从键盘接收你的命令并将其发送给操作系统执行。如果你曾经使用过 GUI，你可能见过像“终端”或“控制台”这样的程序，这些只是为你启动外壳的程序。在整个课程中，我们将学习外壳的奇妙之处。\n\n在本课程中，我们将使用外壳程序 bash（Bourne Again shell），几乎所有的 Linux 发行版都会默认使用 bash 外壳。还有其他可用的外壳，比如 ksh、zsh、tsch，但我们不会涉及到这些。\n\n让我们开始吧！根据你的发行版，你的外壳提示符可能会改变，但大部分情况下应该遵循以下格式：\n<pre>用户名@主机名:当前目录\npete@icebox:/home/pete $</pre>\n\n注意提示符末尾的 $？不同的外壳会有不同的提示符，在我们的情况下，$ 是给使用 Bash、Bourne 或 Korn 外壳的普通用户，当你输入命令时不需要添加提示符，只需知道它在那里。\n\n让我们从一个简单的命令开始，echo。echo 命令只是将文本参数打印到显示器上。\n\n<pre>$ echo Hello World</pre>",
+  "exercise": "尝试一些其他 Linux 命令，看看它们的输出是什么：\n\n<ol>\n<li>$ date</li>\n<li>$ whoami</li>\n</ol>",
+  "quizQuestion": "当你输入 echo Hello World 时，应该输出什么到显示器上？",
+  "quizAnswer": "Hello World",
+  "slug": "theshell"
+}

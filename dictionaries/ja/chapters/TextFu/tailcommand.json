@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "tail",
+  "lessonContent": "headコマンドと同様に、tailコマンドを使用すると、デフォルトでファイルの最後の10行を表示できます。\n\n<pre>$ tail /var/log/syslog</pre>\n\nheadと一緒に、表示したい行数を変更することもできます。\n\n<pre>$ tail -n 10 /var/log/syslog</pre>\n\nもう1つの便利なオプションは、-f（follow）フラグを使用することです。これにより、ファイルが成長するにつれてファイルを追跡できます。試してみて、何が起こるか見てみてください。\n\n<pre>$ tail -f /var/log/syslog</pre>\n\nあなたのsyslogファイルはシステムとやり取りする間に常に変化しており、tail -fを使用すると、そのファイルに追加されるすべての内容を見ることができます。",
+  "exercise": "tailのmanページを参照し、今回取り上げなかった他のコマンドをいくつか読んでください。\n\n<pre>$ man tail</pre>",
+  "quizQuestion": "tailでファイルを追跡するために使用されるフラグは何ですか？",
+  "quizAnswer": "-f",
+  "slug": "tailcommand"
+}

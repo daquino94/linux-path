@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "wc und nl",
+  "lessonContent": "Der wc (Wortanzahl) Befehl zeigt die Gesamtanzahl der Wörter in einer Datei an. \n\n<pre>$ wc /etc/passwd\n 96     265    5925 /etc/passwd\n</pre>\n\nEr zeigt die Anzahl der Zeilen, Wörter und Bytes, jeweils. \n\nUm nur die Anzahl eines bestimmten Feldes zu sehen, verwenden Sie -l, -w oder -c entsprechend. \n\n<pre>$ wc -l /etc/passwd\n96</pre>\n\nEin weiterer Befehl, den Sie verwenden können, um die Anzahl der Zeilen in einer Datei zu überprüfen, ist der nl (Nummerierung von Zeilen) Befehl. \n\n<pre>\nfile1.txt\ni\nlike\nturtles\n</pre>\n\n<pre>$ nl file1.txt\n1. i\n2. like\n3. turtles\n</pre>",
+  "exercise": "Wie würden Sie die Gesamtanzahl der Zeilen erhalten, indem Sie den nl Befehl verwenden, ohne den gesamten Output durchsuchen zu müssen? Tipp: Verwenden Sie einige der anderen Befehle, die Sie in diesem Kurs gelernt haben.",
+  "quizQuestion": "Welchen Befehl würden Sie verwenden, um die Gesamtanzahl der Wörter in einer Datei und nur die Wörter zu erhalten?",
+  "quizAnswer": "wc -w",
+  "slug": "nlwccommand"
+}

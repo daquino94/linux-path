@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "title": "Файловая система",
+  "description": "Узнайте о файловой системе Linux, различных типах файловых систем, разделении и многом другом.",
+  "image": "/images/chapters/filesystem.png",
+  "slug": "thefilesystem"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Linux Mint",
+  "lessonContent": "<b>概述</b>\nLinux Mint基于Ubuntu。它使用Ubuntu的软件存储库，因此这两个发行版都提供相同的软件包。与Ubuntu相比，其他人更喜欢Linux Mint，因为它不包含Ubuntu包含的一些专有软件，比如Unity。\n\n<b>软件包管理</b>\n由于Linux Mint基于Ubuntu，因此它使用Debian软件包管理器。\n\n<b>可配置性</b>\n出色的用户界面，非常适合初学者，比Ubuntu更精简。在本课程中，我将使用Linux Mint，但也可以使用其他发行版。\n\n<b>用途</b>\n非常适合台式机和笔记本电脑。",
+  "exercise": "如果您对将Linux Mint作为操作系统感兴趣，请转到安装部分并尝试一下：<a href='http://linuxmint.com/'>http://linuxmint.com/</a>",
+  "quizQuestion": "Linux Mint基于哪个发行版？",
+  "quizAnswer": "Ubuntu",
+  "slug": "linuxmint"
+}

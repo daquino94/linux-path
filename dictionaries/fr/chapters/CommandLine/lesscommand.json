@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "less",
+  "lessonContent": "Si vous consultez des fichiers texte plus grands qu'une simple sortie, less est plus. (Il existe en fait une commande appelée more qui fait quelque chose de similaire, donc c'est ironique.) Le texte est affiché de manière paginée, vous pouvez donc naviguer à travers un fichier texte page par page. \n\nAllez-y et regardez le contenu d'un fichier avec less. Une fois dans la commande less, vous pouvez réellement utiliser d'autres commandes clavier pour naviguer dans le fichier. \n\n<pre>$ less /home/pete/Documents/text1</pre>\n\nUtilisez la commande suivante pour naviguer dans less: \n\n<ul>\n<li>q - Utilisé pour quitter less et revenir à votre shell.</li>\n<li>Page précédente, Page suivante, Haut et Bas - Naviguez à l'aide des touches fléchées et des touches de page.</li>\n<li>g - Se déplace au début du fichier texte.</li>\n<li>G - Se déplace à la fin du fichier texte.</li>\n<li>/recherche - Vous pouvez rechercher un texte spécifique à l'intérieur du document texte. Préfixez les mots que vous souhaitez rechercher avec /</li>\n<li>h - Si vous avez besoin d'un peu d'aide sur la manière d'utiliser less pendant que vous êtes dans less, utilisez help.</li>\n</ul>",
+  "exercise": "Exécutez less sur un fichier, puis naviguez dans le fichier. Essayez de rechercher un mot spécifique. Naviguez rapidement vers le début ou la fin du fichier.",
+  "quizQuestion": "Comment quittez-vous une commande less?",
+  "quizAnswer": "q",
+  "slug": "commandeless"
+}

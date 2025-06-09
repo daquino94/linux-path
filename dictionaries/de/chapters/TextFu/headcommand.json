@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "head",
+  "lessonContent": "Angenommen, wir haben eine sehr lange Datei, tatsächlich haben wir viele zur Auswahl, gehen Sie voran und führen Sie cat /var/log/syslog aus. Sie sollten Seiten um Seiten mit Text sehen. Was ist, wenn ich nur die ersten paar Zeilen in dieser Textdatei sehen wollte? Nun, das können wir mit dem head-Befehl tun, standardmäßig zeigt der head-Befehl Ihnen die ersten 10 Zeilen in einer Datei an.\n\n<pre>$ head /var/log/syslog</pre>\n\nSie können auch die Zeilenanzahl nach Belieben ändern, sagen wir, ich möchte stattdessen die ersten 15 Zeilen sehen. \n\n<pre>$ head -n 15 /var/log/syslog</pre>\n\nDie -n-Flagge steht für die Anzahl der Zeilen.",
+  "exercise": "Was bewirkt der folgende Befehl und warum? \n\n<pre>$ head -c 15 /var/log/syslog</pre>",
+  "quizQuestion": "Welche Flagge würden Sie verwenden, um die Anzahl der Zeilen zu ändern, die Sie für den head-Befehl anzeigen möchten?",
+  "quizAnswer": "-n",
+  "slug": "headcommand"
+}

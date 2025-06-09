@@ -1,0 +1,7 @@
+{
+  "id": 14,
+  "title": "Использование процесса",
+  "description": "Изучите мониторинг ресурсов с помощью top, средних нагрузок, iostat и многого другого!",
+  "image": "/images/chapters/processUtilization.png",
+  "slug": "processutilization"
+}

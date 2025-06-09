@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "tuyau et té",
+  "lessonContent": "Entrons maintenant dans la plomberie, en quelque sorte. Essayons une commande : \n\n<pre>$ ls -la /etc</pre>\n\nVous devriez voir une liste très longue d'éléments, c'est un peu difficile à lire en fait. Au lieu de rediriger cette sortie vers un fichier, ne serait-il pas agréable de pouvoir simplement voir la sortie dans une autre commande comme less ? Eh bien, c'est possible !\n\n<pre>$ ls -la /etc | less </pre>\n\nL'opérateur de tuyauterie |, représenté par une barre verticale, nous permet de récupérer la sortie standard d'une commande et de la passer en entrée standard à un autre processus. Dans ce cas, nous avons pris la sortie standard de ls -la /etc et l'avons ensuite <i>tuyauté</i> vers la commande less. La commande de tuyauterie est extrêmement utile et nous continuerons à l'utiliser pour l'éternité. \n\nEt si je voulais écrire la sortie de ma commande vers deux flux différents ? C'est possible avec la commande tee : \n\n<pre>$ ls | tee peanuts.txt</pre>\n\nVous devriez voir la sortie de ls sur votre écran et si vous ouvrez le fichier peanuts.txt, vous devriez voir les mêmes informations !",
+  "exercise": "Essayez les commandes suivantes : \n<pre>$ ls | tee peanuts.txt banan.txt</pre>",
+  "quizQuestion": "Quelle touche représente l'opérateur de tuyauterie ?",
+  "quizAnswer": "|",
+  "slug": "pipeteeredirect"
+}

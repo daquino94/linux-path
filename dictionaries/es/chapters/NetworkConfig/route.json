@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "ruta",
+  "lessonContent": "Ya hemos discutido cómo ver nuestras tablas de enrutamiento con el comando route, si deseas agregar o eliminar rutas, puedes hacerlo manualmente.\n\n<b>Agregar una nueva ruta</b>\n\n<pre>\n$ sudo route add -net 192.168.2.1/23 gw 10.11.12.3\n</pre>\n\n<b>Eliminar una ruta</b>\n\n<pre>\n$ sudo route del -net 192.168.2.1/23 \n</pre>\n\nTambién puedes realizar estos cambios con el comando <b>ip</b>:\n\n<b>Para agregar una ruta</b>\n<pre>\n$ ip route add 192.168.2.1/23 via 10.11.12.3\n</pre>\n\n<b>Para eliminar una ruta</b>\n<pre>\n$ ip route delete 192.168.2.1/23 via 10.11.12.3\no\n$ ip route delete 192.168.2.1/23\n</pre>",
+  "exercise": "No hay ejercicios para esta lección, pero puedes obtener más información sobre los comandos discutidos aquí en las páginas del manual\n\n<pre>$ man route</pre>\n\n<pre>$ man ip-route</pre>",
+  "quizQuestion": "¿Cuál es la bandera de comando para eliminar una ruta?",
+  "quizAnswer": "del",
+  "slug": "ruta"
+}

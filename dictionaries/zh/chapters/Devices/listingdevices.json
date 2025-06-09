@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "lsusb, lspci, lssci",
+  "lessonContent": "就像我们使用ls命令列出文件和目录一样，我们可以使用类似的工具来列出有关设备的信息。\n\n<b>列出USB设备</b>\n\n<pre>$ lsusb </pre>\n\n<b>列出PCI设备</b>\n\n<pre>$ lspci </pre>\n\n<b>列出SCSI设备</b>\n\n<pre>$ lsscsi </pre>",
+  "exercise": "尝试运行这些命令，查看您收到的输出。",
+  "quizQuestion": "用于查看USB设备的命令是什么？",
+  "quizAnswer": "lsusb",
+  "slug": "listingdevices"
+}

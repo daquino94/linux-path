@@ -1,0 +1,7 @@
+{
+  "id": 8,
+  "title": "パッケージ",
+  "description": "dpkg、apt-get、rpm、yum パッケージ管理ツールについて学びます。",
+  "image": "/images/chapters/packages.png",
+  "slug": "packages"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Guardado y salida en Vim",
+  "lessonContent": "Ahora que has terminado de editar, es hora de guardar y salir de vim: \n\n<ul>\n<li>:w - escribe o guarda el archivo</li>\n<li>:q - salir de vim</li>\n<li>:wq - escribir y luego salir</li>\n<li>:q! - salir de vim sin guardar el archivo</li>\n<li>ZZ - equivalente a :wq, pero un carácter más rápido</li>\n\n<li>u - deshacer tu última acción</li>\n<li>Ctrl-r - rehacer tu última acción</li>\n</ul>\n\nPuede que no pienses que ZZ sea necesario, pero eventualmente verás que tus dedos tienden a inclinarse hacia esto en lugar de :wq.\n\nUf, esa fue mucha información sobre Vim. Ahora que conoces algunos comandos básicos y la navegación, puedes comenzar a editar algunos archivos de texto. Hay muchas más opciones que puedes usar en vim para mejorar tu capacidad de dominar este editor de texto, dirígete a la guía en línea de Vim para echar un vistazo.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cómo sales de vim sin guardar?",
+  "quizAnswer": ":q!",
+  "slug": "guardadoysalidaenvim"
+}

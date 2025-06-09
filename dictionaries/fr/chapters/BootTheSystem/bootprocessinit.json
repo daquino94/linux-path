@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Processus de démarrage : Init",
+  "lessonContent": "Nous avons discuté de init dans les leçons précédentes et savons que c'est le premier processus qui démarre et lance tous les autres services essentiels sur notre système. Mais comment ?\n\nIl existe en fait trois implémentations majeures de init sous Linux : \n\n<b>System V init (sysv)</b>\n\nIl s'agit du système init traditionnel. Il démarre et arrête séquentiellement les processus, basés sur des scripts de démarrage. L'état de la machine est indiqué par des niveaux d'exécution, chaque niveau d'exécution démarre ou arrête une machine de manière différente. \n\n<b>Upstart</b>\n\nC'est l'init que vous trouverez sur les anciennes installations d'Ubuntu. Upstart utilise l'idée de tâches et d'événements et fonctionne en démarrant des tâches qui effectuent certaines actions en réponse à des événements. \n\n<b>Systemd</b>\n\nIl s'agit de la nouvelle norme pour init, il est orienté objectif. Fondamentalement, vous avez un objectif que vous voulez atteindre et systemd essaie de satisfaire les dépendances de l'objectif pour le compléter. \n\nNous avons un cours entier sur les systèmes Init où nous plongerons dans chacun de ces systèmes plus en détail.",
+  "exercise": "Pas d'exercices pour cette leçon.",
+  "quizQuestion": "Quelle est la norme la plus récente pour init ?",
+  "quizAnswer": "systemd",
+  "slug": "processusdedemarrageinit"
+}

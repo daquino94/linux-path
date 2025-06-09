@@ -1,0 +1,7 @@
+{
+  "id": 17,
+  "title": "ネットワークの基礎",
+  "description": "ネットワークの基礎とTCP/IPモデルについて学びます。",
+  "image": "/images/chapters/networkFundamentals.png",
+  "slug": "networkbasics"
+}

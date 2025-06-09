@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Routing-Tabelle",
+  "lessonContent": "Schauen Sie sich die Routing-Tabelle Ihres Rechners an:\n\n<pre>\npete@icebox:~$ sudo route -n\nKernel IP Routing-Tabelle\nDestination     Gateway         Genmask         Flags Metric Ref    Use Iface\n0.0.0.0         192.168.224.2   0.0.0.0         UG    0      0        0 eth0\n192.168.224.0   0.0.0.0         255.255.255.0   U     1      0        0 eth0\n</pre>\n\n<b>Ziel</b>\n\nIm ersten Feld haben wir eine Ziel-IP-Adresse von 192.168.224.0, das besagt, dass jedes Paket, das versucht, zu diesem Netzwerk zu gelangen, über mein Ethernet-Kabel (eth0) ausgeht. Wenn ich 192.168.224.5 wäre und zu 192.168.224.7 gelangen wollte, würde ich einfach die Netzwerkschnittstelle eth0 direkt verwenden.\n\nBeachten Sie, dass wir Adressen von <b>0.0.0.0</b> haben, das bedeutet, dass keine Adresse angegeben ist oder unbekannt ist. Wenn ich zum Beispiel ein Paket an die IP-Adresse 151.123.43.6 senden wollte, weiß unsere Routing-Tabelle nicht, wohin das geht, daher kennzeichnet sie es als 0.0.0.0 und leitet unser Paket daher zum Gateway.\n\n<b>Gateway</b>\n\nWenn wir ein Paket senden, das nicht im selben Netzwerk ist, wird es an diese Gateway-Adresse gesendet. Dies wird passenderweise als Gateway zu einem anderen Netzwerk bezeichnet.\n\n<b>Genmask</b>\n\nDies ist die Subnetzmaske, die verwendet wird, um festzustellen, welche IP-Adressen zu welchem Ziel passen.\n\n<b>Flags</b>\n\n<ul>\n<li>UG - Netzwerk ist aktiv und ist ein Gateway</li>\n<li>U - Netzwerk ist aktiv</li>\n</ul>\n\n<b>Iface</b>\n\nDies ist die Schnittstelle, über die unser Paket ausgeht. Eth0 steht normalerweise für das erste Ethernet-Gerät auf Ihrem System.",
+  "exercise": "Schauen Sie sich Ihre Routing-Tabelle an und sehen Sie, wohin Ihre Pakete gehen können.",
+  "quizQuestion": "Wohin werden Pakete geroutet, wenn unsere Routing-Tabelle es nicht weiß?",
+  "quizAnswer": "Gateway",
+  "slug": "routingtable"
+}

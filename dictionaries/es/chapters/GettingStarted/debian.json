@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Debian",
+  "lessonContent": "<b>Descripción</b>\nDebian es un sistema operativo compuesto enteramente de software libre y de código abierto. Es ampliamente conocido y ha estado en desarrollo durante más de 20 años. Hay tres ramas que puedes utilizar, Estable, Pruebas e Inestable. \n\nEstable es una buena rama en general para estar. Pruebas e Inestable son lanzamientos continuos. Esto significa que cualquier cambio incremental en esas ramas eventualmente se convertirá en Estable. Por ejemplo, si quisieras pasar a la siguiente actualización de Windows 8 a Windows 10, tendrías que hacer una instalación completa de Windows 10. Sin embargo, estando en el lanzamiento de Pruebas, recibirás automáticamente actualizaciones hasta que se convierta en la siguiente versión del sistema operativo sin tener que hacer una instalación completa. \n\n<b>Gestión de paquetes</b>\nDebian también utiliza herramientas de gestión de paquetes de Debian. Cada distribución de Linux instala y gestiona paquetes de manera diferente y utiliza diferentes herramientas de gestión de paquetes. Nos adentraremos más en esto en un curso posterior. \n\n<b>Configurabilidad</b>\nDebian puede que no reciba las últimas actualizaciones, pero es extremadamente estable. Si deseas un buen sistema operativo \"central\", este es el adecuado para ti.\n\n<b>Usos</b>\nDebian es en general un gran sistema operativo para cualquier plataforma.",
+  "exercise": "Si estás interesado en tener Debian como tu sistema operativo, dirígete a la sección de instalación e inténtalo: <a href='https://www.debian.org/'>https://www.debian.org/</a>",
+  "quizQuestion": "¿Qué tipo de lanzamiento tienen Pruebas e Inestable?",
+  "quizAnswer": "Continuo",
+  "slug": "debian"
+}

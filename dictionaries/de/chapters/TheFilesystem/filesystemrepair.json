@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "Dateisystemreparatur",
+  "lessonContent": "Manchmal ist unser Dateisystem nicht immer in bestem Zustand. Bei einem plötzlichen Herunterfahren kann unsere Daten beschädigt werden. Es liegt am System, uns wieder in einen funktionsfähigen Zustand zu bringen (obwohl wir es sicher auch selbst versuchen können).\n\nDer <b>fsck</b> (Dateisystemprüfung) Befehl wird verwendet, um die Konsistenz eines Dateisystems zu überprüfen und kann sogar versuchen, es für uns zu reparieren. Normalerweise wird fsck beim Booten einer Festplatte ausgeführt, bevor Ihre Festplatte eingehängt wird, um sicherzustellen, dass alles in Ordnung ist. Manchmal ist Ihre Festplatte jedoch so schlecht, dass Sie dies manuell tun müssen. Stellen Sie jedoch sicher, dass Sie dies durchführen, während Sie in einer Rettungs-CD oder an einem Ort sind, an dem Sie auf Ihr Dateisystem zugreifen können, ohne dass es eingehängt ist.\n\n<pre>$ sudo fsck /dev/sda</pre>",
+  "exercise": "Schauen Sie sich die Manpage für fsck an, um zu sehen, was es noch kann.",
+  "quizQuestion": "Welcher Befehl wird verwendet, um die Integrität eines Dateisystems zu überprüfen?",
+  "quizAnswer": "fsck",
+  "slug": "dateisystemreparatur"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "头部",
+  "lessonContent": "假设我们有一个非常长的文件，实际上我们有许多可供选择，继续执行 cat /var/log/syslog。您应该看到一页又一页的文本。如果我只想看到这个文本文件的前几行怎么办？好吧，我们可以使用 head 命令来做到这一点，默认情况下，head 命令会显示文件中的前 10 行。\n\n<pre>$ head /var/log/syslog</pre>\n\n您还可以将行数修改为您选择的任何值，假设我想看到前 15 行。\n\n<pre>$ head -n 15 /var/log/syslog</pre>\n\n-n 标志代表行数。",
+  "exercise": "以下命令的作用是什么？为什么？\n\n<pre>$ head -c 15 /var/log/syslog</pre>",
+  "quizQuestion": "您会使用哪个标志来更改您想要查看的 head 命令的行数？",
+  "quizAnswer": "-n",
+  "slug": "headcommand"
+}

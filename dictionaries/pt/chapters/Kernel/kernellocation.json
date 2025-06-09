@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Localização do Kernel",
+  "lessonContent": "O que acontece quando você instala um novo kernel? Bem, na verdade, ele adiciona alguns arquivos ao seu sistema, esses arquivos geralmente são adicionados ao diretório /boot. \n\nVocê verá vários arquivos para diferentes versões de kernel:\n\n<ul>\n<li>vmlinuz - este é o kernel linux real</li>\n<li>initrd - como discutimos anteriormente, o initrd é usado como um sistema de arquivos temporário, usado antes de carregar o kernel</li>\n<li>System.map - tabela de pesquisa simbólica</li>\n<li>config - configurações de configuração do kernel, se você estiver compilando seu próprio kernel, você pode definir quais módulos podem ser carregados</li>\n</ul>\n\nSe o seu diretório /boot ficar sem espaço, você sempre pode excluir versões antigas desses arquivos ou simplesmente usar um gerenciador de pacotes, mas tenha cuidado ao fazer manutenção neste diretório e não exclua acidentalmente o kernel que está usando.",
+  "exercise": "Vá para o seu diretório /boot e veja quais arquivos estão lá.",
+  "quizQuestion": "Como é chamada a imagem do kernel em /boot?",
+  "quizAnswer": "vmlinuz",
+  "slug": "localizacaokernel"
+}

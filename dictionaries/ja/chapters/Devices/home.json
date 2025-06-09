@@ -1,0 +1,7 @@
+{
+  "id": 9,
+  "title": "Devices",
+  "description": "Linux デバイスについて学び、それらがカーネルとユーザースペースとどのようにやり取りするかを理解します。",
+  "image": "/images/chapters/devices.png",
+  "slug": "devices"
+}

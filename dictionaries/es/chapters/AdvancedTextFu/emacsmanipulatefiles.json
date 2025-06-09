@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "Emacs Manipular Archivos",
+  "lessonContent": "En mucha (si no toda) la documentación de Emacs, verás la sintaxis C-[letra]. Esto simplemente significa presionar Ctrl-letra, pero para abreviar, llamaremos a Ctrl con C. Si ves sintaxis como M-[letra], eso significa usar la tecla Meta, comúnmente la tecla Alt.\n\n<b>Guardando archivos</b>\n\n<pre>\nC-x C-s - Guardar un archivo\nC-x C-w - Guardar archivo como\nC-x s - Guardar todo\n</pre>\n\nLas opciones de guardar archivo te preguntarán si deseas guardar cada archivo.\n\n<b>Abriendo un archivo</b>\n\n<pre>\nC-x C-f\n</pre>\n\nEsto te pedirá que escribas un nombre de archivo para abrirlo. Si no tienes un archivo que ya exista, creará un archivo nuevo. También puedes cargar un directorio.",
+  "exercise": "Juega con la apertura y el guardado de archivos.",
+  "quizQuestion": "¿Qué comando se utiliza para abrir un archivo?",
+  "quizAnswer": "C-x C-f",
+  "slug": "emacsmanipulatefiles"
+}

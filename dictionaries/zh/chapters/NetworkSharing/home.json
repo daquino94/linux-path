@@ -1,0 +1,7 @@
+{
+  "id": 16,
+  "title": "网络共享",
+  "description": "学习使用rsync、scp、nfs等进行网络共享。",
+  "image": "/images/chapters/networkSharing.png",
+  "slug": "networksharing"
+}

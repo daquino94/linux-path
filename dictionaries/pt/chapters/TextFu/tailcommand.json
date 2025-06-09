@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "tail",
+  "lessonContent": "Similar ao comando head, o comando tail permite ver as últimas 10 linhas de um arquivo por padrão.\n\n<pre>$ tail /var/log/syslog</pre>\n\nJuntamente com o head, você pode alterar o número de linhas que deseja ver.\n\n<pre>$ tail -n 10 /var/log/syslog</pre>\n\nOutra ótima opção que você pode usar é a flag -f (seguir), isso seguirá o arquivo conforme ele cresce. Experimente e veja o que acontece. \n\n<pre>$ tail -f /var/log/syslog</pre> \n\nSeu arquivo syslog estará continuamente mudando enquanto você interage com seu sistema e usando tail -f você pode ver tudo o que está sendo adicionado a esse arquivo.",
+  "exercise": "Olhe a página de manual do tail e leia alguns dos outros comandos que não discutimos. \n\n<pre>$ man tail</pre>",
+  "quizQuestion": "Qual é a flag usada para seguir um arquivo no tail?",
+  "quizAnswer": "-f",
+  "slug": "tailcommand"
+}

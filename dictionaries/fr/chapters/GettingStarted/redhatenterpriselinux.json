@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Red Hat Enterprise Linux",
+  "lessonContent": "<b>Aperçu</b>\nRed Hat Enterprise Linux, communément appelé RHEL, est développé par Red Hat. RHEL a des règles strictes pour restreindre la redistribution gratuite bien qu'il fournisse toujours le code source gratuitement.\n\n<b>Gestion des packages</b>\nRHEL utilise un gestionnaire de packages différent de Debian, le gestionnaire de packages RPM, que nous apprendrons également par la suite.\n\n<b>Configurabilité</b>\nLes systèmes d'exploitation basés sur RHEL différeront légèrement des systèmes d'exploitation basés sur Debian, notamment en ce qui concerne la gestion des packages. Si vous décidez d'opter pour RHEL, il est probablement préférable de savoir que vous allez travailler avec.\n\n<b>Utilisations</b>\nComme son nom l'indique, il est principalement utilisé en entreprise, donc si vous avez besoin d'un système d'exploitation serveur solide, celui-ci serait un bon choix.",
+  "exercise": "Si vous êtes intéressé par l'utilisation de RHEL comme système d'exploitation, rendez-vous dans la section d'installation et essayez-le : <a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>",
+  "quizQuestion": "Quel gestionnaire de packages utilise RHEL ?",
+  "quizAnswer": "RPM",
+  "slug": "redhatenterpriselinux"
+}

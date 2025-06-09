@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "route",
+  "lessonContent": "Nous avons déjà discuté de la visualisation de nos tables de routage avec la commande route, si vous souhaitez ajouter ou supprimer des routes, vous pouvez le faire manuellement.\n\n<b>Ajouter une nouvelle route</b>\n\n<pre>\n$ sudo route add -net 192.168.2.1/23 gw 10.11.12.3\n</pre>\n\n<b>Supprimer une route</b>\n\n<pre>\n$ sudo route del -net 192.168.2.1/23 \n</pre>\n\nVous pouvez également effectuer ces changements avec la commande <b>ip</b> :\n\n<b>Pour ajouter une route</b>\n<pre>\n$ ip route add 192.168.2.1/23 via 10.11.12.3\n</pre>\n\n<b>Pour supprimer une route</b>\n<pre>\n$ ip route delete 192.168.2.1/23 via 10.11.12.3\nou\n$ ip route delete 192.168.2.1/23\n</pre>",
+  "exercise": "Il n'y a pas d'exercices pour cette leçon, mais vous pouvez lire plus d'informations sur les commandes discutées ici dans les pages de manuel\n\n<pre>$ man route</pre>\n\n<pre>$ man ip-route</pre>",
+  "quizQuestion": "Quel est le drapeau de commande pour supprimer une route?",
+  "quizAnswer": "del",
+  "slug": "route"
+}

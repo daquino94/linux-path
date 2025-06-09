@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Softwareverteilung",
+  "lessonContent": "Ihr System besteht aus vielen Paketen wie Internetbrowsern, Texteditoren, Media-Playern usw. Diese Pakete werden über Paketmanager verwaltet, die die Software auf Ihrem System installieren und warten. Nicht alle Pakete werden jedoch über Paketmanager installiert. Sie können Pakete häufig direkt aus ihrem Quellcode installieren (darauf werden wir bald eingehen). Die meiste Zeit werden Sie jedoch einen Paketmanager verwenden, um Software zu installieren. Die häufigsten Arten von Paketen sind Debian (.deb) und Red Hat (.rpm). Debian-Pakete werden in Distributionen wie Debian, Ubuntu, LinuxMint usw. verwendet. Red Hat-Pakete sind in Red Hat Enterprise Linux, Fedora, CentOS usw. zu finden.\n\nWas sind Pakete? Sie kennen sie vielleicht als Chrome, Photoshop usw., aber sie sind eigentlich nur viele Dateien, die zu einer kompiliert wurden. Die Personen (oder manchmal eine einzelne Person), die diese Software schreiben, werden als <b>Upstream-Anbieter</b> bezeichnet. Sie kompilieren ihren Code und schreiben, wie er installiert werden kann. Diese Upstream-Anbieter arbeiten daran, neue Software herauszubringen und vorhandene Software zu aktualisieren. Wenn sie bereit sind, sie der Welt zur Verfügung zu stellen, senden sie ihr Paket an <b>Paketbetreuer</b>, die dafür sorgen, dass dieses Stück Software in die Hände der Benutzer gelangt. Diese Paketbetreuer überprüfen, verwalten und verteilen diese Software in Form von Paketen.",
+  "exercise": "Für diese Lektion sind keine Übungen vorgesehen.",
+  "quizQuestion": "Keine Fragen, gehen Sie weiter!",
+  "quizAnswer": "",
+  "slug": "softwaredistribution"
+}

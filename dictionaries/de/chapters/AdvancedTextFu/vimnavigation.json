@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Vim Navigation",
+  "lessonContent": "Jetzt wirst du vielleicht bemerken, dass die Maus hier nirgendwo verwendet wird. Um ein Textdokument in Vim zu navigieren, verwende die folgenden Tasten: \n\n<ul>\n<li>h oder der linke Pfeil - bewegt dich um ein Zeichen nach links</li>\n<li>k oder der obere Pfeil - bewegt dich um eine Zeile nach oben</li>\n<li>j oder der untere Pfeil - bewegt dich um eine Zeile nach unten</li>\n<li>l oder der rechte Pfeil - bewegt dich um ein Zeichen nach rechts</li>\n</ul>",
+  "exercise": "Für diese Lektion gibt es keine Übungen.",
+  "quizQuestion": "Welcher Buchstabe wird verwendet, um nach unten zu bewegen?",
+  "quizAnswer": "j",
+  "slug": "vimnavigation"
+}

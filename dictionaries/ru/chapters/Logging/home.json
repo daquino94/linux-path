@@ -1,0 +1,7 @@
+{
+  "id": 15,
+  "title": "Логирование",
+  "description": "Узнайте о системных журналах и каталоге /var/log.",
+  "image": "/images/chapters/logging.png",
+  "slug": "logging"
+}

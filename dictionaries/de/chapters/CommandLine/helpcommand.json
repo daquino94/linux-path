@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "Hilfe",
+  "lessonContent": "Linux verfügt über einige großartige integrierte Tools, um Ihnen zu helfen, wie Sie ein Befehl verwenden oder welche Optionen für einen Befehl verfügbar sind. Ein Tool, Hilfe, ist ein integrierter Bash-Befehl, der Hilfe für andere Bash-Befehle (echo, logout, pwd usw.) bereitstellt.\n\n<pre>$ help echo</pre>\n\nDies gibt Ihnen eine Beschreibung und die Optionen, die Sie verwenden können, wenn Sie echo ausführen möchten. Für andere ausführbare Programme ist es üblich, eine Option namens --help oder etwas Ähnliches zu haben. \n\n<pre>$ echo --help</pre>\n\nNicht alle Entwickler, die ausführbare Programme bereitstellen, werden sich an diesen Standard halten, aber es ist wahrscheinlich Ihr bester Schuss, um Hilfe zu einem Programm zu finden.",
+  "exercise": "Führen Sie Hilfe für den echo-Befehl, den logout-Befehl und den pwd-Befehl aus.",
+  "quizQuestion": "Wie erhalten Sie schnelle Befehlszeilenhilfe für integrierte Bash-Befehle?",
+  "quizAnswer": "help",
+  "slug": "helpcommand"
+}

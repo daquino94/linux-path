@@ -9,8 +9,8 @@ export interface Locales {
   lang: Lang
 }
 
-export type Lang = 'en'
-export const locales = ['en']
+export type Lang = 'de' | 'en' | 'es' | 'fr' | 'hi' | 'ja' | 'pt' | 'ru' | 'zh'
+export const locales = ['de', 'en', 'es', 'fr', 'hi', 'ja', 'pt', 'ru', 'zh']
 
 export const localesObject = locales.map((e) => ({ lang: e }))
 

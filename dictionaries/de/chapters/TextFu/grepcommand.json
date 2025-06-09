@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "grep",
+  "lessonContent": "Der grep-Befehl ist möglicherweise der häufigste Textverarbeitungsbefehl, den Sie verwenden werden. Er ermöglicht es Ihnen, Dateien nach Zeichenfolgen zu durchsuchen, die einem bestimmten Muster entsprechen. Was ist, wenn Sie wissen wollten, ob eine Datei in einem bestimmten Verzeichnis existiert oder ob Sie sehen wollten, ob eine Zeichenfolge in einer Datei gefunden wurde? Sie würden sicherlich nicht jede Textzeile durchsuchen, Sie würden grep verwenden!\n\nLassen Sie uns unsere sample.txt-Datei als Beispiel verwenden: \n\n<pre>$ grep fox sample.txt</pre>\n\nSie sollten sehen, dass grep fox in der Datei sample.txt gefunden hat. \n\nSie können auch Muster suchen, die nicht auf Groß- und Kleinschreibung achten, mit dem -i Flag: \n\n<pre>$ grep -i somepattern somefile</pre>\n\nUm mit grep noch flexibler zu werden, können Sie es mit anderen Befehlen mit | kombinieren.\n\n<pre>$ env | grep -i User</pre>\n\nWie Sie sehen können, ist grep ziemlich vielseitig. Sie können sogar reguläre Ausdrücke in Ihrem Muster verwenden: \n\n<pre>$ ls /somedir | grep '.txt$'</pre>\n\nSollte alle Dateien zurückgeben, die mit .txt in somedir enden.",
+  "exercise": "Sie haben vielleicht von egrep oder fgrep gehört, diese sind veraltete grep-Aufrufe und wurden inzwischen durch grep -E und grep -F ersetzt. Lesen Sie die grep-Manpage, um mehr zu erfahren.",
+  "quizQuestion": "Welchen Befehl verwenden Sie, um ein bestimmtes Muster zu finden?",
+  "quizAnswer": "grep",
+  "slug": "grepcommand"
+}

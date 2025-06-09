@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Vim-Bearbeitung",
+  "lessonContent": "Jetzt, da wir ein paar Zeilen geschrieben haben, wollen wir sie etwas bearbeiten und einige überflüssige Dinge entfernen.<br><p></p><ul><br><li>x - wird verwendet, um den ausgewählten Text zu schneiden, auch zum Löschen von Zeichen</li><br><li>dd - wird verwendet, um die aktuelle Zeile zu löschen</li><br><li>y - kopiert oder kopiert das ausgewählte Element</li><br><li>yy - kopiert oder kopiert die aktuelle Zeile</li><br><li>p - fügt den kopierten Text vor dem Cursor ein</li><br></ul><p></p>",
+  "exercise": "Ich weiß, dass diese Lektion einige Eigenheiten hinzugefügt hat, öffnen Sie einen Texteditor und experimentieren Sie mit diesen.",
+  "quizQuestion": "Welches Zeichen wird verwendet, um eine ganze Zeile zu löschen?",
+  "quizAnswer": "dd",
+  "slug": "vimediting"
+}

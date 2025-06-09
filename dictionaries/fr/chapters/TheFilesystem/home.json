@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "title": "Le système de fichiers",
+  "description": "Apprenez-en davantage sur le système de fichiers Linux, les différents types de systèmes de fichiers, le partitionnement et plus encore.",
+  "image": "/images/chapters/filesystem.png",
+  "slug": "thesystemedefichiers"
+}

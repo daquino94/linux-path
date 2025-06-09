@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Setgid",
+  "lessonContent": "Аналогично биту разрешения установки ID пользователя существует бит разрешения установки ID группы (SGID). Этот бит позволяет программе запускаться, как если бы она была членом этой группы. \n\nДавайте рассмотрим один пример: \n\n<pre>$ ls -l /usr/bin/wall\n-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall\n</pre>\n\nТеперь мы видим, что бит разрешения находится в групповом наборе разрешений. \n\n<b>Изменение SGID</b>\n\n<pre>$ sudo chmod g+s myfile\n$ sudo chmod 2555 myfile\n</pre>\n\nЧисловое представление для SGID - 2.",
+  "exercise": "Урок не содержит упражнений.",
+  "quizQuestion": "Какое число представляет SGID?",
+  "quizAnswer": "2",
+  "slug": "setgidsetgroupid"
+}

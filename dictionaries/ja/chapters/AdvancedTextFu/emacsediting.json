@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Emacs Editing",
+  "lessonContent": "<b>テキストナビゲーション</b>\n\n<pre>\nC-up arrow : 段落を1つ上に移動\nC-down arrow: 段落を1つ下に移動\nC-left arrow: 単語を1つ左に移動\nC-right arrow: 単語を1つ右に移動\nM-> : バッファの末尾に移動\n</pre>\n\nテキストナビゲーションを使用すると、通常のテキストボタン（home、end、page up、page down、矢印キーなど）が正しく機能します。\n\n<b>切り取りと貼り付け</b>\n\nEmacsで切り取り（kill）または貼り付け（yank）を行うには、まずテキストを選択できる必要があります。 テキストを選択するには、カーソルを切り取るまたは貼り付けたい場所に移動し、<pre>C-space キー</pre>を押してから、テキストを選択するためにナビゲーションキーを使用できます。 これで、次のように切り取りと貼り付けを行うことができます：\n\n<pre>\nC-w : 切り取り\nC-y : 貼り付け\n</pre>",
+  "exercise": "テキストナビゲーションを試してみてください。",
+  "quizQuestion": "バッファの末尾に移動する方法は？",
+  "quizAnswer": "M->",
+  "slug": "emacsediting"
+}

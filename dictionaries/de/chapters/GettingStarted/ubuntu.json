@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Ubuntu",
+  "lessonContent": "<b>Überblick</b>\nEine der beliebtesten Linux-Distributionen für persönliche Computer ist Ubuntu. Ubuntu veröffentlicht auch standardmäßig seinen eigenen Desktop-Umgebung-Manager Unity. \n\n<b>Paketverwaltung</b>\nUbuntu ist ein auf Debian basierendes Betriebssystem, das von Canonical entwickelt wurde. Es verwendet daher ein Kern-Debian-Paketverwaltungssystem.\n\n<b>Konfigurierbarkeit</b>\nUbuntu ist eine großartige Wahl für Anfänger, die in Linux einsteigen möchten. Ubuntu bietet Benutzerfreundlichkeit und eine großartige Benutzeroberfläche, was zu seiner weiten Verbreitung geführt hat. Es wird weit verbreitet und unterstützt und ist in Bezug auf die Benutzerfreundlichkeit den meisten anderen Betriebssystemen wie OSX und Windows ähnlich.\n\n<b>Verwendungen</b>\nGroßartig für jede Plattform, Desktop, Laptop und Server.",
+  "exercise": "Wenn Sie daran interessiert sind, Ubuntu als Ihr Betriebssystem zu haben, gehen Sie zum Installationsabschnitt und probieren Sie es aus: \n<a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>",
+  "quizQuestion": "Worin basiert das Betriebssystem Ubuntu?",
+  "quizAnswer": "Debian",
+  "slug": "ubuntu"
+}

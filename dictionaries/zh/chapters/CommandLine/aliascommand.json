@@ -1,0 +1,9 @@
+{
+  "id": 18,
+  "title": "别名",
+  "lessonContent": "有时输入命令可能会变得非常重复，或者如果您需要多次输入一个长命令，最好为此设置一个别名。要为命令创建别名，您只需指定一个别名并将其设置为该命令。\n\n<pre>$ alias foobar='ls -la'</pre>\n\n现在，您可以输入 foobar 而不是 ls -la，它将执行该命令，非常方便。请记住，此命令在重新启动后不会保存您的别名，因此您需要在以下位置添加永久别名：\n\n<pre>~/.bashrc</pre>\n\n或者类似的文件，如果您希望在重新启动后保留它。\n\n您可以使用 unalias 命令删除别名：\n\n<pre>$ unalias foobar</pre>",
+  "exercise": "创建一些别名，然后删除它们。",
+  "quizQuestion": "用于创建别名的命令是什么？",
+  "quizAnswer": "alias",
+  "slug": "aliascommand"
+}

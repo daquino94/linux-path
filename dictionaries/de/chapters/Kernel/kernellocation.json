@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Kernel-Standort",
+  "lessonContent": "Was passiert, wenn Sie einen neuen Kernel installieren? Nun, es fügt tatsächlich ein paar Dateien zu Ihrem System hinzu, diese Dateien werden normalerweise dem /boot-Verzeichnis hinzugefügt. \n\nSie werden mehrere Dateien für verschiedene Kernel-Versionen sehen:\n\n<ul>\n<li>vmlinuz - dies ist der tatsächliche Linux-Kernel</li>\n<li>initrd - wie wir zuvor besprochen haben, wird das initrd als temporäres Dateisystem verwendet, bevor der Kernel geladen wird</li>\n<li>System.map - symbolische Suchtabelle</li>\n<li>config - Kernel-Konfigurationseinstellungen, wenn Sie Ihren eigenen Kernel kompilieren, können Sie festlegen, welche Module geladen werden können</li>\n</ul>\n\nWenn Ihr /boot-Verzeichnis keinen Platz mehr hat, können Sie immer alte Versionen dieser Dateien löschen oder einfach einen Paketmanager verwenden, aber seien Sie vorsichtig bei der Wartung in diesem Verzeichnis und löschen Sie nicht versehentlich den Kernel, den Sie verwenden.",
+  "exercise": "Gehen Sie in Ihr Boot-Verzeichnis und sehen Sie, welche Dateien sich darin befinden.",
+  "quizQuestion": "Wie heißt das Kernel-Abbild in /boot?",
+  "quizAnswer": "vmlinuz",
+  "slug": "kernellocation"
+}

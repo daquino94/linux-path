@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "stderr (标准错误)",
+  "lessonContent": "现在让我们尝试一些略有不同的东西，尝试列出系统中不存在的目录的内容，并再次将输出重定向到 peanuts.txt 文件。\n\n<pre>$ ls /fake/directory > peanuts.txt </pre>\n\n你应该看到的是：\n\n<pre>ls: 无法访问 /fake/directory: 没有那个文件或目录</pre>\n\n现在你可能在想，难道这条消息不应该被发送到文件中吗？实际上这里还有另一个 I/O 流在起作用，称为标准错误（stderr）。默认情况下，stderr 也会将其输出发送到屏幕上，它是一个完全不同于 stdout 的流。因此，你需要以不同的方式重定向其输出。\n\n不幸的是，重定向器不像使用 <b>&lt;</b> 或 <b>&gt;</b> 那样简单。我们将不得不使用文件描述符。文件描述符是用于访问文件或流的非负数。稍后我们将深入讨论这一点，但现在要知道 stdin、stdout 和 stderr 的文件描述符分别是 0、1 和 2。\n\n因此，如果我们现在想将 stderr 重定向到文件中，可以这样做：\n\n<pre>$ ls /fake/directory 2> peanuts.txt</pre>\n\n你应该在 peanuts.txt 文件中看到只有 stderr 消息。\n\n那么如果我想在 peanuts.txt 文件中看到 stderr 和 stdout 两者的输出呢？也可以使用文件描述符来实现：\n\n<pre>$ ls /fake/directory > peanuts.txt 2>&1</pre>\n\n这将 ls /fake/directory 的结果发送到 peanuts.txt 文件，然后通过 2>&1 将 stderr 重定向到 stdout。这里操作的顺序很重要，2>&1 将 stderr 发送到 stdout 指向的位置。在这种情况下，stdout 指向一个文件，因此 2>&1 也将 stderr 发送到文件中。因此，如果你打开 peanuts.txt 文件，你应该可以看到 stderr 和 stdout。在我们的情况下，上述命令只输出 stderr。\n\n还有一种更简洁的方式可以将 stdout 和 stderr 都重定向到一个文件中：\n\n<pre>$ ls /fake/directory &> peanuts.txt</pre>\n\n那么如果我不想要任何杂乱信息，想要完全摆脱 stderr 消息呢？你也可以将输出重定向到一个名为 /dev/null 的特殊文件中，它会丢弃任何输入。\n\n<pre>$ ls /fake/directory 2> /dev/null</pre>",
+  "exercise": "以下命令是在做什么？\n\n<pre>$ ls /fake/directory >> /dev/null 2>&1</pre>",
+  "quizQuestion": "stderr 的重定向器是什么？",
+  "quizAnswer": "2>",
+  "slug": "stderrstandarderrorredirect"
+}

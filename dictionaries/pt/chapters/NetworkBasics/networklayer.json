@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Camada de Rede",
+  "lessonContent": "A camada de rede determina o roteamento dos nossos pacotes do nosso host de origem para um host de destino. Felizmente, em nosso exemplo, nosso pacote está viajando apenas dentro da mesma rede, mas a Internet é composta por muitas redes. Essas redes menores que compõem a Internet são conhecidas como sub-redes. Todas as sub-redes se conectam de alguma forma, por isso conseguimos acessar www.google.com mesmo que esteja em sua própria rede. Não entrarei em detalhes, pois temos um curso inteiro dedicado às sub-redes, mas por enquanto, em relação à nossa camada de rede, saiba que os endereços IP definem as regras para viajar para diferentes sub-redes. \n\nNa camada de rede, ela recebe o segmento vindo da camada de transporte e encapsula esse segmento em um pacote IP, em seguida, anexa o endereço IP do host de origem e o endereço IP do host de destino ao cabeçalho do pacote. Neste ponto, nosso pacote tem informações sobre para onde está indo e de onde veio. Agora ele envia nosso pacote para a camada de hardware físico.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Como são chamadas as redes menores que compõem a Internet?",
+  "quizAnswer": "sub-redes",
+  "slug": "camadaderede"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "rm (删除)",
+  "lessonContent": "现在我觉得我们有太多文件了，让我们删除一些文件。要删除文件，您可以使用 rm 命令。rm（remove）命令用于删除文件和目录。\n\n<pre>$ rm file1</pre>\n\n使用 rm 时要小心，没有神奇的垃圾桶可以找回已删除的文件。一旦删除，它们就永远消失了，所以要小心。\n\n幸运的是，已经实施了一些安全措施，所以普通用户不能轻易删除一堆重要文件。受写保护的文件在删除之前会提示您确认。如果一个目录受写保护，也不会轻易被删除。\n\n现在如果您不在乎这些，您绝对可以删除一堆文件。\n\n<pre>$ rm -f file1</pre>\n\n-f 或 force 选项告诉 rm 删除所有文件，无论它们是否受写保护，而不会提示用户（只要您具有适当的权限）。\n\n<pre>$ rm -i file</pre>\n\n像许多其他命令一样，添加 -i 标志将提示您是否要实际删除文件或目录。\n\n<pre>$ rm -r directory</pre>\n\n默认情况下无法直接 rm 目录，您需要添加 -r 标志（递归）以删除所有文件和可能存在的任何子目录。\n\n您可以使用 rmdir 命令删除目录。\n\n<pre>$ rmdir directory</pre>",
+  "exercise": "<ol>\n<li>创建一个名为 -file 的文件（不要忘记破折号！）。</li>\n<li>删除该文件。</li>\n</ol>",
+  "quizQuestion": "如何删除名为 myfile 的文件？",
+  "quizAnswer": "",
+  "slug": "removermcommand"
+}

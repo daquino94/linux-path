@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Outils de gestion des utilisateurs",
+  "lessonContent": "La plupart des environnements d'entreprise utilisent des systèmes de gestion pour gérer les utilisateurs, les comptes et les mots de passe. Cependant, sur un ordinateur individuel, il existe des commandes utiles à exécuter pour gérer les utilisateurs.\n\n<b>Ajout d'utilisateurs</b>\n\nVous pouvez utiliser la commande adduser ou useradd. La commande adduser contient des fonctionnalités plus utiles telles que la création d'un répertoire personnel et plus encore. Il existe des fichiers de configuration pour l'ajout de nouveaux utilisateurs qui peuvent être personnalisés en fonction de ce que vous souhaitez allouer à un utilisateur par défaut. \n\n<pre>$ sudo useradd bob</pre>\n\nVous verrez que la commande ci-dessus crée une entrée dans /etc/passwd pour bob, configure des groupes par défaut et ajoute une entrée au fichier /etc/shadow.\n\n<b>Suppression d'utilisateurs</b>\n\nPour supprimer un utilisateur, vous pouvez utiliser la commande userdel.\n\n<pre>$ sudo userdel bob</pre>\n\nCela fait essentiellement de son mieux pour annuler les modifications de fichier effectuées par useradd.\n\n<b>Changement de mots de passe</b>\n\n<pre>$ passwd bob</pre>\n\nCela vous permettra de changer le mot de passe de vous-même ou d'un autre utilisateur (si vous êtes root).",
+  "exercise": "Créez un nouvel utilisateur, puis changez son mot de passe et connectez-vous en tant que nouvel utilisateur.",
+  "quizQuestion": "Quelle commande est utilisée pour changer un mot de passe?",
+  "quizAnswer": "passwd",
+  "slug": "outilsdegestiondesutilisateurs"
+}

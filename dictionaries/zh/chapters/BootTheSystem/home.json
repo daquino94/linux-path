@@ -1,0 +1,7 @@
+{
+  "id": 11,
+  "title": "启动系统",
+  "description": "了解 Linux 启动过程的各个阶段。",
+  "image": "/images/chapters/boot.png",
+  "slug": "bootthesystem"
+}

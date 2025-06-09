@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "pwd (Print Working Directory)",
+  "lessonContent": "Tudo no Linux é um arquivo. Conforme você mergulha mais fundo no Linux, você vai entender isso, mas por enquanto apenas mantenha isso em mente. Cada arquivo é organizado dentro de uma árvore de diretórios hierárquica. O primeiro diretório no sistema de arquivos é adequadamente chamado de 'diretório raiz'. O diretório raiz tem muitas pastas e arquivos, nos quais você pode armazenar mais pastas e arquivos, e assim por diante. Aqui está um exemplo de como a árvore de diretórios se parece: \n\n<pre>/\n|-- bin\n|   |-- arquivo1\n|   |-- arquivo2\n|-- etc\n|   |-- arquivo3\n|   `-- diretório1\n|       |-- arquivo4\n|       `-- arquivo5\n|-- home\n|-- var\n</pre>\n\nAs localizações desses arquivos e diretórios são referidas como 'caminhos'. Se você tivesse uma pasta chamada 'home' que tivesse uma pasta dentro dela chamada 'pete' e outra pasta nessa pasta chamada 'Filmes', esse caminho se pareceria com isso: '/home/pete/Filmes'. Bastante simples, não é?\n\nNavegar no sistema de arquivos, assim como navegar na vida real, é mais fácil se você souber onde está e para onde está indo. Para ver onde você está, você pode usar o comando 'pwd'. Esse comando significa “print working directory” e mostra em qual diretório você está. Note que o caminho se origina do diretório raiz.\n\n<pre>$ pwd</pre>\n\nOnde você está? Onde estou? Experimente.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Como eu descubro em qual diretório você está atualmente?",
+  "quizAnswer": "pwd",
+  "slug": "comandoprintworkingdirectorypwd"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Protocolo de puerta de enlace de borde",
+  "lessonContent": "El último protocolo importante que discutiremos es BGP, BGP es básicamente cómo funciona Internet. Se utiliza para recopilar e intercambiar información de enrutamiento entre sistemas autónomos. Piense en un sistema autónomo como un proveedor de servicios de Internet, una empresa, una universidad, cualquier organización, etc. Sin BGP, estos sistemas no sabrían cómo comunicarse entre sí, simplemente estarían aislados. En lugar de enrutamiento dentro de estos sistemas autónomos, BGP enruta entre ellos.\n\nDigamos que estás en tu red doméstica y yo estoy trabajando desde Starbucks, quiero poder comunicarme contigo, así que envío un correo electrónico y el paquete de red viaja a través de la red de Starbucks, rebota allí y atraviesa las tablas de enrutamiento en la red de Starbucks hasta que finalmente llega a un punto en el borde de la red de Starbucks y lo pasa a un enrutador de puerta de enlace de borde. Este enrutador contiene la información para que mi paquete salga de la red de Starbucks y atraviese otras redes.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Qué protocolo hace básicamente que funcione Internet?",
+  "quizAnswer": "BGP",
+  "slug": "protocolodepuertadeenlacedebordebgp"
+}

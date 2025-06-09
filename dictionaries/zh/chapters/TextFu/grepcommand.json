@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "grep",
+  "lessonContent": "grep命令可能是您将使用的最常见的文本处理命令。它允许您搜索文件以查找与某种模式匹配的字符。如果您想知道某个目录中是否存在文件，或者想知道文件中是否找到了某个字符串，您肯定不会逐行查找文本，而会使用grep！\n\n让我们以sample.txt文件为例：\n\n<pre>$ grep fox sample.txt</pre>\n\n您应该看到grep在sample.txt文件中找到了fox。\n\n您还可以使用-i标志搜索不区分大小写的模式：\n\n<pre>$ grep -i somepattern somefile</pre>\n\n要使grep更加灵活，您可以将其与其他命令结合使用|。\n\n<pre>$ env | grep -i User</pre>\n\n正如您所看到的，grep非常灵活。您甚至可以在模式中使用正则表达式：\n\n<pre>$ ls /somedir | grep '.txt$'</pre>\n\n应返回以.txt结尾的所有文件在somedir中。",
+  "exercise": "您可能听说过egrep或fgrep，这些是已弃用的grep调用，现已由grep -E和grep -F取代。阅读grep手册以了解更多信息。",
+  "quizQuestion": "您使用哪个命令来查找特定模式？",
+  "quizAnswer": "grep",
+  "slug": "grepcommand"
+}

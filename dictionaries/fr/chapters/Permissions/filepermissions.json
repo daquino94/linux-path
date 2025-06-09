@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Permissions de fichier",
+  "lessonContent": "Comme nous l'avons appris précédemment, les fichiers ont différentes permissions ou modes de fichier. Regardons un exemple:\n\n<pre>$ ls -l Desktop/\ndrwxr-xr-x 2 pete penguins 4096 Dec 1 11:45 .\n</pre>\n\nIl y a quatre parties dans les permissions d'un fichier. La première partie est le type de fichier, qui est indiqué par le premier caractère des permissions, dans notre cas puisque nous regardons un répertoire, il affiche <b>d</b> pour le type de fichier. Le plus souvent, vous verrez un <b>-</b> pour un fichier régulier. \n\nLes trois parties suivantes du mode de fichier sont les permissions réelles. Les permissions sont regroupées par 3 bits chacune. Les 3 premiers bits sont les permissions de l'utilisateur, puis les permissions de groupe et enfin les permissions des autres. J'ai ajouté le trait vertical pour faciliter la différenciation.\n\n<pre>d | rwx | r-x | r-x </pre>\n\nChaque caractère représente une permission différente: \n<ul>\n<li>r: lisible</li>\n<li>w: inscriptible</li>\n<li>x: exécutable (essentiellement un programme exécutable)</li>\n<li>-: vide</li>\n</ul>\n\nAinsi, dans l'exemple ci-dessus, nous voyons que l'utilisateur pete a les permissions de lecture, écriture et exécution sur le fichier. Le groupe penguins a les permissions de lecture et d'exécution. Et enfin, les autres utilisateurs (tout le monde) ont les permissions de lecture et d'exécution.",
+  "exercise": "Utilisez la commande ls -l sur plusieurs fichiers et récitez leurs permissions, utilisateur et groupe.",
+  "quizQuestion": "Quel bit de permission est utilisé pour l'exécution?",
+  "quizAnswer": "x",
+  "slug": "permissionsdefichier"
+}

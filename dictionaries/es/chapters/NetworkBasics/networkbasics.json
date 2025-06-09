@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Conceptos básicos de redes",
+  "lessonContent": "Veamos una red doméstica típica, tienes algunos componentes diferentes. \n\n<ul>\n<li>ISP - Tu proveedor de servicios de Internet, la empresa a la que pagas para tener Internet en tu casa.</li>\n<li>Router - El router permite que cada máquina de tu red se conecte a Internet. En la mayoría de los routers modernos, puedes conectarte de forma inalámbrica o a través de un cable Ethernet.</li>\n<li>WAN - Red de Área Amplia, así es como llamamos a la red que abarca todo entre tu router y una red más amplia como Internet.</li>\n<li>WLAN - Red de Área Local Inalámbrica, esta es la red entre tu router y cualquier dispositivo inalámbrico que puedas tener, como laptops.</li>\n<li>LAN - Red de Área Local, esta es la red entre tu router y cualquier dispositivo cableado como PCs de escritorio.</li>\n<li>Hosts - Cada máquina en una red se conoce como un host.</li>\n</ul>\n\nLos datos e información que se transmiten a través de las redes se conocen como paquetes y al final de la sección de Networking Nomad, entenderás en detalle cómo viaja un paquete hacia y desde los hosts.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cómo se conoce a la red de área local?",
+  "quizAnswer": "LAN",
+  "slug": "conceptosred"
+}

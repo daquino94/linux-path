@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Border Gateway Protocol",
+  "lessonContent": "Das letzte wichtige Protokoll, über das wir sprechen werden, ist BGP. BGP ist im Grunde genommen, wie das Internet funktioniert. Es wird verwendet, um Routing-Informationen zwischen autonomen Systemen zu sammeln und auszutauschen. Denken Sie an ein autonomes System als einen Internetdienstanbieter, ein Unternehmen, eine Universität, eine Organisation usw. Ohne BGP würden diese Systeme nicht wissen, wie sie miteinander kommunizieren sollen, sie wären einfach isoliert. Anstatt Routing innerhalb dieser autonomen Systeme durchzuführen, routet BGP zwischen ihnen.\n\nAngenommen, Sie sind in Ihrem Heimnetzwerk und ich arbeite von Starbucks aus. Ich möchte in der Lage sein, mit Ihnen zu kommunizieren, also sende ich eine E-Mail und das Netzwerkpaket durchläuft das Netzwerk von Starbucks, springt dort herum und durchläuft die Routing-Tabellen im Netzwerk von Starbucks, bis es schließlich einen Punkt am Rand des Starbucks-Netzwerks erreicht und an einen Border Gateway-Router weitergibt. Dieser Router enthält die Informationen für mein Paket, um das Starbucks-Netzwerk zu verlassen und andere Netzwerke zu durchqueren.",
+  "exercise": "Für diese Lektion gibt es keine Übungen.",
+  "quizQuestion": "Welches Protokoll macht im Wesentlichen das Internet aus?",
+  "quizAnswer": "BGP",
+  "slug": "bgpbordergatewayprotocol"
+}

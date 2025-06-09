@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Surveillance de la mémoire",
+  "lessonContent": "En plus de la surveillance du processeur et de la surveillance des E/S, vous pouvez surveiller votre utilisation de la mémoire avec <b>vmstat</b>\n\n<pre>\npete@icebox:~$ vmstat\nprocs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\n r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st\n 1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0\n</pre>\n\nLes champs sont les suivants:\n\n<b>procs</b>\n<ul>\n<li>r - Nombre de processus en cours d'exécution</li>\n<li>b - Nombre de processus en sommeil non interruptible</li>\n</ul>\n\n<b>mémoire</b>\n<ul>\n<li>swpd - Quantité de mémoire virtuelle utilisée</li>\n<li>free - Quantité de mémoire libre</li>\n<li>buff - Quantité de mémoire utilisée comme tampons</li>\n<li>cache - Quantité de mémoire utilisée comme cache</li>\n</ul>\n\n<b>swap</b>\n<ul>\n<li>si - Quantité de mémoire échangée depuis le disque</li>\n<li>so - Quantité de mémoire échangée vers le disque</li>\n</ul>\n\n<b>io</b>\n<ul>\n<li>bi - Quantité de blocs reçus depuis un périphérique de blocs</li>\n<li>bo - Quantité de blocs envoyés vers un périphérique de blocs</li>\n</ul>\n\n<b>système</b>\n<ul>\n<li>in - Nombre d'interruptions par seconde</li>\n<li>cs - Nombre de changements de contexte par seconde</li>\n</ul>\n\n<b>cpu</b>\n<ul>\n<li>us - Temps passé en temps utilisateur</li>\n<li>sy - Temps passé en temps noyau</li>\n<li>id - Temps passé inactif</li>\n<li>wa - Temps passé en attente d'E/S</li>\n</ul>",
+  "exercise": "Regardez votre utilisation de la mémoire avec vmstat.",
+  "quizQuestion": "Quel outil est utilisé pour visualiser l'utilisation de la mémoire?",
+  "quizAnswer": "vmstat",
+  "slug": "surveillancememoire"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "ps (进程)",
+  "lessonContent": "进程是在您的计算机上运行的程序。它们由内核管理，每个进程都有一个与之关联的 ID，称为 <b>进程 ID（PID）</b>。此 PID 是按照创建进程的顺序分配的。\n\n继续运行 ps 命令以查看正在运行的进程列表：\n\n<pre>$ ps\n\nPID        TTY     STAT   TIME          CMD\n41230    pts/4    Ss        00:00:00     bash\n51224    pts/4    R+        00:00:00     ps\n</pre>\n\n这显示了当前进程的快照：\n\n<ul>\n<li>PID: 进程 ID</li>\n<li>TTY: 与进程关联的控制终端（稍后我们将详细介绍）</li>\n<li>STAT: 进程状态代码</li>\n<li>TIME: 总 CPU 使用时间</li>\n<li>CMD: 可执行文件/命令的名称</li>\n</ul>\n\n如果查看 ps 的 man 手册，您会看到可以传递许多命令选项，这些选项将根据您要使用的选项（BSD、GNU 或 Unix）而变化。在我看来，BSD 风格更受欢迎，因此我们将使用它。如果您好奇各种风格之间的区别是使用的破折号数量和标志。\n\n<pre>$ ps aux</pre>\n\n<b>a</b> 显示所有正在运行的进程，包括其他用户运行的进程。 <b>u</b> 显示有关进程的更多详细信息。最后，<b>x</b> 列出所有没有与之关联的 TTY 的进程，这些程序在 TTY 字段中显示为 ?，它们在作为系统启动的一部分启动的守护进程中最常见。\n\n现在您会注意到看到了更多字段，无需记住它们全部，在稍后关于高级进程的课程中，我们将再次介绍其中一些：\n\n<ul>\n<li>USER: 有效用户（我们正在使用其访问权限的用户）</li>\n<li>PID: 进程 ID</li>\n<li>%CPU: 使用的 CPU 时间除以进程运行时间</li>\n<li>%MEM: 进程的常驻集大小与计算机上的物理内存的比率</li>\n<li>VSZ: 整个进程的虚拟内存使用量</li>\n<li>RSS: 常驻集大小，任务使用的未交换物理内存</li>\n<li>TTY: 与进程关联的控制终端</li>\n<li>STAT: 进程状态代码</li>\n<li>START: 进程的启动时间</li>\n<li>TIME: 总 CPU 使用时间</li>\n<li>COMMAND: 可执行文件/命令的名称</li>\n</ul>\n\nps 命令可能会有点混乱，目前我们将主要查看 PID、STAT 和 COMMAND 字段。\n\n另一个非常有用的命令是 <b>top</b> 命令，top 提供有关系统上运行的进程的实时信息，而不是快照。默认情况下，您每 10 秒刷新一次。Top 是一个非常有用的工具，可以查看哪些进程占用了大量资源。\n\n<pre>$ top</pre>",
+  "exercise": "使用带有不同标志的 ps 命令，看看输出如何变化。",
+  "quizQuestion": "用于查看有关进程的详细信息的 ps 标志是什么？",
+  "quizAnswer": "u",
+  "slug": "monitorprocessespscommand"
+}

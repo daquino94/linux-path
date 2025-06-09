@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Registo de Autenticação",
+  "lessonContent": "O registo de autenticação pode ser muito útil para analisar se está a ter problemas ao iniciar sessão. \n\n<b>/var/log/auth.log</b>\n\nEste ficheiro contém registos de autorização do sistema, como o início de sessão do utilizador e o método de autenticação utilizado. \n\nExcerto de exemplo:\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "Faça algumas tentativas de início de sessão falhadas e depois uma bem-sucedida, verifique o seu /var/log/auth.log e veja o que aconteceu.",
+  "quizQuestion": "Que registo é utilizado para autenticação de utilizador?",
+  "quizAnswer": "auth.log",
+  "slug": "authenticationlogging"
+}

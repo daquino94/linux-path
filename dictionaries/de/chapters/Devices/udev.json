@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "udev",
+  "lessonContent": "Früher und auch heute, wenn Sie wirklich wollten, würden Sie Geräteknoten mit einem Befehl wie diesem erstellen: \n\n<pre>$ mknod /dev/sdb1 b 8 3</pre>\n\nDieser Befehl erstellt einen Geräteknoten /dev/sdb1 und macht ihn zu einem Blockgerät (b) mit einer Hauptnummer von 8 und einer Nebennummer von 3.\n\nUm ein Gerät zu entfernen, würden Sie einfach die Gerätedatei im /dev-Verzeichnis löschen. \n\nGlücklicherweise müssen wir das heute nicht mehr tun, dank udev. Das udev-System erstellt und entfernt dynamisch Gerätedateien für uns, je nachdem, ob sie verbunden sind oder nicht. Es gibt einen udevd-Dämon, der auf dem System läuft und auf Nachrichten vom Kernel über angeschlossene Geräte hört. Udevd wird diese Informationen analysieren und mit den Regeln abgleichen, die in /etc/udev/rules.d festgelegt sind. Abhängig von diesen Regeln wird es höchstwahrscheinlich Geräteknoten und symbolische Links für die Geräte erstellen. Sie können Ihre eigenen udev-Regeln schreiben, aber das ist etwas außerhalb des Rahmens dieses Unterrichts. Glücklicherweise enthält Ihr System bereits viele udev-Regeln, sodass Sie wahrscheinlich nie Ihre eigenen schreiben müssen.\n\nSie können auch die udev-Datenbank und sysfs mit dem <b>udevadm</b>-Befehl anzeigen. Dieses Tool ist sehr nützlich, kann aber manchmal sehr verworren sein. Ein einfacher Befehl, um Informationen für ein Gerät anzuzeigen, wäre:\n\n<pre>$ udevadm info --query=all --name=/dev/sda</pre>",
+  "exercise": "Führen Sie den angegebenen udevadm-Befehl aus und überprüfen Sie die Ausgabe.",
+  "quizQuestion": "Was fügt Geräte dynamisch hinzu und entfernt sie wieder?",
+  "quizAnswer": "udev",
+  "slug": "udev"
+}

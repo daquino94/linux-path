@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Systemd Goals",
+  "lessonContent": "我们不会深入讨论编写 systemd 单元文件的细节。但我们会简要概述一个单元文件以及如何手动控制单元。\n\n这是一个基本的服务单元文件：foobar.service\n\n<pre>\n[Unit]\nDescription=My Foobar\nBefore=bar.target\n\n[Service]\nExecStart=/usr/bin/foobar\n\n[Install]\nWantedBy=multi-user.target\n</pre>\n\n这是一个简单的服务目标，在文件开头我们看到了 [Unit] 部分，这使我们能够为我们的单元文件提供描述，并控制激活单元的顺序。接下来是 [Service] 部分，在这里我们可以启动、停止或重新加载服务。[Install] 部分用于依赖关系。这只是编写 systemd 文件的冰山一角，所以如果想了解更多，请务必阅读相关内容。\n\n现在，让我们来了解一些您可以与 systemd 单元一起使用的命令：\n\n<b>列出单元</b>\n\n<pre>$ systemctl list-units</pre>\n\n<b>查看单元状态</b>\n\n<pre>$ systemctl status networking.service</pre>\n\n<b>启动服务</b>\n\n<pre>$ sudo systemctl start networking.service</pre>\n\n<b>停止服务</b>\n\n<pre>$ sudo systemctl stop networking.service</pre>\n\n<b>重启服务</b>\n\n<pre>$ sudo systemctl restart networking.service</pre>\n\n<b>启用单元</b>\n\n<pre>$ sudo systemctl enable networking.service</pre>\n\n<b>禁用单元</b>\n\n<pre>$ sudo systemctl disable networking.service</pre>\n\n再次强调，您尚未了解 systemd 的深度，所以如果想了解更多，请深入研究。",
+  "exercise": "查看单元状态并启动和停止一些服务。您观察到了什么？",
+  "quizQuestion": "启动名为 peanut.service 的服务的命令是什么？",
+  "quizAnswer": "sudo systemctl start peanut.service",
+  "slug": "systemdgoals"
+}

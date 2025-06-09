@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "title": "man",
+  "lessonContent": "天哪，我希望这些程序中有一些手册，这样我们就可以查看更多关于它们的信息。幸运的是它们确实有！被称为 man 页面，你可以使用 man 命令查看命令的手册。\n\n<pre>$ man ls</pre>\n\nMan 页面是默认内置在大多数 Linux 操作系统中的手册。它们提供有关命令和系统其他方面的文档。\n\n尝试在一些命令上使用它，以获取更多关于它们的信息。",
+  "exercise": "在 ls 命令上运行 man 命令。",
+  "quizQuestion": "如何查看命令的手册？",
+  "quizAnswer": "man",
+  "slug": "mancommand"
+}

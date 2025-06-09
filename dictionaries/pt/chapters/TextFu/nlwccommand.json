@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "wc and nl",
+  "lessonContent": "O comando wc (contagem de palavras) mostra a contagem total de palavras em um arquivo. \n\n<pre>$ wc /etc/passwd\n 96     265    5925 /etc/passwd\n</pre>\n\nEle exibe o número de linhas, número de palavras e número de bytes, respectivamente.\n\nPara ver apenas a contagem de um campo específico, use -l, -w ou -c, respectivamente. \n\n<pre>$ wc -l /etc/passwd\n96</pre>\n\nOutro comando que você pode usar para verificar a contagem de linhas em um arquivo é o comando nl (número de linhas). \n\n<pre>\nfile1.txt\ni\nlike\nturtles\n</pre>\n\n<pre>$ nl file1.txt\n1. i\n2. like\n3. turtles\n</pre>",
+  "exercise": "Como você obteria a contagem total de linhas usando o arquivo nl sem precisar procurar por toda a saída? Dica: Use alguns dos outros comandos que você aprendeu neste curso.",
+  "quizQuestion": "Que comando você usaria para obter o número total de palavras em um arquivo e apenas as palavras?",
+  "quizAnswer": "wc -w",
+  "slug": "nlwccommand"
+}

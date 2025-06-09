@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "lsof 和 fuser",
+  "lessonContent": "假设您插入了一个 USB 驱动器并开始处理一些文件，一旦完成后，您卸载 USB 设备时出现错误 \"设备或资源忙\"。您将如何找出仍在使用 USB 驱动器中的哪些文件？实际上，有两个工具可用于此：\n\n<b>lsof</b>\n\n请记住文件不仅仅是文本文件、图像等，它们是系统上的所有内容，磁盘、管道、网络套接字、设备等。要查看进程正在使用的内容，您可以使用 lsof 命令（缩写为 \"list open files\"），这将显示所有打开文件及其关联进程的列表。\n\n<pre>\npete@icebox:~$ lsof .\nCOMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME\nlxsession 1491 pete  cwd    DIR    8,6     4096  131 .\nupdate-no 1796 pete  cwd    DIR    8,6     4096  131 .\nnm-applet 1804 pete  cwd    DIR    8,6     4096  131 .\nindicator 1809 pete  cwd    DIR    8,6     4096  131 .\nxterm     2205 pete  cwd    DIR    8,6     4096  131 .\nbash      2207 pete  cwd    DIR    8,6     4096  131 .\nlsof      5914 pete  cwd    DIR    8,6     4096  131 .\nlsof      5915 pete  cwd    DIR    8,6     4096  131 .\n</pre>\n\n现在我可以看到哪些进程当前持有设备/文件。在我们的 USB 示例中，您还可以终止这些进程，以便卸载这个顽固的驱动器。\n\n<b>fuser</b>\n\n跟踪进程的另一种方法是使用 fuser 命令（缩写为 \"file user\"），这将显示使用文件或文件用户的进程的信息。\n\n<pre>\npete@icebox:~$ fuser -v .\n                     USER        PID ACCESS COMMAND\n/home/pete:         pete  1491 ..c.. lxsession\n                     pete  1796 ..c.. update-notifier\n                     pete  1804 ..c.. nm-applet\n                     pete  1809 ..c.. indicator-power\n                     pete  2205 ..c.. xterm\n                     pete  2207 ..c.. bash\n</pre>\n\n我们可以看到哪些进程当前正在使用我们的 /home/pete 目录。lsof 和 fuser 工具非常相似，请熟悉这些工具，并在下次需要跟踪文件或进程时尝试使用它们。",
+  "exercise": "阅读 lsof 和 fuser 的 man 手册，其中包含了我们未涵盖的许多信息，可以让您更灵活地使用这些工具。",
+  "quizQuestion": "用于列出打开文件及其进程信息的命令是什么？",
+  "quizAnswer": "lsof",
+  "slug": "trackingprocesseslsoffuser"
+}

@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "image": "/images/penguinLaptop.png",
+    "title": "Linuxの力を解放する",
+    "subtitle": "Linuxの世界に初めて足を踏み入れる多くの人々を助けてきたLinuxJourneyの新しい生活。"
+  },
+  "resources": {
+    "title": "リソース",
+    "hero": {
+      "image": "/images/penguinBook.png",
+      "title": "リソース",
+      "subtitle": "キュレーションされた書籍、チュートリアル、ツールを発見し、Linuxの知識を深める。"
+    },
+    "data": [
+      {
+        "image": "/images/link.png",
+        "title": "公式Ubuntuチュートリアル",
+        "description": "端末の歴史と基本コマンドの説明を行う初心者向けのステップバイステップガイド",
+        "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+      },
+      {
+        "image": "/images/link.png",
+        "title": "DigitalOcean",
+        "description": "端末の動作の明確な概要、コマンドの実行方法、ファイルシステムのナビゲーション方法。",
+        "href": "https://digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "How Linux Works",
+        "description": "最も高く評価されている本の1つ！",
+        "href": "https://www.amazon.com/gp/product/1593275676/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275676&linkCode=as2&tag=linuxjourne0c-20&linkId=a8c48da327d15530a7214f453d5a55da"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "UNIX and Linux System Administration Handbook",
+        "description": "すべてのSysAdminにとって非常に包括的な本。",
+        "href": "https://www.amazon.com/gp/product/0131480057/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0131480057&linkCode=as2&tag=linuxjourne0c-20&linkId=de7ed3d4e4bf2c29b637855e351cffd2"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "Linux Command Bible",
+        "description": "シェルスクリプトの包括的なガイド。",
+        "href": "https://www.amazon.com/gp/product/111898384X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=111898384X&linkCode=as2&tag=linuxjourne0c-20&linkId=41767d3a073f8d20ff0db23bb11a2ac7"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "The Linux Programming Interface: A Linux and UNIX System",
+        "description": "真剣なLinuxユーザー向け、カーネルプログラミングへの素晴らしいスタート。",
+        "href": "https://www.amazon.com/gp/product/1593272200/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593272200&linkCode=as2&tag=linuxjourne0c-20&linkId=5d63b12b27c4106a518799e42a9c379d"
+      }
+    ]
+  },
+  "chapterWrapper": {
+    "content": "コンテンツ",
+    "exerciseAndQuiz": "演習とクイズ"
+  },
+  "navbar": {
+    "siteName": "Linux Path",
+    "home": "ホーム",
+    "lessons": "レッスン",
+    "resources": "リソース",
+    "language": "言語"
+  },
+  "exerciseBox": {
+    "exercise": "演習"
+  },
+  "quizBox": {
+    "quiz": "クイズ",
+    "checkAnswer": "回答を確認",
+    "showCorrectAnswer": "正しい回答を表示",
+    "correctAnswer": "正解：",
+    "placeholderAnswer": "ここに回答を入力",
+    "nextLesson": "次のレッスン",
+    "backToChapters": "チャプターに戻る"
+  }
+}

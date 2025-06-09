@@ -1,0 +1,7 @@
+{
+  "id": 16,
+  "title": "Compartilhamento de Rede",
+  "description": "Aprenda sobre compartilhamento de rede com rsync, scp, nfs e mais.",
+  "image": "/images/chapters/networkSharing.png",
+  "slug": "networksharing"
+}

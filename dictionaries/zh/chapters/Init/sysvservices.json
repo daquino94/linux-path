@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "System V 服务",
+  "lessonContent": "有许多命令行工具可用于管理 Sys V 服务。\n\n<b>列出服务</b>\n\n<pre>$ service --status-all</pre>\n\n<b>启动服务</b>\n\n<pre>$ sudo service networking start</pre>\n\n<b>停止服务</b>\n\n<pre>$ sudo service networking stop</pre>\n\n<b>重启服务</b>\n\n<pre>$ sudo service networking restart</pre>\n\n这些命令不仅适用于 Sys V init 系统，您也可以使用这些命令来管理 Upstart 服务。由于 Linux 正在试图摆脱更传统的 Sys V init 脚本，因此仍有一些措施来帮助过渡。",
+  "exercise": "管理几个服务并更改它们的状态，您观察到了什么？",
+  "quizQuestion": "使用 Sys V，停止名为 peanut 的服务的命令是什么？",
+  "quizAnswer": "sudo service peanut stop",
+  "slug": "sysvservices"
+}

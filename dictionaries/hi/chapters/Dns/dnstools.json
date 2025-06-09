@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "DNS टूल्स",
+  "lessonContent": "<b>nslookup</b>\n\n\"नाम सर्वर लुकअप\" टूल रिसोर्स रिकॉर्ड के बारे में जानकारी प्राप्त करने के लिए नाम सर्वरों का प्रश्न करने के लिए प्रयोग किया जाता है। चलो देखते हैं कि google.com के नाम सर्वर कहाँ है:\n\n<pre>\npete@icebox:~$ nslookup www.google.com\nServer:         127.0.1.1\nAddress:        127.0.1.1#53\n\nNon-authoritative answer:\nName:   www.google.com\nAddress: 216.58.192.4\n</pre>\n\n<b>dig</b>\n\nDig (डोमेन इनफार्मेशन ग्रोपर) DNS नाम सर्वरों के बारे में जानकारी प्राप्त करने के लिए एक शक्तिशाली टूल है, यह nslookup से अधिक लचीला है और DNS समस्याओं के खोजने के लिए बहुत अच्छा है।\n\n\n<pre>\npete@icebox:~$ dig www.google.com\n\n; <<>> DiG 9.9.5-3-Ubuntu <<>> www.google.com\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42376\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; MBZ: 0005 , udp: 512\n;; QUESTION SECTION:\n;www.google.com.                        IN      A\n\n;; ANSWER SECTION:\nwww.google.com.         5       IN      A       74.125.239.147\nwww.google.com.         5       IN      A       74.125.239.144\nwww.google.com.         5       IN      A       74.125.239.146\nwww.google.com.         5       IN      A       74.125.239.145\nwww.google.com.         5       IN      A       74.125.239.148\n\n;; Query time: 27 msec\n;; SERVER: 127.0.1.1#53(127.0.1.1)\n;; WHEN: Sun Feb 07 10:14:00 PST 2016\n;; MSG SIZE  rcvd: 123\n</pre>",
+  "exercise": "dig के मैनपेज पर पढ़ाई करें।",
+  "quizQuestion": "DNS नाम सर्वरों के बारे में विस्तृत जानकारी प्राप्त करने के लिए कौन सा टूल प्रयोग किया जाता है?",
+  "quizAnswer": "dig",
+  "slug": "dnstools"
+}

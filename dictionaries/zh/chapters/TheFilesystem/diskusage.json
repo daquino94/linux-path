@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "磁盘使用情况",
+  "lessonContent": "有一些工具可用于查看磁盘的利用率：\n\n<pre>\npete@icebox:~$ df -h\nFilesystem     1K-blocks    Used Available Use% Mounted on\n/dev/sda1       6.2G  2.3G  3.6G  40% /\n</pre>\n\ndf 命令显示当前挂载的文件系统的利用情况。-h 标志提供人类可读的格式。您可以看到设备是什么，以及已使用和可用的容量。\n\n假设您的磁盘即将满，想知道哪些文件或目录占用了空间，您可以使用 <b>du</b> 命令。\n\n<pre>$ du -h</pre>\n\n这将显示您当前目录的磁盘使用情况，您可以使用 <b>du -h /</b> 查看根目录，但可能会有些混乱。\n\n这两个命令在语法上非常相似，很难记住应该使用哪个，要检查您的 <b>磁盘</b> 有多少是 <b>空闲</b>，请使用 df。要检查 <b>磁盘使用情况</b>，请使用 du。",
+  "exercise": "使用 du 和 df 查看您的磁盘使用情况和剩余空间。",
+  "quizQuestion": "用于显示磁盘上有多少空间是空闲的命令是？",
+  "quizAnswer": "df",
+  "slug": "diskusage"
+}

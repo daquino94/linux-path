@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "traceroute",
+  "lessonContent": "traceroute命令用于查看数据包的路由情况。它通过发送具有递增TTL值的数据包来工作，从1开始。因此，第一个路由器接收数据包，并将TTL值减少一，从而丢弃数据包。路由器发送一个ICMP超时消息回给我们。然后下一个数据包的TTL为2，因此它通过第一个路由器，但当它到达第二个路由器时，TTL为0，返回另一个ICMP超时消息。traceroute的工作方式是，当它发送和丢弃数据包时，它会构建数据包经过的路由器列表，直到最终到达目的地并收到ICMP回显回复消息。\n\n这里是traceroute的一个小片段：\n\n<pre>\n$ traceroute google.com\ntraceroute to google.com (216.58.216.174), 30 hops max, 60 byte packets\n 1  192.168.4.254 (192.168.4.254)  0.028 ms  0.009 ms  0.008 ms\n 2  100.64.1.113 (100.64.1.113)  1.227 ms  1.226 ms 0.920 ms\n 3  100.64.0.20 (100.64.0.20)  1.501 ms 1.556 ms  0.855 ms\n</pre>\n\n每行代表我和目标之间的一个路由器或机器。它显示目标的名称和其IP地址，最后三列对应到达该路由器的数据包的往返时间。默认情况下，我们沿路由发送三个数据包。",
+  "exercise": "在您的计算机上运行traceroute命令并观察输出。",
+  "quizQuestion": "在网络跳跃时会递减多少？",
+  "quizAnswer": "ttl",
+  "slug": "traceroute"
+}

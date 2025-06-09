@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Katze",
+  "lessonContent": "Wir sind fast fertig mit der Navigation durch Dateien, aber zuerst lernen wir, wie man eine Datei liest. Ein einfacher Befehl, den man verwenden kann, ist der Katzenbefehl, kurz für verketten. Er zeigt nicht nur den Dateiinhalt an, sondern kann auch mehrere Dateien kombinieren und dir deren Ausgabe anzeigen. \n\n<pre>$ cat hunddatei vogeldatei</pre>\n\nEr eignet sich nicht gut zum Anzeigen großer Dateien und ist nur für kurze Inhalte gedacht. Es gibt viele andere Tools, die wir verwenden, um größere Textdateien anzuzeigen, über die wir im nächsten Lektion sprechen werden.",
+  "exercise": "Führen Sie cat auf verschiedenen Dateien und Verzeichnissen aus. Versuchen Sie dann, mehrere Dateien zu caten.",
+  "quizQuestion": "Was ist eine gute Möglichkeit, den Inhalt einer Datei zu sehen?",
+  "quizAnswer": "cat",
+  "slug": "catcommand"
+}

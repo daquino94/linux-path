@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "नेटवर्क प्रबंधक",
+  "lessonContent": "बेशक, अगर आप चाहते हैं कि आपके सिस्टम का नेटवर्किंग स्वत: चालू और चल रहा हो, तो उसके लिए पहले से कुछ है। अधिकांश वितरण NetworkManager डेमन का उपयोग करते हैं ताकि वे अपने नेटवर्क को स्वत: से कॉन्फ़िगर कर सकें। \n\nआपको ध्यान देना चाहिए कि यदि आप GUI का उपयोग कर रहे हैं तो अपने डेस्कटॉप टास्कबार पर कहीं एक एप्लेट के रूप में NetworkManager को देखेंगे। जैसा कि आप देख सकते हैं, यह आपके नेटवर्क के हार्डवेयर और कनेक्शन सूचना का प्रबंधन करता है। उदाहरण के लिए, स्टार्टअप पर, NetworkManager नेटवर्क हार्डवेयर सूचना इकट्ठा करेगा, वायरलेस, वायर्ड आदि कनेक्शन्स के लिए खोजेगा और फिर इसे सक्रिय करेगा।\n\nNetworkManager के साथ बातचीत करने के लिए भी कमांड-लाइन टूल हैं:\n\n<b>nm-tool</b>\n\nnm-टूल NetworkManager की स्थिति और इसके डिवाइस की रिपोर्ट करता है\n\n<pre>\npete@icebox:/$ nm-tool\nNetworkManager Tool\n\nState: connected (global)\n\n- Device: eth0  [Wired connection 1] -------------------------------------------\n  Type:              Wired\n  Driver:            pcnet32\n  State:             connected\n  Default:           yes\n  HW Address:        12:3D:45:56:7D:CC\n\n  Capabilities:\n    Carrier Detect:  yes\n\n  Wired Properties\n    Carrier:         on\n\n  IPv4 Settings:\n    Address:         192.168.22.1\n    Prefix:          24 (255.255.255.0)\n    Gateway:         192.168.22.2\n\n    DNS:             192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nnmcli कमांड आपको NetworkManager को नियंत्रित और संशोधित करने की अनुमति देता है, अधिक विवरण के लिए मैनपेज देखें।",
+  "exercise": "इस पाठ के लिए कोई अभ्यास नहीं है।",
+  "quizQuestion": "नेटवर्क प्रबंधक सूचना देखने के लिए कौन सी कमांड है?",
+  "quizAnswer": "nm-tool",
+  "slug": "नेटवर्कमैनेजर"
+}

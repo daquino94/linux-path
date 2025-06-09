@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Trabalhos Cron",
+  "lessonContent": "Embora tenhamos falado sobre utilização de recursos, acho que este seria um bom momento para mencionar uma ferramenta interessante no Linux que é usada para agendar tarefas usando o cron. Existe um serviço que executa programas para você no horário que você agendar. Isso é realmente útil se você tem um script que deseja executar uma vez por dia e que precisa fazer algo por você. \n\nPor exemplo, vamos dizer que eu tenho um script localizado em /home/pete/scripts/change_wallpaper. Eu uso esse script todas as manhãs para mudar a imagem que uso como papel de parede, mas todas as manhãs tenho que executar manualmente esse script. Em vez disso, posso criar um trabalho cron que execute meu script através do cron. Posso especificar o horário em que quero que esse trabalho cron seja executado e executar meu script. \n\n<pre>30 08 * * * /home/pete/scripts/change_wallpaper</pre>\n\nOs campos são os seguintes da esquerda para a direita:\n<ul>\n<li>Minuto - (0-59)</li>\n<li>Hora - (0-23)</li>\n<li>Dia do mês - (1-31)</li>\n<li>Mês - (1-12)</li>\n<li>Dia da semana - (0-7). 0 e 7 são denotados como Domingo</li>\n</ul>\n\nO asterisco no campo significa corresponder a todos os valores. Portanto, no meu exemplo acima, quero que isso seja executado todos os dias em todos os meses às 8:30 da manhã.\n\nPara criar um trabalho cron, basta editar o arquivo crontab:\n\n<pre>crontab -e</pre>",
+  "exercise": "Crie um trabalho cron que você deseja executar em um horário agendado.",
+  "quizQuestion": "Qual é o comando para editar seus trabalhos cron?",
+  "quizAnswer": "crontab -e",
+  "slug": "cronjobs"
+}

@@ -44,7 +44,7 @@ Here are the exciting features coming to Linux Path:
 
 | Feature                 | Status |
 |-------------------------|--------|
-| Lesson generator script | 🔄     |
+| Lesson generator script | 📋     |
 | SSR                     | 📋     |
 | Dark Mode               | 📋     |
 | New Lessons             | 📋     |
@@ -62,13 +62,19 @@ Linux Path uses a sophisticated dictionary system for content management and int
 
 ### Dictionary Status
 
-| Language     | Status           | Completion       |
-|--------------|------------------|------------------|
-| 🇺🇸 English   | ✅ Complete      | 100% (Master)    |
-| 🇮🇹 Italian   | 🔄 In Progress   | ~30%             |
-| 🇩🇪 German    | 📋 Planned       | 0%               |
-| 🇫🇷 French    | 📋 Planned       | 0%               |
-| 🇪🇸 Spanish   | 📋 Planned       | 0%               |
+| Language      | Status         | Completion       |
+|---------------|----------------|------------------|
+| 🇺🇸 English    | ✅ Complete     | 100% (Master)    |
+| 🇮🇹 Italian    | 🔄 In Progress  | ~80%             |
+| 🇩🇪 German     | ✅ Complete     | 100% (🤖 AI)     |
+| 🇫🇷 French     | ✅ Complete     | 100% (🤖 AI)     |
+| 🇪🇸 Spanish    | ✅ Complete     | 100% (🤖 AI)     |
+| 🇮🇳 Hindi      | ✅ Complete     | 100% (🤖 AI)     |
+| 🇯🇵 Japanese   | ✅ Complete     | 100% (🤖 AI)     |
+| 🇵🇹 Portuguese | ✅ Complete     | 100% (🤖 AI)     |
+| 🇷🇺 Russian    | ✅ Complete     | 100% (🤖 AI)     |
+| 🇨🇳 Chinese    | ✅ Complete     | 100% (🤖 AI)     |
+<small>Unfortunately, I am a native Italian speaker, so I cannot guarantee the accuracy or naturalness of the translations in other languages.</small>
 
 ## Quick Start
 

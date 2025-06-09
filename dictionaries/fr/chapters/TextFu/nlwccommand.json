@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "wc and nl",
+  "lessonContent": "La commande wc (word count) affiche le nombre total de mots dans un fichier. \n\n<pre>$ wc /etc/passwd\n 96     265    5925 /etc/passwd\n</pre>\n\nElle affiche respectivement le nombre de lignes, le nombre de mots et le nombre d'octets.\n\nPour voir uniquement le décompte d'un champ spécifique, utilisez respectivement -l, -w ou -c. \n\n<pre>$ wc -l /etc/passwd\n96</pre>\n\nUne autre commande que vous pouvez utiliser pour vérifier le nombre de lignes dans un fichier est la commande nl (number lines). \n\n<pre>\nfile1.txt\ni\nlike\nturtles\n</pre>\n\n<pre>$ nl file1.txt\n1. i\n2. like\n3. turtles\n</pre>",
+  "exercise": "Comment obtiendriez-vous le nombre total de lignes en utilisant la commande nl sur un fichier sans parcourir l'intégralité de la sortie ? Astuce : Utilisez certaines des autres commandes apprises dans ce cours.",
+  "quizQuestion": "Quelle commande utiliseriez-vous pour obtenir le nombre total de mots dans un fichier et juste les mots ?",
+  "quizAnswer": "wc -w",
+  "slug": "nlwccommand"
+}

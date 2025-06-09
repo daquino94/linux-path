@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Salvando e Saindo do Vim",
+  "lessonContent": "Agora que você fez suas edições, é hora de realmente salvar e sair do vim: \n\n<ul>\n<li>:w - escreve ou salva o arquivo</li>\n<li>:q - sai do vim</li>\n<li>:wq - escreve e depois sai</li>\n<li>:q! - sai do vim sem salvar o arquivo</li>\n<li>ZZ - equivalente a :wq, mas um caractere mais rápido</li>\n\n<li>u - desfaz sua última ação</li>\n<li>Ctrl-r - refaz sua última ação</li>\n</ul>\n\nVocê pode não achar o ZZ necessário, mas eventualmente verá que seus dedos podem tender a preferir isso em vez de :wq.\n\nUfa, foi muita informação sobre o Vim. Agora que você conhece alguns comandos básicos e navegação, pode começar a editar alguns arquivos de texto. Existem muitas outras opções que você pode usar no vim para aumentar sua capacidade de dominar este editor de texto, vá para o guia online do Vim para dar uma olhada.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Como sair do vim sem salvar?",
+  "quizAnswer": ":q!",
+  "slug": "salvandoesaindodovim"
+}

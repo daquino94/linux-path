@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Ubuntu",
+  "lessonContent": "<b>概要</b>\n個人用マシン向けの最も人気のあるLinuxディストリビューションの1つがUbuntuです。Ubuntuはデフォルトで独自のデスクトップ環境マネージャUnityもリリースしています。\n\n<b>パッケージ管理</b>\nUbuntuはCanonicalによって開発されたDebianベースのオペレーティングシステムであり、コアとしてDebianパッケージ管理システムを使用しています。\n\n<b>設定可能性</b>\nLinuxに入門したい初心者にとってUbuntuは最適な選択肢です。Ubuntuは使いやすさと優れたユーザーインターフェース体験を提供し、広く採用されています。その使いやすさの点では、OSXやWindowsなどの他のオペレーティングシステムに最も似ています。\n\n<b>用途</b>\nどんなプラットフォーム、デスクトップ、ノートパソコン、サーバーにも最適です。",
+  "exercise": "Ubuntuをオペレーティングシステムとして使用したい場合は、インストールセクションに移動して試してみてください：\n<a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>",
+  "quizQuestion": "Ubuntuはどのオペレーティングシステムをベースにしていますか？",
+  "quizAnswer": "Debian",
+  "slug": "ubuntu"
+}

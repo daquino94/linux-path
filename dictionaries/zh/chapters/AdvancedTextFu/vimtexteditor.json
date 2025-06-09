@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Vim（Vi 改进版）",
+  "lessonContent": "Vim 代表 vi（改进版），正如其名称所示，它代表 vi 文本编辑器命令的改进版本。\n\n它非常轻量级，使用 vim 打开和编辑文件快速简便。而且几乎总是可用的，如果你启动了一个随机的 Linux 发行版，很可能 vim 是默认安装的。\n\n要启动 vim，只需输入：<pre>vim</pre>",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "没有问题，请继续！",
+  "quizAnswer": "",
+  "slug": "vimtexteditor"
+}

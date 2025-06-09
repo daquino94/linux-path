@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "IPv4",
+  "lessonContent": "Cada host de rede tem um endereço único, e cada endereço único pode ser usado para localizar o host dentro da rede. Esses endereços únicos são conhecidos como 'endereços IP'. Um endereço IPv4 se parece com isso:\n\n<pre>204.23.124.23</pre>\n\nEste endereço na verdade contém duas partes: a parte da rede (que identifica em qual rede está) e a parte do host (que identifica o host). Para este curso, estaremos principalmente discutindo endereços IPv4, que é o que você comumente verá ao se referir a 'endereços IP'.\n\nUm endereço IP é separado em octetos pelos pontos. Existem 4 octetos em um endereço IPv4. Se você conhece um pouco de ciência da computação, saberá que um octeto é composto por 8 bits e que 8 bits na verdade equivalem a 1 byte. Isso significa que um endereço IPv4 tem 4 bytes. Usamos bits com frequência ao lidar com sub-redes e endereços IP.\n\nVocê pode ver seu endereço IP com o comando 'ifconfig -a':\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\nComo você pode ver, meu endereço IPv4 é: 192.168.1.129",
+  "exercise": "Encontre seu endereço IP com ifconfig.",
+  "quizQuestion": "Quantos bytes há em um endereço IPv4?",
+  "quizAnswer": "4",
+  "slug": "ipv4"
+}

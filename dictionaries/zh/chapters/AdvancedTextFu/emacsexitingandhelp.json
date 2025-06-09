@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "Emacs 退出和帮助",
+  "lessonContent": "<b>关闭 Emacs</b>\n\n<pre>C-x C-c</pre>\n\n如果有任何打开的缓冲区，在退出 Emacs 之前它会要求您保存。\n\n<b>感到困惑？</b>\n\n<pre>C-h C-h：帮助菜单</pre>\n\n<b>撤销</b>\n\n<pre>C-x u</pre>\n\n正如您所见，Emacs 有更多的功能，因此学习曲线稍微陡峭。不过，作为交换，您将获得一个非常强大的文本编辑器。",
+  "exercise": "访问 Emacs 网站以了解更多命令。 <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a>",
+  "quizQuestion": "如何访问帮助菜单？",
+  "quizAnswer": "C-h C-h",
+  "slug": "emacsexitingandhelp"
+}

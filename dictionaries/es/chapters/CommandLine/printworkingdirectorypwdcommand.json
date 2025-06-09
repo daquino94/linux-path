@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "pwd (Imprimir Directorio de Trabajo)",
+  "lessonContent": "Todo en Linux es un archivo. A medida que te adentres más en Linux, comprenderás esto, pero por ahora solo tenlo en cuenta. Cada archivo se organiza dentro de un árbol jerárquico de directorios. El primer directorio en el sistema de archivos se llama acertadamente el 'directorio raíz'. El directorio raíz tiene muchas carpetas y archivos, en los cuales puedes almacenar más carpetas y archivos, y así sucesivamente. Aquí tienes un ejemplo de cómo se ve el árbol de directorios: \n\n<pre>/\n|-- bin\n|   |-- archivo1\n|   |-- archivo2\n|-- etc\n|   |-- archivo3\n|   `-- directorio1\n|       |-- archivo4\n|       `-- archivo5\n|-- home\n|-- var\n</pre>\n\nLas ubicaciones de estos archivos y directorios se denominan 'rutas'. Si tuvieras una carpeta llamada 'home' que tuviera una carpeta dentro llamada 'pete' y otra carpeta en esa carpeta llamada 'Movies', esa ruta se vería así: '/home/pete/Movies'. Bastante simple, ¿verdad?\n\nNavegar por el sistema de archivos, al igual que navegar en la vida real, es más fácil si sabes dónde estás y a dónde vas. Para ver dónde estás, puedes usar el comando 'pwd'. Este comando significa 'imprimir directorio de trabajo' y te muestra en qué directorio te encuentras. Ten en cuenta que la ruta parte del directorio raíz.\n\n<pre>$ pwd</pre>\n\n¿Dónde estás? ¿Dónde estoy? Pruébalo.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cómo puedo saber en qué directorio te encuentras actualmente?",
+  "quizAnswer": "pwd",
+  "slug": "comandoprintworkingdirectorypwd"
+}

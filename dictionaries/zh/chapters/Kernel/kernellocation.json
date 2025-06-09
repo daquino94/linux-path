@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "内核位置",
+  "lessonContent": "当您安装新内核时会发生什么？实际上，系统会添加一些文件，这些文件通常会添加到 /boot 目录中。\n\n您会看到不同内核版本的多个文件：\n\n<ul>\n<li>vmlinuz - 这是实际的 Linux 内核</li>\n<li>initrd - 正如我们之前讨论过的，initrd 用作临时文件系统，在加载内核之前使用</li>\n<li>System.map - 符号查找表</li>\n<li>config - 内核配置设置，如果您正在编译自己的内核，可以设置哪些模块可以被加载</li>\n</ul>\n\n如果您的 /boot 目录空间不足，您可以随时删除这些文件的旧版本或者使用软件包管理器，但在此目录进行维护时要小心，不要意外删除正在使用的内核。",
+  "exercise": "进入您的 /boot 目录，查看其中有哪些文件。",
+  "quizQuestion": "/boot 目录中内核镜像的名称是什么？",
+  "quizAnswer": "vmlinuz",
+  "slug": "kernellocation"
+}

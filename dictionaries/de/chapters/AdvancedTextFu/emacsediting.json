@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Emacs-Bearbeitung",
+  "lessonContent": "<b>Textnavigation</b>\n\n<pre>\nC-Pfeil nach oben: einen Absatz nach oben bewegen\nC-Pfeil nach unten: einen Absatz nach unten bewegen\nC-Pfeil nach links: ein Wort nach links bewegen\nC-Pfeil nach rechts: ein Wort nach rechts bewegen\nM->: zum Ende des Puffers bewegen\n</pre>\n\nMit der Textnavigation funktionieren Ihre regulären Texttasten wie gewohnt: Pos1, Ende, Bild auf, Bild ab und die Pfeiltasten usw.\n\n<b>Ausschneiden und Einfügen</b>\n\nUm in Emacs auszuschneiden (killen) oder einzufügen (yanken), müssen Sie zuerst Text auswählen können. Bewegen Sie den Cursor an die Stelle, an der Sie schneiden oder einfügen möchten, und drücken Sie die Taste <pre>C-Leertaste</pre>. Verwenden Sie dann die Navigations-Tasten, um den gewünschten Text auszuwählen. Jetzt können Sie wie folgt ausschneiden und einfügen:\n\n<pre>\nC-w: ausschneiden\nC-y: einfügen\n</pre>",
+  "exercise": "Spielen Sie mit der Textnavigation herum.",
+  "quizQuestion": "Wie bewegen Sie sich zum Ende des Puffers?",
+  "quizAnswer": "M->",
+  "slug": "emacsediting"
+}

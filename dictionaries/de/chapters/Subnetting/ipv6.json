@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "IPv6",
+  "lessonContent": "Wir haben den Begriff IPv6 hier und da gehört, aber was ist das? Jedes Gerät, das mit dem Internet verbunden ist, erhält seine eigene IP-Adresse, die Anzahl ist jedoch begrenzt und wir nähern uns dieser Zahl im digitalen Zeitalter. IPv6 wurde erstellt, um uns zu ermöglichen, mehr Hosts mit dem Internet zu verbinden. Es bringt mehr IP-Verbesserungen mit sich, jedoch ist die Akzeptanz recht langsam. Es ist nicht dazu gedacht, IPv4 zu ersetzen, sondern sie sollen sich ergänzen. Die beiden IP-Protokolle sind sehr ähnlich und wenn Sie IPv4 kennen, werden Sie auch IPv6 verstehen. Der Hauptunterschied liegt in der Art und Weise, wie die Adresse geschrieben wird. So sieht eine typische IPv6-Adresse aus:\n\n<pre>\n2dde:1235:1256:3:200:f8ed:fe23:59cf\n</pre>",
+  "exercise": "Überprüfen Sie ifconfig, um zu sehen, ob eine IPv6-Adresse aufgelistet ist.",
+  "quizQuestion": "Welche IP-Adresse wird verwendet, um die Anzahl der Hosts zu erhöhen, die sich mit dem Internet verbinden können?",
+  "quizAnswer": "IPv6",
+  "slug": "ipv6"
+}

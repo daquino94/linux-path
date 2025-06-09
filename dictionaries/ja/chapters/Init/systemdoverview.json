@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Systemd Overview",
+  "lessonContent": "Systemdは、イニシャライズの新たな標準として徐々に台頭しています。/usr/lib/systemd ディレクトリがある場合、おそらくsystemdを使用しています。\n\nSystemdは、システムを起動して実行するためのゴールを使用します。基本的に、達成したいターゲットがあり、このターゲットには達成する必要がある依存関係もあります。Systemdは非常に柔軟で堅牢であり、プロセスを起動するための厳密なシーケンスに従いません。典型的なsystemdの起動時に何が起こるかは次のとおりです：\n\n<ol>\n<li>最初に、systemdは通常 /etc/systemd/system または /usr/lib/systemd/system にある構成ファイルを読み込みます</li>\n<li>次に、通常は default.target である起動ゴールを決定します</li>\n<li>Systemdは起動ターゲットの依存関係を把握し、それらをアクティブ化します</l>\n</ol>\n\nSys V ランレベルと同様に、systemdは異なるターゲットにブートします：\n\n<ul>\n<li>poweroff.target - システムをシャットダウン</li>\n<li>rescue.target - シングルユーザーモード</li>\n<li>multi-user.target - ネットワークを備えたマルチユーザー</li>\n<li>graphical.target - ネットワークと GUI を備えたマルチユーザー</li>\n<li>reboot.target - 再起動</li>\n</ul>\n\ndefault.target のデフォルトブートゴールは通常 graphical.target を指します。\n\nSystemdが操作する主要なオブジェクトはユニットとして知られています。Systemdは単にサービスを停止・開始するだけでなく、ファイルシステムをマウントしたり、ネットワークソケットを監視したりすることができます。その堅牢性のため、操作するユニットの種類が異なります。最も一般的なユニットは次のとおりです：\n\n<ul>\n<li>Service units - 開始および停止しているサービスです。これらのユニットファイルは .service で終わります</li>\n<li>Mount units - ファイルシステムをマウントします。これらのユニットファイルは .mount で終わります</li>\n<li>Target units - 他のユニットをグループ化します。ファイルは .target で終わります</li>\n</ul>\n\n例えば、default.target にブートしたとします。このターゲットは、networking.service ユニット、crond.service ユニットなどをグループ化します。したがって、1つのユニットをアクティブ化すると、そのユニット以下のすべてがアクティブ化されます。",
+  "exercise": "このレッスンには演習はありません。",
+  "quizQuestion": "他のユニットをグループ化するために使用されるユニットは何ですか？",
+  "quizAnswer": "target",
+  "slug": "systemdoverview"
+}

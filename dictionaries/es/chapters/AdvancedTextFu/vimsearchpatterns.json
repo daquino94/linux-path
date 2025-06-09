@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Patrones de búsqueda en Vim",
+  "lessonContent": "Para buscar una expresión, simplemente escribe la tecla / y luego tu resultado de búsqueda mientras estás en una sesión de vim. Una vez que presionas enter, puedes presionar \"n\" para avanzar o \"N\" para retroceder en tus resultados de búsqueda.\n\n<pre>\nMi archivo bonito es muy bonito.\n\n/bonito\n\nencontrará las palabras bonitas en el archivo de texto.\n</pre>\n\n\nEl comando de búsqueda ? buscará el archivo de texto hacia atrás, por lo que en el ejemplo anterior, la última palabra bonita aparecería primero. \n<pre>\nMi archivo bonito es muy bonito.\n\n?bonito\n\nencontrará las palabras bonitas en el archivo de texto.\n</pre>",
+  "exercise": "¡Juega con la tecla de búsqueda, abre un archivo de texto en vim con: vim [archivo de texto] y comienza a buscar!",
+  "quizQuestion": "¿Qué tecla se utiliza para buscar en vim?",
+  "quizAnswer": "/",
+  "slug": "patronesbusquedavim"
+}

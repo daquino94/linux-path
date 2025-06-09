@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Vim 保存和退出",
+  "lessonContent": "现在您已经完成了编辑，是时候实际保存并退出 vim 了：\n\n<ul>\n<li>:w - 写入或保存文件</li>\n<li>:q - 退出 vim</li>\n<li>:wq - 写入然后退出</li>\n<li>:q! - 不保存文件退出 vim</li>\n<li>ZZ - 等同于 :wq，但比较快捷</li>\n\n<li>u - 撤销上一步操作</li>\n<li>Ctrl-r - 重做上一步操作</li>\n</ul>\n\n您可能认为 ZZ 不是必需的，但最终您会发现您的手指可能更倾向于使用它，而不是 :wq。\n\n哇，这是关于 Vim 的大量信息。现在您已经了解了一些基本命令和导航，可以开始编辑一些文本文件了。在 vim 中还有许多选项可供您使用，以提高您掌握这个文本编辑器的能力，请查看 Vim 的在线指南。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "如何在不保存的情况下退出 vim？",
+  "quizAnswer": ":q!",
+  "slug": "vimsavingandexiting"
+}

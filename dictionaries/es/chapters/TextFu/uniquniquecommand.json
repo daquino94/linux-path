@@ -1,0 +1,9 @@
+{
+  "id": 14,
+  "title": "uniq (Único)",
+  "lessonContent": "El comando uniq (único) es otra herramienta útil para analizar texto.\n\nDigamos que tenías un archivo con muchas duplicaciones:\n\n<pre>\nreading.txt\nbook\nbook\npaper\npaper\narticle\narticle\nmagazine\n</pre>\n\nY querías eliminar las duplicaciones, puedes usar el comando uniq:\n\n<pre>$ uniq reading.txt\nbook\npaper\narticle\nmagazine</pre>\n\nObtengamos el conteo de cuántas veces aparece una línea:\n\n<pre>$ uniq -c reading.txt\n2 book\n2 paper\n2 article\n1 magazine</pre>\n\nObtengamos solo los valores únicos:\n\n<pre>$ uniq -u reading.txt\nmagazine</pre>\n\nObtengamos solo los valores duplicados:\n\n<pre>$ uniq -d reading.txt\nbook\npaper\narticle\n</pre>\n\n<b>Nota</b>: uniq no detecta líneas duplicadas a menos que estén adyacentes. Por ejemplo:\n\nDigamos que tenías un archivo con duplicados que no son adyacentes:\n\n<pre>\nreading.txt\nbook\npaper\nbook\npaper\narticle\nmagazine\narticle\n</pre>\n\n<pre>$ uniq reading.txt\nreading.txt\nbook\npaper\nbook\npaper\narticle\nmagazine\narticle</pre>\n\nEl resultado devuelto por uniq contendrá todas las entradas a diferencia del primer ejemplo.\n\nPara superar esta limitación de uniq, podemos usar sort en combinación con uniq:\n\n<pre>\n$ sort reading.txt | uniq\narticle\nbook\nmagazine\npaper</pre>",
+  "exercise": "¿Qué resultado obtendrías si intentaras uniq -uc?",
+  "quizQuestion": "¿Qué comando usarías para eliminar duplicados en un archivo?",
+  "quizAnswer": "uniq",
+  "slug": "uniquniquecommand"
+}

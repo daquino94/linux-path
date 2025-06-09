@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "路由",
+  "lessonContent": "我们已经讨论过使用 route 命令查看我们的路由表，如果您想要手动添加或删除路由，可以这样做。\n\n<b>添加新路由</b>\n\n<pre>\n$ sudo route add -net 192.168.2.1/23 gw 10.11.12.3\n</pre>\n\n<b>删除路由</b>\n\n<pre>\n$ sudo route del -net 192.168.2.1/23 \n</pre>\n\n您也可以使用 <b>ip</b> 命令执行这些更改：\n\n<b>添加路由</b>\n<pre>\n$ ip route add 192.168.2.1/23 via 10.11.12.3\n</pre>\n\n<b>删除路由</b>\n<pre>\n$ ip route delete 192.168.2.1/23 via 10.11.12.3\n或\n$ ip route delete 192.168.2.1/23\n</pre>",
+  "exercise": "本课程没有练习，但您可以在 man 手册中阅读有关此处讨论的命令的更多信息\n\n<pre>$ man route</pre>\n\n<pre>$ man ip-route</pre>",
+  "quizQuestion": "删除路由的命令标志是什么？",
+  "quizAnswer": "del",
+  "slug": "route"
+}

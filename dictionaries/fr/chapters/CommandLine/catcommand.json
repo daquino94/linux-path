@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "chat",
+  "lessonContent": "Nous avons presque terminé de naviguer dans les fichiers, mais avant tout, apprenons comment lire un fichier. Une commande simple à utiliser est la commande chat, abréviation de concaténer, elle affiche non seulement le contenu du fichier mais peut également combiner plusieurs fichiers et vous montrer leur sortie. \n\n<pre>$ chat fichierchien fichieroiseau</pre>\n\nCe n'est pas idéal pour visualiser de gros fichiers et cela n'est destiné qu'à un contenu court. Il existe de nombreux autres outils que nous utilisons pour visualiser de plus grands fichiers texte que nous discuterons dans la prochaine leçon.",
+  "exercise": "Exécutez la commande chat sur différents fichiers et répertoires. Ensuite, essayez de concaténer plusieurs fichiers.",
+  "quizQuestion": "Quel est un bon moyen de voir le contenu d'un fichier?",
+  "quizAnswer": "chat",
+  "slug": "commande-chat"
+}

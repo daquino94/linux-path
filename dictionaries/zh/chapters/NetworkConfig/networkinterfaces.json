@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "网络接口",
+  "lessonContent": "网络接口是内核将网络软件部分与硬件部分连接起来的方式。我们已经看到了一个例子：\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\n<b> ifconfig 命令</b>\n\n<b>ifconfig</b> 工具允许我们配置网络接口，如果没有设置任何网络接口，内核的设备驱动程序和网络将不知道如何通信。Ifconfig 在启动时运行并通过配置文件配置我们的接口，但我们也可以手动修改它们。Ifconfig 的输出显示接口名称在左侧，右侧显示详细信息。您最常见的接口名称可能是 eth0（机器中的第一张以太网卡）、wlan0（无线接口）、lo（环回接口）。环回接口用于表示您的计算机，它只是将您回环到自己。这对于调试或连接到本地运行的服务器很有用。\n\n接口的状态可以是 up 或 down，您可以猜到，如果要“关闭”一个接口，可以将其设置为 down。您可能会在 ifconfig 输出中最常查看的字段是 HWaddr（接口的 MAC 地址）、inet 地址（IPv4 地址）和 inet6（IPv6 地址）。当然，您还可以看到子网掩码和广播地址。您还可以在 /etc/network/interfaces 查看接口信息。\n\n<b>创建接口并启用它</b>\n\n<pre>$ ifconfig eth0 192.168.2.1 netmask 255.255.255.0 up</pre>\n\n这将为 eth0 接口分配 IP 地址和子网掩码，并将其启用。\n\n<b>启用或禁用接口</b>\n\n<pre>\n$ ifup eth0\n$ ifdown eth0\n</pre>\n\n<b> ip 命令 </b>\n\n<b>ip</b> 命令还允许我们操作系统的网络堆栈。根据您使用的发行版，这可能是操纵网络设置的首选方法。\n\n以下是一些使用示例：\n\n<b>显示所有接口的接口信息</b>\n<pre>\n$ ip link show\n</pre>\n\n<b>显示接口的统计信息</b>\n<pre>\n$ ip -s link show eth0\n</pre>\n\n<b>显示分配给接口的 IP 地址</b>\n<pre>\n$ ip address show\n</pre>\n\n<b>启用和禁用接口</b>\n<pre>\n$ ip link set eth0 up\n$ ip link set eth0 down\n</pre>\n\n<b>向接口添加 IP 地址</b>\n<pre>\n$ ip address add 192.168.1.1/24 dev eth0\n</pre>",
+  "exercise": "尝试将您的网络接口的状态更改为 up 或 down，并观察发生了什么。\n\n您能使用 ifconfig 和 ip 命令同时更改网络接口吗？",
+  "quizQuestion": "配置我们的网络接口的命令是什么？",
+  "quizAnswer": "ifconfig",
+  "slug": "networkinterfaces"
+}

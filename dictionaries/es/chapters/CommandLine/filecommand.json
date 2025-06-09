@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "archivo",
+  "lessonContent": "En la lección anterior aprendimos sobre touch, volvamos a eso por un momento. ¿Notaste que el nombre de archivo no se ajustaba a la nomenclatura estándar como probablemente has visto en otros sistemas operativos como Windows? Normalmente esperarías un archivo llamado banana.jpeg y esperarías un archivo de imagen JPEG. \n\nEn Linux, los nombres de archivo no están obligados a representar el contenido del archivo. Puedes crear un archivo llamado funny.gif que en realidad no sea un GIF. \n\nPara averiguar de qué tipo de archivo se trata, puedes usar el comando file. Te mostrará una descripción del contenido del archivo.\n\n<pre>$ file banana.jpg</pre>",
+  "exercise": "Ejecuta el comando file en varios directorios y archivos diferentes y toma nota de la salida.",
+  "quizQuestion": "¿Qué comando puedes usar para encontrar el tipo de archivo de un archivo?",
+  "quizAnswer": "file",
+  "slug": "comandofile"
+}

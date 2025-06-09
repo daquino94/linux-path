@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "gato",
+  "lessonContent": "Estamos casi terminando de navegar por los archivos, pero primero aprendamos cómo leer un archivo. Un comando simple para usar es el comando gato, abreviatura de concatenar, no solo muestra el contenido del archivo sino que también puede combinar varios archivos y mostrarte la salida de ellos. \n\n<pre>$ cat archivo_perro archivo_pajaro</pre>\n\nNo es ideal para ver archivos grandes y solo está pensado para contenido breve. Hay muchas otras herramientas que usamos para ver archivos de texto más grandes que discutiremos en la próxima lección.",
+  "exercise": "Ejecuta cat en diferentes archivos y directorios. Luego intenta concatenar varios archivos.",
+  "quizQuestion": "¿Cuál es una buena manera de ver el contenido de un archivo?",
+  "quizAnswer": "cat",
+  "slug": "comandogato"
+}

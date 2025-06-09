@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "rsync",
+  "lessonContent": "另一个用于从不同主机复制数据的工具是rsync（远程同步的缩写）。Rsync与scp非常相似，但它确实有一个主要区别。Rsync使用一种特殊算法提前检查您要复制的数据是否已存在，并仅复制差异。例如，假设您正在复制一个文件，您的网络中断了，因此您的复制停在了中途。rsync不会重新从头开始复制所有内容，而是只复制未复制的部分。\n\n它还通过校验和验证要复制的文件的完整性。这些小优化使得文件传输更加灵活，使rsync非常适合远程和本地目录同步、数据备份、大数据传输等。\n\n一些常用的rsync选项：\n\n<ul>\n<li>v - 显示详细输出</li>\n<li>r - 递归进入目录</li>\n<li>h - 以人类可读的方式显示输出</li>\n<li>z - 压缩以便更轻松传输，适用于慢速连接</li>\n</ul>\n\n<b>在同一主机上复制/同步文件</b>\n\n<pre>$ rsync -zvr /my/local/directory/one /my/local/directory/two</pre>\n\n<b>从远程主机复制/同步文件到本地主机</b>\n\n<pre>$ rsync /local/directory username@remotehost.com:/remote/directory</pre>\n\n<b>从本地主机复制/同步文件到远程主机</b>\n\n<pre>$ rsync username@remotehost.com:/remote/directory /local/directory</pre>",
+  "exercise": "使用rsync将一个目录同步到另一个目录，确保不要覆盖重要目录！",
+  "quizQuestion": "哪个命令对数据备份很有用？",
+  "quizAnswer": "rsync",
+  "slug": "rsync"
+}

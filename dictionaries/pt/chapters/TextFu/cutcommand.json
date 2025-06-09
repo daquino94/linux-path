@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "cut",
+  "lessonContent": "Vamos aprender alguns comandos úteis que você pode usar para processar texto. Antes de começarmos, vamos criar um arquivo com o qual iremos trabalhar. Copie e cole o seguinte comando, uma vez feito isso, adicione uma TAB entre lazy e dog (pressione Ctrl-v + TAB).\n\n<pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>\n\nO primeiro comando que aprenderemos é o comando cut. Ele extrai partes do texto de um arquivo.\n\nPara extrair conteúdos por uma lista de caracteres:\n\n<pre>$ cut -c 5 sample.txt</pre>\n\nIsso exibe o 5º caractere em cada linha do arquivo. Neste caso, é \"q\", observe que o espaço também conta como um caractere.\n\nPara extrair o conteúdo por um campo, precisaremos fazer uma pequena modificação:\n\n<pre>$ cut -f 2 sample.txt</pre>\n\nA flag -f ou campo corta o texto com base nos campos, por padrão, ele usa TABs como delimitadores, então tudo separado por um TAB é considerado um campo. Você deve ver \"dog\" como saída.\n\nVocê pode combinar a flag de campo com a flag de delimitador para extrair o conteúdo por um delimitador personalizado:\n\n<pre>$ cut -f 1 -d \";\" sample.txt</pre>\n\nIsso mudará o delimitador TAB para um delimitador \";\" e como estamos cortando o primeiro campo, o resultado deve ser \"The quick brown\".",
+  "exercise": "O que o seguinte comando faz? Por quê?\n\n<pre>$ cut -c 5-10 sample.txt\n$ cut -c 5- sample.txt\n$ cut -c -5 sample.txt\n</pre>",
+  "quizQuestion": "Qual comando você usaria para obter o primeiro caractere de cada linha em um arquivo?",
+  "quizAnswer": "cut -c 1",
+  "slug": "cutcommand"
+}

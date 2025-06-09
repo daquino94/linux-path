@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "title": "expandir y contraer",
+  "lessonContent": "En nuestra lección sobre el comando cut, teníamos nuestro archivo sample.txt que contenía una tabulación. Normalmente, las TABs suelen mostrar una diferencia notable, pero algunos archivos de texto no muestran eso lo suficientemente bien. Tener TABs en un archivo de texto puede que no sea el espaciado deseado que deseas. Para cambiar tus TABs a espacios, utiliza el comando expandir. \n\n<pre>$ expandir sample.txt</pre>\n\nEl comando anterior imprimirá la salida con cada TAB convertida en un grupo de espacios. Para guardar esta salida en un archivo, utiliza la redirección de salida como se muestra a continuación.\n\n<pre>$ expandir sample.txt > resultado.txt</pre>\n\nContrario a expandir, podemos convertir de vuelta cada grupo de espacios a una TAB con el comando contraer: \n\n<pre>$ contraer -a resultado.txt</pre>",
+  "exercise": "¿Qué sucede si simplemente escribes expandir sin entrada de archivo?",
+  "quizQuestion": "¿Qué comando se utiliza para convertir TABs en espacios?",
+  "quizAnswer": "expandir",
+  "slug": "comandoexpandircontraer"
+}

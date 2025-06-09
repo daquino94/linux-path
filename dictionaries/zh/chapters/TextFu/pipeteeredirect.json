@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "管道和tee",
+  "lessonContent": "现在让我们进入一些管道操作，虽然不完全是，但有点像。让我们尝试一个命令：\n\n<pre>$ ls -la /etc</pre>\n\n你应该会看到一个非常长的项目列表，实际上有点难以阅读。与其将此输出重定向到文件，不如直接在另一个命令中查看输出，这样不是更好吗？我们可以做到！\n\n<pre>$ ls -la /etc | less </pre>\n\n管道操作符|，用竖线表示，允许我们获取一个命令的stdout，并将其作为另一个进程的stdin。在这种情况下，我们获取了ls -la /etc的stdout，然后将其<i>管道</i>到less命令。管道命令非常有用，我们将继续永远使用它。\n\n那么，如果我想将命令的输出写入两个不同的流中怎么办？使用tee命令就可以实现：\n\n<pre>$ ls | tee peanuts.txt</pre>\n\n你应该在屏幕上看到ls的输出，如果打开peanuts.txt文件，你也应该看到相同的信息！",
+  "exercise": "尝试以下命令：\n<pre>$ ls | tee peanuts.txt banan.txt</pre>",
+  "quizQuestion": "哪个键代表管道操作符？",
+  "quizAnswer": "|",
+  "slug": "pipeteeredirect"
+}

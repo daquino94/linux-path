@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Emacs",
+  "lessonContent": "Emacs ist für Benutzer, die einen extrem leistungsstarken Texteditor wünschen, was eine Untertreibung sein könnte, da Sie im Grunde genommen in Emacs leben. Sie können all Ihre Code-Bearbeitung, Dateimanipulation usw. alles innerhalb von Emacs erledigen. Es dauert etwas länger, um zu starten, und die Lernkurve ist etwas steiler als bei vim, aber wenn Sie einen leistungsstarken Editor möchten, der äußerst erweiterbar ist, ist dies der richtige für Sie. Wenn ich von erweiterbar spreche, meine ich buchstäblich, dass Sie Skripte für Emacs schreiben können, die seine Funktionalität erweitern.\n\nUm Emacs zu starten, verwenden Sie einfach:\n\n<pre>emacs</pre>\n\nSie sollten mit dem Standard-Begrüßungspuffer begrüßt werden.\n\nPuffer in Emacs ist der Ort, an dem sich Ihr Text befindet. Wenn Sie also eine Datei öffnen, wird ein Puffer verwendet, um den Inhalt dieser Datei zu speichern. Sie können mehrere Puffer gleichzeitig geöffnet haben und problemlos zwischen den Puffern wechseln.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Keine Fragen, weitermachen!",
+  "quizAnswer": "",
+  "slug": "emacstexteditor"
+}

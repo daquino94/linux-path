@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "dd",
+  "lessonContent": "dd 工具非常有用，用于转换和复制数据。它从文件或数据流中读取输入，并将其写入文件或数据流中。\n\n考虑以下命令：\n\n<pre>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1024 </pre>\n\n此命令将备份.img的内容复制到/dev/sdb。它将以 1024 字节的块复制数据，直到没有更多数据需要复制。\n\n<ul>\n<li>if=file - 输入文件，从文件中读取而不是标准输入</li>\n<li>of=file - 输出文件，写入文件而不是标准输出</li>\n<li>bs=bytes - 块大小，每次读取和写入这么多字节的数据。您可以使用不同的大小单位，通过使用 k 表示千字节，m 表示兆字节等，所以 1024 字节是 1k</li>\n<li>count=number - 要复制的块数。</li>\n</ul>\n\n您会看到一些使用 count 选项的 dd 命令，通常与 dd if 一起使用，如果要复制一个 1 兆字节的文件，通常希望在复制完成后看到该文件为 1 兆字节。假设您运行以下命令：\n\n<pre>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1M count=2</pre>\n\n我们的 backup.img 文件大小为 10M，但是在此命令中，我们要复制 1M 2 次，因此只复制了 2M，导致复制的数据不完整。在许多情况下，count 可以派上用场，但如果只是复制数据，您几乎可以省略 count 甚至 bs。如果您真的想要优化数据传输，那么您将需要开始使用这些选项。\n\ndd 非常强大，您可以使用它来备份任何东西，包括整个磁盘驱动器、恢复磁盘映像等。请小心，如果您不确定自己在做什么，这个强大的工具可能会带来代价。",
+  "exercise": "使用 dd 命令备份您的驱动器，并将输出设置为 .img 文件。",
+  "quizQuestion": "dd 选项的块大小是什么？",
+  "quizAnswer": "bs",
+  "slug": "ddcommand"
+}

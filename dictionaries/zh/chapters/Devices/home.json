@@ -1,0 +1,7 @@
+{
+  "id": 9,
+  "title": "设备",
+  "description": "了解Linux设备以及它们如何与内核和用户空间交互。",
+  "image": "/images/chapters/devices.png",
+  "slug": "devices"
+}

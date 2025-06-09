@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "arp",
+  "lessonContent": "Wenn wir eine MAC-Adresse mit ARP nachschlagen, überprüft es zuerst den lokal gespeicherten ARP-Cache auf unserem System. Sie können diesen Cache tatsächlich anzeigen:\n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\nDer ARP-Cache ist tatsächlich leer, wenn eine Maschine hochfährt. Er wird gefüllt, während Pakete an andere Hosts gesendet werden. Wenn wir ein Paket an ein Ziel senden, das nicht im ARP-Cache enthalten ist, passiert Folgendes:\n\n<ol>\n<li>Der Quellhost erstellt den Ethernet-Rahmen mit einem ARP-Anforderungspaket</li>\n<li>Der Quellhost sendet diesen Rahmen an das gesamte Netzwerk</li>\n<li>Wenn einer der Hosts im Netzwerk die richtige MAC-Adresse kennt, sendet er ein Antwortpaket und einen Rahmen mit der MAC-Adresse</li>\n<li>Der Quellhost fügt die IP-zur-MAC-Adresszuordnung dem ARP-Cache hinzu und sendet dann das Paket</li>\n</ol>\n\nSie können Ihren ARP-Cache auch über den ip-Befehl anzeigen:\n\n<pre>\n$ ip neighbour show\n</pre>",
+  "exercise": "Beobachten Sie, was mit Ihrem ARP-Cache passiert, wenn Sie Ihren Computer neu starten und dann etwas im Netzwerk tun.",
+  "quizQuestion": "Welchen Befehl können Sie verwenden, um Ihren ARP-Cache anzuzeigen?",
+  "quizAnswer": "arp",
+  "slug": "arpcommand"
+}

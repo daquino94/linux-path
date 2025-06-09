@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "pwd (Print Working Directory)",
+  "lessonContent": "Alles in Linux ist eine Datei. Wenn Sie tiefer in Linux eintauchen, werden Sie dies verstehen, aber behalten Sie es vorerst im Hinterkopf. Jede Datei ist innerhalb eines hierarchischen Verzeichnisbaums organisiert. Das erste Verzeichnis im Dateisystem trägt passenderweise den Namen 'Stammverzeichnis'. Das Stammverzeichnis enthält viele Ordner und Dateien, in denen Sie weitere Ordner und Dateien speichern können, und so weiter. Hier ist ein Beispiel, wie der Verzeichnisbaum aussieht: \n\n<pre>/\n|-- bin\n|   |-- file1\n|   |-- file2\n|-- etc\n|   |-- file3\n|   `-- directory1\n|       |-- file4\n|       `-- file5\n|-- home\n|-- var\n</pre>\n\nDie Positionen dieser Dateien und Verzeichnisse werden als 'Pfade' bezeichnet. Wenn Sie einen Ordner namens 'home' hätten, der einen Ordner namens 'pete' und einen weiteren Ordner in diesem Ordner namens 'Movies' enthält, würde dieser Pfad so aussehen: '/home/pete/Movies'. Ziemlich einfach, oder?\n\nDas Navigieren im Dateisystem, ähnlich wie im echten Leben, ist einfacher, wenn Sie wissen, wo Sie sind und wohin Sie gehen. Um zu sehen, wo Sie sich befinden, können Sie den Befehl 'pwd' verwenden. Dieser Befehl bedeutet 'Arbeitsverzeichnis drucken' und zeigt Ihnen, in welchem Verzeichnis Sie sich befinden. Beachten Sie, dass der Pfad vom Stammverzeichnis ausgeht.\n\n<pre>$ pwd</pre>\n\nWo bist du? Wo bin ich? Probieren Sie es aus.",
+  "exercise": "Für diese Lektion gibt es keine Übungen.",
+  "quizQuestion": "Wie finde ich heraus, in welchem Verzeichnis Sie sich gerade befinden?",
+  "quizAnswer": "pwd",
+  "slug": "printworkingdirectorypwdcommand"
+}

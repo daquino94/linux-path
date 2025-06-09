@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Arch Linux",
+  "lessonContent": "<b>Visão Geral</b>\nArch é uma distribuição Linux leve e flexível conduzida 100% pela comunidade. Semelhante ao Debian, o Arch utiliza um modelo de lançamento contínuo, de modo que as atualizações incrementais eventualmente se tornam a versão Estável. Você realmente precisa colocar a mão na massa para entender o sistema e suas funções, mas em troca obtém controle completo e total do seu sistema.\n\n<b>Gerenciamento de Pacotes</b>\nEle utiliza seu próprio gerenciador de pacotes, Pacman, para instalar, atualizar e gerenciar pacotes. \n\n<b>Configurabilidade</b>\nSe você deseja um sistema operacional leve e realmente quer entender o Linux, use o Arch! Há uma curva de aprendizado, mas para os usuários avançados de Linux, esta é uma ótima escolha.\n\n<b>Usos</b>\nÓtimo para desktop e laptop. Se você também tem um dispositivo pequeno como um Raspberry Pi e precisa instalar um sistema operacional leve nele, você não pode errar com o Arch.",
+  "exercise": "Se você está interessado em ter o Arch como seu sistema operacional, vá para a seção de instalação e experimente: <a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>",
+  "quizQuestion": "Que gerenciador de pacotes o Arch Linux utiliza?",
+  "quizAnswer": "Pacman",
+  "slug": "archlinux"
+}

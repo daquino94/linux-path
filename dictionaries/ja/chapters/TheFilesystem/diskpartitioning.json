@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "ディスクのパーティショニング",
+  "lessonContent": "USB ドライブ上でファイルシステムに関する実用的な作業を行いましょう。USB ドライブがなくても心配はありません。次のいくつかのレッスンに従って進めることができます。\n\nまず、ディスクをパーティション分割する必要があります。これを行うためには多くのツールが利用可能です。\n\n<ul>\n<li>fdisk - 基本的なコマンドラインパーティショニングツールで、GPT はサポートされていません</li>\n<li>parted - MBR と GPT の両方をサポートするコマンドラインツール</li>\n<li>gparted - parted の GUI バージョン</li>\n<li>gdisk - fdisk ですが、MBR はサポートしておらず、GPT のみをサポートしています</li>\n</ul>\n\nパーティショニングには parted を使用しましょう。USB デバイスを接続し、デバイス名が /dev/sdb2 であるとします。\n\n<b>parted を起動</b>\n\n<pre>$ sudo parted</pre>\n\nparted ツールに入力され、ここでデバイスをパーティション分割するコマンドを実行できます。\n\n<b>デバイスを選択</b>\n\n<pre>select /dev/sdb2</pre>\n\n作業するデバイスを選択するには、デバイス名で選択します。\n\n<b>現在のパーティションテーブルを表示</b>\n\n<pre>\n(parted) print                                                            \nModel: Seagate (scsi)\nDisk /dev/sda: 21.5GB\nSector size (logical/physical): 512B/512B\nPartition Table: msdos\n\nNumber  Start   End     Size    Type      File system     Flags\n 1      1049kB  6860MB  6859MB  primary   ext4            boot\n 2      6861MB  21.5GB  14.6GB  extended\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n 6      7381MB  21.5GB  14.1GB  logical   xfs\n</pre>\n\nここでは、デバイス上の利用可能なパーティションが表示されます。 <b>start</b> と <b>end</b> のポイントは、パーティションがハードドライブ上で占有するスペースの場所です。パーティションの開始および終了位置を適切に見つける必要があります。\n\n<b>デバイスをパーティション分割</b>\n\n<pre>mkpart primary 123 4567</pre>\n\n開始点と終了点を選択してパーティションを作成し、使用したテーブルに応じてパーティションの種類を指定する必要があります。\n\n<b>パーティションのサイズを変更</b>\n\n空き容量がない場合は、パーティションのサイズを変更することもできます。\n\n<pre>resize 2 1245 3456</pre>\n\nパーティション番号を選択し、それをリサイズしたい開始点と終了点を指定します。\n\nParted は非常に強力なツールですので、ディスクのパーティション分割を行う際は注意が必要です。",
+  "exercise": "USB ドライブを半分に分割し、片方を ext4 として、もう片方を空きスペースとして使用します。",
+  "quizQuestion": "パーティションを作成する parted のコマンドは何ですか？",
+  "quizAnswer": "mkpart",
+  "slug": "diskpartitioning"
+}

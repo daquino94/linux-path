@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "sysfs",
+  "lessonContent": "Sysfsは、以前作成され、/devディレクトリがうまく管理できなかったシステム上のデバイスをよりよく管理するために作成されました。Sysfsは仮想ファイルシステムであり、ほとんどの場合/sysディレクトリにマウントされます。/devディレクトリで見ることができる情報よりも詳細な情報を提供してくれます。/sysディレクトリと/devディレクトリの両方は非常に似ているように見えますが、いくつかの点で大きな違いがあります。基本的に、/devディレクトリはシンプルで、他のプログラムがデバイス自体にアクセスできるようにしますが、/sysファイルシステムは情報を表示しデバイスを管理するために使用されます。\n\n/sysファイルシステムには、システム上のすべてのデバイスの情報が含まれており、製造元やモデル、デバイスが接続されている場所、デバイスの状態、デバイスの階層などが含まれます。ここで見るファイルはデバイスノードではないため、実際には/sysディレクトリからデバイスとやり取りするのではなく、デバイスを管理しています。\n\n/sysディレクトリの内容を見てみましょう:\n\n<pre>\npete@icebox:~$ ls /sys/block/sda\nalignment_offset  discard_alignment  holders   removable  sda6       trace\nbdi               events             inflight  ro         size       uevent\ncapability        events_async       power     sda1       slaves\ndev               events_poll_msecs  queue     sda2       stat\ndevice            ext_range          range     sda5       subsystem\n</pre>",
+  "exercise": "/sysディレクトリの内容を確認し、そこにどのファイルがあるかを確認してください。",
+  "quizQuestion": "デバイスの詳細情報を表示するために使用されるディレクトリは何ですか？",
+  "quizAnswer": "/sys",
+  "slug": "sysfs"
+}

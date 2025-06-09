@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "cd (Change Directory)",
+  "lessonContent": "现在你知道自己在哪里了，让我们看看能否在文件系统中移动一下。记住，我们需要使用路径来导航。有两种不同的方式来指定路径，即绝对路径和相对路径。\n\n<ul>\n<li>绝对路径：这是从根目录开始的路径。根目录是最高领导。根目录通常显示为斜杠。每当你的路径以 / 开头时，这意味着你从根目录开始。例如，/home/pete/Desktop。</li>\n\n<li>相对路径：这是从你当前所在的文件系统位置开始的路径。如果我在位置 /home/pete/Documents 并且想要进入 Documents 内部名为 taxes 的目录，我不必指定整个从根目录开始的路径，比如 /home/pete/Documents/taxes，我只需进入 taxes/。</li>\n</ul>\n\n现在你知道路径是如何工作的，我们只需要一些东西来帮助我们切换到想要的目录。幸运的是，我们有 cd 或“change directory” 来做到这一点。\n\n<pre>$ cd /home/pete/Pictures</pre>\n\n现在我已经将我的目录位置更改为 /home/pete/Pictures。\n\n现在在这个目录中，我有一个名为 Hawaii 的文件夹，我可以通过以下方式导航到该文件夹：\n\n<pre>$ cd Hawaii</pre>\n\n注意我只使用了文件夹的名称吗？这是因为我已经在 /home/pete/Pictures 中了。\n\n总是使用绝对路径和相对路径导航可能会很累人，幸运的是，有一些快捷方式可以帮助你。\n\n<ul>\n<li>. (当前目录)。这是你当前所在的目录。</li>\n<li>.. (上级目录)。带你到当前目录的上一级目录。</li>\n<li>~ (主目录)。此目录默认为你的“主目录”。例如 /home/pete。</li>\n<li>- (上一个目录)。这将带你到刚才所在的上一个目录。</li>\n</ul>\n\n<pre>$ cd .\n$ cd ..\n$ cd ~\n$ cd -\n</pre>\n试一试吧！",
+  "exercise": "<ol>\n<li>运行不带任何标志的 cd 命令，它会把你带到哪里？</li>\n</ol>",
+  "quizQuestion": "如果你在 /home/pete/Pictures 并且想要去 /home/pete，一个好的快捷方式是什么？",
+  "quizAnswer": "cd ..",
+  "slug": "changedirectorycdcommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Protocolo de Gateway de Borda",
+  "lessonContent": "O último protocolo importante que discutiremos é o BGP, o BGP é basicamente como a Internet funciona. É usado para coletar e trocar informações de roteamento entre sistemas autônomos. Pense em um sistema autônomo como um provedor de serviços de Internet, uma empresa, universidade, qualquer organização, etc. Sem o BGP, esses sistemas não saberiam como se comunicar entre si, eles seriam isolados. Em vez de rotear dentro desses sistemas autônomos, o BGP roteia entre eles.\n\nDigamos que você esteja na sua rede doméstica e eu esteja trabalhando no Starbucks, quero poder me comunicar com você, então envio um e-mail e o pacote de rede viaja pela rede do Starbucks, ele circula por lá e passa pelas tabelas de roteamento na rede do Starbucks até finalmente atingir um ponto na fronteira da rede do Starbucks e passá-lo para um roteador de Gateway de Borda. Este roteador contém as informações para que meu pacote saia da rede do Starbucks e atravesse outras redes.",
+  "exercise": "Não há exercícios para esta lição.",
+  "quizQuestion": "Qual protocolo basicamente faz a Internet funcionar?",
+  "quizAnswer": "BGP",
+  "slug": "protocolodegatewaydeborda"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "ajuda",
+  "lessonContent": "O Linux possui algumas ótimas ferramentas integradas para ajudá-lo a aprender como usar um comando ou verificar quais flags estão disponíveis para um comando. Uma dessas ferramentas é o comando help, que fornece ajuda para outros comandos bash (echo, logout, pwd, etc).\n\n<pre>$ help echo</pre>\n\nIsso lhe dará uma descrição e as opções que você pode usar ao executar o comando echo. Para outros programas executáveis, é comum ter uma opção chamada --help ou algo semelhante. \n\n<pre>$ echo --help</pre>\n\n Nem todos os desenvolvedores que distribuem executáveis seguirão esse padrão, mas provavelmente é a melhor opção para encontrar ajuda em um programa.",
+  "exercise": "Execute o comando help nos comandos echo, logout e pwd.",
+  "quizQuestion": "Como obter ajuda rápida na linha de comando para comandos bash integrados?",
+  "quizAnswer": "help",
+  "slug": "comandoajuda"
+}

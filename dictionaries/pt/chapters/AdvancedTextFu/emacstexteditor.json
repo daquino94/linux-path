@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Emacs",
+  "lessonContent": "Emacs é para usuários que desejam um editor de texto extremamente poderoso, o que pode ser um eufemismo, pois essencialmente você vive no emacs. Você pode fazer toda a edição de código, manipulação de arquivos, etc., tudo dentro do emacs. É um pouco mais lento para carregar e a curva de aprendizado é um pouco mais íngreme do que o vim, mas se você deseja um editor poderoso que seja extremamente extensível, este é o ideal para você. Quando digo extensível, quero dizer que você pode escrever scripts para o emacs que estendem sua funcionalidade.\n\nPara iniciar o emacs, basta usar:\n\n<pre>emacs</pre>\n\nVocê deve ser recebido com o buffer de boas-vindas padrão.\n\nBuffers no emacs é onde seu texto reside. Portanto, se você abrir um arquivo, um buffer é usado para armazenar o conteúdo desse arquivo. Você pode ter vários buffers abertos ao mesmo tempo e pode alternar facilmente entre buffers.",
+  "exercise": "Sem exercícios para esta lição.",
+  "quizQuestion": "Nenhuma pergunta, siga em frente!",
+  "quizAnswer": "",
+  "slug": "emacstexteditor"
+}

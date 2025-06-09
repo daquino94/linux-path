@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Capa de Aplicación",
+  "lessonContent": "Imaginemos que queremos enviar un correo electrónico a Patty. Vamos a repasar cada una de las capas TCP/IP para ver esto en acción. \n\nRecuerda que los paquetes se utilizan para transmitir datos a través de redes, un paquete consta de una cabecera y una carga útil. La cabecera contiene información sobre a dónde va el paquete y de dónde proviene. La carga útil es la información real que se está transfiriendo. A medida que nuestro paquete atraviesa la red, cada capa agrega un poco de información a la cabecera del paquete. También ten en cuenta que diferentes capas utilizan un término diferente para nuestro \"paquete\". En la capa de transporte esencialmente encapsulamos nuestros datos en un segmento y en la capa de enlace nos referimos a esto como un trama, pero debes saber que el término paquete se puede utilizar en relación con lo mismo.\n\nComenzamos en la capa de aplicación. Cuando enviamos nuestro correo electrónico a través de nuestro cliente de correo electrónico, la capa de aplicación encapsulará estos datos. La capa de aplicación se comunica con la capa de transporte a través de un puerto especificado y a través de este puerto envía sus datos. Queremos enviar un correo electrónico a través del protocolo de capa de aplicación SMTP (protocolo simple de transferencia de correo). Los datos se envían a través de nuestro protocolo de transporte que abre una conexión a este puerto (el puerto 25 se utiliza para SMTP), por lo que estos datos se envían a través de este puerto y esos datos se envían a la capa de transporte para ser encapsulados en segmentos.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Qué capa se utiliza para presentar los datos del paquete en un formato amigable para el usuario?",
+  "quizAnswer": "Aplicación",
+  "slug": "capadeaplicacion"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "join und split",
+  "lessonContent": "Der Befehl join ermöglicht es Ihnen, mehrere Dateien anhand eines gemeinsamen Feldes zusammenzuführen: \n\nAngenommen, ich hätte zwei Dateien, die ich zusammenführen möchte:\n<pre>file1.txt\n1 John\n2 Jane\n3 Mary\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n\n$ join file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\nSehen Sie, wie meine Dateien zusammengeführt wurden? Sie werden standardmäßig anhand des ersten Feldes zusammengeführt und die Felder müssen identisch sein. Wenn sie es nicht sind, können Sie sie sortieren, sodass in diesem Fall die Dateien über 1, 2, 3 verbunden sind. \n\nWie würden wir die folgenden Dateien zusammenführen? \n\n<pre>file1.txt\nJohn 1\nJane 2\nMary 3\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n</pre>\n\nUm diese Datei zu verbinden, müssen Sie angeben, welche Felder Sie verbinden, in diesem Fall möchten wir Feld 2 in file1.txt und Feld 1 in file2.txt verbinden, daher würde der Befehl so aussehen:\n\n<pre>\n$ join -1 2 -2 1 file1.txt file2.txt\n1 John Doe\n2 Jane Doe\n3 Mary Sue\n</pre>\n\n-1 bezieht sich auf file1.txt und -2 bezieht sich auf file2.txt. Ziemlich praktisch. Sie können auch eine Datei mit dem Befehl split in verschiedene Dateien aufteilen: \n\n<pre>$ split somefile</pre>\n\nDies wird sie in verschiedene Dateien aufteilen, standardmäßig werden sie aufgeteilt, sobald sie eine Grenze von 1000 Zeilen erreichen. Die Dateien werden standardmäßig als x** benannt.",
+  "exercise": "Fügen Sie zwei Dateien mit unterschiedlicher Anzahl von Zeilen in jeder Datei zusammen, was passiert?",
+  "quizQuestion": "Welchen Befehl würden Sie verwenden, um Dateien mit den Namen cat dog cow zu verbinden?",
+  "quizAnswer": "join cat dog cow",
+  "slug": "joinsplitcommand"
+}

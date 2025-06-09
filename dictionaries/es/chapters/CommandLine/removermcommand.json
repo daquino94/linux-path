@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "rm (Eliminar)",
+  "lessonContent": "Ahora creo que tenemos demasiados archivos, vamos a eliminar algunos archivos. Para eliminar archivos, puedes usar el comando rm. El comando rm (remove) se utiliza para borrar archivos y directorios. \n\n<pre>$ rm archivo1</pre>\n\nTen cuidado al usar rm, no hay una papelera mágica de la que puedas recuperar los archivos eliminados. Una vez que se han ido, se han ido para siempre, así que ten cuidado. \n\nAfortunadamente, se han implementado algunas medidas de seguridad, por lo que el usuario común no puede simplemente eliminar un montón de archivos importantes. Los archivos protegidos contra escritura te pedirán confirmación antes de eliminarlos. Si un directorio está protegido contra escritura, tampoco se eliminará fácilmente. \n\nAhora, si no te importa nada de eso, puedes eliminar absolutamente un montón de archivos. \n\n<pre>$ rm -f archivo1</pre>\n\nLa opción -f o force le indica a rm que elimine todos los archivos, ya estén protegidos contra escritura o no, sin pedirle confirmación al usuario (siempre que tengas los permisos adecuados).\n\n<pre>$ rm -i archivo</pre>\n\nAgregar la bandera -i como muchos de los otros comandos, te dará un aviso sobre si realmente deseas eliminar los archivos o directorios. \n\n<pre>$ rm -r directorio</pre>\n\nNo puedes simplemente usar rm en un directorio por defecto, necesitarás agregar la bandera -r (recursivo) para eliminar todos los archivos y cualquier subdirectorio que pueda tener.\n\nPuedes eliminar un directorio con el comando rmdir.\n\n<pre>$ rmdir directorio</pre>",
+  "exercise": "<ol>\n<li>Crea un archivo llamado -archivo (¡no olvides el guion!).</li>\n<li>Elimina ese archivo.</li>\n</ol>",
+  "quizQuestion": "¿Cómo eliminas un archivo llamado myfile?",
+  "quizAnswer": "",
+  "slug": "removermcommand"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Tâches Cron",
+  "lessonContent": "Bien que nous ayons parlé de l'utilisation des ressources, je pense que ce serait un bon moment pour mentionner un outil pratique sous Linux qui est utilisé pour planifier des tâches en utilisant cron. Il s'agit d'un service qui exécute des programmes pour vous à l'heure que vous avez planifiée. C'est vraiment utile si vous avez un script que vous voulez exécuter une fois par jour et qui doit faire quelque chose pour vous. \n\nPar exemple, disons que j'ai un script situé dans /home/pete/scripts/change_wallpaper. J'utilise ce script chaque matin pour changer l'image que j'utilise comme fond d'écran, mais chaque matin je dois exécuter ce script manuellement. Au lieu de cela, je peux créer une tâche cron qui exécute mon script via cron. Je peux spécifier l'heure à laquelle je veux que cette tâche cron s'exécute et exécute mon script. \n\n<pre>30 08 * * * /home/pete/scripts/change_wallpaper</pre>\n\nLes champs sont les suivants de gauche à droite :\n<ul>\n<li>Minute - (0-59)</li>\n<li>Heure - (0-23)</li>\n<li>Jour du mois - (1-31)</li>\n<li>Mois - (1-12)</li>\n<li>Jour de la semaine - (0-7). 0 et 7 sont désignés comme dimanche</li>\n</ul>\n\nL'astérisque dans le champ signifie correspondre à chaque valeur. Ainsi, dans mon exemple ci-dessus, je veux que cela s'exécute tous les jours de chaque mois à 8h30.\n\nPour créer une tâche cron, il suffit de modifier le fichier crontab :\n\n<pre>crontab -e</pre>",
+  "exercise": "Créez une tâche cron que vous voulez exécuter à un moment planifié.",
+  "quizQuestion": "Quelle est la commande pour éditer vos tâches cron ?",
+  "quizAnswer": "crontab -e",
+  "slug": "cronjobs"
+}

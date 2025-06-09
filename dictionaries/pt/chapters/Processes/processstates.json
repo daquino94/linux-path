@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Estados de Processo",
+  "lessonContent": "Vamos dar uma olhada no comando ps aux novamente:\n\n<pre>$ ps aux</pre>\n\nNa coluna STAT, você verá muitos valores. Um processo linux pode estar em vários estados diferentes. Os códigos de estado mais comuns que você verá são descritos abaixo:\n\n<ul>\n<li>R: em execução ou pronto para execução, está apenas esperando a CPU processá-lo</li>\n<li>S: sono interrompível, aguardando a conclusão de um evento, como entrada do terminal</li>\n<li>D: sono ininterruptível, processos que não podem ser encerrados ou interrompidos com um sinal, geralmente para fazê-los desaparecer você tem que reiniciar ou corrigir o problema</li>\n<li>Z: Zumbi, discutimos em uma lição anterior que zumbis são processos terminados que estão aguardando para ter seus status coletados</li>\n<li>T: Parado, um processo que foi suspenso/parado</li>\n</ul>",
+  "exercise": "Dê uma olhada nos processos em execução em seu sistema e verifique seus estados de processo.",
+  "quizQuestion": "Qual código STAT é usado para representar um sono ininterruptível?",
+  "quizAnswer": "D",
+  "slug": "estadosdeprocesso"
+}

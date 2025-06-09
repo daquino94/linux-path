@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "首先是一些标准日志文件。按设施记录。",
+  "lessonContent": "Syslog 服务管理并将日志发送到系统记录器。Rsyslog 是 syslog 的高级版本，大多数 Linux 发行版应该在使用这个新版本。Syslog 服务收集的所有日志的输出可以在 /var/log/syslog 中找到（除了认证消息之外的每条消息）。\n\n要找出系统记录器维护的文件，请查看 /etc/rsyslog.d 中的配置文件：\n\n<pre>\npete@icebox:~$ less /etc/rsyslog.d/50-default.conf \n#\nauth,authpriv.*                 /var/log/auth.log\n*.*;auth,authpriv.none          -/var/log/syslog\n#cron.*                         /var/log/cron.log\n#daemon.*                       -/var/log/daemon.log\nkern.*                          -/var/log/kern.log\n#lpr.*                          -/var/log/lpr.log\nmail.*                          -/var/log/mail.log\n#user.*                         -/var/log/user.log\n</pre>\n\n这些规则将日志文件表示为左列的选择器和右列的操作。操作告诉我们将日志信息发送到哪里，比如文件、控制台等。请记住，并非每个应用程序和服务都使用 rsyslog 来管理其日志，因此，如果您想具体了解记录了什么，您将不得不查看此目录内部。\n\n让我们实际看到日志记录的过程，您可以使用 logger 命令手动发送日志：\n\n<pre>\nlogger -s Hello\n</pre>\n\n现在查看您的 /var/log/syslog，您应该在日志中看到此条目！",
+  "exercise": "查看您的 /etc/rsyslog.d 配置文件，看看通过系统记录器还记录了什么。",
+  "quizQuestion": "您可以使用什么命令手动记录消息？",
+  "quizAnswer": "logger",
+  "slug": "syslog"
+}

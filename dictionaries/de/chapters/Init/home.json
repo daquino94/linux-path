@@ -1,0 +1,7 @@
+{
+  "id": 13,
+  "title": "Init",
+  "description": "Erfahren Sie mehr über die verschiedenen Init-Systeme, SysV, Upstart und systemd.",
+  "image": "/images/chapters/init.png",
+  "slug": "init"
+}

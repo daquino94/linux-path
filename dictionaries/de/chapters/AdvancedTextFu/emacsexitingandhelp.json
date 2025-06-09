@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "Emacs Beenden und Hilfe",
+  "lessonContent": "<b>Um Emacs zu beenden</b>\n\n<pre>C-x C-c</pre>\n\nWenn Sie offene Puffer haben, wird es Sie auffordern, sie zu speichern, bevor Sie Emacs beenden.\n\n<b>Verwirrt?</b>\n\n<pre>C-h C-h : Hilfemenü</pre>\n\n<b>Rückgängig machen</b>\n\n<pre>C-x u</pre>\n\nWie Sie sehen können, hat Emacs mehr bewegliche Teile, daher ist die Lernkurve etwas steiler. Dafür erhalten Sie jedoch einen sehr leistungsstarken Texteditor.",
+  "exercise": "Besuchen Sie die Emacs-Website, um mehr Befehle zu erfahren. <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a>",
+  "quizQuestion": "Wie greifen Sie auf das Hilfemenü zu?",
+  "quizAnswer": "C-h C-h",
+  "slug": "emacsexitingandhelp"
+}

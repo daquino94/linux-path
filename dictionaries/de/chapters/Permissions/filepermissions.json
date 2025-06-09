@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Dateiberechtigungen",
+  "lessonContent": "Wie wir zuvor gelernt haben, haben Dateien unterschiedliche Berechtigungen oder Dateimodi. Schauen wir uns ein Beispiel an:\n\n<pre>$ ls -l Desktop/\ndrwxr-xr-x 2 pete penguins 4096 Dez 1 11:45 .\n</pre>\n\nEine Dateiberechtigung besteht aus vier Teilen. Der erste Teil ist der Dateityp, der durch das erste Zeichen in den Berechtigungen angezeigt wird. In unserem Fall, da wir uns ein Verzeichnis ansehen, zeigt es <b>d</b> für den Dateityp an. Am häufigsten sehen Sie ein <b>-</b> für eine reguläre Datei.\n\nDie nächsten drei Teile des Dateimodus sind die tatsächlichen Berechtigungen. Die Berechtigungen sind in 3 Bits gruppiert. Die ersten 3 Bits sind Benutzerberechtigungen, dann Gruppenberechtigungen und dann sonstige Berechtigungen. Ich habe den senkrechten Strich hinzugefügt, um die Unterscheidung zu erleichtern.\n\n<pre>d | rwx | r-x | r-x </pre>\n\nJedes Zeichen stellt eine andere Berechtigung dar: \n<ul>\n<li>r: lesbar</li>\n<li>w: beschreibbar</li>\n<li>x: ausführbar (im Grunde ein ausführbares Programm)</li>\n<li>-: leer</li>\n</ul>\n\nIn dem obigen Beispiel sehen wir, dass der Benutzer pete Lese-, Schreib- und Ausführungsberechtigungen für die Datei hat. Die Gruppe penguins hat Lese- und Ausführungsberechtigungen. Und schließlich haben die anderen Benutzer (alle anderen) Lese- und Ausführungsberechtigungen.",
+  "exercise": "Verwenden Sie den Befehl ls -l auf mehreren Dateien und geben Sie ihre Berechtigungen, Benutzer und Gruppe an.",
+  "quizQuestion": "Welches Berechtigungsbit wird für ausführbar verwendet?",
+  "quizAnswer": "x",
+  "slug": "dateiberechtigungen"
+}

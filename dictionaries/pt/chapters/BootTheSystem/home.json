@@ -1,0 +1,7 @@
+{
+  "id": 11,
+  "title": "Iniciar o Sistema",
+  "description": "Aprenda sobre as etapas do processo de inicialização do Linux.",
+  "image": "/images/chapters/boot.png",
+  "slug": "iniciarosistema"
+}

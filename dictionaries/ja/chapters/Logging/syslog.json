@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "最初にいくつかの標準ログファイル。ファシリティごとのログ。",
+  "lessonContent": "Syslogサービスはログを管理し、システムロガーに送信します。RsyslogはSyslogの高度なバージョンであり、ほとんどのLinuxディストリビューションはこの新しいバージョンを使用しているはずです。Syslogサービスが収集したすべてのログの出力は/var/log/syslogにあります（認証メッセージを除くすべてのメッセージ）。\n\nシステムロガーが管理しているファイルを確認するには、/etc/rsyslog.d内の構成ファイルを見てください:\n\n<pre>\npete@icebox:~$ less /etc/rsyslog.d/50-default.conf \n#\nauth,authpriv.*                 /var/log/auth.log\n*.*;auth,authpriv.none          -/var/log/syslog\n#cron.*                         /var/log/cron.log\n#daemon.*                       -/var/log/daemon.log\nkern.*                          -/var/log/kern.log\n#lpr.*                          -/var/log/lpr.log\nmail.*                          -/var/log/mail.log\n#user.*                         -/var/log/user.log\n</pre>\n\nこれらのルールはログファイルを示すセレクタ（左列）とアクション（右列）で表されます。アクションは、ログ情報をどこに送信するかを示します（ファイル、コンソールなど）。すべてのアプリケーションやサービスがログを管理するためにrsyslogを使用しているわけではないので、具体的に何がログに記録されているか知りたい場合は、このディレクトリの中を見る必要があります。\n\n実際にログを見てみましょう。loggerコマンドを使用して手動でログを送信できます:\n\n<pre>\nlogger -s Hello\n</pre>\n\n次に、/var/log/syslogを見て、ログにこのエントリが表示されているはずです！",
+  "exercise": "自分の/etc/rsyslog.d構成ファイルを見て、システムロガーを介して他に何がログに記録されているかを確認してください。",
+  "quizQuestion": "メッセージを手動でログに記録するために使用できるコマンドは何ですか？",
+  "quizAnswer": "logger",
+  "slug": "syslog"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "シンプルなHTTPサーバー",
+  "lessonContent": "PythonにはHTTP経由でファイルを提供するための非常に便利なツールがあります。これは、ネットワーク上の他のマシンがアクセスできるクイックなネットワーク共有を作成したい場合に便利です。それを行うには、共有したいディレクトリに移動して次のコマンドを実行します:\n\n<pre>$ python -m SimpleHTTPServer</pre>\n\nこれにより、アクセスできる基本的なWebサーバーが設定されます。したがって、これを実行したマシンのIPアドレスを取得し、別のマシンでブラウザで次のようにアクセスします: http://IP_ADDRESS:8000。自分のマシンでは、Webブラウザでhttp://localhost:8000と入力することで利用可能なファイルを表示できます。\n\nこれはnodeでも行うことができますし、Python 3を実行している場合は、構文が少し異なります。",
+  "exercise": "SimpleHTTPServerを設定してみてください！",
+  "quizQuestion": "Pythonでシンプルなhttpサーバーを作成するために使用できるツールは何ですか？",
+  "quizAnswer": "SimpleHTTPServer",
+  "slug": "simplehttpserver"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Netzwerkgrundlagen",
+  "lessonContent": "Schauen wir uns ein typisches Heimnetzwerk an, das aus verschiedenen Komponenten besteht. \n\n<ul>\n<li>ISP - Ihr Internetdienstanbieter, das Unternehmen, bei dem Sie bezahlen, um Internet in Ihrem Haus zu erhalten.</li>\n<li>Router - Der Router ermöglicht es jedem Gerät in Ihrem Netzwerk, eine Verbindung zum Internet herzustellen. In den meisten modernen Routern können Sie sich drahtlos oder über ein Ethernet-Kabel verbinden.</li>\n<li>WAN - Weitverkehrsnetzwerk, so nennen wir das Netzwerk, das alles zwischen Ihrem Router und einem weiteren Netzwerk wie dem Internet umfasst.</li>\n<li>WLAN - Drahtloses lokales Netzwerk, das ist das Netzwerk zwischen Ihrem Router und allen drahtlosen Geräten, die Sie haben könnten, wie Laptops.</li>\n<li>LAN - Lokales Netzwerk, das ist das Netzwerk zwischen Ihrem Router und allen verkabelten Geräten wie Desktop-PCs.</li>\n<li>Hosts - Jedes Gerät in einem Netzwerk wird als Host bezeichnet.</li>\n</ul>\n\nDie Daten und Informationen, die durch Netzwerke übertragen werden, werden als Pakete bezeichnet, und am Ende des Abschnitts Networking Nomad werden Sie im Detail verstehen, wie ein Paket zu und von Hosts reist.",
+  "exercise": "Für diese Lektion gibt es keine Übungen.",
+  "quizQuestion": "Wie nennt man das lokale Netzwerk?",
+  "quizAnswer": "LAN",
+  "slug": "netzwerkgrundlagen"
+}

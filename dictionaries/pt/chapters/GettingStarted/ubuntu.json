@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Ubuntu",
+  "lessonContent": "<b>Visão Geral</b>\nUma das distribuições Linux mais populares para máquinas pessoais é o Ubuntu. O Ubuntu também lança seu próprio gerenciador de ambiente de desktop Unity por padrão. \n\n<b>Gerenciamento de Pacotes</b>\nO Ubuntu é um sistema operacional baseado em Debian desenvolvido pela Canonical. Portanto, ele utiliza um sistema central de gerenciamento de pacotes Debian.\n\n<b>Configurabilidade</b>\nO Ubuntu é uma ótima escolha para um iniciante que deseja entrar no mundo do Linux. O Ubuntu oferece facilidade de uso e uma ótima experiência de interface de usuário que levou à sua ampla adoção. É amplamente utilizado e suportado e é mais semelhante a outros sistemas operacionais como OSX e Windows em termos de usabilidade.\n\n<b>Usos</b>\nÓtimo para qualquer plataforma, desktop, laptop e servidor.",
+  "exercise": "Se você está interessado em ter o Ubuntu como seu sistema operacional, vá para a seção de instalação e experimente: \n<a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>",
+  "quizQuestion": "Em qual sistema operacional o Ubuntu é baseado?",
+  "quizAnswer": "Debian",
+  "slug": "ubuntu"
+}

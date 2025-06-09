@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "tête",
+  "lessonContent": "Supposons que nous ayons un fichier très long, en fait nous en avons plusieurs parmi lesquels choisir, allez-y et tapez cat /var/log/syslog. Vous devriez voir des pages et des pages de texte. Et si je voulais juste voir les premières lignes de ce fichier texte ? Eh bien, nous pouvons le faire avec la commande head, par défaut, la commande head vous montrera les 10 premières lignes d'un fichier.\n\n<pre>$ head /var/log/syslog</pre>\n\nVous pouvez également modifier le nombre de lignes selon votre choix, disons que je veux voir les 15 premières lignes à la place. \n\n<pre>$ head -n 15 /var/log/syslog</pre>\n\nLe drapeau -n signifie le nombre de lignes.",
+  "exercise": "Que fait la commande suivante et pourquoi ? \n\n<pre>$ head -c 15 /var/log/syslog</pre>",
+  "quizQuestion": "Quel drapeau utiliseriez-vous pour changer le nombre de lignes que vous souhaitez afficher pour la commande head ?",
+  "quizAnswer": "-n",
+  "slug": "commandetête"
+}

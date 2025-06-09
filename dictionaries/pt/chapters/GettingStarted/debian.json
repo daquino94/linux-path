@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Debian",
+  "lessonContent": "<b>Visão Geral</b>\nDebian é um sistema operacional composto inteiramente por software livre e de código aberto. É amplamente conhecido e está em desenvolvimento há mais de 20 anos. Existem três branches que você pode usar, Estável, Teste e Instável. \n\nEstável é uma boa branch para se estar. Teste e Instável são lançamentos contínuos. Isso significa que quaisquer mudanças incrementais nesses branches eventualmente se tornarão Estável. Por exemplo, se você quisesse passar para a próxima atualização do Windows 8 para o Windows 10, teria que fazer uma instalação completa do Windows 10. No entanto, estando no lançamento de Teste, você receberá automaticamente atualizações até que se torne o próximo lançamento do sistema operacional sem ter que fazer uma instalação completa. \n\n<b>Gerenciamento de Pacotes</b>\nDebian também usa ferramentas de gerenciamento de pacotes Debian. Cada distribuição Linux instala e gerencia pacotes de maneira diferente e usa diferentes ferramentas de gerenciamento de pacotes. Falaremos mais sobre isso em um curso posterior. \n\n<b>Configurabilidade</b>\nDebian pode não receber as últimas atualizações, mas é extremamente estável. Se você deseja um bom sistema operacional \"core\", este é o ideal para você.\n\n<b>Usos</b>\nDebian é um ótimo sistema operacional para qualquer plataforma.",
+  "exercise": "Se você estiver interessado em ter o Debian como seu sistema operacional, vá para a seção de instalação e experimente: <a href='https://www.debian.org/'>https://www.debian.org/</a>",
+  "quizQuestion": "Que tipo de lançamento o Teste e o Instável têm?",
+  "quizAnswer": "Rolling",
+  "slug": "debian"
+}

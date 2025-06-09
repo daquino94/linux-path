@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "ls (ディレクトリの一覧表示)",
+  "lessonContent": "システム内を移動する方法がわかったので、利用可能なものをどのように把握すればよいでしょうか？現時点では、まるで暗闇の中を移動しているようです。しかし、素晴らしいlsコマンドを使用してディレクトリの内容を一覧表示することができます。lsコマンドは、デフォルトで現在のディレクトリのディレクトリとファイルを一覧表示しますが、表示したいディレクトリのパスを指定することもできます。\n\n<pre>$ ls\n$ ls /home/pete</pre>\n\nlsは非常に便利なツールであり、表示しているファイルやディレクトリに関する詳細情報も表示します。\n\nまた、ディレクトリ内のすべてのファイルが表示されるわけではないことに注意してください。.で始まるファイル名は非表示ですが、lsコマンドを使用して-aフラグ（aはすべての意味）を渡すことで表示することができます。\n\n<pre>$ ls -a</pre>\n\nさらに、もう1つ便利なlsフラグがあります。-lはlongの略で、長い形式でファイルの詳細一覧を表示します。左から詳細情報が表示されます：ファイルの権限、リンク数、所有者名、所有者グループ、ファイルサイズ、最終変更日時、ファイル/ディレクトリ名。\n\n<pre>$ ls -l</pre>\n\n<pre>pete@icebox:~$ ls -l\ntotal 80\ndrwxr-x--- 7 pete penguingroup   4096 Nov 20 16:37 Desktop\ndrwxr-x--- 2 pete penguingroup   4096 Oct 19 10:46  Documents\ndrwxr-x--- 4 pete penguingroup   4096 Nov 20 09:30 Downloads\ndrwxr-x--- 2 pete penguingroup   4096 Oct  7 13:13   Music\ndrwxr-x--- 2 pete penguingroup   4096 Sep 21 14:02 Pictures\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>\n\nコマンドには、機能を追加するためのフラグ（または引数またはオプションと呼ばれるもの）があります。-aと-lを追加した方法を見てみましょう。これらを-lと-aの両方で追加することもできます。フラグの順序は、それがどの順序であるかを決定しますが、ほとんどの場合、それはあまり重要ではないため、ls -alとしても機能します。\n\n<pre>$ ls -la</pre>",
+  "exercise": "異なるフラグを使用してlsを実行し、受け取った出力を確認してください。",
+  "quizQuestion": "非表示ファイルを表示するために使用するコマンドは何ですか？",
+  "quizAnswer": "ls -a",
+  "slug": "listdirectorieslscommand"
+}

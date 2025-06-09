@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "NAT",
+  "lessonContent": "Nous avons déjà mentionné le NAT (traduction d'adresse réseau) auparavant mais sans y toucher. Lorsque nous travaillons sur notre réseau, est-ce que cela signifie que l'Internet peut voir notre adresse IP? Pas tout à fait.\n\nLe NAT fait en sorte qu'un appareil comme notre routeur agisse en tant qu'intermédiaire entre l'Internet et le réseau privé. Ainsi, seul une seule adresse IP unique est nécessaire pour représenter tout un groupe d'ordinateurs.\n\nPensez au NAT comme à une réceptionniste dans un grand bureau, si quelqu'un veut vous contacter, il ne connaît que le numéro de tout le bureau, la réceptionniste devra alors chercher votre numéro d'extension et transférer l'appel vers vous.\n\n<b>Comment ça marche?</b>\n\nUn cas simple ressemblerait à ceci:\n\n<ol>\n<li>Patty veut se connecter à www.google.com, donc son ordinateur envoie cette demande via le routeur</li>\n<li>Le routeur prend cette demande et ouvre sa propre connexion vers google.com, puis envoie la demande de Patty une fois la connexion établie</li>\n<li>Le routeur est l'intermédiaire entre Patty et www.google.com. Google ne sait rien de Patty, tout ce qu'il peut voir, c'est le routeur.</li>\n</ol>\n\nLe NAT et le routage de paquets en général peuvent devenir assez compliqués, mais nous n'entrerons pas dans les détails.",
+  "exercise": "Pas d'exercices pour cette leçon.",
+  "quizQuestion": "Qu'est-ce qui est utilisé pour représenter une seule adresse privée à l'Internet?",
+  "quizAnswer": "NAT",
+  "slug": "natnetworkaddresstranslation"
+}

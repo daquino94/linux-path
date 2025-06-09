@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Protocoles de vecteur de distance",
+  "lessonContent": "Les protocoles de vecteur de distance déterminent le chemin d'autres réseaux en utilisant le nombre de sauts qu'un paquet effectue à travers le réseau. Si le réseau A était à 3 sauts et que le réseau B était à côté du réseau A, alors nous supposons qu'il doit être à 4 sauts. Dans les protocoles de vecteur de distance, la prochaine route serait celle avec le moins de sauts.\n\nLes protocoles de vecteur de distance sont excellents pour les petits réseaux, mais lorsque les réseaux commencent à se développer, il faut plus de temps aux routeurs pour converger car ils envoient périodiquement la table de routage entière à chaque routeur. Un autre inconvénient des protocoles de vecteur de distance est l'efficacité, ils choisissent des routes plus proches en termes de sauts, mais cela ne signifie pas toujours qu'ils choisissent la route la plus efficace.\n\nUn des protocoles de vecteur de distance courants est RIP (Routing Information Protocol), il diffuse la table de routage à chaque routeur du réseau toutes les 30 secondes. Pour un grand réseau, cela peut nécessiter beaucoup de ressources, c'est pourquoi RIP limite son nombre de sauts à 15.",
+  "exercise": "Aucun exercice pour cette leçon.",
+  "quizQuestion": "Vrai ou faux, les protocoles de distance utilisent la route avec le moins de bande passante ?",
+  "quizAnswer": "faux",
+  "slug": "protocolesdevecteurdedistance"
+}

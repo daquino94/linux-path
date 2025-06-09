@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "Emacs Puffernavigation",
+  "lessonContent": "Um sich in Puffern (oder Dateien, die Sie besuchen) zu bewegen, verwenden Sie die folgenden Befehle:\n\n<b>Puffer wechseln</b>\n\n<pre>\nC-x b - Puffer wechseln\nC-x rechter Pfeil - rechts durch den Puffer zyklisieren\nC-x linker Pfeil - links durch den Puffer zyklisieren\n</pre>\n\n<b>Puffer schließen</b>\n\n<pre>C-x k</pre>\n\n<b>Aktuellen Puffer teilen</b>\n\n<pre>C-x 2</pre>\n\nDies ermöglicht es, mehrere Puffer auf einem Bildschirm zu sehen. Um zwischen diesen Puffern zu wechseln, verwenden Sie: C-x o\n\n<b>Einen einzelnen Puffer als aktuellen Bildschirm festlegen</b>\n\n<pre>C-x 1</pre>\n\nWenn Sie jemals einen Terminal-Multiplexer wie screen und tmux verwendet haben, werden Ihnen die Pufferbefehle sehr vertraut vorkommen.",
+  "exercise": "Spielen Sie mit Puffern herum.",
+  "quizQuestion": "Wie beenden Sie einen Puffer?",
+  "quizAnswer": "C-x k",
+  "slug": "emacsbuffernavigation"
+}

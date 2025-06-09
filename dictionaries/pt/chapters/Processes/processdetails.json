@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Detalhes do Processo",
+  "lessonContent": "Antes de entrarmos em aplicações mais práticas de processos, temos que primeiro entender o que são e como funcionam. Essa parte pode ficar confusa, já que estamos nos aprofundando nos detalhes, então fique à vontade para voltar a esta lição se não quiser aprender sobre isso agora. \n\nUm processo, como mencionamos antes, é um programa em execução no sistema, mais precisamente é o sistema alocando memória, CPU, E/S para fazer o programa funcionar. Um processo é uma instância de um programa em execução, vá em frente e abra 3 janelas de terminal, em duas janelas, execute o comando <b>cat</b> sem passar nenhuma opção (o processo cat permanecerá aberto como um processo porque espera stdin). Agora, na terceira janela, execute: <b>ps aux | grep cat</b>. Você verá que existem dois processos para cat, mesmo que estejam chamando o mesmo programa.\n\nO kernel é responsável pelos processos, quando executamos um programa, o kernel carrega o código do programa na memória, determina e aloca recursos e depois mantém controle sobre cada processo, ele sabe: \n\n<ul>\n<li>O status do processo</li>\n<li>Os recursos que o processo está usando e recebendo</li>\n<li>O proprietário do processo</li>\n<li>Tratamento de sinais (mais sobre isso depois)</li>\n<li>E basicamente tudo mais</li>\n</ul>\n\nTodos os processos estão tentando obter um pedaço daquele doce recurso, é trabalho do kernel garantir que os processos recebam a quantidade certa de recursos, dependendo das demandas do processo. Quando um processo termina, os recursos que ele usou são liberados para outros processos.",
+  "exercise": "Sem exercícios para esta lição.",
+  "quizQuestion": "O que gerencia e controla os processos?",
+  "quizAnswer": "kernel",
+  "slug": "detalhesdoprocesso"
+}

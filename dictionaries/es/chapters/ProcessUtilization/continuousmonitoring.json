@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Monitoreo Continuo",
+  "lessonContent": "Estas herramientas de monitoreo son buenas para revisar cuando tu máquina tiene problemas, pero ¿qué pasa con las máquinas que tienen problemas cuando no estás mirando? Para esas situaciones, necesitarás usar una herramienta de monitoreo continuo, algo que recopilará, informará y guardará la información de actividad de tu sistema. En esta lección veremos una gran herramienta para usar <b>sar</b>.\n\n<b>Instalando sar</b>\nSar es una herramienta que se utiliza para realizar análisis históricos en tu sistema, primero asegúrate de tenerlo instalado mediante la instalación del paquete sysstat <b>sudo apt install sysstat</b>.\n\n<b>Configuración de la recolección de datos</b>\nNormalmente, una vez que instalas sysstat, tu sistema comenzará automáticamente a recolectar datos, si no lo hace, puedes habilitarlo modificando el campo ENABLED en /etc/default/sysstat.\n\n<b>Usando sar</b>\n\n<pre>$ sudo sar -q</pre>\n\nEste comando mostrará los detalles desde el inicio del día.\n\n<pre>$ sudo sar -r</pre>\n\nEsto mostrará los detalles del uso de memoria desde el inicio del día.\n\n<pre>$ sudo sar -P</pre>\n\nEsto mostrará los detalles del uso de la CPU.\n\nPara ver una vista de un día diferente, puedes ir a /var/log/sysstat/saXX donde XX es el día que deseas ver.\n\n<pre>$sar -q /var/log/sysstat/sa02</pre>",
+  "exercise": "Instala sar en tu sistema y comienza a recolectar y analizar la utilización de recursos de tu sistema.",
+  "quizQuestion": "¿Qué herramienta es buena para monitorear los recursos del sistema?",
+  "quizAnswer": "sar",
+  "slug": "monitoreocontinuo"
+}

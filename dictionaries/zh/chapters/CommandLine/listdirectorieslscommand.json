@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "ls (列出目录)",
+  "lessonContent": "现在我们知道如何在系统中移动，那么我们如何找出可用的内容呢？现在就好像我们在黑暗中移动一样。好吧，我们可以使用令人惊叹的 ls 命令来列出目录内容。ls 命令将默认列出当前目录中的目录和文件，但您也可以指定要列出目录的路径。\n\n<pre>$ ls\n$ ls /home/pete</pre>\n\nls 是一个非常有用的工具，它还会显示您查看的文件和目录的详细信息。\n\n还要注意，并非所有目录中的文件都是可见的。以 . 开头的文件名是隐藏的，但您可以使用 ls 命令查看它们，并向其传递 -a 标志（a 代表全部）。\n\n<pre>$ ls -a</pre>\n\nls 还有一个非常有用的标志，-l 代表 long，这将以详细格式显示文件的详细列表。这将显示详细信息，从左到右依次是：文件权限、链接数、所有者名称、所有者组、文件大小、最后修改时间戳和文件/目录名称。\n\n<pre>$ ls -l</pre>\n\n<pre>pete@icebox:~$ ls -l\ntotal 80\ndrwxr-x--- 7 pete penguingroup   4096 Nov 20 16:37 Desktop\ndrwxr-x--- 2 pete penguingroup   4096 Oct 19 10:46  Documents\ndrwxr-x--- 4 pete penguingroup   4096 Nov 20 09:30 Downloads\ndrwxr-x--- 2 pete penguingroup   4096 Oct  7 13:13   Music\ndrwxr-x--- 2 pete penguingroup   4096 Sep 21 14:02 Pictures\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates\ndrwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>\n\n命令有称为标志（或参数或选项，无论您想如何称呼它）的东西，以添加更多功能。看看我们如何添加 -a 和 -l，您可以将它们一起添加为 -la。标志的顺序决定了其顺序，大多数情况下这并不重要，因此您也可以执行 ls -al，它仍然可以工作。\n\n<pre>$ ls -la</pre>",
+  "exercise": "使用不同的标志运行 ls 并查看您收到的输出。",
+  "quizQuestion": "您会使用什么命令来查看隐藏文件？",
+  "quizAnswer": "ls -a",
+  "slug": "listdirectorieslscommand"
+}

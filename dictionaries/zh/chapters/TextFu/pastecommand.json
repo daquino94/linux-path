@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "paste",
+  "lessonContent": "paste 命令类似于 cat 命令，它将文件中的行合并在一起。让我们创建一个包含以下内容的新文件：\n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\n让我们将所有这些行合并为一行：\n\n<pre>$ paste -s sample2.txt</pre>\n\npaste 的默认分隔符是 TAB，因此现在有一行，其中每个单词之间用 TAB 分隔。\n\n让我们将这个分隔符（-d）更改为更易读的内容：\n\n<pre>$ paste -d ' ' -s sample2.txt</pre>\n\n现在所有内容应该在一行上，用空格分隔。",
+  "exercise": "尝试将多个文件粘贴在一起，会发生什么？",
+  "quizQuestion": "使用 paste 命令使所有内容都在一行上时要使用哪个标志？",
+  "quizAnswer": "-s",
+  "slug": "pastecommand"
+}

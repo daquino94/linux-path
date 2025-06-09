@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "title": "コマンドライン",
+  "description": "コマンドラインの基本を学び、ファイルやディレクトリの移動などを行います。",
+  "image": "/images/chapters/commandLine.png",
+  "slug": "commandline"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "sort",
+  "lessonContent": "O comando sort é útil para classificar linhas.\n\n<pre>\narquivo1.txt\ncao\nvaca\ngato\nelefante\npassaro\n\n$ sort arquivo1.txt\npassaro\ngato\nvaca\ncao\nelefante\n</pre>\n\nVocê também pode fazer uma classificação reversa: \n\n<pre>$ sort -r arquivo1.txt\nelefante\ncao\nvaca\ngato\npassaro\n</pre>\n\nE também classificar por valor numérico: \n\n<pre>$ sort -n arquivo1.txt\npassaro\ngato\nvaca\nelefante\ncao\n</pre>",
+  "exercise": "O verdadeiro poder do sort vem de sua capacidade de ser combinado com outros comandos, tente o seguinte comando e veja o que acontece?\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "Que flag você usa para fazer uma classificação reversa?",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

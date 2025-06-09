@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "title": "Ligne de commande",
+  "description": "Apprenez les fondamentaux de la ligne de commande, la navigation des fichiers, des répertoires et plus encore.",
+  "image": "/images/chapters/commandLine.png",
+  "slug": "commandline"
+}

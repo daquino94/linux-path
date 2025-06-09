@@ -1,0 +1,7 @@
+{
+  "id": 9,
+  "title": "Appareils",
+  "description": "Apprenez-en davantage sur les appareils Linux et comment ils interagissent avec le noyau et l'espace utilisateur.",
+  "image": "/images/chapters/devices.png",
+  "slug": "devices"
+}

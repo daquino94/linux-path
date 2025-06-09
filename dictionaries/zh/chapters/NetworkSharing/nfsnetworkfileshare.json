@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "NFS",
+  "lessonContent": "Linux 中最标准的网络文件共享是 NFS（Network File System），NFS 允许服务器通过网络与一个或多个客户端共享目录和文件。\n\n我们不会深入讨论如何创建 NFS 服务器的细节，因为它可能会变得复杂，但我们将讨论如何设置 NFS 客户端。\n\n<b>设置 NFS 客户端</b>\n\n<pre>$ sudo service nfsclient start\n$ sudo mount server:/directory /mount_directory</pre>\n\n<b>自动挂载</b>\n\n假设您经常使用 NFS 服务器，并且希望保持永久挂载，通常您可能会编辑 /etc/fstab 文件，但您可能并不总是能够连接到服务器，这可能会导致启动时出现问题。相反，您应该设置自动挂载，以便在需要时连接到 NFS 服务器。这可以通过 <b>automount</b> 工具或最近版本的 Linux 中的 <b>amd</b> 来完成。当在指定目录中访问文件时，automount 将查找远程服务器并自动挂载它。",
+  "exercise": "阅读 NFS 的 man 手册以了解更多信息。",
+  "quizQuestion": "用于自动管理挂载点的工具是什么？",
+  "quizAnswer": "automount",
+  "slug": "nfsnetworkfileshare"
+}

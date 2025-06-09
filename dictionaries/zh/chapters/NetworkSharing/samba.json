@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Samba",
+  "lessonContent": "在计算机早期，Windows 机器需要与 Linux 机器共享文件，因此诞生了服务器消息块（SMB）协议。SMB 用于在 Windows 操作系统之间共享文件（Mac 也可以使用 SMB 进行文件共享），后来以通用互联网文件系统（CIFS）协议的形式进行了清理和优化。\n\nSamba 是我们称之为 Linux 实用工具，用于在 Linux 上处理 CIFS。除了文件共享，您还可以共享像打印机这样的资源。\n\n<b>使用 Samba 创建网络共享</b>\n\n让我们一起了解创建一个 Windows 机器可以访问的网络共享的基本步骤：\n\n<b>安装 Samba</b>\n\n<pre>$ sudo apt update\n$ sudo apt install samba</pre>\n\n<b>设置 smb.conf</b>\n\nSamba 的配置文件位于 /etc/samba/smb.conf，该文件应告诉系统应共享哪些目录、它们的访问权限以及更多选项。默认的 smb.conf 已经包含了大量的注释代码，您可以将其用作编写自己配置的示例。\n\n<pre>$ sudo vi /etc/samba/smb.conf</pre>\n\n<b>为 Samba 设置密码</b>\n\n<pre>$ sudo smbpasswd -a [用户名]</pre>\n\n<b>创建一个共享目录</b>\n\n<pre>$ mkdir /我/要/共享的/目录</pre>\n\n<b>重新启动 Samba 服务</b>\n\n<pre>$ sudo service smbd restart</pre>\n\n<b>通过 Windows 访问 Samba 共享</b>\n\n在 Windows 中，只需在运行提示符中键入网络连接：\\\\主机\\共享名称。\n\n<b>通过 Linux 访问 Samba/Windows 共享</b>\n\n<pre>$ smbclient //主机/目录 -U 用户</pre>\n\nSamba 包含一个名为 <b>smbclient</b> 的命令行工具，您可以使用它访问任何 Windows 或 Samba 服务器。一旦连接到共享，您就可以浏览和传输文件。\n\n<b>将 Samba 共享附加到您的系统</b>\n\n您可以将网络共享挂载到系统上，而不是逐个传输文件。\n\n<pre>$ sudo mount -t cifs 服务器名:目录 挂载点 -o user=用户名,pass=密码</pre>",
+  "exercise": "如果您还没有设置 Samba 共享，请打开 smb.conf 并熟悉配置文件中的选项。",
+  "quizQuestion": "Windows 和 Linux 之间用于文件传输的最新协议是什么？",
+  "quizAnswer": "CIFS",
+  "slug": "samba"
+}

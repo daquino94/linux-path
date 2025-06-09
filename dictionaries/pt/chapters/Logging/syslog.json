@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Primeiro alguns arquivos de log padrão. Log por facilidade.",
+  "lessonContent": "O serviço syslog gerencia e envia logs para o registrador do sistema. Rsyslog é uma versão avançada do syslog, a maioria das distribuições Linux deve estar usando esta nova versão. A saída de todos os logs coletados pelo serviço syslog pode ser encontrada em /var/log/syslog (cada mensagem exceto mensagens de autenticação).\n\nPara descobrir quais arquivos são mantidos pelo nosso registrador de sistema, olhe os arquivos de configuração em /etc/rsyslog.d:\n\n<pre>\npete@icebox:~$ less /etc/rsyslog.d/50-default.conf \n#\nauth,authpriv.*                 /var/log/auth.log\n*.*;auth,authpriv.none          -/var/log/syslog\n#cron.*                         /var/log/cron.log\n#daemon.*                       -/var/log/daemon.log\nkern.*                          -/var/log/kern.log\n#lpr.*                          -/var/log/lpr.log\nmail.*                          -/var/log/mail.log\n#user.*                         -/var/log/user.log\n</pre>\n\nEssas regras para arquivos de log são indicadas pelo seletor na coluna da esquerda e a ação na coluna da direita. A ação nos diz para onde enviar as informações de log, em um arquivo, console, etc. Lembre-se de que nem todas as aplicações e serviços usam o rsyslog para gerenciar seus logs, então se você quiser saber especificamente o que está sendo registrado, terá que olhar dentro deste diretório.\n\nVamos realmente ver o registro em ação, você pode enviar manualmente um log com o comando logger:\n\n<pre>\nlogger -s Olá\n</pre>\n\nAgora olhe dentro do seu /var/log/syslog e você deverá ver esta entrada nos seus logs!",
+  "exercise": "Olhe o seu arquivo de configuração /etc/rsyslog.d e veja o que mais está sendo registrado via o registrador do sistema.",
+  "quizQuestion": "Que comando você pode usar para registrar manualmente uma mensagem?",
+  "quizAnswer": "logger",
+  "slug": "syslog"
+}

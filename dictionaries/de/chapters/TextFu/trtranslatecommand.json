@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "tr (Übersetzen)",
+  "lessonContent": "Der tr (übersetzen) Befehl ermöglicht es Ihnen, eine Reihe von Zeichen in eine andere Zeichenfolge zu übersetzen. Lassen Sie uns ein Beispiel ausprobieren, bei dem alle Kleinbuchstaben in Großbuchstaben übersetzt werden. \n\n<pre>$ tr a-z A-Z\nhello\nHELLO</pre>\n\nWie Sie sehen können, haben wir die Bereiche von a-z in A-Z umgewandelt und alle von uns eingegebenen Texte, die Kleinbuchstaben sind, in Großbuchstaben umgewandelt.",
+  "exercise": "Versuchen Sie den folgenden Befehl. Was passiert? \n\n<pre>$ tr -d ello\nhello</pre>",
+  "quizQuestion": "Welcher Befehl wird verwendet, um Zeichen zu übersetzen?",
+  "quizAnswer": "tr",
+  "slug": "trtranslatecommand"
+}

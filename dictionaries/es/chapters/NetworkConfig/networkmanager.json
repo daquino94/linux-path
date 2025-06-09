@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Administrador de red",
+  "lessonContent": "Por supuesto, si deseas tener la red de tu sistema funcionando automáticamente, ya hay algo en su lugar para eso. La mayoría de las distribuciones utilizan el demonio NetworkManager para configurar sus redes automáticamente. \n\nNotarás NetworkManager en forma de un applet en algún lugar de la barra de tareas de tu escritorio si estás utilizando una interfaz gráfica. Como puedes ver, gestiona el hardware de red y la información de conexión. Por ejemplo, al iniciar, NetworkManager recopilará información del hardware de red, buscará conexiones inalámbricas, cableadas, etc. y luego las activará.\n\nTambién hay herramientas de línea de comandos para interactuar con NetworkManager:\n\n<b>nm-tool</b>\n\nnm-tool informa sobre el estado de NetworkManager y sus dispositivos\n\n<pre>\npete@icebox:/$ nm-tool\nHerramienta NetworkManager\n\nEstado: conectado (global)\n\n- Dispositivo: eth0  [Conexión por cable 1] -------------------------------------------\n  Tipo:              Cableado\n  Controlador:       pcnet32\n  Estado:            conectado\n  Predeterminado:    sí\n  Dirección HW:      12:3D:45:56:7D:CC\n\n  Capacidades:\n    Detección de portadora:  sí\n\n  Propiedades cableadas:\n    Portadora:         activada\n\n  Configuración IPv4:\n    Dirección:         192.168.22.1\n    Prefijo:           24 (255.255.255.0)\n    Puerta de enlace:  192.168.22.2\n\n    DNS:              192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nEl comando nmcli te permite controlar y modificar NetworkManager, consulta la página del manual para más detalles.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cuál es el comando para ver la información de NetworkManager?",
+  "quizAnswer": "nm-tool",
+  "slug": "networkmanager"
+}

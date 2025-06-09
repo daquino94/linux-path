@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Das Sticky-Bit",
+  "lessonContent": "Ein letztes spezielles Berechtigungsbit, über das ich sprechen möchte, ist das Sticky-Bit. \n\nDieses Berechtigungsbit \"haftet an einer Datei/Verzeichnis\", was bedeutet, dass nur der Besitzer oder der Root-Benutzer die Datei löschen oder ändern kann. Dies ist sehr nützlich für freigegebene Verzeichnisse. Schauen Sie sich das folgende Beispiel an:\n\n<pre>$ ls -ld /tmp\ndrwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp\n</pre>\n\nSie sehen hier ein spezielles Berechtigungsbit am Ende <b>t</b>, das bedeutet, dass jeder Dateien hinzufügen, Dateien schreiben, Dateien im Verzeichnis /tmp ändern kann, aber nur der Root kann das Verzeichnis /tmp löschen. \n\n<b>Sticky-Bit ändern</b>\n\n<pre>$ sudo chmod +t meinverzeichnis\n\n$ sudo chmod 1755 meinverzeichnis</pre>\n\nDie numerische Darstellung für das Sticky-Bit ist <b>1</b>",
+  "exercise": "Welche anderen Dateien und Verzeichnisse haben Ihrer Meinung nach ein Sticky-Bit aktiviert?",
+  "quizQuestion": "Welches Symbol repräsentiert das Sticky-Bit?",
+  "quizAnswer": "t",
+  "slug": "stickybit"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "mv (Déplacer)",
+  "lessonContent": "Utilisé pour déplacer des fichiers et les renommer. Assez similaire à la commande cp en termes de drapeaux et de fonctionnalités. \n\nVous pouvez renommer des fichiers comme ceci :\n\n<pre>$ mv ancienfichier nouveaufichier</pre>\n\nOu vous pouvez réellement déplacer un fichier vers un répertoire différent : \n\n<pre>$ mv fichier2 /home/pete/Documents</pre>\n\nEt déplacer plusieurs fichiers :\n\n<pre>$ mv fichier_1 fichier_2 /undossierquelconque</pre>\n\nVous pouvez également renommer des répertoires :\n\n<pre>$ mv répertoire1 répertoire2</pre>\n\nComme cp, si vous déplacez un fichier ou un répertoire, cela écrasera tout élément dans le même répertoire. Vous pouvez donc utiliser le drapeau -i pour vous avertir avant d'écraser quoi que ce soit.\n\n<pre>mv -i répertoire1 répertoire2</pre>\n\nDisons que vous vouliez effectivement déplacer un fichier pour écraser l'ancien. Vous pouvez également sauvegarder ce fichier et il renommera simplement l'ancienne version avec un ~. \n\n<pre>$ mv -b répertoire1 répertoire2</pre>",
+  "exercise": "Renommez un fichier, puis déplacez ce fichier vers un répertoire différent.",
+  "quizQuestion": "Comment renommez-vous un fichier appelé chat en chien?",
+  "quizAnswer": "mv chat chien",
+  "slug": "commandedemvmv"
+}

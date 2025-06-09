@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Red Hat Enterprise Linux",
+  "lessonContent": "<b>概要</b>\nRed Hat Enterprise Linuxは一般的にRHELと呼ばれ、Red Hatによって開発されています。RHELは厳格な規則によって無料再配布を制限していますが、依然としてソースコードを無料で提供しています。\n\n<b>パッケージ管理</b>\nRHELはDebianとは異なるパッケージマネージャー、RPMパッケージマネージャーを使用しており、後で学習することになります。\n\n<b>設定可能性</b>\nRHELベースのオペレーティングシステムは、Debianベースのオペレーティングシステムとわずかに異なります。最も顕著なのはパッケージ管理です。RHELを選択する場合は、それを扱うことになることを知っておくと良いでしょう。\n\n<b>用途</b>\nその名前が示すように、主にエンタープライズで使用されており、頑丈なサーバーOSが必要な場合は、これが良い選択肢です。",
+  "exercise": "RHELをオペレーティングシステムとして使用したい場合は、インストールセクションに移動して試してみてください：<a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>",
+  "quizQuestion": "RHELはどのパッケージマネージャーを使用していますか？",
+  "quizAnswer": "RPM",
+  "slug": "redhatenterpriselinux"
+}

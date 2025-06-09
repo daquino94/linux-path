@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Gerenciando Arquivos de Log",
+  "lessonContent": "Os arquivos de log geram muitos dados e armazenam esses dados em seus discos rígidos, no entanto, existem muitos problemas com isso, na maior parte do tempo só queremos ser capazes de ver logs mais recentes, também queremos gerenciar nosso espaço em disco de forma eficiente, então como fazemos tudo isso? A resposta é com o logrotate. \n\nA utilidade logrotate faz o gerenciamento de logs para nós. Possui um arquivo de configuração que nos permite especificar quantos e quais logs manter, como comprimir nossos logs para economizar espaço e mais. A ferramenta logrotate geralmente é executada pelo cron uma vez por dia e os arquivos de configuração podem ser encontrados em /etc/logrotate.d. \n\nExistem outras ferramentas de rotação de logs que você pode usar para gerenciar seus logs, mas o logrotate é o mais comum.",
+  "exercise": "Olhe para o seu arquivo de configuração do logrotate e veja como ele gerencia alguns dos seus logs.",
+  "quizQuestion": "Qual utilitário é usado para gerenciar logs?",
+  "quizAnswer": "logrotate",
+  "slug": "gerenciandoarquivosdelog"
+}

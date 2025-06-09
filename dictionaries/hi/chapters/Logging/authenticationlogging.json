@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "प्रमाणीकरण लॉगिंग",
+  "lessonContent": "प्रमाणीकरण लॉगिंग बहुत उपयोगी हो सकती है यदि आप लॉगिन में समस्या है। \n\n<b>/var/log/auth.log</b>\n\nइसमें सिस्टम अधिकृति लॉग शामिल हैं, जैसे उपयोगकर्ता लॉगिन और प्रमाणीकरण विधि का उपयोग किया गया। \n\nनमूना स्निपेट:\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "कुछ विफल लॉगिन करें और फिर एक सफल, अपने /var/log/auth.log देखें और देखें क्या हुआ।",
+  "quizQuestion": "उपयोगकर्ता प्रमाणीकरण के लिए कौन सा लॉग प्रयोग किया जाता है?",
+  "quizAnswer": "auth.log",
+  "slug": "authenticationlogging"
+}

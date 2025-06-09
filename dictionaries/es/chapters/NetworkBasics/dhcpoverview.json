@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "Visión general de DHCP",
+  "lessonContent": "Un concepto importante de redes que aún no hemos cubierto es DHCP (Protocolo de Configuración Dinámica de Host)\n\nDHCP asigna direcciones IP, máscaras de subred y pasarelas a nuestras máquinas. Por ejemplo, digamos que tienes un teléfono celular y quieres obtener un número de teléfono para empezar a hablar con la gente. Tienes que llamar a tu operador telefónico y te darán un número. Mientras pagues tus facturas, puedes seguir usando tu teléfono. DHCP es el operador telefónico en este caso, te da una dirección IP para que puedas hablar con otras direcciones IP. También se te arrienda una dirección IP, estas duran un cierto período de tiempo, luego se renovarán dependiendo de cómo tengas configurada tu arrendamiento. \n\nDHCP es genial por muchas razones, permite a un administrador de red no preocuparse por asignar direcciones IP y también evita que se configuren direcciones IP duplicadas. Cada red física debería tener su propio servidor DHCP para que un host pueda solicitar una dirección IP. En un entorno doméstico normal, el enrutador suele actuar como servidor DHCP.\n\nLa forma en que DHCP obtiene toda tu información de host dinámica es:\n\n<ol>\n<li>DHCP DISCOVER - Este mensaje se difunde para buscar un servidor DHCP.</li>\n<li>DHCP OFFER - El servidor DHCP en la red responde con un mensaje de oferta. La oferta contiene un paquete con el tiempo de arrendamiento DHCP, máscara de subred, dirección IP, etc.</li>\n<li>DHCP REQUEST - El cliente envía otra difusión para que todos los servidores DHCP sepan qué oferta aceptó.</li>\n<li>DHCP ACK - El servidor envía un acuse de recibo.</li>\n</ol>\n\nDHCP se vuelve más complejo que esto, pero esta es la esencia de ello.",
+  "exercise": "No hay ejercicios para esta lección.",
+  "quizQuestion": "¿Cuáles son los pasos en una solicitud de DHCP?",
+  "quizAnswer": "DISCOVER, OFFER, REQUEST, ACK",
+  "slug": "dhcpoverview"
+}

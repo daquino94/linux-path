@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Umask",
+  "lessonContent": "Cada archivo que se crea viene con un conjunto predeterminado de permisos. Si alguna vez deseas cambiar ese conjunto predeterminado de permisos, puedes hacerlo con el comando umask. Este comando toma el conjunto de permisos de 3 bits que vemos en los permisos numéricos. \n\nEn lugar de agregar estos permisos, umask elimina estos permisos. \n\n<pre>$ umask 021</pre>\n\nEn el ejemplo anterior, estamos indicando que queremos que los permisos predeterminados de los nuevos archivos permitan a los usuarios acceder a todo, pero para los grupos queremos quitar su permiso de escritura y para otros queremos quitar su permiso de ejecución. El umask predeterminado en la mayoría de las distribuciones es 022, lo que significa que todos los usuarios tienen acceso, pero no hay acceso de escritura para el grupo y otros usuarios.\n\nCuando ejecutas el comando umask, dará ese conjunto predeterminado de permisos en cualquier nuevo archivo que crees. Sin embargo, si deseas que persista, tendrás que modificar tu archivo de inicio (.profile), pero discutiremos eso en una lección posterior.",
+  "exercise": "<ol>\n<li>Crea un archivo nuevo y luego toma nota de sus permisos.</li>\n<li>Modifica el umask y luego crea otro archivo nuevo.</li>\n<li>Verifica los permisos una vez más en el nuevo archivo, ¿qué esperas ver?</li>\n<ol>",
+  "quizQuestion": "¿Qué comando se utiliza para cambiar los permisos de archivo predeterminados?",
+  "quizAnswer": "umask",
+  "slug": "umask"
+}

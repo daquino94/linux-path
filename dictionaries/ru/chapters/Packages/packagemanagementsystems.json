@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "yum и apt",
+  "lessonContent": "Ах, Бэтмены управления пакетами, эти системы поставляются со всем необходимым для упрощения установки, удаления и изменения пакетов, включая установку зависимостей пакетов. Две из самых популярных систем управления - <b>yum</b> и <b>apt</b>. Yum эксклюзивен для семьи Red Hat, а apt - исключительно для семьи Debian.\n\n<b>Установка пакета из репозитория</b>\n\n<pre>\nDebian: $ apt install package_name\nRPM: $ yum install package_name\n</pre>\n\n<b>Удаление пакета</b>\n\n<pre>\nDebian: $ apt remove package_name\nRPM: $ yum erase package_name\n</pre>\n\n<b>Обновление пакетов для репозитория</b>\n\nВсегда лучше всего обновлять репозитории пакетов, чтобы они были актуальными перед установкой и обновлением пакета.\n\n<pre>\nDebian: apt update; apt upgrade\nRPM: yum update\n</pre>\n\n<b>Получение информации о установленном пакете</b>\n\n<pre>\nDebian: apt show package_name\nRPM: yum info package_name\n</pre>",
+  "exercise": "Выполните каждую из этих команд для управления пакетами и посмотрите полученный вывод.",
+  "quizQuestion": "Какая команда используется для отображения информации о пакете в системе Debian?",
+  "quizAnswer": "apt show",
+  "slug": "sistemy-upravleniya-paketami"
+}

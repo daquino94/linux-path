@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "内核安装",
+  "lessonContent": "好的，现在我们把所有那些无聊的东西都讲完了，让我们谈谈实际安装和修改内核。您可以在系统上安装多个内核，还记得我们关于引导过程的课程吗？在我们的 GRUB 菜单中，我们可以选择要引导的内核。\n\n要查看系统上的内核版本，请使用以下命令：\n\n<pre>$ uname -r\n3.19.0-43-generic</pre>\n\nuname 命令打印系统信息，-r 命令将打印出所有内核发布版本。\n\n您可以以不同的方式安装 Linux 内核，可以下载源代码包并从源代码编译，也可以使用软件包管理工具进行安装。\n\n<pre>$ sudo apt install linux-generic-lts-vivid</pre>\n\n然后只需重新启动到您安装的内核。简单吧？有点，您还需要安装其他 Linux 软件包，如 linux-headers、linux-image-generic 等）。您还可以指定版本号，因此上述命令可以看起来像 <b>sudo apt install 3.19.0-43-generic</b>\n\n或者，如果您只想要更新的内核版本，只需使用 dist-upgrade，它会对系统上的所有软件包执行升级操作：\n\n<pre>$ sudo apt dist-upgrade</pre>\n\n有许多不同的内核版本，有些被用作 LTS（长期支持），有些是最新和最伟大的版本，内核版本之间的兼容性可能会有很大不同，因此您可能希望尝试不同的内核。",
+  "exercise": "<ol>\n<li>查找您的系统内核版本。</li>\n<li>研究可用的不同内核版本</li>\n</ol>",
+  "quizQuestion": "如何查看系统的内核版本？",
+  "quizAnswer": "uname -r",
+  "slug": "kernelinstallation"
+}

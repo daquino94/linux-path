@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "yum と apt",
+  "lessonContent": "パッケージ管理のバットマン、これらのシステムはパッケージのインストール、削除、変更を容易にするためのすべての機能を備えており、パッケージの依存関係をインストールすることもできます。最も人気のある管理システムの2つは <b>yum</b> と <b>apt</b> です。Yum は Red Hat ファミリー専用であり、apt は Debian ファミリー専用です。\n\n<b>リポジトリからパッケージをインストール</b>\n\n<pre>\nDebian: $ apt install パッケージ名\nRPM: $ yum install パッケージ名\n</pre>\n\n<b>パッケージを削除</b>\n\n<pre>\nDebian: $ apt remove パッケージ名\nRPM: $ yum erase パッケージ名\n</pre>\n\n<b>リポジトリのパッケージを更新</b>\n\nパッケージをインストールおよび更新する前に、パッケージリポジトリを常に最新の状態に更新するのがベストプラクティスです。\n\n<pre>\nDebian: apt update; apt upgrade\nRPM: yum update\n</pre>\n\n<b>インストールされたパッケージに関する情報を取得</b>\n\n<pre>\nDebian: apt show パッケージ名\nRPM: yum info パッケージ名\n</pre>",
+  "exercise": "これらのパッケージコマンドを実行し、受け取る出力を確認してください。",
+  "quizQuestion": "Debian システムでパッケージ情報を表示するために使用されるコマンドは何ですか？",
+  "quizAnswer": "apt show",
+  "slug": "packagemanagementsystems"
+}

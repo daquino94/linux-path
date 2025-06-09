@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "title": "El sistema de archivos",
+  "description": "Aprende sobre el sistema de archivos de Linux, los diferentes tipos de sistemas de archivos, particionamiento y más.",
+  "image": "/images/chapters/filesystem.png",
+  "slug": "el-sistema-de-archivos"
+}

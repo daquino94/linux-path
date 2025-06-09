@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Registro del kernel",
+  "lessonContent": "<b>/var/log/dmesg</b>\nAl arrancar, su sistema registra información sobre el búfer de anillo del kernel. Esto nos muestra información sobre controladores de hardware, información del kernel y estado durante el arranque y más. Este archivo de registro se puede encontrar en /var/log/dmesg y se restablece en cada arranque, es posible que no vea ningún uso en él ahora, pero si alguna vez tiene problemas con algo durante el arranque o un problema de hardware, dmesg es el mejor lugar para buscar. También puede ver este registro usando el comando dmesg. \n\n<b>/var/log/kern.log</b>\nOtro registro que puede usar para ver información del kernel es el archivo /var/log/kern.log, este registra la información y eventos del kernel en su sistema, también registra la salida de dmesg.",
+  "exercise": "Mire sus registros de dmesg y kern, ¿qué diferencias nota?",
+  "quizQuestion": "¿Qué comando se puede usar para ver mensajes de arranque del kernel?",
+  "quizAnswer": "dmesg",
+  "slug": "kernellogging"
+}

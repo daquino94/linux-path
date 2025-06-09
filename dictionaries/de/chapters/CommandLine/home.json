@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "title": "Befehlszeile",
+  "description": "Lernen Sie die Grundlagen der Befehlszeile, navigieren Sie durch Dateien, Verzeichnisse und mehr.",
+  "image": "/images/chapters/commandLine.png",
+  "slug": "befehlszeile"
+}

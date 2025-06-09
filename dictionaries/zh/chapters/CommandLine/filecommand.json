@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "文件",
+  "lessonContent": "在上一课中，我们学习了关于 touch 命令，让我们再回顾一下。你是否注意到文件名不符合标准命名，就像你可能在其他操作系统（如 Windows）中看到的那样？通常，你会期望一个名为 banana.jpeg 的文件，并期望是一个 JPEG 图片文件。\n\n在 Linux 中，文件名并不需要代表文件的内容。你可以创建一个名为 funny.gif 的文件，但它实际上并不是一个 GIF 文件。\n\n要找出文件的类型，你可以使用 file 命令。它会显示文件内容的描述。\n\n<pre>$ file banana.jpg</pre>",
+  "exercise": "运行 file 命令在几个不同的目录和文件上，并注意输出。",
+  "quizQuestion": "你可以使用什么命令来查找文件的类型？",
+  "quizAnswer": "file",
+  "slug": "filecommand"
+}

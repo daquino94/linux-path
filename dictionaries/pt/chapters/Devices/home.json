@@ -1,0 +1,7 @@
+{
+  "id": 9,
+  "title": "Dispositivos",
+  "description": "Aprenda sobre os dispositivos Linux e como eles interagem com o kernel e o espaço do usuário.",
+  "image": "/images/chapters/devices.png",
+  "slug": "devices"
+}

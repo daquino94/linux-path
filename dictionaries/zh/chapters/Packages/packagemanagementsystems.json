@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "yum 和 apt",
+  "lessonContent": "啊，软件包管理的蝙蝠侠，这些系统具备所有必要的功能，使软件包的安装、删除和更改变得更容易，包括安装软件包依赖项。两个最受欢迎的管理系统是 <b>yum</b> 和 <b>apt</b>。Yum 专属于红帽家族，apt 专属于 Debian 家族。\n\n<b>从存储库安装软件包</b>\n\n<pre>\nDebian: $ apt install package_name\nRPM: $ yum install package_name\n</pre>\n\n<b>删除软件包</b>\n\n<pre>\nDebian: $ apt remove package_name\nRPM: $ yum erase package_name\n</pre>\n\n<b>为存储库更新软件包</b>\n\n在安装和更新软件包之前，最佳实践是始终更新软件包存储库，以确保它们是最新的。\n\n<pre>\nDebian: apt update; apt upgrade\nRPM: yum update\n</pre>\n\n<b>获取已安装软件包的信息</b>\n\n<pre>\nDebian: apt show package_name\nRPM: yum info package_name\n</pre>",
+  "exercise": "运行每个软件包命令，查看您收到的输出。",
+  "quizQuestion": "在 Debian 系统上用于显示软件包信息的命令是什么？",
+  "quizAnswer": "apt show",
+  "slug": "packagemanagementsystems"
+}

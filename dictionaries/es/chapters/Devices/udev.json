@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "udev",
+  "lessonContent": "En los viejos tiempos y en realidad hoy en día, si realmente quisieras, crearías nodos de dispositivo usando un comando como: \n\n<pre>$ mknod /dev/sdb1 b 8 3</pre>\n\nEste comando creará un nodo de dispositivo /dev/sdb1 y lo convertirá en un dispositivo de bloques (b) con un número mayor de 8 y un número menor de 3.\n\nPara eliminar un dispositivo, simplemente <b>rm</b> el archivo del dispositivo en el directorio /dev. \n\nAfortunadamente, realmente ya no necesitamos hacer esto gracias a udev. El sistema udev crea y elimina dinámicamente archivos de dispositivo para nosotros dependiendo de si están conectados o no. Hay un demonio udevd que se ejecuta en el sistema y escucha mensajes del kernel sobre dispositivos conectados al sistema. Udevd analizará esa información y la emparejará con las reglas especificadas en /etc/udev/rules.d, dependiendo de esas reglas es muy probable que cree nodos de dispositivo y enlaces simbólicos para los dispositivos. Puedes escribir tus propias reglas de udev, pero eso está un poco fuera del alcance de esta lección. Afortunadamente, tu sistema ya viene con muchas reglas de udev, por lo que es posible que nunca necesites escribir las tuyas.\n\nTambién puedes ver la base de datos de udev y sysfs usando el comando <b>udevadm</b>. Esta herramienta es muy útil, pero a veces puede volverse muy confusa, un comando simple para ver información de un dispositivo sería:\n\n<pre>$ udevadm info --query=all --name=/dev/sda</pre>",
+  "exercise": "Ejecuta el comando udevadm dado y revisa la entrada.",
+  "quizQuestion": "¿Qué agrega y elimina dispositivos dinámicamente?",
+  "quizAnswer": "udev",
+  "slug": "udev"
+}

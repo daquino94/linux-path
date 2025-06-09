@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "root",
+  "lessonContent": "Hemos visto una forma de obtener acceso de superusuario usando el comando sudo. También puedes ejecutar comandos como superusuario con el comando su. Este comando \"sustituirá usuarios\" y abrirá un shell de root si no se especifica un nombre de usuario. Puedes usar este comando para sustituir a cualquier usuario siempre y cuando conozcas la contraseña. \n\n<pre>$ su</pre>\n\nHay algunas desventajas al usar este método: es mucho más fácil cometer un error crítico ejecutando todo como root, no tendrás registros de los comandos que uses para cambiar configuraciones del sistema, etc. Básicamente, si necesitas ejecutar comandos como superusuario, simplemente usa sudo.\n\nAhora que sabes qué comandos ejecutar como superusuario, la pregunta es ¿cómo sabes quién tiene acceso para hacer eso? El sistema no permite que cualquier Joe Schmoe ejecute comandos como superusuario, ¿cómo lo sabe? Existe un archivo llamado /etc/sudoers, este archivo lista los usuarios que pueden ejecutar sudo. Puedes editar este archivo con el comando <b>visudo</b>.",
+  "exercise": "Abre el archivo /etc/sudoers y verifica qué permisos de superusuario tienen otros usuarios en la máquina.",
+  "quizQuestion": "¿Qué archivo muestra los usuarios que tienen acceso a sudo?",
+  "quizAnswer": "/etc/sudoers",
+  "slug": "rootuser"
+}

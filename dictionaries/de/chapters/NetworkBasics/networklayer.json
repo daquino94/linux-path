@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Netzwerkschicht",
+  "lessonContent": "Die Netzwerkschicht bestimmt die Routen unserer Pakete vom Quellrechner zum Zielrechner. Glücklicherweise reist unser Paket in unserem Beispiel nur innerhalb desselben Netzwerks, aber das Internet besteht aus vielen Netzwerken. Diese kleineren Netzwerke, aus denen das Internet besteht, werden als Subnetze bezeichnet. Alle Subnetze sind auf irgendeine Weise miteinander verbunden, weshalb wir beispielsweise auf www.google.com zugreifen können, obwohl es sich in einem eigenen Netzwerk befindet. Ich werde nicht ins Detail gehen, da wir einen ganzen Kurs den Subnetzen gewidmet haben, aber im Hinblick auf unsere Netzwerkschicht wissen Sie jetzt, dass die IP-Adressen die Regeln für die Kommunikation mit verschiedenen Subnetzen festlegen. \n\nIn der Netzwerkschicht empfängt sie das Segment aus der Transportschicht, kapselt dieses Segment in ein IP-Paket ein und fügt die IP-Adresse des Quellrechners und die IP-Adresse des Zielrechners dem Paketheader hinzu. Zu diesem Zeitpunkt verfügt unser Paket also über Informationen darüber, wohin es geht und woher es kommt. Jetzt sendet es unser Paket an die physische Hardwareebene.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Wie werden die kleineren Netzwerke genannt, aus denen das Internet besteht?",
+  "quizAnswer": "Subnetze",
+  "slug": "netzwerkschicht"
+}

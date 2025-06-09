@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "身份验证日志记录",
+  "lessonContent": "身份验证日志记录在解决登录问题时非常有用。\n\n<b>/var/log/auth.log</b>\n\n其中包含系统授权日志，例如用户登录和使用的身份验证方法。\n\n示例片段：\n\n<pre>\nJan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)\n</pre>",
+  "exercise": "进行一些登录失败的尝试，然后进行一次成功的登录，查看您的/var/log/auth.log并查看发生了什么。",
+  "quizQuestion": "用于用户身份验证的日志是什么？",
+  "quizAnswer": "auth.log",
+  "slug": "authenticationlogging"
+}

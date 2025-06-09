@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Die Shell",
+  "lessonContent": "Die Welt steht dir offen, oder genauer gesagt, die Shell steht dir offen. Was ist die Shell? Die Shell ist im Grunde ein Programm, das deine Befehle von der Tastatur entgegennimmt und sie an das Betriebssystem weiterleitet, um sie auszuführen. Wenn du jemals eine GUI verwendet hast, hast du wahrscheinlich Programme wie \"Terminal\" oder \"Konsole\" gesehen, dies sind nur Programme, die eine Shell für dich starten. Im Verlauf dieses gesamten Kurses werden wir die Wunder der Shell kennenlernen. \n\nIn diesem Kurs werden wir das Shell-Programm bash (Bourne Again Shell) verwenden, fast alle Linux-Distributionen werden standardmäßig zur bash-Shell wechseln. Es gibt andere Shells wie ksh, zsh, tsch, aber wir werden uns nicht mit diesen beschäftigen. \n\nLass uns gleich loslegen! Je nach Distribution kann sich dein Shell-Prompt ändern, aber größtenteils sollte er dem folgenden Format entsprechen:\n<pre>benutzername@rechnername:aktueller_ordner\npete@icebox:/home/pete $</pre>\n\nHast du das $ am Ende des Prompts bemerkt? Unterschiedliche Shells haben unterschiedliche Prompts, in unserem Fall steht das $ für einen normalen Benutzer, der Bash, Bourne oder Korn Shell verwendet. Du fügst das Prompt-Symbol nicht hinzu, wenn du den Befehl eingibst, du solltest nur wissen, dass es da ist.\n\nLass uns mit einem einfachen Befehl beginnen, echo. Der echo-Befehl gibt einfach die Textargumente auf dem Bildschirm aus.\n\n<pre>$ echo Hallo Welt</pre>",
+  "exercise": "Probiere einige andere Linux-Befehle aus und sieh dir an, was sie ausgeben:\n\n<ol>\n<li>$ date</li>\n<li>$ whoami</li>\n</ol>",
+  "quizQuestion": "Was sollte auf dem Bildschirm ausgegeben werden, wenn du echo Hallo Welt eingibst?",
+  "quizAnswer": "Hallo Welt",
+  "slug": "die-shell"
+}

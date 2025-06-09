@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "IPv4",
+  "lessonContent": "每个网络主机都有一个唯一的地址，每个唯一的地址可以用来定位网络中的主机。这些唯一的地址被称为 'IP 地址'。IPv4 地址看起来像这样：\n\n<pre>204.23.124.23</pre>\n\n这个地址实际上包含两部分：网络部分（用于标识所在的网络）和主机部分（用于标识主机）。在本课程中，我们将主要讨论 IPv4 地址，这是在提到 'IP 地址' 时通常会看到的内容。\n\nIP 地址通过句点分成八进制。IPv4 地址有 4 个八进制。如果你了解一些计算机科学，你会知道一个八进制是 8 位，你会知道 8 位实际上等于 1 字节。这意味着 IPv4 地址有 4 个字节。在处理子网和 IP 地址时，我们经常使用位。\n\n你可以使用 'ifconfig -a' 命令查看你的 IP 地址：\n\n<pre>\npete@icebox:~$ ifconfig -a\neth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  \n          inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link\n</pre>\n\n如你所见，我的 IPv4 地址是：192.168.1.129",
+  "exercise": "使用 ifconfig 查找你的 IP 地址。",
+  "quizQuestion": "IPv4 地址有多少个字节？",
+  "quizAnswer": "4",
+  "slug": "ipv4"
+}

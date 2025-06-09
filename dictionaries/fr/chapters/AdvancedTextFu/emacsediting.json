@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Édition Emacs",
+  "lessonContent": "<b>Navigation dans le texte</b>\n\n<pre>\nC-flèche haut : monter d'un paragraphe\nC-flèche bas : descendre d'un paragraphe\nC-flèche gauche : déplacer d'un mot vers la gauche\nC-flèche droite : déplacer d'un mot vers la droite\nM-> : aller à la fin du tampon\n</pre>\n\nAvec la navigation dans le texte, vos boutons de texte habituels fonctionnent comme ils le devraient, début, fin, page précédente, page suivante et les touches de direction, etc.\n\n<b>Couper et Coller</b>\n\nPour couper (tuer) ou coller (yank) dans Emacs, vous devrez d'abord être capable de sélectionner du texte. Pour sélectionner du texte, déplacez votre curseur là où vous voulez couper ou coller et appuyez sur <pre>touche C-espace</pre>, puis vous pouvez utiliser les touches de navigation pour sélectionner le texte souhaité. Maintenant, vous pouvez couper et coller comme suit :\n\n<pre>\nC-w : couper\nC-y : coller\n</pre>",
+  "exercise": "Jouez avec la navigation dans le texte.",
+  "quizQuestion": "Comment aller à la fin du tampon?",
+  "quizAnswer": "M->",
+  "slug": "emacsediting"
+}

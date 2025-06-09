@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "猫",
+  "lessonContent": "我们几乎完成了文件导航，但首先让我们学习如何读取文件。一个简单的命令是 cat 命令，它代表 concatenate，它不仅显示文件内容，还可以合并多个文件并显示它们的输出。\n\n<pre>$ cat dogfile birdfile</pre>\n\n它不适用于查看大文件，只适用于短内容。我们会在下一课中讨论许多其他工具，用于查看更大的文本文件。",
+  "exercise": "在不同的文件和目录上运行 cat。然后尝试 cat 多个文件。",
+  "quizQuestion": "查看文件内容的好方法是什么？",
+  "quizAnswer": "cat",
+  "slug": "catcommand"
+}

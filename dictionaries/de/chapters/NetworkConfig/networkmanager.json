@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Network Manager",
+  "lessonContent": "Natürlich, wenn Sie möchten, dass das Netzwerk Ihres Systems automatisch eingerichtet wird, gibt es bereits etwas dafür. Die meisten Distributionen verwenden den NetworkManager-Daemon, um ihre Netzwerke automatisch zu konfigurieren. \n\nSie werden den NetworkManager in Form eines Applets irgendwo in der Taskleiste Ihres Desktops bemerken, wenn Sie eine grafische Benutzeroberfläche verwenden. Wie Sie sehen können, verwaltet er die Hardware und Verbindungsinformationen Ihres Netzwerks. Beispielsweise sammelt der NetworkManager beim Start Informationen zur Netzwerkhardware, sucht nach Verbindungen zu drahtlosen, kabelgebundenen usw. und aktiviert sie dann.\n\nEs gibt auch Befehlszeilentools, um mit dem NetworkManager zu interagieren:\n\n<b>nm-tool</b>\n\nnm-tool zeigt den Zustand des NetworkManagers und seiner Geräte an\n\n<pre>\npete@icebox:/$ nm-tool\nNetworkManager Tool\n\nZustand: verbunden (global)\n\n- Gerät: eth0  [Kabelverbindung 1] -------------------------------------------\n  Typ:              Kabelgebunden\n  Treiber:            pcnet32\n  Zustand:             verbunden\n  Standard:           ja\n  HW-Adresse:        12:3D:45:56:7D:CC\n\n  Fähigkeiten:\n    Trägererkennung:  ja\n\n  Eigenschaften des Kabels\n    Träger:         an\n\n  IPv4-Einstellungen:\n    Adresse:         192.168.22.1\n    Präfix:          24 (255.255.255.0)\n    Gateway:         192.168.22.2\n\n    DNS:             192.168.22.2\n</pre>\n\n<b>nmcli</b>\n\nDer Befehl nmcli ermöglicht es Ihnen, NetworkManager zu steuern und zu ändern. Weitere Details finden Sie in der Manpage.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Was ist der Befehl, um Informationen zum NetworkManager anzuzeigen?",
+  "quizAnswer": "nm-tool",
+  "slug": "networkmanager"
+}

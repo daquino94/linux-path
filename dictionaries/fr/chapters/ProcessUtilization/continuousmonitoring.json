@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "Surveillance continue",
+  "lessonContent": "Ces outils de surveillance sont bons pour examiner lorsque votre machine rencontre des problèmes, mais que faire des machines qui rencontrent des problèmes lorsque vous ne les regardez pas. Pour celles-ci, vous devrez utiliser un outil de surveillance continue, quelque chose qui collectera, rapportera et sauvegardera les informations sur l'activité de votre système. Dans cette leçon, nous passerons en revue un excellent outil à utiliser <b>sar</b>.\n\n<b>Installation de sar</b>\nSar est un outil utilisé pour effectuer une analyse historique de votre système, assurez-vous d'abord de l'avoir installé en installant le package sysstat <b>sudo apt install sysstat</b>.\n\n<b>Mise en place de la collecte de données</b>\nGénéralement, une fois que vous avez installé sysstat, votre système commencera automatiquement à collecter des données, si ce n'est pas le cas, vous pouvez l'activer en modifiant le champ ENABLED dans /etc/default/sysstat.\n\n<b>Utilisation de sar</b>\n\n<pre>$ sudo sar -q</pre>\n\nCette commande affichera les détails depuis le début de la journée.\n\n<pre>$ sudo sar -r</pre>\n\nCela affichera les détails de l'utilisation de la mémoire depuis le début de la journée.\n\n<pre>$ sudo sar -P</pre>\n\nCela affichera les détails de l'utilisation du processeur. \n\nPour voir une vue d'un jour différent, vous pouvez accéder à /var/log/sysstat/saXX où XX est le jour que vous souhaitez voir. \n\n<pre>$sar -q /var/log/sysstat/sa02</pre>",
+  "exercise": "Installez sar sur votre système et commencez à collecter et analyser l'utilisation des ressources de votre système.",
+  "quizQuestion": "Quel est un bon outil à utiliser pour surveiller les ressources système?",
+  "quizAnswer": "sar",
+  "slug": "surveillancecontinue"
+}

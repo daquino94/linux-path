@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "pegar",
+  "lessonContent": "El comando pegar es similar al comando cat, fusiona líneas juntas en un archivo. Creemos un nuevo archivo con el siguiente contenido: \n\n<pre>\nsample2.txt\nThe\nquick\nbrown\nfox\n</pre>\n\nVamos a combinar todas estas líneas en una línea: \n\n<pre>$ pegar -s sample2.txt</pre>\n\nEl delimitador predeterminado para pegar es TAB, por lo que ahora hay una línea con TABs separando cada palabra.\n\nCambiamos este delimitador (-d) a algo un poco más legible: \n\n<pre>$ pegar -d ' ' -s sample2.txt</pre>\n\nAhora todo debería estar en una línea delimitada por espacios.",
+  "exercise": "Intenta pegar varios archivos juntos, ¿qué sucede?",
+  "quizQuestion": "¿Qué bandera usas con pegar para que todo vaya en una línea?",
+  "quizAnswer": "-s",
+  "slug": "comandopegar"
+}

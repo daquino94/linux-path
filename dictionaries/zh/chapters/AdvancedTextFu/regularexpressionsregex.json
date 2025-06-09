@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "正则表达式 (Regular Expressions)",
+  "lessonContent": "正则表达式是一种强大的工具，用于基于模式的选择。它使用类似于我们已经遇到的特殊符号，比如 * 通配符。\n\n我们将介绍一些最常见的正则表达式，这些几乎适用于任何编程语言。\n\n我们将使用以下短语作为我们的测试字符串：\n<pre>\nsally sells seashells \nby the seashore\n</pre>\n\n<b>1. 以 ^ 开头的行</b>\n\n<pre>\n<b>^</b>by\n将匹配行 \"by the seashore\"\n</pre>\n\n<b>2. 以 $ 结尾的行</b>\n\n<pre>\nseashore<b>$</b>\n将匹配行 \"by the seashore\"\n</pre>\n\n<b>3. 用 . 匹配任意单个字符</b>\n\n<pre>\nb<b>.</b>\n将匹配 by\n</pre>\n\n<b>4. 使用 [] 和 () 的括号符号</b>\n\n这可能有点棘手，括号允许我们指定括号中包含的字符。\n\n<pre>\nd<b>[iou]</b>g\n将匹配：dig, dog, dug\n</pre>\n\n前面的锚点 ^ 在括号中使用时表示除括号内字符外的任何字符。\n\n<pre>\nd<b>[^i]</b>g\n将匹配：dog 和 dug，但不包括 dig\n</pre>\n\n括号还可以使用范围来增加要使用的字符数量。\n\n<pre>\nd<b>[a-c]</b>g\n将匹配类似 dag、dbg 和 dcg 的模式\n</pre>\n\n但要注意，括号是区分大小写的：\n\n<pre>\nd<b>[A-C]</b>g\n将匹配 dAg、dBg 和 dCg，但不包括 dag、dbg 和 dcg\n</pre>\n\n这些就是一些基本的正则表达式。",
+  "exercise": "尝试将正则表达式与 grep 结合起来，搜索一些文件。\n\n<pre>\ngrep [在此处放入正则表达式] [文件]",
+  "quizQuestion": "你会使用什么正则表达式来匹配单个字符？",
+  "quizAnswer": ".",
+  "slug": "regularexpressionsregex"
+}

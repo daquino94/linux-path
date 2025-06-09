@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Gentoo",
+  "lessonContent": "<b>Visión general</b>\nGentoo ofrece una flexibilidad ridícula con el sistema operativo a un precio. Está hecho para usuarios avanzados que no les importa ensuciarse las manos con el sistema.\n\n<b>Gestión de paquetes</b>\nGentoo utiliza su propio sistema de gestión de paquetes, Portage. El sistema de gestión de paquetes Portage es muy modular y fácil de mantener, lo que juega un papel importante en que el sistema operativo en su conjunto sea muy flexible.\n\n<b>Configurabilidad</b>\nSi estás empezando con Linux y quieres tomar un camino más difícil, elige Gentoo o Arch Linux como tu distribución.\n\n<b>Usos</b>\nGenial para escritorio y portátil.",
+  "exercise": "Si estás interesado en tener Gentoo como tu sistema operativo, dirígete a la sección de instalación e inténtalo: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>",
+  "quizQuestion": "¿Qué sistema de gestión de paquetes utiliza Gentoo?",
+  "quizAnswer": "Portage",
+  "slug": "gentoo"
+}

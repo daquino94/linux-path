@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "arp",
+  "lessonContent": "当我们使用ARP查找MAC地址时，请记住，它首先检查我们系统上本地存储的ARP缓存，您实际上可以查看此缓存：\n\n<pre>\npete@icebox:~$ arp\nAddress                  HWtype  HWaddress           Flags Mask            Iface\n192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0\n192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0\n</pre>\n\n当机器启动时，ARP缓存实际上是空的，它会在将数据包发送到其他主机时填充。如果我们向ARP缓存中不存在的目的地发送数据包，则会发生以下情况：\n\n<ol>\n<li>源主机创建带有ARP请求数据包的以太网帧</li>\n<li>源主机将此帧广播到整个网络</li>\n<li>如果网络上的某个主机知道正确的MAC地址，它将发送一个回复数据包和包含MAC地址的帧</li>\n<li>源主机将IP到MAC地址映射添加到ARP缓存，然后继续发送数据包</li>\n</ol>\n\n您还可以通过ip命令查看您的ARP缓存：\n\n<pre>\n$ ip neighbour show\n</pre>",
+  "exercise": "观察当您重新启动机器然后在网络上执行操作时，您的ARP缓存会发生什么变化。",
+  "quizQuestion": "您可以使用什么命令查看您的ARP缓存？",
+  "quizAnswer": "arp",
+  "slug": "arpcommand"
+}

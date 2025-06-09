@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "mv (Mover)",
+  "lessonContent": "Usado para mover arquivos e também renomeá-los. Bastante semelhante ao comando cp em termos de flags e funcionalidade. \n\nVocê pode renomear arquivos assim:\n\n<pre>$ mv arquivo_antigo novo_arquivo</pre>\n\nOu você pode realmente mover um arquivo para um diretório diferente: \n\n<pre>$ mv arquivo2 /home/pete/Documentos</pre>\n\nE mover mais de um arquivo:\n\n<pre>$ mv arquivo_1 arquivo_2 /algumdiretorio</pre>\n\nVocê também pode renomear diretórios:\n\n<pre>$ mv diretorio1 diretorio2</pre>\n\nAssim como cp, se você mover um arquivo ou diretório, ele irá sobrescrever qualquer coisa no mesmo diretório. Portanto, você pode usar a flag -i para ser avisado antes de sobrescrever algo.\n\n<pre>mv -i diretorio1 diretorio2</pre>\n\nDigamos que você queira mover um arquivo para sobrescrever o anterior. Você também pode fazer um backup desse arquivo e ele apenas renomeará a versão antiga com um ~. \n\n<pre>$ mv -b diretorio1 diretorio2</pre>",
+  "exercise": "Renomeie um arquivo e, em seguida, mova esse arquivo para um diretório diferente.",
+  "quizQuestion": "Como você renomeia um arquivo chamado cat para dog?",
+  "quizAnswer": "mv cat dog",
+  "slug": "comandomvmover"
+}

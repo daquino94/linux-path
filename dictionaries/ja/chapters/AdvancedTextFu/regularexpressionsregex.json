@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "正規表現 (Regular Expressions)",
+  "lessonContent": "正規表現は、パターンベースの選択を行うための強力なツールです。* ワイルドカードなど、すでに遭遇した特殊な表記法を使用します。\n\nいくつかの最も一般的な正規表現を見ていきます。これらは、どんなプログラミング言語でもほぼ共通しています。\n\nテスト文字列としてこのフレーズを使用します:\n<pre>\nsally sells seashells \nby the seashore\n</pre>\n\n<b>1. 行の先頭を ^ で指定する</b>\n\n<pre>\n<b>^</b>by\nは行 \"by the seashore\" と一致します\n</pre>\n\n<b>2. 行の末尾を $ で指定する</b>\n\n<pre>\nseashore<b>$</b>\nは行 \"by the seashore\" と一致します\n</pre>\n\n<b>3. . で任意の1文字に一致する</b>\n\n<pre>\nb<b>.</b>\nは by に一致します\n</pre>\n\n<b>4. [] と () を使用したブラケット表記</b>\n\nこれは少しややこしいかもしれませんが、ブラケットを使用すると、ブラケット内にある文字を指定できます。\n\n<pre>\nd<b>[iou]</b>g\nは次のものに一致します: dig, dog, dug\n</pre>\n\nブラケット内で使用される ^ は、ブラケット内の文字以外の任意の文字を意味します。\n\n<pre>\nd<b>[^i]</b>g\nは dig 以外の dog および dug に一致します\n</pre>\n\nブラケットは範囲を指定するために使用することもできます。\n\n<pre>\nd<b>[a-c]</b>g\nは dag、dbg、dcg などのパターンに一致します\n</pre>\n\nただし、ブラケットは大文字と小文字を区別します:\n\n<pre>\nd<b>[A-C]</b>g\nは dAg、dBg、dCg に一致しますが、dag、dbg、dcg には一致しません\n</pre>\n\n以上が基本的な正規表現です。",
+  "exercise": "正規表現を grep と組み合わせて、いくつかのファイルを検索してみてください。\n\n<pre>\ngrep [ここに正規表現を入力] [ファイル]",
+  "quizQuestion": "1文字に一致させるためにどの正規表現を使用しますか？",
+  "quizAnswer": ".",
+  "slug": "regularexpressionsregex"
+}

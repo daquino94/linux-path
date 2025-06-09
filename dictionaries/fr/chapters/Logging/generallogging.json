@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Journalisation générale",
+  "lessonContent": "Il existe de nombreux fichiers journaux que vous pouvez consulter sur votre système, beaucoup d'entre eux importants se trouvent sous /var/log. Nous n'allons pas tous les passer en revue, mais nous discuterons de quelques-uns des principaux. \n\nIl existe deux fichiers journaux généraux que vous pouvez consulter pour avoir un aperçu de ce que fait votre système :\n\n<b>/var/log/messages</b>\n\nCe journal contient tous les messages non critiques et non de débogage, inclut les messages enregistrés lors du démarrage (dmesg), auth, cron, daemon, etc. Très utile pour avoir un aperçu du comportement de votre machine. \n\n<b>/var/log/syslog</b>\n\nCela enregistre tout sauf les messages d'authentification, c'est extrêmement utile pour déboguer les erreurs sur votre machine. \n\nCes deux journaux devraient suffire largement pour résoudre les problèmes de votre système. Cependant, si vous voulez simplement consulter un composant de journal spécifique, il existe également des journaux séparés pour cela.",
+  "exercise": "Regardez vos fichiers /var/log/messages et /var/log/syslog et voyez quelles sont les différences.",
+  "quizQuestion": "Quel fichier journal enregistre tout sauf les messages d'authentification?",
+  "quizAnswer": "syslog",
+  "slug": "journalisationgenerale"
+}

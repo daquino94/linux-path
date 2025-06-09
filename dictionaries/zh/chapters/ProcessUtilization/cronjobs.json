@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Cron Jobs",
+  "lessonContent": "尽管我们一直在谈论资源利用率，但我认为这是一个很好的时机来提一下 Linux 中使用 cron 调度任务的一个好工具。有一个服务可以在你预定的时间运行程序。如果你有一个每天需要执行某些任务的脚本，这将非常有用。\n\n例如，假设我有一个位于 /home/pete/scripts/change_wallpaper 的脚本。我每天早上都使用这个脚本来更改壁纸，但每天早上我都必须手动执行这个脚本。相反，我可以创建一个通过 cron 执行我的脚本的 cron 作业。我可以指定我希望这个 cron 作业运行的时间并执行我的脚本。\n\n<pre>30 08 * * * /home/pete/scripts/change_wallpaper</pre>\n\n从左到右的字段如下：\n<ul>\n<li>分钟 - (0-59)</li>\n<li>小时 - (0-23)</li>\n<li>月份中的某一天 - (1-31)</li>\n<li>月份 - (1-12)</li>\n<li>星期中的某一天 - (0-7). 0 和 7 表示星期日</li>\n</ul>\n\n字段中的星号表示匹配每个值。所以在我上面的例子中，我希望这个作业在每天的每个月的早上 8:30 运行。\n\n要创建一个 cron 作业，只需编辑 crontab 文件：\n\n<pre>crontab -e</pre>",
+  "exercise": "创建一个您想要在预定时间运行的 cron 作业。",
+  "quizQuestion": "编辑您的 cron 作业的命令是什么？",
+  "quizAnswer": "crontab -e",
+  "slug": "cronjobs"
+}

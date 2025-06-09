@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "dhclient",
+  "lessonContent": "以前にDHCPについて説明しましたが、ほとんどの場合、IPアドレス、サブネットマスクなどを静的に設定する必要はありません。代わりに、DHCPを使用します！ dhclientは起動時に起動し、dhclient.confファイルからネットワークインターフェイスのリストを取得します。リストされている各インターフェイスについて、DHCPプロトコルを使用してインターフェイスを構成しようとします。\n\ndhclient.leasesファイルでは、dhclientはシステム再起動を超えてリースのリストを追跡し、dhclient.confを読み込んだ後、dhclient.leasesファイルが読み込まれ、すでに割り当てられているリースを知らせます。\n\n<b>新しいIPを取得するには</b>\n\n<pre>$ sudo dhclient</pre>",
+  "exercise": "このレッスンには演習問題はありません。",
+  "quizQuestion": "どのプログラムがDHCPプロトコルを使用してIPアドレスを割り当てようとしますか？",
+  "quizAnswer": "dhclient",
+  "slug": "dhclient"
+}

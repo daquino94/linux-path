@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "title": "unir e dividir",
+  "lessonContent": "O comando join permite unir vários arquivos por um campo comum: \n\nDigamos que eu tenha dois arquivos que eu queira unir:\n<pre>file1.txt\n1 João\n2 Joana\n3 Maria\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n\n$ join file1.txt file2.txt\n1 João Doe\n2 Joana Doe\n3 Maria Sue\n</pre>\n\nVeja como os arquivos foram unidos? Eles são unidos pelo primeiro campo por padrão e os campos precisam ser idênticos, se não forem, você pode ordená-los, então, neste caso, os arquivos são unidos via 1, 2, 3. \n\nComo unir os seguintes arquivos? \n\n<pre>file1.txt\nJoão 1\nJoana 2\nMaria 3\n\nfile2.txt\n1 Doe\n2 Doe\n3 Sue\n</pre>\n\nPara unir este arquivo, você precisa especificar quais campos está unindo, neste caso, queremos o campo 2 do file1.txt e o campo 1 do file2.txt, então o comando ficaria assim:\n\n<pre>\n$ join -1 2 -2 1 file1.txt file2.txt\n1 João Doe\n2 Joana Doe\n3 Maria Sue\n</pre>\n\n-1 refere-se a file1.txt e -2 refere-se a file2.txt. Bastante útil. Você também pode dividir um arquivo em diferentes arquivos com o comando split: \n\n<pre>$ split algumArquivo</pre>\n\nIsso irá dividi-lo em diferentes arquivos, por padrão, eles serão divididos quando atingirem o limite de 1000 linhas. Os arquivos são nomeados x** por padrão.",
+  "exercise": "Unir dois arquivos com número diferente de linhas em cada arquivo, o que acontece?",
+  "quizQuestion": "Qual comando você usaria para unir arquivos chamados gato cachorro vaca?",
+  "quizAnswer": "join gato cachorro vaca",
+  "slug": "comando-unir-dividir"
+}

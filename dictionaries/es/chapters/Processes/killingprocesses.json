@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "title": "matar (Terminar)",
+  "lessonContent": "Puedes enviar señales que terminen procesos, un comando para esto se llama adecuadamente el comando kill. \n\n<pre>$ kill 12445</pre>\n\nEl 12445 es el PID del proceso que deseas matar. Por defecto envía una señal TERM. La señal SIGTERM se envía a un proceso para solicitar su terminación permitiéndole liberar limpiamente sus recursos y guardar su estado. \n\nTambién puedes especificar una señal con el comando kill: \n\n<pre>$ kill -9 12445</pre>\n\nEsto ejecutará la señal SIGKILL y matará el proceso. \n\n<b>¿Diferencias entre SIGHUP, SIGINT, SIGTERM, SIGKILL, SIGSTOP?</b>\n\nEstas señales suenan bastante similares, pero tienen sus diferencias. \n\n<ul>\n<li>SIGHUP - Desconexión, enviada a un proceso cuando se cierra el terminal de control. Por ejemplo, si cerraste una ventana de terminal que tenía un proceso en ejecución, recibirías una señal SIGHUP. Básicamente, te han colgado</li>\n<li>SIGINT - Es una señal de interrupción, por lo que puedes usar Ctrl-C y el sistema intentará matar el proceso con gracia</li>\n<li>SIGTERM - Mata el proceso, pero permite que haga algo de limpieza primero</li>\n<li>SIGKILL - Mata el proceso, mátalo con fuego, no hace ninguna limpieza</li>\n<li>SIGSTOP - Detiene/suspende un proceso</li>\n</ul>",
+  "exercise": "Mata algunos procesos usando diferentes señales.",
+  "quizQuestion": "¿Cuál es el nombre de la señal para el comando kill por defecto?",
+  "quizAnswer": "SIGTERM",
+  "slug": "matandoprocesos"
+}

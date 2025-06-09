@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Umask",
+  "lessonContent": "Cada arquivo criado vem com um conjunto padrão de permissões. Se você quiser alterar esse conjunto padrão de permissões, pode fazer isso com o comando umask. Este comando utiliza o conjunto de permissões de 3 bits que vemos em permissões numéricas. \n\nEm vez de adicionar essas permissões, o umask retira essas permissões. \n\n<pre>$ umask 021</pre>\n\nNo exemplo acima, estamos declarando que queremos que as permissões padrão dos novos arquivos permitam acesso de usuários a tudo, mas para grupos queremos retirar a permissão de escrita e para outros queremos retirar a permissão de execução. O umask padrão na maioria das distribuições é 022, o que significa acesso de usuário total, mas sem acesso de escrita para grupos e outros usuários.\n\nQuando você executa o comando umask, ele fornecerá esse conjunto padrão de permissões em qualquer novo arquivo que você criar. No entanto, se você quiser que isso persista, terá que modificar seu arquivo de inicialização (.profile), mas discutiremos isso em uma lição posterior.",
+  "exercise": "<ol>\n<li>Crie um novo arquivo e anote suas permissões.</li>\n<li>Modifique o umask e crie outro novo arquivo.</li>\n<li>Verifique as permissões novamente no novo arquivo, o que você espera ver?</li>\n<ol>",
+  "quizQuestion": "Qual comando é usado para alterar as permissões padrão de arquivo?",
+  "quizAnswer": "umask",
+  "slug": "umask"
+}

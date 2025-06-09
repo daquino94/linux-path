@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Upstart Jobs",
+  "lessonContent": "Upstartは多くのイベントとジョブをトリガーできますが、イベントやジョブの起源を簡単に確認する方法はありません。そのため、/etc/init内のジョブ構成を調べる必要があります。ほとんどの場合、Upstartジョブ構成ファイルを見る必要はありませんが、特定のジョブをより簡単に制御したい場合があります。Upstartシステムで使用できる便利なコマンドがたくさんあります。\n\n<b>ジョブを表示</b>\n\n<pre>initctl list\n\nshutdown stop/waiting\nconsole stop/waiting\n...\n</pre>\n\n異なるステータスが適用されたUpstartジョブのリストが表示されます。各行で、ジョブ名が最初の値であり、2番目のフィールド（/の前）が実際にジョブのゴールであり、3番目の値（/の後）が現在のステータスです。したがって、shutdownジョブは最終的に停止することを望んでいますが、現在はwaiting状態です。ジョブのステータスとゴールは、ジョブを開始または停止すると変わります。\n\n<b>特定のジョブを表示</b>\n\n<pre>initctl status networking\nnetworking start/running\n</pre>\n\nUpstartジョブ構成を書く方法の詳細には触れませんが、ジョブがこれらの構成で停止、開始、再起動されることはすでにわかっています。これらのジョブはイベントも発行するため、他のジョブを開始できます。Upstart操作の手順を手動で説明しますが、興味がある場合は、.confファイルをより詳しく調査してください。\n\n<b>ジョブを手動で開始</b>\n\n<pre>$ sudo initctl start networking</pre>\n\n<b>ジョブを手動で停止</b>\n\n<pre>$ sudo initctl stop networking</pre>\n\n<b>ジョブを手動で再起動</b>\n\n<pre>$ sudo initctl restart networking</pre>\n\n<b>イベントを手動で発行</b>\n\n<pre>$ sudo initctl emit some_event</pre>",
+  "exercise": "Upstartジョブのリストを観察し、今日学んだコマンドの1つでジョブの状態を変更してください。その後、何に気づきますか？",
+  "quizQuestion": "Upstartジョブのpeanutsという名前のジョブを手動で再起動する方法は？",
+  "quizAnswer": "sudo initctl restart peanuts",
+  "slug": "upstartjobs"
+}

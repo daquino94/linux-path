@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Fedora",
+  "lessonContent": "<b>概述</b>\n由 Red Hat 支持，Fedora 项目是由社区驱动的，包含开源和免费软件。Red Hat Enterprise Linux 是基于 Fedora 分支开发的，因此可以将 Fedora 视为上游 RHEL 操作系统。最终，经过彻底测试和质量保证后，RHEL 将从 Fedora 获取更新。将 Fedora 视为使用红帽后端而不是 Debian 的 Ubuntu 等效物。\n\n<b>软件包管理</b>\n使用 Red Hat 软件包管理器。\n\n<b>可配置性</b>\n如果您想使用基于 Red Hat 的操作系统，这是一个用户友好的版本。\n\n<b>用途</b>\n如果您想要一个基于 Red Hat 的操作系统，但又不想付费，那么 Fedora 是一个很好的选择。推荐用于台式机和笔记本电脑。",
+  "exercise": "如果您对将 Fedora 作为您的操作系统感兴趣，请转到安装部分并尝试一下：<a href='https://getfedora.org/'>https://getfedora.org/</a>",
+  "quizQuestion": "RHEL 是基于什么分支开发的？",
+  "quizAnswer": "Fedora",
+  "slug": "fedora"
+}

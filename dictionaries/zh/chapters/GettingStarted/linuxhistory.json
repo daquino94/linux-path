@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "历史",
+  "lessonContent": "嘿，新手！所以你决定深入这个美妙的世界，被称为 Linux？那你最好系好安全带，因为这将是一段漫长而艰难的旅程。我的名字是企鹅皮特，我在这里引导你完成这个旅程。让我们从 Linux 的一点背景开始吧。\n\n要了解 Linux 是如何诞生的，让我们回到 1969 年的开始，那时贝尔实验室的 Ken Thompson 和 Dennis Ritchie 开发了 UNIX 操作系统。后来用 C 语言重写，使其更具可移植性，并最终成为广泛使用的操作系统。\n\n十年左右后，Richard Stallman 开始着手开发 GNU（GNU 不是 UNIX）项目，GNU 内核称为 Hurd，但遗憾的是从未完成。GNU 通用公共许可证（GPL），作为此举的结果，也随之产生。\n\n内核是操作系统中最重要的部分。它允许硬件与软件进行通信。它还做了很多其他事情，但我们将在另一个课程中深入探讨。现在，只需知道内核控制系统上发生的几乎所有事情即可。\n\n在此期间，其他努力，如 BSD、MINIX 等，都开发成类 UNIX 系统。然而，所有这些类 UNIX 系统共同之处是缺乏统一的内核。\n\n然后在 1991 年，一个名叫 Linus Torvalds 的年轻人开始开发我们今天所知的 Linux 内核。",
+  "exercise": "额外阅读：\n<li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>\n<li><a href='https://en.wikipedia.org/wiki/Ken_Thompson'>Ken Thompson</a></li>\n<li><a href='https://stallman.org/'>Richard Stallman</a></li>\n<li><a href='https://en.wikipedia.org/wiki/Linus_Torvalds'>Linus Torvalds</a></li>",
+  "quizQuestion": "谁开发了 Linux 内核？",
+  "quizAnswer": "Linus Torvalds",
+  "slug": "linuxhistory"
+}

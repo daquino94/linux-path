@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "Ubuntu",
+  "lessonContent": "<b>概述</b>\nUbuntu 是个人计算机上最受欢迎的 Linux 发行版之一。Ubuntu 也默认发布自己的桌面环境管理器 Unity。\n\n<b>软件包管理</b>\nUbuntu 是由 Canonical 开发的基于 Debian 的操作系统。因此，它使用核心的 Debian 软件包管理系统。\n\n<b>可配置性</b>\nUbuntu 对于想要尝试 Linux 的初学者来说是一个很好的选择。Ubuntu 提供了易用性和出色的用户界面体验，这导致了它被广泛采用。它被广泛使用和支持，并且在可用性方面与其他操作系统（如OSX和Windows）最为相似。\n\n<b>用途</b>\n非常适合任何平台，包括台式机、笔记本电脑和服务器。",
+  "exercise": "如果您对将 Ubuntu 作为您的操作系统感兴趣，请转到安装部分并尝试一下：\n<a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>",
+  "quizQuestion": "Ubuntu 是基于哪个操作系统的？",
+  "quizAnswer": "Debian",
+  "slug": "ubuntu"
+}

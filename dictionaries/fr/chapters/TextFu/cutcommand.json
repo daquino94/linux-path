@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "couper",
+  "lessonContent": "Nous allons apprendre quelques commandes utiles que vous pouvez utiliser pour traiter du texte. Avant de commencer, créons un fichier avec lequel nous allons travailler. Copiez et collez la commande suivante, une fois que vous l'aurez fait, ajoutez une TABULATION entre lazy et dog (maintenez Ctrl-v + TAB enfoncés).\n\n<pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>\n\nLa première commande que nous allons apprendre est la commande cut. Elle extrait des portions de texte d'un fichier. \n\nPour extraire des contenus par une liste de caractères : \n\n<pre>$ cut -c 5 sample.txt</pre>\n\nCela affiche le 5e caractère de chaque ligne du fichier. Dans ce cas, il s'agit de \"q\", notez que l'espace compte également comme un caractère. \n\nPour extraire les contenus par un champ, nous devrons apporter une petite modification : \n\n<pre>$ cut -f 2 sample.txt</pre>\n\nLe drapeau -f ou champ découpe le texte en fonction des champs, par défaut il utilise les TABULATIONS comme délimiteurs, donc tout ce qui est séparé par une TABULATION est considéré comme un champ. Vous devriez voir \"dog\" comme sortie.\n\nVous pouvez combiner le drapeau champ avec le drapeau délimiteur pour extraire les contenus par un délimiteur personnalisé : \n\n<pre>$ cut -f 1 -d \";\" sample.txt</pre>\n\nCela changera le délimiteur TABULATION en délimiteur \";\" et comme nous coupons le premier champ, le résultat devrait être \"The quick brown\".",
+  "exercise": "Que fait la commande suivante ? Pourquoi ?\n\n<pre>$ cut -c 5-10 sample.txt\n$ cut -c 5- sample.txt\n$ cut -c -5 sample.txt\n</pre>",
+  "quizQuestion": "Quelle commande utiliseriez-vous pour obtenir le premier caractère de chaque ligne dans un fichier ?",
+  "quizAnswer": "cut -c 1",
+  "slug": "commandecut"
+}

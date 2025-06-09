@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "/etc/shadow",
+  "lessonContent": "Le fichier /etc/shadow est utilisé pour stocker des informations sur l'authentification de l'utilisateur. Il nécessite des permissions de lecture superutilisateur. \n\n<pre>$ sudo cat /etc/shadow\n\nroot:MyEPTEa$6Nonsense:15000:0:99999:7:::\n</pre>\n\nVous remarquerez qu'il ressemble beaucoup au contenu de /etc/passwd, cependant dans le champ du mot de passe, vous verrez un mot de passe crypté. Les champs sont séparés par des deux-points comme suit :\n\n<ol>\n<li>Nom d'utilisateur</li>\n<li>Mot de passe crypté</li>\n<li>Date du dernier changement de mot de passe - exprimée en nombre de jours depuis le 1er janvier 1970. Si c'est 0, cela signifie que l'utilisateur doit changer son mot de passe la prochaine fois qu'il se connecte</li>\n<li>Âge minimum du mot de passe - Nombre de jours qu'un utilisateur devra attendre avant de pouvoir changer à nouveau son mot de passe</li>\n<li>Âge maximum du mot de passe - Nombre maximum de jours avant qu'un utilisateur ne doive changer son mot de passe</li>\n<li>Période d'avertissement du mot de passe - Nombre de jours avant qu'un mot de passe n'expire</li>\n<li>Période d'inactivité du mot de passe - Nombre de jours après l'expiration d'un mot de passe pour permettre la connexion avec le mot de passe</li>\n<li>Date d'expiration du compte - date à laquelle l'utilisateur ne pourra plus se connecter</li>\n<li>Champ réservé pour une utilisation future</li>\n</ol>\n\nDans la plupart des distributions actuelles, l'authentification de l'utilisateur ne repose pas uniquement sur le fichier /etc/shadow, il existe d'autres mécanismes en place tels que PAM (Pluggable Authentication Modules) qui remplacent l'authentification.",
+  "exercise": "Jetez un œil au fichier /etc/shadow",
+  "quizQuestion": "Pas de questions, passez à la suite !",
+  "quizAnswer": "",
+  "slug": "etcshadowfile"
+}

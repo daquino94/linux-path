@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "env (Ambiente)",
+  "lessonContent": "Execute o seguinte comando: \n\n<pre>$ echo $HOME</pre>\n\nVocê deverá ver o caminho para o seu diretório home, o meu se parece com /home/pete. \n\nE quanto a este comando? \n\n<pre>$ echo $USER </pre>\n\nVocê deverá ver o seu nome de usuário!\n\nDe onde vem essa informação? Ela vem das suas variáveis de ambiente. Você pode visualizá-las digitando\n\n<pre>$ env </pre>\n\nIsso exibe muitas informações sobre as variáveis de ambiente que você tem configuradas atualmente. Essas variáveis contêm informações úteis que o shell e outros processos podem utilizar.\n\nAqui está um exemplo breve:\n\n<pre>\nPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\nPWD=/home/user\nUSER=pete\n</pre>\n\n\nUma variável particularmente importante é a Variável PATH. Você pode acessar essas variáveis colocando um $ antes do nome da variável, assim:\n\n<pre>\n$ echo $PATH\n/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin\n</pre>\n\nIsso retorna uma lista de caminhos separados por dois pontos que o seu sistema pesquisa quando executa um comando. Digamos que você baixe e instale manualmente um pacote da internet e o coloque em um diretório não padrão e queira executar esse comando, você digita $ coolcommand e o prompt diz comando não encontrado. Bem, isso é estranho, você está olhando para o binário em uma pasta e sabe que ele existe. O que está acontecendo é que a variável $PATH não verifica esse diretório para este binário, então está gerando um erro. \n\nDigamos que você tenha toneladas de binários que deseja executar a partir desse diretório, você pode simplesmente modificar a variável PATH para incluir esse diretório na sua variável de ambiente PATH.",
+  "exercise": "O que o seguinte comando imprime? Por quê?\n<pre>$ echo $HOME</pre>",
+  "quizQuestion": "Como você visualiza suas variáveis de ambiente?",
+  "quizAnswer": "env",
+  "slug": "envenvironment"
+}

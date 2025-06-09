@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "DNS 设置",
+  "lessonContent": "我们不会详细介绍如何设置 DNS 服务器，因为那将是一个相当冗长的教程。相反，这里是一个流行的 DNS 服务器的快速比较列表，可用于 Linux。\n\n<b>BIND</b>\n\n这是互联网上最流行的 DNS 服务器，是 Linux 发行版中使用的标准。它最初是在加州大学伯克利分校开发的，因此被称为 BIND（伯克利互联网名称域）。如果您需要功能齐全、灵活性强的解决方案，那么选择 BIND 绝对没错。\n\n<b>DNSmasq</b>\n\n比 BIND 更轻量级，配置也比较简单。如果您想要简单性，又不需要 BIND 的所有高级功能，可以使用 DNSmasq。它提供了设置 DHCP 和 DNS 所需的所有工具，适用于较小的网络。\n\n<b>PowerDNS</b>\n\n功能齐全，类似于 BIND，但提供了更多选项的灵活性。它可以从多个数据库（如 MySQL、PostgreSQL 等）中读取信息，以便更轻松地进行管理。仅仅因为 BIND 是我们的传统做法，并不意味着它必须一直保持不变。\n\n这并不是一个完整的列表，但应该能让您了解在设置自己的 DNS 服务器时应该从哪里入手。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "Linux 的事实标准 DNS 服务器是什么？",
+  "quizAnswer": "BIND",
+  "slug": "dnssetup"
+}

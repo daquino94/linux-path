@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Registo Geral",
+  "lessonContent": "Existem muitos ficheiros de registo que pode visualizar no seu sistema, muitos dos mais importantes podem ser encontrados em /var/log. Não vamos passar por todos, mas vamos discutir alguns dos principais. \n\nExistem dois ficheiros de registo gerais que pode visualizar para ter uma ideia do que o seu sistema está a fazer:\n\n<b>/var/log/messages</b>\n\nEste registo contém todas as mensagens não críticas e não de depuração, inclui mensagens registadas durante a inicialização (dmesg), autenticação, cron, daemon, etc. Muito útil para ter uma ideia de como a sua máquina está a funcionar. \n\n<b>/var/log/syslog</b>\n\nEste regista tudo exceto mensagens de autenticação, sendo extremamente útil para depurar erros na sua máquina. \n\nEstes dois registos devem ser mais do que suficientes ao resolver problemas com o seu sistema. No entanto, se apenas quiser visualizar um componente de registo específico, também existem registos separados para esses.",
+  "exercise": "Olhe para os seus ficheiros /var/log/messages e /var/log/syslog e veja quais são as diferenças.",
+  "quizQuestion": "Que ficheiro de registo regista tudo exceto mensagens de autenticação?",
+  "quizAnswer": "syslog",
+  "slug": "registo-geral"
+}

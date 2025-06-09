@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "title": "引导过程：初始化",
+  "lessonContent": "我们在之前的课程中讨论过 init，并知道它是第一个启动的进程，它启动系统上的所有其他必要服务。但是它是如何做到的呢？\n\n实际上，在 Linux 中有三种主要的 init 实现：\n\n<b>System V init (sysv)</b>\n\n这是传统的 init 系统。它根据启动脚本顺序启动和停止进程。机器的状态由运行级别表示，每个运行级别以不同的方式启动或停止机器。\n\n<b>Upstart</b>\n\n这是您在旧版 Ubuntu 安装中找到的 init。Upstart 使用作业和事件的概念，通过启动执行特定操作的作业来响应事件。\n\n<b>Systemd</b>\n\n这是 init 的新标准，它是目标导向的。基本上，您有一个要实现的目标，systemd 会尝试满足目标的依赖关系以完成目标。\n\n我们有一个完整的 Init 系统课程，我们将更详细地研究这些系统。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "init 的最新标准是什么？",
+  "quizAnswer": "systemd",
+  "slug": "bootprocessinit"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "La coquille",
+  "lessonContent": "Le monde est votre huître, ou plutôt la coquille est votre huître. Qu'est-ce que la coquille? La coquille est essentiellement un programme qui prend vos commandes du clavier et les envoie au système d'exploitation pour les exécuter. Si vous avez déjà utilisé une interface graphique, vous avez probablement vu des programmes tels que \"Terminal\" ou \"Console\", ce ne sont que des programmes qui lancent une coquille pour vous. Tout au long de ce cours, nous allons découvrir les merveilles de la coquille. \n\nDans ce cours, nous utiliserons le programme de coquille bash (Bourne Again shell), presque toutes les distributions Linux utiliseront par défaut la coquille bash. Il existe d'autres coquilles disponibles telles que ksh, zsh, tsch, mais nous n'aborderons aucune d'entre elles. \n\nPlongeons directement! Selon la distribution, votre invite de coquille pourrait changer, mais pour la plupart, elle devrait suivre le format suivant:\n<pre>nom_utilisateur@nom_hôte:répertoire_courant\npete@icebox:/home/pete $</pre>\n\nRemarquez le $ à la fin de l'invite? Différentes coquilles auront des invites différentes, dans notre cas le $ est pour un utilisateur normal utilisant Bash, Bourne ou Korn shell, vous n'ajoutez pas le symbole d'invite lorsque vous tapez la commande, sachez simplement qu'il est là.\n\nCommençons par une commande simple, echo. La commande echo imprime simplement les arguments textuels à l'écran.\n\n<pre>$ echo Bonjour le monde</pre>",
+  "exercise": "Essayez d'autres commandes Linux et voyez ce qu'elles affichent:\n\n<ol>\n<li>$ date</li>\n<li>$ whoami</li>\n</ol>",
+  "quizQuestion": "Que devrait afficher à l'écran lorsque vous tapez echo Bonjour le monde?",
+  "quizAnswer": "Bonjour le monde",
+  "slug": "lacoquille"
+}

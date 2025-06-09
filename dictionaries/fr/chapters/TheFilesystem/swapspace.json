@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "swap",
+  "lessonContent": "Dans notre exemple précédent, je vous ai montré comment voir votre table de partitions, revenons sur cet exemple, plus précisément cette ligne :\n\n<pre>\nNumber  Start   End     Size    Type      File system     Flags\n 5      6861MB  7380MB  519MB   logical   linux-swap(v1)\n</pre>\n\nQu'est-ce que cette partition swap ? Eh bien, le swap est ce que nous utilisons pour allouer de la mémoire virtuelle à notre système. Si vous manquez de mémoire, le système utilise cette partition pour \"échanger\" des morceaux de mémoire de processus inactifs vers le disque, afin que vous ne soyez pas encombré de mémoire.\n\n<b>Utiliser une partition pour l'espace swap</b>\n\nDisons que nous voulions définir notre partition /dev/sdb2 pour être utilisée comme espace swap. \n\n<ol>\n<li>Assurez-vous d'abord de ne rien avoir sur la partition</li>\n<li>Exécutez : mkswap /dev/sdb2 pour initialiser les zones de swap</li>\n<li>Exécutez : swapon /dev/sdb2 cela activera le périphérique de swap</li>\n<li>Si vous souhaitez que la partition swap persiste au démarrage, vous devez ajouter une entrée dans le fichier /etc/fstab. sw est le type de système de fichiers que vous utiliserez.</li>\n<li>Pour supprimer le swap : swapoff /dev/sdb2</li>\n</ol>\n\nEn général, vous devriez allouer environ le double de l'espace swap par rapport à la mémoire que vous avez. Mais les systèmes modernes d'aujourd'hui sont généralement assez puissants et ont suffisamment de RAM telle quelle.",
+  "exercise": "Partitionner l'espace libre dans la clé USB pour l'espace swap.",
+  "quizQuestion": "Quelle est la commande pour activer l'espace swap sur un périphérique ?",
+  "quizAnswer": "swapon",
+  "slug": "swapspace"
+}

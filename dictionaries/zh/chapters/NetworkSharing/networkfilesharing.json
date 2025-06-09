@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "文件共享概述",
+  "lessonContent": "您的网络上通常不只有一台计算机，特别是在商业环境中。当我们想要将数据从一台机器传输到另一台机器时，有时可能更容易连接一个USB驱动器并手动复制它们。但在大多数情况下，如果您正在处理同一网络上的机器，传输数据的方式是通过网络文件共享。\n\n在本课程中，我们将介绍几种不同的方法，用于在您的网络上将数据从不同的机器复制到另一台机器。我们将讨论一些简单的文件复制，然后我们将谈论挂载在您的机器上的整个目录，充当独立驱动器。\n\n一个简单的文件共享工具是<b>scp</b>命令。scp命令代表安全复制，它的工作方式与cp命令完全相同，但允许您从一个主机复制到同一网络上的另一个主机。它通过ssh工作，因此您的所有操作都使用与ssh相同的身份验证和安全性。\n\n<b>从本地主机复制文件到远程主机</b>\n\n<pre>$ scp myfile.txt username@remotehost.com:/remote/directory</pre>\n\n<b>从远程主机复制文件到本地主机</b>\n\n<pre>$ scp username@remotehost.com:/remote/directory/myfile.txt /local/directory</pre>\n\n<b>从本地主机复制目录到远程主机</b>\n\n<pre>$ scp -r mydir username@remotehost.com:/remote/directory</pre>",
+  "exercise": "尝试使用scp从一台机器复制文件到另一台机器。",
+  "quizQuestion": "您可以使用什么命令安全地从一个主机复制文件到另一个主机？",
+  "quizAnswer": "scp",
+  "slug": "networkfilesharing"
+}

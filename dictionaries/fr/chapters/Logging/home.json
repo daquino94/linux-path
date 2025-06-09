@@ -1,0 +1,7 @@
+{
+  "id": 15,
+  "title": "Journalisation",
+  "description": "Apprenez à propos des journaux système et du répertoire /var/log.",
+  "image": "/images/chapters/logging.png",
+  "slug": "journalisation"
+}

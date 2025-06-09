@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "root",
+  "lessonContent": "Wir haben uns eine Möglichkeit angesehen, wie man mit dem sudo-Befehl Superuser-Zugriff erhält. Sie können auch Befehle als Superuser mit dem su-Befehl ausführen. Dieser Befehl wird \"Benutzer ersetzen\" und eine Root-Shell öffnen, wenn kein Benutzername angegeben ist. Sie können diesen Befehl verwenden, um sich als beliebigen Benutzer zu ersetzen, solange Sie das Passwort kennen. \n\n<pre>$ su</pre>\n\nEs gibt einige Nachteile bei der Verwendung dieser Methode: Es ist viel einfacher, einen kritischen Fehler zu machen, wenn alles als Root ausgeführt wird, Sie haben keine Aufzeichnungen über die Befehle, die Sie verwenden, um Systemkonfigurationen zu ändern, usw. Grundsätzlich, wenn Sie Befehle als Superuser ausführen müssen, bleiben Sie einfach bei sudo.\n\nJetzt, da Sie wissen, welche Befehle als Superuser ausgeführt werden sollen, lautet die Frage, wie wissen Sie, wer Zugriff darauf hat? Das System lässt nicht jeden x-beliebigen Benutzer Befehle als Superuser ausführen, also wie weiß es das? Es gibt eine Datei namens /etc/sudoers, in dieser Datei sind Benutzer aufgeführt, die sudo ausführen können. Sie können diese Datei mit dem <b>visudo</b>-Befehl bearbeiten.",
+  "exercise": "Öffnen Sie die Datei /etc/sudoers und sehen Sie, welche Superuser-Berechtigungen andere Benutzer auf dem Rechner haben.",
+  "quizQuestion": "Welche Datei zeigt die Benutzer, die Zugriff auf sudo haben?",
+  "quizAnswer": "/etc/sudoers",
+  "slug": "rootuser"
+}

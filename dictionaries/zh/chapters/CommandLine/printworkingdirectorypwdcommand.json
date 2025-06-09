@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "pwd (Print Working Directory)",
+  "lessonContent": "Linux 中的一切都是文件。当您深入了解 Linux 时，您会明白这一点，但现在只需记住这一点。每个文件都组织在一个分层目录树中。文件系统中的第一个目录被恰当地命名为 '根目录'。根目录中有许多文件夹和文件，您可以在其中存储更多的文件夹和文件，依此类推。以下是目录树的示例：\n\n<pre>/\n|-- bin\n|   |-- file1\n|   |-- file2\n|-- etc\n|   |-- file3\n|   `-- directory1\n|       |-- file4\n|       `-- file5\n|-- home\n|-- var\n</pre>\n\n这些文件和目录的位置被称为 '路径'。如果您有一个名为 'home' 的文件夹，里面有一个名为 'pete' 的文件夹，以及该文件夹中的另一个名为 'Movies' 的文件夹，该路径将如下所示：'/home/pete/Movies'。相当简单，对吧？\n\n在文件系统中导航，就像在现实生活中导航一样，如果您知道自己在哪里和要去哪里，就会更容易。要查看您所在的位置，可以使用 'pwd' 命令。此命令表示“打印工作目录”，它会显示您当前所在的目录。请注意，路径源自根目录。\n\n<pre>$ pwd</pre>\n\n你在哪里？我在哪里？试一试吧。",
+  "exercise": "本课程没有练习。",
+  "quizQuestion": "如何查找当前所在的目录？",
+  "quizAnswer": "pwd",
+  "slug": "printworkingdirectorypwdcommand"
+}

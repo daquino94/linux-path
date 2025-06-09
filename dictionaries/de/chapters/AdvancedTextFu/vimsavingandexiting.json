@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "Vim Speichern und Beenden",
+  "lessonContent": "Jetzt, da du deine Bearbeitung abgeschlossen hast, ist es an der Zeit, tatsächlich in Vim zu speichern und zu beenden: \n\n<ul>\n<li>:w - schreibt oder speichert die Datei</li>\n<li>:q - beendet Vim</li>\n<li>:wq - schreibt und beendet dann</li>\n<li>:q! - beendet Vim, ohne die Datei zu speichern</li>\n<li>ZZ - entspricht :wq, ist jedoch ein Zeichen schneller</li>\n\n<li>u - macht deine letzte Aktion rückgängig</li>\n<li>Strg-r - wiederholt deine letzte Aktion</li>\n</ul>\n\nDu denkst vielleicht, dass ZZ nicht notwendig ist, aber du wirst schließlich feststellen, dass deine Finger dazu neigen, eher zu diesem zu greifen als zu :wq.\n\nPuh, das war eine Menge Informationen über Vim. Jetzt, da du einige grundlegende Befehle und Navigationen kennst, kannst du damit beginnen, einige Textdateien zu bearbeiten. Es gibt viele weitere Optionen, die du in Vim verwenden kannst, um deine Fähigkeiten in diesem Texteditor zu verbessern. Schau dir die Online-Anleitung von Vim an, um einen Überblick zu erhalten.",
+  "exercise": "Keine Übungen für diese Lektion.",
+  "quizQuestion": "Wie beendest du Vim, ohne die Datei zu speichern?",
+  "quizAnswer": ":q!",
+  "slug": "vimspeichernundbeenden"
+}

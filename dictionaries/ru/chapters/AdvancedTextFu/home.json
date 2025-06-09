@@ -1,0 +1,7 @@
+{
+  "id": 4,
+  "title": "Advanced Text-Fu",
+  "description": "Навигация по тексту как Linux-обезьяна-паука с помощью vim и emacs.",
+  "image": "/images/chapters/textManipolationAdvance.png",
+  "slug": "advancedtextfu"
+}

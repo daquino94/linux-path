@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "sort",
+  "lessonContent": "Der Befehl sort ist nützlich zum Sortieren von Zeilen.\n\n<pre>\nfile1.txt\ndog\ncow\ncat\nelephant\nbird\n\n$ sort file1.txt\nbird\ncat\ncow\ndog\nelephant\n</pre>\n\nSie können auch eine umgekehrte Sortierung durchführen: \n\n<pre>$ sort -r file1.txt\nelephant\ndog\ncow\ncat\nbird\n</pre>\n\nUnd auch eine Sortierung nach numerischem Wert: \n\n<pre>$ sort -n file1.txt\nbird\ncat\ncow\nelephant\ndog\n</pre>",
+  "exercise": "Die eigentliche Stärke von sort liegt in seiner Fähigkeit, mit anderen Befehlen kombiniert zu werden. Versuchen Sie den folgenden Befehl und sehen Sie, was passiert?\n\n<pre>$ ls /etc | sort -rn</pre>",
+  "quizQuestion": "Welche Flagge verwenden Sie, um eine umgekehrte Sortierung durchzuführen?",
+  "quizAnswer": "-r",
+  "slug": "sortcommand"
+}

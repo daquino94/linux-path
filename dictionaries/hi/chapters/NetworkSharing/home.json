@@ -1,0 +1,7 @@
+{
+  "id": 16,
+  "title": "नेटवर्क साझाकरण",
+  "description": "rsync, scp, nfs और अधिक के साथ नेटवर्क साझाकरण के बारे में जानें।",
+  "image": "/images/chapters/networkSharing.png",
+  "slug": "networksharing"
+}

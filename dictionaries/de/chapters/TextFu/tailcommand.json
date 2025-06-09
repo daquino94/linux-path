@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "title": "tail",
+  "lessonContent": "Ähnlich wie der head-Befehl lässt dich der tail-Befehl standardmäßig die letzten 10 Zeilen einer Datei sehen.\n\n<pre>$ tail /var/log/syslog</pre>\n\nZusammen mit head kannst du die Anzahl der Zeilen ändern, die du sehen möchtest.\n\n<pre>$ tail -n 10 /var/log/syslog</pre>\n\nEine weitere großartige Option ist die Verwendung der -f (follow) Flagge, dies verfolgt die Datei, während sie wächst. Probiere es aus und schau, was passiert.\n\n<pre>$ tail -f /var/log/syslog</pre>\n\nDeine syslog-Datei ändert sich kontinuierlich, während du mit deinem System interagierst, und mit tail -f kannst du sehen, was alles zu dieser Datei hinzugefügt wird.",
+  "exercise": "Sieh dir die Manpage von tail an und lies einige der anderen Befehle, die wir nicht besprochen haben.\n\n<pre>$ man tail</pre>",
+  "quizQuestion": "Welche Flagge wird verwendet, um einer Datei mit tail zu folgen?",
+  "quizAnswer": "-f",
+  "slug": "tailcommand"
+}

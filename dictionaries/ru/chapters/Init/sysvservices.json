@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Служба System V",
+  "lessonContent": "Существует множество инструментов командной строки, которые можно использовать для управления службами Sys V. \n\n<b>Список служб</b>\n\n<pre>$ service --status-all</pre>\n\n<b>Запуск службы</b>\n\n<pre>$ sudo service networking start</pre>\n\n<b>Остановка службы</b>\n\n<pre>$ sudo service networking stop</pre>\n\n<b>Перезапуск службы</b>\n\n<pre>$ sudo service networking restart</pre>\n\nЭти команды не являются специфичными для систем инициализации Sys V, вы также можете использовать эти команды для управления службами Upstart. Поскольку Linux пытается отойти от более традиционных сценариев инициализации Sys V, все еще есть механизмы, которые помогают в этом переходе.",
+  "exercise": "Управляйте несколькими службами и изменяйте их состояния, что вы замечаете?",
+  "quizQuestion": "Какая команда остановит службу с именем peanut с помощью Sys V?",
+  "quizAnswer": "sudo service peanut stop",
+  "slug": "sysvservices"
+}
