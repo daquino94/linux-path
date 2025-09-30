@@ -1,6 +1,7 @@
 import 'server-only'
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
+export const dynamic = 'force-static'
 import type { Metadata } from 'next'
 import Card from '@/components/Card'
 import Hero from '@/components/Hero'

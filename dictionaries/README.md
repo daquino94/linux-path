@@ -38,33 +38,33 @@ The dictionaries follow a consistent hierarchical structure that organizes trans
 
 ```md
 ├── dictionaries/
-│   ├── en/                          # Master language (English)
-│   │   ├── chapters/
-│   │   │   ├── chapterName/
-│   │   │   │   ├── lessonName.json
-│   │   │   │   ├── lessonName.json
-│   │   │   │   └── home.json
-│   │   │   ├── anotherChapter/
-│   │   │   │   ├── lessonName.json
-│   │   │   │   ├── lessonName.json
-│   │   │   │   ├── lessonName.json
-│   │   │   │   └── home.json
-│   │   └── common.json
-│   │
-│   ├── it/                          # Italian translations
-│   │   ├── chapters/
-│   │   │   ├── chapterName/
-│   │   │   │   ├── lessonName.json
-│   │   │   │   ├── lessonName.json
-│   │   │   │   └── home.json
-│   │   │   ├── anotherChapter/
-│   │   │   │   ├── lessonName.json
-│   │   │   │   ├── lessonName.json
-│   │   │   │   ├── lessonName.json
-│   │   │   │   └── home.json
-│   │   └── common.json
-│   │
-│   └── [other-languages]/          # Additional language codes
+│ ├── en/ # Master language (English)
+│ │ ├── chapters/
+│ │ │ ├── chapterName/
+│ │ │ │ ├── lessonName.json
+│ │ │ │ ├── lessonName.json
+│ │ │ │ └── home.json
+│ │ │ ├── anotherChapter/
+│ │ │ │ ├── lessonName.json
+│ │ │ │ ├── lessonName.json
+│ │ │ │ ├── lessonName.json
+│ │ │ │ └── home.json
+│ │ └── common.json
+│ │
+│ ├── it/ # Italian translations
+│ │ ├── chapters/
+│ │ │ ├── chapterName/
+│ │ │ │ ├── lessonName.json
+│ │ │ │ ├── lessonName.json
+│ │ │ │ └── home.json
+│ │ │ ├── anotherChapter/
+│ │ │ │ ├── lessonName.json
+│ │ │ │ ├── lessonName.json
+│ │ │ │ ├── lessonName.json
+│ │ │ │ └── home.json
+│ │ └── common.json
+│ │
+│ └── [other-languages]/ # Additional language codes
 ```
 
 ---
@@ -81,53 +81,53 @@ Contains shared translations for UI components, navigation elements, and common 
 
 ```json
 {
+  "hero": {
+    "image": "/images/penguinLaptop.png",
+    "title": "Unlock the power of Linux",
+    "subtitle": "A new life for LinuxJourney......"
+  },
+  "resources": {
     "hero": {
-        "image": "/images/penguinLaptop.png",
-        "title": "Unlock the power of Linux",
-        "subtitle": "A new life for LinuxJourney......"
+      "image": "/images/penguinBook.png",
+      "title": "Learn Linux the Fun Way",
+      "subtitle": "Master the art of Linux-fu with interactive and free lessons."
     },
-    "resources": {
-        "hero": {
-            "image": "/images/penguinBook.png",
-            "title": "Learn Linux the Fun Way",
-            "subtitle": "Master the art of Linux-fu with interactive and free lessons."
-        },
-        "data": [
-            {
-                "image": "/images/link.png",
-                "title": "Official Ubuntu tutorial",
-                "description": "A step-by-step guide for beginners......",
-                "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
-            },
-            {
-                "image": "/images/book.png",
-                "title": "The Linux Programming Interface: A Linux and UNIX System",
-                "description": "For serious Linux-users, great start into kernel programming.",
-                "href": "https://......"
-            }
-        ]
-    },
-    "chapterWrapper": {
-        "content": "Content",
-        "exerciseAndQuiz": "Exercise & quiz"
-    },
-    "navbar": {
-        "siteName": "Linux Path",
-        "home": "Home",
-        "lessons": "Lessons",
-        "resources": "Resources",
-        "language": "Language"
-    },
-    "exerciseBox": {
-        "exercise": "Exercise"
-    },
-    "quizBox": {
-        "quiz": "Quiz",
-        "checkAnswer": "Check Answer",
-        "showCorrectAnswer": "Show correct answer",
-        "correctAnswer": "Correct answer: ",
-        "placeholderAnswer": "Type your answer here"
-    }
+    "data": [
+      {
+        "image": "/images/link.png",
+        "title": "Official Ubuntu tutorial",
+        "description": "A step-by-step guide for beginners......",
+        "href": "https://ubuntu.com/tutorials/command-line-for-beginners"
+      },
+      {
+        "image": "/images/book.png",
+        "title": "The Linux Programming Interface: A Linux and UNIX System",
+        "description": "For serious Linux-users, great start into kernel programming.",
+        "href": "https://......"
+      }
+    ]
+  },
+  "chapterWrapper": {
+    "content": "Content",
+    "exerciseAndQuiz": "Exercise & quiz"
+  },
+  "navbar": {
+    "siteName": "Linux Path",
+    "home": "Home",
+    "lessons": "Lessons",
+    "resources": "Resources",
+    "language": "Language"
+  },
+  "exerciseBox": {
+    "exercise": "Exercise"
+  },
+  "quizBox": {
+    "quiz": "Quiz",
+    "checkAnswer": "Check Answer",
+    "showCorrectAnswer": "Show correct answer",
+    "correctAnswer": "Correct answer: ",
+    "placeholderAnswer": "Type your answer here"
+  }
 }
 ```
 
@@ -141,11 +141,11 @@ Contains general information about a specific chapter, including metadata that a
 
 ```json
 {
-    "id": 18,
-    "title": "Subnetting",
-    "description": "Learn about subnets and how to do subnet arithmetic!",
-    "image": "/images/chapters/subnetting.png",
-    "slug": "subnetting"
+  "id": 18,
+  "title": "Subnetting",
+  "description": "Learn about subnets and how to do subnet arithmetic!",
+  "image": "/images/chapters/subnetting.png",
+  "slug": "subnetting"
 }
 ```
 
@@ -159,12 +159,12 @@ Contains all content specific to individual lessons, including the main content,
 
 ```json
 {
-    "id": 5,
-    "title": "Ubuntu",
-    "lessonContent": "<b>Overview</b>\nOne of the most popular Linux distributions...",
-    "quizQuestion": "What operating system is Ubuntu based off of?",
-    "quizAnswer": "Debian",
-    "slug": "ubuntu"
+  "id": 5,
+  "title": "Ubuntu",
+  "lessonContent": "<b>Overview</b>\nOne of the most popular Linux distributions...",
+  "quizQuestion": "What operating system is Ubuntu based off of?",
+  "quizAnswer": "Debian",
+  "slug": "ubuntu"
 }
 ```
 
@@ -181,11 +181,13 @@ npm run createNewDictionaries <LANG_CODE>
 ```
 
 **Example**:
+
 ```bash
 npm run createNewDictionaries fr  # Creates French dictionary
 ```
 
 **What it does**:
+
 - Copies entire English dictionary structure
 - Creates all necessary folders and files
 - Preserves JSON structure with English content as placeholders
@@ -200,11 +202,13 @@ npm_config_lang=<LANG_CODE> npm run releaseDictionaries:lang
 ```
 
 **Example**:
+
 ```bash
 npm_config_lang=it npm run releaseDictionaries:lang  # Releases Italian translations
 ```
 
 **What it does**:
+
 - Merges all dictionary files for the specified language
 - Validates file structure and content
 - Deploys translations to the appropriate source directory
@@ -219,11 +223,13 @@ npm run addNewLangToSite <LANG_CODE>
 ```
 
 **Example**:
+
 ```bash
 npm run addNewLangToSite de  # Adds German language support
 ```
 
 **What it does**:
+
 - Modifies the `src/i18n/routing.ts` configuration file
 - Registers the new language in the application's routing system
 - Enables the language selector to include the new option
@@ -237,6 +243,7 @@ npm run checkDictionaries
 ```
 
 **What it does**:
+
 - Compares all language dictionaries against English (master)
 - Identifies missing translation keys
 - Reports inconsistencies in file structure
