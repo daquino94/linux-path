@@ -24,9 +24,6 @@ If you find Linux Path helpful and want to support its development, consider buy
   </a>
 </p>
 
-
-
-
 ## Features
 
 - 🐧 **Interactive Linux Learning**: Step-by-step lessons covering Linux fundamentals
@@ -43,14 +40,15 @@ If you find Linux Path helpful and want to support its development, consider buy
 Here are the exciting features coming to Linux Path:
 
 | Feature                 | Status |
-|-------------------------|--------|
+| ----------------------- | ------ |
+| SSG                     | ✅     |
 | Lesson generator script | 📋     |
-| SSR                     | 📋     |
 | Dark Mode               | 📋     |
 | New Lessons             | 📋     |
 | View progress           | 📋     |
 
 **Legend:**
+
 - 🔄 In Development
 - 📋 Planned
 - 💡 Research Phase
@@ -62,18 +60,19 @@ Linux Path uses a sophisticated dictionary system for content management and int
 
 ### Dictionary Status
 
-| Language      | Status         | Completion       |
-|---------------|----------------|------------------|
-| 🇺🇸 English    | ✅ Complete     | 100% (Master)    |
-| 🇮🇹 Italian    | 🔄 In Progress  | ~80%             |
-| 🇩🇪 German     | ✅ Complete     | 100% (🤖 AI)     |
-| 🇫🇷 French     | ✅ Complete     | 100% (🤖 AI)     |
-| 🇪🇸 Spanish    | ✅ Complete     | 100% (🤖 AI)     |
-| 🇮🇳 Hindi      | ✅ Complete     | 100% (🤖 AI)     |
-| 🇯🇵 Japanese   | ✅ Complete     | 100% (🤖 AI)     |
-| 🇵🇹 Portuguese | ✅ Complete     | 100% (🤖 AI)     |
-| 🇷🇺 Russian    | ✅ Complete     | 100% (🤖 AI)     |
-| 🇨🇳 Chinese    | ✅ Complete     | 100% (🤖 AI)     |
+| Language      | Status         | Completion    |
+| ------------- | -------------- | ------------- |
+| 🇺🇸 English    | ✅ Complete    | 100% (Master) |
+| 🇮🇹 Italian    | 🔄 In Progress | ~80%          |
+| 🇩🇪 German     | ✅ Complete    | 100% (🤖 AI)  |
+| 🇫🇷 French     | ✅ Complete    | 100% (🤖 AI)  |
+| 🇪🇸 Spanish    | ✅ Complete    | 100% (🤖 AI)  |
+| 🇮🇳 Hindi      | ✅ Complete    | 100% (🤖 AI)  |
+| 🇯🇵 Japanese   | ✅ Complete    | 100% (🤖 AI)  |
+| 🇵🇹 Portuguese | ✅ Complete    | 100% (🤖 AI)  |
+| 🇷🇺 Russian    | ✅ Complete    | 100% (🤖 AI)  |
+| 🇨🇳 Chinese    | ✅ Complete    | 100% (🤖 AI)  |
+
 <small>Unfortunately, I am a native Italian speaker, so I cannot guarantee the accuracy or naturalness of the translations in other languages.</small>
 
 ## Quick Start
@@ -81,23 +80,27 @@ Linux Path uses a sophisticated dictionary system for content management and int
 ### Prerequisites
 
 Choose one of the following:
+
 - **Node.js**: 18.0+ and npm (for local development)
 - **Docker**: Latest version (for containerized deployment)
 
 ### Option 1: Local Development
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/daquino94/linux-path.git
    cd linux-path
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**:
+
    ```bash
    npm run dev
    ```
@@ -110,6 +113,7 @@ Choose one of the following:
 1. **Clone and install** (same as above steps 1-2)
 
 2. **Build the application**:
+
    ```bash
    npm run build
    ```
@@ -124,6 +128,7 @@ Choose one of the following:
 #### Using Docker Compose (Recommended)
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/daquino94/linux-path.git
    cd linux-path
@@ -137,6 +142,7 @@ Choose one of the following:
 #### Manual Docker Build
 
 1. **Build the Docker image**:
+
    ```bash
    docker build -t linux-path .
    ```
@@ -160,6 +166,7 @@ The project uses a sophisticated multi-stage Docker build process:
 - **Stage 2 (Runner)**: Creates a lean production image with only necessary files
 
 This approach results in:
+
 - ✅ Smaller final image size
 - 🔒 Enhanced security (no build tools in production)
 - ⚡ Faster deployment times
@@ -180,10 +187,10 @@ This approach results in:
 
 The application can be configured using the following environment variables:
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `NODE_ENV` | Environment mode | `development` |
-| `PORT` | Port to run the application | `3000` |
+| Variable              | Description                   | Default                 |
+| --------------------- | ----------------------------- | ----------------------- |
+| `NODE_ENV`            | Environment mode              | `development`           |
+| `PORT`                | Port to run the application   | `3000`                  |
 | `NEXT_PUBLIC_APP_URL` | Public URL of the application | `http://localhost:3000` |
 
 ### Development Configuration
@@ -195,7 +202,7 @@ NODE_ENV=development
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
-### Adding New Content  or contributing New Languages
+### Adding New Content or contributing New Languages
 
 please refer to this [documentation](/dictionaries/README.md)
 

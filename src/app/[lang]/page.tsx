@@ -1,13 +1,27 @@
+// src/app/[lang]/page.tsx
 import Card from '@/components/Card'
 import Hero from '@/components/Hero'
 import { Chapter } from '@/types/types'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
+import { locales } from '@/i18n/routing'
 
-export default function Page() {
-  const t = useTranslations('')
-  const cardData: Chapter[] = t
-    .raw('chapters')
-    .sort((a: { id: number }, b: { id: number }) => a.id - b.id)
+export const dynamic = 'force-static'
+
+export function generateStaticParams() {
+  return locales.map((lang) => ({ lang }))
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: string }>
+}) {
+  const locale = (await params).lang
+
+  const t = await getTranslations({ locale })
+
+  const rawChapters = (t.raw('chapters') || []) as Chapter[]
+  const cardData = [...rawChapters].sort((a, b) => a.id - b.id)
 
   return (
     <>
@@ -20,8 +34,12 @@ export default function Page() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {cardData.map((card, index) => {
-              // Ordina le lezioni per id e prendi la prima
-              const firstLesson = card.lessons.sort((a, b) => a.id - b.id)[0]
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              const firstLesson = ([...(card.lessons || [])] as any[])
+                .slice()
+                .sort((a, b) => a.id - b.id)[0]
+
+              if (!firstLesson) return null
 
               return (
                 <div key={index} className="h-full">
