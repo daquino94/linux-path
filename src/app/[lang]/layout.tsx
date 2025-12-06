@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { NextIntlClientProvider } from 'next-intl'
 import { Analytics } from '@vercel/analytics/next'
-import { Locales, localesObject } from '@/i18n/routing'
+import { localesObject } from '@/i18n/routing'
 
 export async function generateStaticParams() {
   return localesObject
@@ -36,9 +36,9 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode
-  params: Promise<Locales>
+  params: Promise<{ lang: string }>
 }>) {
-  const locale = (await params).lang
+  const { lang: locale } = await params
   return (
     <html lang={locale}>
       <body
