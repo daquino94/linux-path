@@ -39,7 +39,7 @@
     "@formatjs/intl-localematcher": "^0.6.1",
     "@vercel/analytics": "^1.5.0",
     "dompurify": "^3.2.5",
-    "next": "^15.5.7",
+    "next": "15.5.9",
     "next-intl": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
