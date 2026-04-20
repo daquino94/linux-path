@@ -1,8 +1,9 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { QuizBoxProps } from '@/types/types'
 import { useTranslations } from 'next-intl'
 import { useRouter, usePathname } from 'next/navigation'
+import { useProgress } from '@/contexts/ProgressContext'
 
 const QuizBox: React.FC<QuizBoxProps> = ({
   question,
@@ -16,7 +17,24 @@ const QuizBox: React.FC<QuizBoxProps> = ({
   const t = useTranslations('common.quizBox')
   const router = useRouter()
   const pathname = usePathname()
+  const { markLessonComplete, isLessonComplete } = useProgress()
   const blankQuiz = correctAnswer === ''
+
+  const pathParts = pathname.split('/')
+  const currentLessonSlug = pathParts[pathParts.length - 1]
+  const lessonCompleted = isLessonComplete(currentLessonSlug)
+
+  useEffect(() => {
+    if (isCorrect || (blankQuiz && !lessonCompleted)) {
+      markLessonComplete(currentLessonSlug)
+    }
+  }, [
+    isCorrect,
+    blankQuiz,
+    currentLessonSlug,
+    lessonCompleted,
+    markLessonComplete,
+  ])
 
   const handleCheck = (): void => {
     if (userAnswer.trim() === '') return
@@ -61,7 +79,7 @@ const QuizBox: React.FC<QuizBoxProps> = ({
               value={userAnswer}
               onChange={(e) => setUserAnswer(e.target.value)}
               onKeyUp={handleKeyPress}
-              className="w-full rounded-md border border-gray-300 p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full rounded-md border border-gray-300 bg-white p-2 text-black focus:ring-2 focus:ring-blue-500 focus:outline-none"
               placeholder={t('placeholderAnswer')}
             />
           </div>
