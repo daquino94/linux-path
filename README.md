@@ -42,10 +42,10 @@ Here are the exciting features coming to Linux Path:
 | Feature                 | Status |
 | ----------------------- | ------ |
 | SSG                     | ✅     |
-| Lesson generator script | 📋     |
+| Lesson generator script | ✅     |
 | Dark Mode               | 📋     |
 | New Lessons             | 📋     |
-| View progress           | 📋     |
+| View progress           | ✅     |
 
 **Legend:**
 
