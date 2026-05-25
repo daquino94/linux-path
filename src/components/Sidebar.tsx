@@ -29,7 +29,9 @@ const Sidebar: React.FC<{ lessons: Lesson[]; lessonName: string }> = ({
               key={index}
               href={`${basePath}/${item.slug}`}
               className={`flex cursor-pointer items-center justify-between border-b border-sky-600 p-4 transition-colors hover:bg-sky-600 dark:border-slate-600 dark:hover:bg-slate-700 ${
-                currentLesson.toLowerCase() === item.slug ? 'bg-sky-600 dark:bg-slate-700' : ''
+                currentLesson.toLowerCase() === item.slug
+                  ? 'bg-sky-600 dark:bg-slate-700'
+                  : ''
               }`}
             >
               <span>

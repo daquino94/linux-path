@@ -38,9 +38,13 @@ export default function Card({
           )}
         </div>
         <div className="flex flex-grow flex-col justify-between">
-          <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{title}</h3>
+          <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
           {description && (
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">{description}</p>
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+              {description}
+            </p>
           )}
         </div>
       </div>
