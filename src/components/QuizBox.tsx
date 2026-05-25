@@ -67,7 +67,7 @@ const QuizBox: React.FC<QuizBoxProps> = ({
   }
 
   return (
-    <div className="rounded-2xl bg-white p-6 shadow-md">
+    <div className="rounded-2xl bg-white p-6 shadow-md dark:bg-slate-800 dark:shadow-slate-900/50">
       <h2 className="mb-4 text-xl font-bold">{t('quiz')}</h2>
       <p className="mb-6">{question}</p>
 
@@ -79,7 +79,7 @@ const QuizBox: React.FC<QuizBoxProps> = ({
               value={userAnswer}
               onChange={(e) => setUserAnswer(e.target.value)}
               onKeyUp={handleKeyPress}
-              className="w-full rounded-md border border-gray-300 bg-white p-2 text-black focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full rounded-md border border-gray-300 bg-white p-2 text-black focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-slate-600 dark:bg-slate-700 dark:text-gray-100"
               placeholder={t('placeholderAnswer')}
             />
           </div>
@@ -94,7 +94,7 @@ const QuizBox: React.FC<QuizBoxProps> = ({
 
       {isAnswered && (
         <div
-          className={`mb-4 rounded-md p-3 ${isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}
+          className={`mb-4 rounded-md p-3 ${isCorrect ? 'bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300' : 'bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300'}`}
         >
           {isCorrect ? 'Correct!' : 'Not quite right. Try again!'}
         </div>
@@ -103,14 +103,14 @@ const QuizBox: React.FC<QuizBoxProps> = ({
       {!isCorrect && isAnswered && !showCorrectAnswer && (
         <button
           onClick={handleShowAnswer}
-          className="font-medium text-blue-600 hover:text-blue-800"
+          className="font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
         >
           {t('showCorrectAnswer')}
         </button>
       )}
 
       {showCorrectAnswer && (
-        <div className="rounded-md bg-blue-100 p-3 text-blue-800">
+        <div className="rounded-md bg-blue-100 p-3 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">
           {t('correctAnswer')} {correctAnswer}
         </div>
       )}

@@ -10,7 +10,7 @@ export default function Hero({
   subtitle?: string
 }) {
   return (
-    <section className="h-md bg-sky-800 py-15 text-white">
+    <section className="h-md bg-sky-800 py-15 text-white dark:bg-slate-800">
       <div className="mx-auto max-w-6xl px-6 text-center">
         <div className="mb-8 flex justify-center">
           <Image

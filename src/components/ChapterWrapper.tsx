@@ -71,12 +71,12 @@ const ChapterWrapper = ({ chapter }: { chapter: Chapter }) => {
   }
 
   return (
-    <div className="relative flex flex-col overflow-hidden bg-gray-100 text-black md:h-screen md:flex-row">
+    <div className="relative flex flex-col overflow-hidden bg-gray-100 text-black md:h-screen md:flex-row dark:bg-slate-900 dark:text-gray-100">
       {/* Mobile Header with menu button */}
-      <div className="flex items-center justify-between bg-white p-4 shadow-sm md:hidden">
+      <div className="flex items-center justify-between bg-white p-4 shadow-sm md:hidden dark:bg-slate-800">
         <button
           onClick={toggleSidebar}
-          className="text-gray-700 focus:outline-none"
+          className="text-gray-700 focus:outline-none dark:text-gray-300"
         >
           <svg
             className="h-6 w-6"
@@ -118,15 +118,15 @@ const ChapterWrapper = ({ chapter }: { chapter: Chapter }) => {
 
       <div className="flex flex-1 flex-col overflow-hidden">
         {/* Mobile tabs for switching between content and exercises */}
-        <div className="flex border-b border-gray-200 md:hidden">
+        <div className="flex border-b border-gray-200 md:hidden dark:border-slate-700">
           <button
-            className={`flex-1 py-3 text-center ${activeTab === 'content' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-600'}`}
+            className={`flex-1 py-3 text-center ${activeTab === 'content' ? 'border-b-2 border-blue-500 text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'}`}
             onClick={() => setActiveTab('content')}
           >
             {t('content')}
           </button>
           <button
-            className={`flex-1 py-3 text-center ${activeTab === 'exercises' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-600'}`}
+            className={`flex-1 py-3 text-center ${activeTab === 'exercises' ? 'border-b-2 border-blue-500 text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-400'}`}
             onClick={() => setActiveTab('exercises')}
           >
             {t('exerciseAndQuiz')}
@@ -147,7 +147,7 @@ const ChapterWrapper = ({ chapter }: { chapter: Chapter }) => {
 
           {/* Exercise/Quiz area */}
           <div
-            className={`${activeTab === 'exercises' ? 'flex' : 'hidden'} flex-col space-y-4 overflow-y-auto bg-gray-100 p-4 md:flex md:w-2/5 md:min-w-48 md:flex-shrink md:flex-grow-0 md:space-y-6 md:p-6`}
+            className={`${activeTab === 'exercises' ? 'flex' : 'hidden'} flex-col space-y-4 overflow-y-auto bg-gray-100 p-4 md:flex md:w-2/5 md:min-w-48 md:flex-shrink md:flex-grow-0 md:space-y-6 md:p-6 dark:bg-slate-900`}
           >
             <ExerciseBox>
               <div dangerouslySetInnerHTML={{ __html: sanitizedExercise }} />

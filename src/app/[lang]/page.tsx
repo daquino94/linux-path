@@ -30,7 +30,7 @@ export default async function Page({
         image={t('common.hero.image')}
         subtitle={t('common.hero.subtitle')}
       />
-      <div className="min-h-screen bg-gray-100 py-16">
+      <div className="min-h-screen bg-gray-100 py-16 dark:bg-slate-900">
         <div className="container mx-auto px-4">
           <ChapterGrid chapters={cardData} />
         </div>

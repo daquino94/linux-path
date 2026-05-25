@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { Analytics } from '@vercel/analytics/next'
 import { localesObject } from '@/i18n/routing'
 import { ProgressProvider } from '@/contexts/ProgressContext'
+import { ThemeProvider } from '@/contexts/ThemeContext'
 
 export async function generateStaticParams() {
   return localesObject
@@ -46,13 +47,15 @@ export default async function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Analytics />
-        <ProgressProvider>
-          <NextIntlClientProvider locale={locale}>
-            <Navbar />
-            {children}
-            <Footer />
-          </NextIntlClientProvider>
-        </ProgressProvider>
+        <ThemeProvider>
+          <ProgressProvider>
+            <NextIntlClientProvider locale={locale}>
+              <Navbar />
+              {children}
+              <Footer />
+            </NextIntlClientProvider>
+          </ProgressProvider>
+        </ThemeProvider>
       </body>
     </html>
   )
