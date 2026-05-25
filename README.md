@@ -43,7 +43,7 @@ Here are the exciting features coming to Linux Path:
 | ----------------------- | ------ |
 | SSG                     | ✅     |
 | Lesson generator script | ✅     |
-| Dark Mode               | 📋     |
+| Dark Mode               | ✅     |
 | New Lessons             | 📋     |
 | View progress           | ✅     |
 

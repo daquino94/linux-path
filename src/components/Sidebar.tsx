@@ -17,8 +17,8 @@ const Sidebar: React.FC<{ lessons: Lesson[]; lessonName: string }> = ({
   const ordinatedLesson = lessons.sort((a, b) => a.id - b.id)
 
   return (
-    <div className="flex h-screen w-64 flex-col rounded-r-2xl bg-sky-800 text-white shadow-lg md:rounded-r-none">
-      <div className="flex items-center justify-between border-b border-sky-600 p-4">
+    <div className="flex h-screen w-64 flex-col rounded-r-2xl bg-sky-800 text-white shadow-lg md:rounded-r-none dark:bg-slate-800">
+      <div className="flex items-center justify-between border-b border-sky-600 p-4 dark:border-slate-600">
         <h2 className="text-xl font-medium">{lessonName}</h2>
       </div>
       <div className="flex-1 overflow-y-auto">
@@ -28,8 +28,8 @@ const Sidebar: React.FC<{ lessons: Lesson[]; lessonName: string }> = ({
             <Link
               key={index}
               href={`${basePath}/${item.slug}`}
-              className={`flex cursor-pointer items-center justify-between border-b border-sky-600 p-4 transition-colors hover:bg-sky-600 ${
-                currentLesson.toLowerCase() === item.slug ? 'bg-sky-600' : ''
+              className={`flex cursor-pointer items-center justify-between border-b border-sky-600 p-4 transition-colors hover:bg-sky-600 dark:border-slate-600 dark:hover:bg-slate-700 ${
+                currentLesson.toLowerCase() === item.slug ? 'bg-sky-600 dark:bg-slate-700' : ''
               }`}
             >
               <span>

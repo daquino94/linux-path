@@ -5,7 +5,7 @@ const ExerciseBox: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const t = useTranslations('common.exerciseBox')
 
   return (
-    <div className="mb-6 rounded-2xl bg-white p-6 shadow-md">
+    <div className="mb-6 rounded-2xl bg-white p-6 shadow-md dark:bg-slate-800 dark:shadow-slate-900/50">
       <h2 className="mb-4 text-xl font-bold">{t('exercise')}</h2>
       {children}
     </div>

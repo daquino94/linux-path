@@ -7,6 +7,8 @@ import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { locales } from '@/i18n/routing'
 import Image from 'next/image'
+import { useTheme } from '@/contexts/ThemeContext'
+import { FiSun, FiMoon } from 'react-icons/fi'
 
 export default function Navbar() {
   const router = useRouter()
@@ -16,6 +18,7 @@ export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false)
   const [langDropdownOpen, setLangDropdownOpen] = useState(false)
+  const { theme, toggleTheme } = useTheme()
 
   const currentLanguage =
     locales.find((lang) => lang === currentLocale) || locales[0]
@@ -33,12 +36,12 @@ export default function Navbar() {
       : 'transition-colors duration-200'
 
     const activeClasses = isMobile
-      ? 'bg-sky-50 font-medium text-orange-600 dark:bg-sky-700 dark:text-orange-400'
-      : 'text-orange-600 font-semibold dark:text-orange-400 border-b-2 border-orange-600 dark:border-orange-400 pb-1'
+      ? 'bg-sky-50 font-medium text-orange-400 dark:bg-sky-200 dark:text-orange-400'
+      : 'text-orange-400 font-semibold dark:text-orange-400 border-b-2 border-orange-400 dark:border-orange-400 pb-1'
 
     const inactiveClasses = isMobile
-      ? 'text-sky-700 hover:bg-sky-100 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600'
-      : 'text-sky-700 hover:text-orange-400 dark:text-sky-200'
+      ? 'text-sky-200 hover:bg-sky-100 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600'
+      : 'text-sky-200 hover:text-orange-400 dark:text-sky-200'
 
     return `${baseClasses} ${isActive(href) ? activeClasses : inactiveClasses}`
   }
@@ -67,7 +70,7 @@ export default function Navbar() {
   }, [langDropdownOpen, menuOpen])
 
   return (
-    <nav className="bg-white shadow-md dark:bg-sky-800">
+    <nav className="bg-sky-800 shadow-md dark:bg-slate-800">
       <div className="mx-auto px-4">
         <div className="flex h-16 justify-between">
           {/* Logo and main nav items */}
@@ -81,7 +84,7 @@ export default function Navbar() {
               />
               <Link
                 href="/"
-                className="text-xl font-bold text-orange-600 dark:text-orange-400"
+                className="text-xl font-bold text-orange-400 dark:text-orange-400"
               >
                 {t('siteName')}
               </Link>
@@ -104,7 +107,7 @@ export default function Navbar() {
               href="https://github.com/daquino94/linux-path"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sky-700 transition-colors duration-200 hover:text-orange-400 dark:text-sky-200"
+              className="text-sky-200 transition-colors duration-200 hover:text-orange-400 dark:text-sky-200"
               aria-label="GitHub repository"
             >
               <FaGithub size={23} />
@@ -115,16 +118,25 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Reddit"
-              className="text-sky-700 transition-colors duration-200 hover:text-orange-400 dark:text-sky-200"
+              className="text-sky-200 transition-colors duration-200 hover:text-orange-400 dark:text-sky-200"
             >
               <FaReddit size={24} />
             </Link>
+
+            {/* Theme toggle */}
+            <button
+              onClick={toggleTheme}
+              className="rounded p-2 text-sky-200 transition-colors duration-200 hover:text-orange-400 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-200"
+              aria-label="Toggle theme"
+            >
+              {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
+            </button>
 
             {/* Language selector desktop */}
             <div className="language-selector relative">
               <button
                 onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-                className="flex items-center gap-2 rounded px-3 py-1.5 text-sky-700 transition-colors duration-200 hover:text-orange-400 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-sky-200"
+                className="flex items-center gap-2 rounded px-3 py-1.5 text-sky-200 transition-colors duration-200 hover:text-orange-400 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-200"
                 aria-label="Select language"
               >
                 <BiGlobe size={23} />
@@ -145,20 +157,20 @@ export default function Navbar() {
               </button>
 
               {langDropdownOpen && (
-                <div className="absolute right-0 z-20 mt-2 w-auto rounded-md border border-sky-200 bg-white py-1 shadow-lg dark:border-sky-700 dark:bg-sky-800">
+                <div className="absolute right-0 z-20 mt-2 w-auto rounded-md border border-sky-200 bg-white py-1 shadow-lg dark:border-sky-200 dark:bg-sky-800">
                   {locales.map((lang) => (
                     <button
                       key={lang}
                       onClick={() => handleLanguageChange(lang)}
-                      className={`flex w-full cursor-pointer items-center px-4 py-2 text-left text-sm text-sky-700 transition-colors duration-200 hover:bg-sky-100 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600 ${
+                      className={`flex w-full cursor-pointer items-center px-4 py-2 text-left text-sm text-sky-200 transition-colors duration-200 hover:bg-sky-100 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600 ${
                         lang === currentLocale
-                          ? 'bg-sky-50 font-medium text-orange-600 dark:bg-sky-700 dark:text-orange-400'
+                          ? 'bg-sky-50 font-medium text-orange-400 dark:bg-sky-200 dark:text-orange-400'
                           : ''
                       }`}
                     >
                       {lang.toUpperCase()}
                       {lang === currentLocale && (
-                        <span className="ml-4 text-orange-600 dark:text-orange-400">
+                        <span className="ml-4 text-orange-400 dark:text-orange-400">
                           ✓
                         </span>
                       )}
@@ -174,7 +186,7 @@ export default function Navbar() {
             <div className="flex items-center space-x-2">
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="rounded-md p-2 text-sky-700 transition-colors hover:bg-sky-100 hover:text-orange-400 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-sky-200 dark:hover:bg-sky-600"
+                className="rounded-md p-2 text-sky-200 transition-colors hover:bg-sky-100 hover:text-orange-400 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-sky-200 dark:hover:bg-sky-600"
                 aria-label="Main menu"
                 aria-expanded={menuOpen}
               >
@@ -188,7 +200,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="mobile-menu-container md:hidden">
-          <div className="space-y-1 border-t border-sky-200 bg-white px-2 pt-2 pb-3 dark:border-sky-700 dark:bg-sky-800">
+          <div className="space-y-1 border-t border-sky-200 bg-white px-2 pt-2 pb-3 dark:border-sky-200 dark:bg-sky-800">
             {/* Mobile navigation links */}
             <Link
               href="/"
@@ -210,7 +222,7 @@ export default function Navbar() {
               href="https://github.com/daquino94/linux-path"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium text-sky-700 transition-colors hover:bg-sky-100 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600"
+              className="flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium text-sky-200 transition-colors hover:bg-sky-100 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600"
               aria-label="GitHub repository"
             >
               <FaGithub size={20} />
@@ -220,12 +232,30 @@ export default function Navbar() {
               href="https://www.reddit.com/r/linuxPath/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium text-sky-700 transition-colors hover:bg-sky-100 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600"
+              className="flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium text-sky-200 transition-colors hover:bg-sky-100 hover:text-orange-400 dark:text-gray-200 dark:hover:bg-slate-700"
               aria-label="Reddit"
             >
               <FaReddit size={20} />
               Reddit
             </Link>
+
+            {/* Mobile theme toggle */}
+            <button
+              onClick={toggleTheme}
+              className="flex w-full items-center gap-3 rounded-md px-3 py-2 text-base font-medium text-sky-200 transition-colors hover:bg-sky-100 hover:text-orange-400 dark:text-gray-200 dark:hover:bg-slate-700"
+            >
+              {theme === 'light' ? (
+                <>
+                  <FiMoon size={20} />
+                  Dark Mode
+                </>
+              ) : (
+                <>
+                  <FiSun size={20} />
+                  Light Mode
+                </>
+              )}
+            </button>
 
             {/* Mobile llanguage selector */}
             <div className="px-3 py-2">
@@ -239,14 +269,14 @@ export default function Navbar() {
                     onClick={() => handleLanguageChange(lang)}
                     className={`flex w-full items-center rounded-md px-3 py-2 text-left text-sm transition-colors ${
                       lang === currentLocale
-                        ? 'bg-sky-100 font-medium text-orange-600 dark:bg-sky-700 dark:text-orange-400'
-                        : 'text-sky-700 hover:bg-sky-50 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600'
+                        ? 'bg-sky-100 font-medium text-orange-400 dark:bg-sky-200 dark:text-orange-400'
+                        : 'text-sky-200 hover:bg-sky-50 hover:text-orange-400 dark:text-sky-200 dark:hover:bg-sky-600'
                     }`}
                   >
                     <BiGlobe size={16} className="mr-2" />
                     {lang.toUpperCase()}
                     {lang === currentLocale && (
-                      <span className="ml-auto text-orange-600 dark:text-orange-400">
+                      <span className="ml-auto text-orange-400 dark:text-orange-400">
                         ✓
                       </span>
                     )}
